@@ -54,5 +54,5 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | codex-asb-tui-awq-v032-20260913 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Wait for pre-existing asb-tui agents to finish and reconcile their durable work before claiming. |
+| P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | codex-asb-tui-awq-v032-20260913 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Authenticate the v0.32.0 release bundle and add the minimal core shadow policy, pinned invocation, provenance, workflow, and focused tests. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | codex-asb-tui-coordinator-ops-20260913 | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Implement deterministic Git-backend state validation and the minimal product contributor pointer in the registered isolated worktrees. |
