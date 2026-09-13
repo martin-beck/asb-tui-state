@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `dependabot/cargo/serde-1.0.229@5d1103ac8ace` | `main` | BEHIND | COMPLETED:FAILURE | build(deps): bump serde from 1.0.220 to 1.0.229 |
-| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BLOCKED | QUEUED: | AR-0002: require coordinated agent handoffs |
+| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BLOCKED | IN_PROGRESS: | AR-0002: require coordinated agent handoffs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34775620026 | `52f7fe405d8f` | pull_request | Repository quality | queued:- |
+| 34775620026 | `52f7fe405d8f` | pull_request | Repository quality | in_progress:- |
 | 34567498957 | `db612b6f0702` | push | Trusted main verification | completed:failure |
 | 34567498914 | `db612b6f0702` | push | Repository quality | completed:success |
 | 34567359906 | `17f8b3bc26cf` | pull_request | Repository quality | completed:success |
