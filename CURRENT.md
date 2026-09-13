@@ -1,0 +1,11 @@
+# ASB TUI current coordination state
+
+This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
+Never edit this file directly.
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Wait for pre-existing asb-tui agents to finish and reconcile their durable work before claiming. | - |
+| P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Wait for pre-existing asb-tui agents to finish and reconcile their durable work before claiming. | - |
