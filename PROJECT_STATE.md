@@ -11,11 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `dependabot/cargo/serde-1.0.229@5d1103ac8ace` | `main` | BEHIND | COMPLETED:FAILURE | build(deps): bump serde from 1.0.220 to 1.0.229 |
+| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BLOCKED | QUEUED: | AR-0002: require coordinated agent handoffs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34775620026 | `52f7fe405d8f` | pull_request | Repository quality | queued:- |
 | 34567498957 | `db612b6f0702` | push | Trusted main verification | completed:failure |
 | 34567498914 | `db612b6f0702` | push | Repository quality | completed:success |
 | 34567359906 | `17f8b3bc26cf` | pull_request | Repository quality | completed:success |
@@ -27,4 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34564281649 | `dd0555208a16` | pull_request | Repository quality | completed:success |
 | 34563629050 | `092cf20a274e` | push | Repository quality | completed:failure |
 | 34563628936 | `092cf20a274e` | push | Trusted main verification | completed:failure |
-| 34563473057 | `d4ace404949a` | pull_request | Repository quality | completed:success |
