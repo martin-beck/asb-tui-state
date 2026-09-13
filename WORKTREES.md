@@ -5,6 +5,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `asb-tui-main` | `main` | `db612b6f0702` | 0 | behind 0, ahead 0 |
-| `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `e85012ef5bb4` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `tests/awq_shadow.rs` |
+| `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `c39b0b496641` | 0 | behind 0, ahead 1 |
 | `asb-tui-coordinator-operations` | `chore/coordinator-operations` | `52f7fe405d8f` | 0 | behind 0, ahead 1 |
