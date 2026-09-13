@@ -55,4 +55,4 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | codex-asb-tui-awq-v032-20260913 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Obtain independent review of exact candidate e85012ef5bb4e9c1e38e41bd23a3db0925dd7857, then push the branch and open a draft PR for hosted exact-head native verification. |
-| P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | codex-asb-tui-coordinator-ops-20260913 | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Obtain independent exact-head review and confirm required CI for state PR #1 and product PR #24; do not merge. |
+| P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | codex-asb-tui-coordinator-ops-20260913 | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Obtain independent exact-head review and confirm formal CI for state PR #1; deterministic state CI and product PR #24 CI already pass. Do not merge. |
