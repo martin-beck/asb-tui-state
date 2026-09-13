@@ -12,11 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #1 | `dependabot/cargo/serde-1.0.229@5d1103ac8ace` | `main` | BEHIND | COMPLETED:FAILURE | build(deps): bump serde from 1.0.220 to 1.0.229 |
 | #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BLOCKED | COMPLETED:SUCCESS | AR-0002: require coordinated agent handoffs |
+| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | BLOCKED | QUEUED: | ci: add AWQ v0.32.0 shadow checks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34776296359 | `2bc987ee0a9a` | pull_request | AWQ shadow observation | queued:- |
+| 34776296269 | `2bc987ee0a9a` | pull_request | Repository quality | queued:- |
 | 34775620026 | `52f7fe405d8f` | pull_request | Repository quality | completed:success |
 | 34567498957 | `db612b6f0702` | push | Trusted main verification | completed:failure |
 | 34567498914 | `db612b6f0702` | push | Repository quality | completed:success |
@@ -27,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34564426538 | `37613e8128ac` | push | Trusted main verification | completed:failure |
 | 34564426536 | `37613e8128ac` | push | Repository quality | completed:success |
 | 34564281649 | `dd0555208a16` | pull_request | Repository quality | completed:success |
-| 34563629050 | `092cf20a274e` | push | Repository quality | completed:failure |
-| 34563628936 | `092cf20a274e` | push | Trusted main verification | completed:failure |
