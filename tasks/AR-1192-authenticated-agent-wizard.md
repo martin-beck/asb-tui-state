@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T16:40:46+00:00",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Review external ASB AR-1190/1191/1186 dependencies, then promote and claim through handoffctl.",
+  "next_action": "Implement authenticated catalog/lifecycle acquisition and installation wiring once ASB protocol dependencies AR-1190/1191/1186 are published; keep renderer/application work in asb-tui.",
   "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T15:40:46+00:00",
+  "updated_at": "2026-09-15T15:40:57+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -26,3 +26,8 @@ published. All rendering and application behavior remains in asb-tui.
   remaining authenticated runtime work.
 
 - 2026-09-15T15:40:46+00:00: Claimed by root.
+
+- 2026-09-15T15:40:57+00:00: PR #103 merged into asb-tui main at 249591f after genuine PR CI
+  34989446540; post-merge Repository quality 34989738729 and Trusted main verification 34989738764
+  both passed. Catalog choices are compatible and bounded; authenticated runtime/install remains
+  open.

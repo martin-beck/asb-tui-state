@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | root | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Review external ASB AR-1190/1191/1186 dependencies, then promote and claim through handoffctl. |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | root | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Implement authenticated catalog/lifecycle acquisition and installation wiring once ASB protocol dependencies AR-1190/1191/1186 are published; keep renderer/application work in asb-tui. |
 
 ### Open (4)
 
