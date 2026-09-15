@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1192-authenticated-agent-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T22:32:52+00:00",
   "depends_on": [],
   "id": "AR-1192",
   "next_action": "Do not wire lifecycle UI calls yet: ASB origin 2117a40 still returns CapabilityUnavailable for agent_catalog and agent lifecycle methods. Await authenticated ASB backend implementation, capability signaling, reconciled schemas/fixtures, and green exact-head/post-merge evidence; then adapt through the adopted broker stream in asb-tui.",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T21:32:35+00:00",
+  "updated_at": "2026-09-15T21:32:52+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -57,3 +57,5 @@ published. All rendering and application behavior remains in asb-tui.
 
 - 2026-09-15T21:32:35+00:00: Recovered expired claim formerly owned by root. Recover expired root
   lease before re-evaluating ASB backend progress
+
+- 2026-09-15T21:32:52+00:00: Claimed by root.
