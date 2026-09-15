@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T09:31:42+00:00",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion.",
-  "owner": "",
+  "owner": "root-ar1197-review",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T08:31:40+00:00",
+  "updated_at": "2026-09-15T08:31:42+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -42,3 +42,5 @@ wizard work are complete.
 
 - 2026-09-15T08:31:40+00:00: Detailed startup wizard idempotence AR is recorded with exact PR #87
   evidence; begin independent review.
+
+- 2026-09-15T08:31:42+00:00: Claimed by root-ar1197-review.
