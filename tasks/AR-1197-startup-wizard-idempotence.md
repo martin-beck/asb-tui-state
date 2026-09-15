@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:35:13+00:00",
+  "updated_at": "2026-09-15T10:37:19+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -69,3 +69,8 @@ wizard work are complete.
   runs queued: Repository quality 34958715516 and Trusted main verification 34958715501. Keep AR
   in_progress until both terminal; stacked PR #87 remains gated on this dependency and on
   formal/authoritative integration.
+
+- 2026-09-15T10:37:19+00:00: PR #76 merge post-merge assurance completed successfully: Repository
+  quality 34958715516 and Trusted main verification 34958715501 both success for main SHA
+  2faaa21289fe4294df6f6d2c7dd104510647e107. AR remains in_progress because stacked PR #87 and
+  authoritative/formal wizard integration are still outstanding.
