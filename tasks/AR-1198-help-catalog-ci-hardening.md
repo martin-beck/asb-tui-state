@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T09:51:46+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted.",
-  "owner": "root-ar-tui-registry",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T08:52:30+00:00",
+  "updated_at": "2026-09-15T08:52:32+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -57,3 +57,7 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   fields, unknown action IDs, wrong action kinds, placeholder/private-material rejection and
   deterministic negative tests. This is evidence for the candidate checks, not proof of complete UI
   inventory synchronization or all-context coverage; those remain acceptance gates.
+
+- 2026-09-15T08:52:32+00:00: Released after exact-head source review and hosted-check verification;
+  retain as open until complete UI inventory/formal-model/ownership cross-check and independent
+  promotion review.
