@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "2026-09-15T14:19:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Wait for ASB AR-1227 readiness producer and AR-1199 dependencies; then wire concrete provider into normal/broker startup and implement authoritative wizard persistence, restart/idempotence, and post-completion confirmation.",
-  "owner": "root-startup-readiness",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T14:09:40+00:00",
+  "updated_at": "2026-09-15T14:24:12+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -136,3 +136,6 @@ wizard work are complete.
   exact-head CI 34979236315 passed, merged at e9d456641546a5e6b7d4262121e3ef751fb0c8f5. Post-merge
   Trusted 34979486786 and Repository quality 34979486795 both succeeded for exact main SHA. This
   remains local UI behavior; no ASB I/O or persistence semantics were invented.
+
+- 2026-09-15T14:24:12+00:00: Recovered expired claim formerly owned by root-startup-readiness.
+  Recovering expired claim before recording PR #99 merge and post-merge verification.
