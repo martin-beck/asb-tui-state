@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T15:29:38+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Standalone wizard interaction slice landed in asb-tui PR #99.",
+  "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Local configuration persistence landed in asb-tui PR #101, with rustdoc/metadata repair PR #102.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T14:59:38+00:00",
+  "updated_at": "2026-09-15T14:59:58+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -152,3 +152,11 @@ wizard work are complete.
   Recovering expired claim before recording configuration persistence merge and post-merge evidence.
 
 - 2026-09-15T14:59:38+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T14:59:58+00:00: Merged asb-tui PR #101 at 35c4ece19dfdb2ebde5bebef74de918ad321fa43 from
+  exact head e28fd7c27fcebcf967d2de917d4b70bc042f1a57; exact CI 34983800769 passed and post-merge
+  Repository quality 34984185016 passed. Trusted verification 34984185141 exposed a rustdoc link
+  defect; follow-up PR #102 exact head b779dcdc2585657c6f4cf517681573ac1b6d4764 fixed it, exact CI
+  34984797557 passed, and post-merge Trusted 34985066671 plus Repository quality 34985066638 passed.
+  The slice provides local atomic draft persistence only; it does not claim ASB acknowledgement or
+  startup readiness wiring.
