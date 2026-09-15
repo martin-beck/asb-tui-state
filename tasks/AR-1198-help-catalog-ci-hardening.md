@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T12:30:05+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Integrate the merged catalog into contextual rendering and complete UI_OWNERS/source-inventory/formal-model cross-checks; do not claim every widget covered until parity CI exists.",
+  "next_action": "Integrate document-backed contextual lookup into visible renderer/help overlay; then complete UI_OWNERS/source-inventory/formal-model parity checks without claiming full coverage early.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T12:15:05+00:00",
+  "updated_at": "2026-09-15T12:15:17+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -122,3 +122,9 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   expired claim to record PR #91 merge and post-merge verification.
 
 - 2026-09-15T12:15:05+00:00: Claimed by root-help-quality.
+
+- 2026-09-15T12:15:17+00:00: PR #91 merged through protected path: exact reviewed head
+  1c8d2844292d62ce7f88667d6c41302524a1b1c1, merge commit 2c224fedc62d714d9ac3bde13d0ea8ee10979557.
+  Exact-head Repository quality run 34967233705 passed after formal-model ownership and DCO fixes.
+  Post-merge Trusted main 34967545564 and Repository quality 34967545751 both passed for merge SHA.
+  Runtime catalog remains renderer-neutral; contextual rendering is still open.
