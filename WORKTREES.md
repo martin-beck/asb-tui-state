@@ -39,7 +39,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1187-idempotence` | `feature/ar1187-startup-idempotence` | `6d5818181077` | 0 | behind 66, ahead 2 |
 | `asb-tui-ar1188-wizard-render` | `feature/ar1188-wizard-render` | `1f737c49fb3e` | 0 | behind 66, ahead 7 |
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 66, ahead 10 |
+| `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 0, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 122, ahead 1 |
+| `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `caa06ce0083c` | 0 | behind 0, ahead 0 |
 | `asb-tui-complete-fix` | `DETACHED` | `878cbf7235b8` | 0 | behind 4, ahead 0 |
 | `asb-tui-contextual-footer` | `feature/contextual-footer` | `a7b553060327` | 0 | behind 86, ahead 0 |
 | `asb-tui-coordinator-operations` | `chore/coordinator-operations` | `52f7fe405d8f` | 0 | behind 122, ahead 1 |
