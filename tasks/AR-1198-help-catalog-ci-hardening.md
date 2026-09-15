@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T12:05:14+00:00",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted.",
-  "owner": "",
+  "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T09:14:20+00:00",
+  "updated_at": "2026-09-15T11:35:14+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -106,3 +106,5 @@ recorded. All actual UI application and rendering work remains in asb-tui.
 
 - 2026-09-15T09:14:20+00:00: Registered dependency-gated AR-1200; release claim without changing
   help task scope.
+
+- 2026-09-15T11:35:14+00:00: Claimed by root-help-quality.
