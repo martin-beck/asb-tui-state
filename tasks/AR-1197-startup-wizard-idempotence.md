@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "2026-09-15T15:29:38+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Local configuration persistence landed in asb-tui PR #101, with rustdoc/metadata repair PR #102.",
-  "owner": "root-startup-readiness",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T14:59:58+00:00",
+  "updated_at": "2026-09-15T15:39:58+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -160,3 +160,7 @@ wizard work are complete.
   34984797557 passed, and post-merge Trusted 34985066671 plus Repository quality 34985066638 passed.
   The slice provides local atomic draft persistence only; it does not claim ASB acknowledgement or
   startup readiness wiring.
+
+- 2026-09-15T15:39:58+00:00: Recovered expired claim formerly owned by root-startup-readiness.
+  Recovered expired claim after wizard catalog PR #103 merged; retain AR until readiness dependency
+  and persistence acknowledgement remain.
