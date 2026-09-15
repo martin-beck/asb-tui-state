@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T13:05:39+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Wire the foundational wizard into the main UI route/event/render loop with authoritative startup readiness and persistence; retain explicit coverage and cross-repo backend blockers.",
-  "owner": "root-help-quality",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T12:50:50+00:00",
+  "updated_at": "2026-09-15T13:13:27+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -140,3 +140,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   merged as 25d9cb4672e2ee707a6d04321ffdeb43733b47ed; exact-head CI 34970601563 passed, and
   post-merge Trusted main 34970832789 plus Repository quality 34970832748 both passed. Wizard
   remains foundational and is not yet wired into the main UI event/render loop.
+
+- 2026-09-15T13:13:27+00:00: Recovered expired claim formerly owned by root-help-quality. Recovered
+  expired claim before coordinator update; no active implementation mutation.
