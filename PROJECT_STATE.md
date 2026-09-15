@@ -31,8 +31,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34959377980 | `5bf74fa7ce19` | push | Trusted main verification | in_progress:- |
-| 34959377930 | `5bf74fa7ce19` | push | Repository quality | in_progress:- |
+| 34959377980 | `5bf74fa7ce19` | push | Trusted main verification | completed:success |
+| 34959377930 | `5bf74fa7ce19` | push | Repository quality | completed:success |
 | 34959193197 | `aec416d71b6f` | pull_request | Repository quality | completed:success |
 | 34958715516 | `2faaa21289fe` | push | Repository quality | completed:success |
 | 34958715501 | `2faaa21289fe` | push | Trusted main verification | completed:success |
