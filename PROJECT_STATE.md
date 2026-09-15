@@ -28,13 +28,14 @@ Generated from local Git and GitHub. Do not edit.
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
 | #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | CLEAN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
 | #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
-| #89 | `feature/ar1190-coverage-hardening@cb07a083b2e7` | `main` | BLOCKED | IN_PROGRESS: | test: restore trusted coverage for agent projections |
+| #89 | `feature/ar1190-coverage-hardening@708fd6be4a09` | `main` | CLEAN | COMPLETED:SUCCESS | test: restore trusted coverage for agent projections |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34951407055 | `cb07a083b2e7` | pull_request | Repository quality | in_progress:- |
+| 34951809492 | `708fd6be4a09` | pull_request | Repository quality | completed:success |
+| 34951407055 | `cb07a083b2e7` | pull_request | Repository quality | completed:success |
 | 34949817551 | `013b3814364a` | push | Trusted main verification | completed:failure |
 | 34949817480 | `013b3814364a` | push | Repository quality | completed:success |
 | 34948910240 | `74e05d8bb262` | pull_request | Repository quality | completed:success |
@@ -45,4 +46,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34944282065 | `db53f38610a5` | pull_request | Repository quality | completed:success |
 | 34944220656 | `451bbf95464c` | pull_request | Repository quality | completed:cancelled |
 | 34943916188 | `aeeeb45c05db` | pull_request | Repository quality | completed:success |
-| 34941833757 | `ebca5f15d8d2` | pull_request | Repository quality | completed:success |
