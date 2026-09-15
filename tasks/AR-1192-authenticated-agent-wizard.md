@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1192-authenticated-agent-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T16:40:46+00:00",
   "depends_on": [],
   "id": "AR-1192",
   "next_action": "Review external ASB AR-1190/1191/1186 dependencies, then promote and claim through handoffctl.",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T15:40:43+00:00",
+  "updated_at": "2026-09-15T15:40:46+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -24,3 +24,5 @@ published. All rendering and application behavior remains in asb-tui.
 
 - 2026-09-15T15:40:43+00:00: Promote for tracking merged renderer-neutral catalog integration and
   remaining authenticated runtime work.
+
+- 2026-09-15T15:40:46+00:00: Claimed by root.
