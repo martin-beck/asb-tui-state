@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T12:32:55+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion.",
+  "next_action": "Integrate the merged StartupController with authoritative ASB readiness transport, wizard route, persistence/restart behavior, and formal transitions; retain PR #90 post-merge evidence.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:44:50+00:00",
+  "updated_at": "2026-09-15T11:47:23+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -93,3 +93,11 @@ wizard work are complete.
   both success. PR #76 and #87 stack is now merged and green; AR remains in_progress because the
   pure classifier/decision layer still needs authoritative ASB readiness integration, exactly-once
   state behavior, and formal-model parity.
+
+- 2026-09-15T11:47:23+00:00: PR #90 exact head was rebased onto current asb-tui main and
+  independently re-reviewed. Final head 187282b8580dc7b02bb1a87a90d727b09451afa4 is SSH/DCO signed;
+  exact-head Repository quality run 34964685327 succeeded. Protected merge produced main SHA
+  6220592e561cbbf56a7920ed6d0a2a079c12ce29. Required post-merge Trusted main verification
+  34964955271 and Repository quality 34964955172 both succeeded. The merged controller is a bounded
+  renderer-neutral one-shot gate; authoritative ASB readiness I/O, wizard navigation, persistence,
+  and complete formal parity remain outstanding.
