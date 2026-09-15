@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:32:57+00:00",
+  "updated_at": "2026-09-15T10:33:13+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -56,3 +56,10 @@ wizard work are complete.
   --all-targets (103 library tests plus integration/binary suites), fmt, clippy, diff-check and
   clean merge passed. Fresh exact-head CI is now required before merging #76; stacked PR #87 remains
   unqualified until this dependency lands.
+
+- 2026-09-15T10:33:13+00:00: Second independent audit confirms exact head
+  250a9e5982456dc869f178d69964b6d6f154e54d is SSH/DCO signed and all local tests (103 unit plus
+  integration/binary suites), fmt, clippy --all-features and diff checks pass. Audit notes that this
+  is a pure readiness classifier; authoritative ASB response gating, formal model integration and
+  guarded configuration application remain acceptance work for stacked PR #87/AR-1197. Hosted
+  exact-head Repository quality is in progress.
