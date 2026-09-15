@@ -10,14 +10,17 @@
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T06:10:00+00:00",
+  "updated_at": "2026-09-15T15:40:43+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
 
 Implement the standalone UI integration in the linked plan after the ASB protocol dependencies are
 published. All rendering and application behavior remains in asb-tui.
+
+- 2026-09-15T15:40:43+00:00: Promote for tracking merged renderer-neutral catalog integration and
+  remaining authenticated runtime work.
