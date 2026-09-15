@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `2faaa21289fe4294df6f6d2c7dd104510647e107`
-- Local origin/main: `2f47148120c376d2720be7d01fd7869ec3699b24`
+- Local origin/main: `2faaa21289fe4294df6f6d2c7dd104510647e107`
 - Primary worktree head: `c5496676314766d55e8cd06455c555af8bf5eb5e`
 
 ## Open pull requests
@@ -25,13 +25,14 @@ Generated from local Git and GitHub. Do not edit.
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | BEHIND | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
-| #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `main` | DIRTY | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
+| #87 | `feature/ar1187-startup-idempotence@aec416d71b6f` | `main` | BLOCKED | IN_PROGRESS: | test(startup): make wizard auto-open decision explicit |
 | #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34959193197 | `aec416d71b6f` | pull_request | Repository quality | in_progress:- |
 | 34958715516 | `2faaa21289fe` | push | Repository quality | completed:success |
 | 34958715501 | `2faaa21289fe` | push | Trusted main verification | completed:success |
 | 34958511800 | `250a9e598245` | pull_request | Repository quality | completed:success |
@@ -43,4 +44,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34949817480 | `013b3814364a` | push | Repository quality | completed:success |
 | 34948910240 | `74e05d8bb262` | pull_request | Repository quality | completed:success |
 | 34948839161 | `46fa6f57540c` | pull_request | Repository quality | completed:success |
-| 34948174043 | `4106c6dec82d` | pull_request | Repository quality | completed:success |
