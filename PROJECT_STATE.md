@@ -10,16 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #1 | `dependabot/cargo/serde-1.0.229@6fd92e12844d` | `main` | UNKNOWN | COMPLETED:FAILURE | build(deps): bump serde from 1.0.220 to 1.0.229 |
-| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | UNKNOWN | COMPLETED:SUCCESS | AR-0002: require coordinated agent handoffs |
-| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
-| #59 | `feature/ar1014-live-wiring@2bd7a94df480` | `main` | UNKNOWN | COMPLETED:SUCCESS | feat(ui): wire measurement catalog into workspace selection |
-| #62 | `feature/ar1032-contextual-catalog@0ad1c69095fe` | `main` | UNKNOWN | COMPLETED:SUCCESS | feat: resolve contextual help by focused element |
-| #69 | `feature/ar1011-shell-integration@74973b3f235e` | `main` | UNKNOWN | COMPLETED:SUCCESS | feat: route interactive workspace through application shell |
-| #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | UNKNOWN | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
+| #1 | `dependabot/cargo/serde-1.0.229@6fd92e12844d` | `main` | BEHIND | COMPLETED:FAILURE | build(deps): bump serde from 1.0.220 to 1.0.229 |
+| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BEHIND | COMPLETED:SUCCESS | AR-0002: require coordinated agent handoffs |
+| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
+| #59 | `feature/ar1014-live-wiring@2bd7a94df480` | `main` | DIRTY | COMPLETED:SUCCESS | feat(ui): wire measurement catalog into workspace selection |
+| #62 | `feature/ar1032-contextual-catalog@0ad1c69095fe` | `main` | DIRTY | COMPLETED:SUCCESS | feat: resolve contextual help by focused element |
+| #69 | `feature/ar1011-shell-integration@74973b3f235e` | `main` | DIRTY | COMPLETED:SUCCESS | feat: route interactive workspace through application shell |
+| #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | BEHIND | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
-| #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | UNKNOWN | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
-| #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | UNKNOWN | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
+| #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | DIRTY | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
+| #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
 
 ## Recent workflows
 
