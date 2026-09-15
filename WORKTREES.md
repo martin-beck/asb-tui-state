@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `asb-tui-main` | `main` | `c54966763147` | 0 | behind 30, ahead 0 |
+| `asb-tui-main` | `main` | `d8668bd4021d` | 0 | behind 30, ahead 2 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 86, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 30, ahead 1 |
 | `asb-tui-ar1014` | `fix/ar1014-selection-bounds` | `ed8b648576ec` | 0 | behind 31, ahead 1 |
@@ -43,8 +43,12 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-coordinator-operations` | `chore/coordinator-operations` | `52f7fe405d8f` | 0 | behind 86, ahead 1 |
 | `asb-tui-coverage-hardening` | `feature/ar1190-coverage-hardening` | `cb07a083b2e7` | 0 | behind 20, ahead 0 |
 | `asb-tui-current-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 33, ahead 0 |
+| `asb-tui-help-fix` | `DETACHED` | `d092d02c8cff` | 0 | behind 30, ahead 2 |
+| `asb-tui-help-followup-publish` | `DETACHED` | `703ccceecf29` | 0 | behind 30, ahead 3 |
+| `asb-tui-help-followup-rebuild` | `DETACHED` | `2a47cd601322` | 0 | behind 0, ahead 2 |
 | `asb-tui-help-integration` | `feature/help-integration` | `511ae6e14ae0` | 0 | behind 52, ahead 0 |
 | `asb-tui-help-quality-followup` | `feature/ar1037-help-quality-followup` | `74e05d8bb262` | 0 | behind 30, ahead 2 |
+| `asb-tui-help-rebuild` | `DETACHED` | `2a47cd601322` | 0 | behind 0, ahead 2 |
 | `asb-tui-history-repair` | `DETACHED` | `29bebdc6865f` | 2 | behind 86, ahead 27 |
 | changed files | - | - | - | `src/lib.rs`, `tests/selection.rs` |
 | `asb-tui-integration` | `DETACHED` | `e39b15e5c4c3` | 3 | behind 58, ahead 0 |
@@ -53,9 +57,12 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-main-verify` | `fix/release-document-schema` | `2beb944be612` | 0 | behind 35, ahead 2 |
 | `asb-tui-pr47` | `rebased-pr47` | `a159fda0c118` | 0 | behind 32, ahead 1 |
 | `asb-tui-pr48` | `rebased-pr48` | `f366cc495e1e` | 0 | behind 33, ahead 2 |
+| `asb-tui-pr63-fix` | `DETACHED` | `8ccf7b93245e` | 0 | behind 0, ahead 0 |
 | `asb-tui-pr70-fix` | `DETACHED` | `18d5aec16251` | 0 | behind 9, ahead 0 |
 | `asb-tui-pr71-fix` | `DETACHED` | `da00a3fb7013` | 0 | behind 4, ahead 0 |
 | `asb-tui-pr74-fix` | `DETACHED` | `58afdbc18466` | 0 | behind 1, ahead 0 |
+| `asb-tui-pr88-fix` | `DETACHED` | `f5272ac0db84` | 0 | behind 0, ahead 1 |
+| `asb-tui-pr88-publish` | `DETACHED` | `8bb60c8f5416` | 0 | behind 30, ahead 1 |
 | `asb-tui-release-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 33, ahead 0 |
 | `asb-tui-release-verifier` | `feature/release-candidate-verifier` | `2207eac84ab8` | 0 | behind 42, ahead 0 |
 | `asb-tui-standalone-shell-candidate` | `feature/standalone-asb-tui-shell` | `1121c175548e` | 0 | behind 86, ahead 2 |
