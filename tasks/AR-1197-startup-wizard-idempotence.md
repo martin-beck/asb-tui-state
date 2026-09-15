@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:33:13+00:00",
+  "updated_at": "2026-09-15T10:35:13+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -63,3 +63,9 @@ wizard work are complete.
   is a pure readiness classifier; authoritative ASB response gating, formal model integration and
   guarded configuration application remain acceptance work for stacked PR #87/AR-1197. Hosted
   exact-head Repository quality is in progress.
+
+- 2026-09-15T10:35:13+00:00: Dependency PR #76 merged at immutable asb-tui main SHA
+  2faaa21289fe4294df6f6d2c7dd104510647e107 after exact-head CI and independent review. Post-merge
+  runs queued: Repository quality 34958715516 and Trusted main verification 34958715501. Keep AR
+  in_progress until both terminal; stacked PR #87 remains gated on this dependency and on
+  formal/authoritative integration.
