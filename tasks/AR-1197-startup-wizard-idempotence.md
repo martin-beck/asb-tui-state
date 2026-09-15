@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:40:29+00:00",
+  "updated_at": "2026-09-15T10:42:41+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -81,3 +81,9 @@ wizard work are complete.
   suites), fmt, clippy, diff-check and clean merge pass. Candidate remains pure startup decision
   logic; authoritative ASB readiness integration, exactly-once state behavior and formal-model
   parity remain acceptance requirements. Fresh hosted exact-head CI is now running.
+
+- 2026-09-15T10:42:41+00:00: PR #87 merged at immutable asb-tui main SHA
+  5bf74fa7ce1944b0611f9a03c7f3367d0ee70053 after fresh exact-head CI success and independent review.
+  Post-merge runs queued: Repository quality 34959377930 and Trusted main verification 34959377980.
+  Keep AR in_progress until both terminal; authoritative ASB response integration and formal-model
+  parity remain separate acceptance work.
