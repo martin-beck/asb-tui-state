@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `2f47148120c376d2720be7d01fd7869ec3699b24`
-- Local origin/main: `013b3814364aebb330abbc12b3570d88e1477d6e`
+- Local origin/main: `2f47148120c376d2720be7d01fd7869ec3699b24`
 - Primary worktree head: `c5496676314766d55e8cd06455c555af8bf5eb5e`
 
 ## Open pull requests
@@ -21,18 +21,19 @@ Generated from local Git and GitHub. Do not edit.
 | #70 | `feature/ar1182-formal-ui@b512a833fe8d` | `main` | BEHIND | COMPLETED:SUCCESS | feat(formal): add executable UI state model foundation |
 | #71 | `feature/ar1183-formal-ci@cd539f6222b3` | `main` | BEHIND | COMPLETED:SUCCESS | ci: enforce formal UI model ownership (AR-1183) |
 | #74 | `feature/ar1184-executable-transitions@1cd6f2f57da7` | `main` | BEHIND | COMPLETED:SUCCESS | feat: execute formal TUI transitions |
-| #76 | `fix/ar1187-startup-readiness@1450df452f06` | `main` | BEHIND | COMPLETED:SUCCESS | feat(startup): classify frontend readiness and routes |
+| #76 | `fix/ar1187-startup-readiness@250a9e598245` | `main` | BLOCKED | IN_PROGRESS: | feat(startup): classify frontend readiness and routes |
 | #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | BEHIND | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | BEHIND | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
-| #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | CLEAN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
+| #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | UNKNOWN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
 | #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34958511800 | `250a9e598245` | pull_request | Repository quality | in_progress:- |
 | 34955369078 | `2f47148120c3` | push | Trusted main verification | completed:success |
 | 34955369043 | `2f47148120c3` | push | Repository quality | completed:success |
 | 34951809492 | `708fd6be4a09` | pull_request | Repository quality | completed:success |
@@ -44,4 +45,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34948174043 | `4106c6dec82d` | pull_request | Repository quality | completed:success |
 | 34946498162 | `6d5818181077` | pull_request | Repository quality | completed:success |
 | 34945303291 | `d2c931bea72e` | pull_request | Repository quality | completed:success |
-| 34944282065 | `db53f38610a5` | pull_request | Repository quality | completed:success |
