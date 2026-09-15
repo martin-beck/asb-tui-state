@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T15:29:41+00:00",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers.",
-  "owner": "",
+  "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T14:59:32+00:00",
+  "updated_at": "2026-09-15T14:59:41+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -174,3 +174,5 @@ recorded. All actual UI application and rendering work remains in asb-tui.
 
 - 2026-09-15T14:59:32+00:00: Recovered expired claim formerly owned by root-help-quality. Recovering
   expired claim before reconciling post-merge configuration persistence evidence.
+
+- 2026-09-15T14:59:41+00:00: Claimed by root-help-quality.
