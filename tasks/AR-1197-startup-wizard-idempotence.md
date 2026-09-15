@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T13:19:03+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Integrate the merged StartupController with authoritative ASB readiness transport, wizard route, persistence/restart behavior, and formal transitions; retain PR #90 post-merge evidence.",
+  "next_action": "Integrate authoritative ASB readiness I/O and persistence/restart behavior into the now-wired wizard; qualify live endpoint only after ASB AR-1199 dependencies are complete.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T13:04:03+00:00",
+  "updated_at": "2026-09-15T13:04:12+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -107,3 +107,9 @@ wizard work are complete.
   integration work.
 
 - 2026-09-15T13:04:03+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T13:04:12+00:00: PR #94 merged through protected path: exact reviewed head
+  066d60329a1cb5eda863140dbb513ce0f9ea16dd, merge commit d9a94c37006cdcd9b8629c37de273f80fbf8ef91.
+  Exact-head Repository quality run 34972109884 passed. Post-merge Trusted main 34972405476 and
+  Repository quality 34972405506 both passed for merge SHA. WorkspaceState now routes/render-handles
+  the wizard, but authoritative readiness caller, persistence, and live ASB endpoint remain open.
