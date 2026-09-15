@@ -10,8 +10,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | UNKNOWN | COMPLETED:SUCCESS | AR-0002: require coordinated agent handoffs |
-| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
+| #24 | `chore/coordinator-operations@52f7fe405d8f` | `main` | BEHIND | COMPLETED:SUCCESS | AR-0002: require coordinated agent handoffs |
+| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
 
 ## Recent workflows
 
