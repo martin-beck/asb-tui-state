@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T08:25:00+00:00",
+  "updated_at": "2026-09-15T08:31:40+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -39,3 +39,6 @@ TestBackend/model/property evidence for configured, unconfigured, incomplete, un
 malformed, stale, unauthorized, cancel, completion, and manual reconfiguration paths. Do not
 promote or merge until exact-head review, hosted CI, SSH signature/DCO checks, and the dependent
 wizard work are complete.
+
+- 2026-09-15T08:31:40+00:00: Detailed startup wizard idempotence AR is recorded with exact PR #87
+  evidence; begin independent review.
