@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `asb-tui-main` | `main` | `d8668bd4021d` | 2 | behind 83, ahead 2 |
-| changed files | - | - | - | `tools/test-ui-state-model.py`, `tools/validate-ui-state-model.py` |
+| `asb-tui-main` | `main` | `d8668bd4021d` | 0 | behind 83, ahead 2 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 139, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 83, ahead 1 |
 | `asb-tui-ar1014` | `fix/ar1014-selection-bounds` | `ed8b648576ec` | 0 | behind 84, ahead 1 |
@@ -50,6 +49,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-coverage-hardening` | `feature/ar1190-coverage-hardening` | `cb07a083b2e7` | 0 | behind 73, ahead 0 |
 | `asb-tui-current` | `DETACHED` | `b0e6d4fc1c9b` | 0 | behind 10, ahead 0 |
 | `asb-tui-current-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 86, ahead 0 |
+| `asb-tui-docs` | `docs/ar-doc-consistency` | `a4e141642fb6` | 0 | behind 0, ahead 1 |
 | `asb-tui-help-fix` | `DETACHED` | `d092d02c8cff` | 0 | behind 83, ahead 2 |
 | `asb-tui-help-followup-publish` | `DETACHED` | `703ccceecf29` | 0 | behind 83, ahead 3 |
 | `asb-tui-help-followup-rebuild` | `DETACHED` | `2a47cd601322` | 0 | behind 51, ahead 0 |
