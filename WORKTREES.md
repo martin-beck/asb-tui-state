@@ -75,8 +75,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-release-verifier` | `feature/release-candidate-verifier` | `2207eac84ab8` | 0 | behind 90, ahead 0 |
 | `asb-tui-resize-rebase` | `DETACHED` | `bf78f3007fc6` | 0 | behind 41, ahead 0 |
 | `asb-tui-standalone-shell-candidate` | `feature/standalone-asb-tui-shell` | `1121c175548e` | 0 | behind 134, ahead 2 |
+| `asb-tui-startup-formal` | `feat/ar1197-formal-startup-auto-open` | `b46fe3cef2f3` | 0 | behind 0, ahead 1 |
 | `asb-tui-startup-rebase` | `DETACHED` | `187282b8580d` | 0 | behind 43, ahead 0 |
 | `asb-tui-tmux-startup-readiness-recovery` | `fix/tmux-startup-readiness-recovery-20260914` | `58cf344a6bc5` | 0 | behind 134, ahead 1 |
 | `asb-tui-verifier-hardening` | `feature/release-verifier-hardening` | `6f0ab48641f4` | 0 | behind 88, ahead 0 |
 | `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `2dbe6d76fcab` | 0 | behind 1, ahead 0 |
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 40, ahead 0 |
+| `asb-tui-audit` | `DETACHED` | `249591fef856` | 0 | behind 0, ahead 0 |
