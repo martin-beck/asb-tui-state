@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T12:05:14+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted.",
+  "next_action": "Integrate the merged catalog into contextual rendering and complete UI_OWNERS/source-inventory/formal-model cross-checks; do not claim every widget covered until parity CI exists.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T11:35:14+00:00",
+  "updated_at": "2026-09-15T11:35:29+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -108,3 +108,12 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   help task scope.
 
 - 2026-09-15T11:35:14+00:00: Claimed by root-help-quality.
+
+- 2026-09-15T11:35:29+00:00: Corrected help catalog series was rebuilt directly on current asb-tui
+  main 8ccf7b93245edbc3477dc4cd681045c428b23cc2. Independent review approved exact candidate
+  2a47cd6013226ab33f775c6560179cf17af74ffc; fresh hosted Repository quality run 34963707851
+  succeeded. Protected merge of PR #63 produced main 7900471d67d2d24e62a04ff82680aacfb2cfd878;
+  post-merge Trusted main 34963906708 and Repository quality 34963906785 both succeeded. The stacked
+  historical PR #88 was closed as superseded. Fail-closed action registry discovery and 7-test
+  regression coverage are included. Remaining work: actual contextual renderer integration and
+  bidirectional UI inventory/formal/owner coverage.
