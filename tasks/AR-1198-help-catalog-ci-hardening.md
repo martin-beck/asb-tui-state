@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T14:30:27+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers.",
-  "owner": "root-help-quality",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T14:25:23+00:00",
+  "updated_at": "2026-09-15T14:59:32+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -171,3 +171,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   34981184340 plus Repository quality 34981184372 passed. Wizard help now resolves document-backed
   active-step text via ?/h; formal model, generated artifact, focused CI test, and inventory
   metadata are synchronized.
+
+- 2026-09-15T14:59:32+00:00: Recovered expired claim formerly owned by root-help-quality. Recovering
+  expired claim before reconciling post-merge configuration persistence evidence.
