@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**9 ARs tracked** across 2 active status categories.
+**14 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 0 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -43,11 +43,23 @@ flowchart LR
         AR_1200["AR-1200 - Planned"]:::status_planned
         AR_1201["AR-1201 - Planned"]:::status_planned
         AR_1202["AR-1202 - Planned"]:::status_planned
+        AR_1220["AR-1220 - Planned"]:::status_planned
+        AR_1221["AR-1221 - Planned"]:::status_planned
+        AR_1222["AR-1222 - Planned"]:::status_planned
+        AR_1223["AR-1223 - Planned"]:::status_planned
+        AR_1224["AR-1224 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1195 --> AR_1200
     AR_1197 --> AR_1201
     AR_1201 --> AR_1202
+    AR_1220 --> AR_1221
+    AR_1220 --> AR_1224
+    AR_1221 --> AR_1222
+    AR_1221 --> AR_1224
+    AR_1222 --> AR_1223
+    AR_1222 --> AR_1224
+    AR_1223 --> AR_1224
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -71,6 +83,11 @@ flowchart LR
 | [AR-1200](tasks/AR-1200-asb-router-client.md) | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) | None |
 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md) | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md) | [AR-1202](tasks/AR-1202-live-resize-qualification.md) |
 | [AR-1202](tasks/AR-1202-live-resize-qualification.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md) | None |
+| [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md) | None | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md), [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
+| [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md) | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
+| [AR-1222](tasks/AR-1222-tui-run-shared-config.md) | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md) | [AR-1223](tasks/AR-1223-tui-replay-comparison.md), [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
+| [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md) | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
+| [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md), [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md), [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | None |
 
 ## Complete AR inventory
 
@@ -83,7 +100,7 @@ flowchart LR
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted. |
 
-### Planned (5)
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -92,3 +109,8 @@ flowchart LR
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Unclaimed | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. |
 | P0 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md): Executable formal UI model and source parity | Unclaimed | Make every TUI source element and transition mechanically checkable against the formal UI model. | Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui. |
 | P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
+| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Unclaimed | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. |
+| P0 | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md): asb-tui benchmark-readiness tutorial | Unclaimed | Teach users to inspect TUI benchmark readiness without performing a run. | Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness. |
+| P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | Unclaimed | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Implement syntax-checked TUI tutorials for one benchmark run and extending agents with shared configuration. |
+| P0 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md): asb-tui record/replay and comparison tutorials | Unclaimed | Teach TUI users to replay LLM responses offline and compare multiple agents fairly. | Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison. |
+| P0 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md): Cross-repository tutorial syntax and freshness gate | Unclaimed | Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI. | Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined. |
