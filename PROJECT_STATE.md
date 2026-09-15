@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `b0e6d4fc1c9b10c120f111f63abcacf6edf953ee`
-- Local origin/main: `b0e6d4fc1c9b10c120f111f63abcacf6edf953ee`
+- Product remote main: `fb1da8ea7a9e812ee4442c704ab04b338d36e5e8`
+- Local origin/main: `fb1da8ea7a9e812ee4442c704ab04b338d36e5e8`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
@@ -19,11 +19,16 @@ Generated from local Git and GitHub. Do not edit.
 | #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | DIRTY | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | DIRTY | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
+| #103 | `feat/ar1192-wizard-catalog@f0ea6ee1da1d` | `main` | DIRTY | COMPLETED:SUCCESS | feat(wizard): integrate bounded catalog choices |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34986502896 | `fb1da8ea7a9e` | push | Trusted main verification | completed:success |
+| 34986502824 | `fb1da8ea7a9e` | push | Repository quality | completed:success |
+| 34986252943 | `c67bea00b602` | pull_request | Repository quality | completed:success |
+| 34985926198 | `f0ea6ee1da1d` | pull_request | Repository quality | completed:success |
 | 34985066671 | `b0e6d4fc1c9b` | push | Trusted main verification | completed:success |
 | 34985066638 | `b0e6d4fc1c9b` | push | Repository quality | completed:success |
 | 34984797557 | `b779dcdc2585` | pull_request | Repository quality | completed:success |
@@ -32,7 +37,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34984185016 | `35c4ece19dfd` | push | Repository quality | completed:success |
 | 34983800769 | `e28fd7c27fce` | pull_request | Repository quality | completed:success |
 | 34983772705 | `361df621b3e4` | pull_request | Repository quality | completed:cancelled |
-| 34983559505 | `5d1b2892022c` | pull_request | Repository quality | completed:failure |
-| 34982460050 | `9f2115daece4` | push | Repository quality | completed:success |
-| 34982460000 | `9f2115daece4` | push | Trusted main verification | completed:success |
-| 34982066488 | `4faccc047551` | pull_request | Repository quality | completed:success |
