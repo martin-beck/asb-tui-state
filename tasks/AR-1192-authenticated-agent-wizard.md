@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T17:13:38+00:00",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Implement authenticated catalog/lifecycle acquisition and installation wiring once ASB protocol dependencies AR-1190/1191/1186 are published; keep renderer/application work in asb-tui.",
+  "next_action": "Implement authenticated catalog/lifecycle acquisition and installation wiring after ASB AR-1199 publishes the verified authenticated router; ASB PR #171 currently has a deterministic source-identity CI failure and is not a usable dependency. Keep all renderer/application work in asb-tui.",
   "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T16:13:38+00:00",
+  "updated_at": "2026-09-15T16:14:47+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -33,3 +33,9 @@ published. All rendering and application behavior remains in asb-tui.
   open.
 
 - 2026-09-15T16:13:38+00:00: Heartbeat by root.
+
+- 2026-09-15T16:14:47+00:00: 2026-09-15 live dependency audit: asb-tui main 9ab1201 and post-merge
+  runs 34991922793/34991922837 are green. ASB catalog dependencies AR-1190/1191 are done, but router
+  contract AR-1199 is not published; ASB PR #171 head 200edbb has failed Platform evidence run
+  34945266711 (native_evidence.py: source identity is not immutable), so authenticated lifecycle
+  integration remains gated.
