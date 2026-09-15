@@ -1660,6 +1660,29 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.mutate(args, "recover-expired")
 
+    def test_recover_expired_can_drain_multiple_expired_claims(self) -> None:
+        first = self.make_task(
+            task_id="AR-0001",
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2000-01-01T00:00:00+00:00",
+        )
+        second = self.make_task(
+            task_id="AR-0002",
+            status="in_progress",
+            owner="worker-b",
+            claim_expires="2000-01-01T00:00:00+00:00",
+        )
+        first_args = argparse.Namespace(task="AR-0001", expected_revision=1, note="drain first")
+        second_args = argparse.Namespace(task="AR-0002", expected_revision=1, note="drain second")
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(first_args, "recover-expired")
+            CORE.mutate(second_args, "recover-expired")
+        first_meta, _ = CORE.read_task(first)
+        second_meta, _ = CORE.read_task(second)
+        self.assertEqual(first_meta["status"], "open")
+        self.assertEqual(second_meta["status"], "open")
+
     def test_run_preflight_and_durable_journal_precede_reconcile(self) -> None:
         self.make_task(
             status="in_progress",

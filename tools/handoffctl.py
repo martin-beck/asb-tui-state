@@ -1291,6 +1291,12 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
             for target, content in views.items():
                 atomic(target, content)
             errors = validate(live=False)
+            if kind == "recover-expired":
+                # Recovery must be able to drain multiple expired leases.  A
+                # separate expired claim is a pre-existing condition, not a
+                # defect introduced by this atomic transition; retain every
+                # other validation error fail-closed.
+                errors = [error for error in errors if not error.endswith(": expired claim")]
             if errors:
                 raise RuntimeError("\n".join(errors))
             committed = commit(f"chore(state): {kind} {args.task}", [path, *views])
