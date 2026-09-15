@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T12:30:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Integrate document-backed contextual lookup into visible renderer/help overlay; then complete UI_OWNERS/source-inventory/formal-model parity checks without claiming full coverage early.",
-  "owner": "root-help-quality",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T12:15:17+00:00",
+  "updated_at": "2026-09-15T12:50:31+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -128,3 +128,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   Exact-head Repository quality run 34967233705 passed after formal-model ownership and DCO fixes.
   Post-merge Trusted main 34967545564 and Repository quality 34967545751 both passed for merge SHA.
   Runtime catalog remains renderer-neutral; contextual rendering is still open.
+
+- 2026-09-15T12:50:31+00:00: Recovered expired claim formerly owned by root-help-quality. Recovered
+  expired help claim to record PR #92 merge, trusted-main failure, and PR #93 remediation.
