@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify formal UI ownership CI after merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Formal ownership CI post-merge assurance",
-  "updated_at": "2026-09-15T11:03:23+00:00",
+  "updated_at": "2026-09-15T11:03:25+00:00",
   "worktree_key": "asb-tui-formal-ownership-ci-post-merge"
 }
 ---
@@ -26,3 +26,7 @@ main workflows are being watched here. This gate does not claim full runtime/mod
 remains authoritative for that work.
 
 - 2026-09-15T11:03:23+00:00: Claimed by root-formal-merge-watch.
+
+- 2026-09-15T11:03:25+00:00: PR #71 merged at d29ba818f21abd626efc85939f582edba685ac49. Post-merge
+  Repository quality run 34961162881 and Trusted main verification run 34961162911 are in progress;
+  retain task open until both terminal.
