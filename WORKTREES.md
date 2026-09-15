@@ -82,3 +82,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `2dbe6d76fcab` | 0 | behind 6, ahead 0 |
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 45, ahead 0 |
 | `asb-tui-audit` | `feat/ar1195-catalog-digest` | `ae2780e8923e` | 0 | behind 1, ahead 0 |
+| `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 76, ahead 0 |
