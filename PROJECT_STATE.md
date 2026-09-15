@@ -29,8 +29,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34961162911 | `d29ba818f21a` | push | Trusted main verification | in_progress:- |
-| 34961162881 | `d29ba818f21a` | push | Repository quality | in_progress:- |
+| 34961162911 | `d29ba818f21a` | push | Trusted main verification | completed:success |
+| 34961162881 | `d29ba818f21a` | push | Repository quality | completed:success |
 | 34960935025 | `da00a3fb7013` | pull_request | Repository quality | completed:success |
 | 34960632372 | `e88e6ddbc611` | pull_request | Repository quality | completed:failure |
 | 34960219543 | `e431d429f8ad` | push | Trusted main verification | completed:success |
