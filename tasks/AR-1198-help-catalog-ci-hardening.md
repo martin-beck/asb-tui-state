@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:30:27+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Complete cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS after PR #96; retain full startup-readiness/backend blockers in AR-1197 and AR-1227.",
+  "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; keep startup readiness/persistence gated on ASB AR-1227 and AR-1199.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T13:30:40+00:00",
+  "updated_at": "2026-09-15T13:45:29+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -152,3 +152,10 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   Merged at c8d767e7579f39a13705b97ad31299ca33c2ef3d. Post-merge Trusted 34975160345 and Repository
   quality 34975160356 both succeeded on exact main SHA. Existing help catalog and wizard remain
   intact.
+
+- 2026-09-15T13:45:29+00:00: PR #82 exact head aec7a878e9ea032342b239bbd8f5c77627fe039d passed
+  exact-head hosted quality 34976438500 with SSH verification and correctly formatted DCO. It merged
+  at 726057316d0149ddce8c957c05a5c543547ec593. Post-merge Trusted main 34976740064 and Repository
+  quality 34976740136 both succeeded for that exact main SHA. Change hardens fail-closed
+  configuration persistence and records its formal model/inventory ownership; no TUI rendering or
+  ASB backend code.
