@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T12:05:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Integrate the merged catalog into contextual rendering and complete UI_OWNERS/source-inventory/formal-model cross-checks; do not claim every widget covered until parity CI exists.",
-  "owner": "root-help-quality",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T11:35:29+00:00",
+  "updated_at": "2026-09-15T12:14:53+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -117,3 +117,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   historical PR #88 was closed as superseded. Fail-closed action registry discovery and 7-test
   regression coverage are included. Remaining work: actual contextual renderer integration and
   bidirectional UI inventory/formal/owner coverage.
+
+- 2026-09-15T12:14:53+00:00: Recovered expired claim formerly owned by root-help-quality. Recovered
+  expired claim to record PR #91 merge and post-merge verification.
