@@ -43,6 +43,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-coordinator-operations` | `chore/coordinator-operations` | `52f7fe405d8f` | 0 | behind 56, ahead 1 |
 | `asb-tui-current-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 3, ahead 0 |
 | `asb-tui-help-integration` | `feature/help-integration` | `511ae6e14ae0` | 0 | behind 22, ahead 0 |
+| `asb-tui-help-quality-followup` | `feature/ar1037-help-quality-followup` | `74e05d8bb262` | 0 | behind 0, ahead 2 |
 | `asb-tui-history-repair` | `DETACHED` | `29bebdc6865f` | 2 | behind 56, ahead 27 |
 | changed files | - | - | - | `src/lib.rs`, `tests/selection.rs` |
 | `asb-tui-integration` | `DETACHED` | `e39b15e5c4c3` | 3 | behind 28, ahead 0 |

@@ -28,13 +28,17 @@ Generated from local Git and GitHub. Do not edit.
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | CLEAN | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
 | #84 | `feature/ar1192-agent-catalog@f51d57256d9d` | `main` | CLEAN | COMPLETED:SUCCESS | feat: add authenticated agent catalog projection |
 | #85 | `feature/ar1191-agent-lifecycle@ebca5f15d8d2` | `feature/ar1192-agent-catalog` | CLEAN | COMPLETED:SUCCESS | feat: model authenticated agent lifecycle events |
-| #86 | `feature/ar1190-1191-asb-wire-adapter@d2c931bea72e` | `feature/ar1191-agent-lifecycle` | CLEAN | COMPLETED:SUCCESS | fix: align agent adapters with ASB v1.4/v1.5 wire contracts |
+| #86 | `feature/ar1190-1191-asb-wire-adapter@46fa6f57540c` | `feature/ar1191-agent-lifecycle` | CLEAN | COMPLETED:SUCCESS | fix: align agent adapters with ASB v1.4/v1.5 wire contracts |
 | #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | CLEAN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
+| #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34948910240 | `74e05d8bb262` | pull_request | Repository quality | completed:success |
+| 34948839161 | `46fa6f57540c` | pull_request | Repository quality | completed:success |
+| 34948174043 | `4106c6dec82d` | pull_request | Repository quality | completed:success |
 | 34946498162 | `6d5818181077` | pull_request | Repository quality | completed:success |
 | 34945303291 | `d2c931bea72e` | pull_request | Repository quality | completed:success |
 | 34944282065 | `db53f38610a5` | pull_request | Repository quality | completed:success |
@@ -44,6 +48,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34941596727 | `21d27972d4b8` | pull_request | Repository quality | completed:failure |
 | 34940813783 | `f51d57256d9d` | pull_request | Repository quality | completed:success |
 | 34940504846 | `f8dc9aabb78b` | pull_request | Repository quality | completed:failure |
-| 34899725669 | `00aa0d757103` | pull_request | Repository quality | completed:success |
-| 34899478694 | `da292f9f3983` | pull_request | Repository quality | completed:failure |
-| 34898688557 | `704f1f855611` | pull_request | Repository quality | completed:success |
