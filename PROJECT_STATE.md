@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `5bf74fa7ce1944b0611f9a03c7f3367d0ee70053`
-- Local origin/main: `2faaa21289fe4294df6f6d2c7dd104510647e107`
+- Local origin/main: `5bf74fa7ce1944b0611f9a03c7f3367d0ee70053`
 - Primary worktree head: `c5496676314766d55e8cd06455c555af8bf5eb5e`
 
 ## Open pull requests
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #63 | `feature/ar1037-help-ci@ca1efb2e46ee` | `main` | BEHIND | COMPLETED:SUCCESS | ci(help): enforce meaningful UI help coverage |
 | #65 | `feature/ar1038-live-resize@b2db201a4187` | `main` | BEHIND | COMPLETED:SUCCESS | fix(ui): preserve workspace state across terminal resize |
 | #69 | `feature/ar1011-shell-integration@74973b3f235e` | `main` | BEHIND | COMPLETED:SUCCESS | feat: route interactive workspace through application shell |
-| #70 | `feature/ar1182-formal-ui@b512a833fe8d` | `main` | BEHIND | COMPLETED:SUCCESS | feat(formal): add executable UI state model foundation |
+| #70 | `feature/ar1182-formal-ui@18d5aec16251` | `main` | BLOCKED | IN_PROGRESS: | feat(formal): add executable UI state model foundation |
 | #71 | `feature/ar1183-formal-ci@cd539f6222b3` | `main` | BEHIND | COMPLETED:SUCCESS | ci: enforce formal UI model ownership (AR-1183) |
 | #74 | `feature/ar1184-executable-transitions@1cd6f2f57da7` | `main` | BEHIND | COMPLETED:SUCCESS | feat: execute formal TUI transitions |
 | #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | BEHIND | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
@@ -31,6 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34960028640 | `18d5aec16251` | pull_request | Repository quality | in_progress:- |
 | 34959377980 | `5bf74fa7ce19` | push | Trusted main verification | completed:success |
 | 34959377930 | `5bf74fa7ce19` | push | Repository quality | completed:success |
 | 34959193197 | `aec416d71b6f` | pull_request | Repository quality | completed:success |
@@ -42,4 +43,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34951809492 | `708fd6be4a09` | pull_request | Repository quality | completed:success |
 | 34951407055 | `cb07a083b2e7` | pull_request | Repository quality | completed:success |
 | 34949817551 | `013b3814364a` | push | Trusted main verification | completed:failure |
-| 34949817480 | `013b3814364a` | push | Repository quality | completed:success |
