@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `c8d767e7579f39a13705b97ad31299ca33c2ef3d`
-- Local origin/main: `66c0ad168373169ff59dd094c8619b6aaccbcc3b`
+- Product remote main: `726057316d0149ddce8c957c05a5c543547ec593`
+- Local origin/main: `c8d767e7579f39a13705b97ad31299ca33c2ef3d`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
@@ -19,12 +19,16 @@ Generated from local Git and GitHub. Do not edit.
 | #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | DIRTY | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | DIRTY | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
-| #82 | `feature/ar1034-configuration@f7c83af59b90` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34976740136 | `726057316d01` | push | Repository quality | completed:success |
+| 34976740064 | `726057316d01` | push | Trusted main verification | completed:success |
+| 34976438500 | `aec7a878e9ea` | pull_request | Repository quality | completed:success |
+| 34976168122 | `be19a0495414` | pull_request | Repository quality | completed:failure |
+| 34975655333 | `911c3eeb31ac` | pull_request | Repository quality | completed:failure |
 | 34975160356 | `c8d767e7579f` | push | Repository quality | completed:success |
 | 34975160345 | `c8d767e7579f` | push | Trusted main verification | completed:success |
 | 34974970464 | `f7c83af59b90` | pull_request | Repository quality | completed:success |
@@ -32,8 +36,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34974585393 | `8bace77a3d2d` | pull_request | Repository quality | completed:failure |
 | 34973217098 | `66c0ad168373` | push | Trusted main verification | completed:success |
 | 34973217049 | `66c0ad168373` | push | Repository quality | completed:success |
-| 34972955082 | `38d8aaddbd05` | pull_request | Repository quality | completed:success |
-| 34972405506 | `d9a94c37006c` | push | Repository quality | completed:success |
-| 34972405476 | `d9a94c37006c` | push | Trusted main verification | completed:success |
-| 34972109884 | `066d60329a1c` | pull_request | Repository quality | completed:success |
-| 34971793644 | `2afcedfb7a3f` | pull_request | Repository quality | completed:failure |
