@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:30:27+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Wire the foundational wizard into the main UI route/event/render loop with authoritative startup readiness and persistence; retain explicit coverage and cross-repo backend blockers.",
+  "next_action": "Complete cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS after PR #96; retain full startup-readiness/backend blockers in AR-1197 and AR-1227.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T13:30:27+00:00",
+  "updated_at": "2026-09-15T13:30:40+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -145,3 +145,10 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   expired claim before coordinator update; no active implementation mutation.
 
 - 2026-09-15T13:30:27+00:00: Claimed by root-help-quality.
+
+- 2026-09-15T13:30:40+00:00: PR #96 rebuilt stale PR #81 as a narrow current-main ownership/CI
+  synchronization change. Exact base 66c0ad168373169ff59dd094c8619b6aaccbcc3b, exact head
+  3df52e118cce6df2c2b163a9d348fb383c37d26c; SSH/DCO verified; hosted quality 34974897999 passed.
+  Merged at c8d767e7579f39a13705b97ad31299ca33c2ef3d. Post-merge Trusted 34975160345 and Repository
+  quality 34975160356 both succeeded on exact main SHA. Existing help catalog and wizard remain
+  intact.
