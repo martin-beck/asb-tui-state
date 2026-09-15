@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:37:19+00:00",
+  "updated_at": "2026-09-15T10:40:29+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -74,3 +74,10 @@ wizard work are complete.
   quality 34958715516 and Trusted main verification 34958715501 both success for main SHA
   2faaa21289fe4294df6f6d2c7dd104510647e107. AR remains in_progress because stacked PR #87 and
   authoritative/formal wizard integration are still outstanding.
+
+- 2026-09-15T10:40:29+00:00: Stacked PR #87 was independently reviewed and guarded-force-updated
+  from 6d58181810774d48102eb32bb370a21b101f611f to signed current-main head
+  aec416d71b6f1c34b5c45f28cc2d0eadfbca1890. Full local tests (106 unit plus integration/binary
+  suites), fmt, clippy, diff-check and clean merge pass. Candidate remains pure startup decision
+  logic; authoritative ASB readiness integration, exactly-once state behavior and formal-model
+  parity remain acceptance requirements. Fresh hosted exact-head CI is now running.
