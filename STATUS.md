@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**5 ARs tracked** across 3 active status categories.
+**6 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
@@ -36,6 +36,7 @@ flowchart LR
         AR_1192["AR-1192 - Planned"]:::status_planned
         AR_1195["AR-1195 - Planned"]:::status_planned
         AR_1197["AR-1197 - In progress"]:::status_in_progress
+        AR_1198["AR-1198 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -57,6 +58,7 @@ flowchart LR
 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) |
 | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None |
 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md) | None | None |
+| [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md) | None | None |
 
 ## Complete AR inventory
 
@@ -66,12 +68,13 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-ar1197-review | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator may review draft PR 25 at exact head 2bc987ee0a9ad9b18807989501aca3fe87cab8be and, without worker-side merge, promote it only under repository policy. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
+| P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Independently review PR #88 at exact head, then verify it against the complete UI element/action inventory and the formal model before promotion. |
 
 ### Planned (2)
 
