@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:42:41+00:00",
+  "updated_at": "2026-09-15T10:44:50+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -87,3 +87,9 @@ wizard work are complete.
   Post-merge runs queued: Repository quality 34959377930 and Trusted main verification 34959377980.
   Keep AR in_progress until both terminal; authoritative ASB response integration and formal-model
   parity remain separate acceptance work.
+
+- 2026-09-15T10:44:50+00:00: Post-merge assurance for 5bf74fa7ce1944b0611f9a03c7f3367d0ee70053
+  completed successfully: Trusted main verification 34959377980 and Repository quality 34959377930
+  both success. PR #76 and #87 stack is now merged and green; AR remains in_progress because the
+  pure classifier/decision layer still needs authoritative ASB readiness integration, exactly-once
+  state behavior, and formal-model parity.
