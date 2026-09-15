@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T17:13:38+00:00",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Audit and implement the authenticated catalog/lifecycle client against ASB router merge 967a4a7a0501231b1fed37a37a784d8ab1e42c07; verify readiness/configuration contracts and cross-repository pins before wiring install. Keep all renderer/application work in asb-tui.",
+  "next_action": "Do not wire lifecycle UI calls yet: ASB origin 2117a40 still returns CapabilityUnavailable for agent_catalog and agent lifecycle methods. Await authenticated ASB backend implementation, capability signaling, reconciled schemas/fixtures, and green exact-head/post-merge evidence; then adapt through the adopted broker stream in asb-tui.",
   "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T16:22:09+00:00",
+  "updated_at": "2026-09-15T16:24:28+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -44,3 +44,9 @@ published. All rendering and application behavior remains in asb-tui.
   with all listed checks successful; catalog digest PR #174 merged as d354a51. The prior open PR
   #171 is a stale duplicate with a failed synthetic-base platform check and is not a dependency
   candidate. Readiness producer AR-1227 and cross-repo qualification remain unresolved.
+
+- 2026-09-15T16:24:28+00:00: Router audit completed against ASB origin 2117a40: top-level lifecycle
+  router PR #157 is merged, but asb-control backend agent_catalog and
+  agent_install/status/cancel/retry/remove remain explicit CapabilityUnavailable and Capabilities
+  has no lifecycle/catalog fields. The hidden asb-tui v1.5 candidate is not on main and must not be
+  imported against rejecting backend. No implementation PR created.
