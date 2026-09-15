@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**17 ARs tracked** across 4 active status categories.
+**18 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 3 |
+| **Done** | Accepted, integrated, and durably verified | 4 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -51,6 +51,7 @@ flowchart LR
         AR_1225["AR-1225 - Done"]:::status_done
         AR_1227["AR-1227 - Done"]:::status_done
         AR_1228["AR-1228 - Done"]:::status_done
+        AR_1229["AR-1229 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1195 --> AR_1200
@@ -94,6 +95,7 @@ flowchart LR
 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md) | None | None |
 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md) | None | None |
 | [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md) | None | None |
+| [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md) | None | None |
 
 ## Complete AR inventory
 
@@ -126,10 +128,11 @@ flowchart LR
 | P0 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md): asb-tui record/replay and comparison tutorials | Unclaimed | Teach TUI users to replay LLM responses offline and compare multiple agents fairly. | Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison. |
 | P0 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md): Cross-repository tutorial syntax and freshness gate | Unclaimed | Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI. | Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined. |
 
-### Done (3)
+### Done (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
 | P1 | [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md): Formal ownership CI post-merge assurance | Unclaimed | Qualify formal UI ownership CI after merge. | Record exact post-merge workflow conclusions for corrected PR #71. |
+| P1 | [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md): Executable formal transitions post-merge assurance | Unclaimed | Qualify executable formal UI transitions after merge. | None; retain as immutable post-merge assurance while AR-1201 tracks remaining parity work. |
