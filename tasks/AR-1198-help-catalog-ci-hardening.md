@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T14:59:41+00:00",
+  "updated_at": "2026-09-15T15:00:01+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -176,3 +176,8 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   expired claim before reconciling post-merge configuration persistence evidence.
 
 - 2026-09-15T14:59:41+00:00: Claimed by root-help-quality.
+
+- 2026-09-15T15:00:01+00:00: Configuration persistence PR #101/#102 changed UI-owned files with
+  synchronized help/model/inventory/focused tests and all hosted gates. PR #102 exact head
+  b779dcdc2585657c6f4cf517681573ac1b6d4764 passed exact CI 34984797557 and post-merge Trusted
+  34985066671 plus Repository quality 34985066638.
