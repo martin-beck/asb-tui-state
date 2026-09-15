@@ -106,7 +106,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | root | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Implement authenticated catalog/lifecycle acquisition and installation wiring once ASB protocol dependencies AR-1190/1191/1186 are published; keep renderer/application work in asb-tui. |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Local configuration persistence landed in asb-tui PR #101, with rustdoc/metadata repair PR #102. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | PR #105 merged at asb-tui main 4fd59a3 and formal auto-open transition is verified; wait for ASB readiness contract AR-1227/1199, then wire authoritative provider and persistence acknowledgement. |
 
 ### Open (3)
 

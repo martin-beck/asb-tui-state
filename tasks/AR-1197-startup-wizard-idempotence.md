@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T16:52:01+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Local configuration persistence landed in asb-tui PR #101, with rustdoc/metadata repair PR #102.",
+  "next_action": "PR #105 merged at asb-tui main 4fd59a3 and formal auto-open transition is verified; wait for ASB readiness contract AR-1227/1199, then wire authoritative provider and persistence acknowledgement.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T15:52:01+00:00",
+  "updated_at": "2026-09-15T15:52:12+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -166,3 +166,7 @@ wizard work are complete.
   and persistence acknowledgement remain.
 
 - 2026-09-15T15:52:01+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T15:52:12+00:00: PR #105 merged after independent review and exact PR CI 34990957058.
+  Automatic startup routing now uses the formal transition interpreter and remains fail-closed;
+  concrete readiness acquisition remains dependency-gated.
