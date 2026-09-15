@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | root-merge-watch |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -11,7 +17,6 @@ Never edit this file directly.
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. | - |
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted. | - |
-| P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 
 ## Planned
 
