@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "2026-09-15T14:55:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Standalone wizard interaction slice landed in asb-tui PR #99.",
-  "owner": "root-startup-readiness",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T14:25:14+00:00",
+  "updated_at": "2026-09-15T14:59:29+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -147,3 +147,6 @@ wizard work are complete.
   Trusted 34981184340 plus Repository quality 34981184372 passed. This adds bounded wizard editing,
   Backspace, visible draft, and catalog-backed contextual help without backend or persistence
   changes.
+
+- 2026-09-15T14:59:29+00:00: Recovered expired claim formerly owned by root-startup-readiness.
+  Recovering expired claim before recording configuration persistence merge and post-merge evidence.
