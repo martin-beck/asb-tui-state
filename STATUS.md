@@ -5,11 +5,11 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 4 active status categories.
+**16 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
@@ -49,6 +49,7 @@ flowchart LR
         AR_1223["AR-1223 - Planned"]:::status_planned
         AR_1224["AR-1224 - Planned"]:::status_planned
         AR_1225["AR-1225 - Done"]:::status_done
+        AR_1227["AR-1227 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1195 --> AR_1200
@@ -90,14 +91,16 @@ flowchart LR
 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md) | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md), [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md), [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | None |
 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md) | None | None |
+| [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md) | None | None |
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion. |
+| P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | root-formal-merge-watch | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
 
 ### Open (3)
 
