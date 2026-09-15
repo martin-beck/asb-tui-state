@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T09:14:00+00:00",
+  "updated_at": "2026-09-15T09:14:06+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -100,3 +100,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   blocker through the coordinator run path.
 
 - 2026-09-15T09:14:00+00:00: Claimed by root-ar-install-router.
+
+- 2026-09-15T09:14:06+00:00: Recorded command exit 0; command argv SHA-256
+  5b15ac3b165f5f1630ebff3aa79708d37d34704d00240816a2bea3c200a4a181.
