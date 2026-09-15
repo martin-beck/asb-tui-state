@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `fb1da8ea7a9e812ee4442c704ab04b338d36e5e8`
-- Local origin/main: `fb1da8ea7a9e812ee4442c704ab04b338d36e5e8`
+- Product remote main: `249591fef8567dbfdd78cd6e80fbdefc892da7da`
+- Local origin/main: `249591fef8567dbfdd78cd6e80fbdefc892da7da`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
@@ -19,21 +19,20 @@ Generated from local Git and GitHub. Do not edit.
 | #77 | `feat/ar1170-wizard@e7b18e25b2d5` | `main` | DIRTY | COMPLETED:SUCCESS | feat(wizard): add renderer-neutral setup state machine |
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | DIRTY | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
-| #103 | `feat/ar1192-wizard-catalog@8d450c6d9363` | `main` | DIRTY | - | feat(wizard): integrate bounded catalog choices |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34987791429 | `8d450c6d9363` | workflow_dispatch | Repository quality | in_progress:- |
+| 34989738764 | `249591fef856` | push | Trusted main verification | completed:success |
+| 34989738729 | `249591fef856` | push | Repository quality | completed:success |
+| 34989446540 | `2dbe6d76fcab` | pull_request | Repository quality | completed:success |
+| 34989201206 | `d9e76083586e` | pull_request | Repository quality | completed:failure |
+| 34988776370 | `93e5a04daf42` | pull_request | Repository quality | completed:success |
+| 34988513726 | `662dc174cf1b` | pull_request | Repository quality | completed:failure |
+| 34987791429 | `8d450c6d9363` | workflow_dispatch | Repository quality | completed:success |
 | 34986502896 | `fb1da8ea7a9e` | push | Trusted main verification | completed:success |
 | 34986502824 | `fb1da8ea7a9e` | push | Repository quality | completed:success |
 | 34986252943 | `c67bea00b602` | pull_request | Repository quality | completed:success |
 | 34985926198 | `f0ea6ee1da1d` | pull_request | Repository quality | completed:success |
 | 34985066671 | `b0e6d4fc1c9b` | push | Trusted main verification | completed:success |
-| 34985066638 | `b0e6d4fc1c9b` | push | Repository quality | completed:success |
-| 34984797557 | `b779dcdc2585` | pull_request | Repository quality | completed:success |
-| 34984473606 | `42e80c15f964` | pull_request | Repository quality | completed:failure |
-| 34984185141 | `35c4ece19dfd` | push | Trusted main verification | completed:failure |
-| 34984185016 | `35c4ece19dfd` | push | Repository quality | completed:success |
-| 34983800769 | `e28fd7c27fce` | pull_request | Repository quality | completed:success |
