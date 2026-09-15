@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | CLEAN | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
 | #84 | `feature/ar1192-agent-catalog@f51d57256d9d` | `main` | CLEAN | COMPLETED:SUCCESS | feat: add authenticated agent catalog projection |
 | #85 | `feature/ar1191-agent-lifecycle@ebca5f15d8d2` | `feature/ar1192-agent-catalog` | CLEAN | COMPLETED:SUCCESS | feat: model authenticated agent lifecycle events |
-| #86 | `feature/ar1190-1191-asb-wire-adapter@46fa6f57540c` | `feature/ar1191-agent-lifecycle` | CLEAN | COMPLETED:SUCCESS | fix: align agent adapters with ASB v1.4/v1.5 wire contracts |
+| #86 | `feature/ar1190-1191-asb-wire-adapter@46fa6f57540c` | `main` | BLOCKED | IN_PROGRESS: | fix: align agent adapters with ASB v1.4/v1.5 wire contracts |
 | #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | CLEAN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
 | #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
 
@@ -37,7 +37,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34948910240 | `74e05d8bb262` | pull_request | Repository quality | completed:success |
-| 34948839161 | `46fa6f57540c` | pull_request | Repository quality | completed:success |
+| 34948839161 | `46fa6f57540c` | pull_request | Repository quality | in_progress:- |
 | 34948174043 | `4106c6dec82d` | pull_request | Repository quality | completed:success |
 | 34946498162 | `6d5818181077` | pull_request | Repository quality | completed:success |
 | 34945303291 | `d2c931bea72e` | pull_request | Repository quality | completed:success |
