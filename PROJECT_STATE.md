@@ -26,11 +26,17 @@ Generated from local Git and GitHub. Do not edit.
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | CLEAN | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | CLEAN | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
+| #84 | `feature/ar1192-agent-catalog@f51d57256d9d` | `main` | CLEAN | COMPLETED:SUCCESS | feat: add authenticated agent catalog projection |
+| #85 | `feature/ar1191-agent-lifecycle@ebca5f15d8d2` | `feature/ar1192-agent-catalog` | CLEAN | COMPLETED:SUCCESS | feat: model authenticated agent lifecycle events |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34941833757 | `ebca5f15d8d2` | pull_request | Repository quality | completed:success |
+| 34941596727 | `21d27972d4b8` | pull_request | Repository quality | completed:failure |
+| 34940813783 | `f51d57256d9d` | pull_request | Repository quality | completed:success |
+| 34940504846 | `f8dc9aabb78b` | pull_request | Repository quality | completed:failure |
 | 34899725669 | `00aa0d757103` | pull_request | Repository quality | completed:success |
 | 34899478694 | `da292f9f3983` | pull_request | Repository quality | completed:failure |
 | 34898688557 | `704f1f855611` | pull_request | Repository quality | completed:success |
@@ -39,7 +45,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34898333596 | `70942e1abb1a` | pull_request | Repository quality | completed:failure |
 | 34898146717 | `5a472e2913cb` | pull_request | Repository quality | completed:failure |
 | 34897981222 | `60dd161bf7e3` | pull_request | Repository quality | completed:failure |
-| 34897486271 | `667fe3c1c99f` | pull_request | Repository quality | completed:success |
-| 34897261473 | `5d40f2af41f4` | pull_request | Repository quality | completed:failure |
-| 34897105205 | `2d3f93d68cc6` | pull_request | Repository quality | completed:failure |
-| 34896538248 | `cd97a5d2732d` | pull_request | Repository quality | completed:failure |
