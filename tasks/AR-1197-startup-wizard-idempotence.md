@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:19:22+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Wait for ASB AR-1227 authenticated readiness producer and AR-1199 dependencies; then wire concrete provider into normal and broker startup, add authoritative persistence/restart and post-completion confirmation tests.",
+  "next_action": "Wait for ASB AR-1227 readiness producer and AR-1199 dependencies; then wire concrete provider into normal/broker startup and implement authoritative wizard persistence, restart/idempotence, and post-completion confirmation.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T13:19:34+00:00",
+  "updated_at": "2026-09-15T14:09:40+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -129,3 +129,10 @@ wizard work are complete.
   asb capabilities/readiness CLI and no readiness projection in control Capabilities. ASB state
   AR-1227 now records the dependency-gated schema/producer/fixture work. Keep asb-tui injection seam
   and fail-closed behavior; do not infer readiness locally or invent persistence semantics.
+
+- 2026-09-15T14:09:40+00:00: PR #98 fixed live wizard Review completion: Enter now dispatches
+  FormalEvent::Complete, synchronizes WizardFormalState, and returns to landing only after
+  successful formal transition. Exact head 878cbf7235b83eec9e1cceeef843bac350939d54 (SSH/DCO valid),
+  exact-head CI 34979236315 passed, merged at e9d456641546a5e6b7d4262121e3ef751fb0c8f5. Post-merge
+  Trusted 34979486786 and Repository quality 34979486795 both succeeded for exact main SHA. This
+  remains local UI behavior; no ASB I/O or persistence semantics were invented.
