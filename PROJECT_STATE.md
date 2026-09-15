@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | #80 | `feature/ar1188-wizard-render@1f737c49fb3e` | `feat/ar1170-wizard` | CLEAN | COMPLETED:SUCCESS | feat: render wizard from formal model |
 | #81 | `feature/ar1189-ui-inventory@704f1f855611` | `main` | BEHIND | COMPLETED:SUCCESS | ci: synchronize UI module inventory with formal owners (AR-1189) |
 | #82 | `feature/ar1034-configuration@00aa0d757103` | `main` | BEHIND | COMPLETED:SUCCESS | fix(configuration): fail closed on persistence errors |
-| #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | UNKNOWN | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
+| #87 | `feature/ar1187-startup-idempotence@6d5818181077` | `fix/ar1187-startup-readiness` | DIRTY | COMPLETED:SUCCESS | test(startup): make wizard auto-open decision explicit |
 | #88 | `feature/ar1037-help-quality-followup@74e05d8bb262` | `feature/ar1037-help-ci` | CLEAN | COMPLETED:SUCCESS | test(help): harden catalog coverage and privacy checks |
 
 ## Recent workflows
