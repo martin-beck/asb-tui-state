@@ -41,8 +41,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 65, ahead 1 |
 | `asb-tui-contextual-footer` | `feature/contextual-footer` | `a7b553060327` | 0 | behind 29, ahead 0 |
 | `asb-tui-coordinator-operations` | `chore/coordinator-operations` | `52f7fe405d8f` | 0 | behind 65, ahead 1 |
-| `asb-tui-coverage-hardening` | `feature/ar1190-coverage-hardening` | `013b3814364a` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `tests/agent_catalog.rs`, `tests/agent_lifecycle.rs`, `tests/asb_lifecycle.rs`, `tests/help.rs` |
+| `asb-tui-coverage-hardening` | `feature/ar1190-coverage-hardening` | `cb07a083b2e7` | 0 | behind 0, ahead 1 |
 | `asb-tui-current-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 12, ahead 0 |
 | `asb-tui-help-integration` | `feature/help-integration` | `511ae6e14ae0` | 0 | behind 31, ahead 0 |
 | `asb-tui-help-quality-followup` | `feature/ar1037-help-quality-followup` | `74e05d8bb262` | 0 | behind 9, ahead 2 |
