@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**2 ARs tracked** across 1 active status categories.
+**3 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 0 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -31,6 +31,10 @@ flowchart LR
         AR_0001["AR-0001 - Open"]:::status_open
         AR_0002["AR-0002 - Open"]:::status_open
     end
+    subgraph series_11["11 - Additional work"]
+        direction TB
+        AR_1192["AR-1192 - Planned"]:::status_planned
+    end
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -47,6 +51,7 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001.md) | None | None |
 | [AR-0002](tasks/AR-0002.md) | None | None |
+| [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None | None |
 
 ## Complete AR inventory
 
@@ -56,3 +61,9 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator may review draft PR 25 at exact head 2bc987ee0a9ad9b18807989501aca3fe87cab8be and, without worker-side merge, promote it only under repository policy. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Review external ASB AR-1190/1191/1186 dependencies, then promote and claim through handoffctl. |
