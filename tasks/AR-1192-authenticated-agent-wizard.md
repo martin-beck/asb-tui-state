@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T22:32:52+00:00",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Await ASB provider-auth PR #177 exact-head CI/review and subsequent backend wiring: ASB main 3989cb7 still returns CapabilityUnavailable for agent_catalog and lifecycle methods. Once capability execution is published, adapt the existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove.",
+  "next_action": "Await ASB backend execution for agent_catalog and agent lifecycle methods: provider-auth PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74, but ASB control.rs still returns CapabilityUnavailable and advertises no lifecycle/catalog capabilities. Then adapt existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove.",
   "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T21:33:12+00:00",
+  "updated_at": "2026-09-15T21:40:02+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -65,3 +65,9 @@ published. All rendering and application behavior remains in asb-tui.
   lifecycle operations. PR #177 head 2d716c8 has checks in progress (architecture, formal, policy,
   Rust, mutation); no exact-head/post-merge backend evidence yet. Recovered expired AR-1192 lease
   and reclaimed it for dependency monitoring.
+
+- 2026-09-15T21:40:02+00:00: 2026-09-15 live update: ASB main advanced to
+  efe741a75a8a3e7bd14afd8c6cef119f46a21c74 after PR #177 merged with all 12 checks successful. The
+  merged change provides credential enrollment/provider-auth plumbing, not catalog/lifecycle control
+  execution. Current ASB source still has explicit CapabilityUnavailable stubs; no safe asb-tui
+  implementation slice is available yet.
