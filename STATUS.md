@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**14 ARs tracked** across 2 active status categories.
+**15 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -48,6 +48,7 @@ flowchart LR
         AR_1222["AR-1222 - Planned"]:::status_planned
         AR_1223["AR-1223 - Planned"]:::status_planned
         AR_1224["AR-1224 - Planned"]:::status_planned
+        AR_1225["AR-1225 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1195 --> AR_1200
@@ -88,10 +89,11 @@ flowchart LR
 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md) | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md) | [AR-1223](tasks/AR-1223-tui-replay-comparison.md), [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md) | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) |
 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md), [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md), [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | None |
+| [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md) | None | None |
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -99,6 +101,7 @@ flowchart LR
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Review PR #87 at the exact head, then integrate it with AR-1187/#76 and the formal wizard model before promotion. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete independent review against UI_OWNERS, UI-module inventory, formal model, and all UI routes; PR #88 exact head 74e05d8bb262260f1cef2375ca70800b208bedb6 remains unpromoted. |
+| P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 
 ### Planned (10)
 
