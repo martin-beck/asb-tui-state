@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:19:22+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete.",
+  "next_action": "Wait for ASB AR-1227 authenticated readiness producer and AR-1199 dependencies; then wire concrete provider into normal and broker startup, add authoritative persistence/restart and post-completion confirmation tests.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T13:19:22+00:00",
+  "updated_at": "2026-09-15T13:19:34+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -124,3 +124,8 @@ wizard work are complete.
   Recovered expired coordination lease before recording ASB readiness dependency audit.
 
 - 2026-09-15T13:19:22+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T13:19:34+00:00: ASB current-main audit found no authoritative readiness producer: no
+  asb capabilities/readiness CLI and no readiness projection in control Capabilities. ASB state
+  AR-1227 now records the dependency-gated schema/producer/fixture work. Keep asb-tui injection seam
+  and fail-closed behavior; do not infer readiness locally or invent persistence semantics.
