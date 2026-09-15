@@ -78,6 +78,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-startup-rebase` | `DETACHED` | `187282b8580d` | 0 | behind 40, ahead 0 |
 | `asb-tui-tmux-startup-readiness-recovery` | `fix/tmux-startup-readiness-recovery-20260914` | `58cf344a6bc5` | 0 | behind 131, ahead 1 |
 | `asb-tui-verifier-hardening` | `feature/release-verifier-hardening` | `6f0ab48641f4` | 0 | behind 85, ahead 0 |
-| `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `f0ea6ee1da1d` | 2 | behind 2, ahead 1 |
-| changed files | - | - | - | `src/wizard_catalog.rs`, `tests/wizard_render.rs` |
+| `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `8d450c6d9363` | 0 | behind 2, ahead 2 |
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 37, ahead 0 |
