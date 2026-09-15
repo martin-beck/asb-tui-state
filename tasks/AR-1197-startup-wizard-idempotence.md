@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T13:19:03+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Integrate authoritative ASB readiness I/O and persistence/restart behavior into the now-wired wizard; qualify live endpoint only after ASB AR-1199 dependencies are complete.",
+  "next_action": "Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T13:04:12+00:00",
+  "updated_at": "2026-09-15T13:13:43+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -113,3 +113,9 @@ wizard work are complete.
   Exact-head Repository quality run 34972109884 passed. Post-merge Trusted main 34972405476 and
   Repository quality 34972405506 both passed for merge SHA. WorkspaceState now routes/render-handles
   the wizard, but authoritative readiness caller, persistence, and live ASB endpoint remain open.
+
+- 2026-09-15T13:13:43+00:00: PR #95 merged at immutable asb-tui main SHA
+  66c0ad168373169ff59dd094c8619b6aaccbcc3b. Exact-head CI run 34972955082 passed with independent
+  review. Required post-merge Trusted main 34973217098 and Repository quality 34973217049 both
+  passed for the exact resulting main SHA. Injected readiness seam is verified; concrete ASB
+  readiness I/O, persistence/restart, and live backend qualification remain open.

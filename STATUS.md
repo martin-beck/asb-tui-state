@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Integrate authoritative ASB readiness I/O and persistence/restart behavior into the now-wired wizard; qualify live endpoint only after ASB AR-1199 dependencies are complete. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete. |
 
 ### Open (3)
 
