@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T10:32:55+00:00",
+  "updated_at": "2026-09-15T10:32:57+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -49,3 +49,10 @@ wizard work are complete.
   expired review claim; retain exact PR #87 evidence and reassign before further work.
 
 - 2026-09-15T10:32:55+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T10:32:57+00:00: Dependency PR #76 was independently reviewed after rebasing onto
+  current asb-tui main 2f47148120c376d2720be7d01fd7869ec3699b24. Guarded force-with-lease updated
+  its branch to signed head 250a9e5982456dc869f178d69964b6d6f154e54d. Full cargo test --locked
+  --all-targets (103 library tests plus integration/binary suites), fmt, clippy, diff-check and
+  clean merge passed. Fresh exact-head CI is now required before merging #76; stacked PR #87 remains
+  unqualified until this dependency lands.
