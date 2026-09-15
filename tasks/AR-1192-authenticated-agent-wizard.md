@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T22:32:52+00:00",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Do not wire lifecycle UI calls yet: ASB origin 2117a40 still returns CapabilityUnavailable for agent_catalog and agent lifecycle methods. Await authenticated ASB backend implementation, capability signaling, reconciled schemas/fixtures, and green exact-head/post-merge evidence; then adapt through the adopted broker stream in asb-tui.",
+  "next_action": "Await ASB provider-auth PR #177 exact-head CI/review and subsequent backend wiring: ASB main 3989cb7 still returns CapabilityUnavailable for agent_catalog and lifecycle methods. Once capability execution is published, adapt the existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove.",
   "owner": "root",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-15T21:32:52+00:00",
+  "updated_at": "2026-09-15T21:33:12+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -59,3 +59,9 @@ published. All rendering and application behavior remains in asb-tui.
   lease before re-evaluating ASB backend progress
 
 - 2026-09-15T21:32:52+00:00: Claimed by root.
+
+- 2026-09-15T21:33:12+00:00: 2026-09-15 live refresh: ASB main advanced to 3989cb7 via
+  provider-request seam merge, but control.rs still returns CapabilityUnavailable for catalog and
+  lifecycle operations. PR #177 head 2d716c8 has checks in progress (architecture, formal, policy,
+  Rust, mutation); no exact-head/post-merge backend evidence yet. Recovered expired AR-1192 lease
+  and reclaimed it for dependency monitoring.

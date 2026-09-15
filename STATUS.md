@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | root | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Do not wire lifecycle UI calls yet: ASB origin 2117a40 still returns CapabilityUnavailable for agent_catalog and agent lifecycle methods. Await authenticated ASB backend implementation, capability signaling, reconciled schemas/fixtures, and green exact-head/post-merge evidence; then adapt through the adopted broker stream in asb-tui. |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | root | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Await ASB provider-auth PR #177 exact-head CI/review and subsequent backend wiring: ASB main 3989cb7 still returns CapabilityUnavailable for agent_catalog and lifecycle methods. Once capability execution is published, adapt the existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove. |
 
 ### Open (3)
 
