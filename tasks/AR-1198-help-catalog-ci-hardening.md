@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:30:27+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS after merged measurement projection; retain startup readiness/persistence and authenticated catalog/lifecycle blockers.",
+  "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T13:59:58+00:00",
+  "updated_at": "2026-09-15T14:25:23+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -165,3 +165,9 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   inventory metadata. Exact head e9436346e05e39346163fafc0eee3cd3552c897e, exact-head CI 34978116964
   passed, merged at 3d8d7ae9d36745933f03b25747122e131cc1706a. Post-merge Trusted 34978387241 and
   Repository quality 34978386914 both passed on exact main SHA.
+
+- 2026-09-15T14:25:23+00:00: Merged asb-tui PR #99 at caa06ce0083c072b0bb7a8ba6768dd38226d90e6 from
+  exact head dc213b2434267f37bb5ebe9e0f75ca3f3ba8b465; exact CI 34980835636 and post-merge Trusted
+  34981184340 plus Repository quality 34981184372 passed. Wizard help now resolves document-backed
+  active-step text via ?/h; formal model, generated artifact, focused CI test, and inventory
+  metadata are synchronized.
