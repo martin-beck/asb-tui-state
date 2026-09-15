@@ -35,6 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `tools/validate-ui-state-model.py` |
 | `asb-tui-ar1184-executable` | `feature/ar1184-executable-transitions` | `1cd6f2f57da7` | 0 | behind 0, ahead 5 |
 | `asb-tui-ar1187` | `fix/ar1187-startup-readiness` | `1450df452f06` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar1187-idempotence` | `feature/ar1187-startup-idempotence` | `6d5818181077` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar1188-wizard-render` | `feature/ar1188-wizard-render` | `1f737c49fb3e` | 0 | behind 0, ahead 7 |
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 0, ahead 10 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 56, ahead 1 |
