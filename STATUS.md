@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Wait for ASB AR-1227 readiness producer and AR-1199 dependencies; then wire concrete provider into normal/broker startup and implement authoritative wizard persistence, restart/idempotence, and post-completion confirmation. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Standalone wizard interaction slice landed in asb-tui PR #99. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | root-help-quality | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS after merged measurement projection; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 
 ### Open (2)

@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T14:55:05+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Wait for ASB AR-1227 readiness producer and AR-1199 dependencies; then wire concrete provider into normal/broker startup and implement authoritative wizard persistence, restart/idempotence, and post-completion confirmation.",
+  "next_action": "Wait for ASB AR-1227 and AR-1199; then wire concrete readiness provider and authoritative persistence. Standalone wizard interaction slice landed in asb-tui PR #99.",
   "owner": "root-startup-readiness",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T14:25:05+00:00",
+  "updated_at": "2026-09-15T14:25:14+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -141,3 +141,9 @@ wizard work are complete.
   Recovering expired claim before recording PR #99 merge and post-merge verification.
 
 - 2026-09-15T14:25:05+00:00: Claimed by root-startup-readiness.
+
+- 2026-09-15T14:25:14+00:00: Merged asb-tui PR #99 at caa06ce0083c072b0bb7a8ba6768dd38226d90e6 from
+  exact head dc213b2434267f37bb5ebe9e0f75ca3f3ba8b465; exact CI 34980835636 passed, and post-merge
+  Trusted 34981184340 plus Repository quality 34981184372 passed. This adds bounded wizard editing,
+  Backspace, visible draft, and catalog-backed contextual help without backend or persistence
+  changes.
