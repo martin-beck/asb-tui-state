@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "2026-09-15T13:19:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete.",
-  "owner": "root-startup-readiness",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T13:13:43+00:00",
+  "updated_at": "2026-09-15T13:19:15+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -119,3 +119,6 @@ wizard work are complete.
   review. Required post-merge Trusted main 34973217098 and Repository quality 34973217049 both
   passed for the exact resulting main SHA. Injected readiness seam is verified; concrete ASB
   readiness I/O, persistence/restart, and live backend qualification remain open.
+
+- 2026-09-15T13:19:15+00:00: Recovered expired claim formerly owned by root-startup-readiness.
+  Recovered expired coordination lease before recording ASB readiness dependency audit.

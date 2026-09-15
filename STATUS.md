@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**19 ARs tracked** across 4 active status categories.
+**19 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -35,7 +35,7 @@ flowchart LR
         direction TB
         AR_1192["AR-1192 - Planned"]:::status_planned
         AR_1195["AR-1195 - Planned"]:::status_planned
-        AR_1197["AR-1197 - In progress"]:::status_in_progress
+        AR_1197["AR-1197 - Open"]:::status_open
         AR_1198["AR-1198 - Open"]:::status_open
     end
     subgraph series_12["12 - Additional work"]
@@ -101,18 +101,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | root-startup-readiness | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete. |
-
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator may review draft PR 25 at exact head 2bc987ee0a9ad9b18807989501aca3fe87cab8be and, without worker-side merge, promote it only under repository policy. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Implement concrete production ASB readiness probe/caller and persisted configuration restart semantics; keep unavailable, malformed, stale, and unauthorized fail-closed. Qualify live endpoint only after ASB AR-1199 dependencies are complete. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Wire the foundational wizard into the main UI route/event/render loop with authoritative startup readiness and persistence; retain explicit coverage and cross-repo backend blockers. |
 
 ### Planned (10)
