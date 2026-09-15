@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T08:53:24+00:00",
+  "updated_at": "2026-09-15T08:53:27+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -71,3 +71,6 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   task remains open for implementation and qualification.
 
 - 2026-09-15T08:53:24+00:00: Claimed by root-ar-tui-registry.
+
+- 2026-09-15T08:53:27+00:00: Recorded command exit 0; command argv SHA-256
+  b3dec1b5085e18a9f52742b1d9967de5c621b86d5a8f916764c744d519a523bb.
