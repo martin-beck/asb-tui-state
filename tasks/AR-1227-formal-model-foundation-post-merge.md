@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the corrected formal UI model foundation after merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Formal UI model foundation post-merge assurance",
-  "updated_at": "2026-09-15T10:54:00+00:00",
+  "updated_at": "2026-09-15T10:54:02+00:00",
   "worktree_key": "asb-tui-formal-model-foundation-post-merge"
 }
 ---
@@ -26,3 +26,7 @@ verification `34960219543`. The foundation remains a prerequisite only; AR-1201 
 source/model parity and transition coverage.
 
 - 2026-09-15T10:54:00+00:00: Claimed by root-formal-merge-watch.
+
+- 2026-09-15T10:54:02+00:00: Corrected PR #70 merged at e431d429f8ad4b1f52f2023c2c34f46c06ccf321.
+  Repository quality 34960219420 and Trusted main verification 34960219543 both reached terminal
+  success; local malformed-input and relocatable-harness tests also pass.
