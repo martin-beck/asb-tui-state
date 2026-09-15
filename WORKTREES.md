@@ -39,6 +39,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1187-idempotence` | `feature/ar1187-startup-idempotence` | `6d5818181077` | 0 | behind 73, ahead 2 |
 | `asb-tui-ar1188-wizard-render` | `feature/ar1188-wizard-render` | `1f737c49fb3e` | 0 | behind 73, ahead 7 |
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 73, ahead 10 |
+| `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `b0e6d4fc1c9b` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/configuration.rs` |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 7, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 129, ahead 1 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 6, ahead 0 |
@@ -76,6 +78,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-startup-rebase` | `DETACHED` | `187282b8580d` | 0 | behind 38, ahead 0 |
 | `asb-tui-tmux-startup-readiness-recovery` | `fix/tmux-startup-readiness-recovery-20260914` | `58cf344a6bc5` | 0 | behind 129, ahead 1 |
 | `asb-tui-verifier-hardening` | `feature/release-verifier-hardening` | `6f0ab48641f4` | 0 | behind 83, ahead 0 |
-| `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `9f2115daece4` | 7 | behind 5, ahead 0 |
+| `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `b0e6d4fc1c9b` | 7 | behind 0, ahead 0 |
 | changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/formal_state.rs`, `src/ui.rs`, `src/wizard.rs`, `src/wizard_catalog.rs`, `tests/wizard_render.rs` |
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 35, ahead 0 |
