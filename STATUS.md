@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | root-help-quality | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Integrate document-backed contextual lookup into visible renderer/help overlay; then complete UI_OWNERS/source-inventory/formal-model parity checks without claiming full coverage early. |
+| P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | root-help-quality | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Wire the foundational wizard into the main UI route/event/render loop with authoritative startup readiness and persistence; retain explicit coverage and cross-repo backend blockers. |
 
 ### Open (3)
 

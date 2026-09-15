@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T13:05:39+00:00",
   "depends_on": [],
   "id": "AR-1198",
-  "next_action": "Integrate document-backed contextual lookup into visible renderer/help overlay; then complete UI_OWNERS/source-inventory/formal-model parity checks without claiming full coverage early.",
+  "next_action": "Wire the foundational wizard into the main UI route/event/render loop with authoritative startup readiness and persistence; retain explicit coverage and cross-repo backend blockers.",
   "owner": "root-help-quality",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T12:50:39+00:00",
+  "updated_at": "2026-09-15T12:50:50+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -133,3 +133,10 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   expired help claim to record PR #92 merge, trusted-main failure, and PR #93 remediation.
 
 - 2026-09-15T12:50:39+00:00: Claimed by root-help-quality.
+
+- 2026-09-15T12:50:50+00:00: PR #92 merged as 3dfa81c59b70d6a1db91ed475b96ac6c5b472461 after
+  exact-head CI 34969495547; its Trusted main post-merge run 34969778807 failed only at strict 90%
+  coverage. Repository quality 34969778754 passed. Follow-up PR #93 added focused wizard coverage,
+  merged as 25d9cb4672e2ee707a6d04321ffdeb43733b47ed; exact-head CI 34970601563 passed, and
+  post-merge Trusted main 34970832789 plus Repository quality 34970832748 both passed. Wizard
+  remains foundational and is not yet wired into the main UI event/render loop.
