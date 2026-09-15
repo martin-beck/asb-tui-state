@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1037-help-ci-hardening",
   "checkpoint_commit": "74e05d8bb262260f1cef2375ca70800b208bedb6",
-  "claim_expires": "2026-09-15T17:27:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1198",
   "next_action": "Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers.",
-  "owner": "root-help-audit",
+  "owner": "",
   "plan": "../plans/AR-1198.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Contextual-help catalog CI hardening",
-  "updated_at": "2026-09-15T16:27:14+00:00",
+  "updated_at": "2026-09-15T16:27:42+00:00",
   "worktree_key": "asb-tui-ar-1037-help-ci-hardening"
 }
 ---
@@ -186,3 +186,11 @@ recorded. All actual UI application and rendering work remains in asb-tui.
   expired claim after wizard catalog PR #103 merged; help and ownership CI remain maintained.
 
 - 2026-09-15T16:27:14+00:00: Claimed by root-help-audit.
+
+- 2026-09-15T16:27:42+00:00: 2026-09-15 exact-current-main qualification at
+  9ab1201992edd5e4b685fd539a3a6367e8214f8f: validate-ui-help.py reports 49 elements; test-ui-help.py
+  passes 9/9; validate-ui-state-model.py reports 8 routes and 26 elements; test-ui-state-model.py
+  passes 24/24; cargo fmt --all -- --check, cargo clippy --locked --all-targets -D warnings, and
+  cargo test --locked --all-targets pass (136 library tests plus all integration/binary suites).
+  Ownership and formal model validators cover UI_OWNERS/inventory and contextual help references. No
+  ASB or application-scope changes.
