@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
+| #25 | `feature/awq-v032-shadow@2bc987ee0a9a` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.32.0 shadow checks |
 
 ## Recent workflows
 
