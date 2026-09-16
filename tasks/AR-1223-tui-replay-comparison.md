@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach TUI users to replay LLM responses offline and compare multiple agents fairly.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "asb-tui record/replay and comparison tutorials",
-  "updated_at": "2026-09-16T12:43:30+00:00",
+  "updated_at": "2026-09-16T12:43:34+00:00",
   "worktree_key": "asb-tui-ar-1223"
 }
 ---
@@ -43,3 +43,6 @@ Implement the linked tutorials and synthetic cassette/report fixtures only.
   and DCO. Coordinator review and exact-head hosted CI remain.
 
 - 2026-09-16T12:43:30+00:00: Claimed by asb-tui-ar1223-publisher-20260916.
+
+- 2026-09-16T12:43:34+00:00: Recorded command exit 0; command argv SHA-256
+  eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
