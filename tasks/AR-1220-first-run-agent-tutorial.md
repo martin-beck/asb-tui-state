@@ -2,22 +2,22 @@
 {
   "branch": "docs/ar-1220-first-run-agent",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:02:38+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1220",
   "next_action": "Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance.",
   "observed_branch": "docs/ar-1220-first-run-agent",
   "observed_dirty": 0,
   "observed_head": "fb9d4b86270f4be11102868caff226fe35900e78",
-  "owner": "codex-asb-tui-ar1220-tutorial-20260916",
+  "owner": "",
   "plan": "../plans/AR-1220.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:07:38+00:00",
+  "updated_at": "2026-09-16T12:07:45+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
@@ -74,3 +74,6 @@ AR-1210 is recorded in the plan; do not run tutorial actions or connect to an ag
   one pre-existing false positive in tools/validate-ui-help.py and was not changed. Commit is
   SSH-signed and DCO-compliant. PR #107 is open, non-draft, mergeable; hosted Repository quality is
   in progress and AWQ prerequisite is queued.
+
+- 2026-09-16T12:07:45+00:00: Implementation handoff released for coordinator review. PR #107 remains
+  unmerged; monitor exact-head hosted checks and obtain independent review before merge.
