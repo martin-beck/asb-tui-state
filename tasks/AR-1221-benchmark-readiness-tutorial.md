@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1221-tui-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:49:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1220"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1221-tui-readiness",
   "observed_dirty": 0,
   "observed_head": "11f4a0671da40a67ee3143dd5bec149390a6aa74",
-  "owner": "codex-asb-tui-coordinator-20260916",
+  "owner": "",
   "plan": "../plans/AR-1221.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:29:40+00:00",
+  "updated_at": "2026-09-16T12:29:43+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -86,3 +86,8 @@ Implement the linked tutorial and deterministic offline state fixtures only.
   --check pass. Coordinator should re-run exact-head CI.
 
 - 2026-09-16T12:29:40+00:00: Claimed by codex-asb-tui-coordinator-20260916.
+
+- 2026-09-16T12:29:43+00:00: Merged asb-tui PR #108 at 7e90668687e2c7f87630cc30e18f396b71da2c2c from
+  signed exact head 11f4a0671da40a67ee3143dd5bec149390a6aa74; Repository quality, native-gates
+  prerequisite, and AWQ shadow checks all passed (runs 35095850235, 35095850413). Tutorial validator
+  and publication checks passed locally.
