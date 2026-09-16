@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:15:49+00:00",
+  "updated_at": "2026-09-16T12:16:12+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -34,3 +34,6 @@ Implement the linked tutorial and deterministic offline state fixtures only.
 
 - 2026-09-16T12:15:49+00:00: Recorded command exit 0; command argv SHA-256
   dee9698896ce66137446179d6254e7bb595f2e40295247fca2ef929a18415765.
+
+- 2026-09-16T12:16:12+00:00: Recorded command exit 0; command argv SHA-256
+  b8bbf38d076c974821d1cbf8ac8f9b52eaf3ba9207d9e0cf1a80c01c371c207f.
