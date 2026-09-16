@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #107 | `docs/ar-1220-first-run-agent@adf1270df6bb` | `main` | BLOCKED | QUEUED: | docs(tutorial): add offline first-agent journey |
+| #107 | `docs/ar-1220-first-run-agent@adf1270df6bb` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | docs(tutorial): add offline first-agent journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35094267713 | `adf1270df6bb` | pull_request | AWQ shadow observation | queued:- |
-| 35094267309 | `adf1270df6bb` | pull_request | Repository quality | queued:- |
+| 35094267713 | `adf1270df6bb` | pull_request | AWQ shadow observation | in_progress:- |
+| 35094267309 | `adf1270df6bb` | pull_request | Repository quality | in_progress:- |
 | 35094010500 | `fb9d4b86270f` | pull_request | AWQ shadow observation | completed:failure |
 | 35094010264 | `fb9d4b86270f` | pull_request | Repository quality | completed:failure |
 | 35092415309 | `02ed7a9fb5c2` | push | Trusted main verification | completed:success |
