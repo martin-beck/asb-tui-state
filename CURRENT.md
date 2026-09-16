@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. | - |
+| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. | codex-asb-tui-ar1220-tutorial-20260916 |
 
 ## Blocked
 

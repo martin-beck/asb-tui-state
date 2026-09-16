@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -43,7 +43,7 @@ flowchart LR
         AR_1200["AR-1200 - Planned"]:::status_planned
         AR_1201["AR-1201 - Planned"]:::status_planned
         AR_1202["AR-1202 - Planned"]:::status_planned
-        AR_1220["AR-1220 - Open"]:::status_open
+        AR_1220["AR-1220 - In progress"]:::status_in_progress
         AR_1221["AR-1221 - Planned"]:::status_planned
         AR_1222["AR-1222 - Planned"]:::status_planned
         AR_1223["AR-1223 - Planned"]:::status_planned
@@ -101,11 +101,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Unclaimed | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. |
+| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | codex-asb-tui-ar1220-tutorial-20260916 | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. |
 
 ### Blocked (2)
 
