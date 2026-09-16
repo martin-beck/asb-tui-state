@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**19 ARs tracked** across 4 active status categories.
+**19 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 7 |
+| **Done** | Accepted, integrated, and durably verified | 8 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -28,7 +28,7 @@ alternative.
 flowchart LR
     subgraph series_00["00 - Coordination foundation"]
         direction TB
-        AR_0001["AR-0001 - In progress"]:::status_in_progress
+        AR_0001["AR-0001 - Done"]:::status_done
         AR_0002["AR-0002 - Done"]:::status_done
     end
     subgraph series_11["11 - Additional work"]
@@ -101,12 +101,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | codex-asb-tui-coordinator-20260916 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator must refresh PR #25 on current main, rerun exact-head required hosted checks, and decide whether to promote; retain additive shadow-only scope. |
-
 ### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -128,10 +122,11 @@ flowchart LR
 | P0 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md): asb-tui record/replay and comparison tutorials | Unclaimed | Teach TUI users to replay LLM responses offline and compare multiple agents fairly. | Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison. |
 | P0 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md): Cross-repository tutorial syntax and freshness gate | Unclaimed | Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI. | Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined. |
 
-### Done (7)
+### Done (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator must refresh PR #25 on current main, rerun exact-head required hosted checks, and decide whether to promote; retain additive shadow-only scope. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Rebase both draft candidates onto current main, rerun hosted required checks, and obtain coordinator promotion decision; no merge from review worker. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
