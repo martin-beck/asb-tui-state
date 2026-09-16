@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1224-tutorial-freshness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T14:49:57+00:00",
   "depends_on": [
     "AR-1220",
     "AR-1221",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1224",
   "next_action": "Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined.",
-  "owner": "",
+  "owner": "asb-tui-ar1224-freshness-20260916",
   "plan": "../plans/AR-1224.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Cross-repository tutorial syntax and freshness gate",
-  "updated_at": "2026-09-16T12:48:58+00:00",
+  "updated_at": "2026-09-16T12:49:57+00:00",
   "worktree_key": "asb-tui-ar-1224"
 }
 ---
@@ -29,3 +29,5 @@ provider, LLM, benchmark, credential, or network execution.
 
 - 2026-09-16T12:48:58+00:00: AR-1220 through AR-1223 are merged and released; promote tutorial
   freshness CI.
+
+- 2026-09-16T12:49:57+00:00: Claimed by asb-tui-ar1224-freshness-20260916.
