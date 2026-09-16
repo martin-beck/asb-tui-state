@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -45,7 +45,7 @@ flowchart LR
         AR_1202["AR-1202 - Planned"]:::status_planned
         AR_1220["AR-1220 - Done"]:::status_done
         AR_1221["AR-1221 - Done"]:::status_done
-        AR_1222["AR-1222 - In progress"]:::status_in_progress
+        AR_1222["AR-1222 - Open"]:::status_open
         AR_1223["AR-1223 - Planned"]:::status_planned
         AR_1224["AR-1224 - Planned"]:::status_planned
         AR_1225["AR-1225 - Done"]:::status_done
@@ -101,11 +101,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | asb-tui-ar1222-tutorial-worker-20260916 | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass. |
+| P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | Unclaimed | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass. |
 
 ### Blocked (2)
 
