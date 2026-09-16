@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1192-authenticated-agent-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:35:35+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
   "next_action": "Wait for ASB to publish verified agent_catalog and lifecycle control methods; standalone codecs and projections are present on current asb-tui main, but backend capability negotiation still rejects these operations.",
-  "owner": "codex-asb-tui-ar1192-audit",
+  "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-16T11:36:02+00:00",
+  "updated_at": "2026-09-16T11:36:09+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -84,3 +84,7 @@ published. All rendering and application behavior remains in asb-tui.
   agent_catalog/asb_lifecycle codecs and live projections are bounded and fail-closed. ASB control
   backend still advertises no agent catalog/lifecycle capabilities, so authenticated broker wiring
   cannot safely be completed.
+
+- 2026-09-16T11:36:09+00:00: Blocked by missing ASB agent catalog/lifecycle backend capabilities;
+  standalone asb-tui codec/projection implementation is verified and must resume only after ASB
+  publishes the authenticated control contract.

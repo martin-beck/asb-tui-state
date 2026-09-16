@@ -9,9 +9,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 6 |
@@ -33,7 +33,7 @@ flowchart LR
     end
     subgraph series_11["11 - Additional work"]
         direction TB
-        AR_1192["AR-1192 - In progress"]:::status_in_progress
+        AR_1192["AR-1192 - Blocked"]:::status_blocked
         AR_1195["AR-1195 - Planned"]:::status_planned
         AR_1197["AR-1197 - Blocked"]:::status_blocked
         AR_1198["AR-1198 - Done"]:::status_done
@@ -101,12 +101,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | asb_tui_ar0002_review | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | codex-asb-tui-ar1192-audit | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Wait for ASB to publish verified agent_catalog and lifecycle control methods; standalone codecs and projections are present on current asb-tui main, but backend capability negotiation still rejects these operations. |
 
 ### Open (1)
 
@@ -114,10 +113,11 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator may review draft PR 25 at exact head 2bc987ee0a9ad9b18807989501aca3fe87cab8be and, without worker-side merge, promote it only under repository policy. |
 
-### Blocked (1)
+### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Wait for ASB to publish verified agent_catalog and lifecycle control methods; standalone codecs and projections are present on current asb-tui main, but backend capability negotiation still rejects these operations. |
 | P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | ASB readiness contract AR-1227/AR-1199 is still unpublished; retain the verified local readiness seam and resume authoritative provider wiring when that contract is merged. |
 
 ### Planned (9)
