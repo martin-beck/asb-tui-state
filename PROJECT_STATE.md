@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #110 | `docs/ar-1223-tui-replay-comparison@546c82abf8e8` | `main` | BLOCKED | QUEUED:, QUEUED: | docs(tutorial): add replay and comparison journeys |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35097437178 | `546c82abf8e8` | pull_request | AWQ shadow observation | queued:- |
+| 35097436547 | `546c82abf8e8` | pull_request | Repository quality | queued:- |
 | 35096906653 | `f87e3a1ceaf1` | push | Repository quality | completed:success |
 | 35096906580 | `f87e3a1ceaf1` | push | Trusted main verification | completed:success |
 | 35096678774 | `f6077762a457` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35095850235 | `11f4a0671da4` | pull_request | Repository quality | completed:success |
 | 35095432963 | `f4fe1349fff6` | pull_request | AWQ shadow observation | completed:failure |
 | 35095432596 | `f4fe1349fff6` | pull_request | Repository quality | completed:failure |
-| 35095376420 | `f4fe1349fff6` | pull_request | AWQ shadow observation | completed:cancelled |
-| 35095376003 | `f4fe1349fff6` | pull_request | Repository quality | completed:cancelled |
