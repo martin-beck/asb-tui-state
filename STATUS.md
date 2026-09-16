@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**19 ARs tracked** across 4 active status categories.
+**19 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -29,7 +29,7 @@ flowchart LR
     subgraph series_00["00 - Coordination foundation"]
         direction TB
         AR_0001["AR-0001 - Open"]:::status_open
-        AR_0002["AR-0002 - Open"]:::status_open
+        AR_0002["AR-0002 - In progress"]:::status_in_progress
     end
     subgraph series_11["11 - Additional work"]
         direction TB
@@ -101,12 +101,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | codex-asb-tui-coordinator-20260916 | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Rebase both draft candidates onto current main, rerun hosted required checks, and obtain coordinator promotion decision; no merge from review worker. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator must refresh PR #25 on current main, rerun exact-head required hosted checks, and decide whether to promote; retain additive shadow-only scope. |
-| P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Rebase both draft candidates onto current main, rerun hosted required checks, and obtain coordinator promotion decision; no merge from review worker. |
 
 ### Blocked (2)
 
