@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #108 | `docs/ar-1221-tui-readiness@64d732b9e412` | `main` | UNKNOWN | - | docs(tutorial): add benchmark readiness journey |
 
 ## Recent workflows
 
