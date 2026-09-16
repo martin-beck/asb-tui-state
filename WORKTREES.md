@@ -6,8 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `asb-tui-main` | `main` | `d8668bd4021d` | 0 | behind 89, ahead 2 |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `d8668bd4021d` | 3 | behind 89, ahead 2 |
-| changed files | - | - | - | `docs/tutorials/`, `tests/fixtures/tutorial/`, `tools/test-benchmark-readiness-tutorial.py` |
+| `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `d6acbc7f7a1b` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/tutorials/benchmark-readiness.md`, `tests/fixtures/tutorial/`, `tools/test-benchmark-readiness-tutorial.py` |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 145, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 89, ahead 1 |
 | `asb-tui-ar1014` | `fix/ar1014-selection-bounds` | `ed8b648576ec` | 0 | behind 90, ahead 1 |

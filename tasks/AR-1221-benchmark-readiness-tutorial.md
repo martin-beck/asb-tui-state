@@ -10,16 +10,16 @@
   "next_action": "Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness.",
   "observed_branch": "docs/ar-1221-tui-readiness",
   "observed_dirty": 3,
-  "observed_head": "d8668bd4021df5a66ea9577b96b5af6e102af1f9",
+  "observed_head": "d6acbc7f7a1b8fbfc8fd2daea0b4c7676c7dfbd9",
   "owner": "codex-asb-tui-ar1221-readiness-20260916",
   "plan": "../plans/AR-1221.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:17:49+00:00",
+  "updated_at": "2026-09-16T12:17:54+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
