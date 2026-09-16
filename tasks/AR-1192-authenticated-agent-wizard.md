@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1192-authenticated-agent-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T12:35:35+00:00",
   "depends_on": [],
   "id": "AR-1192",
   "next_action": "Await ASB backend execution for agent_catalog and agent lifecycle methods: provider-auth PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74, but ASB control.rs still returns CapabilityUnavailable and advertises no lifecycle/catalog capabilities. Then adapt existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1192-audit",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-16T04:11:59+00:00",
+  "updated_at": "2026-09-16T11:35:35+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -75,3 +75,5 @@ published. All rendering and application behavior remains in asb-tui.
 - 2026-09-16T04:11:59+00:00: Recovered expired claim formerly owned by root. Recover expired
   monitoring lease; ASB progressed only on unrelated replay contract and lifecycle backend remains
   unavailable
+
+- 2026-09-16T11:35:35+00:00: Claimed by codex-asb-tui-ar1192-audit.

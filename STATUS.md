@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -33,7 +33,7 @@ flowchart LR
     end
     subgraph series_11["11 - Additional work"]
         direction TB
-        AR_1192["AR-1192 - Open"]:::status_open
+        AR_1192["AR-1192 - In progress"]:::status_in_progress
         AR_1195["AR-1195 - Planned"]:::status_planned
         AR_1197["AR-1197 - Blocked"]:::status_blocked
         AR_1198["AR-1198 - Done"]:::status_done
@@ -101,18 +101,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | asb_tui_ar0002_review | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | codex-asb-tui-ar1192-audit | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Await ASB backend execution for agent_catalog and agent lifecycle methods: provider-auth PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74, but ASB control.rs still returns CapabilityUnavailable and advertises no lifecycle/catalog capabilities. Then adapt existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator may review draft PR 25 at exact head 2bc987ee0a9ad9b18807989501aca3fe87cab8be and, without worker-side merge, promote it only under repository policy. |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Await ASB backend execution for agent_catalog and agent lifecycle methods: provider-auth PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74, but ASB control.rs still returns CapabilityUnavailable and advertises no lifecycle/catalog capabilities. Then adapt existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove. |
 
 ### Blocked (1)
 
