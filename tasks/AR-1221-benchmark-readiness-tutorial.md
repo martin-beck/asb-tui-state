@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:26:25+00:00",
+  "updated_at": "2026-09-16T12:26:34+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -76,3 +76,6 @@ Implement the linked tutorial and deterministic offline state fixtures only.
   green.
 
 - 2026-09-16T12:26:25+00:00: Claimed by codex-asb-tui-ar1221-readiness-20260916.
+
+- 2026-09-16T12:26:34+00:00: Recorded command exit 0; command argv SHA-256
+  438a609eba65643767416c25b32a407d58148de7877ca5f380fbdc042fd8fe10.
