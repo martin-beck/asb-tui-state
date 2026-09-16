@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-16T12:59:26+00:00",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "PR #105 merged at asb-tui main 4fd59a3 and formal auto-open transition is verified; wait for ASB readiness contract AR-1227/1199, then wire authoritative provider and persistence acknowledgement.",
+  "next_action": "ASB readiness contract AR-1227/AR-1199 is still unpublished; retain the verified local readiness seam and resume authoritative provider wiring when that contract is merged.",
   "owner": "codex-asb-tui-ar1197",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-16T11:29:26+00:00",
+  "updated_at": "2026-09-16T11:30:54+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -175,3 +175,9 @@ wizard work are complete.
   Recover expired startup-readiness worker lease; no active worker evidence remains
 
 - 2026-09-16T11:29:26+00:00: Claimed by codex-asb-tui-ar1197.
+
+- 2026-09-16T11:30:54+00:00: Standalone origin/main audit completed in isolated worktree: cargo fmt
+  --check, cargo clippy --all-targets -- -D warnings, and cargo test --locked all passed (136 unit
+  tests plus integration suites). No source change was needed; existing readiness controller and UI
+  injection remain deterministic and fail-closed. Integration is blocked on the ASB-owned
+  readiness/router contract, not a TUI defect.

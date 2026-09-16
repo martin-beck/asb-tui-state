@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | PR #105 merged at asb-tui main 4fd59a3 and formal auto-open transition is verified; wait for ASB readiness contract AR-1227/1199, then wire authoritative provider and persistence acknowledgement. | codex-asb-tui-ar1197 |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | ASB readiness contract AR-1227/AR-1199 is still unpublished; retain the verified local readiness seam and resume authoritative provider wiring when that contract is merged. | codex-asb-tui-ar1197 |
 
 ## Open
 
