@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1221-tui-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:26:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1220"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1221-tui-readiness",
   "observed_dirty": 0,
   "observed_head": "11f4a0671da40a67ee3143dd5bec149390a6aa74",
-  "owner": "codex-asb-tui-ar1221-readiness-20260916",
+  "owner": "",
   "plan": "../plans/AR-1221.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:26:40+00:00",
+  "updated_at": "2026-09-16T12:26:47+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -79,3 +79,8 @@ Implement the linked tutorial and deterministic offline state fixtures only.
 
 - 2026-09-16T12:26:34+00:00: Recorded command exit 0; command argv SHA-256
   438a609eba65643767416c25b32a407d58148de7877ca5f380fbdc042fd8fe10.
+
+- 2026-09-16T12:26:47+00:00: CI header fix pushed: exact PR #108 head 11f4a06. Added standard HTML
+  copyright/SPDX header to docs/tutorials/benchmark-readiness.md. Evidence: python3
+  tools/test-benchmark-readiness-tutorial.py, python3 tools/validate-publication.py, and git diff
+  --check pass. Coordinator should re-run exact-head CI.
