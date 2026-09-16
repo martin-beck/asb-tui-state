@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1224-tutorial-freshness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:49:57+00:00",
+  "claim_expires": "2026-09-16T14:54:27+00:00",
   "depends_on": [
     "AR-1220",
     "AR-1221",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Cross-repository tutorial syntax and freshness gate",
-  "updated_at": "2026-09-16T12:49:57+00:00",
+  "updated_at": "2026-09-16T12:54:27+00:00",
   "worktree_key": "asb-tui-ar-1224"
 }
 ---
@@ -31,3 +31,5 @@ provider, LLM, benchmark, credential, or network execution.
   freshness CI.
 
 - 2026-09-16T12:49:57+00:00: Claimed by asb-tui-ar1224-freshness-20260916.
+
+- 2026-09-16T12:54:27+00:00: Heartbeat by asb-tui-ar1224-freshness-20260916.
