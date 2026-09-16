@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | codex-asb-tui-ar1220-tutorial-20260916 | Teach first-time users to initialize asb-tui and configure their first agent connection. | Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial. |
+| P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | codex-asb-tui-ar1220-tutorial-20260916 | Teach first-time users to initialize asb-tui and configure their first agent connection. | Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance. |
 
 ### Blocked (2)
 

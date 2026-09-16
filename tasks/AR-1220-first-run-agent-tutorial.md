@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T13:02:38+00:00",
   "depends_on": [],
   "id": "AR-1220",
-  "next_action": "Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial.",
+  "next_action": "Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance.",
   "observed_branch": "docs/ar-1220-first-run-agent",
   "observed_dirty": 0,
   "observed_head": "fb9d4b86270f4be11102868caff226fe35900e78",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:07:12+00:00",
+  "updated_at": "2026-09-16T12:07:38+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
@@ -62,3 +62,15 @@ AR-1210 is recorded in the plan; do not run tutorial actions or connect to an ag
 
 - 2026-09-16T12:07:12+00:00: Recorded command exit 0; command argv SHA-256
   14c8b278fb9fbdbf513c5ad8b88abecc382642e01cd6be71d2cb829a7f384ce2.
+
+- 2026-09-16T12:07:38+00:00: Implementation complete and published without merge. Product branch
+  docs/ar-1220-first-run-agent exact head fb9d4b86270f4be11102868caff226fe35900e78 adds the
+  machine-readable first-run/first-agent tutorial, human journey documentation, and deterministic
+  offline validator with negative network/option-order cases; CI invokes the validator. It uses
+  synthetic identities/digests only and never runs ASB, providers, agents, benchmarks, or tutorial
+  commands. Exact-head local evidence: validator, JSON parse, fmt, cargo test --locked (136 library
+  tests plus all integration suites), clippy, UI help/model, compatibility, release/publication,
+  shell quality, actionlint/zizmor, and Gitleaks completed; the broad private-material grep produced
+  one pre-existing false positive in tools/validate-ui-help.py and was not changed. Commit is
+  SSH-signed and DCO-compliant. PR #107 is open, non-draft, mergeable; hosted Repository quality is
+  in progress and AWQ prerequisite is queued.
