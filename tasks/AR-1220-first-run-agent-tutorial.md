@@ -2,22 +2,22 @@
 {
   "branch": "docs/ar-1220-first-run-agent",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:09:47+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1220",
   "next_action": "Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance.",
   "observed_branch": "docs/ar-1220-first-run-agent",
   "observed_dirty": 0,
   "observed_head": "adf1270df6bb39a0321b5eac5d5f38ce36eccf01",
-  "owner": "codex-asb-tui-ar1220-dco-fix-20260916",
+  "owner": "",
   "plan": "../plans/AR-1220.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:09:59+00:00",
+  "updated_at": "2026-09-16T12:12:39+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
@@ -85,3 +85,10 @@ AR-1210 is recorded in the plan; do not run tutorial actions or connect to an ag
 
 - 2026-09-16T12:09:59+00:00: Recorded command exit 0; command argv SHA-256
   ff5b53c615affab9b33aa0f51142e116797802a76c0d42a0dcf16778b694dbc3.
+
+- 2026-09-16T12:12:39+00:00: AR-1220 completed: corrected exact head
+  adf1270df6bb39a0321b5eac5d5f38ce36eccf01 is SSH-signed with matching DCO; offline tutorial
+  validator, JSON parse, Rust fmt, full locked tests, Clippy,
+  UI/model/publication/shell/actionlint/zizmor/Gitleaks checks passed. Fresh hosted Repository
+  quality, Rust, and AWQ shadow checks all passed; PR #107 merged at
+  d6acbc7f7a1b8fbfc8fd2daea0b4c7676c7dfbd9. Tutorial remains synthetic and offline.
