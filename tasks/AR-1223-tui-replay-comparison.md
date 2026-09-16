@@ -2,21 +2,21 @@
 {
   "branch": "docs/ar-1223-tui-replay-comparison",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:13:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1222"
   ],
   "id": "AR-1223",
   "next_action": "Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison.",
-  "owner": "asb-tui-ar1223-publisher-20260916",
+  "owner": "",
   "plan": "../plans/AR-1223.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Teach TUI users to replay LLM responses offline and compare multiple agents fairly.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "asb-tui record/replay and comparison tutorials",
-  "updated_at": "2026-09-16T12:43:34+00:00",
+  "updated_at": "2026-09-16T12:43:53+00:00",
   "worktree_key": "asb-tui-ar-1223"
 }
 ---
@@ -46,3 +46,7 @@ Implement the linked tutorials and synthetic cassette/report fixtures only.
 
 - 2026-09-16T12:43:34+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-16T12:43:53+00:00: Review handoff remains PR #110 exact head
+  546c82abf8e8427c8a7aff9718212f76640c67da; implementation and local gates passed; hosted exact-head
+  CI and independent review pending.
