@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Coordinator-only promotion decision for independently reviewed draft state PR #1 and product PR #24; workers must not merge. | asb_tui_ar0002_review |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Await ASB backend execution for agent_catalog and agent lifecycle methods: provider-auth PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74, but ASB control.rs still returns CapabilityUnavailable and advertises no lifecycle/catalog capabilities. Then adapt existing asb-tui v1.4/v1.5 codecs through the adopted broker stream and qualify install/status/upgrade/remove. | codex-asb-tui-ar1192-audit |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Wait for ASB to publish verified agent_catalog and lifecycle control methods; standalone codecs and projections are present on current asb-tui main, but backend capability negotiation still rejects these operations. | codex-asb-tui-ar1192-audit |
 
 ## Open
 
