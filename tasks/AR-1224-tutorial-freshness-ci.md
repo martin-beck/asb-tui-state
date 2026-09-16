@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1224-tutorial-freshness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:26:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1220",
     "AR-1221",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1224",
   "next_action": "Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined.",
-  "owner": "asb-tui-ar1224-freshness-20260916",
+  "owner": "",
   "plan": "../plans/AR-1224.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Cross-repository tutorial syntax and freshness gate",
-  "updated_at": "2026-09-16T12:56:59+00:00",
+  "updated_at": "2026-09-16T12:57:01+00:00",
   "worktree_key": "asb-tui-ar-1224"
 }
 ---
@@ -41,3 +41,7 @@ provider, LLM, benchmark, credential, or network execution.
   cargo unavailable locally.
 
 - 2026-09-16T12:56:59+00:00: Claimed by asb-tui-ar1224-freshness-20260916.
+
+- 2026-09-16T12:57:01+00:00: Fixed PR #111 CI scope leak: pinned ASB checkout now uses sibling path
+  ../asb-contract outside product tree; freshness validator receives that path. Signed/DCO fix
+  b3f39617a0c4b84c49eb11d23b28082af2429e5c.
