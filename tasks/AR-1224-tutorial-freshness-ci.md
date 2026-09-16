@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1224-tutorial-freshness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:26:59+00:00",
   "depends_on": [
     "AR-1220",
     "AR-1221",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1224",
   "next_action": "Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined.",
-  "owner": "",
+  "owner": "asb-tui-ar1224-freshness-20260916",
   "plan": "../plans/AR-1224.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Cross-repository tutorial syntax and freshness gate",
-  "updated_at": "2026-09-16T12:54:29+00:00",
+  "updated_at": "2026-09-16T12:56:59+00:00",
   "worktree_key": "asb-tui-ar-1224"
 }
 ---
@@ -39,3 +39,5 @@ provider, LLM, benchmark, credential, or network execution.
   ASB command metadata from immutable contract checkout 3e475bda8f44836a169bc8fc679b430f6c993961,
   checks paired docs/references/routes and offline safety without execution. Focused checks pass;
   cargo unavailable locally.
+
+- 2026-09-16T12:56:59+00:00: Claimed by asb-tui-ar1224-freshness-20260916.
