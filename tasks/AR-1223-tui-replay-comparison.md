@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach TUI users to replay LLM responses offline and compare multiple agents fairly.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "asb-tui record/replay and comparison tutorials",
-  "updated_at": "2026-09-16T12:39:13+00:00",
+  "updated_at": "2026-09-16T12:42:36+00:00",
   "worktree_key": "asb-tui-ar-1223"
 }
 ---
@@ -29,3 +29,6 @@ Implement the linked tutorials and synthetic cassette/report fixtures only.
 
 - 2026-09-16T12:39:13+00:00: Recorded command exit 0; command argv SHA-256
   aa4295258989e065264f96fa9fa536f1b534a6ad83e2f47847d62b7939117c04.
+
+- 2026-09-16T12:42:36+00:00: Recorded command exit 0; command argv SHA-256
+  a4e5071ac96968a2d24914c6e624639b9a30b106c67b43d4360563b41d6c7957.
