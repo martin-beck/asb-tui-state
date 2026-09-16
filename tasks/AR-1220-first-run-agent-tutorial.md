@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:05:44+00:00",
+  "updated_at": "2026-09-16T12:06:05+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
@@ -44,3 +44,6 @@ AR-1210 is recorded in the plan; do not run tutorial actions or connect to an ag
 
 - 2026-09-16T12:05:44+00:00: Recorded command exit 0; command argv SHA-256
   48e3c4e24afdd26a7e068a54db983f6796b1c1f17478713b4f7dd2af99484fba.
+
+- 2026-09-16T12:06:05+00:00: Recorded command exit 0; command argv SHA-256
+  cb72620942961cf546cce778d1e87d28eec7546d7de2ccf0189547b177957827.
