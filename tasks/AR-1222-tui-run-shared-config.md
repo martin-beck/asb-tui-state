@@ -2,21 +2,21 @@
 {
   "branch": "docs/ar-1222-tui-run-shared-config",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:57:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1221"
   ],
   "id": "AR-1222",
   "next_action": "Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass.",
-  "owner": "codex-asb-tui-coordinator-20260916",
+  "owner": "",
   "plan": "../plans/AR-1222.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach TUI users to run a benchmark and apply one configuration to multiple agents.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "asb-tui benchmark run and shared-agent configuration tutorials",
-  "updated_at": "2026-09-16T12:37:52+00:00",
+  "updated_at": "2026-09-16T12:37:55+00:00",
   "worktree_key": "asb-tui-ar-1222"
 }
 ---
@@ -38,3 +38,7 @@ Implement the linked tutorials and offline fixtures. Tutorial CI must not perfor
   ED25519 and DCO; no ASB changes.
 
 - 2026-09-16T12:37:52+00:00: Claimed by codex-asb-tui-coordinator-20260916.
+
+- 2026-09-16T12:37:55+00:00: Merged asb-tui PR #109 at f87e3a1ceaf1e7e2e0463174348ea39211331ee7 from
+  signed exact head f6077762a457b1f9ce653bbd3f12851501a14b26. Repository quality, native-gates
+  prerequisite, and AWQ shadow checks passed (35096678578, 35096678774).
