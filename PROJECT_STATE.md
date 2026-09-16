@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `f87e3a1ceaf1e7e2e0463174348ea39211331ee7`
+- Product remote main: `48e4851d754671ef85f7a37c21ac0b8f67810e51`
 - Local origin/main: `d6acbc7f7a1b8fbfc8fd2daea0b4c7676c7dfbd9`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -10,14 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #110 | `docs/ar-1223-tui-replay-comparison@546c82abf8e8` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | docs(tutorial): add replay and comparison journeys |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35097437178 | `546c82abf8e8` | pull_request | AWQ shadow observation | in_progress:- |
-| 35097436547 | `546c82abf8e8` | pull_request | Repository quality | in_progress:- |
+| 35097981530 | `48e4851d7546` | push | Trusted main verification | in_progress:- |
+| 35097981505 | `48e4851d7546` | push | Repository quality | in_progress:- |
+| 35097437178 | `546c82abf8e8` | pull_request | AWQ shadow observation | completed:success |
+| 35097436547 | `546c82abf8e8` | pull_request | Repository quality | completed:success |
 | 35096906653 | `f87e3a1ceaf1` | push | Repository quality | completed:success |
 | 35096906580 | `f87e3a1ceaf1` | push | Trusted main verification | completed:success |
 | 35096678774 | `f6077762a457` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35096111416 | `7e90668687e2` | push | Repository quality | completed:success |
 | 35095850413 | `11f4a0671da4` | pull_request | AWQ shadow observation | completed:success |
 | 35095850235 | `11f4a0671da4` | pull_request | Repository quality | completed:success |
-| 35095432963 | `f4fe1349fff6` | pull_request | AWQ shadow observation | completed:failure |
-| 35095432596 | `f4fe1349fff6` | pull_request | Repository quality | completed:failure |
