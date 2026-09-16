@@ -2,21 +2,21 @@
 {
   "branch": "docs/ar-1223-tui-replay-comparison",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:38:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1222"
   ],
   "id": "AR-1223",
   "next_action": "Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison.",
-  "owner": "asb-tui-ar1223-replay-20260916",
+  "owner": "",
   "plan": "../plans/AR-1223.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Teach TUI users to replay LLM responses offline and compare multiple agents fairly.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "asb-tui record/replay and comparison tutorials",
-  "updated_at": "2026-09-16T12:42:51+00:00",
+  "updated_at": "2026-09-16T12:43:08+00:00",
   "worktree_key": "asb-tui-ar-1223"
 }
 ---
@@ -35,3 +35,9 @@ Implement the linked tutorials and synthetic cassette/report fixtures only.
 
 - 2026-09-16T12:42:51+00:00: Recorded command exit 0; command argv SHA-256
   9475f6bd52ef4c26109f2229374bfb58e7500e620612f1d1b694399c743c3e22.
+
+- 2026-09-16T12:43:08+00:00: Implementation handoff: PR #110 at exact head
+  546c82abf8e8427c8a7aff9718212f76640c67da. Added offline record/replay and multi-agent comparison
+  tutorial contracts, synthetic fixtures, and quality CI validator. Focused validator, publication,
+  help, state-model, formatting, and cargo +1.93.0 test --locked passed; commit has SSH signature
+  and DCO. Coordinator review and exact-head hosted CI remain.
