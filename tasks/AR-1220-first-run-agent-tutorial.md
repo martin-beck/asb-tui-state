@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1220",
   "next_action": "Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial.",
+  "observed_branch": "docs/ar-1220-first-run-agent",
+  "observed_dirty": 0,
+  "observed_head": "02ed7a9fb5c2a0beca23ca1a4a89cb85c196eb6e",
   "owner": "codex-asb-tui-ar1220-tutorial-20260916",
   "plan": "../plans/AR-1220.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:00:14+00:00",
+  "updated_at": "2026-09-16T12:00:19+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
