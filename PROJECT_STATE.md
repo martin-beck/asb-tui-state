@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #107 | `docs/ar-1220-first-run-agent@fb9d4b86270f` | `main` | BLOCKED | QUEUED:, QUEUED: | docs(tutorial): add offline first-agent journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35094010500 | `fb9d4b86270f` | pull_request | AWQ shadow observation | queued:- |
+| 35094010264 | `fb9d4b86270f` | pull_request | Repository quality | queued:- |
 | 35092415309 | `02ed7a9fb5c2` | push | Trusted main verification | completed:success |
 | 35092415279 | `02ed7a9fb5c2` | push | Repository quality | completed:success |
 | 35092200296 | `5ceace7736a0` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34991922837 | `9ab1201992ed` | push | Trusted main verification | completed:success |
 | 34991922793 | `9ab1201992ed` | push | Repository quality | completed:success |
 | 34991709959 | `ae2780e8923e` | pull_request | Repository quality | completed:success |
-| 34991253432 | `4fd59a32619f` | push | Repository quality | completed:success |
-| 34991253352 | `4fd59a32619f` | push | Trusted main verification | completed:success |
