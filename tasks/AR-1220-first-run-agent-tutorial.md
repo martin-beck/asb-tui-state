@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1220-first-run-agent",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:59:36+00:00",
+  "claim_expires": "2026-09-16T13:02:38+00:00",
   "depends_on": [],
   "id": "AR-1220",
   "next_action": "Promote after ASB tutorial-contract review; write the syntax-checked asb-tui first-run and first-agent tutorial.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach first-time users to initialize asb-tui and configure their first agent connection.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "asb-tui first-run and first-agent tutorial",
-  "updated_at": "2026-09-16T12:00:19+00:00",
+  "updated_at": "2026-09-16T12:02:38+00:00",
   "worktree_key": "asb-tui-ar-1220"
 }
 ---
@@ -33,3 +33,5 @@ AR-1210 is recorded in the plan; do not run tutorial actions or connect to an ag
 
 - 2026-09-16T12:00:14+00:00: Recorded command exit 0; command argv SHA-256
   0b3144e96c4613382328544894c86d35db9e80c40da13c499d63bec6d4c9c3e7.
+
+- 2026-09-16T12:02:38+00:00: Heartbeat by codex-asb-tui-ar1220-tutorial-20260916.
