@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T12:59:26+00:00",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "PR #105 merged at asb-tui main 4fd59a3 and formal auto-open transition is verified; wait for ASB readiness contract AR-1227/1199, then wire authoritative provider and persistence acknowledgement.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1197",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-15T21:32:38+00:00",
+  "updated_at": "2026-09-16T11:29:26+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -173,3 +173,5 @@ wizard work are complete.
 
 - 2026-09-15T21:32:38+00:00: Recovered expired claim formerly owned by root-startup-readiness.
   Recover expired startup-readiness worker lease; no active worker evidence remains
+
+- 2026-09-16T11:29:26+00:00: Claimed by codex-asb-tui-ar1197.
