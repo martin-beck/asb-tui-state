@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1221-tui-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:15:33+00:00",
+  "claim_expires": "2026-09-16T13:19:58+00:00",
   "depends_on": [
     "AR-1220"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:19:37+00:00",
+  "updated_at": "2026-09-16T12:19:58+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -55,3 +55,5 @@ Implement the linked tutorial and deterministic offline state fixtures only.
 
 - 2026-09-16T12:19:37+00:00: Recorded command exit 0; command argv SHA-256
   a9eb35ffb2d3abfb63c21081aa37f776cb801355cd9a82a755e8951d814079b6.
+
+- 2026-09-16T12:19:58+00:00: Heartbeat by codex-asb-tui-ar1221-readiness-20260916.
