@@ -105,7 +105,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | asb-tui-ar1222-tutorial-worker-20260916 | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Implement syntax-checked TUI tutorials for one benchmark run and extending agents with shared configuration. |
+| P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | asb-tui-ar1222-tutorial-worker-20260916 | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass. |
 
 ### Blocked (2)
 
