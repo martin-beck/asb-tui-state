@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #109 | `docs/ar-1222-tui-run-shared-config@f6077762a457` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | docs(tutorial): add benchmark run and shared config journeys |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35096678774 | `f6077762a457` | pull_request | AWQ shadow observation | in_progress:- |
+| 35096678578 | `f6077762a457` | pull_request | Repository quality | in_progress:- |
 | 35096111492 | `7e90668687e2` | push | Trusted main verification | completed:success |
 | 35096111416 | `7e90668687e2` | push | Repository quality | completed:success |
 | 35095850413 | `11f4a0671da4` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35095376003 | `f4fe1349fff6` | pull_request | Repository quality | completed:cancelled |
 | 35094492460 | `d6acbc7f7a1b` | push | Trusted main verification | completed:failure |
 | 35094492427 | `d6acbc7f7a1b` | push | Repository quality | completed:success |
-| 35094267713 | `adf1270df6bb` | pull_request | AWQ shadow observation | completed:success |
-| 35094267309 | `adf1270df6bb` | pull_request | Repository quality | completed:success |
