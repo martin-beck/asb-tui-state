@@ -2,21 +2,21 @@
 {
   "branch": "docs/ar-1223-tui-replay-comparison",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:08:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1222"
   ],
   "id": "AR-1223",
   "next_action": "Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison.",
-  "owner": "codex-asb-tui-coordinator-20260916",
+  "owner": "",
   "plan": "../plans/AR-1223.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach TUI users to replay LLM responses offline and compare multiple agents fairly.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "asb-tui record/replay and comparison tutorials",
-  "updated_at": "2026-09-16T12:48:36+00:00",
+  "updated_at": "2026-09-16T12:48:43+00:00",
   "worktree_key": "asb-tui-ar-1223"
 }
 ---
@@ -52,3 +52,8 @@ Implement the linked tutorials and synthetic cassette/report fixtures only.
   CI and independent review pending.
 
 - 2026-09-16T12:48:36+00:00: Claimed by codex-asb-tui-coordinator-20260916.
+
+- 2026-09-16T12:48:43+00:00: Merged asb-tui PR #110 at 48e4851d754671ef85f7a37c21ac0b8f67810e51 from
+  signed exact head 546c82abf8e8427c8a7aff9718212f76640c67da. Repository quality, native-gates
+  prerequisite, and AWQ shadow checks passed (rerun 35097436547, AWQ 35097437178). Local exact test
+  passed three consecutive times; hosted PTY failure was transient and cleared on rerun.
