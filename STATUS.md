@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
@@ -44,7 +44,7 @@ flowchart LR
         AR_1201["AR-1201 - Planned"]:::status_planned
         AR_1202["AR-1202 - Planned"]:::status_planned
         AR_1220["AR-1220 - Done"]:::status_done
-        AR_1221["AR-1221 - Open"]:::status_open
+        AR_1221["AR-1221 - In progress"]:::status_in_progress
         AR_1222["AR-1222 - Planned"]:::status_planned
         AR_1223["AR-1223 - Planned"]:::status_planned
         AR_1224["AR-1224 - Planned"]:::status_planned
@@ -101,11 +101,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md): asb-tui benchmark-readiness tutorial | Unclaimed | Teach users to inspect TUI benchmark readiness without performing a run. | Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness. |
+| P0 | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md): asb-tui benchmark-readiness tutorial | codex-asb-tui-coordinator-20260916 | Teach users to inspect TUI benchmark readiness without performing a run. | Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness. |
 
 ### Blocked (2)
 
