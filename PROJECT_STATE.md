@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #111 | `ci/ar-1224-tutorial-freshness@b3f39617a0c4` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | ci(tutorials): enforce cross-repository freshness |
+| #111 | `ci/ar-1224-tutorial-freshness@b3f39617a0c4` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | ci(tutorials): enforce cross-repository freshness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35098832726 | `b3f39617a0c4` | pull_request | AWQ shadow observation | in_progress:- |
-| 35098832582 | `b3f39617a0c4` | pull_request | Repository quality | in_progress:- |
+| 35098832726 | `b3f39617a0c4` | pull_request | AWQ shadow observation | completed:failure |
+| 35098832582 | `b3f39617a0c4` | pull_request | Repository quality | completed:failure |
 | 35098557467 | `71e54e1d6b34` | pull_request | AWQ shadow observation | completed:failure |
 | 35098557288 | `71e54e1d6b34` | pull_request | Repository quality | completed:failure |
 | 35097981530 | `48e4851d7546` | push | Trusted main verification | completed:success |
