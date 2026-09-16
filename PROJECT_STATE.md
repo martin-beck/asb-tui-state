@@ -10,13 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #111 | `ci/ar-1224-tutorial-freshness@71e54e1d6b34` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | ci(tutorials): enforce cross-repository freshness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35097981530 | `48e4851d7546` | push | Trusted main verification | in_progress:- |
-| 35097981505 | `48e4851d7546` | push | Repository quality | in_progress:- |
+| 35098557467 | `71e54e1d6b34` | pull_request | AWQ shadow observation | in_progress:- |
+| 35098557288 | `71e54e1d6b34` | pull_request | Repository quality | in_progress:- |
+| 35097981530 | `48e4851d7546` | push | Trusted main verification | completed:success |
+| 35097981505 | `48e4851d7546` | push | Repository quality | completed:success |
 | 35097437178 | `546c82abf8e8` | pull_request | AWQ shadow observation | completed:success |
 | 35097436547 | `546c82abf8e8` | pull_request | Repository quality | completed:success |
 | 35096906653 | `f87e3a1ceaf1` | push | Repository quality | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35096678578 | `f6077762a457` | pull_request | Repository quality | completed:success |
 | 35096111492 | `7e90668687e2` | push | Trusted main verification | completed:success |
 | 35096111416 | `7e90668687e2` | push | Repository quality | completed:success |
-| 35095850413 | `11f4a0671da4` | pull_request | AWQ shadow observation | completed:success |
-| 35095850235 | `11f4a0671da4` | pull_request | Repository quality | completed:success |
