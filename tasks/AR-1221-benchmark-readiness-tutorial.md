@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:15:33+00:00",
+  "updated_at": "2026-09-16T12:15:49+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -31,3 +31,6 @@ Implement the linked tutorial and deterministic offline state fixtures only.
 - 2026-09-16T12:15:15+00:00: Heartbeat by codex-asb-tui-ar1221-readiness-20260916.
 
 - 2026-09-16T12:15:33+00:00: Heartbeat by codex-asb-tui-ar1221-readiness-20260916.
+
+- 2026-09-16T12:15:49+00:00: Recorded command exit 0; command argv SHA-256
+  dee9698896ce66137446179d6254e7bb595f2e40295247fca2ef929a18415765.
