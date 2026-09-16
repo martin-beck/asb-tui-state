@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #108 | `docs/ar-1221-tui-readiness@11f4a0671da4` | `main` | BLOCKED | - | docs(tutorial): add benchmark readiness journey |
+| #108 | `docs/ar-1221-tui-readiness@11f4a0671da4` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | docs(tutorial): add benchmark readiness journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35095850235 | `11f4a0671da4` | pull_request | Repository quality | queued:- |
+| 35095850413 | `11f4a0671da4` | pull_request | AWQ shadow observation | in_progress:- |
+| 35095850235 | `11f4a0671da4` | pull_request | Repository quality | in_progress:- |
 | 35095432963 | `f4fe1349fff6` | pull_request | AWQ shadow observation | completed:failure |
 | 35095432596 | `f4fe1349fff6` | pull_request | Repository quality | completed:failure |
 | 35095376420 | `f4fe1349fff6` | pull_request | AWQ shadow observation | completed:cancelled |
@@ -27,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35094267309 | `adf1270df6bb` | pull_request | Repository quality | completed:success |
 | 35094010500 | `fb9d4b86270f` | pull_request | AWQ shadow observation | completed:failure |
 | 35094010264 | `fb9d4b86270f` | pull_request | Repository quality | completed:failure |
-| 35092415309 | `02ed7a9fb5c2` | push | Trusted main verification | completed:success |
