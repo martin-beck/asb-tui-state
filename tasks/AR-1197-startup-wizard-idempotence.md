@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "2026-09-16T12:59:26+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "ASB readiness contract AR-1227/AR-1199 is still unpublished; retain the verified local readiness seam and resume authoritative provider wiring when that contract is merged.",
-  "owner": "codex-asb-tui-ar1197",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-16T11:30:54+00:00",
+  "updated_at": "2026-09-16T11:31:03+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -181,3 +181,7 @@ wizard work are complete.
   tests plus integration suites). No source change was needed; existing readiness controller and UI
   injection remain deterministic and fail-closed. Integration is blocked on the ASB-owned
   readiness/router contract, not a TUI defect.
+
+- 2026-09-16T11:31:03+00:00: Blocked by ASB-owned readiness/router contract AR-1227/AR-1199;
+  standalone TUI implementation is fully tested on origin/main and no safe provider wiring can be
+  added until the negotiated contract is published.
