@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1221-tui-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:26:25+00:00",
   "depends_on": [
     "AR-1220"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1221-tui-readiness",
   "observed_dirty": 0,
   "observed_head": "f4fe1349fff65a7c133d82f64bc1bb9c372c0239",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1221-readiness-20260916",
   "plan": "../plans/AR-1221.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Teach users to inspect TUI benchmark readiness without performing a run.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "asb-tui benchmark-readiness tutorial",
-  "updated_at": "2026-09-16T12:21:11+00:00",
+  "updated_at": "2026-09-16T12:26:25+00:00",
   "worktree_key": "asb-tui-ar-1221"
 }
 ---
@@ -74,3 +74,5 @@ Implement the linked tutorial and deterministic offline state fixtures only.
   integration suite); existing tutorial/help/state validators passed. No ASB, agent, provider, LLM,
   benchmark, or network execution. Next: coordinator review/merge PR #108 after exact-head CI is
   green.
+
+- 2026-09-16T12:26:25+00:00: Claimed by codex-asb-tui-ar1221-readiness-20260916.
