@@ -10,20 +10,24 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #112 | `dependabot/github_actions/actions/setup-python-7.0.0@275c93451a06` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump actions/setup-python from 5.6.0 to 7.0.0 |
+| #113 | `dependabot/github_actions/taiki-e/install-action-2.87.10@f87820916df5` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.10 |
+| #114 | `dependabot/cargo/serde_json-1.0.151@36dbdd593e01` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump serde_json from 1.0.143 to 1.0.151 |
+| #115 | `dependabot/cargo/signal-hook-0.4.4@15184f7166d6` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35165317671 | `15184f7166d6` | pull_request | AWQ shadow observation | completed:failure |
+| 35165317520 | `15184f7166d6` | pull_request | Repository quality | completed:failure |
+| 35165312608 | `36dbdd593e01` | pull_request | AWQ shadow observation | completed:failure |
+| 35165312409 | `36dbdd593e01` | pull_request | Repository quality | completed:failure |
+| 35165310497 | `f87820916df5` | pull_request | AWQ shadow observation | completed:failure |
+| 35165310319 | `f87820916df5` | pull_request | Repository quality | completed:failure |
+| 35165303074 | `275c93451a06` | pull_request | AWQ shadow observation | completed:failure |
+| 35165302900 | `275c93451a06` | pull_request | Repository quality | completed:failure |
+| 35165262467 | `c492a7856da4` | dynamic | Dependabot Updates | completed:success |
+| 35165247520 | `c492a7856da4` | dynamic | Dependabot Updates | completed:success |
 | 35099638590 | `c492a7856da4` | push | Trusted main verification | completed:success |
 | 35099638531 | `c492a7856da4` | push | Repository quality | completed:success |
-| 35099264544 | `3c5ba34a42a1` | pull_request | AWQ shadow observation | completed:success |
-| 35099264036 | `3c5ba34a42a1` | pull_request | Repository quality | completed:success |
-| 35099012463 | `6c5f953b06fd` | pull_request | AWQ shadow observation | completed:failure |
-| 35099012233 | `6c5f953b06fd` | pull_request | Repository quality | completed:failure |
-| 35098832726 | `b3f39617a0c4` | pull_request | AWQ shadow observation | completed:failure |
-| 35098832582 | `b3f39617a0c4` | pull_request | Repository quality | completed:failure |
-| 35098557467 | `71e54e1d6b34` | pull_request | AWQ shadow observation | completed:failure |
-| 35098557288 | `71e54e1d6b34` | pull_request | Repository quality | completed:failure |
-| 35097981530 | `48e4851d7546` | push | Trusted main verification | completed:success |
-| 35097981505 | `48e4851d7546` | push | Repository quality | completed:success |
