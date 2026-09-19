@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Remain blocked until ASB publishes the authoritative readiness producer contract through AR-1227/AR-1199; retain the verified local readiness seam and resume only after exact signed contract heads are available.",
+  "next_action": "Remain blocked until ASB publishes the authoritative readiness producer and authenticated router through AR-1227/AR-1199; both remain planned and depend on blocked AR-1160 successor chain AR-1310/1312/1313.",
   "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-19T17:07:42+00:00",
+  "updated_at": "2026-09-19T17:09:19+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -190,3 +190,8 @@ wizard work are complete.
   adbf14cc21d122f2071c5c2d2dc87754ced24b0f with local locked tests passing; ASB AR-1227 and AR-1199
   remain planned and depend on blocked AR-1160. Existing TUI startup/model work remains intact; no
   backend or ASB changes made.
+
+- 2026-09-19T17:09:19+00:00: 2026-09-19 follow-up audit: ASB state
+  ea490e43003e03eaba075cbc07e00332215fd749 still marks AR-1227 and AR-1199 planned. Their
+  prerequisite AR-1160 is blocked at 21b675e8 and successor AR-1310 is blocked by AR-1312/AR-1313.
+  Existing asb-tui readiness/model code remains intact; no backend or ASB changes made.
