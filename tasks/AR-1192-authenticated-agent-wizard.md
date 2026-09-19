@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Remain blocked until ASB publishes authenticated agent_catalog and lifecycle control methods; ASB AR-1160 is still blocked on runtime-owned provider capture, cassette reconciliation, and offline activation. Resume only after exact verified ASB contract heads are published.",
+  "next_action": "Remain blocked until ASB publishes authenticated agent_catalog and lifecycle control methods; ASB AR-1160 remains blocked and its successor AR-1310 is itself blocked by AR-1312/AR-1313. Resume only after exact verified ASB contract heads are published.",
   "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-19T17:07:34+00:00",
+  "updated_at": "2026-09-19T17:09:16+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -93,3 +93,8 @@ published. All rendering and application behavior remains in asb-tui.
   adbf14cc21d122f2071c5c2d2dc87754ced24b0f with local locked tests passing; ASB state ea490e4 marks
   AR-1151 done but AR-1160 blocked at 21b675e81191. No TUI-side mutation is authorized until
   authenticated catalog/lifecycle capability is actually published.
+
+- 2026-09-19T17:09:16+00:00: 2026-09-19 follow-up audit: ASB state
+  ea490e43003e03eaba075cbc07e00332215fd749 and product main 78a8e9fc2144623311e315fcc4e46c2831b0b2c1
+  still expose no agent_catalog or lifecycle capability. ASB AR-1160 checkpoint 21b675e8 remains
+  historical blocked; successor AR-1310 is blocked by its DCO/coverage chain. No TUI mutation made.
