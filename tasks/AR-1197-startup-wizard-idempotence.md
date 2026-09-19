@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "ASB readiness contract AR-1227/AR-1199 is still unpublished; retain the verified local readiness seam and resume authoritative provider wiring when that contract is merged.",
+  "next_action": "Remain blocked until ASB publishes the authoritative readiness producer contract through AR-1227/AR-1199; retain the verified local readiness seam and resume only after exact signed contract heads are available.",
   "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-16T11:31:03+00:00",
+  "updated_at": "2026-09-19T17:07:42+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -185,3 +185,8 @@ wizard work are complete.
 - 2026-09-16T11:31:03+00:00: Blocked by ASB-owned readiness/router contract AR-1227/AR-1199;
   standalone TUI implementation is fully tested on origin/main and no safe provider wiring can be
   added until the negotiated contract is published.
+
+- 2026-09-19T17:07:42+00:00: 2026-09-19 read-only dependency audit: asb-tui origin/main is
+  adbf14cc21d122f2071c5c2d2dc87754ced24b0f with local locked tests passing; ASB AR-1227 and AR-1199
+  remain planned and depend on blocked AR-1160. Existing TUI startup/model work remains intact; no
+  backend or ASB changes made.
