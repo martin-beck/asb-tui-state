@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Wait for ASB to publish verified agent_catalog and lifecycle control methods; standalone codecs and projections are present on current asb-tui main, but backend capability negotiation still rejects these operations.",
+  "next_action": "Remain blocked until ASB publishes authenticated agent_catalog and lifecycle control methods; ASB AR-1160 is still blocked on runtime-owned provider capture, cassette reconciliation, and offline activation. Resume only after exact verified ASB contract heads are published.",
   "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-16T11:36:09+00:00",
+  "updated_at": "2026-09-19T17:07:34+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -88,3 +88,8 @@ published. All rendering and application behavior remains in asb-tui.
 - 2026-09-16T11:36:09+00:00: Blocked by missing ASB agent catalog/lifecycle backend capabilities;
   standalone asb-tui codec/projection implementation is verified and must resume only after ASB
   publishes the authenticated control contract.
+
+- 2026-09-19T17:07:34+00:00: 2026-09-19 read-only dependency audit: asb-tui origin/main is
+  adbf14cc21d122f2071c5c2d2dc87754ced24b0f with local locked tests passing; ASB state ea490e4 marks
+  AR-1151 done but AR-1160 blocked at 21b675e81191. No TUI-side mutation is authorized until
+  authenticated catalog/lifecycle capability is actually published.
