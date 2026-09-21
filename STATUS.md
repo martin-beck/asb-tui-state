@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**19 ARs tracked** across 3 active status categories.
+**21 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 13 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -54,9 +54,17 @@ flowchart LR
         AR_1229["AR-1229 - Done"]:::status_done
         AR_1230["AR-1230 - Done"]:::status_done
     end
+    subgraph series_13["13 - Additional work"]
+        direction TB
+        AR_1317["AR-1317 - Planned"]:::status_planned
+        AR_1318["AR-1318 - Open"]:::status_open
+    end
     AR_1192 --> AR_1195
+    AR_1192 --> AR_1317
+    AR_1192 --> AR_1318
     AR_1195 --> AR_1200
     AR_1197 --> AR_1201
+    AR_1197 --> AR_1317
     AR_1201 --> AR_1202
     AR_1220 --> AR_1221
     AR_1220 --> AR_1224
@@ -65,6 +73,8 @@ flowchart LR
     AR_1222 --> AR_1223
     AR_1222 --> AR_1224
     AR_1223 --> AR_1224
+    AR_1228 --> AR_1317
+    AR_1229 --> AR_1317
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -81,9 +91,9 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001.md) | None | None |
 | [AR-0002](tasks/AR-0002.md) | None | None |
-| [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) |
+| [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md), [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md), [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md) |
 | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | [AR-1200](tasks/AR-1200-asb-router-client.md) |
-| [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md) | None | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md) |
+| [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md) | None | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) |
 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md) | None | None |
 | [AR-1200](tasks/AR-1200-asb-router-client.md) | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md) | None |
 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md) | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md) | [AR-1202](tasks/AR-1202-live-resize-qualification.md) |
@@ -95,20 +105,28 @@ flowchart LR
 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md) | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md), [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md), [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md) | None |
 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md) | None | None |
 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md) | None | None |
-| [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md) | None | None |
-| [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md) | None | None |
+| [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md) | None | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) |
+| [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md) | None | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) |
 | [AR-1230](tasks/AR-1230-live-resize-post-merge.md) | None | None |
+| [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md), [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md), [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md), [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md) | None |
+| [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md) | None |
 
 ## Complete AR inventory
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Unclaimed | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
 
 ### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked only on ASB AR-1315 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified. |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1315; local startup routing and manual reconfiguration are merged and verified. |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified. |
 
-### Planned (4)
+### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -116,6 +134,7 @@ flowchart LR
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Unclaimed | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. |
 | P0 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md): Executable formal UI model and source parity | Unclaimed | Make every TUI source element and transition mechanically checkable against the formal UI model. | Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui. |
 | P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
+| P0 | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md): Secure setup-wizard authentication handoff | Unclaimed | Complete secure API-key enrollment UX in the setup wizard without raw-key transport. | Design and implement the renderer-neutral secure credential enrollment handoff after AR-1316 publishes a live agent catalog. |
 
 ### Done (13)
 
