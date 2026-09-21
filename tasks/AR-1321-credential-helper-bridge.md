@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1317"],
   "id": "AR-1321",
-  "next_action": "Integrate the approved local credential-helper/keychain invocation and typed enrollment/status result into the wizard without allowing raw secrets into TUI state or control frames.",
+  "next_action": "Integrate an approved local credential-helper/keychain invocation and project enrollment/status into the wizard; the strict receipt codec and transport seam are merged.",
   "owner": "",
   "plan": "../plans/AR-1321.md",
   "priority": "P0",
@@ -14,7 +14,7 @@
   "summary": "Connect the setup wizard to an approved local credential helper without raw-key transport.",
   "task_revision": 1,
   "title": "Credential-helper bridge for setup wizard",
-  "updated_at": "2026-09-21T02:04:26+00:00",
+  "updated_at": "2026-09-21T02:18:12+00:00",
   "worktree_key": "asb-tui-ar-1321-credential-helper-bridge"
 }
 ---
