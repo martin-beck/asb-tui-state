@@ -3,7 +3,7 @@
   "branch": "feature/ar-1318-agent-catalog-protocol-compatibility",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1192"],
+  "depends_on": [],
   "id": "AR-1318",
   "next_action": "Update the TUI agent-catalog codec/projection for ASB's signer, SBOM, license and target provenance fields, then publish exact fixture evidence.",
   "owner": "",
