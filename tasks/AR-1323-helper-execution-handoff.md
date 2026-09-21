@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Open/qualify the TUI helper client against ASB AR-1324 commit 2953465, then run live first-user wizard acceptance and exact-head post-merge gates.",
+  "next_action": "Open/qualify the TUI helper client against ASB AR-1324 commit 7165884, then run live first-user wizard acceptance and exact-head post-merge gates.",
   "owner": "codex-ar1323",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-21T03:51:11+00:00",
+  "updated_at": "2026-09-21T04:00:41+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -36,3 +36,7 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-21T03:51:11+00:00: Implemented and tested TUI v1.10 auth_helper_invoke codec and transport
   method in signed commit c3855a6 on the isolated TUI worktree. The profile remains credential-free
   JSON at the frontend boundary and is revalidated as typed ProviderProfileV1 by ASB.
+
+- 2026-09-21T04:00:41+00:00: ASB AR-1324 now includes generated schema updates and passes schema
+  conformance; TUI client commit c3855a6 remains fully tested. Cross-repository live qualification
+  is next after the independent ASB metrics test blocker is resolved.
