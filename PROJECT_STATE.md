@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
+| #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35554921151 | `13dd5fa21d02` | push | Repository quality | in_progress:- |
-| 35554921118 | `13dd5fa21d02` | push | Trusted main verification | in_progress:- |
+| 35554921151 | `13dd5fa21d02` | push | Repository quality | completed:success |
+| 35554921118 | `13dd5fa21d02` | push | Trusted main verification | completed:failure |
 | 35554769418 | `603c5b0095d4` | pull_request | AWQ shadow observation | completed:success |
 | 35554769291 | `603c5b0095d4` | pull_request | Repository quality | completed:success |
 | 35554631784 | `ccb1b4f44ab7` | pull_request | AWQ shadow observation | completed:failure |
