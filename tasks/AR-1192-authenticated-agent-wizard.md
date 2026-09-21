@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-19T17:09:16+00:00",
+  "updated_at": "2026-09-21T03:48:47+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -102,3 +102,6 @@ published. All rendering and application behavior remains in asb-tui.
 - 2026-09-21: Current TUI main contains the complete wizard consumer and recording dispatch path,
   but ASB main still returns CapabilityUnavailable for AgentCatalog. Created ASB AR-1316 as the
   bounded producer dependency; no TUI mutation is needed until that contract is published.
+
+- 2026-09-21T03:48:47+00:00: ASB AR-1316 authenticated agent catalog producer is merged and
+  exact-main verified; re-audit dependency before closing stale block.
