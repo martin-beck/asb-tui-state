@@ -122,7 +122,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | codex-ar1323 | Invoke the approved credential helper through the authenticated runner boundary. | Add the negotiated runner-owned helper invocation/status contract and wire the wizard to it without paths, raw secrets, or arbitrary command execution. |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | codex-ar1323 | Invoke the approved credential helper through the authenticated runner boundary. | Open/qualify the TUI helper client against ASB AR-1324 commit 2953465, then run live first-user wizard acceptance and exact-head post-merge gates. |
 
 ### Open (1)
 
