@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-19T17:09:19+00:00",
+  "updated_at": "2026-09-21T03:48:50+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -199,3 +199,6 @@ wizard work are complete.
   ea490e43003e03eaba075cbc07e00332215fd749 still marks AR-1227 and AR-1199 planned. Their
   prerequisite AR-1160 is blocked at 21b675e8 and successor AR-1310 is blocked by AR-1312/AR-1313.
   Existing asb-tui readiness/model code remains intact; no backend or ASB changes made.
+
+- 2026-09-21T03:48:50+00:00: ASB AR-1316 readiness/catalog producer is merged and exact-main
+  verified; re-audit dependency before closing stale block.
