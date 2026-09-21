@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Remain blocked until ASB publishes authenticated agent_catalog and lifecycle control methods; ASB AR-1160 remains blocked and its successor AR-1310 is itself blocked by AR-1312/AR-1313. Resume only after exact verified ASB contract heads are published.",
+  "next_action": "Remain blocked only on ASB AR-1315 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified.",
   "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
@@ -98,3 +98,7 @@ published. All rendering and application behavior remains in asb-tui.
   ea490e43003e03eaba075cbc07e00332215fd749 and product main 78a8e9fc2144623311e315fcc4e46c2831b0b2c1
   still expose no agent_catalog or lifecycle capability. ASB AR-1160 checkpoint 21b675e8 remains
   historical blocked; successor AR-1310 is blocked by its DCO/coverage chain. No TUI mutation made.
+
+- 2026-09-21: Current TUI main contains the complete wizard consumer and recording dispatch path,
+  but ASB main still returns CapabilityUnavailable for AgentCatalog. Created ASB AR-1315 as the
+  bounded producer dependency; no TUI mutation is needed until that contract is published.

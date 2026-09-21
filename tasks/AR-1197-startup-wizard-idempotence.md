@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Remain blocked until ASB publishes the authoritative readiness producer and authenticated router through AR-1227/AR-1199; both remain planned and depend on blocked AR-1160 successor chain AR-1310/1312/1313.",
+  "next_action": "Remain blocked only on authoritative ASB readiness/catalog publication through AR-1315; local startup routing and manual reconfiguration are merged and verified.",
   "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
@@ -32,6 +32,10 @@ The implementation candidate is PR #87, stacked on the readiness classification 
 `1450df452f066dc14f09bef1e7b1a41ec5128032`. The candidate adds the renderer-neutral
 `auto_opens_wizard()` and stable explanations, plus deterministic, idempotence, and fail-closed
 tests. It deliberately contains no Ratatui renderer or ASB changes.
+
+- 2026-09-21: Re-audit found the TUI startup state machine and manual reconfiguration path green
+  on main. The remaining live dependency is ASB's missing AgentCatalog producer, tracked by
+  AR-1315; historical AR-1227/1199 references are retained for provenance.
 
 Completion also requires integration with the formal AR-1182/1184 state and transition model,
 ownership/CI checks, wizard completion confirmation, reconnect/resize/restart behavior, and
