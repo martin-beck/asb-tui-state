@@ -105,8 +105,8 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked until ASB publishes authenticated agent_catalog and lifecycle control methods; ASB AR-1160 remains blocked and its successor AR-1310 is itself blocked by AR-1312/AR-1313. Resume only after exact verified ASB contract heads are published. |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked until ASB publishes the authoritative readiness producer and authenticated router through AR-1227/AR-1199; both remain planned and depend on blocked AR-1160 successor chain AR-1310/1312/1313. |
+| P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked only on ASB AR-1315 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1315; local startup routing and manual reconfiguration are merged and verified. |
 
 ### Planned (4)
 
