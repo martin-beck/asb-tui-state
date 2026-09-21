@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `adbf14cc21d122f2071c5c2d2dc87754ced24b0f`
-- Local origin/main: `1d100d31a02421114fa19f84270211381ef4a2d5`
+- Product remote main: `30e243be4bd38ba8ff74dd1a6b1c0b608c17dc39`
+- Local origin/main: `30e243be4bd38ba8ff74dd1a6b1c0b608c17dc39`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
@@ -16,15 +16,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35348814004 | `adbf14cc21d1` | push | Trusted main verification | completed:success |
-| 35348813995 | `adbf14cc21d1` | push | Repository quality | completed:success |
-| 35348568897 | `3c27d6d93414` | pull_request | AWQ shadow observation | completed:success |
-| 35348568729 | `3c27d6d93414` | pull_request | Repository quality | completed:success |
-| 35348525224 | `d6132e43ab0e` | push | Trusted main verification | completed:success |
-| 35348525170 | `d6132e43ab0e` | push | Repository quality | completed:success |
-| 35348349898 | `60cb398fbbf8` | pull_request | AWQ shadow observation | completed:success |
-| 35348349743 | `60cb398fbbf8` | pull_request | Repository quality | completed:success |
-| 35348276506 | `feab41ffcc52` | pull_request | AWQ shadow observation | completed:success |
-| 35348276180 | `feab41ffcc52` | pull_request | Repository quality | completed:success |
-| 35347798961 | `e54e577df7f6` | pull_request | AWQ shadow observation | completed:failure |
-| 35347798611 | `e54e577df7f6` | pull_request | Repository quality | completed:failure |
+| 35548928676 | `30e243be4bd3` | push | Trusted main verification | in_progress:- |
+| 35548928673 | `30e243be4bd3` | push | Repository quality | in_progress:- |
+| 35548787358 | `bc6a023564ab` | pull_request | AWQ shadow observation | completed:success |
+| 35548787263 | `bc6a023564ab` | pull_request | Repository quality | completed:success |
+| 35548651478 | `27d2901e478d` | pull_request | AWQ shadow observation | completed:failure |
+| 35548651305 | `27d2901e478d` | pull_request | Repository quality | completed:failure |
+| 35548430021 | `900c112d7d3f` | pull_request | AWQ shadow observation | completed:failure |
+| 35548429952 | `900c112d7d3f` | pull_request | Repository quality | completed:failure |
+| 35547545418 | `0c182c2c6ca8` | pull_request | AWQ shadow observation | completed:failure |
+| 35547545288 | `0c182c2c6ca8` | pull_request | Repository quality | completed:failure |
+| 35546877184 | `4bb38d01859d` | push | Trusted main verification | completed:success |
+| 35546877178 | `4bb38d01859d` | push | Repository quality | completed:success |
