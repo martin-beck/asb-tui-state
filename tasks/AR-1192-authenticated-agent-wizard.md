@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1192-authenticated-agent-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-21T04:19:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
   "next_action": "Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified.",
-  "owner": "codex-ar1192",
+  "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Consume authenticated ASB agent catalog and lifecycle in the standalone wizard.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated agent wizard integration",
-  "updated_at": "2026-09-21T03:49:05+00:00",
+  "updated_at": "2026-09-21T03:49:51+00:00",
   "worktree_key": "asb-tui-ar-1192-authenticated-agent-wizard"
 }
 ---
@@ -107,3 +107,7 @@ published. All rendering and application behavior remains in asb-tui.
   exact-main verified; re-audit dependency before closing stale block.
 
 - 2026-09-21T03:49:05+00:00: Claimed by codex-ar1192.
+
+- 2026-09-21T03:49:51+00:00: Closed stale blocker after live dependency audit: ASB AR-1316 producer
+  merged at 027af7ad and exact-main hosted gates passed; local wizard/catalog integration tests
+  remain green.
