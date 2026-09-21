@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Remain blocked only on ASB AR-1315 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified.",
+  "next_action": "Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified.",
   "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",
@@ -100,5 +100,5 @@ published. All rendering and application behavior remains in asb-tui.
   historical blocked; successor AR-1310 is blocked by its DCO/coverage chain. No TUI mutation made.
 
 - 2026-09-21: Current TUI main contains the complete wizard consumer and recording dispatch path,
-  but ASB main still returns CapabilityUnavailable for AgentCatalog. Created ASB AR-1315 as the
+  but ASB main still returns CapabilityUnavailable for AgentCatalog. Created ASB AR-1316 as the
   bounded producer dependency; no TUI mutation is needed until that contract is published.

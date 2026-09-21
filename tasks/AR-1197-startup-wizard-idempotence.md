@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Remain blocked only on authoritative ASB readiness/catalog publication through AR-1315; local startup routing and manual reconfiguration are merged and verified.",
+  "next_action": "Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified.",
   "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
@@ -35,7 +35,7 @@ tests. It deliberately contains no Ratatui renderer or ASB changes.
 
 - 2026-09-21: Re-audit found the TUI startup state machine and manual reconfiguration path green
   on main. The remaining live dependency is ASB's missing AgentCatalog producer, tracked by
-  AR-1315; historical AR-1227/1199 references are retained for provenance.
+  AR-1316; historical AR-1227/1199 references are retained for provenance.
 
 Completion also requires integration with the formal AR-1182/1184 state and transition model,
 ownership/CI checks, wizard completion confirmation, reconnect/resize/restart behavior, and
