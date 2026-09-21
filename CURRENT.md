@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified. | codex-ar1197 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -34,6 +28,7 @@ Never edit this file directly.
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator must refresh PR #25 on current main, rerun exact-head required hosted checks, and decide whether to promote; retain additive shadow-only scope. | - |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Rebase both draft candidates onto current main, rerun hosted required checks, and obtain coordinator promotion decision; no merge from review worker. | - |
 | P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified. | - |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified. | - |
 | P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Teach first-time users to initialize asb-tui and configure their first agent connection. | Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance. | - |
 | P0 | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md): asb-tui benchmark-readiness tutorial | Teach users to inspect TUI benchmark readiness without performing a run. | Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness. | - |
 | P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass. | - |

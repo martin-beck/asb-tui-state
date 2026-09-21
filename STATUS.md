@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**23 ARs tracked** across 4 active status categories.
+**23 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 14 |
+| **Done** | Accepted, integrated, and durably verified | 15 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -35,7 +35,7 @@ flowchart LR
         direction TB
         AR_1192["AR-1192 - Done"]:::status_done
         AR_1195["AR-1195 - Planned"]:::status_planned
-        AR_1197["AR-1197 - In progress"]:::status_in_progress
+        AR_1197["AR-1197 - Done"]:::status_done
         AR_1198["AR-1198 - Done"]:::status_done
     end
     subgraph series_12["12 - Additional work"]
@@ -118,12 +118,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | codex-ar1197 | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -142,13 +136,14 @@ flowchart LR
 | P0 | [AR-1321](tasks/AR-1321-credential-helper-bridge.md): Credential-helper bridge for setup wizard | Unclaimed | Connect the setup wizard to an approved local credential helper without raw-key transport. | Continue with AR-1323 for negotiated runner-owned helper invocation; PR #134 merged the strict digest-only receipt codec and PR #136 now projects runner-authored auth status before configuration apply. |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Add the negotiated runner-owned helper invocation/status contract and wire the wizard to it without paths, raw secrets, or arbitrary command execution. |
 
-### Done (14)
+### Done (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Adopt Agent Workflow Quality v0.32.0 | Unclaimed | Adopt AWQ v0.32.0 additively in shadow mode while retaining every native gate. | Coordinator must refresh PR #25 on current main, rerun exact-head required hosted checks, and decide whether to promote; retain additive shadow-only scope. |
 | P0 | [AR-0002](tasks/AR-0002.md): Operationalize asb-tui agent coordination | Unclaimed | Operationalize the Git-backed coordinator without disrupting existing asb-tui work. | Rebase both draft candidates onto current main, rerun hosted required checks, and obtain coordinator promotion decision; no merge from review worker. |
 | P0 | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md): Authenticated agent wizard integration | Unclaimed | Consume authenticated ASB agent catalog and lifecycle in the standalone wizard. | Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified. |
+| P0 | [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md): Startup wizard readiness and idempotence | Unclaimed | Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations. | Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified. |
 | P0 | [AR-1220](tasks/AR-1220-first-run-agent-tutorial.md): asb-tui first-run and first-agent tutorial | Unclaimed | Teach first-time users to initialize asb-tui and configure their first agent connection. | Coordinator to monitor PR #107 exact head fb9d4b86270f4be11102868caff226fe35900e78, obtain independent review, and merge only after all required checks pass; then perform post-merge assurance. |
 | P0 | [AR-1221](tasks/AR-1221-benchmark-readiness-tutorial.md): asb-tui benchmark-readiness tutorial | Unclaimed | Teach users to inspect TUI benchmark readiness without performing a run. | Implement the syntax-checked TUI tutorial for testing current agent benchmark readiness. |
 | P0 | [AR-1222](tasks/AR-1222-tui-run-shared-config.md): asb-tui benchmark run and shared-agent configuration tutorials | Unclaimed | Teach TUI users to run a benchmark and apply one configuration to multiple agents. | Coordinator review PR #109 at exact head f607776; merge only after required checks and independent review pass. |
