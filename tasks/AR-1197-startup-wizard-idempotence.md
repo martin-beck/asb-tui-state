@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar1187-startup-idempotence",
   "checkpoint_commit": "6d58181810774d48102eb32bb370a21b101f611f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-21T04:19:53+00:00",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified.",
-  "owner": "",
+  "owner": "codex-ar1197",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make authoritative startup readiness route into the wizard exactly once when ASB is unconfigured, with deterministic recovery and explanations.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Startup wizard readiness and idempotence",
-  "updated_at": "2026-09-21T03:48:50+00:00",
+  "updated_at": "2026-09-21T03:49:53+00:00",
   "worktree_key": "asb-tui-ar-1187-startup-idempotence"
 }
 ---
@@ -202,3 +202,5 @@ wizard work are complete.
 
 - 2026-09-21T03:48:50+00:00: ASB AR-1316 readiness/catalog producer is merged and exact-main
   verified; re-audit dependency before closing stale block.
+
+- 2026-09-21T03:49:53+00:00: Claimed by codex-ar1197.
