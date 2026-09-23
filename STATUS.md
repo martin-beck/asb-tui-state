@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**23 ARs tracked** across 3 active status categories.
+**23 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -57,7 +57,7 @@ flowchart LR
     subgraph series_13["13 - Additional work"]
         direction TB
         AR_1317["AR-1317 - Done"]:::status_done
-        AR_1318["AR-1318 - Open"]:::status_open
+        AR_1318["AR-1318 - In progress"]:::status_in_progress
         AR_1321["AR-1321 - Done"]:::status_done
         AR_1323["AR-1323 - Open"]:::status_open
     end
@@ -118,11 +118,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Unclaimed | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
+| P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | codex-asb-tui-reconcile-20260924 | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Diagnose and fix the live v1.10 helper-invocation hang against a fresh control state, then rerun connected/unavailable evidence; after that reconcile AR-1323 and continue AR-1327. |
 
 ### Planned (4)
