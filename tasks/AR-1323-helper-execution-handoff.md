@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor ASB PR #253 at 79beb05 until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Monitor ASB PR #253 at 51886ff until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:51:20+00:00",
+  "updated_at": "2026-09-23T07:00:05+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -87,3 +87,8 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T06:51:20+00:00: Hosted policy identified missing Signed-off-by on the signed
   current-main merge; amended merge commit to 79beb05 with SSH signature and DCO trailer, then
   force-pushed. All source changes remain unchanged.
+
+- 2026-09-23T07:00:05+00:00: PR #250 (AR-1326) merged into ASB main at 8692729, causing a provenance
+  conflict. Merged current main into PR #253, selected current-main provenance, produced signed+DCO
+  merge 51886ff, and pushed. Local auth unit tests hit the known scratch-base overlap guard in /tmp
+  worktree; no source failure is inferred.
