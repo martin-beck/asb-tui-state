@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation through PR #137 plus ASB PR #253 after exact-head checks; capture connected/unavailable first-user wizard evidence, then reconcile AR-1323. | codex |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Monitor PR #137 at 1fb059a and ASB PR #253 at eeeb05b until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence. | codex |
 
 ## Open
 

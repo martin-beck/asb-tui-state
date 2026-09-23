@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Run live helper invocation through PR #137 plus ASB PR #253 after exact-head checks; capture connected/unavailable first-user wizard evidence, then reconcile AR-1323.",
+  "next_action": "Monitor PR #137 at 1fb059a and ASB PR #253 at eeeb05b until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:34:55+00:00",
+  "updated_at": "2026-09-23T06:36:30+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -57,3 +57,7 @@ execute an arbitrary path or receive a raw credential.
   omitted v1.10 from negotiation/codec acceptance (PR #137, commit f6c7a41). TUI full suite and
   targeted helper-version test pass; ASB targeted auth test and clippy pass. Both fixes are open for
   exact-head CI.
+
+- 2026-09-23T06:36:30+00:00: Updated TUI PR #137 with signed current-main merge 1fb059a because it
+  was behind; required TUI gates are now running. ASB PR #253 remains exact-head eeeb05b with hosted
+  checks running. No merge or AR completion claim yet.
