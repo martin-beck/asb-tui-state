@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T01:56:52+00:00",
+  "claim_expires": "2026-09-24T01:59:29+00:00",
   "depends_on": [
     "AR-1321"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T23:58:41+00:00",
+  "updated_at": "2026-09-23T23:59:29+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -131,3 +131,5 @@ execute an arbitrary path or receive a raw credential.
   src/live_projection.rs changes lacked model/inventory updates. Added signed+DCO commit 2194a74
   updating the formal model, generated artifact, inventory responsibility, and focused test; local
   model validation passes. The failed run was for superseded head 2066bbf.
+
+- 2026-09-23T23:59:29+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
