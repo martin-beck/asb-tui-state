@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**23 ARs tracked** across 4 active status categories.
+**23 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 17 |
+| **Done** | Accepted, integrated, and durably verified | 18 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -57,7 +57,7 @@ flowchart LR
     subgraph series_13["13 - Additional work"]
         direction TB
         AR_1317["AR-1317 - Done"]:::status_done
-        AR_1318["AR-1318 - In progress"]:::status_in_progress
+        AR_1318["AR-1318 - Done"]:::status_done
         AR_1321["AR-1321 - Done"]:::status_done
         AR_1323["AR-1323 - Open"]:::status_open
     end
@@ -118,12 +118,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | codex-asb-tui-reconcile-20260924 | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -139,7 +133,7 @@ flowchart LR
 | P0 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md): Executable formal UI model and source parity | Unclaimed | Make every TUI source element and transition mechanically checkable against the formal UI model. | Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui. |
 | P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
 
-### Done (17)
+### Done (18)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -153,6 +147,7 @@ flowchart LR
 | P0 | [AR-1223](tasks/AR-1223-tui-replay-comparison.md): asb-tui record/replay and comparison tutorials | Unclaimed | Teach TUI users to replay LLM responses offline and compare multiple agents fairly. | Implement syntax-checked TUI tutorials for LLM record/replay and multi-agent result comparison. |
 | P0 | [AR-1224](tasks/AR-1224-tutorial-freshness-ci.md): Cross-repository tutorial syntax and freshness gate | Unclaimed | Keep asb-tui tutorial routes, actions, commands, and schemas syntactically current in CI. | Implement the cross-repository tutorial discovery and syntax-freshness CI gate after the TUI tutorial contracts are defined. |
 | P0 | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md): Secure setup-wizard authentication handoff | Unclaimed | Complete secure API-key enrollment UX in the setup wizard without raw-key transport. | Continue with AR-1321: connect the documented secure handoff to an approved local credential helper and typed enrollment/status projection. |
+| P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Unclaimed | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
 | P0 | [AR-1321](tasks/AR-1321-credential-helper-bridge.md): Credential-helper bridge for setup wizard | Unclaimed | Connect the setup wizard to an approved local credential helper without raw-key transport. | Continue with AR-1323 for negotiated runner-owned helper invocation; PR #134 merged the strict digest-only receipt codec and PR #136 now projects runner-authored auth status before configuration apply. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
