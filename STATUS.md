@@ -122,7 +122,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | codex | Invoke the approved credential helper through the authenticated runner boundary. | Monitor ASB PR #253 at 51886ff until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence. |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | codex | Invoke the approved credential helper through the authenticated runner boundary. | Monitor ASB PR #253 at 8585648 until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence. |
 
 ### Open (1)
 
