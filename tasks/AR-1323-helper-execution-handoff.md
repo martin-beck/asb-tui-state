@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T08:14:05+00:00",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Open/qualify the TUI helper client against ASB AR-1324 commit 7165884, then run live first-user wizard acceptance and exact-head post-merge gates.",
-  "owner": "",
+  "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:14:02+00:00",
+  "updated_at": "2026-09-23T06:14:05+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -44,3 +44,5 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T06:14:02+00:00: Recovered expired claim formerly owned by codex-ar1323. Recovered
   expired codex-ar1323 claim after confirming no worker process; ASB AR-1324 is merged at 6b06f0e
   and TUI commit c3855a6 is tested. Claiming for cross-repository live acceptance.
+
+- 2026-09-23T06:14:05+00:00: Claimed by codex.
