@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Run a live ASB\u2194asb-tui helper invocation against merged ASB main 6b06f0ea and this TUI head; capture first-user wizard connected/unavailable evidence, then reconcile only after runtime acceptance.",
+  "next_action": "Run live helper invocation through PR #137 plus ASB PR #253 after exact-head checks; capture connected/unavailable first-user wizard evidence, then reconcile AR-1323.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:14:52+00:00",
+  "updated_at": "2026-09-23T06:34:55+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -51,3 +51,9 @@ execute an arbitrary path or receive a raw credential.
   test --locked: 175 unit tests plus integration suites passed. ASB AR-1324 is merged at 6b06f0e
   with all hosted gates green. Remaining acceptance is live cross-repository runner interaction, not
   codec coverage.
+
+- 2026-09-23T06:34:55+00:00: Live ASB probe exposed two integration defects: ASB auth CLI fixed
+  300000ms timeout exceeded negotiated 30000ms (PR #253, commit eeeb05b), and TUI helper transport
+  omitted v1.10 from negotiation/codec acceptance (PR #137, commit f6c7a41). TUI full suite and
+  targeted helper-version test pass; ASB targeted auth test and clippy pass. Both fixes are open for
+  exact-head CI.

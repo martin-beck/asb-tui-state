@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Run a live ASB↔asb-tui helper invocation against merged ASB main 6b06f0ea and this TUI head; capture first-user wizard connected/unavailable evidence, then reconcile only after runtime acceptance. | codex |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation through PR #137 plus ASB PR #253 after exact-head checks; capture connected/unavailable first-user wizard evidence, then reconcile AR-1323. | codex |
 
 ## Open
 
