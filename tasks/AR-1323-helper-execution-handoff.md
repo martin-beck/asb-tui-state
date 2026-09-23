@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Open/qualify the TUI helper client against ASB AR-1324 commit 7165884, then run live first-user wizard acceptance and exact-head post-merge gates.",
+  "next_action": "Run a live ASB\u2194asb-tui helper invocation against merged ASB main 6b06f0ea and this TUI head; capture first-user wizard connected/unavailable evidence, then reconcile only after runtime acceptance.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:14:05+00:00",
+  "updated_at": "2026-09-23T06:14:52+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -46,3 +46,8 @@ execute an arbitrary path or receive a raw credential.
   and TUI commit c3855a6 is tested. Claiming for cross-repository live acceptance.
 
 - 2026-09-23T06:14:05+00:00: Claimed by codex.
+
+- 2026-09-23T06:14:52+00:00: Verified TUI head c3855a6af1b84fef1d76aca46faacd9bf6821f8b with cargo
+  test --locked: 175 unit tests plus integration suites passed. ASB AR-1324 is merged at 6b06f0e
+  with all hosted gates green. Remaining acceptance is live cross-repository runner interaction, not
+  codec coverage.
