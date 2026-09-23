@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor merged TUI PR #137 and ASB PR #253 at 1fb8c0a until exact-head checks pass; then run live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Monitor ASB PR #253 at 79beb05 until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:50:05+00:00",
+  "updated_at": "2026-09-23T06:51:20+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -83,3 +83,7 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T06:50:05+00:00: TUI PR #137 merged at eddf480. ASB PR #253 branch now includes signed
   current-main merge 1fb8c0a (PR #252 admission repair) so exact protected merge-tree validation can
   proceed; hosted checks are rerunning.
+
+- 2026-09-23T06:51:20+00:00: Hosted policy identified missing Signed-off-by on the signed
+  current-main merge; amended merge commit to 79beb05 with SSH signature and DCO trailer, then
+  force-pushed. All source changes remain unchanged.
