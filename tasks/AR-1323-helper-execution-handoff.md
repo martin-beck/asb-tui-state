@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor PR #137 at 438db82 and ASB PR #253 at eeeb05b until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Monitor PR #137 at 438db82 and ASB PR #253 at 975f279 until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:39:31+00:00",
+  "updated_at": "2026-09-23T06:41:14+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -66,3 +66,8 @@ execute an arbitrary path or receive a raw credential.
   protocol modules were not classified in the module inventory. Added explicit v1.10 helper
   ownership entries in signed commit 438db82; local UI model validation now passes (8 routes, 27
   elements). Fresh TUI checks are running.
+
+- 2026-09-23T06:41:14+00:00: ASB PR #253 policy/Rust failures were deterministic provenance drift
+  from the lib.rs timeout fix, not behavior failures. Refreshed
+  docs/examples/asb-cli-workflow-v1.provenance.json in signed commit 975f279; local targeted auth
+  test and clippy remain green. Fresh PR checks are required.
