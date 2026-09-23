@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T01:52:34+00:00",
+  "claim_expires": "2026-09-24T01:55:23+00:00",
   "depends_on": [
     "AR-1321"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T23:54:55+00:00",
+  "updated_at": "2026-09-23T23:55:23+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -120,3 +120,5 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-23T23:54:55+00:00: Recorded command exit 0; command argv SHA-256
   150e6ec27951411a9bf84f134de63a192506c089af979dc601b7eeab903d591b.
+
+- 2026-09-23T23:55:23+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
