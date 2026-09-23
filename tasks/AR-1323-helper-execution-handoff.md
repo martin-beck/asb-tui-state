@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor ASB PR #253 at 8585648 until all exact-head checks pass; merge through merge_pr.py, then run live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Diagnose and fix the live v1.10 helper-invocation hang against a fresh control state, then rerun connected/unavailable evidence; after that reconcile AR-1323 and continue AR-1327.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T07:03:04+00:00",
+  "updated_at": "2026-09-23T07:25:27+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -96,3 +96,9 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T07:03:04+00:00: Hosted Rust gate exposed provenance drift after AR-1326 merge. Updated
   cli_source_sha256 to exact tested digest 661e6334...f148b4 in signed+DCO commit 8585648; targeted
   workflow_transcript provenance test passes locally.
+
+- 2026-09-23T07:25:27+00:00: ASB PR #253 merged through exact protected merge-tree at 551330b.
+  Post-merge hosted workflows started. Live auth enroll/status over the control socket succeeded
+  with digest-only receipts. Correctly registered helper vars then exposed a live AuthHelperInvoke
+  hang/NeedsReconciliation path; temporary probes/diagnostics were removed and no source changes
+  were left.
