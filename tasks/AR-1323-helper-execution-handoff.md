@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor PR #137 at 1fb059a and ASB PR #253 at eeeb05b until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Monitor PR #137 at 438db82 and ASB PR #253 at eeeb05b until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:36:30+00:00",
+  "updated_at": "2026-09-23T06:39:31+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -61,3 +61,8 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T06:36:30+00:00: Updated TUI PR #137 with signed current-main merge 1fb059a because it
   was behind; required TUI gates are now running. ASB PR #253 remains exact-head eeeb05b with hosted
   checks running. No merge or AR completion claim yet.
+
+- 2026-09-23T06:39:31+00:00: PR #137 initially failed its formal UI ownership gate because changed
+  protocol modules were not classified in the module inventory. Added explicit v1.10 helper
+  ownership entries in signed commit 438db82; local UI model validation now passes (8 routes, 27
+  elements). Fresh TUI checks are running.
