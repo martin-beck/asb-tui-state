@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T01:52:34+00:00",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Diagnose and fix the live v1.10 helper-invocation hang against a fresh control state, then rerun connected/unavailable evidence; after that reconcile AR-1323 and continue AR-1327.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1323-20260924",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T23:50:28+00:00",
+  "updated_at": "2026-09-23T23:52:34+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -106,3 +106,5 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T23:50:28+00:00: Recovered expired claim formerly owned by codex. Recovered abandoned
   lease after live process check found no AR-1323 worker; prior implementation evidence remains in
   task history.
+
+- 2026-09-23T23:52:34+00:00: Claimed by codex-asb-tui-ar1323-20260924.
