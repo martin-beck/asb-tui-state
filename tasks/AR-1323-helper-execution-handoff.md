@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Diagnose and fix the live v1.10 helper-invocation hang against a fresh control state, then rerun connected/unavailable evidence; after that reconcile AR-1323 and continue AR-1327.",
+  "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
   "owner": "codex-asb-tui-ar1323-20260924",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T23:56:52+00:00",
+  "updated_at": "2026-09-23T23:58:41+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -126,3 +126,8 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T23:55:59+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
 
 - 2026-09-23T23:56:52+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
+
+- 2026-09-23T23:58:41+00:00: PR #138 initially failed only the formal UI ownership gate because
+  src/live_projection.rs changes lacked model/inventory updates. Added signed+DCO commit 2194a74
+  updating the formal model, generated artifact, inventory responsibility, and focused test; local
+  model validation passes. The failed run was for superseded head 2066bbf.
