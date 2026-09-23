@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T08:14:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Diagnose and fix the live v1.10 helper-invocation hang against a fresh control state, then rerun connected/unavailable evidence; after that reconcile AR-1323 and continue AR-1327.",
-  "owner": "codex",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T07:25:27+00:00",
+  "updated_at": "2026-09-23T23:50:28+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -102,3 +102,7 @@ execute an arbitrary path or receive a raw credential.
   with digest-only receipts. Correctly registered helper vars then exposed a live AuthHelperInvoke
   hang/NeedsReconciliation path; temporary probes/diagnostics were removed and no source changes
   were left.
+
+- 2026-09-23T23:50:28+00:00: Recovered expired claim formerly owned by codex. Recovered abandoned
+  lease after live process check found no AR-1323 worker; prior implementation evidence remains in
+  task history.
