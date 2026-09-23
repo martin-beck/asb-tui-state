@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Open/qualify the TUI helper client against ASB AR-1324 commit 7165884, then run live first-user wizard acceptance and exact-head post-merge gates. | codex-ar1323 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB's signer, SBOM, license and target provenance fields, then publish exact fixture evidence. | - |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Open/qualify the TUI helper client against ASB AR-1324 commit 7165884, then run live first-user wizard acceptance and exact-head post-merge gates. | - |
 
 ## Planned
 
