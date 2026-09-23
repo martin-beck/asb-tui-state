@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Monitor PR #137 at 438db82 and ASB PR #253 at 975f279 until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
+  "next_action": "Monitor PR #137 at c7f0f2e and ASB PR #253 at 975f279 until exact-head checks pass; then rerun live helper invocation and capture first-user wizard connected/unavailable evidence.",
   "owner": "codex",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-23T06:41:14+00:00",
+  "updated_at": "2026-09-23T06:43:26+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -71,3 +71,7 @@ execute an arbitrary path or receive a raw credential.
   from the lib.rs timeout fix, not behavior failures. Refreshed
   docs/examples/asb-cli-workflow-v1.provenance.json in signed commit 975f279; local targeted auth
   test and clippy remain green. Fresh PR checks are required.
+
+- 2026-09-23T06:43:26+00:00: Rebased PR #137 onto current origin/main to remove an unsigned merge
+  commit that failed DCO; preserved helper client, v1.10 negotiation, and inventory fixes as signed
+  commits a20585e, 2406630, c7f0f2e. Local UI model generation, 27 tests, and validation pass.
