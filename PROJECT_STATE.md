@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | fix(auth): project helper invocation status |
+| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | fix(auth): project helper invocation status |
 
 ## Recent workflows
 
