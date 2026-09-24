@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T00:18:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
-  "owner": "codex-asb-tui-postmerge-20260924",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-24T00:03:06+00:00",
+  "updated_at": "2026-09-24T00:03:09+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -141,3 +141,8 @@ execute an arbitrary path or receive a raw credential.
   succeeds. No ASB repository changes were made.
 
 - 2026-09-24T00:03:06+00:00: Claimed by codex-asb-tui-postmerge-20260924.
+
+- 2026-09-24T00:03:09+00:00: PR #138 merged at protected main commit
+  a5818c0f3fe3ae23d932cd63c2c1f05a04e8a82e after exact-head hosted checks passed on ca9c41a.
+  Post-merge hosted checks are running; live helper qualification remains to be performed only when
+  an authorized ASB runtime fixture is available. No ASB repository changes made.
