@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T02:00:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
-  "owner": "codex-asb-tui-ar1323-20260924",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-24T00:00:50+00:00",
+  "updated_at": "2026-09-24T00:02:22+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -135,3 +135,7 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-23T23:59:29+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
 
 - 2026-09-24T00:00:50+00:00: Heartbeat by codex-asb-tui-ar1323-20260924.
+
+- 2026-09-24T00:02:22+00:00: Released inactive local lease while PR #138 exact-head hosted checks
+  run. Implementation and signed commits are pushed; reopen/claim for live qualification after CI
+  succeeds. No ASB repository changes were made.
