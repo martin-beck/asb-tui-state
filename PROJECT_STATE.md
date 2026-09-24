@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | fix(auth): project helper invocation status |
+| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): project helper invocation status |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | in_progress:- |
+| 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | completed:success |
 | 35936274439 | `ca9c41ae8be1` | pull_request | Repository quality | completed:success |
 | 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | completed:failure |
 | 35936202669 | `2194a74628a2` | pull_request | Repository quality | completed:failure |
