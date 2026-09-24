@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `eddf48055c551bb3585f81f0cfae3cae8055802d`
+- Product remote main: `a5818c0f3fe3ae23d932cd63c2c1f05a04e8a82e`
 - Local origin/main: `eddf48055c551bb3585f81f0cfae3cae8055802d`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): project helper invocation status |
+| #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35936562617 | `a5818c0f3fe3` | push | Trusted main verification | in_progress:- |
+| 35936562506 | `a5818c0f3fe3` | push | Repository quality | queued:- |
 | 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | completed:success |
 | 35936274439 | `ca9c41ae8be1` | pull_request | Repository quality | completed:success |
 | 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | completed:failure |
@@ -27,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35828512480 | `eddf48055c55` | push | Trusted main verification | completed:failure |
 | 35828311697 | `144ec7e05b96` | pull_request | AWQ shadow observation | completed:success |
 | 35828311134 | `144ec7e05b96` | pull_request | Repository quality | completed:success |
-| 35828074514 | `c7f0f2eb399c` | pull_request | AWQ shadow observation | completed:failure |
-| 35828074341 | `c7f0f2eb399c` | pull_request | Repository quality | completed:failure |
