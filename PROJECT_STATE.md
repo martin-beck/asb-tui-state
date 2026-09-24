@@ -11,14 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #138 | `feature/ar-1323-helper-execution-handoff@2194a74628a2` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix(auth): project helper invocation status |
+| #138 | `feature/ar-1323-helper-execution-handoff@ca9c41ae8be1` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | fix(auth): project helper invocation status |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | in_progress:- |
-| 35936202669 | `2194a74628a2` | pull_request | Repository quality | in_progress:- |
+| 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | in_progress:- |
+| 35936274439 | `ca9c41ae8be1` | pull_request | Repository quality | completed:success |
+| 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | completed:failure |
+| 35936202669 | `2194a74628a2` | pull_request | Repository quality | completed:failure |
 | 35935944074 | `2066bbfc00e6` | pull_request | AWQ shadow observation | completed:failure |
 | 35935943791 | `2066bbfc00e6` | pull_request | Repository quality | completed:failure |
 | 35828512484 | `eddf48055c55` | push | Repository quality | completed:success |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35828311134 | `144ec7e05b96` | pull_request | Repository quality | completed:success |
 | 35828074514 | `c7f0f2eb399c` | pull_request | AWQ shadow observation | completed:failure |
 | 35828074341 | `c7f0f2eb399c` | pull_request | Repository quality | completed:failure |
-| 35827753397 | `438db827234b` | pull_request | AWQ shadow observation | completed:failure |
-| 35827753080 | `438db827234b` | pull_request | Repository quality | completed:failure |
