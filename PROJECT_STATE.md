@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #145 | `test/ar1323-helper-transport@ffed40821c96` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(auth): qualify helper invocation transport boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36140310325 | `ffed40821c96` | pull_request | AWQ shadow observation | in_progress:- |
+| 36140310040 | `ffed40821c96` | pull_request | Repository quality | in_progress:- |
 | 36139807904 | `014e48a5c6ba` | push | Trusted main verification | completed:success |
 | 36139807874 | `014e48a5c6ba` | push | Repository quality | completed:success |
 | 36139513624 | `cf47bbe9680e` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36138307852 | `8b594dca7752` | pull_request | Repository quality | completed:success |
 | 36138034043 | `63ad532e57b9` | push | Trusted main verification | completed:failure |
 | 36138033890 | `63ad532e57b9` | push | Repository quality | completed:success |
-| 36137654887 | `fa5f6ac938b6` | pull_request | AWQ shadow observation | completed:success |
-| 36137654576 | `fa5f6ac938b6` | pull_request | Repository quality | completed:success |
