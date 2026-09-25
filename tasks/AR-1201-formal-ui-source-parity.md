@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar1201-formal-ui-source-parity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T12:37:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1197"
   ],
   "id": "AR-1201",
   "next_action": "Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui.",
-  "owner": "codex-asb-tui-postmerge-1201-20260925",
+  "owner": "",
   "plan": "../plans/AR-1201.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make every TUI source element and transition mechanically checkable against the formal UI model.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Executable formal UI model and source parity",
-  "updated_at": "2026-09-25T12:22:20+00:00",
+  "updated_at": "2026-09-25T12:22:23+00:00",
   "worktree_key": "asb-tui-ar-1201-formal-ui-source-parity"
 }
 ---
@@ -76,3 +76,9 @@ Do not claim completion from a formal file existing or from a one-sided ownershi
   pass. Hosted exact-head CI is pending; claim again for merge and post-merge verification.
 
 - 2026-09-25T12:22:20+00:00: Claimed by codex-asb-tui-postmerge-1201-20260925.
+
+- 2026-09-25T12:22:23+00:00: PR #141 merged at protected asb-tui main commit
+  0c56a13d687969d36c5882b88eafbf61f634a1fc after exact-head hosted Rust, supply-chain, privacy,
+  formal model, source-parity, and AWQ checks passed. Local locked tests, clippy, model validation,
+  source-parity tests/checks, and focused formal-state tests passed. Source/model parity is now
+  enforced in PR and trusted-main CI.
