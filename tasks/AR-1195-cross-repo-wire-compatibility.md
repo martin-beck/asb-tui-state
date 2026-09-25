@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1195-cross-repo-wire-compatibility",
   "checkpoint_commit": "46fa6f57540c797db4541d50ddb7e91216b253c6",
-  "claim_expires": "2026-09-25T14:09:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1192"
   ],
   "id": "AR-1195",
   "next_action": "Complete independent exact-head review and cross-repository qualification against ASB catalog/lifecycle pins; do not promote while AR-1192 remains unfinished.",
-  "owner": "ar1195-wire-compat",
+  "owner": "",
   "plan": "../plans/AR-1195.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prove asb-tui consumes the exact authenticated ASB catalog and lifecycle wire contracts.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Cross-repository wire compatibility",
-  "updated_at": "2026-09-25T12:09:12+00:00",
+  "updated_at": "2026-09-25T12:11:34+00:00",
   "worktree_key": "asb-tui-cross-repo-wire-compatibility"
 }
 ---
@@ -58,3 +58,15 @@ cross-repository exact-head qualification is recorded.
   verification and exact-head wire qualification.
 
 - 2026-09-25T12:09:12+00:00: Claimed by ar1195-wire-compat.
+
+- 2026-09-25T12:11:34+00:00: Requalified against standalone asb-tui origin/main
+  a5818c0f3fe3ae23d932cd63c2c1f05a04e8a82e. Current main includes canonical catalog digest
+  recomputation/content-mismatch rejection (ae2780e) and exact v1.4/v1.5 adapter fixtures/tests.
+  cargo fmt --check, cargo clippy --all-targets -- -D warnings, cargo test --locked (177 lib + 1
+  main + all integration suites), compatibility schema validation, UI model tests/validation, and UI
+  help tests/validation all passed in isolated worktree. Focused protocol tests passed:
+  agent_catalog 12, agent_lifecycle 9, asb_lifecycle 12. PR #86 exact candidate merged as 013b381
+  with Repository quality run 34948839161 SUCCESS; current main post-merge Repository quality run
+  35936562506 SUCCESS. Trusted main run 35936562617 failed only during runner-owned tmux fixture
+  diagnostics after all Rust tests passed, with an unrelated pre-existing csb tmux process visible;
+  recorded as infrastructure evidence, not a wire-compatibility failure.
