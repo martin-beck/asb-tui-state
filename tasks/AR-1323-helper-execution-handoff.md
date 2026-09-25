@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:33:02+00:00",
+  "updated_at": "2026-09-25T13:33:49+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -165,3 +165,6 @@ execute an arbitrary path or receive a raw credential.
   authorized ASB runtime not present in this scope.
 
 - 2026-09-25T13:33:02+00:00: Claimed by tui-ar1323-luna56.
+
+- 2026-09-25T13:33:49+00:00: Recorded command exit 0; command argv SHA-256
+  9d4fb1971e8537df234621ae98ef5afd37bdcac53f8a96b0683427969d8df36e.
