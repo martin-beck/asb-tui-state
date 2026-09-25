@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
+  "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
   "owner": "tui-ar1323-luna56",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:35:15+00:00",
+  "updated_at": "2026-09-25T13:35:41+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -177,3 +177,9 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-25T13:35:15+00:00: Recorded command exit 0; command argv SHA-256
   3bf15e28f6a33a696b2516455df8aa37b547a3b3b8a7025da63335f133deadb1.
+
+- 2026-09-25T13:35:41+00:00: Revalidated merged asb-tui main da9b160 in isolated worktree
+  /tmp/asb-tui-ar1323-luna56: cargo test --locked passed (179 library tests plus all integration
+  suites), focused helper tests 6/6, control compatibility 2/2, lifecycle 13/13, cargo fmt --check
+  and git diff --check passed. No authorized ASB control runtime/socket or live helper fixture is
+  available on this host; retain open for truthful cross-repository live qualification.
