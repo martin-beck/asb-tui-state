@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Handle terminal resize safely across every asb-tui route without losing state or violating the formal model.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Live terminal resize integration and qualification",
-  "updated_at": "2026-09-25T12:25:14+00:00",
+  "updated_at": "2026-09-25T12:26:14+00:00",
   "worktree_key": "asb-tui-ar-1202-live-resize"
 }
 ---
@@ -58,3 +58,6 @@ path is safe and usable. A one-time terminal-size snapshot or unit test alone is
 - 2026-09-25T12:23:11+00:00: Claimed by codex-asb-tui-ar1202-20260925.
 
 - 2026-09-25T12:25:14+00:00: Heartbeat by codex-asb-tui-ar1202-20260925.
+
+- 2026-09-25T12:26:14+00:00: Recorded command exit 0; command argv SHA-256
+  0a34898789f89b3416d159c8224a8a2182ebaa9354fa01a0cff1560050b67dd6.
