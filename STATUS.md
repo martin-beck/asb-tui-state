@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 20 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -42,7 +42,7 @@ flowchart LR
         direction TB
         AR_1200["AR-1200 - Planned"]:::status_planned
         AR_1201["AR-1201 - Done"]:::status_done
-        AR_1202["AR-1202 - Planned"]:::status_planned
+        AR_1202["AR-1202 - Open"]:::status_open
         AR_1220["AR-1220 - Done"]:::status_done
         AR_1221["AR-1221 - Done"]:::status_done
         AR_1222["AR-1222 - Done"]:::status_done
@@ -118,18 +118,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available. |
 
-### Planned (2)
+### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Unclaimed | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. |
-| P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
 
 ### Done (20)
 
