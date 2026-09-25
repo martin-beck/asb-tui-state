@@ -14,6 +14,10 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. | - |
+| P0 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md): Install and broker onboarding | Make clean ASB/asb-tui installation and local broker onboarding a selectable first step. | Promote after AR-1200 and paired ASB AR-1441 are verified; implement the clean install, broker negotiation, and recovery route. | - |
+| P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and onboarding dependencies are done; bind the wizard screens to the shared setup contract and add restart/cancellation evidence. | - |
+| P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route. | - |
+| P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Make the clean-install-to-comparison journey a paired ASB/asb-tui release gate. | Promote after AR-1324, AR-1325 and AR-1326 plus paired ASB AR-1444 are done; run the disposable cross-repository journey and publish exact evidence. | - |
 
 ## Done
 
