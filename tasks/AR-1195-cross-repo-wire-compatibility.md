@@ -3,18 +3,20 @@
   "branch": "feature/ar-1195-cross-repo-wire-compatibility",
   "checkpoint_commit": "46fa6f57540c797db4541d50ddb7e91216b253c6",
   "claim_expires": "",
-  "depends_on": ["AR-1192"],
+  "depends_on": [
+    "AR-1192"
+  ],
   "id": "AR-1195",
   "next_action": "Complete independent exact-head review and cross-repository qualification against ASB catalog/lifecycle pins; do not promote while AR-1192 remains unfinished.",
   "owner": "",
   "plan": "../plans/AR-1195.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Prove asb-tui consumes the exact authenticated ASB catalog and lifecycle wire contracts.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Cross-repository wire compatibility",
-  "updated_at": "2026-09-15T09:05:00+00:00",
+  "updated_at": "2026-09-25T12:09:05+00:00",
   "worktree_key": "asb-tui-cross-repo-wire-compatibility"
 }
 ---
@@ -51,3 +53,6 @@ cross-repository exact-head qualification is recorded.
 
 - 2026-09-15T09:05:00+00:00: Updated immutable PR #86 evidence to final head `46fa6f57540c797db4541d50ddb7e91216b253c6`; hosted run `34948839161` passed. Dependency/status intentionally unchanged because AR-1192 is not done.
 - 2026-09-15T09:15:00+00:00: Updated PR #86 merge head to `013b381`; retained planned status and AR-1192 dependency. Independent review recorded canonical catalog digest recomputation/content-mismatch testing as a merge blocker.
+
+- 2026-09-25T12:09:05+00:00: AR-1192 is now done; promote AR-1195 for independent digest
+  verification and exact-head wire qualification.

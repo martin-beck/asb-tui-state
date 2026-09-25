@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 18 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -34,7 +34,7 @@ flowchart LR
     subgraph series_11["11 - Additional work"]
         direction TB
         AR_1192["AR-1192 - Done"]:::status_done
-        AR_1195["AR-1195 - Planned"]:::status_planned
+        AR_1195["AR-1195 - Open"]:::status_open
         AR_1197["AR-1197 - Done"]:::status_done
         AR_1198["AR-1198 - Done"]:::status_done
     end
@@ -124,17 +124,17 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md): Executable formal UI model and source parity | codex-asb-tui-ar1201-20260925 | Make every TUI source element and transition mechanically checkable against the formal UI model. | Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui. |
 
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available. |
-
-### Planned (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1195](tasks/AR-1195-cross-repo-wire-compatibility.md): Cross-repository wire compatibility | Unclaimed | Prove asb-tui consumes the exact authenticated ASB catalog and lifecycle wire contracts. | Complete independent exact-head review and cross-repository qualification against ASB catalog/lifecycle pins; do not promote while AR-1192 remains unfinished. |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available. |
+
+### Planned (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Unclaimed | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. |
 | P0 | [AR-1202](tasks/AR-1202-live-resize-qualification.md): Live terminal resize integration and qualification | Unclaimed | Handle terminal resize safely across every asb-tui route without losing state or violating the formal model. | Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application. |
 
