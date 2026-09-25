@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar1201-formal-ui-source-parity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:14:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1197"
   ],
   "id": "AR-1201",
   "next_action": "Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui.",
-  "owner": "codex-asb-tui-ar1201-20260925",
+  "owner": "",
   "plan": "../plans/AR-1201.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make every TUI source element and transition mechanically checkable against the formal UI model.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Executable formal UI model and source parity",
-  "updated_at": "2026-09-25T12:14:35+00:00",
+  "updated_at": "2026-09-25T12:14:48+00:00",
   "worktree_key": "asb-tui-ar-1201-formal-ui-source-parity"
 }
 ---
@@ -70,3 +70,7 @@ Do not claim completion from a formal file existing or from a one-sided ownershi
   9bed67846da64c6731c73fb1530c3a4305626ef62d3a3507030c9a242c7ae2f0.
 
 - 2026-09-25T12:14:35+00:00: Heartbeat by codex-asb-tui-ar1201-20260925.
+
+- 2026-09-25T12:14:48+00:00: PR #141 pushed at signed head 56f062d. Local cargo fmt, clippy, locked
+  tests (177 library plus integration), formal model validation, and source-parity tests/checks
+  pass. Hosted exact-head CI is pending; claim again for merge and post-merge verification.
