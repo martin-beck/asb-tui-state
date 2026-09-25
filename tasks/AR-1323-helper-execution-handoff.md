@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:07:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
-  "owner": "codex-asb-tui-ar1323-qualification-20260925",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T12:37:46+00:00",
+  "updated_at": "2026-09-25T12:38:34+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -148,3 +148,9 @@ execute an arbitrary path or receive a raw credential.
   an authorized ASB runtime fixture is available. No ASB repository changes made.
 
 - 2026-09-25T12:37:46+00:00: Claimed by codex-asb-tui-ar1323-qualification-20260925.
+
+- 2026-09-25T12:38:34+00:00: Requalified the merged asb-tui implementation at main
+  e6a9dd677d6be043d1d04d48310ba026ef022fa: local lib suite (147), AWQ shadow (4), control
+  compatibility (2), and lifecycle (13) tests pass. The remaining acceptance is live runner-owned
+  helper invocation; no authorized ASB control runtime/socket is present on this host, and this
+  scope forbids modifying ASB. Keep open for the next live fixture.
