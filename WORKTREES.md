@@ -90,6 +90,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-verifier-hardening` | `feature/release-verifier-hardening` | `6f0ab48641f4` | 0 | behind 198, ahead 0 |
 | `asb-tui-wizard-catalog` | `feat/ar1192-wizard-catalog` | `2dbe6d76fcab` | 0 | behind 111, ahead 0 |
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 150, ahead 0 |
+| `asb-tui-ar1323-luna56` | `DETACHED` | `da9b160bc924` | 0 | behind 0, ahead 0 |
 | `asb-tui-audit` | `feat/ar1195-catalog-digest` | `ae2780e8923e` | 0 | behind 106, ahead 0 |
 | `asb-tui-coverage-repair-ours` | `repair/ar-coverage-setup-recording` | `5d01a5fcff95` | 0 | behind 48, ahead 0 |
 | `asb-tui-current-audit` | `DETACHED` | `eddf48055c55` | 0 | behind 28, ahead 0 |
