@@ -11,15 +11,18 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #139 | `dependabot/github_actions/taiki-e/install-action-2.87.14@1834e919f990` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.10 to 2.87.14 |
+| #139 | `dependabot/github_actions/taiki-e/install-action-2.87.14@547dbc18acae` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | chore(deps): bump taiki-e/install-action from 2.87.10 to 2.87.15 |
 | #140 | `dependabot/cargo/rustix-1.1.5@1d50af17d61a` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump rustix from 1.1.2 to 1.1.5 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36134529531 | `0c56a13d6879` | push | Trusted main verification | in_progress:- |
-| 36134529435 | `0c56a13d6879` | push | Repository quality | in_progress:- |
+| 36134739682 | `547dbc18acae` | pull_request | AWQ shadow observation | in_progress:- |
+| 36134739474 | `547dbc18acae` | pull_request | Repository quality | queued:- |
+| 36134631334 | `0c56a13d6879` | dynamic | Dependabot Updates | completed:success |
+| 36134529531 | `0c56a13d6879` | push | Trusted main verification | completed:failure |
+| 36134529435 | `0c56a13d6879` | push | Repository quality | completed:success |
 | 36134279062 | `61e77810b5ed` | pull_request | AWQ shadow observation | completed:success |
 | 36134278868 | `61e77810b5ed` | pull_request | Repository quality | completed:success |
 | 36134183622 | `1d50af17d61a` | pull_request | AWQ shadow observation | completed:failure |
@@ -27,6 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36133982812 | `5e33cdf2144f` | pull_request | AWQ shadow observation | completed:failure |
 | 36133982617 | `5e33cdf2144f` | pull_request | Repository quality | completed:failure |
 | 36133793642 | `56f062d2a8c1` | pull_request | AWQ shadow observation | completed:failure |
-| 36133793392 | `56f062d2a8c1` | pull_request | Repository quality | completed:failure |
-| 35936880230 | `166df29d5fac` | pull_request | AWQ shadow observation | completed:failure |
-| 35936880081 | `166df29d5fac` | pull_request | Repository quality | completed:failure |
