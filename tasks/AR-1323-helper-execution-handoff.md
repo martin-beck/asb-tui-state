@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T15:33:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
-  "owner": "tui-ar1323-luna56",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:35:41+00:00",
+  "updated_at": "2026-09-25T13:35:53+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -183,3 +183,6 @@ execute an arbitrary path or receive a raw credential.
   suites), focused helper tests 6/6, control compatibility 2/2, lifecycle 13/13, cargo fmt --check
   and git diff --check passed. No authorized ASB control runtime/socket or live helper fixture is
   available on this host; retain open for truthful cross-repository live qualification.
+
+- 2026-09-25T13:35:53+00:00: Local validation complete; release lease while awaiting authorized ASB
+  runtime fixture for live helper qualification.

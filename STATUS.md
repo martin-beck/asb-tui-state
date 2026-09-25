@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -59,7 +59,7 @@ flowchart LR
         AR_1317["AR-1317 - Done"]:::status_done
         AR_1318["AR-1318 - Done"]:::status_done
         AR_1321["AR-1321 - Done"]:::status_done
-        AR_1323["AR-1323 - In progress"]:::status_in_progress
+        AR_1323["AR-1323 - Open"]:::status_open
         AR_1324["AR-1324 - Planned"]:::status_planned
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
@@ -139,11 +139,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | tui-ar1323-luna56 | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone. |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone. |
 
 ### Planned (5)
 
