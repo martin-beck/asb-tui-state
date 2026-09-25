@@ -13,11 +13,14 @@ Generated from local Git and GitHub. Do not edit.
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 | #139 | `dependabot/github_actions/taiki-e/install-action-2.87.14@1834e919f990` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.10 to 2.87.14 |
 | #140 | `dependabot/cargo/rustix-1.1.5@166df29d5fac` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump rustix from 1.1.2 to 1.1.5 |
+| #141 | `feature/ar1201-formal-ui-source-parity@56f062d2a8c1` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): enforce source and model parity |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36133793642 | `56f062d2a8c1` | pull_request | AWQ shadow observation | in_progress:- |
+| 36133793392 | `56f062d2a8c1` | pull_request | Repository quality | in_progress:- |
 | 35936880230 | `166df29d5fac` | pull_request | AWQ shadow observation | completed:failure |
 | 35936880081 | `166df29d5fac` | pull_request | Repository quality | completed:failure |
 | 35936872676 | `1834e919f990` | pull_request | AWQ shadow observation | completed:failure |
@@ -28,5 +31,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35936562506 | `a5818c0f3fe3` | push | Repository quality | completed:success |
 | 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | completed:success |
 | 35936274439 | `ca9c41ae8be1` | pull_request | Repository quality | completed:success |
-| 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | completed:failure |
-| 35936202669 | `2194a74628a2` | pull_request | Repository quality | completed:failure |
