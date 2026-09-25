@@ -3,18 +3,20 @@
   "branch": "feature/ar1201-formal-ui-source-parity",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1197"],
+  "depends_on": [
+    "AR-1197"
+  ],
   "id": "AR-1201",
   "next_action": "Promote after AR-1197 and inventory prerequisites are reviewed; implement the executable model/source parity manifest and CI gate in asb-tui.",
   "owner": "",
   "plan": "../plans/AR-1201.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make every TUI source element and transition mechanically checkable against the formal UI model.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Executable formal UI model and source parity",
-  "updated_at": "2026-09-15T00:00:00+00:00",
+  "updated_at": "2026-09-25T12:08:42+00:00",
   "worktree_key": "asb-tui-ar-1201-formal-ui-source-parity"
 }
 ---
@@ -53,3 +55,6 @@ Acceptance requires exact-head source review, signed DCO/SSH verification, full 
 ASB UI code, and evidence that adding/removing/renaming an element or transition causes the
 appropriate parity test to fail until both sides and its meaningful contextual help are updated.
 Do not claim completion from a formal file existing or from a one-sided ownership check.
+
+- 2026-09-25T12:08:42+00:00: AR-1197 is done; promoting dependency-ready formal UI parity work for
+  asb-tui implementation.
