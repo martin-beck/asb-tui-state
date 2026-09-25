@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:58:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
-  "owner": "codex-asb-tui-ar1323-qualification-20260925",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:28:38+00:00",
+  "updated_at": "2026-09-25T13:28:41+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -156,3 +156,10 @@ execute an arbitrary path or receive a raw credential.
   scope forbids modifying ASB. Keep open for the next live fixture.
 
 - 2026-09-25T13:28:38+00:00: Claimed by codex-asb-tui-ar1323-qualification-20260925.
+
+- 2026-09-25T13:28:41+00:00: PR #145 merged at da9b160bc924932558c57519807759c6d9574c19. Signed+DCO
+  transport qualification now verifies v1.10 negotiation, exact request identity/typed fields,
+  absence of api_key, digest-only auth-status projection, and pre-v1.10 fail-before-I/O. Local
+  focused tests, fmt, model/inventory and source-parity checks passed; hosted Repository quality and
+  AWQ checks passed. AR remains open solely for live runner/helper qualification, which requires an
+  authorized ASB runtime not present in this scope.
