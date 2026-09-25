@@ -11,20 +11,22 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #115 | `dependabot/cargo/signal-hook-0.4.4@7d61768e8a09` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
+| #139 | `dependabot/github_actions/taiki-e/install-action-2.87.14@1834e919f990` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.10 to 2.87.14 |
+| #140 | `dependabot/cargo/rustix-1.1.5@166df29d5fac` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump rustix from 1.1.2 to 1.1.5 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35936562617 | `a5818c0f3fe3` | push | Trusted main verification | in_progress:- |
-| 35936562506 | `a5818c0f3fe3` | push | Repository quality | in_progress:- |
+| 35936880230 | `166df29d5fac` | pull_request | AWQ shadow observation | completed:failure |
+| 35936880081 | `166df29d5fac` | pull_request | Repository quality | completed:failure |
+| 35936872676 | `1834e919f990` | pull_request | AWQ shadow observation | completed:failure |
+| 35936872330 | `1834e919f990` | pull_request | Repository quality | completed:failure |
+| 35936801337 | `a5818c0f3fe3` | dynamic | Dependabot Updates | completed:success |
+| 35936801174 | `a5818c0f3fe3` | dynamic | Dependabot Updates | completed:success |
+| 35936562617 | `a5818c0f3fe3` | push | Trusted main verification | completed:failure |
+| 35936562506 | `a5818c0f3fe3` | push | Repository quality | completed:success |
 | 35936274589 | `ca9c41ae8be1` | pull_request | AWQ shadow observation | completed:success |
 | 35936274439 | `ca9c41ae8be1` | pull_request | Repository quality | completed:success |
 | 35936202744 | `2194a74628a2` | pull_request | AWQ shadow observation | completed:failure |
 | 35936202669 | `2194a74628a2` | pull_request | Repository quality | completed:failure |
-| 35935944074 | `2066bbfc00e6` | pull_request | AWQ shadow observation | completed:failure |
-| 35935943791 | `2066bbfc00e6` | pull_request | Repository quality | completed:failure |
-| 35828512484 | `eddf48055c55` | push | Repository quality | completed:success |
-| 35828512480 | `eddf48055c55` | push | Trusted main verification | completed:failure |
-| 35828311697 | `144ec7e05b96` | pull_request | AWQ shadow observation | completed:success |
-| 35828311134 | `144ec7e05b96` | pull_request | Repository quality | completed:success |
