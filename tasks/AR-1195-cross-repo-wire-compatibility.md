@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1195-cross-repo-wire-compatibility",
   "checkpoint_commit": "46fa6f57540c797db4541d50ddb7e91216b253c6",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T14:09:12+00:00",
   "depends_on": [
     "AR-1192"
   ],
   "id": "AR-1195",
   "next_action": "Complete independent exact-head review and cross-repository qualification against ASB catalog/lifecycle pins; do not promote while AR-1192 remains unfinished.",
-  "owner": "",
+  "owner": "ar1195-wire-compat",
   "plan": "../plans/AR-1195.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Prove asb-tui consumes the exact authenticated ASB catalog and lifecycle wire contracts.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Cross-repository wire compatibility",
-  "updated_at": "2026-09-25T12:09:05+00:00",
+  "updated_at": "2026-09-25T12:09:12+00:00",
   "worktree_key": "asb-tui-cross-repo-wire-compatibility"
 }
 ---
@@ -56,3 +56,5 @@ cross-repository exact-head qualification is recorded.
 
 - 2026-09-25T12:09:05+00:00: AR-1192 is now done; promote AR-1195 for independent digest
   verification and exact-head wire qualification.
+
+- 2026-09-25T12:09:12+00:00: Claimed by ar1195-wire-compat.
