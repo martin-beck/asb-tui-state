@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar1202-live-resize-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:23:11+00:00",
+  "claim_expires": "2026-09-25T14:25:14+00:00",
   "depends_on": [
     "AR-1201"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Handle terminal resize safely across every asb-tui route without losing state or violating the formal model.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Live terminal resize integration and qualification",
-  "updated_at": "2026-09-25T12:23:11+00:00",
+  "updated_at": "2026-09-25T12:25:14+00:00",
   "worktree_key": "asb-tui-ar-1202-live-resize"
 }
 ---
@@ -56,3 +56,5 @@ path is safe and usable. A one-time terminal-size snapshot or unit test alone is
   promote resize qualification.
 
 - 2026-09-25T12:23:11+00:00: Claimed by codex-asb-tui-ar1202-20260925.
+
+- 2026-09-25T12:25:14+00:00: Heartbeat by codex-asb-tui-ar1202-20260925.
