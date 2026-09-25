@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar1202-live-resize-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:25:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1201"
   ],
   "id": "AR-1202",
   "next_action": "Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application.",
-  "owner": "codex-asb-tui-ar1202-20260925",
+  "owner": "",
   "plan": "../plans/AR-1202.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Handle terminal resize safely across every asb-tui route without losing state or violating the formal model.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Live terminal resize integration and qualification",
-  "updated_at": "2026-09-25T12:26:14+00:00",
+  "updated_at": "2026-09-25T12:26:44+00:00",
   "worktree_key": "asb-tui-ar-1202-live-resize"
 }
 ---
@@ -61,3 +61,8 @@ path is safe and usable. A one-time terminal-size snapshot or unit test alone is
 
 - 2026-09-25T12:26:14+00:00: Recorded command exit 0; command argv SHA-256
   0a34898789f89b3416d159c8224a8a2182ebaa9354fa01a0cff1560050b67dd6.
+
+- 2026-09-25T12:26:44+00:00: PR #142 pushed at signed head a7dd214. Local full locked Rust suite,
+  clippy, formatting, formal model and source-parity checks, focused route-resize tests, TestBackend
+  and PTY coverage pass. Hosted exact-head checks are pending; claim again for merge and post-merge
+  verification.
