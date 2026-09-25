@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T15:33:02+00:00",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Await fresh exact-head hosted CI for PR #138, then perform live helper qualification if ASB runtime is available.",
-  "owner": "",
+  "owner": "tui-ar1323-luna56",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:28:41+00:00",
+  "updated_at": "2026-09-25T13:33:02+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -163,3 +163,5 @@ execute an arbitrary path or receive a raw credential.
   focused tests, fmt, model/inventory and source-parity checks passed; hosted Repository quality and
   AWQ checks passed. AR remains open solely for live runner/helper qualification, which requires an
   authorized ASB runtime not present in this scope.
+
+- 2026-09-25T13:33:02+00:00: Claimed by tui-ar1323-luna56.
