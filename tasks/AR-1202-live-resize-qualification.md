@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar1202-live-resize-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:06:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1201"
   ],
   "id": "AR-1202",
   "next_action": "Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application.",
-  "owner": "codex-asb-tui-ar1202-merge-20260925",
+  "owner": "",
   "plan": "../plans/AR-1202.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Handle terminal resize safely across every asb-tui route without losing state or violating the formal model.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Live terminal resize integration and qualification",
-  "updated_at": "2026-09-25T12:36:15+00:00",
+  "updated_at": "2026-09-25T12:36:18+00:00",
   "worktree_key": "asb-tui-ar-1202-live-resize"
 }
 ---
@@ -68,3 +68,8 @@ path is safe and usable. A one-time terminal-size snapshot or unit test alone is
   verification.
 
 - 2026-09-25T12:36:15+00:00: Claimed by codex-asb-tui-ar1202-merge-20260925.
+
+- 2026-09-25T12:36:18+00:00: PR #142 merged at e6a9dd677d6be043d1d04d48310ba026ef022fa2 after
+  exact-head hosted Repository quality and AWQ shadow checks passed. Local locked full suite,
+  clippy, formatting, formal model generation/validation, source parity, TestBackend and PTY resize
+  tests passed; AR-1201 remains the formal-model dependency.
