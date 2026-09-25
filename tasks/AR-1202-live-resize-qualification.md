@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar1202-live-resize-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T14:23:11+00:00",
   "depends_on": [
     "AR-1201"
   ],
   "id": "AR-1202",
   "next_action": "Promote after AR-1201 defines the model binding; review PR #65 at its exact head and implement/qualify live resize in the standalone asb-tui application.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1202-20260925",
   "plan": "../plans/AR-1202.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Handle terminal resize safely across every asb-tui route without losing state or violating the formal model.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Live terminal resize integration and qualification",
-  "updated_at": "2026-09-25T12:23:08+00:00",
+  "updated_at": "2026-09-25T12:23:11+00:00",
   "worktree_key": "asb-tui-ar-1202-live-resize"
 }
 ---
@@ -54,3 +54,5 @@ path is safe and usable. A one-time terminal-size snapshot or unit test alone is
 
 - 2026-09-25T12:23:08+00:00: AR-1201 is done and source/model parity is now enforced on main;
   promote resize qualification.
+
+- 2026-09-25T12:23:11+00:00: Claimed by codex-asb-tui-ar1202-20260925.
