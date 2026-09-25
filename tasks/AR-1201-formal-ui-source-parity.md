@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar1201-formal-ui-source-parity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:08:45+00:00",
+  "claim_expires": "2026-09-25T14:12:28+00:00",
   "depends_on": [
     "AR-1197"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every TUI source element and transition mechanically checkable against the formal UI model.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Executable formal UI model and source parity",
-  "updated_at": "2026-09-25T12:08:45+00:00",
+  "updated_at": "2026-09-25T12:12:28+00:00",
   "worktree_key": "asb-tui-ar-1201-formal-ui-source-parity"
 }
 ---
@@ -60,3 +60,5 @@ Do not claim completion from a formal file existing or from a one-sided ownershi
   asb-tui implementation.
 
 - 2026-09-25T12:08:45+00:00: Claimed by codex-asb-tui-ar1201-20260925.
+
+- 2026-09-25T12:12:28+00:00: Heartbeat by codex-asb-tui-ar1201-20260925.
