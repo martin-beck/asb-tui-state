@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-25T13:34:12+00:00",
+  "updated_at": "2026-09-25T13:34:42+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -171,3 +171,6 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-25T13:34:12+00:00: Recorded command exit 0; command argv SHA-256
   182525f96f5779899a04199166a757ad8446525bb20e576746cbeb634e423c5a.
+
+- 2026-09-25T13:34:42+00:00: Recorded command exit 0; command argv SHA-256
+  b425e03119ca843a16352571355d717c44a5ffb6a8c94b22b1a5387507194fca.
