@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T16:31:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
-  "owner": "tui-ar1323-live-luna56",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-28T13:35:08+00:00",
+  "updated_at": "2026-09-28T13:35:55+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -206,3 +206,11 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-28T13:35:08+00:00: Recorded command exit 0; command argv SHA-256
   551597035c6067c9ea25b29c40f48d05b3f8c9e2d4ca577b0a892082463a8f59.
+
+- 2026-09-28T13:35:55+00:00: Live qualification remains blocked: current host has no authorized ASB
+  control-runtime fixture or active control service; the discovered local fixture sockets are stale
+  and have no serving process. Clean ASB origin/main control server builds successfully, but
+  starting an unapproved ad-hoc runtime would not satisfy the acceptance boundary. No raw credential
+  or helper output was recorded; local TUI and ASB contract tests remain prior evidence. Resume only
+  with an authorized fixture and perform negotiated v1.10 helper invocation plus digest-only status
+  verification.
