@@ -3,7 +3,7 @@
   "branch": "feature/ar-1325-first-class-setup-wizard-route",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1192", "AR-1197", "AR-1317", "AR-1321", "AR-1323", "AR-1324"],
+  "depends_on": ["AR-1192", "AR-1197", "AR-1317", "AR-1321", "AR-1323", "AR-1324", "AR-1328"],
   "id": "AR-1325",
   "title": "First-class setup wizard route",
   "next_action": "Promote after the helper handoff and onboarding dependencies are done; bind the wizard screens to the shared setup contract and add restart/cancellation evidence.",

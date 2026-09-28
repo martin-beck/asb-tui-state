@@ -3,7 +3,7 @@
   "branch": "feature/ar-1326-guided-benchmark-comparison-route",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1222", "AR-1223", "AR-1325"],
+  "depends_on": ["AR-1222", "AR-1223", "AR-1325", "AR-1329"],
   "id": "AR-1326",
   "title": "Guided benchmark and comparison route",
   "next_action": "Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route.",

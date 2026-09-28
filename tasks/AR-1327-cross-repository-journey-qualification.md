@@ -3,7 +3,7 @@
   "branch": "feature/ar-1327-cross-repository-journey-qualification",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1324", "AR-1325", "AR-1326"],
+  "depends_on": ["AR-1324", "AR-1325", "AR-1326", "AR-1330"],
   "id": "AR-1327",
   "title": "Cross-repository first-class journey qualification",
   "next_action": "Promote after AR-1324, AR-1325 and AR-1326 plus paired ASB AR-1444 are done; run the disposable cross-repository journey and publish exact evidence.",
