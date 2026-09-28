@@ -2,7 +2,8 @@
 
 ## Outcome
 
-Add a selectable TUI route for the development credential contract: choose a
+Add a selectable TUI route for the development credential contract (paired with
+ASB AR-1499 and AR-1500): choose a
 provider and authentication method, generate or enter a development fixture
 credential, test it, rotate/reset it, and see bounded status without displaying
 production secrets.
@@ -18,4 +19,3 @@ production secrets.
 
 Production keychain, remote trust and secure authentication are deferred to
 ASB AR-1501 and TUI AR-1331.
-
