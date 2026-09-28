@@ -3,7 +3,7 @@
   "branch": "feature/ar-1328-development-credential-enrollment-route",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1323", "AR-1324"],
+  "depends_on": ["AR-1321"],
   "id": "AR-1328",
   "title": "Development credential enrollment route",
   "next_action": "Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback.",

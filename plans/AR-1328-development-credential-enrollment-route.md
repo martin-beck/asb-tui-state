@@ -2,8 +2,9 @@
 
 ## Outcome
 
-Add a selectable TUI route for the development credential contract (paired with
-ASB AR-1499 and AR-1500): choose a provider and authentication method, have the
+Add a standalone development route, independent of the live AR-1200/AR-1323/
+AR-1324 chain, for the development credential contract (paired with ASB
+AR-1499 and AR-1500): choose a provider and authentication method, have the
 wizard automatically generate a local development fixture credential, test it,
 rotate/reset it, and see bounded status without displaying production secrets.
 

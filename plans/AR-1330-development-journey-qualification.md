@@ -1,7 +1,8 @@
 # AR-1330 — Development credential journey qualification
 
-Qualify a disposable, credential-free development journey (paired with ASB
-AR-1496, AR-1443 and the completed AR-1500) from clean TUI install through
+Qualify a disposable, credential-free development journey through the standalone
+development route (paired with ASB AR-1496, AR-1443 and the completed AR-1500)
+from clean TUI install through
 enrollment, provider/model selection, agent defaults, mock capture, strict
 offline replay and comparison. The journey must continue when authentication,
 signature validation, or key management is absent, showing warnings instead of

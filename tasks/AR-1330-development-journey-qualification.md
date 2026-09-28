@@ -3,7 +3,7 @@
   "branch": "qualification/ar-1330-development-journey",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1326", "AR-1329"],
+  "depends_on": ["AR-1329"],
   "id": "AR-1330",
   "title": "Development credential journey qualification",
   "next_action": "Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence.",
