@@ -6,7 +6,7 @@
   "depends_on": ["AR-1326", "AR-1329"],
   "id": "AR-1330",
   "title": "Development credential journey qualification",
-  "next_action": "Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey and publish exact evidence.",
+  "next_action": "Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence.",
   "owner": "",
   "plan": "../plans/AR-1330-development-journey-qualification.md",
   "priority": "P0",

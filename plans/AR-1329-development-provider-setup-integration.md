@@ -8,4 +8,6 @@ persist only safe development metadata and defaults.
 
 The route must feed the existing ASB capture/replay contracts and remain
 selection-driven. It must label mock/generated credentials and reject live or
-offline-incompatible states truthfully.
+offline-incompatible states truthfully. Missing authentication, signature
+validation, or key management must not prevent development setup or local mock
+benchmarking; the UI presents a warning and continues with the generated fixture.

@@ -6,7 +6,7 @@
   "depends_on": ["AR-1325", "AR-1328"],
   "id": "AR-1329",
   "title": "Development provider setup integration",
-  "next_action": "Promote after the setup and enrollment routes are ready; integrate provider/model/default changes and mock-provider validation.",
+  "next_action": "Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback.",
   "owner": "",
   "plan": "../plans/AR-1329-development-provider-setup-integration.md",
   "priority": "P0",
