@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T13:39:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
-  "owner": "asb-tui-coordinator-repair",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-28T13:24:34+00:00",
+  "updated_at": "2026-09-28T13:24:43+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -191,3 +191,7 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-28T13:24:34+00:00: Recorded command exit 0; command argv SHA-256
   0faf6fc4a60240ed25ce63d868fcf01b7180a1bde33c3029b9dce7c49b9f6afd.
+
+- 2026-09-28T13:24:43+00:00: Removed only the stale missing Git worktree administrative entry; live
+  ASB control-runtime fixture is still unavailable, so AR remains open for its required
+  qualification.
