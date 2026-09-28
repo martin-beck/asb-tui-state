@@ -94,6 +94,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-audit` | `feat/ar1195-catalog-digest` | `ae2780e8923e` | 0 | behind 106, ahead 0 |
 | `asb-tui-coverage-repair-ours` | `repair/ar-coverage-setup-recording` | `5d01a5fcff95` | 0 | behind 48, ahead 0 |
 | `asb-tui-current-audit` | `DETACHED` | `eddf48055c55` | 0 | behind 28, ahead 0 |
-| `asb-tui-e21d938` | `DETACHED` | `e21d938cf512` | 0 | behind 61, ahead 0 |
 | `asb-tui-final-audit` | `DETACHED` | `30e243be4bd3` | 0 | behind 34, ahead 0 |
 | `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 181, ahead 0 |
