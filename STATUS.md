@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**27 ARs tracked** across 3 active status categories.
+**31 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 21 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -64,6 +64,10 @@ flowchart LR
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
         AR_1327["AR-1327 - Planned"]:::status_planned
+        AR_1328["AR-1328 - Planned"]:::status_planned
+        AR_1329["AR-1329 - Planned"]:::status_planned
+        AR_1330["AR-1330 - Planned"]:::status_planned
+        AR_1331["AR-1331 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -89,12 +93,21 @@ flowchart LR
     AR_1317 --> AR_1325
     AR_1321 --> AR_1323
     AR_1321 --> AR_1325
+    AR_1321 --> AR_1328
     AR_1323 --> AR_1325
     AR_1324 --> AR_1325
     AR_1324 --> AR_1327
     AR_1325 --> AR_1326
     AR_1325 --> AR_1327
     AR_1326 --> AR_1327
+    AR_1328 --> AR_1325
+    AR_1328 --> AR_1329
+    AR_1328 --> AR_1331
+    AR_1329 --> AR_1326
+    AR_1329 --> AR_1330
+    AR_1329 --> AR_1331
+    AR_1330 --> AR_1327
+    AR_1330 --> AR_1331
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -130,12 +143,16 @@ flowchart LR
 | [AR-1230](tasks/AR-1230-live-resize-post-merge.md) | None | None |
 | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md), [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md), [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md), [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md) | [AR-1321](tasks/AR-1321-credential-helper-bridge.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) |
 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md) | None | None |
-| [AR-1321](tasks/AR-1321-credential-helper-bridge.md) | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) | [AR-1323](tasks/AR-1323-helper-execution-handoff.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) |
+| [AR-1321](tasks/AR-1321-credential-helper-bridge.md) | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md) | [AR-1323](tasks/AR-1323-helper-execution-handoff.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md) |
 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md) | [AR-1321](tasks/AR-1321-credential-helper-bridge.md) | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) |
 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md) | [AR-1200](tasks/AR-1200-asb-router-client.md) | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) |
-| [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md), [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md), [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md), [AR-1321](tasks/AR-1321-credential-helper-bridge.md), [AR-1323](tasks/AR-1323-helper-execution-handoff.md), [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md) | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md), [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) |
-| [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) |
-| [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md) | None |
+| [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md) | [AR-1192](tasks/AR-1192-authenticated-agent-wizard.md), [AR-1197](tasks/AR-1197-startup-wizard-idempotence.md), [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md), [AR-1321](tasks/AR-1321-credential-helper-bridge.md), [AR-1323](tasks/AR-1323-helper-execution-handoff.md), [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md), [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md) | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md), [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) |
+| [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md) | [AR-1222](tasks/AR-1222-tui-run-shared-config.md), [AR-1223](tasks/AR-1223-tui-replay-comparison.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1329](tasks/AR-1329-development-provider-setup-integration.md) | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) |
+| [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md), [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md), [AR-1330](tasks/AR-1330-development-journey-qualification.md) | None |
+| [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md) | [AR-1321](tasks/AR-1321-credential-helper-bridge.md) | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md), [AR-1329](tasks/AR-1329-development-provider-setup-integration.md), [AR-1331](tasks/AR-1331-production-credential-hardening.md) |
+| [AR-1329](tasks/AR-1329-development-provider-setup-integration.md) | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md) | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md), [AR-1330](tasks/AR-1330-development-journey-qualification.md), [AR-1331](tasks/AR-1331-production-credential-hardening.md) |
+| [AR-1330](tasks/AR-1330-development-journey-qualification.md) | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md) | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md), [AR-1331](tasks/AR-1331-production-credential-hardening.md) |
+| [AR-1331](tasks/AR-1331-production-credential-hardening.md) | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md), [AR-1329](tasks/AR-1329-development-provider-setup-integration.md), [AR-1330](tasks/AR-1330-development-journey-qualification.md) | None |
 
 ## Complete AR inventory
 
@@ -145,7 +162,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone. |
 
-### Planned (5)
+### Planned (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -154,6 +171,10 @@ flowchart LR
 | P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Unclaimed | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and onboarding dependencies are done; bind the wizard screens to the shared setup contract and add restart/cancellation evidence. |
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Unclaimed | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route. |
 | P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Unclaimed | Make the clean-install-to-comparison journey a paired ASB/asb-tui release gate. | Promote after AR-1324, AR-1325 and AR-1326 plus paired ASB AR-1444 are done; run the disposable cross-repository journey and publish exact evidence. |
+| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Unclaimed | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. |
+| P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Unclaimed | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. |
+| P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Unclaimed | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. |
+| P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Unclaimed | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
 
 ### Done (21)
 
