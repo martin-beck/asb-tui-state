@@ -160,7 +160,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | tui-ar1323-dev-20260929 | Invoke the approved credential helper through the authenticated runner boundary. | Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone. |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | tui-ar1323-dev-20260929 | Invoke the approved credential helper through the authenticated runner boundary. | Run negotiated v1.10 helper invocation against the disposable local development runtime; record digest-only status, helper identity, and no production authorization claim. |
 
 ### Planned (9)
 

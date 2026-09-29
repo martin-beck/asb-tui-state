@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
+  "next_action": "Run negotiated v1.10 helper invocation against the disposable local development runtime; record digest-only status, helper identity, and no production authorization claim.",
   "owner": "tui-ar1323-dev-20260929",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:25:42+00:00",
+  "updated_at": "2026-09-29T09:26:01+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -219,3 +219,6 @@ execute an arbitrary path or receive a raw credential.
   fixture; production authorization remains required only for production claims.
 
 - 2026-09-29T09:25:42+00:00: Claimed by tui-ar1323-dev-20260929.
+
+- 2026-09-29T09:26:01+00:00: Development cycle explicitly permits unauthorized local runtime;
+  production authorization is not a prerequisite for this qualification.
