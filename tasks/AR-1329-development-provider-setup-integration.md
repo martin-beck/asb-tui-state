@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1329-development-provider-setup-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T14:55:29+00:00",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1329",
   "next_action": "Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback.",
-  "owner": "",
+  "owner": "tui-ar1329-dev-20260929",
   "plan": "../plans/AR-1329-development-provider-setup-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate development credential lifecycle with provider, model and default selection.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Development provider setup integration",
-  "updated_at": "2026-09-29T12:55:26+00:00",
+  "updated_at": "2026-09-29T12:55:29+00:00",
   "worktree_key": "asb-tui-ar-1329"
 }
 ---
@@ -26,3 +26,5 @@ backend as the authority.
 
 - 2026-09-29T12:55:26+00:00: AR-1328 is merged and post-merge verified; local prerequisite
   satisfied. Promote development provider setup integration.
+
+- 2026-09-29T12:55:29+00:00: Claimed by tui-ar1329-dev-20260929.
