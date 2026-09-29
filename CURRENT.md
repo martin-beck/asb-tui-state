@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. | - |
+| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. | tui-ar1328-dev-20260929 |
 
 ## Blocked
 

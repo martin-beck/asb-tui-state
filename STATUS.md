@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -64,7 +64,7 @@ flowchart LR
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
         AR_1327["AR-1327 - Planned"]:::status_planned
-        AR_1328["AR-1328 - Open"]:::status_open
+        AR_1328["AR-1328 - In progress"]:::status_in_progress
         AR_1329["AR-1329 - Planned"]:::status_planned
         AR_1330["AR-1330 - Planned"]:::status_planned
         AR_1331["AR-1331 - Planned"]:::status_planned
@@ -159,11 +159,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Unclaimed | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. |
+| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | tui-ar1328-dev-20260929 | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. |
 
 ### Blocked (1)
 
