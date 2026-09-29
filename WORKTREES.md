@@ -92,7 +92,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 152, ahead 0 |
 | `asb-tui-ar1323-luna56` | `DETACHED` | `da9b160bc924` | 0 | behind 2, ahead 0 |
 | `asb-tui-ar1328` | `feature/ar-1328-development-credential-enrollment-route` | `2ca86fbef201` | 0 | behind 1, ahead 7 |
-| `asb-tui-ar1329` | `feature/ar-1329-development-provider-setup-integration` | `db4cccfc5874` | 0 | behind 0, ahead 4 |
+| `asb-tui-ar1329` | `feature/ar-1329-development-provider-setup-integration` | `97f22f9c642c` | 0 | behind 0, ahead 7 |
+| `asb-tui-ar1330` | `DETACHED` | `81e14d529a9e` | 0 | behind 0, ahead 5 |
 | `asb-tui-ar1332` | `feature/ar-1332-reconciled-development-runtime-fixture` | `a5b58d5593b5` | 0 | behind 2, ahead 4 |
 | `asb-tui-audit` | `feat/ar1195-catalog-digest` | `ae2780e8923e` | 0 | behind 108, ahead 0 |
 | `asb-tui-coverage-repair-ours` | `repair/ar-coverage-setup-recording` | `5d01a5fcff95` | 0 | behind 50, ahead 0 |
