@@ -5,13 +5,13 @@
 
 ## Portfolio overview
 
-**32 ARs tracked** across 3 active status categories.
+**32 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 24 |
@@ -59,7 +59,7 @@ flowchart LR
         AR_1317["AR-1317 - Done"]:::status_done
         AR_1318["AR-1318 - Done"]:::status_done
         AR_1321["AR-1321 - Done"]:::status_done
-        AR_1323["AR-1323 - Blocked"]:::status_blocked
+        AR_1323["AR-1323 - Open"]:::status_open
         AR_1324["AR-1324 - Planned"]:::status_planned
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
@@ -159,11 +159,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Blocked (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Unclaimed | Invoke the approved credential helper through the authenticated runner boundary. | Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development. |
+
+### Blocked (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Unclaimed | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. |
 
 ### Planned (6)

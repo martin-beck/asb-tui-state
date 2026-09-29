@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:49:02+00:00",
+  "updated_at": "2026-09-29T23:04:00+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -244,3 +244,7 @@ execute an arbitrary path or receive a raw credential.
   negotiation, digest-only enrollment, and helper execution succeed, but helper mutation repeatedly
   returns typed runner reconciliation required. No production authorization is required; completion
   needs the runtime reconciliation precondition or an equivalent asb-tui-compatible fixture.
+
+- 2026-09-29T23:04:00+00:00: ASB AR-1514 runtime reconciliation is complete at bf89a45d; resume
+  TUI-owned paired v1.10 helper handoff qualification using the repaired disposable runtime. ASB
+  source remains out of scope.
