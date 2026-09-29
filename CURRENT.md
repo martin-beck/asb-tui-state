@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -18,7 +24,6 @@ Never edit this file directly.
 | P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and onboarding dependencies are done; bind the wizard screens to the shared setup contract and add restart/cancellation evidence. | - |
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route. | - |
 | P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Make the clean-install-to-comparison journey a paired ASB/asb-tui release gate. | Promote after AR-1324, AR-1325 and AR-1326 plus paired ASB AR-1444 are done; run the disposable cross-repository journey and publish exact evidence. | - |
-| P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. | - |
 | P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. | - |
 | P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. | - |
 
