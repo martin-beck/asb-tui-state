@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**31 ARs tracked** across 3 active status categories.
+**31 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 21 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -40,7 +40,7 @@ flowchart LR
     end
     subgraph series_12["12 - Additional work"]
         direction TB
-        AR_1200["AR-1200 - Planned"]:::status_planned
+        AR_1200["AR-1200 - Open"]:::status_open
         AR_1201["AR-1201 - Done"]:::status_done
         AR_1202["AR-1202 - Done"]:::status_done
         AR_1220["AR-1220 - Done"]:::status_done
@@ -162,11 +162,16 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | tui-ar1323-dev-20260929 | Invoke the approved credential helper through the authenticated runner boundary. | Complete disposable development-runtime reconciliation, then rerun the negotiated v1.10 helper invocation and capture a successful digest-only AuthStatus result; production authorization is not required. |
 
-### Planned (9)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB router client adoption | Unclaimed | Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI. | Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification. |
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md): Install and broker onboarding | Unclaimed | Make clean ASB/asb-tui installation and local broker onboarding a selectable first step. | Promote after AR-1200 and paired ASB AR-1441 are verified; implement the clean install, broker negotiation, and recovery route. |
 | P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Unclaimed | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and onboarding dependencies are done; bind the wizard screens to the shared setup contract and add restart/cancellation evidence. |
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Unclaimed | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route. |
