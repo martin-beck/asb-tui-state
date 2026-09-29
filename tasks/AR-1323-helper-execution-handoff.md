@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T01:04:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321",
     "AR-1332"
   ],
   "id": "AR-1323",
   "next_action": "Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development.",
-  "owner": "tui-ar1323-qualify-20260930",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T23:04:11+00:00",
+  "updated_at": "2026-09-29T23:14:59+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -250,3 +250,10 @@ execute an arbitrary path or receive a raw credential.
   source remains out of scope.
 
 - 2026-09-29T23:04:11+00:00: Claimed by tui-ar1323-qualify-20260930.
+
+- 2026-09-29T23:14:59+00:00: Completed TUI-owned runtime qualification. Against the repaired
+  disposable ASB runtime (ASB AR-1514 merged at bf89a45d), the asb-tui FramedControlStream
+  negotiated v1.10, digest-only auth_enroll committed, and auth_helper_invoke returned successful
+  runner-authored AuthStatus (active, generation 2, endpoint and credential locator digests only).
+  No ASB source or state was changed; production authorization was not required for this development
+  fixture.
