@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T09:55:42+00:00",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Run live helper invocation against an authorized ASB control runtime fixture; do not close on local codec/test evidence alone.",
-  "owner": "",
+  "owner": "tui-ar1323-dev-20260929",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:25:40+00:00",
+  "updated_at": "2026-09-29T09:25:42+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -217,3 +217,5 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-29T09:25:40+00:00: Development qualification may use a disposable local ASB runtime/helper
   fixture; production authorization remains required only for production claims.
+
+- 2026-09-29T09:25:42+00:00: Claimed by tui-ar1323-dev-20260929.
