@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1330-development-journey-qualification.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify the development-only enrollment-to-offline-comparison journey.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Development credential journey qualification",
-  "updated_at": "2026-09-29T13:35:01+00:00",
+  "updated_at": "2026-09-29T23:17:20+00:00",
   "worktree_key": "asb-tui-ar-1330"
 }
 ---
@@ -32,3 +32,7 @@ Do not promote mock evidence to production security or live-provider evidence.
   credential-free development/mock journey and renderer-neutral capture/replay/comparison evidence
   passed all local and hosted checks. Full disposable paired runtime qualification remains blocked
   on ASB AR-1514 runtime reconciliation; no ASB source changed.
+
+- 2026-09-29T23:17:20+00:00: ASB runtime reconciliation is now complete at bf89a45d. Resume
+  standalone asb-tui development/mock journey qualification; no ASB source or state changes are in
+  scope.
