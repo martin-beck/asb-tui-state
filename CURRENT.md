@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. | tui-ar1329-dev-20260929 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -47,6 +41,7 @@ Never edit this file directly.
 | P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB's signer, SBOM, license and target provenance fields, then publish exact fixture evidence. | - |
 | P0 | [AR-1321](tasks/AR-1321-credential-helper-bridge.md): Credential-helper bridge for setup wizard | Connect the setup wizard to an approved local credential helper without raw-key transport. | Continue with AR-1323 for negotiated runner-owned helper invocation; PR #134 merged the strict digest-only receipt codec and PR #136 now projects runner-authored auth status before configuration apply. | - |
 | P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. | - |
+| P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. | - |
 | P0 | [AR-1332](tasks/AR-1332-reconciled-development-runtime-fixture.md): Reconciled development control-runtime fixture | Provide a reconciled disposable control-runtime fixture for AR-1323. | Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
