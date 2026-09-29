@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. | tui-ar1330-dev-20260929 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development. | - |
+| P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. | - |
 
 ## Planned
 
