@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T10:15:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1321"
   ],
   "id": "AR-1323",
   "next_action": "Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development.",
-  "owner": "tui-ar1323-dev-20260929",
+  "owner": "",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:45:08+00:00",
+  "updated_at": "2026-09-29T09:49:02+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -238,3 +238,8 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-29T09:44:02+00:00: Heartbeat by tui-ar1323-dev-20260929.
 
 - 2026-09-29T09:45:08+00:00: Heartbeat by tui-ar1323-dev-20260929.
+
+- 2026-09-29T09:49:02+00:00: Released after repeated disposable-development probes. v1.10
+  negotiation, digest-only enrollment, and helper execution succeed, but helper mutation repeatedly
+  returns typed runner reconciliation required. No production authorization is required; completion
+  needs the runtime reconciliation precondition or an equivalent asb-tui-compatible fixture.
