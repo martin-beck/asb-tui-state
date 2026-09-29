@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-28T13:35:55+00:00",
+  "updated_at": "2026-09-29T09:25:40+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -214,3 +214,6 @@ execute an arbitrary path or receive a raw credential.
   or helper output was recorded; local TUI and ASB contract tests remain prior evidence. Resume only
   with an authorized fixture and perform negotiated v1.10 helper invocation plus digest-only status
   verification.
+
+- 2026-09-29T09:25:40+00:00: Development qualification may use a disposable local ASB runtime/helper
+  fixture; production authorization remains required only for production claims.
