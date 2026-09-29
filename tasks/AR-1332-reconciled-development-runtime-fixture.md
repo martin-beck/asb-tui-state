@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1332-reconciled-development-runtime-fixture",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T11:01:43+00:00",
   "depends_on": [],
   "id": "AR-1332",
   "next_action": "Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323.",
-  "owner": "",
+  "owner": "tui-ar1332-repair-20260929",
   "plan": "../plans/AR-1332.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a reconciled disposable control-runtime fixture for AR-1323.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Reconciled development control-runtime fixture",
-  "updated_at": "2026-09-29T10:01:41+00:00",
+  "updated_at": "2026-09-29T10:01:43+00:00",
   "worktree_key": "asb-tui-ar-1332-reconciled-development-runtime-fixture"
 }
 ---
@@ -35,3 +35,5 @@ that blocker without requiring production authorization.
 - 2026-09-29T10:01:41+00:00: Promoted immediately by user authorization. Dependency direction
   corrected: AR-1332 is the repair prerequisite for AR-1323; work remains confined to
   asb-tui-compatible fixture/harness and state evidence.
+
+- 2026-09-29T10:01:43+00:00: Claimed by tui-ar1332-repair-20260929.

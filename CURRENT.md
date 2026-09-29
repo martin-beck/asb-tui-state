@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1332](tasks/AR-1332-reconciled-development-runtime-fixture.md): Reconciled development control-runtime fixture | Provide a reconciled disposable control-runtime fixture for AR-1323. | Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323. | - |
+| P0 | [AR-1332](tasks/AR-1332-reconciled-development-runtime-fixture.md): Reconciled development control-runtime fixture | Provide a reconciled disposable control-runtime fixture for AR-1323. | Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323. | tui-ar1332-repair-20260929 |
 
 ## Blocked
 
