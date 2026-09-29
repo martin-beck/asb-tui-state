@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T10:08:02+00:00",
+  "claim_expires": "2026-09-29T10:14:02+00:00",
   "depends_on": [
     "AR-1321"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:42:12+00:00",
+  "updated_at": "2026-09-29T09:44:02+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -234,3 +234,5 @@ execute an arbitrary path or receive a raw credential.
   auth_enroll committed to control-catalog; allowlisted helper executable ran successfully;
   subsequent auth_helper_invoke returned typed -33008 runner reconciliation required with no raw
   credential. This is runtime persistence/reconciliation, not authorization.
+
+- 2026-09-29T09:44:02+00:00: Heartbeat by tui-ar1323-dev-20260929.
