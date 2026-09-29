@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1323-helper-execution-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T01:04:11+00:00",
   "depends_on": [
     "AR-1321",
     "AR-1332"
   ],
   "id": "AR-1323",
   "next_action": "Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development.",
-  "owner": "",
+  "owner": "tui-ar1323-qualify-20260930",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T23:04:00+00:00",
+  "updated_at": "2026-09-29T23:04:11+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -248,3 +248,5 @@ execute an arbitrary path or receive a raw credential.
 - 2026-09-29T23:04:00+00:00: ASB AR-1514 runtime reconciliation is complete at bf89a45d; resume
   TUI-owned paired v1.10 helper handoff qualification using the repaired disposable runtime. ASB
   source remains out of scope.
+
+- 2026-09-29T23:04:11+00:00: Claimed by tui-ar1323-qualify-20260930.
