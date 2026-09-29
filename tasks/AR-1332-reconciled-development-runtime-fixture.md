@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1332.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide a reconciled disposable control-runtime fixture for AR-1323.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Reconciled development control-runtime fixture",
-  "updated_at": "2026-09-29T09:50:00+00:00",
+  "updated_at": "2026-09-29T10:01:41+00:00",
   "worktree_key": "asb-tui-ar-1332-reconciled-development-runtime-fixture"
 }
 ---
@@ -31,3 +31,7 @@ that blocker without requiring production authorization.
   assertions, and evidence required by the development qualification.
 - Raw helper output, credentials, production claims, and authorization tokens
   are prohibited from fixture artifacts and logs.
+
+- 2026-09-29T10:01:41+00:00: Promoted immediately by user authorization. Dependency direction
+  corrected: AR-1332 is the repair prerequisite for AR-1323; work remains confined to
+  asb-tui-compatible fixture/harness and state evidence.
