@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1200-asb-router-client",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T09:52:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1195"
   ],
   "id": "AR-1200",
   "next_action": "Remain planned until ASB AR-1199 exposes a verified authenticated router; then implement client adoption and paired qualification.",
-  "owner": "tui-ar1200-gate-audit-20260929",
+  "owner": "",
   "plan": "../plans/AR-1200.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "planned",
   "summary": "Adopt the authenticated ASB router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "ASB router client adoption",
-  "updated_at": "2026-09-29T09:37:52+00:00",
+  "updated_at": "2026-09-29T09:38:50+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -30,3 +30,6 @@ ASB owns only the backend/control route.
   task is available.
 
 - 2026-09-29T09:37:52+00:00: Claimed by tui-ar1200-gate-audit-20260929.
+
+- 2026-09-29T09:38:50+00:00: External paired dependencies remain unmet; released without product
+  work and restored planned gate.
