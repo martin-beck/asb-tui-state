@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Complete disposable development-runtime reconciliation, then rerun the negotiated v1.10 helper invocation and capture a successful digest-only AuthStatus result; production authorization is not required. | tui-ar1323-dev-20260929 |
+| P0 | [AR-1323](tasks/AR-1323-helper-execution-handoff.md): Runner-owned credential-helper execution handoff | Invoke the approved credential helper through the authenticated runner boundary. | Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development. | tui-ar1323-dev-20260929 |
 
 ## Planned
 

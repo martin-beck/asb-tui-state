@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Complete disposable development-runtime reconciliation, then rerun the negotiated v1.10 helper invocation and capture a successful digest-only AuthStatus result; production authorization is not required.",
+  "next_action": "Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development.",
   "owner": "tui-ar1323-dev-20260929",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:38:02+00:00",
+  "updated_at": "2026-09-29T09:42:12+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -229,3 +229,8 @@ execute an arbitrary path or receive a raw credential.
   allowed for this cycle and is not a blocker.
 
 - 2026-09-29T09:38:02+00:00: Heartbeat by tui-ar1323-dev-20260929.
+
+- 2026-09-29T09:42:12+00:00: Second disposable-runtime probe: v1.10 negotiation succeeded;
+  auth_enroll committed to control-catalog; allowlisted helper executable ran successfully;
+  subsequent auth_helper_invoke returned typed -33008 runner reconciliation required with no raw
+  credential. This is runtime persistence/reconciliation, not authorization.
