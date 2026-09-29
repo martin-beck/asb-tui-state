@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**32 ARs tracked** across 4 active status categories.
+**32 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 22 |
+| **Done** | Accepted, integrated, and durably verified | 23 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -64,7 +64,7 @@ flowchart LR
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
         AR_1327["AR-1327 - Planned"]:::status_planned
-        AR_1328["AR-1328 - In progress"]:::status_in_progress
+        AR_1328["AR-1328 - Done"]:::status_done
         AR_1329["AR-1329 - Planned"]:::status_planned
         AR_1330["AR-1330 - Planned"]:::status_planned
         AR_1331["AR-1331 - Planned"]:::status_planned
@@ -159,12 +159,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | tui-ar1328-dev-20260929 | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. |
-
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -184,7 +178,7 @@ flowchart LR
 | P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Unclaimed | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. |
 | P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Unclaimed | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
 
-### Done (22)
+### Done (23)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -203,6 +197,7 @@ flowchart LR
 | P0 | [AR-1317](tasks/AR-1317-secure-wizard-auth-handoff.md): Secure setup-wizard authentication handoff | Unclaimed | Complete secure API-key enrollment UX in the setup wizard without raw-key transport. | Continue with AR-1321: connect the documented secure handoff to an approved local credential helper and typed enrollment/status projection. |
 | P0 | [AR-1318](tasks/AR-1318-agent-catalog-protocol-compatibility.md): Agent catalog protocol compatibility | Unclaimed | Keep asb-tui agent-catalog decoding compatible with the current ASB authenticated schema. | Update the TUI agent-catalog codec/projection for ASB&#x27;s signer, SBOM, license and target provenance fields, then publish exact fixture evidence. |
 | P0 | [AR-1321](tasks/AR-1321-credential-helper-bridge.md): Credential-helper bridge for setup wizard | Unclaimed | Connect the setup wizard to an approved local credential helper without raw-key transport. | Continue with AR-1323 for negotiated runner-owned helper invocation; PR #134 merged the strict digest-only receipt codec and PR #136 now projects runner-authored auth status before configuration apply. |
+| P0 | [AR-1328](tasks/AR-1328-development-credential-enrollment-route.md): Development credential enrollment route | Unclaimed | Provide a development-only credential enrollment screen for the TUI wizard. | Promote after the helper/onboarding and ASB development-contract dependencies are complete; implement the selection-driven enrollment route with non-blocking local identity fallback. |
 | P0 | [AR-1332](tasks/AR-1332-reconciled-development-runtime-fixture.md): Reconciled development control-runtime fixture | Unclaimed | Provide a reconciled disposable control-runtime fixture for AR-1323. | Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
