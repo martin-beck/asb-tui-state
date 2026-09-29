@@ -3,11 +3,9 @@
   "branch": "feature/ar-1332-reconciled-development-runtime-fixture",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1323"
-  ],
+  "depends_on": [],
   "id": "AR-1332",
-  "next_action": "Remain planned until the runtime-side reconciliation contract/fixture is available; then implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence.",
+  "next_action": "Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323.",
   "owner": "",
   "plan": "../plans/AR-1332.md",
   "priority": "P0",

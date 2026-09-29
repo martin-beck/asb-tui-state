@@ -4,7 +4,8 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1321"
+    "AR-1321",
+    "AR-1332"
   ],
   "id": "AR-1323",
   "next_action": "Resolve the local runner reconciliation failure after a committed digest-only enrollment, then rerun v1.10 auth_helper_invoke and capture successful AuthStatus; production authorization remains unnecessary for development.",
