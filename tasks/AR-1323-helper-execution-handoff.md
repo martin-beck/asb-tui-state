@@ -7,16 +7,16 @@
     "AR-1321"
   ],
   "id": "AR-1323",
-  "next_action": "Run negotiated v1.10 helper invocation against the disposable local development runtime; record digest-only status, helper identity, and no production authorization claim.",
+  "next_action": "Complete disposable development-runtime reconciliation, then rerun the negotiated v1.10 helper invocation and capture a successful digest-only AuthStatus result; production authorization is not required.",
   "owner": "tui-ar1323-dev-20260929",
   "plan": "../plans/AR-1323.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Invoke the approved credential helper through the authenticated runner boundary.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runner-owned credential-helper execution handoff",
-  "updated_at": "2026-09-29T09:26:01+00:00",
+  "updated_at": "2026-09-29T09:35:18+00:00",
   "worktree_key": "asb-tui-ar-1323-helper-execution-handoff"
 }
 ---
@@ -222,3 +222,8 @@ execute an arbitrary path or receive a raw credential.
 
 - 2026-09-29T09:26:01+00:00: Development cycle explicitly permits unauthorized local runtime;
   production authorization is not a prerequisite for this qualification.
+
+- 2026-09-29T09:35:18+00:00: Development live probe 2026-09-29: provisioning SCM_RIGHTS handoff and
+  v1.10 negotiation succeeded against local ASB runtime. Typed auth_helper_invoke reached runner;
+  response was runner reconciliation required (-33008), with no raw secret. Unauthorized runtime is
+  allowed for this cycle and is not a blocker.
