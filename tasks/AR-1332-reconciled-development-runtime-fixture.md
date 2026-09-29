@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1332-reconciled-development-runtime-fixture",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T11:01:43+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1332",
   "next_action": "Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323.",
-  "owner": "tui-ar1332-repair-20260929",
+  "owner": "",
   "plan": "../plans/AR-1332.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide a reconciled disposable control-runtime fixture for AR-1323.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Reconciled development control-runtime fixture",
-  "updated_at": "2026-09-29T10:01:43+00:00",
+  "updated_at": "2026-09-29T10:19:58+00:00",
   "worktree_key": "asb-tui-ar-1332-reconciled-development-runtime-fixture"
 }
 ---
@@ -37,3 +37,7 @@ that blocker without requiring production authorization.
   asb-tui-compatible fixture/harness and state evidence.
 
 - 2026-09-29T10:01:43+00:00: Claimed by tui-ar1332-repair-20260929.
+
+- 2026-09-29T10:19:58+00:00: Completed in asb-tui PR #146, merged at
+  95abcac67d0516aa2953cff280e6af0b99ee758d; deterministic typed reconciliation and reconnect harness
+  passed local and hosted gates. Live runtime reconciliation remains external ASB contract.
