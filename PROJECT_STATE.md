@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #154 | `feature/ar-1324-install-broker-onboarding@e21731ba9d53` | `main` | BLOCKED | QUEUED:, QUEUED: | feat(onboarding): add development install readiness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36676486477 | `e21731ba9d53` | pull_request | AWQ shadow observation | queued:- |
+| 36676486335 | `e21731ba9d53` | pull_request | Repository quality | queued:- |
 | 36675608081 | `406a6da0a60a` | push | Trusted main verification | completed:success |
 | 36675608056 | `406a6da0a60a` | push | Repository quality | completed:success |
 | 36675402856 | `92a458a0fe88` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36673869798 | `3d43b87cb1e2` | pull_request | Repository quality | completed:success |
 | 36673646883 | `bbf4b452c444` | pull_request | AWQ shadow observation | completed:failure |
 | 36673646622 | `bbf4b452c444` | pull_request | Repository quality | completed:failure |
-| 36673527636 | `9a3a24d6521f` | pull_request | AWQ shadow observation | completed:failure |
-| 36673527208 | `9a3a24d6521f` | pull_request | Repository quality | completed:cancelled |
