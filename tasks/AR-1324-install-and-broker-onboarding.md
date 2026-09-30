@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Install and broker onboarding",
-  "updated_at": "2026-09-30T06:02:01+00:00",
+  "updated_at": "2026-09-30T06:02:14+00:00",
   "worktree_key": "asb-tui-ar-1324-install-and-broker-onboarding"
 }
 ---
@@ -29,3 +29,6 @@ the verified ASB installation/control contract.
   onboarding against local fixtures.
 
 - 2026-09-30T06:02:01+00:00: Claimed by tui-ar1324-dev-20261001.
+
+- 2026-09-30T06:02:14+00:00: Recorded command exit 0; command argv SHA-256
+  d6da7c2716462328d785ed41a39c1c5223f9c2bc1dafe79542ecf2283b871336.
