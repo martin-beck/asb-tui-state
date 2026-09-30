@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | tui-ar1338-qual-20260930 | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Obtain independent exact-head review for PR #176, merge only after approval, then verify post-merge Repository Quality and Trusted main checks before releasing AR-1338. |
+| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | tui-ar1338-qual-20260930 | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Await exact-main Repository Quality and Trusted main verification for merge SHA b1e510744d9d5c76005a41c469d20b06e4850d04; release AR-1338 only after both are green. |
 
 ### Done (38)
 
