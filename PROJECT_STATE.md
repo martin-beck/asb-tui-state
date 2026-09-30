@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #158 | `feature/ar-1339-top-level-install-launch@e8c56a2e179f` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(router): expose standalone tui lifecycle commands |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36697851332 | `e8c56a2e179f` | pull_request | AWQ shadow observation | in_progress:- |
+| 36697851007 | `e8c56a2e179f` | pull_request | Repository quality | in_progress:- |
 | 36680963143 | `9ba15a206e9a` | push | Repository quality | completed:success |
 | 36680963111 | `9ba15a206e9a` | push | Trusted main verification | completed:success |
 | 36680701943 | `eae13ed1fd87` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36680507541 | `b579ddcea34f` | pull_request | Repository quality | completed:failure |
 | 36679623863 | `d82b4c60fd28` | push | Repository quality | completed:success |
 | 36679623858 | `d82b4c60fd28` | push | Trusted main verification | completed:success |
-| 36679347854 | `3598462691ce` | pull_request | AWQ shadow observation | completed:success |
-| 36679347577 | `3598462691ce` | pull_request | Repository quality | completed:success |
