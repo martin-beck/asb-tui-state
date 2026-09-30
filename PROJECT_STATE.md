@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `9ba15a206e9a5895a5085dd40153c13dbc1e3392`
+- Product remote main: `9b433f163953d6b4dcf8427cae3c1f7fb15babcd`
 - Local origin/main: `9ba15a206e9a5895a5085dd40153c13dbc1e3392`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #158 | `feature/ar-1339-top-level-install-launch@d47b27a7beff` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(router): expose standalone tui lifecycle commands |
-| #159 | `feature/ar-1333-user-driven-provider-setup@10b9a2a48943` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(wizard): add catalog-bound provider setup draft |
+| #159 | `feature/ar-1333-user-driven-provider-setup@10b9a2a48943` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(wizard): add catalog-bound provider setup draft |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36698458470 | `9b433f163953` | push | Trusted main verification | in_progress:- |
+| 36698458426 | `9b433f163953` | push | Repository quality | in_progress:- |
 | 36698072216 | `d47b27a7beff` | pull_request | AWQ shadow observation | completed:success |
 | 36698071887 | `d47b27a7beff` | pull_request | Repository quality | completed:success |
 | 36697947294 | `10b9a2a48943` | pull_request | AWQ shadow observation | completed:failure |
@@ -27,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36680963111 | `9ba15a206e9a` | push | Trusted main verification | completed:success |
 | 36680701943 | `eae13ed1fd87` | pull_request | AWQ shadow observation | completed:success |
 | 36680701698 | `eae13ed1fd87` | pull_request | Repository quality | completed:success |
-| 36680594807 | `5b4eb2762b07` | pull_request | AWQ shadow observation | completed:failure |
-| 36680594464 | `5b4eb2762b07` | pull_request | Repository quality | completed:failure |

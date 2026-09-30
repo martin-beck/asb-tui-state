@@ -12,8 +12,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1325` | `feature/ar-1325-first-class-setup-wizard` | `321ebf803707` | 0 | behind 10, ahead 0 |
 | `asb-tui-ar-1326-guided-benchmark-comparison-route` | `feature/ar-1326-guided-benchmark-comparison-route` | `3598462691ce` | 0 | behind 5, ahead 0 |
 | `asb-tui-ar-1327` | `feature/ar-1327-cross-repository-journey-qualification` | `eae13ed1fd87` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `10b9a2a48943` | 5 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/ui-state-model.json`, `src/provider_setup.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/formal_state.rs` |
+| `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `10b9a2a48943` | 6 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/provider_setup.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/formal_state.rs` |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 79, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 269, ahead 2 |
