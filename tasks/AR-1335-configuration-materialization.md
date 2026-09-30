@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:50:04+00:00",
+  "updated_at": "2026-09-30T11:52:29+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -73,3 +73,6 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
 - 2026-09-30T11:50:04+00:00: Hosted quality found the new handoff document missing required
   publication headers; signed d1b5129 adds copyright/SPDX headers. No code failures; rerun hosted
   gates.
+
+- 2026-09-30T11:52:29+00:00: Recorded command exit 1; command argv SHA-256
+  87e5afc9651f59b43e8399765564dfcc4f04de29f30bbe58a3272ef8104e0abe.
