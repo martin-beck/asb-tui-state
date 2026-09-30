@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Install and broker onboarding",
-  "updated_at": "2026-09-30T06:10:24+00:00",
+  "updated_at": "2026-09-30T06:12:58+00:00",
   "worktree_key": "asb-tui-ar-1324-install-and-broker-onboarding"
 }
 ---
@@ -46,3 +46,6 @@ the verified ASB installation/control contract.
 
 - 2026-09-30T06:10:24+00:00: Recorded command exit 0; command argv SHA-256
   588ce13b80170c5ef5f49e6dc8614e84c3533d433772e70b31c3f711817c7552.
+
+- 2026-09-30T06:12:58+00:00: Recorded command exit 0; command argv SHA-256
+  bf4a0e227b424b20c5f2bbd19c8a0fa542e33308750f25a93849c6970f261b70.
