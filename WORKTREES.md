@@ -116,5 +116,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-review158` | `DETACHED` | `e8c56a2e179f` | 0 | behind 2, ahead 0 |
 | `asb-tui-review158b` | `DETACHED` | `d47b27a7beff` | 0 | behind 1, ahead 0 |
 | `asb-tui-review159` | `DETACHED` | `10b9a2a48943` | 0 | behind 3, ahead 1 |
+| `asb-tui-review159b` | `DETACHED` | `4621ae9be99e` | 0 | behind 3, ahead 2 |
 | `asb-tui-review321` | `DETACHED` | `321ebf803707` | 0 | behind 13, ahead 0 |
 | `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 209, ahead 0 |
