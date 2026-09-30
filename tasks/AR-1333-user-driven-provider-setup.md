@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1333-user-driven-provider-setup",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T12:37:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1325",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1333-user-driven-provider-setup",
   "observed_dirty": 0,
   "observed_head": "51d9d7443901ff343e1ee95119bb2a10bde71f3e",
-  "owner": "tui-ar1333-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1333.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:55:34+00:00",
+  "updated_at": "2026-09-30T09:57:45+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -69,3 +69,10 @@ Development-first setup only; raw credentials, live authorization, and productio
 
 - 2026-09-30T09:55:34+00:00: Recorded command exit 0; command argv SHA-256
   2bc2325a761e91f1e32f5dd6fc83d072e0fc63e8c07f780cb3ec00a81c43d81b.
+
+- 2026-09-30T09:57:45+00:00: Completed PR #159, merged as main
+  3fde8aa081fbcb842bd376a1e3df99f1f2437b3c. Signed AR commits 84c9fdf and 51d9d74 were rebased onto
+  current main; hosted PR checks passed (Repository quality 36698807480, Trusted/quality source run
+  36698807360), and post-merge checks passed (Repository quality 36699147181, Trusted main
+  verification 36699147186). Local cargo test --locked --all-targets, clippy -D warnings, formal
+  model/parity and credential-boundary checks passed.
