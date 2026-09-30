@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #161 | `feature/ar-1335-configuration-materialization@0ec8de4b8ce3` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(config): materialize reviewed setup bundle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36706540272 | `0ec8de4b8ce3` | pull_request | AWQ shadow observation | in_progress:- |
+| 36706539653 | `0ec8de4b8ce3` | pull_request | Repository quality | in_progress:- |
+| 36705703984 | `6ca8fedd972d` | pull_request | AWQ shadow observation | completed:success |
+| 36705703670 | `6ca8fedd972d` | pull_request | Repository quality | completed:success |
+| 36705573495 | `091006ac41a8` | pull_request | AWQ shadow observation | completed:cancelled |
+| 36705572757 | `091006ac41a8` | pull_request | Repository quality | completed:cancelled |
 | 36703932079 | `a4766b81294d` | push | Repository quality | completed:success |
 | 36703932006 | `a4766b81294d` | push | Trusted main verification | completed:success |
 | 36703240237 | `3387ed3d9aa3` | pull_request | AWQ shadow observation | completed:success |
 | 36703239936 | `3387ed3d9aa3` | pull_request | Repository quality | completed:success |
 | 36703045240 | `9178cca8749a` | pull_request | AWQ shadow observation | completed:failure |
 | 36703045073 | `9178cca8749a` | pull_request | Repository quality | completed:failure |
-| 36702457344 | `2c9baf47c4c3` | pull_request | AWQ shadow observation | completed:success |
-| 36702456977 | `2c9baf47c4c3` | pull_request | Repository quality | completed:success |
-| 36702321039 | `9020a2fbf4db` | pull_request | AWQ shadow observation | completed:cancelled |
-| 36702320652 | `9020a2fbf4db` | pull_request | Repository quality | completed:cancelled |
-| 36702018445 | `3fa059fc4e67` | pull_request | AWQ shadow observation | completed:success |
-| 36702018122 | `3fa059fc4e67` | pull_request | Repository quality | completed:success |
