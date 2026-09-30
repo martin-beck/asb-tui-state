@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:05:52+00:00",
+  "updated_at": "2026-09-30T12:06:42+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -55,3 +55,6 @@ Development fixtures may run without external authentication or provider reachab
   live refresh, and truthful provenance-aware live statistics state with stale-event and reconnect
   fencing. PR #165 is open at exact head 877996906a15a85243bfc681d188b49ec5cd6a6e; local cargo
   tests/clippy and UI gates pass.
+
+- 2026-09-30T12:06:42+00:00: Recorded command exit 1; command argv SHA-256
+  3f59e5ea84562fcbd5d497d5d8022fdd7e0e87307de3c0762fcbfee5ad507176.
