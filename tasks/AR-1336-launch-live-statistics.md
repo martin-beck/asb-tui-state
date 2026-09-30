@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:13:47+00:00",
+  "updated_at": "2026-09-30T12:13:52+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -75,3 +75,6 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:13:41+00:00: Recorded command exit 0; command argv SHA-256
   4c81881f7613daef5bf42c40162a0fa8748b9a5e94b03d744d2029434386c26c.
+
+- 2026-09-30T12:13:52+00:00: Recorded command exit 0; command argv SHA-256
+  6509c565a69d3bdef26745d39741d8155b7db12057ad47895bd585aa3c64fc60.
