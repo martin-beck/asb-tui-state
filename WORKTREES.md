@@ -10,7 +10,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `11f4a0671da4` | 0 | behind 112, ahead 0 |
 | `asb-tui-ar-1324` | `feature/ar-1324-install-broker-onboarding` | `64d1dff31ae4` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar-1325` | `feature/ar-1325-first-class-setup-wizard` | `321ebf803707` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1326-guided-benchmark-comparison-route` | `feature/ar-1326-guided-benchmark-comparison-route` | `ba0e3cee38ac` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar-1326-guided-benchmark-comparison-route` | `feature/ar-1326-guided-benchmark-comparison-route` | `9324a86ee8d4` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 70, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 260, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 204, ahead 1 |
