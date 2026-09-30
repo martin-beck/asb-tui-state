@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | DIRTY | - | test(config): cover materialization failure paths |
 | #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
-| #165 | `feature/ar-1336-launch-live-statistics@4fa5c61cb681` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: launch reviewed campaigns and show live statistics |
+| #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 
 ## Recent workflows
 
