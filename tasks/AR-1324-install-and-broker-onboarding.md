@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1324-install-and-broker-onboarding",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T08:02:01+00:00",
   "depends_on": [
     "AR-1200"
   ],
   "id": "AR-1324",
   "next_action": "Promote after AR-1200; implement the clean development install, broker negotiation, and recovery route with explicit fixture/warning labels.",
-  "owner": "",
+  "owner": "tui-ar1324-dev-20261001",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Install and broker onboarding",
-  "updated_at": "2026-09-30T06:01:58+00:00",
+  "updated_at": "2026-09-30T06:02:01+00:00",
   "worktree_key": "asb-tui-ar-1324-install-and-broker-onboarding"
 }
 ---
@@ -27,3 +27,5 @@ the verified ASB installation/control contract.
 - 2026-09-30T06:01:58+00:00: Development-only gate policy now removes paired ASB/production
   prerequisites. AR-1200 is complete at 406a6da; promote clean development install and broker
   onboarding against local fixtures.
+
+- 2026-09-30T06:02:01+00:00: Claimed by tui-ar1324-dev-20261001.

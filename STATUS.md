@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -60,7 +60,7 @@ flowchart LR
         AR_1318["AR-1318 - Done"]:::status_done
         AR_1321["AR-1321 - Done"]:::status_done
         AR_1323["AR-1323 - Done"]:::status_done
-        AR_1324["AR-1324 - Open"]:::status_open
+        AR_1324["AR-1324 - In progress"]:::status_in_progress
         AR_1325["AR-1325 - Planned"]:::status_planned
         AR_1326["AR-1326 - Planned"]:::status_planned
         AR_1327["AR-1327 - Planned"]:::status_planned
@@ -159,11 +159,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md): Install and broker onboarding | Unclaimed | Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step. | Promote after AR-1200; implement the clean development install, broker negotiation, and recovery route with explicit fixture/warning labels. |
+| P0 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md): Install and broker onboarding | tui-ar1324-dev-20261001 | Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step. | Promote after AR-1200; implement the clean development install, broker negotiation, and recovery route with explicit fixture/warning labels. |
 
 ### Planned (3)
 
