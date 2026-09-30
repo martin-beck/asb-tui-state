@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain fresh independent exact-head review and hosted CI for PR #168 at 554f20ebb4e8839e956e5b3aca631044c1c63304; GitHub has not created runs for the updated synchronize event, so restore/check Actions trigger state before merge.",
+  "next_action": "Run independent exact-head review and hosted CI for PR #170 at 402ec56db350655f8d688ac17c3924d9b2651462; merge only after both pass, then watch main post-merge checks.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 0,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:30:11+00:00",
+  "updated_at": "2026-09-30T12:34:46+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -132,3 +132,7 @@ Development fixtures may run without external authentication or provider reachab
   credential boundary and diff checks pass locally. Both commits verify with ED25519 key
   SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE. PR #168 head is 554f20e; GitHub reports no new
   checks after push.
+
+- 2026-09-30T12:34:46+00:00: PR #168 trigger anomaly was bypassed with fresh PR #170 from current
+  main. Local cargo fmt and all-target tests pass (229 library tests plus integration targets);
+  commit is ED25519-signed. Hosted checks and fresh review pending.
