@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1324-install-and-broker-onboarding",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T08:02:01+00:00",
+  "claim_expires": "2026-09-30T08:05:48+00:00",
   "depends_on": [
     "AR-1200"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Install and broker onboarding",
-  "updated_at": "2026-09-30T06:05:30+00:00",
+  "updated_at": "2026-09-30T06:05:48+00:00",
   "worktree_key": "asb-tui-ar-1324-install-and-broker-onboarding"
 }
 ---
@@ -38,3 +38,5 @@ the verified ASB installation/control contract.
 
 - 2026-09-30T06:05:30+00:00: Recorded command exit 0; command argv SHA-256
   979f297d9371bf1b847107ec75341425c3163094a34fd201bb1a7e4017f0d849.
+
+- 2026-09-30T06:05:48+00:00: Heartbeat by tui-ar1324-dev-20261001.
