@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for 83d05e1; then merge if canonical bundle handoff acceptance is confirmed. | tui-ar1335-dev-20260930 |
+| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for e36888b; then coordinate AR-1336 canonical bundle handoff before merge. | tui-ar1335-dev-20260930 |
 
 ## Planned
 

@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Await exact-head CI/review for 83d05e1; then merge if canonical bundle handoff acceptance is confirmed.",
+  "next_action": "Await exact-head CI/review for e36888b; then coordinate AR-1336 canonical bundle handoff before merge.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:41:57+00:00",
+  "updated_at": "2026-09-30T11:43:16+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -60,3 +60,7 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
 - 2026-09-30T11:41:57+00:00: Signed 83d05e1 keeps local OpenPreflight/ApplyPreflight actions out of
   the backend recording dispatcher; authenticated interactive V/A now execute locally without
   InvalidWorkloadScope. Local focused test passes; hosted CI/review pending.
+
+- 2026-09-30T11:43:16+00:00: Signed e36888b repairs help-overlay routing: contextual help keys
+  remain local and no longer emit OpenPreflight. Focused help-key test passes; hosted CI/review
+  pending.
