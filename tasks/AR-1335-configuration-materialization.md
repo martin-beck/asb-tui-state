@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Await exact-head CI/review for e36888b; then coordinate AR-1336 canonical bundle handoff before merge.",
+  "next_action": "Await exact-head CI/review for cae7055; then merge AR-1335 and promote AR-1336 if AR-1323 is done.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:43:16+00:00",
+  "updated_at": "2026-09-30T11:47:44+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -64,3 +64,8 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
 - 2026-09-30T11:43:16+00:00: Signed e36888b repairs help-overlay routing: contextual help keys
   remain local and no longer emit OpenPreflight. Focused help-key test passes; hosted CI/review
   pending.
+
+- 2026-09-30T11:47:44+00:00: Signed cae7055 adds the canonical LaunchBinding API and handoff
+  contract documentation, binding materialization digest, catalog generations/digests, exact IDs,
+  and development provenance; adds a completeness/privacy test. Hosted CI previously exposed one
+  flaky PTY test and was rerun.
