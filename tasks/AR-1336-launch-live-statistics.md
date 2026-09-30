@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Wire authoritative benchmark catalog acquisition into ControlCall/ControlProjection/poll_projection; add canonical hierarchy digest validation and real-path integration tests; then fresh review/CI.",
+  "next_action": "Obtain independent exact-head review and hosted CI for fresh PR #171 at 63c994586feb5edc8b79657e755cc5ba6cc7aeb1; repair any remaining failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:54:28+00:00",
+  "updated_at": "2026-09-30T12:54:56+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -208,3 +208,11 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:54:28+00:00: Recorded command exit 0; command argv SHA-256
   452942c94c7e0e386d47458971da69c9afe6ba3095e84b2a266cee4e772deb05.
+
+- 2026-09-30T12:54:56+00:00: Live catalog acquisition is now real control-path behavior: added
+  version-gated BenchmarkCatalog ControlCall/ControlResult, canonical digest recomputation plus
+  bounds/duplicate validation, ControlProjection conversion into LiveBenchmarkCatalog, and
+  poll_projection request gated on negotiated V1_7. Added end-to-end projection test for generation
+  and hierarchy membership. Commit 63c9945 is ED25519-signed with DCO; prior 3b672bd is also signed.
+  Full test suite (231 tests), clippy, and focused projection tests pass locally. PR #171 checks are
+  running.
