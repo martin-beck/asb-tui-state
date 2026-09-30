@@ -10,16 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | DIRTY | - | test(config): cover materialization failure paths |
-| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
-| #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
-| #167 | `repair/ar-1335-coverage-3@e99f9bf1fe0b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(config): cover load symlink rejection paths |
-| #168 | `feature/ar-1336-launch-live-statistics-clean@c626fc26a808` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch reviewed campaigns and live statistics |
+| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
+| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
+| #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | UNKNOWN | - | feat: launch reviewed campaigns and show live statistics |
+| #168 | `feature/ar-1336-launch-live-statistics-clean@c626fc26a808` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch reviewed campaigns and live statistics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36714475222 | `3fee4e38a597` | push | Trusted main verification | in_progress:- |
+| 36714475187 | `3fee4e38a597` | push | Repository quality | in_progress:- |
 | 36713885071 | `c626fc26a808` | pull_request | AWQ shadow observation | completed:failure |
 | 36713884687 | `c626fc26a808` | pull_request | Repository quality | completed:failure |
 | 36713696804 | `e99f9bf1fe0b` | pull_request | AWQ shadow observation | completed:success |
@@ -30,5 +31,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36713130641 | `8745e2ad1de1` | pull_request | Repository quality | completed:success |
 | 36712843034 | `adf15829a946` | pull_request | AWQ shadow observation | completed:failure |
 | 36712842306 | `adf15829a946` | pull_request | Repository quality | completed:failure |
-| 36712807064 | `4fa5c61cb681` | pull_request | AWQ shadow observation | completed:failure |
-| 36712806539 | `4fa5c61cb681` | pull_request | Repository quality | completed:failure |
