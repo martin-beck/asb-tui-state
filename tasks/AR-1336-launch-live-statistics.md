@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Repair PR #170 blockers: benchmark generation/hierarchy fencing, manual reconnect preservation, terminal immutability; include Signed-off-by and ED25519 signatures, then open fresh PR from current main and rerun hosted checks.",
+  "next_action": "Obtain independent exact-head review and hosted CI for repair PR #171 at 869e794445f3dd9727702d094cc25e53bf235394; merge only after all checks and review pass, then watch main post-merge checks.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:41:36+00:00",
+  "updated_at": "2026-09-30T12:41:58+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -155,3 +155,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:41:36+00:00: Recorded command exit 0; command argv SHA-256
   08a3c2db0487713ffe8eca81670782b37270e9ec5690a6535f2f4aac78848a2c.
+
+- 2026-09-30T12:41:58+00:00: Repair PR #171 supersedes PR #170 review blockers: full live catalog
+  generation/hierarchy fencing, manual reconnect preservation, terminal immutability. Commit carries
+  ED25519 signature and DCO trailer; hosted checks are running.
