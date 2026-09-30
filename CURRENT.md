@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. | - |
+| P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. | tui-ar1334-dev-20260930 |
 
 ## Planned
 

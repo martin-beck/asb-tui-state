@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -70,7 +70,7 @@ flowchart LR
         AR_1331["AR-1331 - Done"]:::status_done
         AR_1332["AR-1332 - Done"]:::status_done
         AR_1333["AR-1333 - Done"]:::status_done
-        AR_1334["AR-1334 - Open"]:::status_open
+        AR_1334["AR-1334 - In progress"]:::status_in_progress
         AR_1335["AR-1335 - Planned"]:::status_planned
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Planned"]:::status_planned
@@ -194,11 +194,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Unclaimed | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. |
+| P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | tui-ar1334-dev-20260930 | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. |
 
 ### Planned (4)
 
