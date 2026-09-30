@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the clean development install-to-comparison journey an asb-tui qualification gate.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Cross-repository first-class journey qualification",
-  "updated_at": "2026-09-30T06:46:51+00:00",
+  "updated_at": "2026-09-30T06:51:43+00:00",
   "worktree_key": "asb-tui-ar-1327-cross-repository-journey-qualification"
 }
 ---
@@ -35,3 +35,6 @@ evidence proves external OpenRouter reachability.
 
 - 2026-09-30T06:46:51+00:00: Recorded command exit 0; command argv SHA-256
   f83452d9e216c4fb47678a4dcd92051fedfde26de4bfa302d724ae8ece7b5f8e.
+
+- 2026-09-30T06:51:43+00:00: Recorded command exit 128; command argv SHA-256
+  649c69c1763010712740e73dc7b579a7551f40251a24435164d84598d9c067f7.
