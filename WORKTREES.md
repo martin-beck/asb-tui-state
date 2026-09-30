@@ -20,7 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `src/launch_statistics.rs` |
 | `asb-tui-ar-1336-v2` | `feature/ar-1336-launch-live-statistics-v2` | `402ec56db350` | 0 | behind 14, ahead 1 |
 | `asb-tui-ar-1336-v3` | `repair/ar-1336-live-invariants` | `63c994586feb` | 0 | behind 12, ahead 0 |
-| `asb-tui-ar-1337-final-results` | `feature/ar-1337-final-results` | `927080ac792f` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1337-final-results` | `feature/ar-1337-final-results` | `5f0f95336164` | 0 | behind 0, ahead 3 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 24, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 105, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 295, ahead 2 |
@@ -123,6 +123,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr171r` | `DETACHED` | `3b672bd96faf` | 0 | behind 13, ahead 0 |
 | `asb-tui-pr172` | `DETACHED` | `21473511c126` | 0 | behind 10, ahead 0 |
 | `asb-tui-pr174` | `DETACHED` | `5e094ad06c40` | 0 | behind 5, ahead 0 |
+| `asb-tui-pr175` | `DETACHED` | `dcaa6584b65e` | 0 | behind 0, ahead 2 |
+| `asb-tui-pr175r` | `DETACHED` | `5f0f95336164` | 0 | behind 0, ahead 3 |
 | `asb-tui-review-158` | `DETACHED` | `d47b27a7beff` | 0 | behind 24, ahead 0 |
 | `asb-tui-review-160` | `DETACHED` | `3387ed3d9aa3` | 0 | behind 20, ahead 7 |
 | `asb-tui-review155` | `DETACHED` | `8efbf980be1a` | 0 | behind 37, ahead 0 |
