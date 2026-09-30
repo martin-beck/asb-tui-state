@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1200-asb-router-client",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T07:52:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1195"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1200-asb-router-client",
   "observed_dirty": 0,
   "observed_head": "92a458a0fe88d2c935d3c8854450c258957d03f9",
-  "owner": "tui-ar1200-dev-20261001",
+  "owner": "",
   "plan": "../plans/AR-1200.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:54:47+00:00",
+  "updated_at": "2026-09-30T06:01:46+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -57,3 +57,9 @@ authentication and remote trust are explicitly outside this development AR.
 
 - 2026-09-30T05:54:47+00:00: Recorded command exit 0; command argv SHA-256
   d70d44dd4d783a6749c6b814237d92e6c64e22540eef8c9a234fdece9944aeb8.
+
+- 2026-09-30T06:01:46+00:00: Development-only router client implemented and merged as PR #153 at
+  406a6da. Added bounded router --format json, explicit development provenance, production-profile
+  rejection without downgrade, closed-field validation, lifecycle routing tests, docs, and UI
+  inventory registration. Exact-head independent review approved 92a458a; required hosted checks
+  passed on PR and post-merge main: repository quality 36675608056 and trusted main 36675608081.
