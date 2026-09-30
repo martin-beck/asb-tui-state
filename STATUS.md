@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**39 ARs tracked** across 2 active status categories.
+**39 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 32 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -69,7 +69,7 @@ flowchart LR
         AR_1330["AR-1330 - Done"]:::status_done
         AR_1331["AR-1331 - Done"]:::status_done
         AR_1332["AR-1332 - Done"]:::status_done
-        AR_1333["AR-1333 - Planned"]:::status_planned
+        AR_1333["AR-1333 - Open"]:::status_open
         AR_1334["AR-1334 - Planned"]:::status_planned
         AR_1335["AR-1335 - Planned"]:::status_planned
         AR_1336["AR-1336 - Planned"]:::status_planned
@@ -194,11 +194,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (7)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Unclaimed | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path. |
+
+### Planned (6)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Unclaimed | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Unclaimed | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Promote after provider setup and benchmark selection; implement typed ASB configuration generation, preflight, atomic persistence, and validation. |
 | P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Unclaimed | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. |
