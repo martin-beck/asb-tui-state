@@ -10,14 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #156 | `feature/ar-1326-guided-benchmark-comparison-route@49c9af5c5a09` | `main` | BLOCKED | QUEUED:, QUEUED: | feat: add guided benchmark comparison route |
+| #156 | `feature/ar-1326-guided-benchmark-comparison-route@decb35949365` | `main` | BLOCKED | - | feat: add guided benchmark comparison route |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36678945366 | `49c9af5c5a09` | pull_request | AWQ shadow observation | queued:- |
-| 36678945029 | `49c9af5c5a09` | pull_request | Repository quality | queued:- |
+| 36679078885 | `decb35949365` | pull_request | Repository quality | queued:- |
+| 36678945366 | `49c9af5c5a09` | pull_request | AWQ shadow observation | in_progress:- |
+| 36678945029 | `49c9af5c5a09` | pull_request | Repository quality | in_progress:- |
 | 36678186439 | `ba0e3cee38ac` | push | Repository quality | completed:success |
 | 36678186406 | `ba0e3cee38ac` | push | Trusted main verification | completed:success |
 | 36677941096 | `321ebf803707` | pull_request | AWQ shadow observation | completed:success |
@@ -27,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36677097503 | `dc36b28fa84b` | push | Repository quality | completed:success |
 | 36677097493 | `dc36b28fa84b` | push | Trusted main verification | completed:success |
 | 36676896281 | `64d1dff31ae4` | pull_request | AWQ shadow observation | completed:success |
-| 36676895829 | `64d1dff31ae4` | pull_request | Repository quality | completed:success |
