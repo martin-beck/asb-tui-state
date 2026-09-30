@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 | #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 | #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | DIRTY | - | feat(run): launch reviewed campaigns and live statistics |
 | #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
-| #172 | `repair/ar-1336-coverage@1133dd9cb7a4` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS: | test(coverage): cover benchmark catalog and launch fences |
+| #172 | `repair/ar-1336-coverage@1133dd9cb7a4` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | test(coverage): cover benchmark catalog and launch fences |
 
 ## Recent workflows
 
