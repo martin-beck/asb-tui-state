@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -62,7 +62,7 @@ flowchart LR
         AR_1323["AR-1323 - Done"]:::status_done
         AR_1324["AR-1324 - Done"]:::status_done
         AR_1325["AR-1325 - Done"]:::status_done
-        AR_1326["AR-1326 - Open"]:::status_open
+        AR_1326["AR-1326 - In progress"]:::status_in_progress
         AR_1327["AR-1327 - Planned"]:::status_planned
         AR_1328["AR-1328 - Done"]:::status_done
         AR_1329["AR-1329 - Done"]:::status_done
@@ -159,11 +159,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Unclaimed | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. |
+| P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | tui-ar1326-dev-20260930 | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. |
 
 ### Planned (1)
 

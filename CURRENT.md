@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. | - |
+| P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. | tui-ar1326-dev-20260930 |
 
 ## Planned
 
