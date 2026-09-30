@@ -5,7 +5,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `asb-tui-main` | `main` | `d8668bd4021d` | 0 | behind 195, ahead 2 |
-| `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `30aee070bb64` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `30aee070bb64` | 9 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/CAPABILITY_MATRIX.md`, `docs/CROSS_REPO_QUALIFICATION.md`, `docs/ui-module-inventory.json`, `src/delegated.rs`, `src/lib.rs`, `src/main.rs`, `tests/doctor.rs`, `src/development_router.rs`, `tests/development_router.rs` |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 107, ahead 0 |
 | `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `11f4a0671da4` | 0 | behind 103, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 61, ahead 0 |

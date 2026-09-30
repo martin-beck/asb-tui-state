@@ -9,7 +9,7 @@
   "id": "AR-1200",
   "next_action": "Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback.",
   "observed_branch": "feature/ar-1200-asb-router-client",
-  "observed_dirty": 0,
+  "observed_dirty": 9,
   "observed_head": "30aee070bb64a317fc0eee1430a14b3198458566",
   "owner": "tui-ar1200-dev-20261001",
   "plan": "../plans/AR-1200.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:51:36+00:00",
+  "updated_at": "2026-09-30T05:51:42+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
