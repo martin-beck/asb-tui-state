@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "First-class setup wizard route",
-  "updated_at": "2026-09-30T06:18:18+00:00",
+  "updated_at": "2026-09-30T06:23:00+00:00",
   "worktree_key": "asb-tui-ar-1325-first-class-setup-wizard-route"
 }
 ---
@@ -46,3 +46,6 @@ credential-reference, and default-selection fixtures while clearly labeling deve
   60b0120aa3fa64a351159fc3cc121f7243fa45f0f658f399c2b720f0ed05abb8.
 
 - 2026-09-30T06:18:18+00:00: Heartbeat by tui-ar1325-dev-20261001.
+
+- 2026-09-30T06:23:00+00:00: Recorded command exit 0; command argv SHA-256
+  d9d049fbd78f82f99cd2c5a654342c672f09dd7fe3e03034196b874f40cc6d65.
