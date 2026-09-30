@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | PR #159 repair head 4621ae9 is awaiting hosted checks and independent exact-head review; then merge and release with post-merge evidence. | tui-ar1333-dev-20260930 |
+| P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | PR #159 exact head 51d9d74 is rebased onto current main and awaiting fresh hosted checks plus independent review; merge and release after both pass. | tui-ar1333-dev-20260930 |
 
 ## Planned
 

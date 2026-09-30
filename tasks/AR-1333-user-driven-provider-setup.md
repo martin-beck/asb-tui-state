@@ -10,7 +10,7 @@
     "AR-1327"
   ],
   "id": "AR-1333",
-  "next_action": "PR #159 repair head 4621ae9 is awaiting hosted checks and independent exact-head review; then merge and release with post-merge evidence.",
+  "next_action": "PR #159 exact head 51d9d74 is rebased onto current main and awaiting fresh hosted checks plus independent review; merge and release after both pass.",
   "observed_branch": "feature/ar-1333-user-driven-provider-setup",
   "observed_dirty": 0,
   "observed_head": "51d9d7443901ff343e1ee95119bb2a10bde71f3e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:51:42+00:00",
+  "updated_at": "2026-09-30T09:52:37+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -59,3 +59,7 @@ Development-first setup only; raw credentials, live authorization, and productio
 
 - 2026-09-30T09:51:42+00:00: Recorded command exit 0; command argv SHA-256
   56ac4ad8b7dd441bc756771eb065f4fd7e98302b581a40d5d4d370972bced414.
+
+- 2026-09-30T09:52:37+00:00: Safely rebased AR-1333 onto current origin/main including router
+  commits, re-signed AR commits with ED25519, and force-with-lease pushed. Full tests, clippy,
+  formal model/parity and credential checks pass locally.
