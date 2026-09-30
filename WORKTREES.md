@@ -15,8 +15,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `51d9d7443901` | 0 | behind 10, ahead 0 |
 | `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `3387ed3d9aa3` | 0 | behind 9, ahead 7 |
 | `asb-tui-ar-1335` | `repair/ar-1335-coverage-4` | `866e3165c1c4` | 0 | behind 4, ahead 1 |
-| `asb-tui-ar-1336-coverage` | `repair/ar-1336-coverage` | `0f1e4145e233` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/control_codec.rs`, `src/launch_statistics.rs` |
+| `asb-tui-ar-1336-coverage` | `repair/ar-1336-coverage` | `21473511c126` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-1336-launch-live-statistics` | `feature/ar-1336-launch-live-statistics-clean` | `554f20ebb4e8` | 1 | behind 6, ahead 2 |
 | changed files | - | - | - | `src/launch_statistics.rs` |
 | `asb-tui-ar-1336-v2` | `feature/ar-1336-launch-live-statistics-v2` | `402ec56db350` | 0 | behind 3, ahead 1 |
