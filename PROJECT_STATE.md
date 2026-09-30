@@ -20,15 +20,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36731426065 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:success |
+| 36730897656 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:cancelled |
+| 36730636961 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
+| 36730357824 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
+| 36730113807 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
+| 36729920473 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
+| 36729802641 | `d7e5a53b9f7d` | workflow_dispatch | Development runner canary | completed:success |
 | 36729481890 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
 | 36729272343 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
 | 36728407337 | `d7e5a53b9f7d` | push | Trusted main verification | completed:failure |
 | 36728407200 | `d7e5a53b9f7d` | push | Repository quality | completed:success |
 | 36728046088 | `007211d66cc2` | pull_request | AWQ shadow observation | completed:success |
-| 36728045356 | `007211d66cc2` | pull_request | Repository quality | completed:success |
-| 36727457781 | `7db509092a5e` | pull_request | AWQ shadow observation | completed:failure |
-| 36727457225 | `7db509092a5e` | pull_request | Repository quality | completed:failure |
-| 36727456587 | `7db509092a5e` | pull_request | AWQ shadow observation | completed:cancelled |
-| 36727456381 | `7db509092a5e` | pull_request | Repository quality | completed:cancelled |
-| 36727251872 | `5bd8a99e95c1` | pull_request | AWQ shadow observation | completed:failure |
-| 36727251462 | `5bd8a99e95c1` | pull_request | Repository quality | completed:failure |
