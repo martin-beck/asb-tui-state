@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "End-to-end first-class benchmark journey qualification",
-  "updated_at": "2026-09-30T14:48:51+00:00",
+  "updated_at": "2026-09-30T14:54:52+00:00",
   "worktree_key": "asb-tui-ar-1338-end-to-end-benchmark-journey"
 }
 ---
@@ -45,3 +45,6 @@ The qualification is explicitly development/mock evidence and must not claim liv
 
 - 2026-09-30T14:48:45+00:00: Recorded command exit 0; command argv SHA-256
   771efa858e1f53627f6c89477e35686eb82ec9e7f2c3a7bbb638cbfb83014601.
+
+- 2026-09-30T14:54:52+00:00: Recorded command exit 0; command argv SHA-256
+  d08befac8019691af373291cabdd7cb1d93d5ba0809a933c50fcc4b1ce227dc7.
