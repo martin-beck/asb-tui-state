@@ -3,17 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | Promote and implement the development broker descriptor entrypoint/fixture consumed by ASB dev launch, then qualify exact-head handoff behavior. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
-
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | Promote and implement the development broker descriptor entrypoint/fixture consumed by ASB dev launch, then qualify exact-head handoff behavior. | - |
 
 ## Done
 
