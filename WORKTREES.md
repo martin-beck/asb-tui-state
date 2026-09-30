@@ -18,8 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1336-launch-live-statistics` | `feature/ar-1336-launch-live-statistics-clean` | `554f20ebb4e8` | 1 | behind 3, ahead 2 |
 | changed files | - | - | - | `src/launch_statistics.rs` |
 | `asb-tui-ar-1336-v2` | `feature/ar-1336-launch-live-statistics-v2` | `402ec56db350` | 0 | behind 0, ahead 1 |
-| `asb-tui-ar-1336-v3` | `repair/ar-1336-live-invariants` | `8ef7c8a1282e` | 12 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/configuration_materialization.rs`, `src/control_transport.rs`, `src/formal_state.rs`, `src/launch_statistics.rs`, `src/lib.rs`, `src/live_projection.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/formal_state.rs` |
+| `asb-tui-ar-1336-v3` | `repair/ar-1336-live-invariants` | `3b672bd96faf` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 10, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 91, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 281, ahead 2 |
