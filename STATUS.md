@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | tui-ar1335-dev-20260930 | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Promote after provider setup and benchmark selection; implement typed ASB configuration generation, preflight, atomic persistence, and validation. |
+| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | tui-ar1335-dev-20260930 | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Implement visible preflight route/formal-model transition and integrate materialized bundle apply; retain exact-head PR #161 checks. |
 
 ### Planned (3)
 
