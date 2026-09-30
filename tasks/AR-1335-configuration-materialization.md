@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Await exact-head CI and independent review for 987f29f; then resolve remaining complete configuration-contract findings before merge.",
+  "next_action": "Await exact-head CI/review for 83d05e1; then merge if canonical bundle handoff acceptance is confirmed.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:38:57+00:00",
+  "updated_at": "2026-09-30T11:41:57+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -56,3 +56,7 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
   authoritative action registry, emits them from V/A handling, and treats partial live catalogs as
   authoritative so development fallback cannot occur. Local focused tests pass; hosted CI/review
   pending.
+
+- 2026-09-30T11:41:57+00:00: Signed 83d05e1 keeps local OpenPreflight/ApplyPreflight actions out of
+  the backend recording dispatcher; authenticated interactive V/A now execute locally without
+  InvalidWorkloadScope. Local focused test passes; hosted CI/review pending.
