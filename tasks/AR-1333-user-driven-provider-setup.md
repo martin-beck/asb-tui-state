@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:52:37+00:00",
+  "updated_at": "2026-09-30T09:54:59+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -63,3 +63,6 @@ Development-first setup only; raw credentials, live authorization, and productio
 - 2026-09-30T09:52:37+00:00: Safely rebased AR-1333 onto current origin/main including router
   commits, re-signed AR commits with ED25519, and force-with-lease pushed. Full tests, clippy,
   formal model/parity and credential checks pass locally.
+
+- 2026-09-30T09:54:59+00:00: Recorded command exit 0; command argv SHA-256
+  51e36891a774f91b61e52c4bd45e435af06d49ebd8370d1f31cfd95c998ded35.
