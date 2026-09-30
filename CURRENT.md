@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. | - |
+| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. | tui-ar1338-qual-20260930 |
 
 ## Done
 
