@@ -21,8 +21,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1336-v2` | `feature/ar-1336-launch-live-statistics-v2` | `402ec56db350` | 0 | behind 21, ahead 1 |
 | `asb-tui-ar-1336-v3` | `repair/ar-1336-live-invariants` | `63c994586feb` | 0 | behind 19, ahead 0 |
 | `asb-tui-ar-1337-final-results` | `feature/ar-1337-final-results` | `007211d66cc2` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1338-end-to-end-benchmark-journey` | `feature/ar-1338-end-to-end-benchmark-journey` | `d7e5a53b9f7d` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `docs/qualification/end-to-end-journey-v1.json`, `docs/qualification/end-to-end-journey.md`, `tests/end_to_end_qualification.rs`, `tools/test-end-to-end-journey.py` |
+| `asb-tui-ar-1338-end-to-end-benchmark-journey` | `feature/ar-1338-end-to-end-benchmark-journey` | `3f50a9aa5134` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 31, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 112, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 302, ahead 2 |
