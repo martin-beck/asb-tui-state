@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:37:47+00:00",
+  "updated_at": "2026-09-30T09:38:04+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -29,3 +29,6 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
   install/launch integration with development fixtures.
 
 - 2026-09-30T09:37:47+00:00: Claimed by tui-ar1339-dev-20260930.
+
+- 2026-09-30T09:38:04+00:00: Recorded command exit 0; command argv SHA-256
+  1a92529b655347cec7a5296c99bb64ffeba589d903ee492ef3642d729cd8e0c6.
