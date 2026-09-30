@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-end-to-end-benchmark-journey",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T18:47:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1333",
     "AR-1334",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1338-end-to-end-benchmark-journey",
   "observed_dirty": 0,
   "observed_head": "3f50a9aa5134e6584058816ea355a665c9809c5f",
-  "owner": "tui-ar1338-qual-20260930",
+  "owner": "",
   "plan": "../plans/AR-1338.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "End-to-end first-class benchmark journey qualification",
-  "updated_at": "2026-09-30T15:01:19+00:00",
+  "updated_at": "2026-09-30T15:03:12+00:00",
   "worktree_key": "asb-tui-ar-1338-end-to-end-benchmark-journey"
 }
 ---
@@ -72,3 +72,8 @@ The qualification is explicitly development/mock evidence and must not claim liv
 
 - 2026-09-30T15:01:19+00:00: PR #176 merged as b1e510744d9d5c76005a41c469d20b06e4850d04 after
   independent review and green PR checks. Post-merge checks are running.
+
+- 2026-09-30T15:03:12+00:00: PR #176 merged as b1e510744d9d5c76005a41c469d20b06e4850d04. Exact-main
+  Repository Quality 36733486874 and Trusted main verification 36733486691 both passed. End-to-end
+  development/mock qualification covers install, launch, wizard, selection, materialization, live
+  statistics, final results, history, and comparison.
