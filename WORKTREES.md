@@ -13,7 +13,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1326-guided-benchmark-comparison-route` | `feature/ar-1326-guided-benchmark-comparison-route` | `3598462691ce` | 0 | behind 11, ahead 0 |
 | `asb-tui-ar-1327` | `feature/ar-1327-cross-repository-journey-qualification` | `eae13ed1fd87` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `51d9d7443901` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `ca7b4279837c` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `00184388a5f5` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 85, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 275, ahead 2 |
@@ -118,5 +118,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-review158b` | `DETACHED` | `d47b27a7beff` | 0 | behind 4, ahead 0 |
 | `asb-tui-review159` | `DETACHED` | `10b9a2a48943` | 0 | behind 6, ahead 1 |
 | `asb-tui-review159b` | `DETACHED` | `4621ae9be99e` | 0 | behind 6, ahead 2 |
+| `asb-tui-review160` | `DETACHED` | `ca7b4279837c` | 0 | behind 0, ahead 1 |
 | `asb-tui-review321` | `DETACHED` | `321ebf803707` | 0 | behind 16, ahead 0 |
 | `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 212, ahead 0 |

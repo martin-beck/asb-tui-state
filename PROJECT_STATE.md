@@ -10,14 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #160 | `feature/ar-1334-benchmark-pool-selection@ca7b4279837c` | `main` | BLOCKED | QUEUED:, QUEUED: | feat(selection): add generation-bound benchmark catalog |
+| #160 | `feature/ar-1334-benchmark-pool-selection@00184388a5f5` | `main` | BLOCKED | - | feat(selection): add generation-bound benchmark catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36700575655 | `ca7b4279837c` | pull_request | AWQ shadow observation | queued:- |
-| 36700575401 | `ca7b4279837c` | pull_request | Repository quality | queued:- |
+| 36700841237 | `00184388a5f5` | pull_request | AWQ shadow observation | queued:- |
+| 36700841004 | `00184388a5f5` | pull_request | Repository quality | queued:- |
+| 36700575655 | `ca7b4279837c` | pull_request | AWQ shadow observation | completed:failure |
+| 36700575401 | `ca7b4279837c` | pull_request | Repository quality | completed:failure |
 | 36699147186 | `3fde8aa081fb` | push | Trusted main verification | completed:success |
 | 36699147181 | `3fde8aa081fb` | push | Repository quality | completed:success |
 | 36698807480 | `51d9d7443901` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36698482811 | `4621ae9be99e` | pull_request | Repository quality | completed:success |
 | 36698458470 | `9b433f163953` | push | Trusted main verification | completed:success |
 | 36698458426 | `9b433f163953` | push | Repository quality | completed:success |
-| 36698072216 | `d47b27a7beff` | pull_request | AWQ shadow observation | completed:success |
-| 36698071887 | `d47b27a7beff` | pull_request | Repository quality | completed:success |
