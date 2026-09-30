@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | ar1341-cross-repo-qualification |
 | P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Obtain independent review and hosted required checks for PR #178 at exact head df7ffdc1a422d2f847e531d891af59f333fda63d; resolve only evidence-backed findings, then merge/release and verify post-merge. | ar1342-protocol-matrix |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
 
 ## Done
 
