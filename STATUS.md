@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Review exact PR171 head 63c994586feb5edc8b79657e755cc5ba6cc7aeb1 and await hosted CI; merge only after independent approval, then watch main post-merge checks. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Repair post-merge Trusted main coverage failure at 0f1e414: total line coverage 88.92&#37; below 90 gate; add focused catalog/control/projection coverage, signed+DCO PR, then rerun hosted and main checks. |
 
 ### Planned (2)
 

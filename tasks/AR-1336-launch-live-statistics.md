@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Review exact PR171 head 63c994586feb5edc8b79657e755cc5ba6cc7aeb1 and await hosted CI; merge only after independent approval, then watch main post-merge checks.",
+  "next_action": "Repair post-merge Trusted main coverage failure at 0f1e414: total line coverage 88.92% below 90 gate; add focused catalog/control/projection coverage, signed+DCO PR, then rerun hosted and main checks.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:55:12+00:00",
+  "updated_at": "2026-09-30T13:00:11+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -220,3 +220,7 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T12:55:12+00:00: Added version-gated BenchmarkCatalog control call/result, canonical
   hierarchy digest/bounds validation, live projection acquisition, and integration coverage. Commit
   is ED25519-signed with DCO; hosted checks restarted.
+
+- 2026-09-30T13:00:11+00:00: PR171 merged at 0f1e414 after green PR checks and approval. Trusted
+  main verification failed only the coverage threshold (88.92% total); AR remains in progress
+  pending repair.
