@@ -100,4 +100,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-coverage-repair-ours` | `repair/ar-coverage-setup-recording` | `5d01a5fcff95` | 0 | behind 53, ahead 0 |
 | `asb-tui-current-audit` | `DETACHED` | `eddf48055c55` | 0 | behind 33, ahead 0 |
 | `asb-tui-final-audit` | `DETACHED` | `30e243be4bd3` | 0 | behind 39, ahead 0 |
+| `asb-tui-pr152` | `DETACHED` | `9a3a24d6521f` | 0 | behind 0, ahead 2 |
+| `asb-tui-pr152-v2` | `DETACHED` | `bbf4b452c444` | 0 | behind 0, ahead 3 |
 | `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 186, ahead 0 |
