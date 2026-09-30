@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1326-guided-benchmark-comparison-route",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T09:30:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1222",
     "AR-1223",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1326-guided-benchmark-comparison-route",
   "observed_dirty": 0,
   "observed_head": "3598462691ced03b7a8cb712e731fa1a83528f78",
-  "owner": "tui-ar1326-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1326.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make benchmark, offline replay, and comparison a single guided TUI route.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Guided benchmark and comparison route",
-  "updated_at": "2026-09-30T06:42:21+00:00",
+  "updated_at": "2026-09-30T06:44:46+00:00",
   "worktree_key": "asb-tui-ar-1326-guided-benchmark-comparison-route"
 }
 ---
@@ -55,3 +55,9 @@ second runner or provider backend.
 
 - 2026-09-30T06:42:21+00:00: Recorded command exit 0; command argv SHA-256
   0670dcd3fb7c84fb14d7411e2c603b52e6e3b56000bc1d0dc89b82e513eedf85.
+
+- 2026-09-30T06:44:46+00:00: Implemented guided benchmark/comparison route in PR #156. Exact merged
+  main d82b4c60fd28559c4e62436287ab279dc6e80576. Required PR checks passed at head
+  3598462691ced03b7a8cb712e731fa1a83528f78 after publication-header repair; independent review
+  approved. Post-merge Trusted main verification 36679623858 and Repository quality 36679623863
+  passed.
