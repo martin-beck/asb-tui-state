@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1335-configuration-materialization",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T13:45:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1333",
     "AR-1334"
   ],
   "id": "AR-1335",
   "next_action": "Await exact-head CI/review for d1b5129; merge AR-1335 when all hosted gates pass, then promote AR-1336.",
-  "owner": "tui-ar1335-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:52:41+00:00",
+  "updated_at": "2026-09-30T11:52:58+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -79,3 +79,7 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
 
 - 2026-09-30T11:52:41+00:00: Recorded command exit 0; command argv SHA-256
   6c0befbf1e5f41ca2fd2b8e45471b7f5ed60bb6b40688de6a2e441d4733d0a70.
+
+- 2026-09-30T11:52:58+00:00: PR #161 merged at effae8d after exact-head independent approval, all
+  hosted native/AWQ checks passed on d1b5129, and local full test/clippy/help/model checks passed.
+  Canonical LaunchBinding handoff documented for AR-1336.
