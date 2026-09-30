@@ -23,7 +23,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1337-final-results` | `feature/ar-1337-final-results` | `007211d66cc2` | 0 | behind 3, ahead 0 |
 | `asb-tui-ar-1338-end-to-end-benchmark-journey` | `feature/ar-1338-end-to-end-benchmark-journey` | `3f50a9aa5134` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 33, ahead 0 |
-| `asb-tui-ar-1340` | `feature/ar-1340-dev-channel-router-compatibility` | `526c6ada1376` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1340` | `feature/ar-1340-dev-channel-router-compatibility` | `c883807ef64d` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 114, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 304, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 248, ahead 1 |
