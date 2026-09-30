@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1333-user-driven-provider-setup",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T12:37:24+00:00",
   "depends_on": [
     "AR-1325",
     "AR-1328",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1333",
   "next_action": "Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path.",
-  "owner": "",
+  "owner": "tui-ar1333-dev-20260930",
   "plan": "../plans/AR-1333.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:36:43+00:00",
+  "updated_at": "2026-09-30T09:37:24+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -29,3 +29,5 @@ Development-first setup only; raw credentials, live authorization, and productio
 
 - 2026-09-30T09:36:43+00:00: All dependencies AR-1325, AR-1328, AR-1329, and AR-1327 are done; begin
   development-only user-driven provider setup.
+
+- 2026-09-30T09:37:24+00:00: Claimed by tui-ar1333-dev-20260930.

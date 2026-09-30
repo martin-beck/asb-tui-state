@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path. | tui-ar1333-dev-20260930 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path. | - |
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify `asb tui install`, `asb tui`, status, upgrade, remove, and recovery. | - |
 
 ## Planned
