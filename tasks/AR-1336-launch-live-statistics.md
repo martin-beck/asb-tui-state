@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Review exact repair head 3b672bd96faf229468a841b50d17c97c9e2c0bdb and wait for hosted Repository quality/AWQ checks; merge only after independent approval, then watch main post-merge checks.",
+  "next_action": "Wire authoritative benchmark catalog acquisition into ControlCall/ControlProjection/poll_projection; add canonical hierarchy digest validation and real-path integration tests; then fresh review/CI.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:47:29+00:00",
+  "updated_at": "2026-09-30T12:49:08+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -195,3 +195,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:47:29+00:00: Worker force-updated PR #171 with authoritative LiveBenchmarkCatalog
   generation/digest/hierarchy fencing. Commit is ED25519-signed with DCO. Hosted checks restarted.
+
+- 2026-09-30T12:49:08+00:00: Exact PR171 review still blocks merge: benchmark catalog is
+  fixture-only because poll_projection has no request/response branch, so normal snapshots reject
+  every launch. Hosted quality also hit a flaky synthetic PTY test; rerun after integration repair.

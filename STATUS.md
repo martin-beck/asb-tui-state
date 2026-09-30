@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Review exact repair head 3b672bd96faf229468a841b50d17c97c9e2c0bdb and wait for hosted Repository quality/AWQ checks; merge only after independent approval, then watch main post-merge checks. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Wire authoritative benchmark catalog acquisition into ControlCall/ControlProjection/poll_projection; add canonical hierarchy digest validation and real-path integration tests; then fresh review/CI. |
 
 ### Planned (2)
 
