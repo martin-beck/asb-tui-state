@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:14:30+00:00",
+  "updated_at": "2026-09-30T12:15:16+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -84,3 +84,6 @@ Development fixtures may run without external authentication or provider reachab
   gates emitted actions through the formal model. Full cargo test, clippy, UI model/source parity,
   credential boundary, and diff checks pass locally. PR #165 now points to exact head 0a37121;
   hosted checks have not started yet.
+
+- 2026-09-30T12:15:16+00:00: Recorded command exit 0; command argv SHA-256
+  02d2b2fed07d78b72d231d3fdb44b24907d4555c3aa346f1090e573a8430b9fe.
