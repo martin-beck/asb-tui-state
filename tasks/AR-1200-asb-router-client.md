@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1200-asb-router-client",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T07:46:36+00:00",
+  "claim_expires": "2026-09-30T07:52:27+00:00",
   "depends_on": [
     "AR-1195"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:52:10+00:00",
+  "updated_at": "2026-09-30T05:52:27+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -52,3 +52,5 @@ authentication and remote trust are explicitly outside this development AR.
 
 - 2026-09-30T05:52:10+00:00: Recorded command exit 0; command argv SHA-256
   6b54db36de03a9cdd089662a556efd015787144e9e8446ed09602656b4e59a5c.
+
+- 2026-09-30T05:52:27+00:00: Heartbeat by tui-ar1200-dev-20261001.
