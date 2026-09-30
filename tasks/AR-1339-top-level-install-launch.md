@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:47:32+00:00",
+  "updated_at": "2026-09-30T09:48:37+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -46,3 +46,6 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
 
 - 2026-09-30T09:47:32+00:00: Standalone command adapter and development router integration are
   implemented; local and hosted checks pass. Awaiting independent exact-head review before merge.
+
+- 2026-09-30T09:48:37+00:00: Recorded command exit 0; command argv SHA-256
+  f0649951a2652bb389102a56ca172f4ca4f7e6390e70be164fd5a557717b616d.
