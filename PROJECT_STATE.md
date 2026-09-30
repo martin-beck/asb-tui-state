@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #160 | `feature/ar-1334-benchmark-pool-selection@9020a2fbf4db` | `main` | BLOCKED | - | feat(selection): add generation-bound benchmark catalog |
+| #160 | `feature/ar-1334-benchmark-pool-selection@2c9baf47c4c3` | `main` | BLOCKED | - | feat(selection): add generation-bound benchmark catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36702321039 | `9020a2fbf4db` | pull_request | AWQ shadow observation | in_progress:- |
+| 36702320652 | `9020a2fbf4db` | pull_request | Repository quality | in_progress:- |
 | 36702018445 | `3fa059fc4e67` | pull_request | AWQ shadow observation | completed:success |
 | 36702018122 | `3fa059fc4e67` | pull_request | Repository quality | completed:success |
 | 36701354547 | `f936e4e52625` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36700575401 | `ca7b4279837c` | pull_request | Repository quality | completed:failure |
 | 36699147186 | `3fde8aa081fb` | push | Trusted main verification | completed:success |
 | 36699147181 | `3fde8aa081fb` | push | Repository quality | completed:success |
-| 36698807480 | `51d9d7443901` | pull_request | AWQ shadow observation | completed:success |
-| 36698807360 | `51d9d7443901` | pull_request | Repository quality | completed:success |
