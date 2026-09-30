@@ -14,14 +14,14 @@ Generated from local Git and GitHub. Do not edit.
 | #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
 | #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 | #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | DIRTY | - | feat(run): launch reviewed campaigns and live statistics |
-| #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
+| #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36715612744 | `402ec56db350` | pull_request | AWQ shadow observation | completed:failure |
-| 36715612435 | `402ec56db350` | pull_request | Repository quality | in_progress:- |
+| 36715612435 | `402ec56db350` | pull_request | Repository quality | completed:failure |
 | 36715076907 | `8ef7c8a1282e` | push | Trusted main verification | completed:success |
 | 36715076868 | `8ef7c8a1282e` | push | Repository quality | completed:success |
 | 36714817123 | `866e3165c1c4` | pull_request | AWQ shadow observation | completed:success |
