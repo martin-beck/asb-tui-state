@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -78,7 +78,7 @@ flowchart LR
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Planned"]:::status_planned
-        AR_1342["AR-1342 - Open"]:::status_open
+        AR_1342["AR-1342 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -203,11 +203,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
+| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | ar1342-protocol-matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
 
 ### Planned (1)
 

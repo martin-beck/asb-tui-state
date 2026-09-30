@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. | - |
+| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. | ar1342-protocol-matrix |
 
 ## Planned
 
