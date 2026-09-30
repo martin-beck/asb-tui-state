@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Await exact-head CI/review for cae7055; then merge AR-1335 and promote AR-1336 if AR-1323 is done.",
+  "next_action": "Await exact-head CI/review for d1b5129; merge AR-1335 when all hosted gates pass, then promote AR-1336.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:47:44+00:00",
+  "updated_at": "2026-09-30T11:50:04+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -69,3 +69,7 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
   contract documentation, binding materialization digest, catalog generations/digests, exact IDs,
   and development provenance; adds a completeness/privacy test. Hosted CI previously exposed one
   flaky PTY test and was rerun.
+
+- 2026-09-30T11:50:04+00:00: Hosted quality found the new handoff document missing required
+  publication headers; signed d1b5129 adds copyright/SPDX headers. No code failures; rerun hosted
+  gates.
