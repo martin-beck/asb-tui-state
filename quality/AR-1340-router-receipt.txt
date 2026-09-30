@@ -1,0 +1,5 @@
+AR-1340 router receipt
+merged_sha=86867eed7b1e825b26dbd2c2144dc984d255469a
+pr=https://github.com/martin-beck/asb-tui/pull/177
+checks=repository quality and AWQ checks passed
+review=independent identity namespace review passed
