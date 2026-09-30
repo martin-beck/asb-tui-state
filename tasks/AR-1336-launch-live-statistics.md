@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:38:27+00:00",
+  "updated_at": "2026-09-30T12:41:04+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -143,3 +143,6 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T12:38:27+00:00: Independent review found three correctness blockers. PR #170 hosted
   Repository quality also failed DCO because the squashed commit lacked Signed-off-by; repair
   commits must include DCO trailers. AWQ run consequently failed.
+
+- 2026-09-30T12:41:04+00:00: Recorded command exit 0; command argv SHA-256
+  8dd21f261129824477f95e288ba7613539dc4f9cfbd1fedf59c722e2321b901d.
