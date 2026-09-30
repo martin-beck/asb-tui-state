@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #176 | `feature/ar-1338-end-to-end-benchmark-journey@3f50a9aa5134` | `main` | BLOCKED | QUEUED:, QUEUED: | test(qualification): prove complete development journey |
+| #176 | `feature/ar-1338-end-to-end-benchmark-journey@3f50a9aa5134` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(qualification): prove complete development journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36732827575 | `3f50a9aa5134` | pull_request | AWQ shadow observation | queued:- |
-| 36732826744 | `3f50a9aa5134` | pull_request | Repository quality | queued:- |
+| 36732827575 | `3f50a9aa5134` | pull_request | AWQ shadow observation | in_progress:- |
+| 36732826744 | `3f50a9aa5134` | pull_request | Repository quality | in_progress:- |
 | 36731426065 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:success |
 | 36730897656 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:cancelled |
 | 36730636961 | `d7e5a53b9f7d` | workflow_dispatch | Trusted main verification | completed:failure |
