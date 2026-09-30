@@ -8,7 +8,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `92a458a0fe88` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 109, ahead 0 |
 | `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `11f4a0671da4` | 0 | behind 105, ahead 0 |
-| `asb-tui-ar-1324` | `feature/ar-1324-install-broker-onboarding` | `406a6da0a60a` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar-1324` | `feature/ar-1324-install-broker-onboarding` | `e21731ba9d53` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 63, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 253, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 197, ahead 1 |
