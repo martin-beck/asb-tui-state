@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | tui-ar1337-dev-20260930 | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await exact-head hosted checks and independent review for PR #175 at dcaa6584b65e93c3ea2ffbc7a53779e7cec251c4; merge only after all required gates pass. |
+| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | tui-ar1337-dev-20260930 | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await exact-head hosted checks and independent review for PR #175 at 5f0f953; merge only after all required gates pass. |
 
 ### Planned (1)
 
