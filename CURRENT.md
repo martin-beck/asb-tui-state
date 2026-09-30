@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Obtain independent exact-head review and hosted CI for fresh PR #171 at 3b672bd96faf229468a841b50d17c97c9e2c0bdb; repair any remaining failures before merge. | tui-ar1336-dev-20260930 |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Review exact repair head 3b672bd96faf229468a841b50d17c97c9e2c0bdb and wait for hosted Repository quality/AWQ checks; merge only after independent approval, then watch main post-merge checks. | tui-ar1336-dev-20260930 |
 
 ## Planned
 
