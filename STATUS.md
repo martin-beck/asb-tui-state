@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 32 |
+| **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -75,7 +75,7 @@ flowchart LR
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Planned"]:::status_planned
         AR_1338["AR-1338 - Planned"]:::status_planned
-        AR_1339["AR-1339 - In progress"]:::status_in_progress
+        AR_1339["AR-1339 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -194,12 +194,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | tui-ar1333-dev-20260930 | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | PR #159 repair head 4621ae9 is awaiting hosted checks and independent exact-head review; then merge and release with post-merge evidence. |
-| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | tui-ar1339-dev-20260930 | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. |
 
 ### Planned (5)
 
@@ -211,7 +210,7 @@ flowchart LR
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Unclaimed | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. |
 
-### Done (32)
+### Done (33)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -240,6 +239,7 @@ flowchart LR
 | P0 | [AR-1329](tasks/AR-1329-development-provider-setup-integration.md): Development provider setup integration | Unclaimed | Integrate development credential lifecycle with provider, model and default selection. | Promote after the setup and enrollment routes are ready; integrate provider/model/default changes, mock-provider validation, and warning-only auth/signature/key-management fallback. |
 | P0 | [AR-1330](tasks/AR-1330-development-journey-qualification.md): Development credential journey qualification | Unclaimed | Qualify the development-only enrollment-to-offline-comparison journey. | Promote after the development setup and benchmark routes are complete; run the clean disposable mock journey with missing-auth/signature/key-management warning cases and publish exact evidence. |
 | P0 | [AR-1332](tasks/AR-1332-reconciled-development-runtime-fixture.md): Reconciled development control-runtime fixture | Unclaimed | Provide a reconciled disposable control-runtime fixture for AR-1323. | Implement the asb-tui-compatible qualification harness and record successful v1.10 digest-only AuthStatus evidence; this repair unblocks AR-1323. |
+| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Unclaimed | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1339-top-level-install-launch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T12:43:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200",
     "AR-1324",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1339-top-level-install-launch",
   "observed_dirty": 0,
   "observed_head": "d47b27a7beff96fafde62184668e29031d0b11ef",
-  "owner": "tui-ar1339-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1339.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:48:37+00:00",
+  "updated_at": "2026-09-30T09:51:10+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -49,3 +49,9 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
 
 - 2026-09-30T09:48:37+00:00: Recorded command exit 0; command argv SHA-256
   f0649951a2652bb389102a56ca172f4ca4f7e6390e70be164fd5a557717b616d.
+
+- 2026-09-30T09:51:10+00:00: Implemented top-level standalone `tui` adapter in PR #158. Exact merged
+  main 9b433f163953d6b4dcf8427cae3c1f7fb15babcd; repaired header failure at PR head d47b27a7,
+  independently approved. Post-merge Repository quality 36698458426 and Trusted main verification
+  36698458470 passed. Development operations require explicit --development --format json;
+  production is fail-closed.
