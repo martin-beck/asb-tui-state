@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `d0d73a9a55ae975934baed7275f4453f40fd5d9f`
+- Product remote main: `3fee4e38a597cc698add3114101e26c21b56d3ee`
 - Local origin/main: `d0d73a9a55ae975934baed7275f4453f40fd5d9f`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -14,14 +14,14 @@ Generated from local Git and GitHub. Do not edit.
 | #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
 | #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 | #167 | `repair/ar-1335-coverage-3@e99f9bf1fe0b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(config): cover load symlink rejection paths |
-| #168 | `feature/ar-1336-launch-live-statistics-clean@c626fc26a808` | `main` | BLOCKED | - | feat(run): launch reviewed campaigns and live statistics |
+| #168 | `feature/ar-1336-launch-live-statistics-clean@c626fc26a808` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch reviewed campaigns and live statistics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36713885071 | `c626fc26a808` | pull_request | AWQ shadow observation | queued:- |
-| 36713884687 | `c626fc26a808` | pull_request | Repository quality | queued:- |
+| 36713885071 | `c626fc26a808` | pull_request | AWQ shadow observation | completed:failure |
+| 36713884687 | `c626fc26a808` | pull_request | Repository quality | completed:failure |
 | 36713696804 | `e99f9bf1fe0b` | pull_request | AWQ shadow observation | completed:success |
 | 36713696342 | `e99f9bf1fe0b` | pull_request | Repository quality | completed:success |
 | 36713407513 | `d0d73a9a55ae` | push | Trusted main verification | completed:failure |
