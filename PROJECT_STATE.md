@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #161 | `feature/ar-1335-configuration-materialization@ed3db3069fd3` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(config): materialize reviewed setup bundle |
+| #161 | `feature/ar-1335-configuration-materialization@ed3db3069fd3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): materialize reviewed setup bundle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36706923848 | `ed3db3069fd3` | pull_request | AWQ shadow observation | in_progress:- |
-| 36706923606 | `ed3db3069fd3` | pull_request | Repository quality | in_progress:- |
+| 36706923848 | `ed3db3069fd3` | pull_request | AWQ shadow observation | completed:success |
+| 36706923606 | `ed3db3069fd3` | pull_request | Repository quality | completed:success |
 | 36706540272 | `0ec8de4b8ce3` | pull_request | AWQ shadow observation | completed:failure |
 | 36706539653 | `0ec8de4b8ce3` | pull_request | Repository quality | completed:failure |
 | 36705703984 | `6ca8fedd972d` | pull_request | AWQ shadow observation | completed:success |
