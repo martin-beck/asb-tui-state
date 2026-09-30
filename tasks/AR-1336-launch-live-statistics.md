@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 877996906a15a85243bfc681d188b49ec5cd6a6e; repair any failures before merge.",
+  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 4fa5c61cb681fe4c229fc7810e9ef9e7befdef61; repair any failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics",
   "observed_dirty": 0,
   "observed_head": "4fa5c61cb681fe4c229fc7810e9ef9e7befdef61",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:07:38+00:00",
+  "updated_at": "2026-09-30T12:08:19+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -64,3 +64,8 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:07:38+00:00: Recorded command exit 0; command argv SHA-256
   92a0077746a51eeabbabcc77c972ff0cf5298fb05b305be6499fe3c066fbfe29.
+
+- 2026-09-30T12:08:19+00:00: Rebased AR-1336 onto current main 5bc08b7 after AR-1335 follow-up
+  landed; amended with SSH signature and force-with-lease pushed exact head
+  4fa5c61cb681fe4c229fc7810e9ef9e7befdef61. PR #165 workflows are running (Repository quality run
+  36712806539 and AWQ shadow run 36712807064).
