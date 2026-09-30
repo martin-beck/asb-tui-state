@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:19:19+00:00",
+  "updated_at": "2026-09-30T12:23:57+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -99,3 +99,6 @@ Development fixtures may run without external authentication or provider reachab
   after the original branch Actions trigger anomaly. Clean head c626fc2 includes LaunchBinding
   validation, generation-bound launch/cancel/reconnect, truthful live statistics, and formal
   lifecycle tests; local 225-test/clippy/model/parity/credential checks pass.
+
+- 2026-09-30T12:23:57+00:00: Recorded command exit 0; command argv SHA-256
+  e230bdc474e11cc5790490407aa8586737572d74d5b8d834bd704044933b58ce.
