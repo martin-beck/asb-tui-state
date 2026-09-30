@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1336-launch-live-statistics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T13:53:30+00:00",
   "depends_on": [
     "AR-1335",
     "AR-1323"
   ],
   "id": "AR-1336",
   "next_action": "Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection.",
-  "owner": "",
+  "owner": "tui-ar1336-dev-20260930",
   "plan": "../plans/AR-1336.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T11:53:22+00:00",
+  "updated_at": "2026-09-30T11:53:30+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -26,3 +26,5 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T11:53:22+00:00: Dependencies AR-1335 and AR-1323 are done; begin generation-bound
   launch, cancellation, reconnect, and live statistics implementation.
+
+- 2026-09-30T11:53:30+00:00: Claimed by tui-ar1336-dev-20260930.

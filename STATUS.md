@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
@@ -72,7 +72,7 @@ flowchart LR
         AR_1333["AR-1333 - Done"]:::status_done
         AR_1334["AR-1334 - Done"]:::status_done
         AR_1335["AR-1335 - Done"]:::status_done
-        AR_1336["AR-1336 - Open"]:::status_open
+        AR_1336["AR-1336 - In progress"]:::status_in_progress
         AR_1337["AR-1337 - Planned"]:::status_planned
         AR_1338["AR-1338 - Planned"]:::status_planned
         AR_1339["AR-1339 - Done"]:::status_done
@@ -194,11 +194,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Unclaimed | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. |
 
 ### Planned (2)
 

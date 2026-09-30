@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. | - |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. | tui-ar1336-dev-20260930 |
 
 ## Planned
 
