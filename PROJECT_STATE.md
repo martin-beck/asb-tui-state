@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #158 | `feature/ar-1339-top-level-install-launch@d47b27a7beff` | `main` | BLOCKED | - | feat(router): expose standalone tui lifecycle commands |
-| #159 | `feature/ar-1333-user-driven-provider-setup@10b9a2a48943` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(wizard): add catalog-bound provider setup draft |
+| #158 | `feature/ar-1339-top-level-install-launch@d47b27a7beff` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(router): expose standalone tui lifecycle commands |
+| #159 | `feature/ar-1333-user-driven-provider-setup@10b9a2a48943` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(wizard): add catalog-bound provider setup draft |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36698072216 | `d47b27a7beff` | pull_request | AWQ shadow observation | queued:- |
-| 36698071887 | `d47b27a7beff` | pull_request | Repository quality | queued:- |
-| 36697947294 | `10b9a2a48943` | pull_request | AWQ shadow observation | in_progress:- |
-| 36697946897 | `10b9a2a48943` | pull_request | Repository quality | in_progress:- |
+| 36698072216 | `d47b27a7beff` | pull_request | AWQ shadow observation | completed:success |
+| 36698071887 | `d47b27a7beff` | pull_request | Repository quality | completed:success |
+| 36697947294 | `10b9a2a48943` | pull_request | AWQ shadow observation | completed:failure |
+| 36697946897 | `10b9a2a48943` | pull_request | Repository quality | completed:failure |
 | 36697851332 | `e8c56a2e179f` | pull_request | AWQ shadow observation | completed:failure |
 | 36697851007 | `e8c56a2e179f` | pull_request | Repository quality | completed:failure |
 | 36680963143 | `9ba15a206e9a` | push | Repository quality | completed:success |
