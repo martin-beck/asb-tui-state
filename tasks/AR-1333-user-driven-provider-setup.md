@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:49:49+00:00",
+  "updated_at": "2026-09-30T09:50:47+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -47,3 +47,6 @@ Development-first setup only; raw credentials, live authorization, and productio
 - 2026-09-30T09:49:49+00:00: Repair commit 4621ae9 binds runtime apply to catalog generation,
   rejects partial catalogs, wires the single-use atomic gate, and updates formal model/test. Local
   full tests, clippy, model/parity and credential checks pass.
+
+- 2026-09-30T09:50:47+00:00: Recorded command exit 0; command argv SHA-256
+  2ac35c65843f73bd4aef4c466488c9c5ae75cdf986a633e8771e3b297b3153b7.
