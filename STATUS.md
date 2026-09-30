@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Run independent exact-head review and hosted CI for PR #170 at 402ec56db350655f8d688ac17c3924d9b2651462; merge only after both pass, then watch main post-merge checks. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Repair PR #170 blockers: benchmark generation/hierarchy fencing, manual reconnect preservation, terminal immutability; include Signed-off-by and ED25519 signatures, then open fresh PR from current main and rerun hosted checks. |
 
 ### Planned (2)
 

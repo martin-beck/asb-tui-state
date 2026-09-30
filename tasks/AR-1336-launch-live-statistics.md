@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Run independent exact-head review and hosted CI for PR #170 at 402ec56db350655f8d688ac17c3924d9b2651462; merge only after both pass, then watch main post-merge checks.",
+  "next_action": "Repair PR #170 blockers: benchmark generation/hierarchy fencing, manual reconnect preservation, terminal immutability; include Signed-off-by and ED25519 signatures, then open fresh PR from current main and rerun hosted checks.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:36:33+00:00",
+  "updated_at": "2026-09-30T12:38:27+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -139,3 +139,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:36:33+00:00: Recorded command exit 0; command argv SHA-256
   57fcd582ee21cb6e1ebd8d17abfda0e3dd631a99861555aab804b705d937e714.
+
+- 2026-09-30T12:38:27+00:00: Independent review found three correctness blockers. PR #170 hosted
+  Repository quality also failed DCO because the squashed commit lacked Signed-off-by; repair
+  commits must include DCO trailers. AWQ run consequently failed.
