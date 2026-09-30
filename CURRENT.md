@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Promote after provider setup and benchmark selection; implement typed ASB configuration generation, preflight, atomic persistence, and validation. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. | - |
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. | - |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. | - |

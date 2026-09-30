@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**39 ARs tracked** across 2 active status categories.
+**39 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 35 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -71,7 +71,7 @@ flowchart LR
         AR_1332["AR-1332 - Done"]:::status_done
         AR_1333["AR-1333 - Done"]:::status_done
         AR_1334["AR-1334 - Done"]:::status_done
-        AR_1335["AR-1335 - Planned"]:::status_planned
+        AR_1335["AR-1335 - Open"]:::status_open
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Planned"]:::status_planned
         AR_1338["AR-1338 - Planned"]:::status_planned
@@ -194,11 +194,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (4)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Unclaimed | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Promote after provider setup and benchmark selection; implement typed ASB configuration generation, preflight, atomic persistence, and validation. |
+
+### Planned (3)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Unclaimed | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. |
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Unclaimed | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. |
