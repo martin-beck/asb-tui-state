@@ -12,16 +12,16 @@
   "next_action": "Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify `asb tui install`, `asb tui`, status, upgrade, remove, and recovery.",
   "observed_branch": "feature/ar-1339-top-level-install-launch",
   "observed_dirty": 0,
-  "observed_head": "e8c56a2e179f59cdf3be8d6442a8d127764777eb",
+  "observed_head": "d47b27a7beff96fafde62184668e29031d0b11ef",
   "owner": "tui-ar1339-dev-20260930",
   "plan": "../plans/AR-1339.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:44:50+00:00",
+  "updated_at": "2026-09-30T09:44:56+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
