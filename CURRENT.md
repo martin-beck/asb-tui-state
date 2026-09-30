@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB development router client adoption | Adopt the ASB development router from the standalone asb-tui lifecycle and UI. | Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md): Install and broker onboarding | Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step. | Promote after AR-1200; implement the clean development install, broker negotiation, and recovery route with explicit fixture/warning labels. | - |
 | P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and development onboarding dependencies are done; bind wizard screens to the local setup contract and add restart/cancellation evidence. | - |
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. | - |
