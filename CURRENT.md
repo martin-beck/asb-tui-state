@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. | tui-ar1337-dev-20260930 |
+| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await exact-head hosted checks and independent review for PR #175 at dcaa6584b65e93c3ea2ffbc7a53779e7cec251c4; merge only after all required gates pass. | tui-ar1337-dev-20260930 |
 
 ## Planned
 
