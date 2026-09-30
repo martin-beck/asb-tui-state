@@ -10,17 +10,17 @@
   "id": "AR-1336",
   "next_action": "Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection.",
   "observed_branch": "feature/ar-1336-launch-live-statistics",
-  "observed_dirty": 6,
-  "observed_head": "effae8dbdfceaa45ba90f4282ff5216735b2aec9",
+  "observed_dirty": 0,
+  "observed_head": "877996906a15a85243bfc681d188b49ec5cd6a6e",
   "owner": "tui-ar1336-dev-20260930",
   "plan": "../plans/AR-1336.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:04:29+00:00",
+  "updated_at": "2026-09-30T12:04:35+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
