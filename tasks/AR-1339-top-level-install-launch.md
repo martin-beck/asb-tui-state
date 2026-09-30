@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1339-top-level-install-launch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T12:37:47+00:00",
+  "claim_expires": "2026-09-30T12:43:37+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1324",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:42:34+00:00",
+  "updated_at": "2026-09-30T09:43:37+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -38,3 +38,5 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
 
 - 2026-09-30T09:42:29+00:00: Recorded command exit 0; command argv SHA-256
   d3c9bf2dddd8c7e875fe53193cd872a1f351345fe14da7d58e0a75295e8a14e9.
+
+- 2026-09-30T09:43:37+00:00: Heartbeat by tui-ar1339-dev-20260930.
