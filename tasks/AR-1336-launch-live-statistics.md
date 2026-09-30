@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain independent exact-head review and hosted CI for repair PR #171 at 869e794445f3dd9727702d094cc25e53bf235394; merge only after all checks and review pass, then watch main post-merge checks.",
+  "next_action": "Obtain independent exact-head review and hosted CI for fresh PR #171 at 869e794445f3dd9727702d094cc25e53bf235394; repair any remaining failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:41:58+00:00",
+  "updated_at": "2026-09-30T12:42:20+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -159,3 +159,12 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T12:41:58+00:00: Repair PR #171 supersedes PR #170 review blockers: full live catalog
   generation/hierarchy fencing, manual reconnect preservation, terminal immutability. Commit carries
   ED25519 signature and DCO trailer; hosted checks are running.
+
+- 2026-09-30T12:42:20+00:00: Fresh repair branch repair/ar-1336-live-invariants was created from
+  PR170 head without altering PR170. Signed commit 869e794 adds live measurement catalog presence,
+  generation and digest fencing plus selected group/benchmark/measure membership checks before
+  CreatePlan, makes manual reconnect poll failures preserve reconnecting state and retry, and
+  rejects all terminal outcome changes without reconciliation. Focused launch tests (7), Cargo
+  tests, clippy, UI model/source parity, credential boundary and diff checks pass locally. Commit
+  has ED25519 signature SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE and DCO trailer. Fresh PR
+  #171 is open; hosted checks are running.
