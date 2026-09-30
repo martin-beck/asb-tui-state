@@ -8,16 +8,16 @@
     "AR-1223"
   ],
   "id": "AR-1337",
-  "next_action": "Await exact-head hosted checks and independent review for PR #175 at 7db509092a5edfad0a045d88885d4e21b2c7d5b2; merge only after all required gates pass.",
+  "next_action": "Await exact-head hosted checks and independent review for PR #175 at 007211d66cc2e5827707e917f8e52903cd60cf8b; merge only after all required gates pass.",
   "owner": "tui-ar1337-dev-20260930",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Show final performance results, measure status, provenance, failures, and comparable recent runs.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Final performance results and report presentation",
-  "updated_at": "2026-09-30T14:13:22+00:00",
+  "updated_at": "2026-09-30T14:17:56+00:00",
   "worktree_key": "asb-tui-ar-1337-final-results-reports"
 }
 ---
@@ -59,3 +59,9 @@ Results must distinguish development, replay, live, unavailable, and unsupported
   meaningful reports.evidence, reports.measure, and reports.failure entries to docs/ui-help.json.
   Local validate-ui-state-model/test-ui-state-model and validate-ui-help/test-ui-help pass.
   Signed+DCO head 7db5090.
+
+- 2026-09-30T14:17:56+00:00: Removed phantom reports.evidence/measure/failure formal elements that
+  had no renderer-owned source bindings. Updated existing reports row/compare model and help text
+  with evidence/status/provenance guidance, regenerated model, and retained reports.rs inventory
+  responsibility. Signed+DCO head 007211d; local source/model/help validators and all-target tests
+  pass.
