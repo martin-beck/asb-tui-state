@@ -20,6 +20,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `src/launch_statistics.rs` |
 | `asb-tui-ar-1336-v2` | `feature/ar-1336-launch-live-statistics-v2` | `402ec56db350` | 0 | behind 14, ahead 1 |
 | `asb-tui-ar-1336-v3` | `repair/ar-1336-live-invariants` | `63c994586feb` | 0 | behind 12, ahead 0 |
+| `asb-tui-ar-1337-final-results` | `feature/ar-1337-final-results` | `c3f76e668c60` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/reports.rs`, `tests/benchmark_route.rs`, `tests/development_journey.rs`, `tests/development_qualification.rs`, `tests/reports.rs` |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 24, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 105, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 295, ahead 2 |
