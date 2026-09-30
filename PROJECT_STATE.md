@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #159 | `feature/ar-1333-user-driven-provider-setup@4621ae9be99e` | `main` | BEHIND | QUEUED:, COMPLETED:SUCCESS | feat(wizard): add catalog-bound provider setup draft |
+| #159 | `feature/ar-1333-user-driven-provider-setup@4621ae9be99e` | `main` | BEHIND | IN_PROGRESS:, COMPLETED:SUCCESS | feat(wizard): add catalog-bound provider setup draft |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36698482938 | `4621ae9be99e` | pull_request | AWQ shadow observation | queued:- |
+| 36698482938 | `4621ae9be99e` | pull_request | AWQ shadow observation | in_progress:- |
 | 36698482811 | `4621ae9be99e` | pull_request | Repository quality | completed:success |
 | 36698458470 | `9b433f163953` | push | Trusted main verification | completed:success |
 | 36698458426 | `9b433f163953` | push | Repository quality | completed:success |
