@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:46:36+00:00",
+  "updated_at": "2026-09-30T05:47:00+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -37,3 +37,6 @@ authentication and remote trust are explicitly outside this development AR.
   fixture-backed router implementation. Production trust remains explicitly out of scope.
 
 - 2026-09-30T05:46:36+00:00: Claimed by tui-ar1200-dev-20261001.
+
+- 2026-09-30T05:47:00+00:00: Recorded command exit 0; command argv SHA-256
+  422c85b7e92211a0c7686a84ca032cfadd21d841603e6b6b8ad343114f82ce53.
