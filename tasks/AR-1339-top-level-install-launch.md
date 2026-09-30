@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1339-top-level-install-launch",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T12:37:47+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1324",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1339",
   "next_action": "Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify `asb tui install`, `asb tui`, status, upgrade, remove, and recovery.",
-  "owner": "",
+  "owner": "tui-ar1339-dev-20260930",
   "plan": "../plans/AR-1339.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:36:46+00:00",
+  "updated_at": "2026-09-30T09:37:47+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -27,3 +27,5 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
 
 - 2026-09-30T09:36:46+00:00: Dependencies AR-1200, AR-1324, and AR-1327 are done; begin top-level
   install/launch integration with development fixtures.
+
+- 2026-09-30T09:37:47+00:00: Claimed by tui-ar1339-dev-20260930.
