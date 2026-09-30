@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:51:42+00:00",
+  "updated_at": "2026-09-30T05:51:53+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -46,3 +46,6 @@ authentication and remote trust are explicitly outside this development AR.
 
 - 2026-09-30T05:51:36+00:00: Recorded command exit 128; command argv SHA-256
   f8f66f1cdb092d9437f5dc3d8d9c36ac8f14eb211f9b1b0c7ff497288f73e2d5.
+
+- 2026-09-30T05:51:53+00:00: Recorded command exit 0; command argv SHA-256
+  9141c857110f20e25a05d603ad483772a692ddbe2c8eff071a92b180b82e9f79.
