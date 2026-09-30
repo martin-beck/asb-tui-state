@@ -8,16 +8,16 @@
     "AR-1223"
   ],
   "id": "AR-1337",
-  "next_action": "Await exact-head hosted checks and independent review for PR #175 at 5f0f953; merge only after all required gates pass.",
+  "next_action": "Await exact-head hosted checks and independent review for PR #175 at 5bd8a99e95c1dc64331f2e765ba282035ed1d7d8; merge only after all required gates pass.",
   "owner": "tui-ar1337-dev-20260930",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Show final performance results, measure status, provenance, failures, and comparable recent runs.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Final performance results and report presentation",
-  "updated_at": "2026-09-30T14:03:48+00:00",
+  "updated_at": "2026-09-30T14:11:52+00:00",
   "worktree_key": "asb-tui-ar-1337-final-results-reports"
 }
 ---
@@ -49,3 +49,8 @@ Results must distinguish development, replay, live, unavailable, and unsupported
 
 - 2026-09-30T14:03:48+00:00: Recorded command exit 0; command argv SHA-256
   06d941468bbaf98d67456117394c9048af956063117f726f2b048783e7311991.
+
+- 2026-09-30T14:11:52+00:00: Repaired formal CI gate: added reports.evidence, reports.measure, and
+  reports.failure to authored/generated UI model with meaningful help text, and documented
+  src/reports.rs ownership in UI module inventory. Signed+DCO commit 5bd8a99; local model validators
+  and all-target tests pass.
