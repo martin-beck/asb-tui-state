@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Implement complete successful V1.7+ poll_projection fixture covering benchmark, measurement, history, agent, provider, configuration, recording, and auth projections; reach >=90% trusted coverage, then signed+DCO PR and main verification.",
+  "next_action": "Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43% to >=90%; then open signed+DCO repair PR and verify exact-main checks.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T13:26:05+00:00",
+  "updated_at": "2026-09-30T13:30:41+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -259,3 +259,6 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T13:26:05+00:00: Trusted main at 031b4d0 remains 89.43%; prior focused repair is
   insufficient. Worker identified the complete successful polling fixture as the responsible path to
   clear the 90% gate.
+
+- 2026-09-30T13:30:41+00:00: PR #173 merged at 031b4d0 with green PR checks, but exact Trusted main
+  verification still reports 89.43% and fails the 90% gate. No release yet.

@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Implement complete successful V1.7+ poll_projection fixture covering benchmark, measurement, history, agent, provider, configuration, recording, and auth projections; reach &gt;=90&#37; trusted coverage, then signed+DCO PR and main verification. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43&#37; to &gt;=90&#37;; then open signed+DCO repair PR and verify exact-main checks. |
 
 ### Planned (2)
 
