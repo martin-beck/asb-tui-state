@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**42 ARs tracked** across 2 active status categories.
+**42 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 40 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -78,7 +78,7 @@ flowchart LR
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Planned"]:::status_planned
-        AR_1342["AR-1342 - Planned"]:::status_planned
+        AR_1342["AR-1342 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -203,12 +203,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (2)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
+
+### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
-| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
 
 ### Done (40)
 
