@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "After hosted checks pass, implement visible preflight route/formal-model transition and integrate materialized bundle apply; do not merge backend-only PR yet.",
+  "next_action": "Await exact-head CI/review for 88d340f; if green and approved, merge PR #161, watch post-merge checks, then release AR-1335.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:12:25+00:00",
+  "updated_at": "2026-09-30T11:25:00+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -37,3 +37,8 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
   membership validation, adds private sync protections and formal model/test updates. Independent
   review approved these repairs but still blocks merge on visible preflight route/apply integration.
   Hosted checks are rerunning on ed3db30.
+
+- 2026-09-30T11:25:00+00:00: Signed commit 88d340f adds formal configuration.preflight
+  element/action/help, visible digest-bound summary, and atomic apply_materialized_bundle UI seam.
+  Local full test/clippy/formal/help/parity checks pass; hosted checks and independent review
+  pending.
