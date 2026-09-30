@@ -10,8 +10,6 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | DIRTY | - | feat(run): launch reviewed campaigns and live statistics |
-| #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
 
 ## Recent workflows
 
