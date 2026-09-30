@@ -12,7 +12,7 @@
     "AR-1339"
   ],
   "id": "AR-1338",
-  "next_action": "Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence.",
+  "next_action": "Await independent review and exact-head hosted checks for PR #176 at 3f50a9aa5134e6584058816ea355a665c9809c5f; merge only after all required gates pass, then verify exact-main checks and release.",
   "observed_branch": "feature/ar-1338-end-to-end-benchmark-journey",
   "observed_dirty": 0,
   "observed_head": "3f50a9aa5134e6584058816ea355a665c9809c5f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "End-to-end first-class benchmark journey qualification",
-  "updated_at": "2026-09-30T14:55:42+00:00",
+  "updated_at": "2026-09-30T14:56:17+00:00",
   "worktree_key": "asb-tui-ar-1338-end-to-end-benchmark-journey"
 }
 ---
@@ -57,3 +57,7 @@ The qualification is explicitly development/mock evidence and must not claim liv
 
 - 2026-09-30T14:55:42+00:00: Recorded command exit 0; command argv SHA-256
   bf34c6563495c059f4029414ff0654f9a5feb6f98bbaa1f0b0967e32d01bd8ab.
+
+- 2026-09-30T14:56:17+00:00: Opened signed+DCO PR #176 with executable credential-free
+  install-to-comparison journey qualification and CI contract validator. Local cargo test, clippy,
+  UI/help/parity/privacy checks pass.
