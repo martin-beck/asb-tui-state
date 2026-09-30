@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users choose a benchmark pool and sub-select or deselect individual measures.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Benchmark pool and measure selection route",
-  "updated_at": "2026-09-30T10:08:29+00:00",
+  "updated_at": "2026-09-30T10:10:59+00:00",
   "worktree_key": "asb-tui-ar-1334-benchmark-pool-selection"
 }
 ---
@@ -40,3 +40,6 @@ Selection remains renderer-neutral until wired through the formal TUI model and 
 
 - 2026-09-30T10:08:29+00:00: Recorded command exit 0; command argv SHA-256
   3f467ce8d643f3895b0548d7b2405bbe3b9edb9cffe02d1837174d3494a6fd5c.
+
+- 2026-09-30T10:10:59+00:00: Recorded command exit 0; command argv SHA-256
+  0eb867b8be880e375c4df5a4145ad24a8a5de7ed05afefaad9e3f82718b46638.
