@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `a4766b81294dff1df405de84c12b5b6b7becf892`
+- Product remote main: `effae8dbdfceaa45ba90f4282ff5216735b2aec9`
 - Local origin/main: `a4766b81294dff1df405de84c12b5b6b7becf892`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -10,12 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #161 | `feature/ar-1335-configuration-materialization@d1b5129a71fd` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): materialize reviewed setup bundle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36711233010 | `effae8dbdfce` | push | Trusted main verification | in_progress:- |
+| 36711232913 | `effae8dbdfce` | push | Repository quality | in_progress:- |
 | 36710963499 | `d1b5129a71fd` | pull_request | AWQ shadow observation | completed:success |
 | 36710963091 | `d1b5129a71fd` | pull_request | Repository quality | completed:success |
 | 36710718548 | `cae7055f28ff` | pull_request | AWQ shadow observation | completed:failure |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36710127112 | `83d05e103129` | pull_request | Repository quality | completed:cancelled |
 | 36709780158 | `987f29fa058c` | pull_request | AWQ shadow observation | completed:success |
 | 36709779898 | `987f29fa058c` | pull_request | Repository quality | completed:success |
-| 36709621019 | `7f35e4208f31` | pull_request | AWQ shadow observation | completed:cancelled |
-| 36709620401 | `7f35e4208f31` | pull_request | Repository quality | completed:success |
