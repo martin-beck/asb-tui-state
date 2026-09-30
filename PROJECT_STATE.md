@@ -12,14 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | DIRTY | - | test(config): cover materialization failure paths |
 | #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
-| #164 | `repair/ar-1335-coverage-clean@b07a2459c18e` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | test(config): cover materialization failure paths |
+| #164 | `repair/ar-1335-coverage-clean@b07a2459c18e` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(config): cover materialization failure paths |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36712233113 | `b07a2459c18e` | pull_request | AWQ shadow observation | in_progress:- |
-| 36712232592 | `b07a2459c18e` | pull_request | Repository quality | in_progress:- |
+| 36712233113 | `b07a2459c18e` | pull_request | AWQ shadow observation | completed:success |
+| 36712232592 | `b07a2459c18e` | pull_request | Repository quality | completed:success |
 | 36711876256 | `2b46329a2bdf` | pull_request | AWQ shadow observation | completed:failure |
 | 36711876157 | `2b46329a2bdf` | pull_request | Repository quality | completed:failure |
 | 36711233010 | `effae8dbdfce` | push | Trusted main verification | completed:failure |
