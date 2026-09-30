@@ -9,18 +9,18 @@
   ],
   "id": "AR-1336",
   "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 877996906a15a85243bfc681d188b49ec5cd6a6e; repair any failures before merge.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 6,
-  "observed_head": "5bc08b769bfbe482ba596ae489ecb5f1399c4c71",
+  "observed_branch": "feature/ar-1336-launch-live-statistics",
+  "observed_dirty": 0,
+  "observed_head": "4fa5c61cb681fe4c229fc7810e9ef9e7befdef61",
   "owner": "tui-ar1336-dev-20260930",
   "plan": "../plans/AR-1336.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:07:28+00:00",
+  "updated_at": "2026-09-30T12:07:34+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
