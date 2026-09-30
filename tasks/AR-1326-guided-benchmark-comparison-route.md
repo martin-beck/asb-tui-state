@@ -11,15 +11,18 @@
   ],
   "id": "AR-1326",
   "next_action": "Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route.",
+  "observed_branch": "feature/ar-1326-guided-benchmark-comparison-route",
+  "observed_dirty": 0,
+  "observed_head": "ba0e3cee38acdfcc029339d9b43e306d8d41cc86",
   "owner": "tui-ar1326-dev-20260930",
   "plan": "../plans/AR-1326.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make benchmark, offline replay, and comparison a single guided TUI route.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Guided benchmark and comparison route",
-  "updated_at": "2026-09-30T06:30:29+00:00",
+  "updated_at": "2026-09-30T06:30:34+00:00",
   "worktree_key": "asb-tui-ar-1326-guided-benchmark-comparison-route"
 }
 ---
