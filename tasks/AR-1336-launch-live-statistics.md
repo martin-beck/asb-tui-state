@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Repair remaining catalog contract blocker: add authoritative MeasurementCatalog generation and exact pool/group/benchmark/measure membership validation; then run independent review and hosted CI on a fresh signed+DCO PR.",
+  "next_action": "Obtain independent exact-head review and hosted CI for fresh PR #171 at 3b672bd96faf229468a841b50d17c97c9e2c0bdb; repair any remaining failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:46:49+00:00",
+  "updated_at": "2026-09-30T12:47:15+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -184,3 +184,11 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:46:49+00:00: Recorded command exit 0; command argv SHA-256
   5d9a6fb1ad90532cebcf7241161e249cb6dc2f3df9f8c51d00e70945e2b03ca0.
+
+- 2026-09-30T12:47:15+00:00: Authoritative catalog repair is complete on fresh PR #171. LiveSnapshot
+  now carries explicit LiveBenchmarkCatalog with generation, digest, and exact
+  pool/group/benchmark/measure membership. Launch validation requires catalog presence, exact
+  generation/digest, and traverses selected hierarchy; no latest_revision/debug/prefix heuristics
+  remain. Manual reconnect retries after poll errors while preserving reconnecting state. Terminal
+  outcomes are immutable. Branch was squashed onto origin/main into one signed+DCO commit 3b672bd.
+  Focused launch tests and clippy pass; hosted checks are running.

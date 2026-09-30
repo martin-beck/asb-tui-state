@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Repair remaining catalog contract blocker: add authoritative MeasurementCatalog generation and exact pool/group/benchmark/measure membership validation; then run independent review and hosted CI on a fresh signed+DCO PR. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Obtain independent exact-head review and hosted CI for fresh PR #171 at 3b672bd96faf229468a841b50d17c97c9e2c0bdb; repair any remaining failures before merge. |
 
 ### Planned (2)
 
