@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
-| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
+| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | DIRTY | - | test(config): cover materialization failure paths |
+| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
 | #165 | `feature/ar-1336-launch-live-statistics@877996906a15` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36712533485 | `5bc08b769bfb` | push | Repository quality | queued:- |
+| 36712533485 | `5bc08b769bfb` | push | Repository quality | in_progress:- |
 | 36712533427 | `5bc08b769bfb` | push | Trusted main verification | in_progress:- |
 | 36712233113 | `b07a2459c18e` | pull_request | AWQ shadow observation | completed:success |
 | 36712232592 | `b07a2459c18e` | pull_request | Repository quality | completed:success |
