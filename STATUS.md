@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**32 ARs tracked** across 3 active status categories.
+**32 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 26 |
+| **Done** | Accepted, integrated, and durably verified | 27 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -67,7 +67,7 @@ flowchart LR
         AR_1328["AR-1328 - Done"]:::status_done
         AR_1329["AR-1329 - Done"]:::status_done
         AR_1330["AR-1330 - Done"]:::status_done
-        AR_1331["AR-1331 - In progress"]:::status_in_progress
+        AR_1331["AR-1331 - Done"]:::status_done
         AR_1332["AR-1332 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
@@ -159,12 +159,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | tui-ar1331-boundary-20261001 | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
-
 ### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -175,7 +169,7 @@ flowchart LR
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Unclaimed | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, AR-1325 and paired ASB AR-1443 are verified; implement the selection-driven campaign and comparison route. |
 | P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Unclaimed | Make the clean-install-to-comparison journey a paired ASB/asb-tui release gate. | Promote after AR-1324, AR-1325 and AR-1326 plus paired ASB AR-1444 are done; run the disposable cross-repository journey and publish exact evidence. |
 
-### Done (26)
+### Done (27)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -205,3 +199,4 @@ flowchart LR
 | P1 | [AR-1228](tasks/AR-1228-formal-ownership-ci-post-merge.md): Formal ownership CI post-merge assurance | Unclaimed | Qualify formal UI ownership CI after merge. | Record exact post-merge workflow conclusions for corrected PR #71. |
 | P1 | [AR-1229](tasks/AR-1229-formal-transitions-post-merge.md): Executable formal transitions post-merge assurance | Unclaimed | Qualify executable formal UI transitions after merge. | None; retain as immutable post-merge assurance while AR-1201 tracks remaining parity work. |
 | P1 | [AR-1230](tasks/AR-1230-live-resize-post-merge.md): Live resize post-merge assurance | Unclaimed | Qualify live resize state preservation after merge. | None; retain as immutable post-merge assurance while AR-1202 tracks formal resize transition and full route parity. |
+| P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Unclaimed | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
