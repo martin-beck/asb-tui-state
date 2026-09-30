@@ -10,12 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #160 | `feature/ar-1334-benchmark-pool-selection@f936e4e52625` | `main` | BLOCKED | - | feat(selection): add generation-bound benchmark catalog |
+| #160 | `feature/ar-1334-benchmark-pool-selection@3fa059fc4e67` | `main` | BLOCKED | QUEUED: | feat(selection): add generation-bound benchmark catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36702018445 | `3fa059fc4e67` | pull_request | AWQ shadow observation | queued:- |
+| 36702018122 | `3fa059fc4e67` | pull_request | Repository quality | queued:- |
+| 36701354547 | `f936e4e52625` | pull_request | AWQ shadow observation | completed:success |
+| 36701354288 | `f936e4e52625` | pull_request | Repository quality | completed:success |
 | 36700841237 | `00184388a5f5` | pull_request | AWQ shadow observation | completed:success |
 | 36700841004 | `00184388a5f5` | pull_request | Repository quality | completed:success |
 | 36700575655 | `ca7b4279837c` | pull_request | AWQ shadow observation | completed:failure |
@@ -24,7 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36699147181 | `3fde8aa081fb` | push | Repository quality | completed:success |
 | 36698807480 | `51d9d7443901` | pull_request | AWQ shadow observation | completed:success |
 | 36698807360 | `51d9d7443901` | pull_request | Repository quality | completed:success |
-| 36698482938 | `4621ae9be99e` | pull_request | AWQ shadow observation | completed:cancelled |
-| 36698482811 | `4621ae9be99e` | pull_request | Repository quality | completed:success |
-| 36698458470 | `9b433f163953` | push | Trusted main verification | completed:success |
-| 36698458426 | `9b433f163953` | push | Repository quality | completed:success |
