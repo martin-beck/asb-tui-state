@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 32 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -75,7 +75,7 @@ flowchart LR
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Planned"]:::status_planned
         AR_1338["AR-1338 - Planned"]:::status_planned
-        AR_1339["AR-1339 - Planned"]:::status_planned
+        AR_1339["AR-1339 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -194,13 +194,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Unclaimed | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path. |
+| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Unclaimed | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify &#96;asb tui install&#96;, &#96;asb tui&#96;, status, upgrade, remove, and recovery. |
 
-### Planned (6)
+### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -209,7 +210,6 @@ flowchart LR
 | P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Unclaimed | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. |
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Unclaimed | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. |
-| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Unclaimed | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify &#96;asb tui install&#96;, &#96;asb tui&#96;, status, upgrade, remove, and recovery. |
 
 ### Done (32)
 
