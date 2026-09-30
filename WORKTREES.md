@@ -13,8 +13,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1326-guided-benchmark-comparison-route` | `feature/ar-1326-guided-benchmark-comparison-route` | `3598462691ce` | 0 | behind 11, ahead 0 |
 | `asb-tui-ar-1327` | `feature/ar-1327-cross-repository-journey-qualification` | `eae13ed1fd87` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `51d9d7443901` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `3fde8aa081fb` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/selection.rs`, `tests/benchmark_selection.rs` |
+| `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `ca7b4279837c` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 85, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 275, ahead 2 |
