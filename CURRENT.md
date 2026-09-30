@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for a2cf726; if green and approved, merge PR #161, watch post-merge checks, then release AR-1335. | tui-ar1335-dev-20260930 |
+| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for 2ff45f7; repair any remaining acceptance findings before merge. | tui-ar1335-dev-20260930 |
 
 ## Planned
 

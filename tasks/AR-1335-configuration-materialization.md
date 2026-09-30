@@ -8,16 +8,16 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Await exact-head CI/review for a2cf726; if green and approved, merge PR #161, watch post-merge checks, then release AR-1335.",
+  "next_action": "Await exact-head CI/review for 2ff45f7; repair any remaining acceptance findings before merge.",
   "owner": "tui-ar1335-dev-20260930",
   "plan": "../plans/AR-1335.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and validate all supported ASB configuration files from reviewed TUI selections.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "ASB configuration materialization and preflight",
-  "updated_at": "2026-09-30T11:29:16+00:00",
+  "updated_at": "2026-09-30T11:31:54+00:00",
   "worktree_key": "asb-tui-ar-1335-configuration-materialization"
 }
 ---
@@ -47,3 +47,7 @@ This AR owns asb-tui-side configuration materialization only; it does not modify
   retain it for explicit A apply, add formal apply transition/help, recover valid interrupted
   staging, and test corrupt-existing preservation. Full local tests/clippy pass; hosted checks and
   independent review pending.
+
+- 2026-09-30T11:31:54+00:00: Signed 2ff45f7 binds preflight to an injected catalog-bound provider
+  draft when available, refuses drift, and enforces 0600/fsync on recovered stage files. Local
+  clippy and focused/full tests pass; hosted checks and review pending.
