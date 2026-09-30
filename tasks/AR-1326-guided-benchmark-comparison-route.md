@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make benchmark, offline replay, and comparison a single guided TUI route.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Guided benchmark and comparison route",
-  "updated_at": "2026-09-30T06:30:34+00:00",
+  "updated_at": "2026-09-30T06:33:29+00:00",
   "worktree_key": "asb-tui-ar-1326-guided-benchmark-comparison-route"
 }
 ---
@@ -37,3 +37,6 @@ second runner or provider backend.
 
 - 2026-09-30T06:30:29+00:00: Recorded command exit 0; command argv SHA-256
   efde0ad8412aef32bd24bab9dc7e304ffe9cd93c9ff5ea64471d61ae80818a1a.
+
+- 2026-09-30T06:33:29+00:00: Recorded command exit 0; command argv SHA-256
+  faf1843bf1e9aa2b1acfc975c50d367118a2e8902a6be41e9b4e0fbf502a7d2f.
