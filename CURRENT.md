@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43% to >=90%; then open signed+DCO repair PR and verify exact-main checks. | tui-ar1336-dev-20260930 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -48,6 +42,7 @@ Never edit this file directly.
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | PR #159 exact head 51d9d74 is rebased onto current main and awaiting fresh hosted checks plus independent review; merge and release after both pass. | - |
 | P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. | - |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for d1b5129; merge AR-1335 when all hosted gates pass, then promote AR-1336. | - |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43% to >=90%; then open signed+DCO repair PR and verify exact-main checks. | - |
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |

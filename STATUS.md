@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**39 ARs tracked** across 3 active status categories.
+**39 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 36 |
+| **Done** | Accepted, integrated, and durably verified | 37 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -72,7 +72,7 @@ flowchart LR
         AR_1333["AR-1333 - Done"]:::status_done
         AR_1334["AR-1334 - Done"]:::status_done
         AR_1335["AR-1335 - Done"]:::status_done
-        AR_1336["AR-1336 - In progress"]:::status_in_progress
+        AR_1336["AR-1336 - Done"]:::status_done
         AR_1337["AR-1337 - Planned"]:::status_planned
         AR_1338["AR-1338 - Planned"]:::status_planned
         AR_1339["AR-1339 - Done"]:::status_done
@@ -194,12 +194,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43&#37; to &gt;=90&#37;; then open signed+DCO repair PR and verify exact-main checks. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -207,7 +201,7 @@ flowchart LR
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Unclaimed | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence. |
 
-### Done (36)
+### Done (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -239,6 +233,7 @@ flowchart LR
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | Unclaimed | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | PR #159 exact head 51d9d74 is rebased onto current main and awaiting fresh hosted checks plus independent review; merge and release after both pass. |
 | P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Unclaimed | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Unclaimed | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Await exact-head CI/review for d1b5129; merge AR-1335 when all hosted gates pass, then promote AR-1336. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Unclaimed | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Add complete successful V1.7+ poll_projection coverage fixture to raise Trusted main total line coverage from 89.43&#37; to &gt;=90&#37;; then open signed+DCO repair PR and verify exact-main checks. |
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Unclaimed | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |

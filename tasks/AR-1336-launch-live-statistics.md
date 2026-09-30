@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1336-launch-live-statistics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T13:53:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1335",
     "AR-1323"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
-  "owner": "tui-ar1336-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1336.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T13:30:41+00:00",
+  "updated_at": "2026-09-30T13:52:03+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -262,3 +262,6 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T13:30:41+00:00: PR #173 merged at 031b4d0 with green PR checks, but exact Trusted main
   verification still reports 89.43% and fails the 90% gate. No release yet.
+
+- 2026-09-30T13:52:03+00:00: Merged PR #174 at c3f76e668c6067c8f9a06e164d9b5828641c3747; Repository
+  quality and Trusted main verification green, including 90.02% coverage.
