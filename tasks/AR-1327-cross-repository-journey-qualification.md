@@ -10,16 +10,16 @@
     "AR-1330"
   ],
   "id": "AR-1327",
-  "next_action": "Promote after AR-1324, AR-1325, and AR-1326; run the disposable development journey and publish exact evidence with live-provider limits.",
+  "next_action": "PR #157 is at eae13ed; hosted Repository Quality, AWQ native gate, and AWQ core policy are green. Obtain independent exact-head review, merge, verify post-merge checks, then release.",
   "owner": "tui-ar1327-dev-20260930",
   "plan": "../plans/AR-1327.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the clean development install-to-comparison journey an asb-tui qualification gate.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Cross-repository first-class journey qualification",
-  "updated_at": "2026-09-30T06:57:07+00:00",
+  "updated_at": "2026-09-30T06:57:59+00:00",
   "worktree_key": "asb-tui-ar-1327-cross-repository-journey-qualification"
 }
 ---
@@ -56,3 +56,8 @@ evidence proves external OpenRouter reachability.
 
 - 2026-09-30T06:57:07+00:00: Recorded command exit 0; command argv SHA-256
   5d8e43e464a4bb0894187a8dc6316acb721dc0345a1dead4eb1da92fb0928c57.
+
+- 2026-09-30T06:57:59+00:00: Local executable qualification harness passes full cargo
+  tests/clippy/formal model/parity/credential boundary and development journey contract. PR #157
+  pushed at eae13ed; hosted checks green. Development-only scope excludes authenticated router, live
+  provider and production authorization.

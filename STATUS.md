@@ -163,7 +163,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | tui-ar1327-dev-20260930 | Make the clean development install-to-comparison journey an asb-tui qualification gate. | Promote after AR-1324, AR-1325, and AR-1326; run the disposable development journey and publish exact evidence with live-provider limits. |
+| P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | tui-ar1327-dev-20260930 | Make the clean development install-to-comparison journey an asb-tui qualification gate. | PR #157 is at eae13ed; hosted Repository Quality, AWQ native gate, and AWQ core policy are green. Obtain independent exact-head review, merge, verify post-merge checks, then release. |
 
 ### Done (31)
 
