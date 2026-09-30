@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #157 | `feature/ar-1327-cross-repository-journey-qualification@eae13ed1fd87` | `main` | BLOCKED | - | test(qualification): compose development journey fixture |
+| #157 | `feature/ar-1327-cross-repository-journey-qualification@eae13ed1fd87` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(qualification): compose development journey fixture |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36680701943 | `eae13ed1fd87` | pull_request | AWQ shadow observation | queued:- |
-| 36680701698 | `eae13ed1fd87` | pull_request | Repository quality | queued:- |
+| 36680701943 | `eae13ed1fd87` | pull_request | AWQ shadow observation | in_progress:- |
+| 36680701698 | `eae13ed1fd87` | pull_request | Repository quality | in_progress:- |
 | 36680594807 | `5b4eb2762b07` | pull_request | AWQ shadow observation | completed:failure |
 | 36680594464 | `5b4eb2762b07` | pull_request | Repository quality | completed:failure |
 | 36680508109 | `b579ddcea34f` | pull_request | AWQ shadow observation | completed:failure |
