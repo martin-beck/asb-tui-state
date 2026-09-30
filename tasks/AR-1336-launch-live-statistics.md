@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:08:19+00:00",
+  "updated_at": "2026-09-30T12:13:33+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -69,3 +69,6 @@ Development fixtures may run without external authentication or provider reachab
   landed; amended with SSH signature and force-with-lease pushed exact head
   4fa5c61cb681fe4c229fc7810e9ef9e7befdef61. PR #165 workflows are running (Repository quality run
   36712806539 and AWQ shadow run 36712807064).
+
+- 2026-09-30T12:13:33+00:00: Recorded command exit 0; command argv SHA-256
+  d898bfb31da7db2bc862de89c1dcc0cb0e8005a18d66f936a2b85d197048d415.
