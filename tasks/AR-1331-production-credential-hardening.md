@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1331-production-credential-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T07:32:37+00:00",
+  "claim_expires": "2026-09-30T07:35:59+00:00",
   "depends_on": [
     "AR-1328",
     "AR-1329",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track future TUI credential secrecy and authentication hardening.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "TUI production credential hardening follow-up",
-  "updated_at": "2026-09-30T05:32:37+00:00",
+  "updated_at": "2026-09-30T05:35:59+00:00",
   "worktree_key": "asb-tui-ar-1331"
 }
 ---
@@ -39,3 +39,5 @@ This AR is intentionally outside the current functional prototype gate.
 - 2026-09-30T05:31:06+00:00: Heartbeat by tui-ar1331-boundary-20261001.
 
 - 2026-09-30T05:32:37+00:00: Heartbeat by tui-ar1331-boundary-20261001.
+
+- 2026-09-30T05:35:59+00:00: Heartbeat by tui-ar1331-boundary-20261001.
