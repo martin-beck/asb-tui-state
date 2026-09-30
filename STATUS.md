@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Obtain independent exact-head review and hosted CI for PR #165 at 0a37121d0661627abdca10f2f12969b2b887e689; monitor the formal-model repair checks and fix any failures before merge. |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | tui-ar1336-dev-20260930 | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Obtain independent exact-head review and hosted CI for PR #165 at 0a37121d0661627abdca10f2f12969b2b887e689; GitHub created no synchronize/reopen workflows, so coordinator must restore hosted checks or investigate repository Actions trigger state before merge. |
 
 ### Planned (2)
 

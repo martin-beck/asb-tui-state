@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 0a37121d0661627abdca10f2f12969b2b887e689; monitor the formal-model repair checks and fix any failures before merge.",
+  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 0a37121d0661627abdca10f2f12969b2b887e689; GitHub created no synchronize/reopen workflows, so coordinator must restore hosted checks or investigate repository Actions trigger state before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics",
   "observed_dirty": 0,
   "observed_head": "0a37121d0661627abdca10f2f12969b2b887e689",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:15:26+00:00",
+  "updated_at": "2026-09-30T12:15:57+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -90,3 +90,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:15:26+00:00: Recorded command exit 0; command argv SHA-256
   0b507c7db2afb4e3ba5a9d223229e3c81000bb3cabdac3eaea743109dd6861a9.
+
+- 2026-09-30T12:15:57+00:00: PR #165 was safely closed/reopened to retrigger pull_request workflows
+  after the signed formal-model repair, but GitHub still reports no checks or runs for head 0a37121;
+  only old failed runs at 4fa5c61 exist. Local implementation and all gates remain green.
