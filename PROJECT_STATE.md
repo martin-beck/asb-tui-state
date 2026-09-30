@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #159 | `feature/ar-1333-user-driven-provider-setup@10b9a2a48943` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(wizard): add catalog-bound provider setup draft |
+| #159 | `feature/ar-1333-user-driven-provider-setup@4621ae9be99e` | `main` | UNKNOWN | - | feat(wizard): add catalog-bound provider setup draft |
 
 ## Recent workflows
 
