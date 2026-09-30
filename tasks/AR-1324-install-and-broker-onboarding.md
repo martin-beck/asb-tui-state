@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1324-install-and-broker-onboarding",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T08:05:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200"
   ],
   "id": "AR-1324",
   "next_action": "Promote after AR-1200; implement the clean development install, broker negotiation, and recovery route with explicit fixture/warning labels.",
-  "owner": "tui-ar1324-dev-20261001",
+  "owner": "",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make clean development ASB/asb-tui installation and local broker onboarding a selectable first step.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Install and broker onboarding",
-  "updated_at": "2026-09-30T06:12:58+00:00",
+  "updated_at": "2026-09-30T06:14:58+00:00",
   "worktree_key": "asb-tui-ar-1324-install-and-broker-onboarding"
 }
 ---
@@ -49,3 +49,10 @@ the verified ASB installation/control contract.
 
 - 2026-09-30T06:12:58+00:00: Recorded command exit 0; command argv SHA-256
   bf4a0e227b424b20c5f2bbd19c8a0fa542e33308750f25a93849c6970f261b70.
+
+- 2026-09-30T06:14:58+00:00: Development-only onboarding implemented and merged as PR #154 at
+  dc36b28. Added bounded onboarding --format json with explicit development provenance,
+  production-profile rejection, closed-field validation, and deterministic
+  repair_bundle/retry_broker/exit recovery choices. Independent review approved exact head 64d1dff;
+  required PR checks passed after documentation assertion repair, and post-merge repository quality
+  36677097503 plus trusted main 36677097493 passed.
