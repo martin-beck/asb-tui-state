@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | - |
+| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | ar1340-dev-channel |
 
 ## Planned
 
