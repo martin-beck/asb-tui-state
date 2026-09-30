@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**39 ARs tracked** across 1 active status categories.
+**41 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 39 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -76,6 +76,8 @@ flowchart LR
         AR_1337["AR-1337 - Done"]:::status_done
         AR_1338["AR-1338 - Done"]:::status_done
         AR_1339["AR-1339 - Done"]:::status_done
+        AR_1340["AR-1340 - Planned"]:::status_planned
+        AR_1341["AR-1341 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -138,6 +140,8 @@ flowchart LR
     AR_1336 --> AR_1338
     AR_1337 --> AR_1338
     AR_1339 --> AR_1338
+    AR_1339 --> AR_1340
+    AR_1340 --> AR_1341
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -190,9 +194,18 @@ flowchart LR
 | [AR-1336](tasks/AR-1336-launch-live-statistics.md) | [AR-1323](tasks/AR-1323-helper-execution-handoff.md), [AR-1335](tasks/AR-1335-configuration-materialization.md) | [AR-1337](tasks/AR-1337-final-results-reports.md), [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md) |
 | [AR-1337](tasks/AR-1337-final-results-reports.md) | [AR-1223](tasks/AR-1223-tui-replay-comparison.md), [AR-1336](tasks/AR-1336-launch-live-statistics.md) | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md) |
 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md) | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md), [AR-1334](tasks/AR-1334-benchmark-pool-selection.md), [AR-1335](tasks/AR-1335-configuration-materialization.md), [AR-1336](tasks/AR-1336-launch-live-statistics.md), [AR-1337](tasks/AR-1337-final-results-reports.md), [AR-1339](tasks/AR-1339-top-level-install-launch.md) | None |
-| [AR-1339](tasks/AR-1339-top-level-install-launch.md) | [AR-1200](tasks/AR-1200-asb-router-client.md), [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md), [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md) |
+| [AR-1339](tasks/AR-1339-top-level-install-launch.md) | [AR-1200](tasks/AR-1200-asb-router-client.md), [AR-1324](tasks/AR-1324-install-and-broker-onboarding.md), [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md) | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md), [AR-1340](tasks/AR-1340.md) |
+| [AR-1340](tasks/AR-1340.md) | [AR-1339](tasks/AR-1339-top-level-install-launch.md) | [AR-1341](tasks/AR-1341.md) |
+| [AR-1341](tasks/AR-1341.md) | [AR-1340](tasks/AR-1340.md) | None |
 
 ## Complete AR inventory
+
+### Planned (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Unclaimed | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB&#x27;s explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. |
+| P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 
 ### Done (39)
 
