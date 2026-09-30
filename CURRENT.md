@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | ar1340-dev-channel |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -52,6 +46,7 @@ Never edit this file directly.
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await successful exact-main Trusted verification for merge SHA d7e5a53b9f7df0a2540b283baf6a6c8ee7a3db68; Repository Quality is green, then release AR-1337 and promote AR-1338. | - |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Await exact-main Repository Quality and Trusted main verification for merge SHA b1e510744d9d5c76005a41c469d20b06e4850d04; release AR-1338 only after both are green. | - |
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. | - |
+| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |

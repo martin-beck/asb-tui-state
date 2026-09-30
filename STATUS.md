@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**42 ARs tracked** across 3 active status categories.
+**42 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 39 |
+| **Done** | Accepted, integrated, and durably verified | 40 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -76,7 +76,7 @@ flowchart LR
         AR_1337["AR-1337 - Done"]:::status_done
         AR_1338["AR-1338 - Done"]:::status_done
         AR_1339["AR-1339 - Done"]:::status_done
-        AR_1340["AR-1340 - In progress"]:::status_in_progress
+        AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Planned"]:::status_planned
         AR_1342["AR-1342 - Planned"]:::status_planned
     end
@@ -203,12 +203,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | ar1340-dev-channel | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB&#x27;s explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -216,7 +210,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
 
-### Done (39)
+### Done (40)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -252,6 +246,7 @@ flowchart LR
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await successful exact-main Trusted verification for merge SHA d7e5a53b9f7df0a2540b283baf6a6c8ee7a3db68; Repository Quality is green, then release AR-1337 and promote AR-1338. |
 | P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Unclaimed | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Await exact-main Repository Quality and Trusted main verification for merge SHA b1e510744d9d5c76005a41c469d20b06e4850d04; release AR-1338 only after both are green. |
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Unclaimed | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. |
+| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Unclaimed | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB&#x27;s explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
