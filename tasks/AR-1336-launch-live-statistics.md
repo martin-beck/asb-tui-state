@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Repair post-merge Trusted main coverage failure at 0f1e414: total line coverage 88.92% below 90 gate; add focused catalog/control/projection coverage, signed+DCO PR, then rerun hosted and main checks.",
+  "next_action": "Run independent review and hosted checks for coverage repair PR #172 at 21473511c126793522d3f3f77d08772382593c31; merge, then verify Trusted main coverage and release AR-1336.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T13:05:06+00:00",
+  "updated_at": "2026-09-30T13:05:44+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -233,3 +233,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T13:05:06+00:00: Recorded command exit 0; command argv SHA-256
   f4779c7bbbe25134cf68f57cf9f9255754e217278f2cb8284bf06fcbf150d126.
+
+- 2026-09-30T13:05:44+00:00: Post-merge Trusted main failed total coverage at 88.92%. Coverage
+  repair PR #172 adds focused canonical catalog and launch-fence tests; local all-target tests pass
+  and commit is ED25519-signed with DCO.

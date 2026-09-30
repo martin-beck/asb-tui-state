@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Repair post-merge Trusted main coverage failure at 0f1e414: total line coverage 88.92% below 90 gate; add focused catalog/control/projection coverage, signed+DCO PR, then rerun hosted and main checks. | tui-ar1336-dev-20260930 |
+| P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Run independent review and hosted checks for coverage repair PR #172 at 21473511c126793522d3f3f77d08772382593c31; merge, then verify Trusted main coverage and release AR-1336. | tui-ar1336-dev-20260930 |
 
 ## Planned
 
