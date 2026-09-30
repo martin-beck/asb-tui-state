@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1325](tasks/AR-1325-first-class-setup-wizard-route.md): First-class setup wizard route | Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract. | Promote after the helper handoff and development onboarding dependencies are done; bind wizard screens to the local setup contract and add restart/cancellation evidence. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1326](tasks/AR-1326-guided-benchmark-comparison-route.md): Guided benchmark and comparison route | Make benchmark, offline replay, and comparison a single guided TUI route. | Promote after AR-1222, AR-1223, and AR-1325; implement the selection-driven development campaign and comparison route. | - |
 | P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Make the clean development install-to-comparison journey an asb-tui qualification gate. | Promote after AR-1324, AR-1325, and AR-1326; run the disposable development journey and publish exact evidence with live-provider limits. | - |
 
