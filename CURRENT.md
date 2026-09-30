@@ -3,6 +3,14 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | - |
+| P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
+| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
