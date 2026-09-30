@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 4fa5c61cb681fe4c229fc7810e9ef9e7befdef61; repair any failures before merge.",
+  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 0a37121d0661627abdca10f2f12969b2b887e689; monitor the formal-model repair checks and fix any failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics",
   "observed_dirty": 0,
   "observed_head": "0a37121d0661627abdca10f2f12969b2b887e689",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:13:52+00:00",
+  "updated_at": "2026-09-30T12:14:30+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -78,3 +78,9 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:13:52+00:00: Recorded command exit 0; command argv SHA-256
   6509c565a69d3bdef26745d39741d8155b7db12057ad47895bd585aa3c64fc60.
+
+- 2026-09-30T12:14:30+00:00: Formal-model repair committed and pushed as signed 0a37121: run-control
+  start_run, cancel_run, and reconnect transitions plus focused executable test; WorkspaceState
+  gates emitted actions through the formal model. Full cargo test, clippy, UI model/source parity,
+  credential boundary, and diff checks pass locally. PR #165 now points to exact head 0a37121;
+  hosted checks have not started yet.
