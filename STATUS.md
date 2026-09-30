@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -73,7 +73,7 @@ flowchart LR
         AR_1334["AR-1334 - Done"]:::status_done
         AR_1335["AR-1335 - Done"]:::status_done
         AR_1336["AR-1336 - Done"]:::status_done
-        AR_1337["AR-1337 - Open"]:::status_open
+        AR_1337["AR-1337 - In progress"]:::status_in_progress
         AR_1338["AR-1338 - Planned"]:::status_planned
         AR_1339["AR-1339 - Done"]:::status_done
     end
@@ -194,11 +194,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Unclaimed | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
+| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | tui-ar1337-dev-20260930 | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. |
 
 ### Planned (1)
 

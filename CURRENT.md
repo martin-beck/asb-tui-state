@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. | - |
+| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. | tui-ar1337-dev-20260930 |
 
 ## Planned
 
