@@ -12,7 +12,7 @@
     "AR-1339"
   ],
   "id": "AR-1338",
-  "next_action": "Await independent review and exact-head hosted checks for PR #176 at 3f50a9aa5134e6584058816ea355a665c9809c5f; merge only after all required gates pass, then verify exact-main checks and release.",
+  "next_action": "Obtain independent exact-head review for PR #176, merge only after approval, then verify post-merge Repository Quality and Trusted main checks before releasing AR-1338.",
   "observed_branch": "feature/ar-1338-end-to-end-benchmark-journey",
   "observed_dirty": 0,
   "observed_head": "3f50a9aa5134e6584058816ea355a665c9809c5f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "End-to-end first-class benchmark journey qualification",
-  "updated_at": "2026-09-30T14:56:17+00:00",
+  "updated_at": "2026-09-30T15:00:42+00:00",
   "worktree_key": "asb-tui-ar-1338-end-to-end-benchmark-journey"
 }
 ---
@@ -61,3 +61,11 @@ The qualification is explicitly development/mock evidence and must not claim liv
 - 2026-09-30T14:56:17+00:00: Opened signed+DCO PR #176 with executable credential-free
   install-to-comparison journey qualification and CI contract validator. Local cargo test, clippy,
   UI/help/parity/privacy checks pass.
+
+- 2026-09-30T15:00:42+00:00: Opened signed+DCO PR #176 at exact head
+  3f50a9aa5134e6584058816ea355a665c9809c5f. It adds the AR-1338 development/mock contract, CI
+  validator, and executable bounded transcript covering install, launch, wizard setup, nested
+  benchmark/measure selection, digest-bound materialization/preflight, launch, live statistics,
+  final results, recent history, and comparison. Local all-target tests, strict clippy,
+  UI/help/parity/privacy/shell gates pass. Hosted Repository Quality run 36732826744 and AWQ
+  shadow/core run 36732827575 are green. No ASB repository changes.

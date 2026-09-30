@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Await independent review and exact-head hosted checks for PR #176 at 3f50a9aa5134e6584058816ea355a665c9809c5f; merge only after all required gates pass, then verify exact-main checks and release. | tui-ar1338-qual-20260930 |
+| P0 | [AR-1338](tasks/AR-1338-end-to-end-benchmark-journey.md): End-to-end first-class benchmark journey qualification | Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey. | Obtain independent exact-head review for PR #176, merge only after approval, then verify post-merge Repository Quality and Trusted main checks before releasing AR-1338. | tui-ar1338-qual-20260930 |
 
 ## Done
 
