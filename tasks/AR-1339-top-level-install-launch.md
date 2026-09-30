@@ -9,7 +9,7 @@
     "AR-1327"
   ],
   "id": "AR-1339",
-  "next_action": "Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify `asb tui install`, `asb tui`, status, upgrade, remove, and recovery.",
+  "next_action": "PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release.",
   "observed_branch": "feature/ar-1339-top-level-install-launch",
   "observed_dirty": 0,
   "observed_head": "d47b27a7beff96fafde62184668e29031d0b11ef",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported top-level ASB commands install and launch the standalone asb-tui application safely.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Top-level ASB TUI install and launch integration",
-  "updated_at": "2026-09-30T09:44:56+00:00",
+  "updated_at": "2026-09-30T09:47:32+00:00",
   "worktree_key": "asb-tui-ar-1339-top-level-install-launch"
 }
 ---
@@ -43,3 +43,6 @@ This AR belongs to the standalone asb-tui integration boundary; no ASB source ch
 
 - 2026-09-30T09:44:50+00:00: Recorded command exit 0; command argv SHA-256
   2621aba9c3c2dff3ec4d708f8063b1f851a425f393ce4611efa94fd6176310ed.
+
+- 2026-09-30T09:47:32+00:00: Standalone command adapter and development router integration are
+  implemented; local and hosted checks pass. Awaiting independent exact-head review before merge.

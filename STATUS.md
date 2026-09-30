@@ -199,7 +199,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1333](tasks/AR-1333-user-driven-provider-setup.md): User-driven provider setup and configuration draft | tui-ar1333-dev-20260930 | Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard. | Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path. |
-| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | tui-ar1339-dev-20260930 | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | Promote after the development router, onboarding, and qualification fixtures are complete; implement and qualify &#96;asb tui install&#96;, &#96;asb tui&#96;, status, upgrade, remove, and recovery. |
+| P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | tui-ar1339-dev-20260930 | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. |
 
 ### Planned (5)
 
