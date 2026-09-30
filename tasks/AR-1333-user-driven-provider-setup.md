@@ -10,7 +10,7 @@
     "AR-1327"
   ],
   "id": "AR-1333",
-  "next_action": "Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path.",
+  "next_action": "PR #159 repair head 4621ae9 is awaiting hosted checks and independent exact-head review; then merge and release with post-merge evidence.",
   "observed_branch": "feature/ar-1333-user-driven-provider-setup",
   "observed_dirty": 0,
   "observed_head": "4621ae9be99ed0281a582dc54c78ba0432c46d28",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:48:42+00:00",
+  "updated_at": "2026-09-30T09:49:49+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -43,3 +43,7 @@ Development-first setup only; raw credentials, live authorization, and productio
 
 - 2026-09-30T09:43:42+00:00: Recorded command exit 0; command argv SHA-256
   3bcb31416a791900e15cd68a1ed743693caca20bdfe4caeb7c459c8de7878ccd.
+
+- 2026-09-30T09:49:49+00:00: Repair commit 4621ae9 binds runtime apply to catalog generation,
+  rejects partial catalogs, wires the single-use atomic gate, and updates formal model/test. Local
+  full tests, clippy, model/parity and credential checks pass.
