@@ -207,7 +207,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | ar1342-protocol-matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Promote and claim the protocol-matrix slice after AR-1340; reconcile the supported ASB control minors and lifecycle envelope against exact current-main fixtures. |
+| P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | ar1342-protocol-matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Obtain independent review and hosted required checks for PR #178 at exact head df7ffdc1a422d2f847e531d891af59f333fda63d; resolve only evidence-backed findings, then merge/release and verify post-merge. |
 
 ### Planned (1)
 
