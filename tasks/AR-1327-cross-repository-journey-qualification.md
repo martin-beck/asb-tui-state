@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1327-cross-repository-journey-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T09:46:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1324",
     "AR-1325",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1327",
   "next_action": "PR #157 is at eae13ed; hosted Repository Quality, AWQ native gate, and AWQ core policy are green. Obtain independent exact-head review, merge, verify post-merge checks, then release.",
-  "owner": "tui-ar1327-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1327.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the clean development install-to-comparison journey an asb-tui qualification gate.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Cross-repository first-class journey qualification",
-  "updated_at": "2026-09-30T06:57:59+00:00",
+  "updated_at": "2026-09-30T06:59:29+00:00",
   "worktree_key": "asb-tui-ar-1327-cross-repository-journey-qualification"
 }
 ---
@@ -61,3 +61,9 @@ evidence proves external OpenRouter reachability.
   tests/clippy/formal model/parity/credential boundary and development journey contract. PR #157
   pushed at eae13ed; hosted checks green. Development-only scope excludes authenticated router, live
   provider and production authorization.
+
+- 2026-09-30T06:59:29+00:00: Implemented and merged PR #157. Exact main
+  9ba15a206e9a5895a5085dd40153c13dbc1e3392. PR head eae13ed1fd870edf98ced9c9cdad63737147aff8 passed
+  independent review and hosted checks. Post-merge Trusted main verification 36680963111 and
+  Repository quality 36680963143 passed. Development-only qualification explicitly excludes
+  credentials, network, live providers, production authorization, and authenticated router.
