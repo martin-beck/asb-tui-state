@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Run independent review and hosted checks for coverage repair PR #172 at 21473511c126793522d3f3f77d08772382593c31; merge, then verify Trusted main coverage and release AR-1336.",
+  "next_action": "Implement complete successful V1.7+ poll_projection fixture covering benchmark, measurement, history, agent, provider, configuration, recording, and auth projections; reach >=90% trusted coverage, then signed+DCO PR and main verification.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T13:15:28+00:00",
+  "updated_at": "2026-09-30T13:26:05+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -255,3 +255,7 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T13:15:28+00:00: Recorded command exit 0; command argv SHA-256
   9715285185c6b8e0235ad20e3fde5a202891a8f9151dc0716fd5e8d4f73d7ba6.
+
+- 2026-09-30T13:26:05+00:00: Trusted main at 031b4d0 remains 89.43%; prior focused repair is
+  insufficient. Worker identified the complete successful polling fixture as the responsible path to
+  clear the 90% gate.
