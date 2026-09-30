@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #160 | `feature/ar-1334-benchmark-pool-selection@3fa059fc4e67` | `main` | BLOCKED | QUEUED: | feat(selection): add generation-bound benchmark catalog |
+| #160 | `feature/ar-1334-benchmark-pool-selection@9020a2fbf4db` | `main` | BLOCKED | - | feat(selection): add generation-bound benchmark catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36702018445 | `3fa059fc4e67` | pull_request | AWQ shadow observation | queued:- |
-| 36702018122 | `3fa059fc4e67` | pull_request | Repository quality | queued:- |
+| 36702018445 | `3fa059fc4e67` | pull_request | AWQ shadow observation | completed:success |
+| 36702018122 | `3fa059fc4e67` | pull_request | Repository quality | completed:success |
 | 36701354547 | `f936e4e52625` | pull_request | AWQ shadow observation | completed:success |
 | 36701354288 | `f936e4e52625` | pull_request | Repository quality | completed:success |
 | 36700841237 | `00184388a5f5` | pull_request | AWQ shadow observation | completed:success |
