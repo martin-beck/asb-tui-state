@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1334](tasks/AR-1334-benchmark-pool-selection.md): Benchmark pool and measure selection route | Let users choose a benchmark pool and sub-select or deselect individual measures. | Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Promote after provider setup and benchmark selection; implement typed ASB configuration generation, preflight, atomic persistence, and validation. | - |
 | P0 | [AR-1336](tasks/AR-1336-launch-live-statistics.md): Benchmark launch and live statistics route | Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI. | Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection. | - |
 | P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Promote after live statistics; implement final measure results, provenance, failures, history, replay, and compatible comparison presentation. | - |
