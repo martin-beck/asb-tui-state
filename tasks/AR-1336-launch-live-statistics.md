@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Obtain independent exact-head review and hosted CI for fresh PR #171 at 869e794445f3dd9727702d094cc25e53bf235394; repair any remaining failures before merge.",
+  "next_action": "Repair remaining catalog contract blocker: add authoritative MeasurementCatalog generation and exact pool/group/benchmark/measure membership validation; then run independent review and hosted CI on a fresh signed+DCO PR.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 1,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:42:20+00:00",
+  "updated_at": "2026-09-30T12:43:45+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -168,3 +168,7 @@ Development fixtures may run without external authentication or provider reachab
   tests, clippy, UI model/source parity, credential boundary and diff checks pass locally. Commit
   has ED25519 signature SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE and DCO trailer. Fresh PR
   #171 is open; hosted checks are running.
+
+- 2026-09-30T12:43:45+00:00: Fresh review of PR #171 approves terminal immutability and reconnect
+  preservation, but blocks merge because benchmark generation is compared to
+  snapshot.latest_revision and hierarchy validation relies on ID-string inference. No merge.
