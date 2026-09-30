@@ -15,14 +15,14 @@ Generated from local Git and GitHub. Do not edit.
 | #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
 | #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | DIRTY | - | feat(run): launch reviewed campaigns and live statistics |
 | #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
-| #171 | `repair/ar-1336-live-invariants@3b672bd96faf` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: fence live catalog and terminal run outcomes |
+| #171 | `repair/ar-1336-live-invariants@3b672bd96faf` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:SUCCESS, IN_PROGRESS: | fix: fence live catalog and terminal run outcomes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36717003822 | `3b672bd96faf` | pull_request | AWQ shadow observation | in_progress:- |
-| 36717003060 | `3b672bd96faf` | pull_request | Repository quality | in_progress:- |
+| 36717003060 | `3b672bd96faf` | pull_request | Repository quality | completed:failure |
 | 36716413187 | `869e794445f3` | pull_request | AWQ shadow observation | completed:failure |
 | 36716412760 | `869e794445f3` | pull_request | Repository quality | completed:failure |
 | 36715612744 | `402ec56db350` | pull_request | AWQ shadow observation | completed:failure |
