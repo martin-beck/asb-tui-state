@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | Promote and implement the development broker descriptor entrypoint/fixture consumed by ASB dev launch, then qualify exact-head handoff behavior. | - |
+| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | Promote and implement the development broker descriptor entrypoint/fixture consumed by ASB dev launch, then qualify exact-head handoff behavior. | codex-ar1343-broker |
 
 ## Blocked
 
