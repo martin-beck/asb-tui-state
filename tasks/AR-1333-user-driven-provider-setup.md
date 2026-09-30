@@ -13,16 +13,16 @@
   "next_action": "PR #159 repair head 4621ae9 is awaiting hosted checks and independent exact-head review; then merge and release with post-merge evidence.",
   "observed_branch": "feature/ar-1333-user-driven-provider-setup",
   "observed_dirty": 0,
-  "observed_head": "7915b37158e66262dfa6a4117ce19440ba3ea9a1",
+  "observed_head": "51d9d7443901ff343e1ee95119bb2a10bde71f3e",
   "owner": "tui-ar1333-dev-20260930",
   "plan": "../plans/AR-1333.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:51:19+00:00",
+  "updated_at": "2026-09-30T09:51:24+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
