@@ -14,7 +14,7 @@
   "id": "AR-1338",
   "next_action": "Promote after all journey components and the top-level install/launch router are done; qualify the complete visible setup-to-results path with disposable development fixtures and exact evidence.",
   "observed_branch": "feature/ar-1338-end-to-end-benchmark-journey",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "d7e5a53b9f7df0a2540b283baf6a6c8ee7a3db68",
   "owner": "tui-ar1338-qual-20260930",
   "plan": "../plans/AR-1338.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete user-driven asb-tui setup, benchmark, live-statistics, results, and comparison journey.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "End-to-end first-class benchmark journey qualification",
-  "updated_at": "2026-09-30T14:54:52+00:00",
+  "updated_at": "2026-09-30T14:54:58+00:00",
   "worktree_key": "asb-tui-ar-1338-end-to-end-benchmark-journey"
 }
 ---
