@@ -10,11 +10,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
-| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | UNKNOWN | - | test(config): cover materialization failure paths |
-| #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | UNKNOWN | - | feat: launch reviewed campaigns and show live statistics |
-| #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | UNKNOWN | - | feat(run): launch reviewed campaigns and live statistics |
-| #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
+| #162 | `feature/ar-1335-configuration-materialization@0ad78a3bbf8d` | `main` | DIRTY | - | test(config): cover materialization failure paths |
+| #163 | `repair/ar-1335-coverage@494c11f958d6` | `main` | DIRTY | - | test(config): cover materialization failure paths |
+| #165 | `feature/ar-1336-launch-live-statistics@0a37121d0661` | `main` | DIRTY | - | feat: launch reviewed campaigns and show live statistics |
+| #168 | `feature/ar-1336-launch-live-statistics-clean@554f20ebb4e8` | `main` | DIRTY | - | feat(run): launch reviewed campaigns and live statistics |
+| #170 | `feature/ar-1336-launch-live-statistics-v2@402ec56db350` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(run): launch campaigns and project truthful live statistics |
 
 ## Recent workflows
 
