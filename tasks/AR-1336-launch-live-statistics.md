@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:43:45+00:00",
+  "updated_at": "2026-09-30T12:46:20+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -172,3 +172,6 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T12:43:45+00:00: Fresh review of PR #171 approves terminal immutability and reconnect
   preservation, but blocks merge because benchmark generation is compared to
   snapshot.latest_revision and hierarchy validation relies on ID-string inference. No merge.
+
+- 2026-09-30T12:46:20+00:00: Recorded command exit 0; command argv SHA-256
+  424e7ed0313d845d04059d75fcde848ef7ad27fb2face21051a73febdd59a20a.
