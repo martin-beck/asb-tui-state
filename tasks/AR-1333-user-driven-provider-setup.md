@@ -11,15 +11,18 @@
   ],
   "id": "AR-1333",
   "next_action": "Promote after its dependencies are reviewed; implement the supported-provider wizard review, typed configuration draft, and atomic apply path.",
+  "observed_branch": "feature/ar-1333-user-driven-provider-setup",
+  "observed_dirty": 0,
+  "observed_head": "9ba15a206e9a5895a5085dd40153c13dbc1e3392",
   "owner": "tui-ar1333-dev-20260930",
   "plan": "../plans/AR-1333.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:37:55+00:00",
+  "updated_at": "2026-09-30T09:38:00+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
