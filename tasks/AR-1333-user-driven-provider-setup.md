@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let users configure supported providers, models, agents, defaults, and authentication references through the complete TUI wizard.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "User-driven provider setup and configuration draft",
-  "updated_at": "2026-09-30T09:51:06+00:00",
+  "updated_at": "2026-09-30T09:51:19+00:00",
   "worktree_key": "asb-tui-ar-1333-user-driven-provider-setup"
 }
 ---
@@ -53,3 +53,6 @@ Development-first setup only; raw credentials, live authorization, and productio
 
 - 2026-09-30T09:51:00+00:00: Recorded command exit 0; command argv SHA-256
   0839c08e495f96b6494e2a9d3d31c60c1bd609e9fb4fd85a6d6e6966ca32e50f.
+
+- 2026-09-30T09:51:19+00:00: Recorded command exit 0; command argv SHA-256
+  d0094568ba98232d3c2e47c934458d550fca3c28e7c6b2d8ea7eca9c4430e1ce.
