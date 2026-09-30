@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -63,7 +63,7 @@ flowchart LR
         AR_1324["AR-1324 - Done"]:::status_done
         AR_1325["AR-1325 - Done"]:::status_done
         AR_1326["AR-1326 - Done"]:::status_done
-        AR_1327["AR-1327 - Open"]:::status_open
+        AR_1327["AR-1327 - In progress"]:::status_in_progress
         AR_1328["AR-1328 - Done"]:::status_done
         AR_1329["AR-1329 - Done"]:::status_done
         AR_1330["AR-1330 - Done"]:::status_done
@@ -159,11 +159,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | Unclaimed | Make the clean development install-to-comparison journey an asb-tui qualification gate. | Promote after AR-1324, AR-1325, and AR-1326; run the disposable development journey and publish exact evidence with live-provider limits. |
+| P0 | [AR-1327](tasks/AR-1327-cross-repository-journey-qualification.md): Cross-repository first-class journey qualification | tui-ar1327-dev-20260930 | Make the clean development install-to-comparison journey an asb-tui qualification gate. | Promote after AR-1324, AR-1325, and AR-1326; run the disposable development journey and publish exact evidence with live-provider limits. |
 
 ### Done (31)
 
