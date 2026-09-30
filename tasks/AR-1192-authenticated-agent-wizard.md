@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1192",
-  "next_action": "Remain blocked only on ASB AR-1316 authenticated agent-catalog producer; provider, model, authentication, defaults, recording and TUI dispatch contracts are now merged and verified.",
+  "next_action": "Development catalog and wizard integration is complete; live authenticated catalog publication remains future qualification, not a development prerequisite.",
   "owner": "",
   "plan": "../plans/AR-1192.md",
   "priority": "P0",

@@ -1,8 +1,8 @@
 # AR-1329 — Development provider setup integration
 
 Bind the standalone development enrollment route into the first-run/reconfiguration
-wizard (paired with the ASB AR-1499 and AR-1500 contracts), without depending on
-the live authenticated router or helper qualification.
+wizard using local development contracts, without depending on a live router, provider
+authorization, or production helper qualification.
 and the provider/model/default selection flow. Support add/edit provider, model
 compatibility, set/rotate/reset credential, apply to all or selected agents, and
 persist only safe development metadata and defaults.

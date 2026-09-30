@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
-  "next_action": "Remain blocked only on authoritative ASB readiness/catalog publication through AR-1316; local startup routing and manual reconfiguration are merged and verified.",
+  "next_action": "Development startup routing and manual reconfiguration are complete; live readiness/catalog publication remains future qualification, not a development prerequisite.",
   "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P0",
