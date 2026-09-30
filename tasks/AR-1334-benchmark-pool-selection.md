@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1334-benchmark-pool-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T12:58:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1326",
     "AR-1333"
   ],
   "id": "AR-1334",
   "next_action": "Promote after AR-1333; implement catalog-backed benchmark group, benchmark, and measure search and tri-state selection.",
-  "owner": "tui-ar1334-dev-20260930",
+  "owner": "",
   "plan": "../plans/AR-1334.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Let users choose a benchmark pool and sub-select or deselect individual measures.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Benchmark pool and measure selection route",
-  "updated_at": "2026-09-30T10:41:20+00:00",
+  "updated_at": "2026-09-30T10:44:27+00:00",
   "worktree_key": "asb-tui-ar-1334-benchmark-pool-selection"
 }
 ---
@@ -64,3 +64,6 @@ Selection remains renderer-neutral until wired through the formal TUI model and 
 
 - 2026-09-30T10:41:20+00:00: Recorded command exit 0; command argv SHA-256
   edf88d4657db00997a877608ec4d69c65cf87d8f8f43de900ff4c17dd8e217b8.
+
+- 2026-09-30T10:44:27+00:00: PR #160 merged at main a4766b8; exact-head hosted checks passed;
+  post-merge Trusted main verification 36703932006 and Repository Quality 36703932079 passed.
