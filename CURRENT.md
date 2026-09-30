@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | Implement visible preflight route/formal-model transition and integrate materialized bundle apply; retain exact-head PR #161 checks. | tui-ar1335-dev-20260930 |
+| P0 | [AR-1335](tasks/AR-1335-configuration-materialization.md): ASB configuration materialization and preflight | Generate and validate all supported ASB configuration files from reviewed TUI selections. | After hosted checks pass, implement visible preflight route/formal-model transition and integrate materialized bundle apply; do not merge backend-only PR yet. | tui-ar1335-dev-20260930 |
 
 ## Planned
 
