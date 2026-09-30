@@ -10,14 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #155 | `feature/ar-1325-first-class-setup-wizard@8efbf980be1a` | `main` | BLOCKED | QUEUED:, QUEUED: | test(wizard): prove completion restart safety |
+| #155 | `feature/ar-1325-first-class-setup-wizard@321ebf803707` | `main` | BLOCKED | - | test(wizard): prove completion restart safety |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36677517560 | `8efbf980be1a` | pull_request | AWQ shadow observation | queued:- |
-| 36677517163 | `8efbf980be1a` | pull_request | Repository quality | queued:- |
+| 36677941096 | `321ebf803707` | pull_request | AWQ shadow observation | queued:- |
+| 36677940801 | `321ebf803707` | pull_request | Repository quality | queued:- |
+| 36677517560 | `8efbf980be1a` | pull_request | AWQ shadow observation | completed:failure |
+| 36677517163 | `8efbf980be1a` | pull_request | Repository quality | completed:failure |
 | 36677097503 | `dc36b28fa84b` | push | Repository quality | completed:success |
 | 36677097493 | `dc36b28fa84b` | push | Trusted main verification | completed:success |
 | 36676896281 | `64d1dff31ae4` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36676647593 | `957d986238ae` | pull_request | Repository quality | completed:failure |
 | 36676486477 | `e21731ba9d53` | pull_request | AWQ shadow observation | completed:failure |
 | 36676486335 | `e21731ba9d53` | pull_request | Repository quality | completed:failure |
-| 36675608081 | `406a6da0a60a` | push | Trusted main verification | completed:success |
-| 36675608056 | `406a6da0a60a` | push | Repository quality | completed:success |

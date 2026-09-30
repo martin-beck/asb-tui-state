@@ -9,7 +9,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 113, ahead 0 |
 | `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `11f4a0671da4` | 0 | behind 109, ahead 0 |
 | `asb-tui-ar-1324` | `feature/ar-1324-install-broker-onboarding` | `64d1dff31ae4` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1325` | `feature/ar-1325-first-class-setup-wizard` | `8efbf980be1a` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1325` | `feature/ar-1325-first-class-setup-wizard` | `321ebf803707` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 67, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 257, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 201, ahead 1 |
@@ -105,4 +105,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-final-audit` | `DETACHED` | `30e243be4bd3` | 0 | behind 47, ahead 0 |
 | `asb-tui-pr152` | `DETACHED` | `9a3a24d6521f` | 0 | behind 7, ahead 1 |
 | `asb-tui-pr152-v2` | `DETACHED` | `bbf4b452c444` | 0 | behind 7, ahead 2 |
+| `asb-tui-review155` | `DETACHED` | `8efbf980be1a` | 0 | behind 0, ahead 1 |
 | `asb-tui-router-audit.BE7gzL` | `DETACHED` | `4106c6dec82d` | 0 | behind 194, ahead 0 |
