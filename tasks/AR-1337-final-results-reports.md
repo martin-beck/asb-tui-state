@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Show final performance results, measure status, provenance, failures, and comparable recent runs.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Final performance results and report presentation",
-  "updated_at": "2026-09-30T14:03:37+00:00",
+  "updated_at": "2026-09-30T14:03:48+00:00",
   "worktree_key": "asb-tui-ar-1337-final-results-reports"
 }
 ---
@@ -46,3 +46,6 @@ Results must distinguish development, replay, live, unavailable, and unsupported
 
 - 2026-09-30T14:03:37+00:00: Recorded command exit 0; command argv SHA-256
   9ebb78d3dc1f63449fc43d7e373e493a3a44f57bc5b736fd54a71a7a6e5e2ab2.
+
+- 2026-09-30T14:03:48+00:00: Recorded command exit 0; command argv SHA-256
+  06d941468bbaf98d67456117394c9048af956063117f726f2b048783e7311991.
