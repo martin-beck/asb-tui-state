@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Show final performance results, measure status, provenance, failures, and comparable recent runs.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Final performance results and report presentation",
-  "updated_at": "2026-09-30T14:01:43+00:00",
+  "updated_at": "2026-09-30T14:03:37+00:00",
   "worktree_key": "asb-tui-ar-1337-final-results-reports"
 }
 ---
@@ -43,3 +43,6 @@ Results must distinguish development, replay, live, unavailable, and unsupported
 - 2026-09-30T14:01:43+00:00: Independent review requested and fixed: comparison now fences
   EvidenceKind, and privacy projection rejects api-key, authorization, and Bearer forms with tests.
   Signed+DCO head 5f0f953; local tests and strict clippy pass.
+
+- 2026-09-30T14:03:37+00:00: Recorded command exit 0; command argv SHA-256
+  9ebb78d3dc1f63449fc43d7e373e493a3a44f57bc5b736fd54a71a7a6e5e2ab2.
