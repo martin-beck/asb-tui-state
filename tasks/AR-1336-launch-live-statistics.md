@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Await independent exact-head review and hosted CI for PR #168 at c626fc2; repair any failures before merge.",
+  "next_action": "Obtain fresh independent exact-head review and hosted CI for PR #168 at 554f20ebb4e8839e956e5b3aca631044c1c63304; GitHub has not created runs for the updated synchronize event, so restore/check Actions trigger state before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics-clean",
   "observed_dirty": 0,
   "observed_head": "554f20ebb4e8839e956e5b3aca631044c1c63304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:29:40+00:00",
+  "updated_at": "2026-09-30T12:30:11+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -123,3 +123,12 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:29:40+00:00: Recorded command exit 0; command argv SHA-256
   6509c565a69d3bdef26745d39741d8155b7db12057ad47895bd585aa3c64fc60.
+
+- 2026-09-30T12:30:11+00:00: All four independent review blockers are implemented in signed commits
+  9efaa4a and 554f20e: canonical MaterializedBundle integrity and benchmark selection validation
+  precede CreatePlan, poll failures preserve LaunchState statistics while entering reconnecting,
+  terminal states reject nonterminal regressions, and cancellation targets LaunchState exact
+  run/attempt IDs. Full cargo tests (227 library plus integration), clippy, UI model/source parity,
+  credential boundary and diff checks pass locally. Both commits verify with ED25519 key
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE. PR #168 head is 554f20e; GitHub reports no new
+  checks after push.
