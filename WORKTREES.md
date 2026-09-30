@@ -15,8 +15,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `51d9d7443901` | 0 | behind 6, ahead 0 |
 | `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `3387ed3d9aa3` | 0 | behind 5, ahead 7 |
 | `asb-tui-ar-1335` | `repair/ar-1335-coverage-4` | `866e3165c1c4` | 0 | behind 0, ahead 1 |
-| `asb-tui-ar-1336-launch-live-statistics` | `feature/ar-1336-launch-live-statistics-clean` | `5bc08b769bfb` | 11 | behind 2, ahead 0 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/configuration_materialization.rs`, `src/control_transport.rs`, `src/formal_state.rs`, `src/launch_statistics.rs`, `src/lib.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/formal_state.rs` |
+| `asb-tui-ar-1336-launch-live-statistics` | `feature/ar-1336-launch-live-statistics-clean` | `9efaa4a14b43` | 5 | behind 2, ahead 1 |
+| changed files | - | - | - | `src/configuration_materialization.rs`, `src/control_transport.rs`, `src/launch_statistics.rs`, `src/runtime.rs`, `src/ui.rs` |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 9, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 90, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 280, ahead 2 |
