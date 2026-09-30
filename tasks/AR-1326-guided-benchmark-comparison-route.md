@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make benchmark, offline replay, and comparison a single guided TUI route.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Guided benchmark and comparison route",
-  "updated_at": "2026-09-30T06:30:00+00:00",
+  "updated_at": "2026-09-30T06:30:29+00:00",
   "worktree_key": "asb-tui-ar-1326-guided-benchmark-comparison-route"
 }
 ---
@@ -31,3 +31,6 @@ second runner or provider backend.
   gate policy permits implementation without authenticated production router.
 
 - 2026-09-30T06:30:00+00:00: Claimed by tui-ar1326-dev-20260930.
+
+- 2026-09-30T06:30:29+00:00: Recorded command exit 0; command argv SHA-256
+  efde0ad8412aef32bd24bab9dc7e304ffe9cd93c9ff5ea64471d61ae80818a1a.
