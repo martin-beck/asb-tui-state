@@ -14,7 +14,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1327` | `feature/ar-1327-cross-repository-journey-qualification` | `eae13ed1fd87` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1333-user-driven-provider-setup` | `feature/ar-1333-user-driven-provider-setup` | `51d9d7443901` | 0 | behind 2, ahead 0 |
 | `asb-tui-ar-1334` | `feature/ar-1334-benchmark-pool-selection` | `3387ed3d9aa3` | 0 | behind 1, ahead 7 |
-| `asb-tui-ar-1335` | `feature/ar-1335-configuration-materialization` | `a2cf7266e1aa` | 0 | behind 0, ahead 4 |
+| `asb-tui-ar-1335` | `feature/ar-1335-configuration-materialization` | `2ff45f7ea810` | 0 | behind 0, ahead 5 |
 | `asb-tui-ar-1339-top-level-install-launch` | `feature/ar-1339-top-level-install-launch` | `d47b27a7beff` | 0 | behind 5, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 86, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 276, ahead 2 |
