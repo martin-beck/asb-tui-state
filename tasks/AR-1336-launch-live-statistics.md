@@ -8,7 +8,7 @@
     "AR-1323"
   ],
   "id": "AR-1336",
-  "next_action": "Promote after configuration materialization and helper handoff; implement generation-bound launch, cancellation, reconnect, and live statistics projection.",
+  "next_action": "Obtain independent exact-head review and hosted CI for PR #165 at 877996906a15a85243bfc681d188b49ec5cd6a6e; repair any failures before merge.",
   "observed_branch": "feature/ar-1336-launch-live-statistics",
   "observed_dirty": 0,
   "observed_head": "877996906a15a85243bfc681d188b49ec5cd6a6e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:05:21+00:00",
+  "updated_at": "2026-09-30T12:05:52+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -49,3 +49,9 @@ Development fixtures may run without external authentication or provider reachab
 
 - 2026-09-30T12:05:21+00:00: Recorded command exit 0; command argv SHA-256
   03831a502f8484a3dabc033b8f515a942e6554f0ad0133a45b626fa00f549ff8.
+
+- 2026-09-30T12:05:52+00:00: Implemented generation-bound launch validation before control I/O,
+  reviewed materialized plan creation and launch, explicit start/cancel/reconnect controls, bounded
+  live refresh, and truthful provenance-aware live statistics state with stale-event and reconnect
+  fencing. PR #165 is open at exact head 877996906a15a85243bfc681d188b49ec5cd6a6e; local cargo
+  tests/clippy and UI gates pass.
