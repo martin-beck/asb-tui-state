@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T13:00:11+00:00",
+  "updated_at": "2026-09-30T13:04:46+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -224,3 +224,6 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T13:00:11+00:00: PR171 merged at 0f1e414 after green PR checks and approval. Trusted
   main verification failed only the coverage threshold (88.92% total); AR remains in progress
   pending repair.
+
+- 2026-09-30T13:04:46+00:00: Recorded command exit 0; command argv SHA-256
+  e7e9a8bbeacb8144c7584a9b9e46601f9e8abeb014fc901acfbb9bb8da94b86e.
