@@ -8,16 +8,16 @@
     "AR-1223"
   ],
   "id": "AR-1337",
-  "next_action": "Await exact-head hosted checks and independent review for PR #175 at 007211d66cc2e5827707e917f8e52903cd60cf8b; merge only after all required gates pass.",
+  "next_action": "Await successful exact-main Trusted verification for merge SHA d7e5a53b9f7df0a2540b283baf6a6c8ee7a3db68; Repository Quality is green, then release AR-1337 and promote AR-1338.",
   "owner": "tui-ar1337-dev-20260930",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Show final performance results, measure status, provenance, failures, and comparable recent runs.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Final performance results and report presentation",
-  "updated_at": "2026-09-30T14:17:56+00:00",
+  "updated_at": "2026-09-30T14:31:28+00:00",
   "worktree_key": "asb-tui-ar-1337-final-results-reports"
 }
 ---
@@ -65,3 +65,7 @@ Results must distinguish development, replay, live, unavailable, and unsupported
   with evidence/status/provenance guidance, regenerated model, and retained reports.rs inventory
   responsibility. Signed+DCO head 007211d; local source/model/help validators and all-target tests
   pass.
+
+- 2026-09-30T14:31:28+00:00: PR #175 merged as d7e5a53. Repository Quality passed; Trusted-main push
+  and manual runs hit hosted self-hosted runner checkout/setup failures before tests, so release
+  remains gated.

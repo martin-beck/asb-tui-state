@@ -198,7 +198,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | tui-ar1337-dev-20260930 | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await exact-head hosted checks and independent review for PR #175 at 007211d66cc2e5827707e917f8e52903cd60cf8b; merge only after all required gates pass. |
+| P0 | [AR-1337](tasks/AR-1337-final-results-reports.md): Final performance results and report presentation | tui-ar1337-dev-20260930 | Show final performance results, measure status, provenance, failures, and comparable recent runs. | Await successful exact-main Trusted verification for merge SHA d7e5a53b9f7df0a2540b283baf6a6c8ee7a3db68; Repository Quality is green, then release AR-1337 and promote AR-1338. |
 
 ### Planned (1)
 
