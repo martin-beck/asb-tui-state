@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "First-class setup wizard route",
-  "updated_at": "2026-09-30T06:23:00+00:00",
+  "updated_at": "2026-09-30T06:25:56+00:00",
   "worktree_key": "asb-tui-ar-1325-first-class-setup-wizard-route"
 }
 ---
@@ -49,3 +49,6 @@ credential-reference, and default-selection fixtures while clearly labeling deve
 
 - 2026-09-30T06:23:00+00:00: Recorded command exit 0; command argv SHA-256
   d9d049fbd78f82f99cd2c5a654342c672f09dd7fe3e03034196b874f40cc6d65.
+
+- 2026-09-30T06:25:56+00:00: Recorded command exit 0; command argv SHA-256
+  20bdcf8cdb2a9b011588b940826e8c39e377589edc070fbc7dad26bd078033a4.
