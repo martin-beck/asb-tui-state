@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-first-class-setup-wizard-route",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T08:18:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1192",
     "AR-1197",
@@ -14,15 +14,15 @@
   ],
   "id": "AR-1325",
   "next_action": "Promote after the helper handoff and development onboarding dependencies are done; bind wizard screens to the local setup contract and add restart/cancellation evidence.",
-  "owner": "tui-ar1325-dev-20261001",
+  "owner": "",
   "plan": "../plans/AR-1325.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Deliver a selection-driven first-run and reconfiguration wizard over the shared ASB setup contract.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "First-class setup wizard route",
-  "updated_at": "2026-09-30T06:25:56+00:00",
+  "updated_at": "2026-09-30T06:28:17+00:00",
   "worktree_key": "asb-tui-ar-1325-first-class-setup-wizard-route"
 }
 ---
@@ -52,3 +52,7 @@ credential-reference, and default-selection fixtures while clearly labeling deve
 
 - 2026-09-30T06:25:56+00:00: Recorded command exit 0; command argv SHA-256
   20bdcf8cdb2a9b011588b940826e8c39e377589edc070fbc7dad26bd078033a4.
+
+- 2026-09-30T06:28:17+00:00: Implemented and merged PR #155 at main
+  ba0e3cee38acdfcc029339d9b43e306d8d41cc86. Exact hosted checks passed: Trusted main verification
+  36678186406; Repository quality 36678186439. Independent review approved exact head 321ebf8.
