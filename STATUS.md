@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -40,7 +40,7 @@ flowchart LR
     end
     subgraph series_12["12 - Additional work"]
         direction TB
-        AR_1200["AR-1200 - Open"]:::status_open
+        AR_1200["AR-1200 - In progress"]:::status_in_progress
         AR_1201["AR-1201 - Done"]:::status_done
         AR_1202["AR-1202 - Done"]:::status_done
         AR_1220["AR-1220 - Done"]:::status_done
@@ -159,11 +159,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB development router client adoption | Unclaimed | Adopt the ASB development router from the standalone asb-tui lifecycle and UI. | Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback. |
+| P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB development router client adoption | tui-ar1200-dev-20261001 | Adopt the ASB development router from the standalone asb-tui lifecycle and UI. | Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback. |
 
 ### Planned (4)
 

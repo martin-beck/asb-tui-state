@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1200-asb-router-client",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T07:46:36+00:00",
   "depends_on": [
     "AR-1195"
   ],
   "id": "AR-1200",
   "next_action": "Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback.",
-  "owner": "",
+  "owner": "tui-ar1200-dev-20261001",
   "plan": "../plans/AR-1200.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the ASB development router from the standalone asb-tui lifecycle and UI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "ASB development router client adoption",
-  "updated_at": "2026-09-30T05:46:33+00:00",
+  "updated_at": "2026-09-30T05:46:36+00:00",
   "worktree_key": "asb-tui-ar-1200"
 }
 ---
@@ -35,3 +35,5 @@ authentication and remote trust are explicitly outside this development AR.
 
 - 2026-09-30T05:46:33+00:00: Development-only gate removal is committed at 3c6b6fd; promote local
   fixture-backed router implementation. Production trust remains explicitly out of scope.
+
+- 2026-09-30T05:46:36+00:00: Claimed by tui-ar1200-dev-20261001.

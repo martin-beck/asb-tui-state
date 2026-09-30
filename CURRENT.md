@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB development router client adoption | Adopt the ASB development router from the standalone asb-tui lifecycle and UI. | Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback. | - |
+| P0 | [AR-1200](tasks/AR-1200-asb-router-client.md): ASB development router client adoption | Adopt the ASB development router from the standalone asb-tui lifecycle and UI. | Promote and implement the development router client against the local contract fixtures; qualify install/status/upgrade/remove/launch with warning-only development fallback. | tui-ar1200-dev-20261001 |
 
 ## Planned
 
