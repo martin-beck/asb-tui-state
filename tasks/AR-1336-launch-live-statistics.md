@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run reviewed benchmark campaigns and show truthful live progress and statistics in the TUI.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Benchmark launch and live statistics route",
-  "updated_at": "2026-09-30T12:49:08+00:00",
+  "updated_at": "2026-09-30T12:54:08+00:00",
   "worktree_key": "asb-tui-ar-1336-launch-live-statistics"
 }
 ---
@@ -199,3 +199,6 @@ Development fixtures may run without external authentication or provider reachab
 - 2026-09-30T12:49:08+00:00: Exact PR171 review still blocks merge: benchmark catalog is
   fixture-only because poll_projection has no request/response branch, so normal snapshots reject
   every launch. Hosted quality also hit a flaky synthetic PTY test; rerun after integration repair.
+
+- 2026-09-30T12:54:08+00:00: Recorded command exit 0; command argv SHA-256
+  af885912965e6cbf33f88c403dea55ede7624fc665569a496f0303bb4838279e.
