@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #153 | `feature/ar-1200-asb-router-client@92a458a0fe88` | `main` | BLOCKED | QUEUED:, QUEUED: | feat(router): add development lifecycle router |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36675402856 | `92a458a0fe88` | pull_request | AWQ shadow observation | queued:- |
+| 36675402620 | `92a458a0fe88` | pull_request | Repository quality | queued:- |
 | 36674079315 | `30aee070bb64` | push | Trusted main verification | completed:success |
 | 36674079300 | `30aee070bb64` | push | Repository quality | completed:success |
 | 36673869964 | `3d43b87cb1e2` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36673527208 | `9a3a24d6521f` | pull_request | Repository quality | completed:cancelled |
 | 36673328168 | `703570ddafea` | push | Repository quality | completed:success |
 | 36673328161 | `703570ddafea` | push | Trusted main verification | completed:success |
-| 36673038372 | `6143f044da4b` | pull_request | AWQ shadow observation | completed:success |
-| 36673038116 | `6143f044da4b` | pull_request | Repository quality | completed:success |
