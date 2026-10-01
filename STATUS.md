@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -92,7 +92,7 @@ flowchart LR
         AR_1582["AR-1582 - Planned"]:::status_planned
         AR_1583["AR-1583 - Planned"]:::status_planned
         AR_1584["AR-1584 - Done"]:::status_done
-        AR_1585["AR-1585 - Open"]:::status_open
+        AR_1585["AR-1585 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -241,18 +241,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Rebase PR #184 work onto asb-tui main including merged AR-1584; replace fixture-only path with exact binary PTY/socket negotiation, bootstrap, interactive exit, and cleanup evidence. |
+| P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | ar1585-protocol | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Promote after the launcher bridge exists; implement negotiated wizard bootstrap/catalog/configuration protocol compatibility and downgrade tests. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Unclaimed | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Promote after the launcher bridge exists; implement negotiated wizard bootstrap/catalog/configuration protocol compatibility and downgrade tests. |
 
 ### Blocked (2)
 

@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Rebase PR #184 work onto asb-tui main including merged AR-1584; replace fixture-only path with exact binary PTY/socket negotiation, bootstrap, interactive exit, and cleanup evidence. | ar1580-pty-control |
+| P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Promote after the launcher bridge exists; implement negotiated wizard bootstrap/catalog/configuration protocol compatibility and downgrade tests. | ar1585-protocol |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Promote after the launcher bridge exists; implement negotiated wizard bootstrap/catalog/configuration protocol compatibility and downgrade tests. | - |
 
 ## Blocked
 
