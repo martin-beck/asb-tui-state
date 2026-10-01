@@ -318,7 +318,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request independent review and hosted checks for TUI PR #199 at 0fbcedad9df6a081de1f42835e829f35f89b73f7; then run paired ASB c94586d record/seal/replay/compare qualification before release. |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request fresh independent review and hosted checks for TUI PR #199 at 8d430ae; verify clippy and tuple-fencing repair, then run paired ASB c94586d record/seal/replay/compare qualification before release. |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | ar1498-channel-qualification | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. |
 
 ### Open (1)
