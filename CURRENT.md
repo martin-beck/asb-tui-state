@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request fresh independent review and hosted checks for TUI PR #199 at 8d430ae; verify clippy and tuple-fencing repair, then run paired ASB c94586d record/seal/replay/compare qualification before release. | ar1496-results-replay |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request fresh independent review and hosted checks for TUI PR #199 at a917fcf; verify request/response runner and tuple fencing, then run paired ASB c94586d record/seal/replay/compare qualification before release. | ar1496-results-replay |
 
 ## Open
 
