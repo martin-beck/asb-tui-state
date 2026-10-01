@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. | ar1579-dev-channel |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. | - |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Promote after ASB transport and supervision release; implement the real PTY/inherited-channel integration harness. | - |
 
 ## Blocked
