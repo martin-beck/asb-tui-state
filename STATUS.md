@@ -325,7 +325,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | ar1498-cassette-lifecycle | PR200 repair 674ff15 wires authenticated cassette catalog and selected strict offline replay into runtime route | Run full hosted checks on PR200 head 674ff15; obtain fresh independent review, then merge and post-merge qualify |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | ar1498-cassette-lifecycle | PR200 adds selected authenticated cassette replay UI route | Run hosted checks and independent review on PR200 head 6b83e87; add executable cross-process ASB record/seal/reopen fixture before release |
 
 ### Open (2)
 
