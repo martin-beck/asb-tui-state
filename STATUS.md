@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**67 ARs tracked** across 5 active status categories.
+**68 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 57 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -89,7 +89,7 @@ flowchart LR
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
-        AR_1582["AR-1582 - In progress"]:::status_in_progress
+        AR_1582["AR-1582 - Open"]:::status_open
         AR_1583["AR-1583 - Done"]:::status_done
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
@@ -107,6 +107,10 @@ flowchart LR
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Done"]:::status_done
         AR_1599["AR-1599 - In progress"]:::status_in_progress
+    end
+    subgraph series_16["16 - Additional work"]
+        direction TB
+        AR_1600["AR-1600 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -206,6 +210,7 @@ flowchart LR
     AR_1588 --> AR_1590
     AR_1588 --> AR_1594
     AR_1588 --> AR_1599
+    AR_1588 --> AR_1600
     AR_1589 --> AR_1591
     AR_1590 --> AR_1591
     AR_1592 --> AR_1587
@@ -216,6 +221,7 @@ flowchart LR
     AR_1594 --> AR_1595
     AR_1595 --> AR_1596
     AR_1596 --> AR_1597
+    AR_1599 --> AR_1600
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -285,7 +291,7 @@ flowchart LR
 | [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) |
 | [AR-1586](tasks/AR-1586.md) | [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1587](tasks/AR-1587.md), [AR-1592](tasks/AR-1592.md) |
 | [AR-1587](tasks/AR-1587.md) | [AR-1585](tasks/AR-1585.md), [AR-1586](tasks/AR-1586.md), [AR-1592](tasks/AR-1592.md), [AR-1593](tasks/AR-1593.md) | [AR-1582](tasks/AR-1582.md), [AR-1589](tasks/AR-1589.md), [AR-1594](tasks/AR-1594.md), [AR-1599](tasks/AR-1599.md) |
-| [AR-1588](tasks/AR-1588.md) | [AR-1340](tasks/AR-1340.md), [AR-1579](tasks/AR-1579.md), [AR-1583](tasks/AR-1583.md) | [AR-1589](tasks/AR-1589.md), [AR-1590](tasks/AR-1590.md), [AR-1594](tasks/AR-1594.md), [AR-1599](tasks/AR-1599.md) |
+| [AR-1588](tasks/AR-1588.md) | [AR-1340](tasks/AR-1340.md), [AR-1579](tasks/AR-1579.md), [AR-1583](tasks/AR-1583.md) | [AR-1589](tasks/AR-1589.md), [AR-1590](tasks/AR-1590.md), [AR-1594](tasks/AR-1594.md), [AR-1599](tasks/AR-1599.md), [AR-1600](tasks/AR-1600.md) |
 | [AR-1589](tasks/AR-1589.md) | [AR-1582](tasks/AR-1582.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1591](tasks/AR-1591.md) |
 | [AR-1590](tasks/AR-1590.md) | [AR-1583](tasks/AR-1583.md), [AR-1588](tasks/AR-1588.md) | [AR-1591](tasks/AR-1591.md) |
 | [AR-1591](tasks/AR-1591.md) | [AR-1589](tasks/AR-1589.md), [AR-1590](tasks/AR-1590.md) | None |
@@ -296,22 +302,23 @@ flowchart LR
 | [AR-1596](tasks/AR-1596.md) | [AR-1595](tasks/AR-1595.md) | [AR-1597](tasks/AR-1597.md) |
 | [AR-1597](tasks/AR-1597.md) | [AR-1596](tasks/AR-1596.md) | None |
 | [AR-1598](tasks/AR-1598.md) | [AR-1593](tasks/AR-1593.md) | None |
-| [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | None |
+| [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
+| [AR-1600](tasks/AR-1600.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) | None |
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1498-tui-results-replay | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | ar1498-tui-install-qualification | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. |
 
 ### Blocked (2)
 
@@ -320,7 +327,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (5)
+### Planned (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -329,6 +336,7 @@ flowchart LR
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Unclaimed | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
+| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after ASB AR-1601 is released; execute exact paired channel-aware install and rollback qualification. |
 
 ### Done (57)
 
