@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**53 ARs tracked** across 5 active status categories.
+**54 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 47 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -93,6 +93,7 @@ flowchart LR
         AR_1583["AR-1583 - Planned"]:::status_planned
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
+        AR_1586["AR-1586 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -165,12 +166,14 @@ flowchart LR
     AR_1580 --> AR_1583
     AR_1581 --> AR_1582
     AR_1581 --> AR_1583
+    AR_1581 --> AR_1586
     AR_1582 --> AR_1575
     AR_1583 --> AR_1575
     AR_1584 --> AR_1580
     AR_1584 --> AR_1581
     AR_1584 --> AR_1585
     AR_1585 --> AR_1581
+    AR_1585 --> AR_1586
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -233,11 +236,12 @@ flowchart LR
 | [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | None |
 | [AR-1579](tasks/AR-1579.md) | None | None |
 | [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
-| [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) |
+| [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md), [AR-1586](tasks/AR-1586.md) |
 | [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md) |
 | [AR-1583](tasks/AR-1583.md) | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md) |
 | [AR-1584](tasks/AR-1584.md) | None | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
-| [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md) |
+| [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md) |
+| [AR-1586](tasks/AR-1586.md) | [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) | None |
 
 ## Complete AR inventory
 
@@ -245,7 +249,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Review/merge scoped PR #186 projection repair if green; then create a separate focused real ASB ControlServer ordered-bootstrap AR/PR for remaining catalogs, auth, recording, downgrade, and atomicity evidence. |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Wire development context through run --broker --development runtime, interactive refresh, and reconnect; add real both-mode regression. Then re-review PR #186 before merge; AR-1586 owns remaining real backend bootstrap. |
 
 ### Open (1)
 
@@ -260,12 +264,13 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (2)
+### Planned (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Unclaimed | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. |
+| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. |
 
 ### Done (47)
 

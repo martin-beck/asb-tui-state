@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Review/merge scoped PR #186 projection repair if green; then create a separate focused real ASB ControlServer ordered-bootstrap AR/PR for remaining catalogs, auth, recording, downgrade, and atomicity evidence. | ar1581-bootstrap-coverage |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Wire development context through run --broker --development runtime, interactive refresh, and reconnect; add real both-mode regression. Then re-review PR #186 before merge; AR-1586 owns remaining real backend bootstrap. | ar1581-bootstrap-coverage |
 
 ## Open
 
@@ -28,6 +28,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. | - |
+| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. | - |
 
 ## Done
 
