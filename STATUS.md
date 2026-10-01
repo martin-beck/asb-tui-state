@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 49 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -94,7 +94,7 @@ flowchart LR
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
         AR_1586["AR-1586 - Done"]:::status_done
-        AR_1587["AR-1587 - Planned"]:::status_planned
+        AR_1587["AR-1587 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -257,11 +257,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 469e157 adds bounded timeout and malformed-frame recovery coverage; obtain independent review and hosted checks, then address findings before merge. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. |
 
 ### Blocked (2)
 
@@ -270,12 +271,11 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (2)
+### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. |
 
 ### Done (49)
 
