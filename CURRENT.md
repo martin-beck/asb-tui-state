@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 adds selected authenticated cassette replay UI route | Run hosted checks and independent review on PR200 head 6b83e87; add executable cross-process ASB record/seal/reopen fixture before release | ar1498-cassette-lifecycle |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress | ar1498-cassette-lifecycle |
 
 ## Open
 
