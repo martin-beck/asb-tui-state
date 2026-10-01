@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Harden both real PTY/socket integration tests with bounded server synchronization and guaranteed child/socket cleanup on handshake failure, timeout, or panic; rerun exact binary evidence. | ar1580-pty-control |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. | ar1580-pty-control |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Bind authenticated adopted broker generation into the negotiated response or require/compare backend hook; add presence/mismatch tests before TUI-side protocol fixtures. | ar1585-protocol |
 
 ## Open
