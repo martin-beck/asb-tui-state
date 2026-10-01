@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36827291984 | `fa85de35beb6` | push | Trusted main verification | in_progress:- |
+| 36827291984 | `fa85de35beb6` | push | Trusted main verification | completed:failure |
 | 36827291890 | `fa85de35beb6` | push | Repository quality | in_progress:- |
 | 36826601757 | `cb7b3723dd0e` | pull_request | AWQ shadow observation | completed:success |
 | 36826601402 | `cb7b3723dd0e` | pull_request | Repository quality | completed:success |
