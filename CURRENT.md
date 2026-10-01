@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at 4de2aa178f33e8de368b825b28cfad486a334202 | ar1344-dynamic-identity |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da | ar1344-dynamic-identity |
 
 ## Blocked
 

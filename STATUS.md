@@ -213,7 +213,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | ar1344-dynamic-identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at 4de2aa178f33e8de368b825b28cfad486a334202 |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | ar1344-dynamic-identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da |
 
 ### Blocked (1)
 
