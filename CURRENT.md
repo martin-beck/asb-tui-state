@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 wires authenticated runtime cassette catalog and strict replay intent dispatch against released ASB cassette backend | Obtain independent review and hosted checks for PR200; then merge protected main, run post-merge qualification, and release | ar1498-cassette-lifecycle |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 wires authenticated runtime cassette catalog and strict replay intent dispatch against released ASB cassette backend | Repair PR #200: wire authenticated seams into executable record/seal/reopen/offline-replay/compare lifecycle; add cross-process egress-denied and typed negative tests; obtain independent approval before merge. | ar1498-cassette-lifecycle |
 
 ## Open
 
