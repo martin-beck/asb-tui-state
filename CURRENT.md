@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. | ar1586-real-bootstrap |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. | - |
 
 ## Blocked
 

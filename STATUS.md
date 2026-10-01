@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**54 ARs tracked** across 4 active status categories.
+**54 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
@@ -93,7 +93,7 @@ flowchart LR
         AR_1583["AR-1583 - Planned"]:::status_planned
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
-        AR_1586["AR-1586 - Open"]:::status_open
+        AR_1586["AR-1586 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -245,12 +245,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | ar1586-real-bootstrap | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. |
 
 ### Blocked (2)
 
