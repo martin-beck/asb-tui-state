@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. | ar1587-backend-bridge |
+| P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | Audit and, if necessary, repair the TUI catalog requests and downgrade/fallback handling against the ASB AR-1592 contract; publish exact evidence without synthetic cross-project claims. | ar1592-catalog-client |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | Audit and, if necessary, repair the TUI catalog requests and downgrade/fallback handling against the ASB AR-1592 contract; publish exact evidence without synthetic cross-project claims. | - |
 
 ## Blocked
 
