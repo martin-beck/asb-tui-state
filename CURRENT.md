@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Create or consume a reviewed executable ASB ControlServer-to-TUI cassette qualification seam (likely AR-1601); do not release AR-1582 until real record/seal/reopen/strict-offline-replay/compare crosses the process boundary with provider egress denied. | ar1496-results-replay |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | ar1496-results-replay |
 
 ## Open
 
@@ -31,7 +31,7 @@ Never edit this file directly.
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. | - |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote now that the typed bridge is merged on TUI main and ASB AR-1602 is released; implement and qualify the executable cross-process cassette lifecycle. | - |
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. | - |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. | - |
 

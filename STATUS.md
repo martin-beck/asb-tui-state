@@ -194,7 +194,6 @@ flowchart LR
     AR_1582 --> AR_1575
     AR_1582 --> AR_1589
     AR_1582 --> AR_1595
-    AR_1582 --> AR_1601
     AR_1583 --> AR_1575
     AR_1583 --> AR_1588
     AR_1583 --> AR_1590
@@ -231,6 +230,7 @@ flowchart LR
     AR_1600 --> AR_1603
     AR_1601 --> AR_1603
     AR_1602 --> AR_1600
+    AR_1602 --> AR_1601
     AR_1603 --> AR_1604
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -295,7 +295,7 @@ flowchart LR
 | [AR-1579](tasks/AR-1579.md) | None | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) |
 | [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md), [AR-1586](tasks/AR-1586.md) |
-| [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) | [AR-1575](tasks/AR-1575.md), [AR-1589](tasks/AR-1589.md), [AR-1595](tasks/AR-1595.md), [AR-1601](tasks/AR-1601.md) |
+| [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) | [AR-1575](tasks/AR-1575.md), [AR-1589](tasks/AR-1589.md), [AR-1595](tasks/AR-1595.md) |
 | [AR-1583](tasks/AR-1583.md) | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md), [AR-1588](tasks/AR-1588.md), [AR-1590](tasks/AR-1590.md) |
 | [AR-1584](tasks/AR-1584.md) | None | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
 | [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) |
@@ -314,8 +314,8 @@ flowchart LR
 | [AR-1598](tasks/AR-1598.md) | [AR-1593](tasks/AR-1593.md) | None |
 | [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
 | [AR-1600](tasks/AR-1600.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md), [AR-1602](tasks/AR-1602.md) | [AR-1603](tasks/AR-1603.md) |
-| [AR-1601](tasks/AR-1601.md) | [AR-1582](tasks/AR-1582.md) | [AR-1603](tasks/AR-1603.md) |
-| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
+| [AR-1601](tasks/AR-1601.md) | [AR-1602](tasks/AR-1602.md) | [AR-1603](tasks/AR-1603.md) |
+| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md) |
 | [AR-1603](tasks/AR-1603.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md) | [AR-1604](tasks/AR-1604.md) |
 | [AR-1604](tasks/AR-1604.md) | [AR-1603](tasks/AR-1603.md) | None |
 
@@ -325,7 +325,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Create or consume a reviewed executable ASB ControlServer-to-TUI cassette qualification seam (likely AR-1601); do not release AR-1582 until real record/seal/reopen/strict-offline-replay/compare crosses the process boundary with provider egress denied. |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
 
 ### Open (1)
 
@@ -349,7 +349,7 @@ flowchart LR
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Unclaimed | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote now that the typed bridge is merged on TUI main and ASB AR-1602 is released; implement and qualify the executable cross-process cassette lifecycle. |
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
