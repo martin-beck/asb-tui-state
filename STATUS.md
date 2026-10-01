@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**78 ARs tracked** across 5 active status categories.
+**78 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 63 |
+| **Done** | Accepted, integrated, and durably verified | 64 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -117,7 +117,7 @@ flowchart LR
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - Planned"]:::status_planned
-        AR_1607["AR-1607 - In progress"]:::status_in_progress
+        AR_1607["AR-1607 - Done"]:::status_done
         AR_1610["AR-1610 - Done"]:::status_done
         AR_1611["AR-1611 - Planned"]:::status_planned
         AR_1612["AR-1612 - Planned"]:::status_planned
@@ -346,12 +346,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | ar1607-adapter | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -381,7 +375,7 @@ flowchart LR
 | P0 | [AR-1612](tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
-### Done (63)
+### Done (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -440,6 +434,7 @@ flowchart LR
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | PR200 protocol-compatible selected cassette route | Retain the released lifecycle receipt; AR-1606 owns the paired record/seal/reopen/catalog/replay/compare qualification. |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. |
 | P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | Unclaimed | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. |
+| P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
