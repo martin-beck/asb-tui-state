@@ -83,7 +83,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1602-review` | `DETACHED` | `aed8b6fb52f4` | 0 | behind 30, ahead 0 |
 | `asb-tui-ar1602-review2` | `DETACHED` | `e98206361a04` | 0 | behind 29, ahead 0 |
 | `asb-tui-ar1602-review3` | `DETACHED` | `a89f856068c7` | 0 | behind 27, ahead 0 |
-| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `20ecd85588b1` | 0 | behind 0, ahead 2 |
+| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `20ecd85588b1` | 6 | behind 0, ahead 2 |
+| changed files | - | - | - | `src/adapter_catalog.rs`, `src/recording_dispatch.rs`, `src/runtime.rs`, `src/ui.rs`, `src/wizard.rs`, `tests/coverage_wizard_adapter.rs` |
 | `asb-tui-ar1610-coverage` | `repair/ar-1610-coverage` | `9861ee37692c` | 0 | behind 1, ahead 0 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 251, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 373, ahead 1 |
