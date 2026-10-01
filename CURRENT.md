@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Await hosted checks and independent review of PR #184 exact head 14f3ef81431fef427344435b029c8c2f64f1f77f; merge/release only identical green head. | ar1580-pty-control |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Replace synthetic /bin/sh smoke test with exact asb-tui executable plus real ASB broker negotiation/bootstrap/result exchange and teardown; PR #184 is blocked by independent review. | ar1580-pty-control |
 
 ## Open
 
