@@ -1,0 +1,10 @@
+# AR-1587 acceptance receipt
+
+- Exact implementation: ASB PR #410
+- Reviewed source head: bfc6424757c1d12c4cae42c04b92f45273c8e08c
+- Merge commit: 08d622fc86be5458d1ba09b34e87b9768711e815
+- Independent review: APPROVE at exact head; coverage repair adds deterministic malformed-socket stable rejection coverage without weakening thresholds or the pinned real-binary path.
+- Local evidence: 38/38 focused TUI tests, clippy with warnings denied, workspace coverage floor passed, and exact ProvisionedControlServer bridge behavior verified.
+- Hosted evidence: all required PR checks passed, including exact inherited-fd journey, credential-free benchmark, policy/coverage, Rust, aarch64 portability, formal assurance, fault assurance, and supply-chain checks.
+- Protocol evidence: common catalog v1.10 negotiation, runner identity/generation binding, stale-generation rejection, bounded shutdown, and stable fail-closed route.
+- Classification: contract-test/mechanical/hosted; development-only and credential-free.
