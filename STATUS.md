@@ -250,7 +250,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1582-results-replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
-| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Inspect exact merged asb-tui/ASB recovery seams; implement focused disconnect, timeout, malformed/stale identity, child cleanup, idempotent reconnect, and stable/development regression tests in isolated worktrees; run focused and full gates. |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | ar1586-real-bootstrap | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. |
 
 ### Open (1)
