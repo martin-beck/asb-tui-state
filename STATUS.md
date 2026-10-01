@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 54 |
+| **Done** | Accepted, integrated, and durably verified | 55 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -94,7 +94,7 @@ flowchart LR
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
         AR_1586["AR-1586 - Done"]:::status_done
-        AR_1587["AR-1587 - In progress"]:::status_in_progress
+        AR_1587["AR-1587 - Done"]:::status_done
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - Done"]:::status_done
@@ -295,11 +295,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1199-router-impl-1587 | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head bfc6424757c1d12c4cae42c04b92f45273c8e08c and await all hosted checks; merge/release only after independent approval and exact post-merge qualification. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | ar1199-router-impl | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90&#37;. |
 
 ### Open (2)
@@ -327,7 +326,7 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 
-### Done (54)
+### Done (55)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -374,6 +373,7 @@ flowchart LR
 | P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Unclaimed | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer plus terminal separation: broker fd-0 must coexist with a real PTY/terminal for interactive mode; ASB producer bridge alone is insufficient. |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Unclaimed | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head bfc6424757c1d12c4cae42c04b92f45273c8e08c and await all hosted checks; merge/release only after independent approval and exact post-merge qualification. |
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Unclaimed | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. |
 | P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 | P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Unclaimed | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | PR #191 is updated at cb7b3723dd0ea2a4b02d06872bae4e4265fa5ae2; await hosted checks and independent exact-head review, then release the client validation work; AR-1593 owns v1.10/v1.12 alignment. |
