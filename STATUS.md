@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -89,7 +89,7 @@ flowchart LR
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
-        AR_1582["AR-1582 - Open"]:::status_open
+        AR_1582["AR-1582 - In progress"]:::status_in_progress
         AR_1583["AR-1583 - Done"]:::status_done
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
@@ -307,18 +307,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1498-results-replay-journey | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | ar1498-tui-install-qualification | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. |
 
 ### Blocked (2)
 
