@@ -1,0 +1,7 @@
+AR-1580 TUI PTY and inherited-control integration receipt
+merged_sha=cca29bdd71d983a26d6f582c23c6d1d32cf05c7f
+reviewed_pr_head=04e08c180529029fa3fec94ba97514b734021903
+pr=https://github.com/martin-beck/asb-tui/pull/184
+checks=all required asb-tui hosted quality checks passed, including repository quality, Rust, supply-chain, privacy, and AWQ shadow checks
+review=independent review approved the exact signed head after bounded accept/read operations, child kill/reap cleanup, controlling PTY, real bootstrap, and socket-consumer coverage
+local=cargo fmt, clippy -D warnings, focused pty_broker_handoff 3/3, and diff checks passed
