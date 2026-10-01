@@ -26,8 +26,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1340` | `feature/ar-1340-dev-channel-router-compatibility` | `c883807ef64d` | 0 | behind 5, ahead 2 |
 | `asb-tui-ar-1342` | `feature/ar-1342-control-protocol-matrix` | `df7ffdc1a422` | 0 | behind 4, ahead 1 |
 | `asb-tui-ar-1344` | `feature/ar-1344-dynamic-identity` | `c6326873183a` | 0 | behind 2, ahead 2 |
-| `asb-tui-ar-1580` | `feature/ar-1580-pty-handoff` | `cbfa62a49164` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `tests/pty_broker_handoff.rs` |
+| `asb-tui-ar-1580` | `feature/ar-1580-pty-handoff` | `14f3ef81431f` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 119, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 309, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 253, ahead 1 |

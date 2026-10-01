@@ -167,6 +167,7 @@ flowchart LR
     AR_1581 --> AR_1583
     AR_1582 --> AR_1575
     AR_1583 --> AR_1575
+    AR_1584 --> AR_1580
     AR_1584 --> AR_1581
     AR_1584 --> AR_1585
     AR_1585 --> AR_1581
@@ -231,11 +232,11 @@ flowchart LR
 | [AR-1345](tasks/AR-1345.md) | [AR-1344](tasks/AR-1344.md) | None |
 | [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | None |
 | [AR-1579](tasks/AR-1579.md) | None | None |
-| [AR-1580](tasks/AR-1580.md) | None | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
+| [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md) |
 | [AR-1583](tasks/AR-1583.md) | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md) |
-| [AR-1584](tasks/AR-1584.md) | None | [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
+| [AR-1584](tasks/AR-1584.md) | None | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
 | [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md) |
 
 ## Complete AR inventory
@@ -244,8 +245,8 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Repair real binary PTY test synchronization: current server read gets WouldBlock before inherited handoff; rerun focused test until deterministic, then fresh review/hosted checks. |
-| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | ar1584-launcher-bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer for ASB owner-private socket and inherited handoff; ASB producer bridge alone is insufficient. |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | After AR-1584 adds supported terminal separation for broker fd-0, finish the real binary PTY negotiation/bootstrap/cleanup test; current run exits because broker stdin is not a TTY. |
+| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | ar1584-launcher-bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer plus terminal separation: broker fd-0 must coexist with a real PTY/terminal for interactive mode; ASB producer bridge alone is insufficient. |
 
 ### Open (1)
 
