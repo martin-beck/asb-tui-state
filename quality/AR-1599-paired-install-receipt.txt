@@ -1,0 +1,8 @@
+# AR-1599 acceptance receipt
+
+- Exact pair: ASB c94586d0751b144523fcbe05b81e3fbc81a44af9 and TUI 6b5f343a1181eb1bb673e09838ce5d4f094bf137, with exact trees recorded in the task evidence.
+- Fresh default-dev install passed with private XDG roots, exact commit/tree provenance, private executable/marker permissions, status and doctor under network denial.
+- Upgrade passed; injected Cargo failure returned typed `dev_command_failed`, preserved the active marker byte-for-byte, and left no staging residue.
+- Remove/post-remove cleanup passed; stable/offline and nightly/experimental returned typed failures without fallback.
+- Launch in the harness lacked a controlling terminal and correctly returned a typed development launch failure; no unsupported interactive success is claimed.
+- Development-only missing authentication, signatures, and key management did not block the journey.
