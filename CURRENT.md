@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | After AR-1584 adds supported terminal separation for broker fd-0, finish the real binary PTY negotiation/bootstrap/cleanup test; current run exits because broker stdin is not a TTY. | ar1580-pty-control |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Rebase PR #184 work onto asb-tui main including merged AR-1584; replace fixture-only path with exact binary PTY/socket negotiation, bootstrap, interactive exit, and cleanup evidence. | ar1580-pty-control |
 
 ## Open
 
