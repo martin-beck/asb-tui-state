@@ -226,7 +226,6 @@ flowchart LR
     AR_1595 --> AR_1596
     AR_1596 --> AR_1597
     AR_1599 --> AR_1600
-    AR_1599 --> AR_1602
     AR_1602 --> AR_1600
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -308,10 +307,10 @@ flowchart LR
 | [AR-1596](tasks/AR-1596.md) | [AR-1595](tasks/AR-1595.md) | [AR-1597](tasks/AR-1597.md) |
 | [AR-1597](tasks/AR-1597.md) | [AR-1596](tasks/AR-1596.md) | None |
 | [AR-1598](tasks/AR-1598.md) | [AR-1593](tasks/AR-1593.md) | None |
-| [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1602](tasks/AR-1602.md) |
+| [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
 | [AR-1600](tasks/AR-1600.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md), [AR-1602](tasks/AR-1602.md) | None |
 | [AR-1601](tasks/AR-1601.md) | [AR-1582](tasks/AR-1582.md) | None |
-| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) | [AR-1600](tasks/AR-1600.md) |
+| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
 
 ## Complete AR inventory
 
