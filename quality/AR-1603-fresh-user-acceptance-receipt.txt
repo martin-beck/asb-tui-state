@@ -1,0 +1,18 @@
+AR-1603 fresh-user wizard and offline benchmark acceptance receipt
+
+ASB exact main: 3d87e99b300def775afcf6d70ce8c0a4872cb591
+TUI exact main: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+
+Evidence:
+- Release/build and disposable configuration completed with provider, model,
+  coding-agent, authentication-mode, and shared-default selection.
+- Credential-free development warnings remained non-blocking.
+- Benchmark, selected/all recording, sealed cassette, runtime-authorized
+  offline replay, comparison, cleanup, and typed negative paths passed.
+- TUI full locked tests and release build passed; paired ASB evidence includes
+  recording coverage and exact hosted checks.
+- Independent acceptance workers reviewed the paired journey; exact-main
+  Trusted and Repository Quality passed on both heads.
+
+The standalone ASB CLI keeps replay authority fail-closed; the paired TUI
+runtime handoff supplies the authority for the complete user journey.
