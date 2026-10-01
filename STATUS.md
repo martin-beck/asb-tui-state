@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**70 ARs tracked** across 5 active status categories.
+**70 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 57 |
+| **Done** | Accepted, integrated, and durably verified | 58 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -112,7 +112,7 @@ flowchart LR
         direction TB
         AR_1600["AR-1600 - Planned"]:::status_planned
         AR_1601["AR-1601 - Planned"]:::status_planned
-        AR_1602["AR-1602 - In progress"]:::status_in_progress
+        AR_1602["AR-1602 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -314,12 +314,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | ar1199-tui-dev-install | Implement real clone/build installation for the default development channel. | PR #198 updated to a89f856; await fresh hosted checks and independent review. |
-
 ### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -347,7 +341,7 @@ flowchart LR
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. |
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. |
 
-### Done (57)
+### Done (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -401,6 +395,7 @@ flowchart LR
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Unclaimed | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. |
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Unclaimed | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Unclaimed | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
