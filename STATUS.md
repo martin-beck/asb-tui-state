@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 49 |
+| **Done** | Accepted, integrated, and durably verified | 50 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -90,7 +90,7 @@ flowchart LR
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
         AR_1582["AR-1582 - Planned"]:::status_planned
-        AR_1583["AR-1583 - In progress"]:::status_in_progress
+        AR_1583["AR-1583 - Done"]:::status_done
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
         AR_1586["AR-1586 - Done"]:::status_done
@@ -261,11 +261,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 712a291 includes required module-inventory repair; hosted Repository quality and AWQ checks are queued, independent review still required before merge. |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
 
 ### Open (1)
@@ -289,7 +288,7 @@ flowchart LR
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Unclaimed | Expose explicit release-channel selection with a simple default-dev TUI flow. | Promote after current recovery work is released; implement the channel selector/default-dev projection across TUI install, status, launch, and reconfiguration routes. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 
-### Done (49)
+### Done (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -332,6 +331,7 @@ flowchart LR
 | P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Unclaimed | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Unclaimed | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. |
 | P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Unclaimed | Cover every real first-run wizard projection and control transition. | Run cargo fmt on formal auth-field test, push signed repair, rerun hosted gates; then merge/release scoped projection repair. AR-1586 owns real backend bootstrap. |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Unclaimed | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 712a291 includes required module-inventory repair; hosted Repository quality and AWQ checks are queued, independent review still required before merge. |
 | P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Unclaimed | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer plus terminal separation: broker fd-0 must coexist with a real PTY/terminal for interactive mode; ASB producer bridge alone is insufficient. |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Unclaimed | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. |
