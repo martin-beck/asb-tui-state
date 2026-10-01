@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 8 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 57 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -112,7 +112,7 @@ flowchart LR
         direction TB
         AR_1600["AR-1600 - Planned"]:::status_planned
         AR_1601["AR-1601 - Planned"]:::status_planned
-        AR_1602["AR-1602 - Planned"]:::status_planned
+        AR_1602["AR-1602 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -314,13 +314,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Add or obtain a released typed bridge for cassette catalog/digest, campaign generation, and strict replay authority; then run exact ASB record/seal/replay/compare qualification |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Claim and implement bounded clone/build dev-channel installation; do not self-copy the running executable. |
 
 ### Blocked (2)
 
@@ -329,7 +330,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (8)
+### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -340,7 +341,6 @@ flowchart LR
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. |
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. |
-| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Claim and implement bounded clone/build dev-channel installation; do not self-copy the running executable. |
 
 ### Done (57)
 
