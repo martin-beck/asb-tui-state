@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Promote after bootstrap and PTY transport are available; implement full real request/response journey coverage. | ar1581-bootstrap-coverage |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Promote after bootstrap and PTY transport are available; implement full real request/response journey coverage. | - |
 
 ## Blocked
 
