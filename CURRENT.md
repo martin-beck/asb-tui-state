@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. | ar1587-backend-bridge |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. | ar1590-pty-seam |
 
 ## Open
 
@@ -29,6 +28,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | - |
+| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 
 ## Done
 
@@ -78,6 +78,7 @@ Never edit this file directly.
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. | - |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. | - |
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. | - |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |

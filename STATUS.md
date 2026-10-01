@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 51 |
+| **Done** | Accepted, integrated, and durably verified | 52 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -97,7 +97,7 @@ flowchart LR
         AR_1587["AR-1587 - In progress"]:::status_in_progress
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Planned"]:::status_planned
-        AR_1590["AR-1590 - In progress"]:::status_in_progress
+        AR_1590["AR-1590 - Done"]:::status_done
         AR_1591["AR-1591 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
@@ -269,12 +269,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | ar1590-pty-seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 
 ### Open (1)
 
@@ -297,7 +296,7 @@ flowchart LR
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Unclaimed | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 
-### Done (51)
+### Done (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -345,6 +344,7 @@ flowchart LR
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Unclaimed | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. |
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Unclaimed | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
