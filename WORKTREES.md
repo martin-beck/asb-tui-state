@@ -100,6 +100,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-live-control` | `ar1011-live-control` | `26058c07ff33` | 0 | behind 329, ahead 24 |
 | `asb-tui-main-verify` | `fix/release-document-schema` | `2beb944be612` | 0 | behind 278, ahead 2 |
 | `asb-tui-pr188-review.b1iNKH` | `DETACHED` | `712a29155e89` | 0 | behind 13, ahead 0 |
+| `asb-tui-pr193-review` | `DETACHED` | `9d1351ce326f` | 0 | behind 0, ahead 1 |
 | `asb-tui-pr47` | `rebased-pr47` | `a159fda0c118` | 0 | behind 275, ahead 1 |
 | `asb-tui-pr48` | `rebased-pr48` | `f366cc495e1e` | 0 | behind 276, ahead 2 |
 | `asb-tui-pr63-fix` | `DETACHED` | `8ccf7b93245e` | 0 | behind 243, ahead 0 |
