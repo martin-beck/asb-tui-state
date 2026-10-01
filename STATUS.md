@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 51 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -97,7 +97,7 @@ flowchart LR
         AR_1587["AR-1587 - In progress"]:::status_in_progress
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Planned"]:::status_planned
-        AR_1590["AR-1590 - Planned"]:::status_planned
+        AR_1590["AR-1590 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -271,11 +271,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. |
 
 ### Blocked (2)
 
@@ -284,13 +285,12 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (3)
+### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. |
 
 ### Done (51)
 

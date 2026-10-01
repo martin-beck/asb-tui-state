@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. | - |
 
 ## Blocked
 
@@ -28,7 +29,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | - |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. | - |
 
 ## Done
 
