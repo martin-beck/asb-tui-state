@@ -10,8 +10,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
+| **Open** | Dependency-ready and available to claim | 3 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 60 |
@@ -111,7 +111,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - Done"]:::status_done
-        AR_1601["AR-1601 - Blocked"]:::status_blocked
+        AR_1601["AR-1601 - Open"]:::status_open
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
@@ -321,20 +321,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote now that the typed bridge is merged on TUI main and ASB AR-1602 is released; implement and qualify the executable cross-process cassette lifecycle. |
 
-### Blocked (3)
+### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote now that the typed bridge is merged on TUI main and ASB AR-1602 is released; implement and qualify the executable cross-process cassette lifecycle. |
 
 ### Planned (7)
 
