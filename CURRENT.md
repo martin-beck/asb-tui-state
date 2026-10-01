@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 
 ## Blocked
 
@@ -20,7 +21,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | - |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
