@@ -9,6 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
+| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. | - |
 
 ## Blocked
 
@@ -29,7 +30,6 @@ Never edit this file directly.
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. | - |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. | - |
 | P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. | - |
-| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. | - |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. | - |
 
 ## Done
