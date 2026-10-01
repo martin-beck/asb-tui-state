@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -91,7 +91,7 @@ flowchart LR
         AR_1581["AR-1581 - Planned"]:::status_planned
         AR_1582["AR-1582 - Planned"]:::status_planned
         AR_1583["AR-1583 - Planned"]:::status_planned
-        AR_1584["AR-1584 - Open"]:::status_open
+        AR_1584["AR-1584 - In progress"]:::status_in_progress
         AR_1585["AR-1585 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
@@ -240,18 +240,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Replace synthetic /bin/sh smoke test with exact asb-tui executable plus real ASB broker negotiation/bootstrap/result exchange and teardown; PR #184 is blocked by independent review. |
+| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | ar1584-launcher-bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Promote and implement the cross-repository ASB/asb-tui launcher and inherited-channel bridge in isolated worktrees. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Unclaimed | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Promote and implement the cross-repository ASB/asb-tui launcher and inherited-channel bridge in isolated worktrees. |
 
 ### Blocked (2)
 
