@@ -28,6 +28,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1344` | `feature/ar-1344-dynamic-identity` | `c6326873183a` | 0 | behind 5, ahead 2 |
 | `asb-tui-ar-1580` | `feature/ar-1580-pty-handoff` | `04e08c180529` | 0 | behind 2, ahead 1 |
 | `asb-tui-ar-1583-recovery` | `feature/ar-1583-recovery` | `cca29bdd71d9` | 0 | behind 1, ahead 0 |
+| `asb-tui-ar-1583-recovery-v2` | `feature/ar-1583-recovery-v2` | `469e157f0bef` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 122, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 312, ahead 2 |
 | `asb-tui-ar1011-shell-integration` | `feature/ar1011-shell-integration` | `74973b3f235e` | 0 | behind 256, ahead 1 |
