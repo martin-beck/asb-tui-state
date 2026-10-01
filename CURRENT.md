@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Promote after current recovery work is released; implement the channel selector/default-dev projection across TUI install, status, launch, and reconfiguration routes. | - |
 
 ## Blocked
 
@@ -27,7 +28,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
-| P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Promote after current recovery work is released; implement the channel selector/default-dev projection across TUI install, status, launch, and reconfiguration routes. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | - |
 
 ## Done
