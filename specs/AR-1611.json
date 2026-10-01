@@ -1,1 +1,30 @@
-{"id":"AR-1611","revision":1,"title":"Installed frontend handoff and dev-channel launch","required_evidence":["installed launch","restart","incompatible manifest diagnostic","failed update rollback"],"development_mode":{"missing_authentication":"warning","missing_signatures":"warning","missing_key_management":"warning"}}
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1611.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"handoff","description":"Installed launch receives a versioned endpoint, channel, manifest/source digests, and workspace/state roots."},
+    {"id":"restart","description":"Persisted handoff reloads across restart and rejects incompatible or tampered records."},
+    {"id":"rollback","description":"Failed update preserves the previous known-good frontend and reports a human-readable diagnostic."},
+    {"id":"development-boundary","description":"Missing authentication, signatures and key management remain visible warnings and never block development launch."},
+    {"id":"evidence","description":"Exact protected-main merge and all required hosted/exact-main checks are recorded in the receipt."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes handoff, restart, tamper and rollback tests.",
+    "Post-merge receipt records exact protected-main head and independent review evidence."
+  ],
+  "inputs": [
+    {"id":"asb-router","description":"ASB dev-channel install/router handoff contract."},
+    {"id":"tui-main","description":"Current protected asb-tui main with adapter and defaults support."}
+  ],
+  "outputs": [
+    {"id":"frontend-handoff","description":"Versioned, persisted and validated installed frontend handoff consumed by launch."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id":"exact-main","description":"Merged commit is exact origin/main."},
+    {"id":"hosted","description":"All required PR and exact-main checks pass on merged head."}
+  ]
+}
