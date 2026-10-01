@@ -97,7 +97,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr88-fix` | `DETACHED` | `f5272ac0db84` | 0 | behind 222, ahead 1 |
 | `asb-tui-pr88-publish` | `DETACHED` | `8bb60c8f5416` | 0 | behind 252, ahead 1 |
 | `asb-tui-provider-defaults` | `ar-provider-defaults` | `18e37b9d8dbe` | 0 | behind 107, ahead 0 |
-| `asb-tui-qual-ar1345` | `DETACHED` | `474f9fc9b32e` | 0 | behind 0, ahead 0 |
 | `asb-tui-recording-codec` | `feature/ar-recording-codec` | `1d78e43d18d8` | 0 | behind 120, ahead 0 |
 | `asb-tui-recording-transport` | `feature/ar-recording-transport` | `c4baa971ff8a` | 0 | behind 114, ahead 0 |
 | `asb-tui-release-audit-20260914` | `DETACHED` | `d81bfe6cf5e3` | 0 | behind 255, ahead 0 |
