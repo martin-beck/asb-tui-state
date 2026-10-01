@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Add or obtain a released typed bridge for cassette catalog/digest, campaign generation, and strict replay authority; then run exact ASB record/seal/replay/compare qualification | ar1496-results-replay |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request independent review and hosted checks for TUI PR #199 at 0fbcedad9df6a081de1f42835e829f35f89b73f7; then run paired ASB c94586d record/seal/replay/compare qualification before release. | ar1496-results-replay |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal | ar1498-tui-install-qualification |
 
 ## Open
