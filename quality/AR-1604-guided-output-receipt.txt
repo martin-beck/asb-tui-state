@@ -1,0 +1,15 @@
+AR-1604 TUI guided command and output contract receipt
+
+Protected product repository: martin-beck/asb-tui
+Implementation pull request: #211
+Coverage repair pull request: #212
+Merged protected-main head: d2bc93c3dc09630f5cb400c525d720fc2034fa06
+
+Implementation evidence:
+- Guided setup, benchmark, recording, replay, comparison, lifecycle, and channel flows expose selectable human defaults and stable machine selectors.
+- Malformed/unavailable paths remain typed and actionable without credential or endpoint leakage.
+- Development-only missing credentials, signatures, and key management remain warning-only.
+
+Independent review: PR #211 and PR #212 exact-head reviews approved.
+Hosted checks: PR #211 and PR #212 required checks passed on their exact heads.
+Exact protected-main checks: Trusted main verification 36937922893 and Repository Quality 36937922838 passed on d2bc93c.

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1604.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"human-default","description":"Guided TUI-facing commands and screens remain human-readable and selectable by default."},
+    {"id":"json-selector","description":"Supported machine output uses stable --json or existing --format json selectors and compatibility aliases."},
+    {"id":"negatives","description":"Unknown, malformed, unavailable-channel, and credential-free paths provide typed actionable diagnostics without secret leakage."},
+    {"id":"development-mode","description":"Missing development credentials, signatures, and key management remain visible warnings and never block."}
+  ],
+  "definition_of_done": ["Merged exact-main implementation passes focused and hosted checks.","Independent review verifies guided defaults, selectors, diagnostics, and redaction.","Exact-main post-merge receipt records the protected head and trusted checks."],
+  "inputs": [{"id":"guided-flows","description":"TUI setup, benchmark, recording, replay, comparison, lifecycle, and channel flows."}],
+  "outputs": [{"id":"guided-output-contract","description":"Selectable human defaults, stable machine selectors, typed failures, command/screen matrix, and credential-free transcript."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["secret-output", "credential-bypass"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id":"exact-main","description":"Merged implementation is exact origin/main."},{"id":"hosted","description":"PR and exact-main checks pass on merged head."}]
+}

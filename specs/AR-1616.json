@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1616.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"coverage","description":"Behavior-relevant output-contract coverage restores total trusted-main line coverage above the unchanged 90% threshold."},
+    {"id":"inventory","description":"The non-UI output-contract exemption remains classified and its maintained tests satisfy UI inventory validation."},
+    {"id":"development-mode","description":"Coverage repair does not make development authentication, signatures, or key management blocking."}
+  ],
+  "definition_of_done": ["Focused tests and full locked suites pass.","Independent review verifies no gate weakening or unrelated changes.","Trusted main verification passes on the repair merge."],
+  "inputs": [{"id":"output-contract","description":"Merged guided output contract module and repository UI module inventory."}],
+  "outputs": [{"id":"coverage-margin","description":"Behavior-relevant tests and inventory metadata preserving a trusted coverage margin."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["coverage-gate-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id":"coverage","description":"Trusted coverage remains above 90% without changing the threshold."},{"id":"exact-main","description":"Repair is exact origin/main and trusted verification passes."}]
+}

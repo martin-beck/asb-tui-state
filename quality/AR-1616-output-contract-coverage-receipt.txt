@@ -1,0 +1,13 @@
+AR-1616 trusted coverage repair receipt
+
+Protected product repository: martin-beck/asb-tui
+Pull request: #212
+Merged protected-main head: d2bc93c3dc09630f5cb400c525d720fc2034fa06
+Implementation head: 43bf705deb509ced897bd5dff6d07e6dbb18c310
+
+Evidence:
+- Added behavior-relevant tests for human output, JSON selectors, aliases, malformed input, and credential-free warnings.
+- Updated only the non-UI module-inventory exemption metadata required by the validator.
+- Total local coverage: 90.06%; output_contract.rs coverage: 98.87%; threshold unchanged.
+- Independent exact-head review approved; signatures and DCO verified.
+- Hosted PR checks passed; exact-main Trusted verification 36937922893 and Repository Quality 36937922838 passed.
