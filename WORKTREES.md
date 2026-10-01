@@ -33,6 +33,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1590` | `feature/ar-1590-pty-seam` | `f0ef3dab5352` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1592-catalog` | `feature/ar-1592-catalog-compat` | `cb7b3723dd0e` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar-1593-version-alignment` | `feature/ar-1593-version-alignment` | `62d0aebe65e6` | 0 | behind 2, ahead 0 |
+| `asb-tui-ar-1594-wizard` | `feature/ar-1594-wizard-requalification` | `db80ffe48656` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar-1598-coverage` | `DETACHED` | `db80ffe48656` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `src/control_transport.rs` |
 | `asb-tui-ar-190-review` | `DETACHED` | `f0ef3dab5352` | 0 | behind 7, ahead 0 |
