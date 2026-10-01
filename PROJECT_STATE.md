@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #179 | `feature/ar-1343-development-broker-entrypoint@c4e5c6870c9c` | `main` | BLOCKED | - | feat: add development broker descriptor entrypoint |
+| #179 | `feature/ar-1343-development-broker-entrypoint@c4e5c6870c9c` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | feat: add development broker descriptor entrypoint |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36794429802 | `c4e5c6870c9c` | pull_request | AWQ shadow observation | completed:failure |
+| 36794429484 | `c4e5c6870c9c` | pull_request | Repository quality | in_progress:- |
 | 36793945680 | `1463f4f83b98` | pull_request | AWQ shadow observation | completed:failure |
 | 36793945236 | `1463f4f83b98` | pull_request | Repository quality | completed:failure |
 | 36792053614 | `3e69d82ddb5f` | push | Repository quality | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36787833088 | `86867eed7b1e` | push | Repository quality | completed:success |
 | 36787459859 | `c883807ef64d` | pull_request | AWQ shadow observation | completed:success |
 | 36787459584 | `c883807ef64d` | pull_request | Repository quality | completed:success |
-| 36786954527 | `526c6ada1376` | pull_request | AWQ shadow observation | completed:failure |
-| 36786954232 | `526c6ada1376` | pull_request | Repository quality | completed:failure |
