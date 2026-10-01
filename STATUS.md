@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**74 ARs tracked** across 5 active status categories.
+**75 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 60 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -117,6 +117,7 @@ flowchart LR
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Planned"]:::status_planned
         AR_1606["AR-1606 - Planned"]:::status_planned
+        AR_1607["AR-1607 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -237,7 +238,9 @@ flowchart LR
     AR_1603 --> AR_1604
     AR_1605 --> AR_1603
     AR_1605 --> AR_1606
+    AR_1605 --> AR_1607
     AR_1606 --> AR_1603
+    AR_1607 --> AR_1606
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -324,8 +327,9 @@ flowchart LR
 | [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md) |
 | [AR-1603](tasks/AR-1603.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md), [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md) | [AR-1604](tasks/AR-1604.md) |
 | [AR-1604](tasks/AR-1604.md) | [AR-1603](tasks/AR-1603.md) | None |
-| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md) |
-| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md) | [AR-1603](tasks/AR-1603.md) |
+| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md) |
+| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md) |
+| [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md) |
 
 ## Complete AR inventory
 
@@ -349,7 +353,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (9)
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -361,6 +365,7 @@ flowchart LR
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
 | P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | Unclaimed | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Promote after ASB AR-1607 is released; implement the additive wizard state and control route. |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
+| P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware selection and diagnostics. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
 ### Done (60)
