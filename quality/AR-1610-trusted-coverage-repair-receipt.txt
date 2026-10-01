@@ -1,0 +1,14 @@
+AR-1610 trusted-main coverage repair receipt
+
+Protected TUI main head: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+Coverage repair PR: #210
+Implementation head: ac3c2656d8198444ecf93013e73dd568b4ffaeb2
+
+Evidence:
+- Exact llvm-cov coverage passed above the unchanged 90% line gate.
+- UI inventory validation passed after the release-channel ownership update.
+- Full locked tests, formatting, lint, hosted Repository Quality, and AWQ checks passed.
+- Independent review approved the exact PR head; signatures and DCO verified.
+- Exact-main Trusted verification and Repository Quality passed on merged head.
+
+Development authentication, signatures, and key management remain warning-only.

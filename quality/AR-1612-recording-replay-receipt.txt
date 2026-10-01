@@ -1,0 +1,15 @@
+AR-1612 recording and offline replay selection UX receipt
+
+Protected TUI main head: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+Pull request: #209
+Implementation head: 6128753fb094a0acd68a94fd91a7d2347154f327
+
+Evidence:
+- Explicit all-workloads selection expands from the authoritative catalog and never serializes as an empty successful matrix.
+- Progress is bounded per campaign and lifecycle-only actions do not require a workload catalog.
+- Formal UI model, generated model, focused tests, and module inventory were updated and validated.
+- Full locked tests and hosted Repository Quality/AWQ checks passed.
+- Independent review approved the exact PR head; signatures and DCO verified.
+- Exact-main Trusted verification and Repository Quality passed on merged head.
+
+Development authentication, signatures, and key management remain warning-only.
