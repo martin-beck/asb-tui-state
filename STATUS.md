@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 59 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -110,7 +110,7 @@ flowchart LR
     end
     subgraph series_16["16 - Additional work"]
         direction TB
-        AR_1600["AR-1600 - Planned"]:::status_planned
+        AR_1600["AR-1600 - Open"]:::status_open
         AR_1601["AR-1601 - Planned"]:::status_planned
         AR_1602["AR-1602 - Done"]:::status_done
     end
@@ -320,11 +320,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request independent review and hosted checks for TUI PR #199 at 0fbcedad9df6a081de1f42835e829f35f89b73f7; then run paired ASB c94586d record/seal/replay/compare qualification before release. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. |
 
 ### Blocked (2)
 
@@ -333,7 +334,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (7)
+### Planned (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -342,7 +343,6 @@ flowchart LR
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Unclaimed | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
-| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. |
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. |
 
 ### Done (59)
