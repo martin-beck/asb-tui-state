@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**51 ARs tracked** across 5 active status categories.
+**51 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 43 |
+| **Done** | Accepted, integrated, and durably verified | 44 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -86,7 +86,7 @@ flowchart LR
     subgraph series_15["15 - Additional work"]
         direction TB
         AR_1575["AR-1575 - Open"]:::status_open
-        AR_1579["AR-1579 - In progress"]:::status_in_progress
+        AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Open"]:::status_open
         AR_1581["AR-1581 - Planned"]:::status_planned
         AR_1582["AR-1582 - Planned"]:::status_planned
@@ -233,12 +233,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | ar1579-dev-channel | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -261,7 +255,7 @@ flowchart LR
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Unclaimed | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. |
 
-### Done (43)
+### Done (44)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -301,6 +295,7 @@ flowchart LR
 | P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Obtain independent review and hosted required checks for PR #178 at exact head df7ffdc1a422d2f847e531d891af59f333fda63d; resolve only evidence-backed findings, then merge/release and verify post-merge. |
 | P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Unclaimed | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. |
 | P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Unclaimed | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da |
+| P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Unclaimed | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
