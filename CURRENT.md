@@ -33,6 +33,7 @@ Never edit this file directly.
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after ASB AR-1601 is released; execute exact paired channel-aware install and rollback qualification. | - |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. | - |
 
 ## Done
 

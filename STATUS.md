@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**68 ARs tracked** across 5 active status categories.
+**69 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 57 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -111,6 +111,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - Planned"]:::status_planned
+        AR_1601["AR-1601 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -190,6 +191,7 @@ flowchart LR
     AR_1582 --> AR_1575
     AR_1582 --> AR_1589
     AR_1582 --> AR_1595
+    AR_1582 --> AR_1601
     AR_1583 --> AR_1575
     AR_1583 --> AR_1588
     AR_1583 --> AR_1590
@@ -285,7 +287,7 @@ flowchart LR
 | [AR-1579](tasks/AR-1579.md) | None | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) |
 | [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md), [AR-1586](tasks/AR-1586.md) |
-| [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) | [AR-1575](tasks/AR-1575.md), [AR-1589](tasks/AR-1589.md), [AR-1595](tasks/AR-1595.md) |
+| [AR-1582](tasks/AR-1582.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) | [AR-1575](tasks/AR-1575.md), [AR-1589](tasks/AR-1589.md), [AR-1595](tasks/AR-1595.md), [AR-1601](tasks/AR-1601.md) |
 | [AR-1583](tasks/AR-1583.md) | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md), [AR-1588](tasks/AR-1588.md), [AR-1590](tasks/AR-1590.md) |
 | [AR-1584](tasks/AR-1584.md) | None | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
 | [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) |
@@ -304,6 +306,7 @@ flowchart LR
 | [AR-1598](tasks/AR-1598.md) | [AR-1593](tasks/AR-1593.md) | None |
 | [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
 | [AR-1600](tasks/AR-1600.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) | None |
+| [AR-1601](tasks/AR-1601.md) | [AR-1582](tasks/AR-1582.md) | None |
 
 ## Complete AR inventory
 
@@ -327,7 +330,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (6)
+### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -337,6 +340,7 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after ASB AR-1601 is released; execute exact paired channel-aware install and rollback qualification. |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. |
 
 ### Done (57)
 
