@@ -297,7 +297,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
-| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | ar1593-version-alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | PR #192 is open at signed+DCO head 62d0aeb; obtain independent exact-head review and green hosted checks, then release AR-1593 after paired ASB PR414 compatibility is green. |
+| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | ar1593-version-alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. |
 
 ### Open (1)
 

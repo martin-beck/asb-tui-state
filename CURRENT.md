@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. | ar1587-backend-bridge |
-| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | PR #192 is open at signed+DCO head 62d0aeb; obtain independent exact-head review and green hosted checks, then release AR-1593 after paired ASB PR414 compatibility is green. | ar1593-version-alignment |
+| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. | ar1593-version-alignment |
 
 ## Open
 
@@ -34,6 +34,7 @@ Never edit this file directly.
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
+| P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90%. | - |
 
 ## Done
 
