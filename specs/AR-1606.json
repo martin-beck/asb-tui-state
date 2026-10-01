@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1606.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"atomic-persistence","description":"Provider/model/auth defaults are validated and persisted atomically with crash-safe replacement."},
+    {"id":"shared-propagation","description":"Defaults can apply to selected or all configured agents without invalid tuples."},
+    {"id":"rollback","description":"Cancellation, validation failure and restart preserve the prior valid configuration."},
+    {"id":"privacy","description":"Only redacted credential references are persisted and diagnostics are human-readable or opt-in JSON."},
+    {"id":"development-boundary","description":"Missing authentication, signatures and key management remain warning-only in development."},
+    {"id":"evidence","description":"Exact protected-main merge and all required hosted/exact-main checks are recorded in the receipt."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes persistence, restart, rollback and inventory gates.",
+    "Post-merge receipt records exact protected-main head and independent review evidence."
+  ],
+  "inputs": [
+    {"id":"provider-catalog","description":"Released provider/model/auth and adapter compatibility catalog."}
+  ],
+  "outputs": [
+    {"id":"shared-defaults","description":"Atomic selected/all-agent defaults persistence and reconfiguration flow."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id":"exact-main","description":"Merged commit is exact origin/main."},
+    {"id":"hosted","description":"All required PR and exact-main checks pass on merged head."}
+  ]
+}
