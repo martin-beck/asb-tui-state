@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -94,7 +94,7 @@ flowchart LR
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
         AR_1586["AR-1586 - Done"]:::status_done
-        AR_1587["AR-1587 - Open"]:::status_open
+        AR_1587["AR-1587 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -251,18 +251,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 469e157 adds bounded timeout and malformed-frame recovery coverage; obtain independent review and hosted checks, then address findings before merge. |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. |
 
 ### Blocked (2)
 
