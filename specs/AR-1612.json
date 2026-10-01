@@ -1,0 +1,1 @@
+{"id":"AR-1612","revision":1,"title":"Recording and offline replay selection UX","required_evidence":["selected workload","all workloads","cancel rollback","sealed activation","comparison"],"development_mode":{"missing_authentication":"warning","missing_signatures":"warning","missing_key_management":"warning"}}
