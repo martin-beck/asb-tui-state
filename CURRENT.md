@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Repair PR #188: seed a valid prior projection, fail a late poll_projection response, assert rollback preserves it; add reconnect/idempotent retry or narrow scope to bounded transport recovery, then fix hosted inventory gates. | ar1583-recovery-stable |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 2d4dda7 adds seeded late-bootstrap rollback preservation; 19 focused and 257 full library tests pass. Obtain independent review and hosted checks; scope remains bounded transport recovery with existing reconnect/idempotency tests. | ar1583-recovery-stable |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. | ar1587-backend-bridge |
 
 ## Open
