@@ -154,7 +154,6 @@ flowchart LR
     AR_1342 --> AR_1343
     AR_1343 --> AR_1344
     AR_1344 --> AR_1345
-    AR_1345 --> AR_1575
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -213,8 +212,8 @@ flowchart LR
 | [AR-1342](tasks/AR-1342.md) | [AR-1340](tasks/AR-1340.md) | [AR-1343](tasks/AR-1343.md) |
 | [AR-1343](tasks/AR-1343.md) | [AR-1342](tasks/AR-1342.md) | [AR-1344](tasks/AR-1344.md) |
 | [AR-1344](tasks/AR-1344.md) | [AR-1343](tasks/AR-1343.md) | [AR-1345](tasks/AR-1345.md) |
-| [AR-1345](tasks/AR-1345.md) | [AR-1344](tasks/AR-1344.md) | [AR-1575](tasks/AR-1575.md) |
-| [AR-1575](tasks/AR-1575.md) | [AR-1345](tasks/AR-1345.md) | None |
+| [AR-1345](tasks/AR-1345.md) | [AR-1344](tasks/AR-1344.md) | None |
+| [AR-1575](tasks/AR-1575.md) | None | None |
 
 ## Complete AR inventory
 
