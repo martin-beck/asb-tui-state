@@ -16,6 +16,16 @@ Never edit this file directly.
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. | - |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. | - |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Promote after ASB transport and supervision release; implement the real PTY/inherited-channel integration harness. | - |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Promote after bootstrap and PTY transport are available; implement full real request/response journey coverage. | - |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
