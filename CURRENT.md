@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | ar1582-results-replay |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Inspect exact merged asb-tui/ASB recovery seams; implement focused disconnect, timeout, malformed/stale identity, child cleanup, idempotent reconnect, and stable/development regression tests in isolated worktrees; run focused and full gates. | ar1583-recovery-stable |
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. | ar1586-real-bootstrap |
 
@@ -23,6 +22,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 
 ## Done
 
