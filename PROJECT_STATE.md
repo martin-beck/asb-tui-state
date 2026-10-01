@@ -12,12 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #180 | `dependabot/cargo/signal-hook-0.4.4@5d9e5ac025a3` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 | #181 | `dependabot/github_actions/taiki-e/install-action-2.87.20@d77b0644df70` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.20 |
-| #199 | `feature/ar-1582-results-replay@0fbcedad9df6` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: bridge typed v1.12 cassette replay |
+| #199 | `feature/ar-1582-results-replay@8d430aefe412` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | feat: bridge typed v1.12 cassette replay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36876122777 | `8d430aefe412` | pull_request | AWQ shadow observation | in_progress:- |
+| 36876122111 | `8d430aefe412` | pull_request | Repository quality | in_progress:- |
 | 36875295523 | `0fbcedad9df6` | pull_request | AWQ shadow observation | completed:failure |
 | 36875295195 | `0fbcedad9df6` | pull_request | Repository quality | completed:failure |
 | 36872584129 | `6b5f343a1181` | push | Repository quality | completed:success |
@@ -28,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36870688861 | `8c21d8991dcf` | pull_request | Repository quality | completed:failure |
 | 36869613887 | `e98206361a04` | pull_request | AWQ shadow observation | completed:failure |
 | 36869613618 | `e98206361a04` | pull_request | Repository quality | completed:failure |
-| 36868407085 | `aed8b6fb52f4` | pull_request | AWQ shadow observation | completed:failure |
-| 36868406803 | `aed8b6fb52f4` | pull_request | Repository quality | completed:failure |
