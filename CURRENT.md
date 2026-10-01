@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Run cargo fmt on formal auth-field test, push signed repair, rerun hosted gates; then merge/release scoped projection repair. AR-1586 owns real backend bootstrap. | ar1581-bootstrap-coverage |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -72,6 +66,7 @@ Never edit this file directly.
 | P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da | - |
 | P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. | - |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. | - |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Run cargo fmt on formal auth-field test, push signed repair, rerun hosted gates; then merge/release scoped projection repair. AR-1586 owns real backend bootstrap. | - |
 | P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer plus terminal separation: broker fd-0 must coexist with a real PTY/terminal for interactive mode; ASB producer bridge alone is insufficient. | - |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
