@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**43 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 42 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -80,6 +80,7 @@ flowchart LR
         AR_1341["AR-1341 - Blocked"]:::status_blocked
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - Done"]:::status_done
+        AR_1344["AR-1344 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -146,6 +147,7 @@ flowchart LR
     AR_1340 --> AR_1341
     AR_1340 --> AR_1342
     AR_1342 --> AR_1343
+    AR_1343 --> AR_1344
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -202,7 +204,8 @@ flowchart LR
 | [AR-1340](tasks/AR-1340.md) | [AR-1339](tasks/AR-1339-top-level-install-launch.md) | [AR-1341](tasks/AR-1341.md), [AR-1342](tasks/AR-1342.md) |
 | [AR-1341](tasks/AR-1341.md) | [AR-1340](tasks/AR-1340.md) | None |
 | [AR-1342](tasks/AR-1342.md) | [AR-1340](tasks/AR-1340.md) | [AR-1343](tasks/AR-1343.md) |
-| [AR-1343](tasks/AR-1343.md) | [AR-1342](tasks/AR-1342.md) | None |
+| [AR-1343](tasks/AR-1343.md) | [AR-1342](tasks/AR-1342.md) | [AR-1344](tasks/AR-1344.md) |
+| [AR-1344](tasks/AR-1344.md) | [AR-1343](tasks/AR-1343.md) | None |
 
 ## Complete AR inventory
 
@@ -211,6 +214,12 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Unclaimed | Bind the development broker entrypoint to current ASB and asb-tui source identities. | Promote and replace pre-merge descriptor identity constants with exact current-main identity inputs for development broker validation. |
 
 ### Done (42)
 

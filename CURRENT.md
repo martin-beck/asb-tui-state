@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Bind the development broker entrypoint to current ASB and asb-tui source identities. | Promote and replace pre-merge descriptor identity constants with exact current-main identity inputs for development broker validation. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
