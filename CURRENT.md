@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Monitor hosted checks and request fresh independent review for PR #199 at 28b6721 rebased onto TUI main 6b5f343; then run paired ASB c94586d record/seal/replay/compare qualification before release. | ar1496-results-replay |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Create or consume a reviewed executable ASB ControlServer-to-TUI cassette qualification seam (likely AR-1601); do not release AR-1582 until real record/seal/reopen/strict-offline-replay/compare crosses the process boundary with provider egress denied. | ar1496-results-replay |
 
 ## Open
 
