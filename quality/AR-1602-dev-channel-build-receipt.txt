@@ -1,0 +1,10 @@
+# AR-1602 acceptance receipt
+
+- Implementation PR: TUI PR #198, exact signed/DCO head a89f856068c783ec7f766bf7d799f8a52bad3901.
+- Implementation merge: signed two-parent merge 6b5f343a1181eb1bb673e09838ce5d4f094bf137 on protected TUI main.
+- Independent review: exact-head review approved process-group cleanup, trusted executable/env binding, private build roots, rollback, and deterministic local fixtures.
+- Hosted PR evidence: repository quality, Rust/supply-chain/privacy, and AWQ policy checks passed for a89f856.
+- Post-merge evidence: Trusted main verification 36872584125 and Repository quality 36872584129 both passed for exact main 6b5f343a.
+- Local evidence: full cargo test --locked, focused clone/build and top-level lifecycle tests, clippy, fmt, diff, and UI inventory validation passed.
+- Contract evidence: default dev installs clone/build the selected source in bounded temporary roots, record exact commit/tree provenance, publish atomically, clean failures, and preserve explicit unavailable channels.
+- Classification: contract-test/mechanical/environmental; development-only missing authentication, signatures, and key management remain warning-only and non-blocking.
