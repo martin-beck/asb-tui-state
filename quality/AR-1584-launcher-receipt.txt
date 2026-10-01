@@ -1,0 +1,7 @@
+AR-1584 cross-repository launcher and control bridge receipt
+merged_sha=c073396cacbb72653cfc6515237cc4b2f7031c6c
+reviewed_pr_head=e8cc44e22f2be3a84e4121331a4459a46cf5ceea
+pr=https://github.com/martin-beck/asb-tui/pull/185
+checks=all required asb-tui hosted quality checks passed, including repository quality, Rust, supply-chain, privacy, and AWQ shadow checks
+review=independent review approved the exact repaired head after continuity fencing, full ancestor validation, real owner-private listener negotiation coverage, and module-inventory repair
+local=fmt, clippy -D warnings, focused transport/doctor/top-level tests, and real socket listener tests passed
