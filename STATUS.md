@@ -352,7 +352,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | tui1606-defaults | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
-| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish PR208 with signed+DCO behavior-relevant tests, independent review, hosted checks, and exact-main Trusted coverage at or above 90&#37;; then release this repair cycle. |
+| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
 
 ### Open (2)
 
