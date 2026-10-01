@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**76 ARs tracked** across 5 active status categories.
+**78 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 8 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 63 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -119,6 +119,8 @@ flowchart LR
         AR_1606["AR-1606 - Planned"]:::status_planned
         AR_1607["AR-1607 - In progress"]:::status_in_progress
         AR_1610["AR-1610 - Done"]:::status_done
+        AR_1611["AR-1611 - Planned"]:::status_planned
+        AR_1612["AR-1612 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -236,13 +238,19 @@ flowchart LR
     AR_1601 --> AR_1603
     AR_1602 --> AR_1600
     AR_1602 --> AR_1601
+    AR_1602 --> AR_1612
     AR_1603 --> AR_1604
     AR_1605 --> AR_1603
     AR_1605 --> AR_1606
     AR_1605 --> AR_1607
     AR_1605 --> AR_1610
+    AR_1605 --> AR_1611
     AR_1606 --> AR_1603
+    AR_1606 --> AR_1612
     AR_1607 --> AR_1606
+    AR_1607 --> AR_1611
+    AR_1607 --> AR_1612
+    AR_1611 --> AR_1612
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -326,13 +334,15 @@ flowchart LR
 | [AR-1599](tasks/AR-1599.md) | [AR-1579](tasks/AR-1579.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md) |
 | [AR-1600](tasks/AR-1600.md) | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md), [AR-1602](tasks/AR-1602.md) | [AR-1603](tasks/AR-1603.md) |
 | [AR-1601](tasks/AR-1601.md) | [AR-1602](tasks/AR-1602.md) | [AR-1603](tasks/AR-1603.md) |
-| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md) |
+| [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md), [AR-1612](tasks/AR-1612.md) |
 | [AR-1603](tasks/AR-1603.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md), [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md) | [AR-1604](tasks/AR-1604.md) |
 | [AR-1604](tasks/AR-1604.md) | [AR-1603](tasks/AR-1603.md) | None |
-| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1610](tasks/AR-1610.md) |
-| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md) |
-| [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md) |
+| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1610](tasks/AR-1610.md), [AR-1611](tasks/AR-1611.md) |
+| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md), [AR-1612](tasks/AR-1612.md) |
+| [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md) |
 | [AR-1610](tasks/AR-1610.md) | [AR-1605](tasks/AR-1605.md) | None |
+| [AR-1611](tasks/AR-1611.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1612](tasks/AR-1612.md) |
+| [AR-1612](tasks/AR-1612.md) | [AR-1602](tasks/AR-1602.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1611](tasks/AR-1611.md) | None |
 
 ## Complete AR inventory
 
@@ -356,7 +366,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (8)
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -367,6 +377,8 @@ flowchart LR
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
+| P0 | [AR-1611](tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
+| P0 | [AR-1612](tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
 ### Done (63)
