@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. | tui1603-acceptance |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -92,6 +86,7 @@ Never edit this file directly.
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata | - |
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 protocol-compatible selected cassette route | Retain the released lifecycle receipt; AR-1606 owns the paired record/seal/reopen/catalog/replay/compare qualification. | - |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. | - |
+| P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. | - |
 | P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. | - |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. | - |
 | P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. | - |
