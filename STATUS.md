@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -101,7 +101,7 @@ flowchart LR
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - Done"]:::status_done
         AR_1593["AR-1593 - Done"]:::status_done
-        AR_1594["AR-1594 - In progress"]:::status_in_progress
+        AR_1594["AR-1594 - Open"]:::status_open
         AR_1595["AR-1595 - Planned"]:::status_planned
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
@@ -295,19 +295,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1199-router-impl-1587 | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head 4c97ee47d5b0bb37fbb6147f7b19e55aeb3477e1 and await hosted checks; merge/release only after independent approval and exact post-merge qualification. |
-| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | ar1594-wizard-requal | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Await paired ASB AR-1595 development setup capability contract; then run the real control-server wizard journey and add only contract-backed tests. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | ar1199-router-impl | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90&#37;. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Unclaimed | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Await paired ASB AR-1595 development setup capability contract; then run the real control-server wizard journey and add only contract-backed tests. |
 
 ### Blocked (2)
 
