@@ -76,6 +76,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 221, ahead 0 |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 15, ahead 0 |
 | `asb-tui-ar1601` | `ar1601-cassette-lifecycle` | `b4a6f84fdbee` | 0 | behind 15, ahead 0 |
+| `asb-tui-ar1601-final` | `feature/ar-1601-cassette-lifecycle` | `e7824d74efd4` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar1601-fresh` | `DETACHED` | `afdf031530a8` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1601-qual` | `DETACHED` | `6b5f343a1181` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar1602-impl` | `feature/ar-1602-dev-clone-build` | `a89f856068c7` | 0 | behind 5, ahead 0 |
