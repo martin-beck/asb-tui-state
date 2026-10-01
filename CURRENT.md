@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. | ar1587-backend-bridge |
-| P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await hosted checks and independent review for PR #189 at 3f364ac207c88521e8fdbf4cb70227656346de6c. | ar1588-channel-ux |
+| P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. | ar1588-channel-ux |
 
 ## Open
 
