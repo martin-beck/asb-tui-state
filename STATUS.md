@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**70 ARs tracked** across 5 active status categories.
+**70 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -106,7 +106,7 @@ flowchart LR
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Done"]:::status_done
-        AR_1599["AR-1599 - In progress"]:::status_in_progress
+        AR_1599["AR-1599 - Open"]:::status_open
     end
     subgraph series_16["16 - Additional work"]
         direction TB
@@ -315,18 +315,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | ar1498-tui-install-qualification | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt |
-
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Add or obtain a released typed bridge for cassette catalog/digest, campaign generation, and strict replay authority; then run exact ASB record/seal/replay/compare qualification |
+| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt |
 
 ### Blocked (2)
 
