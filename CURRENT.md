@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Extend TUI record/replay route with exact cassette identity binding. | Run independent review and hosted checks for PR #197 at 0db1965; then qualify the real ASB record/seal/replay/compare journey before release. | ar1498-tui-results-replay |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Extend TUI record/replay route with exact cassette identity binding. | Re-run hosted checks and obtain fresh independent review for PR #197 exact head 6606fbb; then qualify the real ASB record/seal/replay/compare journey before release. | ar1498-tui-results-replay |
 
 ## Open
 
