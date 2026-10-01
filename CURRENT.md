@@ -31,6 +31,7 @@ Never edit this file directly.
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
+| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Qualify the complete default-dev cross-repository install and lifecycle journey. | Promote after ASB AR-1599 is released, then run the repaired disposable install-to-launch qualification. | - |
 
 ## Done
 
