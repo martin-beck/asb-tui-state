@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Replace synthetic /bin/sh smoke test with exact asb-tui executable plus real ASB broker negotiation/bootstrap/result exchange and teardown; PR #184 is blocked by independent review. | ar1580-pty-control |
-| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Promote and implement the cross-repository ASB/asb-tui launcher and inherited-channel bridge in isolated worktrees. | ar1584-launcher-bridge |
+| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer for ASB owner-private socket and inherited handoff; ASB producer bridge alone is insufficient. | ar1584-launcher-bridge |
 
 ## Open
 
