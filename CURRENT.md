@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. | ar1587-backend-bridge |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. | ar1590-pty-seam |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Promote and implement the validated development broker PTY/fd handoff seam required for real ASB bridge qualification. | - |
 
 ## Blocked
 
