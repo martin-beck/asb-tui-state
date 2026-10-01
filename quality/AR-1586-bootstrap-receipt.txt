@@ -1,0 +1,7 @@
+AR-1586 TUI ordered bootstrap/control receipt
+merged_sha=3ae16207d23d857955d53cdb52771cfe1199d430
+reviewed_pr_head=442b56d8fe030d6b01b3e2f47e2f893e430d8189
+pr=https://github.com/martin-beck/asb-tui/pull/187
+checks=all required asb-tui hosted quality checks passed, including repository quality, Rust, supply-chain, privacy, and AWQ shadow checks
+review=independent review approved the explicit V1.10 ordered bootstrap transport contract, 17 focused control-transport tests, inventory metadata, and honest AR-1587 backend scope boundary
+local=ordered bootstrap tests, formatting, clippy -D warnings, UI model validation, source parity, and diff checks passed
