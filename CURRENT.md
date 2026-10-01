@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Promote and implement the cross-repository ASB/asb-tui launcher and inherited-channel bridge in isolated worktrees. | - |
 
 ## Blocked
 
@@ -29,7 +30,6 @@ Never edit this file directly.
 | P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Promote after bootstrap and PTY transport are available; implement full real request/response journey coverage. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. | - |
-| P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Promote and implement the cross-repository ASB/asb-tui launcher and inherited-channel bridge in isolated worktrees. | - |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Promote after the launcher bridge exists; implement negotiated wizard bootstrap/catalog/configuration protocol compatibility and downgrade tests. | - |
 
 ## Done
