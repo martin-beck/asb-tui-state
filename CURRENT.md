@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Promote after bootstrap and PTY transport are available; implement full real request/response journey coverage. | ar1581-bootstrap-coverage |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Cover every real first-run wizard projection and control transition. | Repair PR #186: expose committed visible development-only auth unavailable/status projection, apply successful AuthStatus, add regression/no-silent-downgrade tests, and add real ASB-backed ordered bootstrap evidence at highest common protocol or narrow scope honestly. | ar1581-bootstrap-coverage |
 
 ## Open
 
