@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head 4c97ee47d5b0bb37fbb6147f7b19e55aeb3477e1 and await hosted checks; merge/release only after independent approval and exact post-merge qualification. | ar1199-router-impl-1587 |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head bfc6424757c1d12c4cae42c04b92f45273c8e08c and await all hosted checks; merge/release only after independent approval and exact post-merge qualification. | ar1199-router-impl-1587 |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90%. | ar1199-router-impl |
 
 ## Open
