@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b; hosted checks rerunning after classifying the new broker module in the required inventory. Await independent review and green checks before merge/release. | codex-ar1343-broker |
+| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. | codex-ar1343-broker |
 
 ## Blocked
 
