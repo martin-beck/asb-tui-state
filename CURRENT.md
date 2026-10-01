@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | Run full TUI gates, commit signed/DCO, and prepare exact-head PR for independent review. | ar1199-tui-dev-install |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | PR #198 is open at aed8b6f; obtain independent review and hosted checks, then repair only evidence-backed findings. | ar1199-tui-dev-install |
 
 ## Open
 
