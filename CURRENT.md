@@ -7,8 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Inspect exact merged asb-tui/ASB recovery seams; implement focused disconnect, timeout, malformed/stale identity, child cleanup, idempotent reconnect, and stable/development regression tests in isolated worktrees; run focused and full gates. | ar1583-recovery-stable |
-| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the complete first-run wizard journey against the real ASB control backend. | Implement a real ASB ControlServer/backend integration journey at the highest common protocol version; assert ordered bootstrap, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. | ar1586-real-bootstrap |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 469e157 adds bounded timeout and malformed-frame recovery coverage; obtain independent review and hosted checks, then address findings before merge. | ar1583-recovery-stable |
+| P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. | ar1586-real-bootstrap |
 
 ## Open
 
@@ -28,6 +28,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Implement and qualify the exact asb-tui-to-ASB ControlServer/backend bridge with real binaries, highest-common negotiation, ordered bootstrap/mutations, identity/digest/revision/generation fencing, rollback, downgrade, cleanup, and stable/development separation. | - |
 
 ## Done
 
