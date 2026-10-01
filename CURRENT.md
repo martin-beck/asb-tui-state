@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. | ar1498-ar1610 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -96,6 +90,7 @@ Never edit this file directly.
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 protocol-compatible selected cassette route | Retain the released lifecycle receipt; AR-1606 owns the paired record/seal/reopen/catalog/replay/compare qualification. | - |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. | - |
 | P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. | - |
+| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |
