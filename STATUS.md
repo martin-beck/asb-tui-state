@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**59 ARs tracked** across 5 active status categories.
+**60 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 52 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -99,6 +99,7 @@ flowchart LR
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - Done"]:::status_done
         AR_1591["AR-1591 - Planned"]:::status_planned
+        AR_1592["AR-1592 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -187,12 +188,14 @@ flowchart LR
     AR_1585 --> AR_1587
     AR_1586 --> AR_1582
     AR_1586 --> AR_1587
+    AR_1586 --> AR_1592
     AR_1587 --> AR_1582
     AR_1587 --> AR_1589
     AR_1588 --> AR_1589
     AR_1588 --> AR_1590
     AR_1589 --> AR_1591
     AR_1590 --> AR_1591
+    AR_1592 --> AR_1587
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -260,12 +263,13 @@ flowchart LR
 | [AR-1583](tasks/AR-1583.md) | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md) | [AR-1575](tasks/AR-1575.md), [AR-1588](tasks/AR-1588.md), [AR-1590](tasks/AR-1590.md) |
 | [AR-1584](tasks/AR-1584.md) | None | [AR-1580](tasks/AR-1580.md), [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) |
 | [AR-1585](tasks/AR-1585.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1586](tasks/AR-1586.md), [AR-1587](tasks/AR-1587.md) |
-| [AR-1586](tasks/AR-1586.md) | [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1587](tasks/AR-1587.md) |
-| [AR-1587](tasks/AR-1587.md) | [AR-1585](tasks/AR-1585.md), [AR-1586](tasks/AR-1586.md) | [AR-1582](tasks/AR-1582.md), [AR-1589](tasks/AR-1589.md) |
+| [AR-1586](tasks/AR-1586.md) | [AR-1581](tasks/AR-1581.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1587](tasks/AR-1587.md), [AR-1592](tasks/AR-1592.md) |
+| [AR-1587](tasks/AR-1587.md) | [AR-1585](tasks/AR-1585.md), [AR-1586](tasks/AR-1586.md), [AR-1592](tasks/AR-1592.md) | [AR-1582](tasks/AR-1582.md), [AR-1589](tasks/AR-1589.md) |
 | [AR-1588](tasks/AR-1588.md) | [AR-1340](tasks/AR-1340.md), [AR-1579](tasks/AR-1579.md), [AR-1583](tasks/AR-1583.md) | [AR-1589](tasks/AR-1589.md), [AR-1590](tasks/AR-1590.md) |
 | [AR-1589](tasks/AR-1589.md) | [AR-1582](tasks/AR-1582.md), [AR-1587](tasks/AR-1587.md), [AR-1588](tasks/AR-1588.md) | [AR-1591](tasks/AR-1591.md) |
 | [AR-1590](tasks/AR-1590.md) | [AR-1583](tasks/AR-1583.md), [AR-1588](tasks/AR-1588.md) | [AR-1591](tasks/AR-1591.md) |
 | [AR-1591](tasks/AR-1591.md) | [AR-1589](tasks/AR-1589.md), [AR-1590](tasks/AR-1590.md) | None |
+| [AR-1592](tasks/AR-1592.md) | [AR-1586](tasks/AR-1586.md) | [AR-1587](tasks/AR-1587.md) |
 
 ## Complete AR inventory
 
@@ -273,7 +277,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
 
 ### Open (1)
 
@@ -288,13 +292,14 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (3)
+### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Unclaimed | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
+| P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Unclaimed | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | Audit and, if necessary, repair the TUI catalog requests and downgrade/fallback handling against the ASB AR-1592 contract; publish exact evidence without synthetic cross-project claims. |
 
 ### Done (52)
 

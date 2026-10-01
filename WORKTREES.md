@@ -72,6 +72,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 201, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 323, ahead 1 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 200, ahead 0 |
+| `asb-tui-cca57863` | `DETACHED` | `cca57863a6da` | 0 | behind 0, ahead 0 |
 | `asb-tui-complete-fix` | `DETACHED` | `878cbf7235b8` | 0 | behind 205, ahead 0 |
 | `asb-tui-configuration-persistence` | `feat/configuration-persistence-ui` | `b779dcdc2585` | 0 | behind 195, ahead 0 |
 | `asb-tui-contextual-footer` | `feature/contextual-footer` | `a7b553060327` | 0 | behind 287, ahead 0 |
@@ -141,6 +142,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr175final` | `DETACHED` | `5bd8a99e95c1` | 0 | behind 24, ahead 0 |
 | `asb-tui-pr175r` | `DETACHED` | `5f0f95336164` | 0 | behind 25, ahead 0 |
 | `asb-tui-pr176-review.8sSTOE` | `DETACHED` | `3f50a9aa5134` | 0 | behind 20, ahead 0 |
+| `asb-tui-qual-dIm6S0` | `DETACHED` | `cca57863a6da` | 0 | behind 0, ahead 0 |
 | `asb-tui-review-158` | `DETACHED` | `d47b27a7beff` | 0 | behind 52, ahead 0 |
 | `asb-tui-review-160` | `DETACHED` | `3387ed3d9aa3` | 0 | behind 48, ahead 7 |
 | `asb-tui-review155` | `DETACHED` | `8efbf980be1a` | 0 | behind 65, ahead 0 |

@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #180 | `dependabot/cargo/signal-hook-0.4.4@5d9e5ac025a3` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
-| #181 | `dependabot/github_actions/taiki-e/install-action-2.87.20@d77b0644df70` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.20 |
+| #180 | `dependabot/cargo/signal-hook-0.4.4@5d9e5ac025a3` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
+| #181 | `dependabot/github_actions/taiki-e/install-action-2.87.20@d77b0644df70` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.20 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36821284982 | `cca57863a6da` | push | Trusted main verification | in_progress:- |
-| 36821284842 | `cca57863a6da` | push | Repository quality | in_progress:- |
+| 36821284982 | `cca57863a6da` | push | Trusted main verification | completed:failure |
+| 36821284842 | `cca57863a6da` | push | Repository quality | completed:success |
 | 36820739768 | `f0ef3dab5352` | pull_request | AWQ shadow observation | completed:success |
 | 36820739441 | `f0ef3dab5352` | pull_request | Repository quality | completed:success |
 | 36820408362 | `68ae5a5d6c48` | pull_request | AWQ shadow observation | completed:success |
