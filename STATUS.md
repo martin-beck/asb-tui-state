@@ -213,7 +213,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | ar1344-dynamic-identity | Bind the development broker entrypoint to current ASB and asb-tui source identities. | Promote and replace pre-merge descriptor identity constants with exact current-main identity inputs for development broker validation. |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | ar1344-dynamic-identity | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at 4de2aa178f33e8de368b825b28cfad486a334202 |
 
 ### Blocked (1)
 
