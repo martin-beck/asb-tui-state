@@ -282,7 +282,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
-| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | ar1593-version-alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Extend or align the TUI supported-version matrix so BenchmarkCatalog is available at the ASB published version, with exact negotiation and downgrade tests. |
+| P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | ar1593-version-alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Inspect ASB PR413/414 live protocol version and align TUI control constants/matrix at exact fa85de35; add negotiation and downgrade/schema tests before commit. |
 
 ### Open (1)
 
