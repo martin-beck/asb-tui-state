@@ -244,7 +244,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Promote after ASB transport and supervision release; implement the real PTY/inherited-channel integration harness. |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Await hosted checks and independent review of PR #184 exact head 14f3ef81431fef427344435b029c8c2f64f1f77f; merge/release only identical green head. |
 
 ### Open (1)
 
