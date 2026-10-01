@@ -297,7 +297,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
-| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | ar1594-wizard-requal | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Requalify the selection-driven wizard against ASB AR-1595 after the paired capability contract is released. |
+| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | ar1594-wizard-requal | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Await paired ASB AR-1595 development setup capability contract; then run the real control-server wizard journey and add only contract-backed tests. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | ar1199-router-impl | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90&#37;. |
 
 ### Open (1)
