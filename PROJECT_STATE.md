@@ -12,11 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #180 | `dependabot/cargo/signal-hook-0.4.4@5d9e5ac025a3` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 | #181 | `dependabot/github_actions/taiki-e/install-action-2.87.20@d77b0644df70` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.20 |
+| #196 | `feature/ar-1582-results-replay@4a5bb1badeb5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(reports): project authenticated analysis summaries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36844037628 | `4a5bb1badeb5` | pull_request | AWQ shadow observation | in_progress:- |
+| 36844037336 | `4a5bb1badeb5` | pull_request | Repository quality | in_progress:- |
 | 36841706164 | `b4a6f84fdbee` | push | Repository quality | completed:success |
 | 36841706081 | `b4a6f84fdbee` | push | Trusted main verification | completed:success |
 | 36839722585 | `b992357b922e` | pull_request | AWQ shadow observation | completed:success |
@@ -27,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 36839160192 | `ed90eb918e36` | pull_request | Repository quality | completed:success |
 | 36838737049 | `f9b97d6436cb` | pull_request | AWQ shadow observation | completed:success |
 | 36838736689 | `f9b97d6436cb` | pull_request | Repository quality | completed:success |
-| 36838505371 | `27383c8538e8` | pull_request | AWQ shadow observation | completed:failure |
-| 36838504835 | `27383c8538e8` | pull_request | Repository quality | completed:failure |
