@@ -1,0 +1,9 @@
+# AR-1594 acceptance receipt
+
+- Exact merged implementation: asb-tui PR #195, merge commit `b4a6f84fdbee5fe7a3dc9376bdb2d09051f243e5`.
+- Pre-merge reviewed head: `b992357b922e6566a0e81f1ffe39d358bd6041e5`, signed and DCO-certified after rebase onto `1afcd6f`.
+- Focused exact-head qualification: `cargo test --locked --test wizard_render -- --nocapture` passed 15/15 on the merged head; cancellation/restart and live setup-catalog projection tests passed individually.
+- Wizard evidence: typed agent/provider/model projection drives selection; configuration and shared-default draft editing is repeatable; authentication is represented only by a digest-only credential reference; unavailable authentication is explicitly development-only; cancel clears values/catalog/step/auth state and reopening starts empty from the authoritative catalog.
+- Negative/privacy evidence: no raw `api_key` value is projected; no real provider credentials or network access are used by the qualification fixture; stable authentication remains fail-closed.
+- Hosted post-merge evidence: Repository Quality and Trusted-main checks passed on the exact merge commit.
+- Classification: contract-test/mechanical/hosted; credential-free development qualification.
