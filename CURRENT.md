@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Add or obtain a released typed bridge for cassette catalog/digest, campaign generation, and strict replay authority; then run exact ASB record/seal/replay/compare qualification | ar1498-results-replay-journey |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Paired install passes with bounded Cargo-output staging; awaiting ASB follow-up | Review ASB PR423/AR1600, then rerun exact install and complete launch, rollback, offline, and cleanup receipt | ar1498-tui-install-qualification |
 
 ## Open
@@ -15,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Add or obtain a released typed bridge for cassette catalog/digest, campaign generation, and strict replay authority; then run exact ASB record/seal/replay/compare qualification | - |
 
 ## Blocked
 
@@ -32,8 +32,9 @@ Never edit this file directly.
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
-| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after ASB AR-1601 is released; execute exact paired channel-aware install and rollback qualification. | - |
+| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. | - |
 | P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Connect TUI recording, sealing, offline replay, and comparison to the real ASB cassette contract. | Promote after ASB AR-1602 and TUI AR-1582 are released; integrate and qualify the real cassette lifecycle journey. | - |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | Claim and implement bounded clone/build dev-channel installation; do not self-copy the running executable. | - |
 
 ## Done
 
