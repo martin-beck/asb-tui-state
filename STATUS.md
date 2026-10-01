@@ -246,6 +246,7 @@ flowchart LR
     AR_1605 --> AR_1610
     AR_1605 --> AR_1611
     AR_1606 --> AR_1603
+    AR_1606 --> AR_1611
     AR_1606 --> AR_1612
     AR_1607 --> AR_1606
     AR_1607 --> AR_1611
@@ -338,10 +339,10 @@ flowchart LR
 | [AR-1603](tasks/AR-1603.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md), [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md) | [AR-1604](tasks/AR-1604.md) |
 | [AR-1604](tasks/AR-1604.md) | [AR-1603](tasks/AR-1603.md) | None |
 | [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1610](tasks/AR-1610.md), [AR-1611](tasks/AR-1611.md) |
-| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md), [AR-1612](tasks/AR-1612.md) |
+| [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md) |
 | [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md) |
 | [AR-1610](tasks/AR-1610.md) | [AR-1605](tasks/AR-1605.md) | None |
-| [AR-1611](tasks/AR-1611.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1612](tasks/AR-1612.md) |
+| [AR-1611](tasks/AR-1611.md) | [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md) | [AR-1612](tasks/AR-1612.md) |
 | [AR-1612](tasks/AR-1612.md) | [AR-1602](tasks/AR-1602.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1611](tasks/AR-1611.md) | None |
 
 ## Complete AR inventory
