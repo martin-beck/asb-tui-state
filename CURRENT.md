@@ -9,6 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
+| P0 | [AR-1616](tasks/AR-1616.md): Trusted coverage repair for guided output contract | Restore trusted-main coverage margin with behavior-relevant output-contract tests without weakening the gate. | Promote after AR-1604 merge; add focused output-contract coverage, independent review, and exact-main verification. | - |
 
 ## Blocked
 
@@ -29,7 +30,6 @@ Never edit this file directly.
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Promote after paired AR-1614 and AR-1615 releases; run the disposable exact-head current-main journey and record paired evidence. | - |
 | P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Publish and qualify a clean-machine-installable TUI bundle for ASB's default dev channel. | Promote after AR-1604; implement the paired immutable bundle/manifest and clean-machine install qualification. | - |
 | P0 | [AR-1615](tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Qualify the installed TUI against the live ASB route for lifecycle, retry, cancellation, stale, and removal behavior. | Promote after AR-1614; repair the paired control/catalog handshake and execute live lifecycle qualification. | - |
-| P0 | [AR-1616](tasks/AR-1616.md): Trusted coverage repair for guided output contract | Restore trusted-main coverage margin with behavior-relevant output-contract tests without weakening the gate. | Promote after AR-1604 merge; add focused output-contract coverage, independent review, and exact-main verification. | - |
 
 ## Done
 
