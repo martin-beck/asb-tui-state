@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress | ar1498-cassette-lifecycle |
 | P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Promote after ASB AR-1607 is released; implement the additive wizard state and control route. | ar1607-tui-adapter |
 
 ## Open
@@ -94,6 +93,7 @@ Never edit this file directly.
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. | - |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal | - |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata | - |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress | - |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
