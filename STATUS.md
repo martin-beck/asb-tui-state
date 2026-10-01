@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -94,7 +94,7 @@ flowchart LR
         AR_1584["AR-1584 - Done"]:::status_done
         AR_1585["AR-1585 - Done"]:::status_done
         AR_1586["AR-1586 - Done"]:::status_done
-        AR_1587["AR-1587 - Open"]:::status_open
+        AR_1587["AR-1587 - In progress"]:::status_in_progress
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - Done"]:::status_done
@@ -295,19 +295,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1199-router-impl-1587 | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | ar1594-wizard-requal | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Await paired ASB AR-1595 development setup capability contract; then run the real control-server wizard journey and add only contract-backed tests. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | ar1199-router-impl | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90&#37;. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | After ASB AR-1592/1593, repair PR #410 against the real backend: assert catalog/bootstrap ordering, negotiated intersection, generation/revision/digest/stale cases, bounded cleanup, and stable fail-closed negatives. |
 
 ### Blocked (2)
 
