@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #179 | `feature/ar-1343-development-broker-entrypoint@c4e5c6870c9c` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | feat: add development broker descriptor entrypoint |
+| #179 | `feature/ar-1343-development-broker-entrypoint@d3034eab6ebb` | `main` | BLOCKED | - | feat: add development broker descriptor entrypoint |
 
 ## Recent workflows
 
