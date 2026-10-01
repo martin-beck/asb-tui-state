@@ -1,0 +1,8 @@
+AR-1581 wizard bootstrap/control projection receipt
+merged_sha=398a89aa52ce964d437e5088231878848e2e878f
+reviewed_pr_head=fbe205c1a9b03afe03a89946271b6d962859230b
+pr=https://github.com/martin-beck/asb-tui/pull/186
+checks=all required asb-tui hosted quality checks passed, including repository quality, Rust, supply-chain, privacy, and AWQ shadow checks
+review=independent review approved explicit stable/development context propagation, visible auth-unavailable projection, successful-status clearing, generated UI model/formal coverage, and signed/DCO history
+local=focused projection tests, cargo clippy -D warnings, formatting, UI-model validation, source parity, and diff checks passed
+scope=real ASB ControlServer ordered-bootstrap journey remains tracked separately by AR-1586
