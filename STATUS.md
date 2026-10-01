@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**75 ARs tracked** across 5 active status categories.
+**75 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -111,7 +111,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - Done"]:::status_done
-        AR_1601["AR-1601 - In progress"]:::status_in_progress
+        AR_1601["AR-1601 - Open"]:::status_open
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
@@ -333,18 +333,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | ar1498-cassette-lifecycle | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress |
-
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress |
 
 ### Blocked (2)
 
