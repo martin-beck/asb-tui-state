@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**78 ARs tracked** across 5 active status categories.
+**78 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 65 |
+| **Done** | Accepted, integrated, and durably verified | 66 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -119,7 +119,7 @@ flowchart LR
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Done"]:::status_done
         AR_1610["AR-1610 - Done"]:::status_done
-        AR_1611["AR-1611 - In progress"]:::status_in_progress
+        AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
@@ -347,12 +347,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1611](tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | tui1611-handoff | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -380,7 +374,7 @@ flowchart LR
 | P0 | [AR-1612](tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
-### Done (65)
+### Done (66)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -442,6 +436,7 @@ flowchart LR
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
+| P0 | [AR-1611](tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
