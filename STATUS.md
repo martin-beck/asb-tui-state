@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -106,7 +106,7 @@ flowchart LR
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Done"]:::status_done
-        AR_1599["AR-1599 - Open"]:::status_open
+        AR_1599["AR-1599 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -300,18 +300,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1498-tui-results-replay | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. |
+| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | ar1498-tui-install-qualification | Qualify the complete default-dev cross-repository install and lifecycle journey. | Promote after ASB AR-1599 is released, then run the repaired disposable install-to-launch qualification. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Qualify the complete default-dev cross-repository install and lifecycle journey. | Promote after ASB AR-1599 is released, then run the repaired disposable install-to-launch qualification. |
 
 ### Blocked (2)
 
