@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**84 ARs tracked** across 5 active status categories.
+**85 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 70 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -122,11 +122,12 @@ flowchart LR
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
         AR_1613["AR-1613 - Planned"]:::status_planned
-        AR_1614["AR-1614 - In progress"]:::status_in_progress
+        AR_1614["AR-1614 - Open"]:::status_open
         AR_1615["AR-1615 - Planned"]:::status_planned
         AR_1616["AR-1616 - Done"]:::status_done
         AR_1617["AR-1617 - Planned"]:::status_planned
         AR_1618["AR-1618 - Planned"]:::status_planned
+        AR_1619["AR-1619 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -274,7 +275,10 @@ flowchart LR
     AR_1614 --> AR_1618
     AR_1615 --> AR_1613
     AR_1617 --> AR_1615
+    AR_1617 --> AR_1619
     AR_1618 --> AR_1615
+    AR_1618 --> AR_1619
+    AR_1619 --> AR_1615
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -369,25 +373,21 @@ flowchart LR
 | [AR-1612](tasks/AR-1612.md) | [AR-1602](tasks/AR-1602.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1611](tasks/AR-1611.md) | [AR-1613](tasks/AR-1613.md), [AR-1615](tasks/AR-1615.md), [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md) |
 | [AR-1613](tasks/AR-1613.md) | [AR-1603](tasks/AR-1603.md), [AR-1604](tasks/AR-1604.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md), [AR-1615](tasks/AR-1615.md) | None |
 | [AR-1614](tasks/AR-1614.md) | [AR-1604](tasks/AR-1604.md), [AR-1611](tasks/AR-1611.md) | [AR-1613](tasks/AR-1613.md), [AR-1615](tasks/AR-1615.md), [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md) |
-| [AR-1615](tasks/AR-1615.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md), [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md) | [AR-1613](tasks/AR-1613.md) |
+| [AR-1615](tasks/AR-1615.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md), [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md), [AR-1619](tasks/AR-1619.md) | [AR-1613](tasks/AR-1613.md) |
 | [AR-1616](tasks/AR-1616.md) | [AR-1604](tasks/AR-1604.md) | None |
-| [AR-1617](tasks/AR-1617.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md) | [AR-1615](tasks/AR-1615.md) |
-| [AR-1618](tasks/AR-1618.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md) | [AR-1615](tasks/AR-1615.md) |
+| [AR-1617](tasks/AR-1617.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md) | [AR-1615](tasks/AR-1615.md), [AR-1619](tasks/AR-1619.md) |
+| [AR-1618](tasks/AR-1618.md) | [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md) | [AR-1615](tasks/AR-1615.md), [AR-1619](tasks/AR-1619.md) |
+| [AR-1619](tasks/AR-1619.md) | [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md) | [AR-1615](tasks/AR-1615.md) |
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | tui1614-bundle | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Promote after AR-1604; implement the paired immutable bundle/manifest and clean-machine install qualification. |
-
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
+| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Promote after AR-1604; implement the paired immutable bundle/manifest and clean-machine install qualification. |
 
 ### Blocked (2)
 
@@ -396,7 +396,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (9)
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -406,9 +406,10 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Promote after paired AR-1614 and AR-1615 releases; run the disposable exact-head current-main journey and record paired evidence. |
-| P0 | [AR-1615](tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | Promote after AR-1614, AR-1617, and AR-1618; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
+| P0 | [AR-1615](tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | Promote after AR-1614, AR-1617, AR-1618, and AR-1619; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
 | P0 | [AR-1617](tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Unclaimed | Expose typed seal, interrupted-capture reopen, and bounded development cassette removal across the TUI/ASB route. | Promote after AR-1614; implement the paired lifecycle operations and stale/terminal negatives. |
 | P0 | [AR-1618](tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Unclaimed | Expose bounded selectable retry/repeat and digest-bound live/offline comparison actions through the TUI/ASB route. | Promote after AR-1614; implement paired retry/comparison dispatch and stale/idempotency negatives. |
+| P0 | [AR-1619](tasks/AR-1619.md): Cross-repository lifecycle protocol repair | Unclaimed | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. | Repair PRs 433 and 213 from independent review findings before merge. |
 
 ### Done (70)
 
