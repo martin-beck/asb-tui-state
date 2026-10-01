@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request fresh independent review and hosted checks for TUI PR #199 at 8d430ae; verify clippy and tuple-fencing repair, then run paired ASB c94586d record/seal/replay/compare qualification before release. | ar1496-results-replay |
-| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Qualify simple default-dev and explicit-channel TUI installation against ASB provenance. | Promote after TUI AR-1602 is released; execute exact paired channel-aware install and rollback qualification. | ar1498-channel-qualification |
+| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata | ar1498-channel-qualification |
 
 ## Open
 
