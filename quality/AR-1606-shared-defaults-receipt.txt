@@ -1,0 +1,23 @@
+AR-1606 shared defaults and reconfiguration receipt
+
+Protected product repository: martin-beck/asb-tui
+Pull request: #207
+Merged protected-main head: 1b9e65bb7b09d96cde9c2cb4b08dc3115d640a5f
+Merged at: 2026-10-01T20:32:06Z
+
+Implementation head: 198e19d93ecd192fc186f5ca971d5db180a62c53
+The wizard persists validated provider/model/auth defaults atomically, applies
+them to selected or all agents, preserves prior state on cancellation/failure,
+redacts credential references, rejects insecure/symlinked parents, and emits
+human-readable or opt-in JSON diagnostics. Development authentication,
+signatures and key management remain warning-only.
+
+Local evidence:
+- provider catalog tests: 8 passed
+- cargo test --locked: passed per independent review
+- UI state/inventory validation: passed
+- git diff --check: passed
+- all four commits have valid SSH signatures and DCO trailers
+
+Hosted evidence on PR head: Repository quality, AWQ native quality/privacy,
+and AWQ core policy observation all passed.
