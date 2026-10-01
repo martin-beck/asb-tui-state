@@ -1,0 +1,7 @@
+AR-1579 TUI development-channel lifecycle receipt
+merged_sha=cbfa62a491645f4d292de284235c0d8be1b8f21a
+reviewed_pr_head=d4d27b22ae01ae25b95e98212f5547b67d755fab
+pr=https://github.com/martin-beck/asb-tui/pull/183
+checks=all required asb-tui hosted quality checks passed, including repository quality, Rust, supply-chain, privacy, and AWQ shadow checks
+review=independent review approved the exact final head after rollback, fail-closed provenance, and module-inventory repairs
+local=focused lifecycle tests, 27 UI model tests, full workspace tests, clippy -D warnings, formatting, and diff checks passed
