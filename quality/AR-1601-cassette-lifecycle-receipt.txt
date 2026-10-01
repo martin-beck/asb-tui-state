@@ -1,0 +1,21 @@
+AR-1601 cassette lifecycle acceptance receipt
+
+Product heads:
+- asb-tui PR200 merge: fbee6879df46bcae900f07194c2a92bab872dc24
+- asb-tui coverage repair PR201: 9417212 (merged into the head above)
+- protected asb-tui main verified at fbee6879df46bcae900f07194c2a92bab872dc24
+
+Hosted/post-merge evidence:
+- Repository quality workflow: 36903026463, passed
+- Trusted-main verification workflow: 36903026537, passed
+- PR201 exact all-target LLVM coverage: 90.10% lines (90% floor), passed
+- PR201 focused runtime tests: 12/12; full Rust suite passed
+- UI formal-model tests: 29/29; help/state validators passed
+
+Protocol/runtime evidence:
+- TUI accepts ASB v1.12 RecordingCampaignLifecycle status, including covered_tuple_count and complete/offline_ready state.
+- Selected cassette route is explicit (selection before replay), generation/campaign/provider-profile/agent/workload/digest fenced.
+- Authenticated replay dispatch test verifies RecordingReplayDispatch and offline_only=true over a socketpair.
+
+Qualification boundary:
+- This receipt records exact merged checks and route/transport evidence. Full AR-1606 paired record/seal/reopen fixture evidence remains a separate qualification dependency and must not be inferred from unit tests.
