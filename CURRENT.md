@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard. | Await paired ASB AR-1595 development setup capability contract; then run the real control-server wizard journey and add only contract-backed tests. | ar1498-tui-wizard |
-| P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Add meaningful v1.10 catalog/protocol execution coverage and requalify exact-main Trusted verification at or above 90%. | ar1199-router-impl |
+| P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Independent review and hosted checks for repair PR #194 exact head 43b356bb4760beea4d398677d933f3678c7a7b63; after green, rerun exact Trusted-main verification and release AR-1598 with post-merge evidence. | ar1199-router-impl |
 
 ## Open
 
