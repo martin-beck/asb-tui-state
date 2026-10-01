@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Bind the development broker entrypoint to current ASB and asb-tui source identities. | Promote and replace pre-merge descriptor identity constants with exact current-main identity inputs for development broker validation. | - |
+| P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Bind the development broker entrypoint to current ASB and asb-tui source identities. | Promote and replace pre-merge descriptor identity constants with exact current-main identity inputs for development broker validation. | ar1344-dynamic-identity |
 
 ## Blocked
 
