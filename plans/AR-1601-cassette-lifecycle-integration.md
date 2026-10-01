@@ -8,7 +8,9 @@ campaign-bound cassette identities, digest-only provenance, exact coverage,
 provider-egress-denied offline replay, and clear recovery for malformed or
 incomplete inputs.
 
-Dependencies: TUI AR-1602 and the merged TUI AR-1582 bridge.  Do not weaken the existing wizard,
+Dependencies: TUI AR-1602, the merged TUI AR-1582 bridge, and ASB AR-1605
+(authenticated cassette control backend).  Do not resume implementation until
+the ASB backend is merged and independently verified.  Do not weaken the existing wizard,
 provider/model selection, privacy, or development non-blocking boundaries.
 
 Required evidence: exact paired backend/frontend record and seal, reopen,
