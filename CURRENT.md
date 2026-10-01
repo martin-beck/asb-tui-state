@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Extend TUI record/replay route with exact cassette identity binding. | Run exact cross-repository record/seal/replay/compare qualification against merged TUI 4238ec5 and released ASB cassette contract: real record/seal, reopen, strict offline replay with network denied, comparison, malformed/missing/expired/partial failures, cleanup, and development-only classification. Release only after that evidence. | ar1498-tui-results-replay |
-| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Diagnosing bounded fresh-user development install failure | Complete diagnostic run, preserve hard quota, then add exact lifecycle/rollback/offline receipt | ar1498-tui-install-qualification |
+| P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Diagnosing bounded fresh-user development install failure | Await ASB AR-1600 bounded build-staging repair, then rerun exact paired install and complete lifecycle/rollback/offline qualification. | ar1498-tui-install-qualification |
 
 ## Open
 
