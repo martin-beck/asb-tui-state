@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 59 |
+| **Done** | Accepted, integrated, and durably verified | 60 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -110,7 +110,7 @@ flowchart LR
     end
     subgraph series_16["16 - Additional work"]
         direction TB
-        AR_1600["AR-1600 - In progress"]:::status_in_progress
+        AR_1600["AR-1600 - Done"]:::status_done
         AR_1601["AR-1601 - Planned"]:::status_planned
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Planned"]:::status_planned
@@ -321,12 +321,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1496-results-replay | Exact replay qualification audit: TUI route passes unit/full checks; cross-repo cassette bridge missing | Request fresh independent review and hosted checks for TUI PR #199 at 8d430ae; verify clippy and tuple-fencing repair, then run paired ASB c94586d record/seal/replay/compare qualification before release. |
-| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | ar1498-channel-qualification | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata |
 
 ### Open (1)
 
@@ -354,7 +353,7 @@ flowchart LR
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
-### Done (59)
+### Done (60)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -409,6 +408,7 @@ flowchart LR
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Unclaimed | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Unclaimed | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal |
+| P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
