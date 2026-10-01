@@ -8,7 +8,9 @@ experimental selection and typed unavailable results.  Missing credentials,
 signatures, and key-management services remain visible development warnings,
 never blockers; stable/production verification remains fail-closed.
 
-Dependencies: TUI AR-1599 and AR-1588.  This is the implementation prerequisite
+Dependencies: TUI AR-1588 plus the released ASB development provenance contract
+(ASB AR-1599).  TUI AR-1599 is a downstream paired qualification, not an
+implementation prerequisite.  This is the implementation prerequisite
 for TUI AR-1600 qualification.
 
 Required evidence: isolated temp clone/build, exact source-head provenance,
