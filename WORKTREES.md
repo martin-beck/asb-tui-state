@@ -83,7 +83,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1602-review` | `DETACHED` | `aed8b6fb52f4` | 0 | behind 30, ahead 0 |
 | `asb-tui-ar1602-review2` | `DETACHED` | `e98206361a04` | 0 | behind 29, ahead 0 |
 | `asb-tui-ar1602-review3` | `DETACHED` | `a89f856068c7` | 0 | behind 27, ahead 0 |
-| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `b9f9f73c2398` | 0 | behind 11, ahead 5 |
+| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `b9f9f73c2398` | 3 | behind 11, ahead 5 |
+| changed files | - | - | - | `src/adapter_catalog.rs`, `src/recording_dispatch.rs`, `src/wizard.rs` |
 | `asb-tui-ar1610-coverage` | `repair/ar-1610-coverage` | `9861ee37692c` | 0 | behind 1, ahead 0 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 251, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 373, ahead 1 |
@@ -145,6 +146,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1330` | `DETACHED` | `81e14d529a9e` | 0 | behind 127, ahead 5 |
 | `asb-tui-ar1330-pr150` | `DETACHED` | `40e604ddf14d` | 0 | behind 125, ahead 1 |
 | `asb-tui-ar1332` | `feature/ar-1332-reconciled-development-runtime-fixture` | `a5b58d5593b5` | 0 | behind 129, ahead 4 |
+| `asb-tui-ar1606` | `feature/ar-1606-shared-defaults` | `47b6900c91ce` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit` | `feat/ar1195-catalog-digest` | `ae2780e8923e` | 0 | behind 235, ahead 0 |
 | `asb-tui-coverage-repair-ours` | `repair/ar-coverage-setup-recording` | `5d01a5fcff95` | 0 | behind 177, ahead 0 |
 | `asb-tui-current-audit` | `DETACHED` | `eddf48055c55` | 0 | behind 157, ahead 0 |
