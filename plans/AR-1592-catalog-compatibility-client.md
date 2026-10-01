@@ -14,4 +14,6 @@ Required evidence:
 - bounded cleanup and development non-blocking auth behavior;
 - exact signed/DCO PR, independent review, and green hosted checks.
 
-Dependencies: AR-1586. Cross-project prerequisite: ASB AR-1592.
+Dependencies: AR-1586. Cross-project input: ASB AR-1592. Downstream: AR-1593
+and AR-1587. This client-validation slice may release independently; the
+cross-version negotiation mismatch is explicitly owned by AR-1593.
