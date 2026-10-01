@@ -245,7 +245,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Repair PR #186: expose committed visible development-only auth unavailable/status projection, apply successful AuthStatus, add regression/no-silent-downgrade tests, and add real ASB-backed ordered bootstrap evidence at highest common protocol or narrow scope honestly. |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Review/merge scoped PR #186 projection repair if green; then create a separate focused real ASB ControlServer ordered-bootstrap AR/PR for remaining catalogs, auth, recording, downgrade, and atomicity evidence. |
 
 ### Open (1)
 
