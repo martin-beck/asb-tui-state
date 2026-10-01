@@ -83,7 +83,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1602-review` | `DETACHED` | `aed8b6fb52f4` | 0 | behind 14, ahead 0 |
 | `asb-tui-ar1602-review2` | `DETACHED` | `e98206361a04` | 0 | behind 13, ahead 0 |
 | `asb-tui-ar1602-review3` | `DETACHED` | `a89f856068c7` | 0 | behind 11, ahead 0 |
-| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `e223dc19e75e` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `9cd0059ed50e` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 235, ahead 0 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 357, ahead 1 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 234, ahead 0 |
