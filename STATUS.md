@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**75 ARs tracked** across 5 active status categories.
+**76 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 61 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -118,6 +118,7 @@ flowchart LR
         AR_1605["AR-1605 - In progress"]:::status_in_progress
         AR_1606["AR-1606 - Planned"]:::status_planned
         AR_1607["AR-1607 - Planned"]:::status_planned
+        AR_1610["AR-1610 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -239,6 +240,7 @@ flowchart LR
     AR_1605 --> AR_1603
     AR_1605 --> AR_1606
     AR_1605 --> AR_1607
+    AR_1605 --> AR_1610
     AR_1606 --> AR_1603
     AR_1607 --> AR_1606
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -327,9 +329,10 @@ flowchart LR
 | [AR-1602](tasks/AR-1602.md) | [AR-1588](tasks/AR-1588.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md) |
 | [AR-1603](tasks/AR-1603.md) | [AR-1600](tasks/AR-1600.md), [AR-1601](tasks/AR-1601.md), [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md) | [AR-1604](tasks/AR-1604.md) |
 | [AR-1604](tasks/AR-1604.md) | [AR-1603](tasks/AR-1603.md) | None |
-| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md) |
+| [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1610](tasks/AR-1610.md) |
 | [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md) |
 | [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md) |
+| [AR-1610](tasks/AR-1610.md) | [AR-1605](tasks/AR-1605.md) | None |
 
 ## Complete AR inventory
 
@@ -337,7 +340,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | ar1607-tui-adapter | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Promote after ASB AR-1607 is released; implement the additive wizard state and control route. |
+| P0 | [AR-1605](tasks/AR-1605.md): OpenRouter setup wizard flow | ar1607-tui-adapter | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. |
 
 ### Open (2)
 
@@ -353,7 +356,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (9)
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -364,7 +367,8 @@ flowchart LR
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
 | P0 | [AR-1606](tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
-| P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware selection and diagnostics. |
+| P0 | [AR-1607](tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
+| P0 | [AR-1610](tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Promote against the merged TUI main head and add focused tests for uncovered wizard/adapter and lifecycle paths; release only after exact-main Repository quality and Trusted verification pass. |
 | P1 | [AR-1604](tasks/AR-1604.md): TUI guided command and output contract | Unclaimed | Make setup, benchmark, recording, replay, comparison, and lifecycle flows selectable, human-readable by default, and stable under --json. | Promote after AR-1603 acceptance; inventory user-facing flows and repair inconsistent defaults or diagnostics. |
 
 ### Done (61)
@@ -423,7 +427,7 @@ flowchart LR
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Unclaimed | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata |
-| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | PR200 protocol-compatible selected cassette route | Run hosted checks on exact c83d814; qualify AR-1606 exact PTY record/seal/reopen/catalog/replay/compare fixture, then obtain independent review; remain in_progress |
+| P0 | [AR-1601](tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | PR200 protocol-compatible selected cassette route | Retain the released lifecycle receipt; AR-1606 owns the paired record/seal/reopen/catalog/replay/compare qualification. |
 | P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
