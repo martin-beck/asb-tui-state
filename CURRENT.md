@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. | codex-ar1343-broker |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -53,6 +47,7 @@ Never edit this file directly.
 | P0 | [AR-1339](tasks/AR-1339-top-level-install-launch.md): Top-level ASB TUI install and launch integration | Make the supported top-level ASB commands install and launch the standalone asb-tui application safely. | PR #158 is green at exact head d47b27a; obtain independent review, merge, watch post-merge checks, then release. | - |
 | P0 | [AR-1340](tasks/AR-1340.md): Development channel router compatibility | Add standalone TUI compatibility for the ASB development release channel. | Align the standalone TUI development router with ASB's explicit dev/stable/nightly/experimental channel contract and current-main identity envelope. | - |
 | P0 | [AR-1342](tasks/AR-1342.md): ASB control protocol compatibility matrix | Make cross-project protocol compatibility explicit before development-channel qualification. | Obtain independent review and hosted required checks for PR #178 at exact head df7ffdc1a422d2f847e531d891af59f333fda63d; resolve only evidence-backed findings, then merge/release and verify post-merge. | - |
+| P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |
