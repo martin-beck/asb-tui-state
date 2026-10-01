@@ -318,7 +318,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | ar1199-tui-dev-install | Implement real clone/build installation for the default development channel. | PR #198 updated to e982063; hosted checks and fresh independent review required. |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | ar1199-tui-dev-install | Implement real clone/build installation for the default development channel. | PR #198 updated to a89f856; await fresh hosted checks and independent review. |
 
 ### Open (3)
 

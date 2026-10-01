@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | PR #198 updated to e982063; hosted checks and fresh independent review required. | ar1199-tui-dev-install |
+| P0 | [AR-1602](tasks/AR-1602.md): Development-channel clone/build install | Implement real clone/build installation for the default development channel. | PR #198 updated to a89f856; await fresh hosted checks and independent review. | ar1199-tui-dev-install |
 
 ## Open
 
