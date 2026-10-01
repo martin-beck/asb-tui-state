@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 rebased onto current asb-tui main 3ae1620; exact signed head f175e1d. Fresh independent review and hosted checks required. | ar1583-recovery-stable |
+| P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 712a291 includes required module-inventory repair; hosted Repository quality and AWQ checks are queued, independent review still required before merge. | ar1583-recovery-stable |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. | ar1587-backend-bridge |
 
 ## Open
@@ -28,6 +28,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. | - |
+| P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Promote after current recovery work is released; implement the channel selector/default-dev projection across TUI install, status, launch, and reconfiguration routes. | - |
+| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | - |
 
 ## Done
 
