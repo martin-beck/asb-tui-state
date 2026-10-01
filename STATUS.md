@@ -249,7 +249,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Wire development context through run --broker --development runtime, interactive refresh, and reconnect; add real both-mode regression. Then re-review PR #186 before merge; AR-1586 owns remaining real backend bootstrap. |
+| P0 | [AR-1581](tasks/AR-1581.md): Complete wizard bootstrap/control coverage | ar1581-bootstrap-coverage | Cover every real first-run wizard projection and control transition. | Run cargo fmt on formal auth-field test, push signed repair, rerun hosted gates; then merge/release scoped projection repair. AR-1586 owns real backend bootstrap. |
 
 ### Open (1)
 
