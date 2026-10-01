@@ -31,7 +31,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1583-recovery-v2` | `feature/ar-1583-recovery-v2` | `712a29155e89` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1588` | `feature/ar-1588-channel-ux` | `54318ed64df0` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar-1590` | `feature/ar-1590-pty-seam` | `f0ef3dab5352` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1592-catalog` | `feature/ar-1592-catalog-compat` | `700b8fa12217` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1592-catalog` | `feature/ar-1592-catalog-compat` | `700b8fa12217` | 4 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `tests/formal_state.rs` |
 | `asb-tui-ar-190-review` | `DETACHED` | `f0ef3dab5352` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 133, ahead 0 |
 | `asb-tui-ar1011-renderer` | `feature/ar1011-renderer` | `998d149b4aac` | 0 | behind 323, ahead 2 |
