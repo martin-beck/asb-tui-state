@@ -256,7 +256,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | ar1583-recovery-stable | Prove cleanup/recovery behavior and preserve stable-path boundaries. | PR #188 exact head 2d4dda7 adds seeded late-bootstrap rollback preservation; 19 focused and 257 full library tests pass. Obtain independent review and hosted checks; scope remains bounded transport recovery with existing reconnect/idempotency tests. |
-| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | PR #410 exact head 24a892c is under independent review and hosted checks; verify real ProvisionedControlServer/RunnerBackend bridge, then repair/merge/release only identical green reviewed head. |
+| P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
 
 ### Open (1)
 
