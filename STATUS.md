@@ -299,7 +299,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1498-tui-results-replay | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
+| P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | ar1498-tui-results-replay | Project authenticated result-analysis summaries and bounded Reports output; PR #196 open. | Obtain independent review and hosted checks for PR #196, then extend/qualify the selection-driven record/seal/replay/compare route against the released ASB cassette contract. |
 
 ### Open (1)
 
