@@ -1,0 +1,7 @@
+AR-1585 protocol and bootstrap compatibility receipt
+merged_sha=582eb891599ad5cd8723c5ac1404d1ea1f3b61f4
+reviewed_pr_head=ee22411e33ac377be1ae034b81cb724152f0bc9f
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/409
+checks=all required ASB hosted quality checks passed, including policy/coverage/supply-chain, Rust, emulation, retained faults, model, fuzz, Kani, and credential-free gates
+review=independent review approved adopted-generation binding, mismatch rejection, immutable v1-v1.11 schemas, verified signature/DCO, and ordinary generation-absent semantics
+local=adopted-generation presence/mismatch tests, asb-control library tests, schema conformance, and diff checks passed
