@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. | ar1498-tui-wizard |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -85,6 +79,7 @@ Never edit this file directly.
 | P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. | - |
 | P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | PR #191 is updated at cb7b3723dd0ea2a4b02d06872bae4e4265fa5ae2; await hosted checks and independent exact-head review, then release the client validation work; AR-1593 owns v1.10/v1.12 alignment. | - |
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. | - |
+| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. | - |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |

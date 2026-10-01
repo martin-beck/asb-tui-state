@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**66 ARs tracked** across 5 active status categories.
+**66 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 56 |
+| **Done** | Accepted, integrated, and durably verified | 57 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -101,7 +101,7 @@ flowchart LR
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - Done"]:::status_done
         AR_1593["AR-1593 - Done"]:::status_done
-        AR_1594["AR-1594 - In progress"]:::status_in_progress
+        AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Planned"]:::status_planned
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
@@ -295,12 +295,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | ar1498-tui-wizard | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -325,7 +319,7 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 
-### Done (56)
+### Done (57)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -377,6 +371,7 @@ flowchart LR
 | P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 | P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Unclaimed | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | PR #191 is updated at cb7b3723dd0ea2a4b02d06872bae4e4265fa5ae2; await hosted checks and independent exact-head review, then release the client validation work; AR-1593 owns v1.10/v1.12 alignment. |
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Unclaimed | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. |
+| P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Unclaimed | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Unclaimed | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
