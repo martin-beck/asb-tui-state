@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**85 ARs tracked** across 4 active status categories.
+**85 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -122,7 +122,7 @@ flowchart LR
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
         AR_1613["AR-1613 - Planned"]:::status_planned
-        AR_1614["AR-1614 - Open"]:::status_open
+        AR_1614["AR-1614 - In progress"]:::status_in_progress
         AR_1615["AR-1615 - Planned"]:::status_planned
         AR_1616["AR-1616 - Done"]:::status_done
         AR_1617["AR-1617 - Planned"]:::status_planned
@@ -381,13 +381,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | tui1614-bundle-impl | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Promote after AR-1604; implement the paired immutable bundle/manifest and clean-machine install qualification. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Promote after AR-1604; implement the paired immutable bundle/manifest and clean-machine install qualification. |
 
 ### Blocked (2)
 
