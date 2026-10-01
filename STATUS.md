@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 45 |
+| **Done** | Accepted, integrated, and durably verified | 46 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -87,7 +87,7 @@ flowchart LR
         direction TB
         AR_1575["AR-1575 - Open"]:::status_open
         AR_1579["AR-1579 - Done"]:::status_done
-        AR_1580["AR-1580 - In progress"]:::status_in_progress
+        AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Planned"]:::status_planned
         AR_1582["AR-1582 - Planned"]:::status_planned
         AR_1583["AR-1583 - Planned"]:::status_planned
@@ -241,11 +241,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | ar1580-pty-control | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. |
 | P0 | [AR-1585](tasks/AR-1585.md): Wizard protocol and bootstrap compatibility | ar1585-protocol | Expose the full wizard bootstrap/control contract without silently downgrading away required setup surfaces. | Preserve v1 schema compatibility (no in-place v1 change) while binding adopted generation; add versioned schema/compat fixtures, mismatch/presence tests, and rerun hosted gates. |
 
 ### Open (1)
@@ -269,7 +268,7 @@ flowchart LR
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Make benchmark output, comparison, and offline replay demonstrably usable. | Promote after complete control coverage; implement and qualify result/report, comparison, and offline replay evidence. |
 | P0 | [AR-1583](tasks/AR-1583.md): TUI failure recovery and stable regression | Unclaimed | Prove cleanup/recovery behavior and preserve stable-path boundaries. | Promote after real PTY/control coverage; add failure-recovery and stable-path regression tests. |
 
-### Done (45)
+### Done (46)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -310,6 +309,7 @@ flowchart LR
 | P0 | [AR-1343](tasks/AR-1343.md): asb-tui development broker entrypoint | Unclaimed | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. |
 | P0 | [AR-1344](tasks/AR-1344.md): asb-tui dynamic development broker identity | Unclaimed | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da |
 | P0 | [AR-1579](tasks/AR-1579.md): TUI development-channel lifecycle | Unclaimed | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. |
+| P0 | [AR-1580](tasks/AR-1580.md): TUI PTY control integration | Unclaimed | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. |
 | P0 | [AR-1584](tasks/AR-1584.md): Cross-repository launcher and control bridge | Unclaimed | Connect the real asb tui launcher to ASB owner-private transport and inherited control. | Implement missing asb-tui-side launcher/consumer plus terminal separation: broker fd-0 must coexist with a real PTY/terminal for interactive mode; ASB producer bridge alone is insufficient. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
