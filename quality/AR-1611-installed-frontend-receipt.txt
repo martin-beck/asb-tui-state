@@ -1,0 +1,14 @@
+AR-1611 installed frontend handoff and dev-channel launch receipt
+
+Protected TUI main head: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+Pull request: #206
+Implementation head: 8fdebc4a59a9d77720715672a2f13dc8b7d555f3
+
+Evidence:
+- Versioned install metadata carries channel, source/tree, manifest, workspace, state, config, and cache roots.
+- Restart and tamper/revalidation paths fail closed with explicit development diagnostics.
+- Installed self-test and launch consume the complete handoff.
+- Hosted checks and exact-main Trusted/Repository Quality passed on merged head.
+- Independent review, signatures, and DCO verified.
+
+Development authentication, signatures, and key management remain warning-only.
