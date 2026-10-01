@@ -270,7 +270,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | ar1587-backend-bridge | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Repair PR #410: use exact asb-tui binary/codec against ASB server, assert negotiated intersection/order/generation/revision/digest/stale cases, bound all failure cleanup, and add stable fail-closed negatives before hosted rerun. |
-| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | ar1590-pty-seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await hosted checks and independent review for PR #190 at 68ae5a5d6c48d4e73d7f16fb820e4b24cc4aaec1. |
+| P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | ar1590-pty-seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 
 ### Open (1)
 
