@@ -74,6 +74,8 @@ FIELDS = set(REQ) | {
     "observed_branch",
     "observed_head",
     "observed_dirty",
+    "spec_ref",
+    "spec_revision",
 }
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
