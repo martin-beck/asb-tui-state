@@ -1,0 +1,10 @@
+AR: AR-1618
+TUI protected-main commit: 95d4c362bb7ef4bd9007c7aa77d87403f4a634db
+Implementation PR: #213, final signed head 478a0a0e410fd1b15b4faf7726f3c8c752e312fb
+Paired ASB protected-main commit: f563194d2555ff7e1fa26397aab40dacd7c9ab41
+Evidence: selected-run retry/repeat and explicit live/offline comparison pair dispatch, with v1.13 payload identity and stale-selection pruning.
+Review: independent exact-head review found no remaining product blocker.
+Hosted evidence: PR #213 exact-head required workflows passed.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.

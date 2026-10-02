@@ -1,0 +1,10 @@
+AR: AR-1620
+TUI protected-main commit: 95d4c362bb7ef4bd9007c7aa77d87403f4a634db
+TUI bundle PR #214 merge: f84baab725d229184920a554cd27314076393e33
+ASB consumer PR #434 merge: f54e53eb5f362300bcb03e383f6b2b80d7c86dbb
+Evidence: immutable dev bundle publication and exact ASB consumption with provenance, digest, size, target, timestamp, symlink, warning, rotated-provenance, and zero-size checks.
+Review: independent final exact-head review found no blocker; all commits cryptographically signed with DCO.
+Hosted evidence: PR #434 exact-head required workflows passed.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.
