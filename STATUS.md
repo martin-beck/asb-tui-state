@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**128 ARs tracked** across 4 active status categories.
+**129 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 22 |
+| **Planned** | Defined work awaiting promotion or dependencies | 23 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 101 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -171,6 +171,7 @@ flowchart LR
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1662["AR-1662 - Done"]:::status_done
+        AR_1664["AR-1664 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -445,8 +446,10 @@ flowchart LR
     AR_1656 --> AR_1657
     AR_1657 --> AR_1655
     AR_1658 --> AR_1659
+    AR_1658 --> AR_1664
     AR_1659 --> AR_1660
     AR_1661 --> AR_1662
+    AR_1661 --> AR_1664
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -584,11 +587,12 @@ flowchart LR
 | [AR-1655](tasks/AR-1655.md) | [AR-1623](tasks/AR-1623.md), [AR-1624](tasks/AR-1624.md), [AR-1651](tasks/AR-1651.md), [AR-1652](tasks/AR-1652.md), [AR-1653](tasks/AR-1653.md), [AR-1654](tasks/AR-1654.md), [AR-1657](tasks/AR-1657.md) | None |
 | [AR-1656](tasks/AR-1656.md) | [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1641](tasks/AR-1641.md), [AR-1642](tasks/AR-1642.md) | [AR-1654](tasks/AR-1654.md), [AR-1657](tasks/AR-1657.md) |
 | [AR-1657](tasks/AR-1657.md) | [AR-1641](tasks/AR-1641.md), [AR-1645](tasks/AR-1645.md), [AR-1647](tasks/AR-1647.md), [AR-1651](tasks/AR-1651.md), [AR-1656](tasks/AR-1656.md) | [AR-1655](tasks/AR-1655.md) |
-| [AR-1658](tasks/AR-1658.md) | [AR-1340](tasks/AR-1340.md), [AR-1588](tasks/AR-1588.md), [AR-1653](tasks/AR-1653.md) | [AR-1659](tasks/AR-1659.md) |
+| [AR-1658](tasks/AR-1658.md) | [AR-1340](tasks/AR-1340.md), [AR-1588](tasks/AR-1588.md), [AR-1653](tasks/AR-1653.md) | [AR-1659](tasks/AR-1659.md), [AR-1664](tasks/AR-1664.md) |
 | [AR-1659](tasks/AR-1659.md) | [AR-1611](tasks/AR-1611.md), [AR-1658](tasks/AR-1658.md) | [AR-1660](tasks/AR-1660.md) |
 | [AR-1660](tasks/AR-1660.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md), [AR-1612](tasks/AR-1612.md), [AR-1659](tasks/AR-1659.md) | None |
-| [AR-1661](tasks/AR-1661.md) | None | [AR-1662](tasks/AR-1662.md) |
+| [AR-1661](tasks/AR-1661.md) | None | [AR-1662](tasks/AR-1662.md), [AR-1664](tasks/AR-1664.md) |
 | [AR-1662](tasks/AR-1662.md) | [AR-1661](tasks/AR-1661.md) | None |
+| [AR-1664](tasks/AR-1664.md) | [AR-1658](tasks/AR-1658.md), [AR-1661](tasks/AR-1661.md) | None |
 
 ## Complete AR inventory
 
@@ -607,7 +611,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (22)
+### Planned (23)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -633,6 +637,7 @@ flowchart LR
 | P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Unclaimed | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. |
 | P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Unclaimed | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
+| P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 
 ### Done (101)
 
