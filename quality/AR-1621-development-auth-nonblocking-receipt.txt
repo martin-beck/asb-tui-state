@@ -1,0 +1,10 @@
+AR: AR-1621
+TUI protected-main commit: 867d302a8a9fd6d5865071ffd3b8dcc1c5f73c6a
+Implementation PR: #215, final signed head 24213fede6aebf4615a0dcd4254d49b9c0071db2
+Paired ASB protected-main commit: 1521b9800bf408ff833f8908391cdeedccee39c1
+Evidence: all wizard/control routes preserve visible development-only warnings for absent API keys, signatures, and key management without blocking; module-inventory-aware CI and output-contract regression coverage pass.
+Review: independent exact-head review found no product blocker; signed commits and DCO verified.
+Hosted evidence: TUI PR #215 and ASB PR #435 required hosted checks passed after inventory repair.
+Status: released after paired protected-main merges.
+
+Production publication and strict verification boundaries remain fail-closed; development-only authentication, signatures, and key management never block the prototype.
