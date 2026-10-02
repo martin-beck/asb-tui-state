@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**134 ARs tracked** across 4 active status categories.
+**138 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 27 |
+| **Planned** | Defined work awaiting promotion or dependencies | 31 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 102 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -177,6 +177,10 @@ flowchart LR
         AR_1667["AR-1667 - Planned"]:::status_planned
         AR_1672["AR-1672 - Planned"]:::status_planned
         AR_1673["AR-1673 - Planned"]:::status_planned
+        AR_1674["AR-1674 - Planned"]:::status_planned
+        AR_1675["AR-1675 - Planned"]:::status_planned
+        AR_1676["AR-1676 - Planned"]:::status_planned
+        AR_1677["AR-1677 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -446,6 +450,7 @@ flowchart LR
     AR_1653 --> AR_1654
     AR_1653 --> AR_1655
     AR_1653 --> AR_1658
+    AR_1653 --> AR_1676
     AR_1654 --> AR_1655
     AR_1655 --> AR_1667
     AR_1656 --> AR_1654
@@ -454,10 +459,14 @@ flowchart LR
     AR_1658 --> AR_1659
     AR_1658 --> AR_1664
     AR_1658 --> AR_1667
+    AR_1658 --> AR_1674
+    AR_1658 --> AR_1675
     AR_1659 --> AR_1660
     AR_1659 --> AR_1667
+    AR_1659 --> AR_1674
     AR_1660 --> AR_1667
     AR_1660 --> AR_1672
+    AR_1660 --> AR_1677
     AR_1661 --> AR_1662
     AR_1661 --> AR_1664
     AR_1661 --> AR_1665
@@ -469,6 +478,10 @@ flowchart LR
     AR_1667 --> AR_1672
     AR_1667 --> AR_1673
     AR_1672 --> AR_1673
+    AR_1674 --> AR_1675
+    AR_1674 --> AR_1676
+    AR_1675 --> AR_1676
+    AR_1676 --> AR_1677
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -601,14 +614,14 @@ flowchart LR
 | [AR-1650](tasks/AR-1650.md) | [AR-1644](tasks/AR-1644.md), [AR-1648](tasks/AR-1648.md) | [AR-1647](tasks/AR-1647.md), [AR-1652](tasks/AR-1652.md) |
 | [AR-1651](tasks/AR-1651.md) | [AR-1649](tasks/AR-1649.md) | [AR-1643](tasks/AR-1643.md), [AR-1647](tasks/AR-1647.md), [AR-1655](tasks/AR-1655.md), [AR-1657](tasks/AR-1657.md) |
 | [AR-1652](tasks/AR-1652.md) | [AR-1646](tasks/AR-1646.md), [AR-1650](tasks/AR-1650.md) | [AR-1643](tasks/AR-1643.md), [AR-1654](tasks/AR-1654.md), [AR-1655](tasks/AR-1655.md) |
-| [AR-1653](tasks/AR-1653.md) | [AR-1613](tasks/AR-1613.md), [AR-1623](tasks/AR-1623.md), [AR-1643](tasks/AR-1643.md) | [AR-1654](tasks/AR-1654.md), [AR-1655](tasks/AR-1655.md), [AR-1658](tasks/AR-1658.md) |
+| [AR-1653](tasks/AR-1653.md) | [AR-1613](tasks/AR-1613.md), [AR-1623](tasks/AR-1623.md), [AR-1643](tasks/AR-1643.md) | [AR-1654](tasks/AR-1654.md), [AR-1655](tasks/AR-1655.md), [AR-1658](tasks/AR-1658.md), [AR-1676](tasks/AR-1676.md) |
 | [AR-1654](tasks/AR-1654.md) | [AR-1643](tasks/AR-1643.md), [AR-1652](tasks/AR-1652.md), [AR-1653](tasks/AR-1653.md), [AR-1656](tasks/AR-1656.md) | [AR-1655](tasks/AR-1655.md) |
 | [AR-1655](tasks/AR-1655.md) | [AR-1623](tasks/AR-1623.md), [AR-1624](tasks/AR-1624.md), [AR-1651](tasks/AR-1651.md), [AR-1652](tasks/AR-1652.md), [AR-1653](tasks/AR-1653.md), [AR-1654](tasks/AR-1654.md), [AR-1657](tasks/AR-1657.md) | [AR-1667](tasks/AR-1667.md) |
 | [AR-1656](tasks/AR-1656.md) | [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1641](tasks/AR-1641.md), [AR-1642](tasks/AR-1642.md) | [AR-1654](tasks/AR-1654.md), [AR-1657](tasks/AR-1657.md) |
 | [AR-1657](tasks/AR-1657.md) | [AR-1641](tasks/AR-1641.md), [AR-1645](tasks/AR-1645.md), [AR-1647](tasks/AR-1647.md), [AR-1651](tasks/AR-1651.md), [AR-1656](tasks/AR-1656.md) | [AR-1655](tasks/AR-1655.md) |
-| [AR-1658](tasks/AR-1658.md) | [AR-1340](tasks/AR-1340.md), [AR-1588](tasks/AR-1588.md), [AR-1653](tasks/AR-1653.md) | [AR-1659](tasks/AR-1659.md), [AR-1664](tasks/AR-1664.md), [AR-1667](tasks/AR-1667.md) |
-| [AR-1659](tasks/AR-1659.md) | [AR-1611](tasks/AR-1611.md), [AR-1658](tasks/AR-1658.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md) |
-| [AR-1660](tasks/AR-1660.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md), [AR-1612](tasks/AR-1612.md), [AR-1659](tasks/AR-1659.md) | [AR-1667](tasks/AR-1667.md), [AR-1672](tasks/AR-1672.md) |
+| [AR-1658](tasks/AR-1658.md) | [AR-1340](tasks/AR-1340.md), [AR-1588](tasks/AR-1588.md), [AR-1653](tasks/AR-1653.md) | [AR-1659](tasks/AR-1659.md), [AR-1664](tasks/AR-1664.md), [AR-1667](tasks/AR-1667.md), [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) |
+| [AR-1659](tasks/AR-1659.md) | [AR-1611](tasks/AR-1611.md), [AR-1658](tasks/AR-1658.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md), [AR-1674](tasks/AR-1674.md) |
+| [AR-1660](tasks/AR-1660.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md), [AR-1612](tasks/AR-1612.md), [AR-1659](tasks/AR-1659.md) | [AR-1667](tasks/AR-1667.md), [AR-1672](tasks/AR-1672.md), [AR-1677](tasks/AR-1677.md) |
 | [AR-1661](tasks/AR-1661.md) | None | [AR-1662](tasks/AR-1662.md), [AR-1664](tasks/AR-1664.md), [AR-1665](tasks/AR-1665.md) |
 | [AR-1662](tasks/AR-1662.md) | [AR-1661](tasks/AR-1661.md) | [AR-1665](tasks/AR-1665.md) |
 | [AR-1664](tasks/AR-1664.md) | [AR-1658](tasks/AR-1658.md), [AR-1661](tasks/AR-1661.md) | [AR-1665](tasks/AR-1665.md), [AR-1666](tasks/AR-1666.md) |
@@ -617,6 +630,10 @@ flowchart LR
 | [AR-1667](tasks/AR-1667.md) | [AR-1655](tasks/AR-1655.md), [AR-1658](tasks/AR-1658.md), [AR-1659](tasks/AR-1659.md), [AR-1660](tasks/AR-1660.md), [AR-1666](tasks/AR-1666.md) | [AR-1672](tasks/AR-1672.md), [AR-1673](tasks/AR-1673.md) |
 | [AR-1672](tasks/AR-1672.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md) | [AR-1673](tasks/AR-1673.md) |
 | [AR-1673](tasks/AR-1673.md) | [AR-1667](tasks/AR-1667.md), [AR-1672](tasks/AR-1672.md) | None |
+| [AR-1674](tasks/AR-1674.md) | [AR-1658](tasks/AR-1658.md), [AR-1659](tasks/AR-1659.md) | [AR-1675](tasks/AR-1675.md), [AR-1676](tasks/AR-1676.md) |
+| [AR-1675](tasks/AR-1675.md) | [AR-1658](tasks/AR-1658.md), [AR-1674](tasks/AR-1674.md) | [AR-1676](tasks/AR-1676.md) |
+| [AR-1676](tasks/AR-1676.md) | [AR-1653](tasks/AR-1653.md), [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) | [AR-1677](tasks/AR-1677.md) |
+| [AR-1677](tasks/AR-1677.md) | [AR-1660](tasks/AR-1660.md), [AR-1676](tasks/AR-1676.md) | None |
 
 ## Complete AR inventory
 
@@ -635,7 +652,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (27)
+### Planned (31)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -663,6 +680,10 @@ flowchart LR
 | P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Unclaimed | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
 | P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Unclaimed | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
 | P0 | [AR-1673](tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
+| P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | Unclaimed | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Implement the selection/reconfiguration screen and typed human/JSON projections for omitted dev, explicit dev, and unavailable future channels. |
+| P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | Unclaimed | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
+| P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | Unclaimed | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Implement a disposable PTY runner and receipt for default dev, explicit channels, persistence, rollback preservation, and typed unavailable-channel failures. |
+| P0 | [AR-1677](tasks/AR-1677.md): Channel-aware TUI quickstart and release gate | Unclaimed | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey preserve and explain the selected channel end to end. | Update the selection-driven quickstart and paired release receipt to include channel identity, provider/model setup, recording, offline replay, comparison, and analysis. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
