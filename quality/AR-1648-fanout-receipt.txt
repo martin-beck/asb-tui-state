@@ -1,0 +1,10 @@
+AR-1648 acceptance receipt
+
+Status: pass
+ASB protected main: e00609051625aed012bb5b83c83e8ebfbc0b953a
+PR #445 signed head: f7371cff5748120caa20de83aae1c86eecaaf57e
+
+The paired runtime fan-out primitive validates tuples before authority use,
+supports deterministic idempotency, durable member handles, strict offline
+cassette binding, duplicate rejection, and cancellation cleanup. Hosted and
+independent review passed; protocol/TUI consumption remains AR-1650.
