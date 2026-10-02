@@ -1,0 +1,9 @@
+AR-1646 acceptance receipt
+
+Status: pass (paired ASB runtime contract already implemented)
+ASB protected main: 8e49e3f1c5ec0650eeb1f505b940606aa9371954
+
+Runtime-owned capture, cassette sealing/reopen verification, selected tuple
+campaign coverage, opaque digest-bound replay authority, strict offline replay,
+and network-denied reporting are implemented and covered by current ASB tests.
+Development auth/signature/key-management warnings remain non-blocking.
