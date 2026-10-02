@@ -1,0 +1,8 @@
+AR: AR-1626
+TUI protected-main commit: a5eda0bc4ce3387398e29697fb7d06d59bb447b1
+Paired ASB protected-main commit: 62fda2f3417bf69f1da5f288b0df1d389c853dfa
+Implementation PR: ASB #436, final signed head cad51e2454c4776868ce8efbcf89da3ff4ccdd42
+Evidence: paired development launch now receives a validated parent PTY path and uses a bounded private broker root for deep XDG state paths. Exact inherited-fd PTY journey and ASB hosted checks passed; final paired live qualification remains downstream AR-1615 evidence.
+Status: released after paired repair merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.
