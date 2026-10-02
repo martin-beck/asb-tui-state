@@ -1,0 +1,9 @@
+AR-1635 control-state ownership test isolation paired receipt
+
+ASB reviewed head: 6a78b6f10f281c827aec42e519ce78b32fa4159c
+ASB protected-main merge: eb878e30be139f5077c319b51b9d4ce56712d182
+
+The ASB control-state ownership handoff repair was independently approved and all
+required hosted checks passed. No TUI product change was required.
+
+Development-only authentication, signatures, and key management remain warning-only.
