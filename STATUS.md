@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**128 ARs tracked** across 4 active status categories.
+**128 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 22 |
 | **Future** | Deferred roadmap work | 0 |
@@ -170,7 +170,7 @@ flowchart LR
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
-        AR_1662["AR-1662 - Open"]:::status_open
+        AR_1662["AR-1662 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -592,14 +592,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | tui1662-repair | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
+
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Reconciled an unclaimed active record; claim before resuming the disposable exact-head current-main journey. |
-| P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Unclaimed | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
 
 ### Blocked (2)
 

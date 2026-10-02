@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. | tui1662-repair |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -10,7 +16,6 @@ Never edit this file directly.
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Reconciled an unclaimed active record; claim before resuming the disposable exact-head current-main journey. | - |
-| P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. | - |
 
 ## Blocked
 
