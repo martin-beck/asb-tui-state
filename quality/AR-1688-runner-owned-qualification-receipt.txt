@@ -1,0 +1,23 @@
+AR-1688 TUI runner-owned cassette capture and replay qualification
+Classification: development/mock; provider credentials: none; provider network: denied
+
+Exact product heads:
+- ASB main: d49b6815dbe6d7b453e87c84e50a2763eb807778
+- ASB tree: 1cc4c9b52d96c7d617b0d8a5cdaf3de2833b4887
+- asb-tui main: 1189e8a1b578f8ebe89fad20095123766e7c3b7e
+- asb-tui tree: 34fe2191d6f12698d1657f8a61d30ddc9e54e900
+
+The merged TUI quickstart runner created cassettes through
+`easy record-campaign --local-mock` and then replayed the generated selected
+cassette through strict offline replay. Selected coverage was 1 tuple and all
+implemented workload coverage was 7 tuples. An intentionally incomplete matrix
+was rejected with complete_coverage=false and offline_ready=false.
+
+Generated cassette digest: 86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b
+Generated replay result digest: 48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5
+Replay source: strict_replay; network: denied.
+
+The runner removed credential-bearing environment variables before launching
+ASB and preserved the explicit deny proxy/policy. Focused tests: 3/3 passed;
+exact post-merge run exited 0. Development authentication, signatures, and key
+management remained warning-only and never blocked the prototype.
