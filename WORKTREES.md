@@ -186,6 +186,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1332` | `feature/ar-1332-reconciled-development-runtime-fixture` | `a5b58d5593b5` | 0 | behind 145, ahead 281 |
 | `asb-tui-ar1606` | `feature/ar-1606-shared-defaults` | `47b6900c91ce` | 0 | behind 101, ahead 1 |
 | `asb-tui-ar1612` | `ar-1612-recording-replay` | `6128753fb094` | 0 | behind 78, ahead 0 |
+| `asb-tui-ar1659-handoff-20261002` | `DETACHED` | `fa6483f9e45f` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/actions.rs`, `src/lib.rs`, `src/ui.rs`, `src/development_handoff.rs` |
 | `asb-tui-ar1664.JBNxIH` | `repair/ar-1664-channel-coverage` | `5d019dcb5972` | 0 | behind 0, ahead 1 |
 | `pr206` | `DETACHED` | `8fdebc4a59a9` | 0 | behind 95, ahead 0 |
 | `pr207` | `DETACHED` | `5c960fccdc07` | 0 | behind 97, ahead 3 |
@@ -209,7 +211,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr229-repaired.IHPghu` | `DETACHED` | `c3a4b44710d4` | 0 | behind 4, ahead 0 |
 | `asb-tui-pr229-review.GI5gJh` | `DETACHED` | `a3891df58ac5` | 0 | behind 5, ahead 0 |
 | `asb-tui-pr229-review.nQ1ILk` | `DETACHED` | `7d2af8cf18fb` | 0 | behind 2, ahead 0 |
-| `asb-tui-pr230-review` | `DETACHED` | `5d019dcb5972` | 0 | behind 0, ahead 1 |
+| `asb-tui-pr230-review` | `DETACHED` | `90975b3eb13a` | 0 | behind 0, ahead 2 |
 | `asb-tui-review-160` | `DETACHED` | `3387ed3d9aa3` | 0 | behind 145, ahead 315 |
 | `asb-tui-review-1f0146a.17UKzB` | `DETACHED` | `1f0146a86dc4` | 0 | behind 20, ahead 1 |
 | `asb-tui-review206` | `DETACHED` | `75b4907121b6` | 0 | behind 96, ahead 0 |
