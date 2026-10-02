@@ -1,0 +1,12 @@
+AR-1615 current exact PTY/control acceptance receipt
+
+Status: pass
+ASB main: c8c992ff4373810bfce9b2f56878a86039f093c9
+TUI main: af1a691b32d067fc1147affc1ca3b3c347a6a67f
+TUI source tree: 33e210d4b240d71a054500a9bc60dd2bedddef9d
+
+Repository-owned exact PTY qualification passed 1/1 with the inherited-FD
+broker, terminal handoff, typed bootstrap, offline replay, quit sequence, and
+cleanup. Missing terminal overrides remain typed environment_path_invalid
+diagnostics. Development authentication, signatures, and key management
+remain warnings.
