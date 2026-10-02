@@ -1,0 +1,29 @@
+AR-1689 paired TUI fresh-user integration receipt
+
+Classification: blocked / source_only_unverified
+Date: 2026-10-03
+
+Exact product heads:
+- ASB: af06a23851adf55c1c83e4bfa2e454ea38e67aff (origin/main; PR #241 merge 50932f80cdacb405653b3c431f9aa12c7dc0a643 is an ancestor)
+- TUI: e88867129a35339614db5c185ed0c047138ae3d7 (origin/main)
+- TUI state: f04baafcdb86046dd07126983eca13c85fb3844e (receipt branch base)
+
+Evidence completed in clean temporary clones with no credentials or provider
+network:
+- ASB `cargo test --locked -p asb-cli --test guide_examples -- --nocapture`:
+  5 passed, 0 failed. This validates the executable offline plan/run/sweep,
+  compare/report guide and synthetic fail-closed record/replay contract.
+- TUI `cargo test --locked --lib --quiet`: 338 passed, 0 failed.
+- TUI `cargo run --locked --quiet --bin asb-tui -- doctor --format json`:
+  exit 3, `classification=source_only_unverified`,
+  `reason=installed_asb_compatibility_not_verified`.
+
+Blocking boundary:
+The exact TUI main has no installable verified bundle and no supported top-level
+`asb tui` route. Therefore the requested fresh-user journey cannot honestly
+complete provider/model setup, ASB plan creation, benchmark, runner-owned
+capture/replay, comparison, and analysis through the real TUI. The source-only
+diagnostic is the authoritative fail-closed result; this receipt does not claim
+paired journey completion, provider support, or shipment.
+
+No product files, credentials, or production evidence were changed or created.
