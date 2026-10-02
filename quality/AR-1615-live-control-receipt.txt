@@ -13,7 +13,7 @@ Exact protected-main inputs
 
 Qualification commands and observations
 - Detached clean worktrees were checked out at both exact heads under
-  /home/martin/ar1615-wts/{asb,tui}; locked release builds completed with
+  <private qualification workspace>/ar1615-wts/{asb,tui}; locked release builds completed with
   ASB source identity explicitly bound to 62fda2f and its tree.
 - An owner-private development bundle was built from TUI a5eda0b, with its
   manifest bound to both exact source identities and the three documented
@@ -53,3 +53,7 @@ tmux failures also prevent claiming the full environmental matrix. Rerun the
 hosted TUI gate on a healthy runner, then retain the lifecycle transcript and
 independent review before release. Development authentication, signatures,
 and key management remain warning-only and were not a blocker.
+
+Privacy-preserving receipt repair
+- 2026-10-02T13:45:00+00:00: Replaced the local absolute workspace prefix in the path-only observation above with the stable public-safe label `<private qualification workspace>`.
+- The exact ASB/TUI heads, tree identifiers, hosted run identifiers, command/result text, and all digest semantics remain unchanged; this is a representation-only redaction of a private path.
