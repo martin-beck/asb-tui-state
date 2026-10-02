@@ -1,0 +1,15 @@
+AR: AR-1614
+TUI protected-main commit: 95d4c362bb7ef4bd9007c7aa77d87403f4a634db
+Bundle implementation: PR #214, merged protected-main commit f84baab725d229184920a554cd27314076393e33
+Paired ASB consumer: PR #434, merged protected-main commit f54e53eb5f362300bcb03e383f6b2b80d7c86dbb
+Evidence: the development channel publishes an immutable TUI bundle manifest with
+repository/ref/tree identity, executable digest/size/target/timestamp, and
+warning-only development provenance behavior. The paired consumer validates the
+manifest before launch and rejects malformed, stale, tampered, symlinked, and
+zero-size artifacts.
+Review: independent exact-head review found no remaining product blocker;
+required hosted checks passed on the paired implementation.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain
+warning-only and non-blocking; production publication remains fail-closed.
