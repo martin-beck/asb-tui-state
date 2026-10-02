@@ -6,8 +6,10 @@ Exact protected-main inputs
 - TUI repository: origin/main a5eda0bc4ce3387398e29697fb7d06d59bb447b1
   tree 0db9835ba5905435b88f08c00530bc52649d963c
 - ASB hosted cross-repository development broker run: 36953649381 (success)
-- TUI hosted Trusted-main run: 36953956913 (failed before tests: runner `/tmp`
-  `ENOSPC`; this is insufficient hosted evidence, not a product pass)
+- TUI hosted Trusted-main run: 36953956913 attempt 3 (one test failed after
+  311 passed: `development_lifecycle::tests::development_install_status_launch_upgrade_and_remove_are_reentrant`;
+  the activation helper returned `development_activation_failed` while using
+  `env::temp_dir()` on the exhausted runner; hosted evidence remains incomplete)
 
 Qualification commands and observations
 - Detached clean worktrees were checked out at both exact heads under
@@ -39,6 +41,9 @@ Qualification commands and observations
   environmental and are not counted as lifecycle acceptance evidence.
 - Contract runners passed: `test-development-journey.py`,
   `test-end-to-end-journey.py`, and `verify-dev-bundle.py`.
+- The exact failing hosted lifecycle test passes in the clean local exact-head
+  run; the hosted failure follows the runner's preceding `/tmp` ENOSPC and is
+  retained as an environmental qualification failure, not suppressed.
 
 Result: BLOCKED pending hosted TUI Trusted-main rerun and a retained transcript
 covering the complete lifecycle matrix. The exact local PTY/control route now
