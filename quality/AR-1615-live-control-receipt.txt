@@ -1,36 +1,50 @@
-AR-1615 live ASB-TUI qualification (blocked)
+AR-1615 live ASB-TUI qualification (blocked pending hosted TUI rerun)
 
 Exact protected-main inputs
-- ASB repository: origin/main 1521b9800bf408ff833f8908391cdeedccee39c1
-  tree 34cecd8b942476a46cec1118e8d47cdb6dc0efc9
-- TUI repository: origin/main 867d302a8a9fd6d5865071ffd3b8dcc1c5f73c6a
-  tree 027b479684959a0961a5458bab847c539c98abae
-- ASB hosted Trusted-main run: 36951828878
+- ASB repository: origin/main 62fda2f3417bf69f1da5f288b0df1d389c853dfa
+  tree 2ee1f48939a1d5ff5b4628befbe3968ae21288f7
+- TUI repository: origin/main a5eda0bc4ce3387398e29697fb7d06d59bb447b1
+  tree 0db9835ba5905435b88f08c00530bc52649d963c
+- ASB hosted cross-repository development broker run: 36953649381 (success)
+- TUI hosted Trusted-main run: 36953956913 (failed before tests: runner `/tmp`
+  `ENOSPC`; this is insufficient hosted evidence, not a product pass)
 
 Qualification commands and observations
-- Detached worktrees were created for both exact heads under
-  /home/martin/ar1615-wts/{asb,tui}; both locked debug builds completed.
-- An owner-private development bundle was built from TUI 867d302, with its
+- Detached clean worktrees were checked out at both exact heads under
+  /home/martin/ar1615-wts/{asb,tui}; locked release builds completed with
+  ASB source identity explicitly bound to 62fda2f and its tree.
+- An owner-private development bundle was built from TUI a5eda0b, with its
   manifest bound to both exact source identities and the three documented
   development-only warning strings.
 - With ASB_TUI_DEV_BUNDLE set to that bundle and private XDG roots,
   `asb tui install --channel dev` returned `ok: true`, code
   `development_bundle_consumed`, and warnings for missing authentication,
   signatures, and key management. No secret was printed.
-- `script -qefc 'asb tui launch --channel dev' transcript` on a short private
-  XDG root returned exit 4, `development_launch_failed`, after the child
-  printed `terminal application failed`. The ASB control broker was created
-  and the installed TUI executable was spawned, but the live interactive
-  control route did not remain running. A long XDG root additionally exposed
-  `development_control_unavailable` from the Unix socket path limit; this is
-  an environmental path-length constraint, not acceptance evidence.
-- Running the exact TUI executable directly under a PTY reaches the alternate
-  screen and remains alive, so the failure is in the paired broker/control
-  path rather than binary startup alone.
+- With ASB_TUI_DEV_BUNDLE set to that bundle and private XDG roots,
+  `asb --json tui install --channel dev` returned `ok: true`,
+  `development_bundle_consumed`, and all three development-only warnings.
+  The manifest and executable digest were independently verified; no secret
+  was printed.
+- The exact opt-in ASB PTY qualification was run with the current bundle:
+  `cargo test -p asb-cli --features cross-repo-qualification --lib
+  pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up --
+  --ignored --nocapture` passed (1 test, 6.06s). It created an authenticated
+  PTY, completed broker bootstrap/control calls, exercised the seeded offline
+  replay action path, sent quit input, and verified cleanup.
+- TUI exact-main tests passed for 312 library tests plus development
+  journey/onboarding/qualification, recording/provider/benchmark, PTY broker
+  handoff, bundle verification, and no-secret/output-contract suites.
+- Five local `terminal_foundation` tests remain unavailable because the host
+  cannot create its private tmux server (`tmux_creation_failed`). They are
+  environmental and are not counted as lifecycle acceptance evidence.
+- Contract runners passed: `test-development-journey.py`,
+  `test-end-to-end-journey.py`, and `verify-dev-bundle.py`.
 
-Result: BLOCKED. The required live PTY/control transcript and positive
-record/seal/reopen/replay/compare/retry/cancel/stale/remove qualification are
-not available. Do not claim AR-1615 done. Create a focused repair/qualification
-AR for the exact child control-loop failure, then rerun this evidence against
-the same or newer protected heads. Development authentication, signatures,
+Result: BLOCKED pending hosted TUI Trusted-main rerun and a retained transcript
+covering the complete lifecycle matrix. The exact local PTY/control route now
+passes on both current protected heads, but the hosted TUI gate failed before
+tests from runner disk exhaustion, so AR-1615 cannot be marked done. The local
+tmux failures also prevent claiming the full environmental matrix. Rerun the
+hosted TUI gate on a healthy runner, then retain the lifecycle transcript and
+independent review before release. Development authentication, signatures,
 and key management remain warning-only and were not a blocker.
