@@ -1,0 +1,35 @@
+AR-1656 connected-provider catalog and model-selection receipt
+classification=development/mock
+status=passed; merged product evidence
+
+Exact product provenance:
+tui_pr=256
+tui_pr_head=c7799e7ce10696c4192c943b79e331fa5b654420
+tui_main_merge=9746b0a8059c410ed33809c466c9f6e655a0a352
+tui_main_parent=f83a39b6be3ebb3e9f5c546bb97da6fb5400c49b
+
+Scope:
+add_edit_refresh_cancel=passed
+connected_model_filtering=passed
+openrouter_compatible_fixture=passed
+opencode_opendesk_routes=passed
+shared_defaults_and_restart=passed
+unavailable_choices_visible_but_unselectable=passed
+human_default_json_projection=passed
+refresh_failure_redaction=passed
+
+Development boundary:
+missing_authentication=warning_only
+missing_signatures=warning_only
+missing_key_management=warning_only
+raw_credentials_or_provider_responses=not_emitted
+
+Verification:
+focused_tests=provider_lifecycle_1656(8),provider_catalog(12),coverage_wizard_adapter(3)
+formal_ui_model=passed
+ui_source_parity=passed
+hosted_checks=passed
+independent_fresh_clone_review=passed
+commit_signature=SSH-signed+DCO
+
+AR-1656 is complete after merge 9746b0a8059c410ed33809c466c9f6e655a0a352.

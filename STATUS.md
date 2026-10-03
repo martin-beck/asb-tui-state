@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 37 |
+| **Planned** | Defined work awaiting promotion or dependencies | 36 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 110 |
+| **Done** | Accepted, integrated, and durably verified | 111 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -164,7 +164,7 @@ flowchart LR
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
-        AR_1656["AR-1656 - Planned"]:::status_planned
+        AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Planned"]:::status_planned
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
@@ -715,7 +715,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (37)
+### Planned (36)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -733,7 +733,6 @@ flowchart LR
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
-| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Implement the provider refresh/add/edit wizard route and verify connected and unavailable model fixtures. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Unclaimed | Qualify the TUI wizard and routes for all opencode/opendesk provider/model tuples, defaults, overrides, restart, and offline parity. | Build the deterministic TUI/control matrix runner after provider refresh and comparison seams are available. |
 | P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Unclaimed | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. |
 | P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Unclaimed | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. |
@@ -757,7 +756,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (110)
+### Done (111)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -854,6 +853,7 @@ flowchart LR
 | P0 | [AR-1648](tasks/AR-1648.md): Selected-agent/workload fan-out | Unclaimed | Coordinate selected agents/workloads into durable online/offline run references. | No further action; ASB fan-out primitive is merged and paired review/hosted checks passed. |
 | P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 is merged at TUI main f83a39b6; run post-merge exact-head fan-out wire qualification and record the paired receipt before deciding completion. |
 | P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
+| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Unclaimed | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
 | P0 | [AR-1688](tasks/AR-1688.md): TUI runner-owned cassette capture and replay qualification | Unclaimed | Verify TUI selection-driven recording and strict offline replay consume runner-owned sealed cassettes. | No further action; exact post-merge TUI runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded in the linked receipt. |
