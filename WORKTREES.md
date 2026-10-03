@@ -4,5 +4,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `asb-tui-main` | `repair/ar1650-wire-contract` | `c9777ed33be3` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `tests/fanout_dispatch.rs` |
+| `asb-tui-main` | `repair/ar1650-wire-contract` | `618eee92cd79` | 0 | behind 0, ahead 1 |
