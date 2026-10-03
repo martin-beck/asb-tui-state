@@ -704,7 +704,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | tui1656-provider-catalog | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Implement the provider refresh/add/edit wizard route and verify connected and unavailable model fixtures. |
+| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | tui1656-provider-catalog | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. |
 
 ### Open (3)
 
