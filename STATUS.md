@@ -526,6 +526,8 @@ flowchart LR
     AR_1695 --> AR_1691
     AR_1695 --> AR_1693
     AR_1695 --> AR_1696
+    AR_1696 --> AR_1691
+    AR_1696 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -685,12 +687,12 @@ flowchart LR
 | [AR-1688](tasks/AR-1688.md) | [AR-1677](tasks/AR-1677.md), [AR-1686](tasks/AR-1686.md) | [AR-1689](tasks/AR-1689.md), [AR-1691](tasks/AR-1691.md) |
 | [AR-1689](tasks/AR-1689.md) | [AR-1686](tasks/AR-1686.md), [AR-1687](tasks/AR-1687.md), [AR-1688](tasks/AR-1688.md) | None |
 | [AR-1690](tasks/AR-1690.md) | [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md) |
-| [AR-1691](tasks/AR-1691.md) | [AR-1676](tasks/AR-1676.md), [AR-1677](tasks/AR-1677.md), [AR-1688](tasks/AR-1688.md), [AR-1690](tasks/AR-1690.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md) | [AR-1693](tasks/AR-1693.md) |
+| [AR-1691](tasks/AR-1691.md) | [AR-1676](tasks/AR-1676.md), [AR-1677](tasks/AR-1677.md), [AR-1688](tasks/AR-1688.md), [AR-1690](tasks/AR-1690.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md), [AR-1696](tasks/AR-1696.md) | [AR-1693](tasks/AR-1693.md) |
 | [AR-1692](tasks/AR-1692.md) | [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md), [AR-1694](tasks/AR-1694.md) |
-| [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md) | None |
+| [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md), [AR-1696](tasks/AR-1696.md) | None |
 | [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
 | [AR-1695](tasks/AR-1695.md) | [AR-1645](tasks/AR-1645.md), [AR-1648](tasks/AR-1648.md), [AR-1650](tasks/AR-1650.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1696](tasks/AR-1696.md) |
-| [AR-1696](tasks/AR-1696.md) | [AR-1610](tasks/AR-1610.md), [AR-1695](tasks/AR-1695.md) | None |
+| [AR-1696](tasks/AR-1696.md) | [AR-1610](tasks/AR-1610.md), [AR-1695](tasks/AR-1695.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
 
 ## Complete AR inventory
 
