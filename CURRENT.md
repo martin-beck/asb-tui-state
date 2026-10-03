@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 is merged at TUI main f83a39b6; run post-merge exact-head fan-out wire qualification and record the paired receipt before deciding completion. | tui-fanout-1650 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -162,6 +156,7 @@ Never edit this file directly.
 | P0 | [AR-1645](tasks/AR-1645.md): Setup-to-runtime configuration bridge | Make persisted setup selections directly drive benchmark planning and execution. | No further action; paired ASB setup-to-plan/run bridge is merged and reviewed. | - |
 | P0 | [AR-1646](tasks/AR-1646.md): Development capture and replay route | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. | - |
 | P0 | [AR-1648](tasks/AR-1648.md): Selected-agent/workload fan-out | Coordinate selected agents/workloads into durable online/offline run references. | No further action; ASB fan-out primitive is merged and paired review/hosted checks passed. | - |
+| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 is merged at TUI main f83a39b6; run post-merge exact-head fan-out wire qualification and record the paired receipt before deciding completion. | - |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. | - |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. | - |
 | P0 | [AR-1688](tasks/AR-1688.md): TUI runner-owned cassette capture and replay qualification | Verify TUI selection-driven recording and strict offline replay consume runner-owned sealed cassettes. | No further action; exact post-merge TUI runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded in the linked receipt. | - |
