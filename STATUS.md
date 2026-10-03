@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**150 ARs tracked** across 4 active status categories.
+**151 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 39 |
+| **Planned** | Defined work awaiting promotion or dependencies | 40 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 106 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -193,6 +193,7 @@ flowchart LR
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Planned"]:::status_planned
+        AR_1696["AR-1696 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -339,6 +340,7 @@ flowchart LR
     AR_1607 --> AR_1642
     AR_1607 --> AR_1656
     AR_1607 --> AR_1660
+    AR_1610 --> AR_1696
     AR_1611 --> AR_1612
     AR_1611 --> AR_1613
     AR_1611 --> AR_1614
@@ -523,6 +525,7 @@ flowchart LR
     AR_1694 --> AR_1693
     AR_1695 --> AR_1691
     AR_1695 --> AR_1693
+    AR_1695 --> AR_1696
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -612,7 +615,7 @@ flowchart LR
 | [AR-1605](tasks/AR-1605.md) | [AR-1594](tasks/AR-1594.md) | [AR-1603](tasks/AR-1603.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1610](tasks/AR-1610.md), [AR-1611](tasks/AR-1611.md), [AR-1656](tasks/AR-1656.md), [AR-1660](tasks/AR-1660.md) |
 | [AR-1606](tasks/AR-1606.md) | [AR-1605](tasks/AR-1605.md), [AR-1607](tasks/AR-1607.md) | [AR-1603](tasks/AR-1603.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md), [AR-1656](tasks/AR-1656.md) |
 | [AR-1607](tasks/AR-1607.md) | [AR-1605](tasks/AR-1605.md) | [AR-1606](tasks/AR-1606.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md), [AR-1642](tasks/AR-1642.md), [AR-1656](tasks/AR-1656.md), [AR-1660](tasks/AR-1660.md) |
-| [AR-1610](tasks/AR-1610.md) | [AR-1605](tasks/AR-1605.md) | None |
+| [AR-1610](tasks/AR-1610.md) | [AR-1605](tasks/AR-1605.md) | [AR-1696](tasks/AR-1696.md) |
 | [AR-1611](tasks/AR-1611.md) | [AR-1605](tasks/AR-1605.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md) | [AR-1612](tasks/AR-1612.md), [AR-1613](tasks/AR-1613.md), [AR-1614](tasks/AR-1614.md), [AR-1659](tasks/AR-1659.md) |
 | [AR-1612](tasks/AR-1612.md) | [AR-1602](tasks/AR-1602.md), [AR-1606](tasks/AR-1606.md), [AR-1607](tasks/AR-1607.md), [AR-1611](tasks/AR-1611.md) | [AR-1613](tasks/AR-1613.md), [AR-1615](tasks/AR-1615.md), [AR-1617](tasks/AR-1617.md), [AR-1618](tasks/AR-1618.md), [AR-1660](tasks/AR-1660.md) |
 | [AR-1613](tasks/AR-1613.md) | [AR-1603](tasks/AR-1603.md), [AR-1604](tasks/AR-1604.md), [AR-1611](tasks/AR-1611.md), [AR-1612](tasks/AR-1612.md), [AR-1614](tasks/AR-1614.md), [AR-1615](tasks/AR-1615.md), [AR-1641](tasks/AR-1641.md), [AR-1642](tasks/AR-1642.md) | [AR-1622](tasks/AR-1622.md), [AR-1643](tasks/AR-1643.md), [AR-1653](tasks/AR-1653.md) |
@@ -686,7 +689,8 @@ flowchart LR
 | [AR-1692](tasks/AR-1692.md) | [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md), [AR-1694](tasks/AR-1694.md) |
 | [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md) | None |
 | [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
-| [AR-1695](tasks/AR-1695.md) | [AR-1645](tasks/AR-1645.md), [AR-1648](tasks/AR-1648.md), [AR-1650](tasks/AR-1650.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
+| [AR-1695](tasks/AR-1695.md) | [AR-1645](tasks/AR-1645.md), [AR-1648](tasks/AR-1648.md), [AR-1650](tasks/AR-1650.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1696](tasks/AR-1696.md) |
+| [AR-1696](tasks/AR-1696.md) | [AR-1610](tasks/AR-1610.md), [AR-1695](tasks/AR-1695.md) | None |
 
 ## Complete AR inventory
 
@@ -705,7 +709,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (39)
+### Planned (40)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -742,9 +746,10 @@ flowchart LR
 | P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
-| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Run the disposable paired exact-head journey only after deterministic artifact identity is released, then publish a receipt covering install, wizard, benchmark, selected/all recording, replay, comparison, and analysis. |
-| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Run the disposable exact-head paired journey only after deterministic artifact identity is released, then publish a privacy-safe receipt with warning-only development authentication evidence. |
+| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | A paired positive/negative journey receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun the exact-head lifecycle and promote only with final receipt evidence. |
+| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | The exact paired quickstart receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun and promote only with final hosted/post-merge evidence. |
 | P0 | [AR-1695](tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | Unclaimed | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | Implement the TUI serializer and paired real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
+| P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Unclaimed | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | Add focused behavior coverage for the changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
