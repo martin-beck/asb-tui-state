@@ -704,7 +704,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | tui-fanout-1650 | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement or qualify the paired protocol/TUI adapter over Orchestrator::admit_fanout. |
+| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | tui-fanout-1650 | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 925dc712 is open and rebased onto TUI main f587623b; after hosted checks, independently verify the exact wire test and update the paired protocol receipt before completion. |
 
 ### Open (3)
 
