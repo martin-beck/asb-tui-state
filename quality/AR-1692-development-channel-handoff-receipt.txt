@@ -1,0 +1,23 @@
+AR-1692 TUI development-channel handoff receipt
+
+Status: PASS
+Product: asb-tui
+Exact merged product head: 103d90ebd6f9904374c942df19fe70e858c13421
+Exact source PR head: 6003d159df5d0819a1471136960345b6de736878
+Merged PR: https://github.com/martin-beck/asb-tui/pull/243
+Paired ASB materializer head: 0d241cabc674a96191e67477758994c36427ebe2
+
+Hosted evidence: repository quality, Rust/supply-chain/privacy, and AWQ
+checks all passed on the exact source head. Independent review approved the
+implementation after the final hosted checks.
+
+Implementation evidence: the TUI consumes the ASB channel manifest through
+materialization, persisted state, status, launch readiness, rollback, and
+removal; validates paired ASB/TUI refs/heads/main identities and the actual
+executable SHA-256 and size; exposes provenance and manifest digest in human
+and JSON diagnostics; and returns typed stale, invalid, unavailable, and digest
+mismatch errors. Legacy installs without a manifest remain removable.
+
+Development-only absent authentication, signatures, and key-management
+metadata remain warning-only and never block the development path. AR-1693
+still requires the paired fresh-user quickstart receipt.
