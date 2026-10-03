@@ -1,0 +1,16 @@
+AR-1690 TUI development-channel current-main consumption receipt
+
+Status: done for the TUI consumption seam; final clean-room journey remains
+AR-1691/AR-1693.
+
+Exact implementation evidence:
+- TUI handoff consumer PR #243 merge `103d90ebd6f9904374c942df19fe70e858c13421`.
+- ASB materializer PR #460 merge `0d241cabc674a96191e67477758994c36427ebe2`.
+- Current TUI main head: `b736be925b09af50349d3552ce9869650958fed1`.
+- Current ASB main head: `65f36e97dcff1969dd62c1d6864456305d6d4860`.
+
+The TUI consumes the paired manifest, defaults to the development channel, exposes resolved
+source and executable identities, and reports stale, mismatch, invalid, and unavailable
+conditions without silently selecting another channel. Development authentication, signatures,
+and key management remain warning-only. This receipt does not claim the final benchmark,
+recording, replay, comparison, or analysis journey.
