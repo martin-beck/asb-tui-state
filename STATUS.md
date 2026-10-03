@@ -515,7 +515,8 @@ flowchart LR
     AR_1691 --> AR_1693
     AR_1692 --> AR_1693
     AR_1692 --> AR_1694
-    AR_1693 --> AR_1694
+    AR_1694 --> AR_1691
+    AR_1694 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -675,10 +676,10 @@ flowchart LR
 | [AR-1688](tasks/AR-1688.md) | [AR-1677](tasks/AR-1677.md), [AR-1686](tasks/AR-1686.md) | [AR-1689](tasks/AR-1689.md), [AR-1691](tasks/AR-1691.md) |
 | [AR-1689](tasks/AR-1689.md) | [AR-1686](tasks/AR-1686.md), [AR-1687](tasks/AR-1687.md), [AR-1688](tasks/AR-1688.md) | None |
 | [AR-1690](tasks/AR-1690.md) | [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md) |
-| [AR-1691](tasks/AR-1691.md) | [AR-1676](tasks/AR-1676.md), [AR-1677](tasks/AR-1677.md), [AR-1688](tasks/AR-1688.md), [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md) |
+| [AR-1691](tasks/AR-1691.md) | [AR-1676](tasks/AR-1676.md), [AR-1677](tasks/AR-1677.md), [AR-1688](tasks/AR-1688.md), [AR-1690](tasks/AR-1690.md), [AR-1694](tasks/AR-1694.md) | [AR-1693](tasks/AR-1693.md) |
 | [AR-1692](tasks/AR-1692.md) | [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md), [AR-1694](tasks/AR-1694.md) |
-| [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md) | [AR-1694](tasks/AR-1694.md) |
-| [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md), [AR-1693](tasks/AR-1693.md) | None |
+| [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md) | None |
+| [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
 
 ## Complete AR inventory
 
@@ -735,9 +736,9 @@ flowchart LR
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1690](tasks/AR-1690.md): TUI development-channel current-main consumption | Unclaimed | Consume the ASB dev-channel manifest, default to current paired main heads, and make the resolved source visible before wizard or launch. | Implement manifest loading and selection-driven diagnostics in the TUI, then verify omitted dev, explicit dev, stale, mismatched, and unavailable channel fixtures. |
-| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Run the disposable paired exact-head journey and publish a receipt covering install, wizard, benchmark, selected/all recording, replay, comparison, and analysis. |
-| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Run the disposable exact-head paired journey after AR-1691 and AR-1692, publish a privacy-safe receipt, and retain warning-only development authentication evidence. |
-| P0 | [AR-1694](tasks/AR-1694.md): Deterministic TUI development artifact identity | Unclaimed | Make repeated TUI dev-channel builds path-independent so the ASB handoff digest matches the actual installed executable. | Implement deterministic compiler path remapping in the TUI materializer, add repeated-build and handoff-validation regression coverage, and publish exact hosted evidence without weakening digest checks. |
+| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Run the disposable paired exact-head journey only after deterministic artifact identity is released, then publish a receipt covering install, wizard, benchmark, selected/all recording, replay, comparison, and analysis. |
+| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Run the disposable exact-head paired journey only after deterministic artifact identity is released, then publish a privacy-safe receipt with warning-only development authentication evidence. |
+| P0 | [AR-1694](tasks/AR-1694.md): Deterministic TUI development artifact identity | Unclaimed | Make repeated TUI dev-channel builds path-independent so the ASB handoff digest matches the actual installed executable. | Implement deterministic compiler path remapping in the TUI materializer, add repeated-build and handoff-validation regression coverage, and publish exact hosted evidence without weakening digest checks before AR-1691/1693 qualification. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
