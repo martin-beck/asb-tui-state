@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 925dc712 is open and rebased onto TUI main f587623b; after hosted checks, independently verify the exact wire test and update the paired protocol receipt before completion. | tui-fanout-1650 |
+| P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 is merged at TUI main f83a39b6; run post-merge exact-head fan-out wire qualification and record the paired receipt before deciding completion. | tui-fanout-1650 |
 
 ## Open
 
