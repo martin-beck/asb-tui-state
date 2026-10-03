@@ -1,0 +1,29 @@
+AR-1695 / AR-1691 / AR-1693 final paired acceptance receipt
+
+Classification: development/mock. Exact-head qualification only; AR-1691 and
+AR-1693 remain planned because AR-1696 is still an explicit dependency.
+
+Source receipt SHA-256: 2bcd10980e1e65e06ec6a5849543050b83b4fa9296f9f00283f923bd3d98eb68
+
+Exact tested identities:
+- ASB main `502254bd9eca1866bfb54b13f663c4aa4166c62a`, tree
+  `91da6742583a363679bab9f0674781f6921e60e2`.
+- TUI main `29f3f61d910198d8e042dc53e5e37ddcdc98a614`, tree
+  `831ab8d4e069733eec8515e526c2c93971a37730`.
+
+Acceptance:
+- ASB published fan-out fixture passed through the live Unix
+  `ControlServer`/`ControlClient` v1.14 path: negotiation, framing, typed
+  dispatch, RunnerBackend admission, response validation, and deterministic
+  member identity all passed.
+- TUI fan-out dispatch and inherited-fd/socket transport suites passed.
+- The paired quickstart passed dev installation and handoff, provider/model
+  selection, selected (one tuple) and all (seven tuple) capture, strict replay
+  with network denied, incomplete-matrix rejection, tamper rejection,
+  comparison, and analysis.
+- Development authentication, signatures, and key management were absent but
+  remained warning-only and never blocked.
+
+AR-1695 acceptance is complete. AR-1691 and AR-1693 are not promoted here:
+their remaining explicit release dependency is AR-1696 trusted-main coverage
+and release-gate admission.

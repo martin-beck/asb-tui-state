@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 40 |
+| **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 106 |
+| **Done** | Accepted, integrated, and durably verified | 107 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -192,7 +192,7 @@ flowchart LR
         AR_1692["AR-1692 - Done"]:::status_done
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Done"]:::status_done
-        AR_1695["AR-1695 - Planned"]:::status_planned
+        AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
@@ -711,7 +711,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (40)
+### Planned (39)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -748,15 +748,14 @@ flowchart LR
 | P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
-| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Post-merge paired receipt is recorded for ASB d6d7b39a and TUI 29f3f61d; retain planned status until coordinator promotes AR-1695 acceptance and final hosted evidence, then admit the lifecycle gate only with the exact receipt. |
-| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Post-merge paired receipt is recorded for ASB d6d7b39a and TUI 29f3f61d; retain planned status until coordinator promotes AR-1695 acceptance and final hosted evidence, then admit the fresh-user gate only with the exact receipt. |
-| P0 | [AR-1695](tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | Unclaimed | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | Implement the TUI serializer and paired real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
+| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final paired receipt for ASB 502254bd and TUI 29f3f61 is recorded; remain planned until AR-1696 trusted-main coverage/release-gate admission is complete, then promote only with final hosted evidence. |
+| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final paired receipt for ASB 502254bd and TUI 29f3f61 is recorded; remain planned until AR-1696 trusted-main coverage/release-gate admission is complete, then promote only with final hosted evidence. |
 | P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Unclaimed | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | Add focused behavior coverage for the changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (106)
+### Done (107)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -857,6 +856,7 @@ flowchart LR
 | P0 | [AR-1690](tasks/AR-1690.md): TUI development-channel current-main consumption | Unclaimed | Consume the ASB dev-channel manifest, default to current paired main heads, and make the resolved source visible before wizard or launch. | No further action; current-main channel consumption and diagnostics are covered by the handoff implementation receipt. Final paired journey remains AR-1691/AR-1693. |
 | P0 | [AR-1692](tasks/AR-1692.md): TUI development-channel handoff consumer | Unclaimed | Consume ASB&#x27;s exact default-dev handoff and show provenance and compatibility diagnostics before the separately built TUI launches. | No further action; exact merged handoff implementation and hosted evidence are recorded in quality/AR-1692-development-channel-handoff-receipt.txt. Continue AR-1693 paired journey qualification. |
 | P0 | [AR-1694](tasks/AR-1694.md): Deterministic TUI development artifact identity | Unclaimed | Make repeated TUI dev-channel builds path-independent so the ASB handoff digest matches the actual installed executable. | No further action; deterministic materialization and hosted evidence are recorded in quality/AR-1694-deterministic-artifact-receipt.txt. Final paired journey remains AR-1691/AR-1693. |
+| P0 | [AR-1695](tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | Unclaimed | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | No further action; complete RunRequest serialization and live ASB v1.14 Unix transport acceptance are recorded in the final paired receipt. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
