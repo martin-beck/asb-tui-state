@@ -1,0 +1,20 @@
+AR-1677 channel-aware quickstart audit receipt
+
+Classification: development/mock. This is a gap audit; AR-1677 remains
+planned because its AR-1676 channel-lifecycle dependency is planned.
+
+Exact audited heads:
+- ASB `502254bd9eca1866bfb54b13f663c4aa4166c62a`
+- TUI `29f3f61d910198d8e042dc53e5e37ddcdc98a614`
+
+Fresh TUI `cargo test --locked --test top_level`: 10/10 passed. Evidence
+covers default-dev lifecycle operations, persistence across restart, explicit
+stable/nightly/experimental unavailable-channel diagnostics without fallback,
+provider/model setup seams, and the existing default-dev capture, strict
+offline replay, comparison, and analysis receipt.
+
+The missing acceptance matrix is explicit-channel successful materialization,
+upgrade/rollback preservation, removal, and channel-aware end-to-end
+quickstart/release receipt. Those cases are owned by dependency AR-1676 and
+must not be inferred from default-dev evidence. Development authentication,
+signatures, and key management remain warning-only and non-blocking.
