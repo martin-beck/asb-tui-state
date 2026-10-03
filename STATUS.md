@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 38 |
+| **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 109 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -160,7 +160,7 @@ flowchart LR
         AR_1649["AR-1649 - Planned"]:::status_planned
         AR_1650["AR-1650 - Done"]:::status_done
         AR_1651["AR-1651 - Planned"]:::status_planned
-        AR_1652["AR-1652 - Planned"]:::status_planned
+        AR_1652["AR-1652 - Open"]:::status_open
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
@@ -700,13 +700,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. |
+| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 
 ### Blocked (2)
 
@@ -715,7 +716,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (38)
+### Planned (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -730,7 +731,6 @@ flowchart LR
 | P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. |
 | P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. |
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. |
-| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
