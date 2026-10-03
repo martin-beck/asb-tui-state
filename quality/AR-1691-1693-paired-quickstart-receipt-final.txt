@@ -1,0 +1,31 @@
+AR-1691/AR-1693 paired default-dev quickstart post-merge receipt
+
+Classification: development/mock. Qualification evidence only; AR-1691 and
+AR-1693 remain planned pending coordinator promotion after final hosted
+evidence and AR-1695 acceptance admission.
+
+Source receipt SHA-256: f7440d45c940a8c8e12343599b9146c173c4846f0fb73f243cc4f042668a91e7
+
+Exact tested identities:
+- ASB main `d6d7b39a9557f0fa059cf67befb11270a7998a9d`, tree
+  `236e7d9f3133da440d55cf4320c083b8b8e56d76`.
+- TUI main `29f3f61d910198d8e042dc53e5e37ddcdc98a614`, tree
+  `831ab8d4e069733eec8515e526c2c93971a37730`.
+- Installed TUI executable
+  `1b8e3a378cd5423bea1ecc539863c64715a60071da7f176e0ccab68c9f6ef6b1`.
+- Handoff manifest `ef98fffbc7c5e4dd78b64972b3f595980fc690b0b53d1faac1abf16f04d8057b`.
+
+The omitted/default dev channel installed, status-checked, restarted, and
+launched successfully. Fixture provider/model setup used no credentials;
+missing development authentication, signatures, and key management remained
+visible warnings and never blocked the journey. Selected capture covered one
+tuple; all-workload capture covered seven tuples. Strict replay ran with
+network denied and result digest
+`48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5`.
+Incomplete coverage stayed offline-unready; tampered handoff failed with
+`dev_channel_manifest_invalid`; provider selection, fan-out capture/replay,
+comparison, and analysis passed.
+
+The complete machine-readable source receipt is retained at the runner output
+identified by the source digest above. This state receipt does not promote
+AR-1691 or AR-1693 and does not weaken any security or release gate.
