@@ -1,0 +1,31 @@
+AR-1676/AR-1677 final paired channel-aware quickstart receipt
+
+Classification: development/mock. Both ARs remain planned because the
+coordinator dependency chain is not reconciled for done admission.
+
+Exact post-merge heads:
+- ASB `502254bd9eca1866bfb54b13f663c4aa4166c62a`
+- TUI `c9777ed33be3bd095c119b912803cdc44cbc94d9`
+
+Fresh exact-head run:
+- TUI build: `cargo build --locked --bin asb-tui`
+- paired AR-1676 matrix ran before quickstart: 11/11 cases passed
+- matrix covered omitted/explicit dev, unavailable stable/nightly/experimental,
+  cross-process persistence, atomic failed-upgrade rollback preservation,
+  removal, and malformed-manifest diagnostics
+- AR-1693 quickstart passed provider/model setup, selected/all cassette
+  capture, strict offline replay with network denied, comparison, analysis,
+  onboarding, launch, restart, and tamper-negative checks
+- quickstart receipt SHA-256:
+  `75412848a5203975125ab940245050051112960c0a2b0cf8ecb7c25fd9fb0737`
+
+Paired ASB lifecycle evidence is recorded by merged ASB-state PR #66
+(`310ab8c983125234ec2769edb60b359c048b3583`): TUI compatibility 9,
+release discovery 5, TUI top-level lifecycle 10, and ASB lifecycle 5; the
+ASB development-channel qualification includes successful restoration of the
+previous release link. The evidence is retained as qualification, not claimed
+as TUI production rollback support.
+
+All runs used no credentials and denied network for benchmark/replay. Missing
+development authentication, signatures, and key management remain visible,
+warning-only, and non-blocking.
