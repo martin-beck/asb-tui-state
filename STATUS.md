@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**152 ARs tracked** across 4 active status categories.
+**152 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 36 |
 | **Future** | Deferred roadmap work | 0 |
@@ -164,7 +164,7 @@ flowchart LR
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
-        AR_1656["AR-1656 - Open"]:::status_open
+        AR_1656["AR-1656 - In progress"]:::status_in_progress
         AR_1657["AR-1657 - Planned"]:::status_planned
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
@@ -700,14 +700,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | tui1656-provider-catalog | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Implement the provider refresh/add/edit wizard route and verify connected and unavailable model fixtures. |
+
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. |
-| P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Implement the provider refresh/add/edit wizard route and verify connected and unavailable model fixtures. |
 
 ### Blocked (2)
 
