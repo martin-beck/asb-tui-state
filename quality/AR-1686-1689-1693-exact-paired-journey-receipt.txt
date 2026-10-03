@@ -1,0 +1,27 @@
+AR-1686/AR-1689/AR-1693 exact paired journey qualification receipt
+
+Classification: development/mock qualification evidence. The referenced ARs
+remain planned; this receipt does not bypass dependency or specification gates.
+
+Exact heads:
+- ASB `ad43609b67825f7f422b371f5d8104e0a5b20f2e`
+- TUI `9746b0a8059c410ed33809c466c9f6e655a0a352`
+
+Fresh exact-head journey passed:
+- default-dev install and ASB handoff
+- provider catalog/model compatibility for OpenCode and OpenDesk, including
+  shared/default and offline-compatible selections
+- selected and all workload capture
+- strict offline replay with network denied and no credentials
+- comparison and analysis after completed replay
+- restart persistence, rollback-preserving failed upgrade, removal, and
+  malformed-manifest diagnostics
+- development authentication, signatures, and key management remained
+  warning-only and non-blocking
+
+Receipt SHA-256: `a715272335ebe9e1a6a1e64c662e3ffd305bd4362b4049adaaff84432f5abd9f`
+
+Promotion blockers are authoritative dependencies, not runtime failures:
+AR-1686 waits for planned AR-1672 and AR-1677; AR-1689 waits for AR-1686
+and AR-1687; AR-1693 waits for planned AR-1691. No task status is changed by
+this receipt.
