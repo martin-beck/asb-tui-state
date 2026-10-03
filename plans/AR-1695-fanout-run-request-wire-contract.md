@@ -8,6 +8,8 @@ validate it against the ASB control contract before dispatch.
 
 ## Acceptance
 
+This contract is evaluated at the ASB/TUI boundary, not by UI rendering alone.
+
 - Required identity, provenance, mode, cassette/credential-reference, and bounded
   limit fields are present in human and JSON paths.
 - The serialized request validates against the ASB control schema and is accepted
