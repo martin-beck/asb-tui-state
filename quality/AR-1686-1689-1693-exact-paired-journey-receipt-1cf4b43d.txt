@@ -1,0 +1,38 @@
+AR-1686/AR-1689/AR-1693 superseding exact paired journey receipt
+
+Classification: development/mock qualification evidence. This receipt
+supersedes the prior TUI `9746b0a` receipt; the referenced ARs remain planned
+and no dependency or release gate is bypassed.
+
+Exact tested heads:
+- ASB `ad43609b67825f7f422b371f5d8104e0a5b20f2e`, tree
+  `000c90efaeadb3129ede46a76cea0faaf5cc24de`
+- TUI `1cf4b43d7c6e8782179bbdd448d8ae14aa91fb34`, tree
+  `5c07a0067d34f7766eceee862cae961eca6d8dc1`
+
+Protected-main checks for TUI PR257 were green before this run. Fresh exact-
+head qualification passed:
+- default-dev install, handoff, launch, status, restart, and onboarding
+- provider/model selection with OpenCode/OpenDesk-compatible fixture choices
+- selected and all-workload capture
+- strict offline replay with network denied and no credentials
+- comparison and analysis after replay
+- rollback-preserving failed upgrade, removal, and malformed-manifest checks
+- channel matrix for omitted/explicit dev and future stable/nightly/
+  experimental selections
+- tamper-negative manifest validation
+
+The runner reported fan-out capture/replay, provider selection, comparison,
+and end-to-end qualification passed. Selected capture covered one tuple;
+all-workload capture covered seven tuples. Incomplete coverage remained
+offline-unready as expected. Development authentication, signatures, and key
+management remained visible warning-only conditions and never blocked setup.
+
+Source receipt: `/tmp/ar1693-ad43609-1cf4b43d.json`
+Source receipt SHA-256:
+`b6eb6bc1dfd947146351438ee19515f796332fddc38b16bb6f0a4a4edb8be270`
+
+Promotion blockers remain authoritative dependencies, not runtime failures:
+AR-1686 waits for planned AR-1672 and AR-1677; AR-1689 waits for AR-1686 and
+AR-1687; AR-1693 waits for planned AR-1691. This receipt does not change task
+status or weaken production security/release gates.
