@@ -1,0 +1,20 @@
+AR-1652 post-merge selected recording and offline replay receipt
+
+Classification: development/mock. No product repair was required: the exact
+TUI main already contains the selection-driven recording/replay route.
+
+Exact product head:
+- TUI `f83a39b6be3ebb3e9f5c546bb97da6fb5400c49b`
+
+Fresh exact-head targeted evidence:
+- benchmark route: 9 passed
+- benchmark selection: 4 passed
+- setup/recording coverage: 2 passed
+- guided commands: 2 passed
+
+The evidence covers selected and all workload selection, generation-bound
+campaign handoff, explicit offline replay with no live fallback, provider
+profile/catalog identity fencing, comparison only after successful completion,
+redacted malformed guided input, and human-default plus JSON output. Missing
+development authentication, signatures, and key management remain visibly
+development-only and non-blocking.
