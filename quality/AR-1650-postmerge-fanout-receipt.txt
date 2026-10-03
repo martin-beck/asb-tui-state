@@ -1,0 +1,23 @@
+AR-1650 post-merge fan-out wire receipt
+
+Classification: development/mock. AR-1650 remains in progress pending the
+paired protocol receipt and final coordinator completion decision.
+
+Product evidence:
+- TUI PR #255 merged at `f83a39b6be3ebb3e9f5c546bb97da6fb5400c49b`
+- signed implementation head before merge:
+  `925dc712826424195d503e463cc609d7388393b2`
+- selected OpenCode/OpenDesk fan-out expansion is deterministic
+- emitted members contain agent, provider, model, workload, catalog digest,
+  workload/scorer revisions, mode, cassette/credential references, and bounded
+  limits
+- request round-trip is bound to control protocol v1.14
+
+Fresh post-merge exact-head tests at TUI `f83a39b6`:
+- `fanout_dispatch`: 3 passed
+- `formal_state`: 17 passed
+- human and JSON fan-out reports remain covered
+- development authentication, signatures, and key management remain
+  warning-only and non-blocking
+
+ASB was not modified by this qualification.
