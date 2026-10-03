@@ -1,0 +1,22 @@
+AR-1676 paired channel-lifecycle evidence receipt
+
+Classification: development/mock. The receipt records qualification evidence;
+AR-1676 remains planned because its coordinator dependency chain is not yet
+complete.
+
+Exact paired heads:
+- ASB `502254bd9eca1866bfb54b13f663c4aa4166c62a`
+- TUI `29f3f61d910198d8e042dc53e5e37ddcdc98a614`
+
+Fresh paired matrix counts recorded by the ASB-side receipt:
+- TUI compatibility lifecycle: 9 passed
+- TUI release discovery: 5 passed
+- TUI top-level lifecycle: 10 passed
+- ASB lifecycle: 5 passed
+
+The matrix confirms typed unavailable-channel diagnostics and no fallback.
+Development authentication, signatures, and key management remain visibly
+development-only warnings and never block the qualification path. No product
+repair was required. AR-1676 and dependent AR-1677 remain planned until the
+coordinator dependency ordering and the complete channel-aware quickstart
+release gate are satisfied.
