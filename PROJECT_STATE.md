@@ -12,11 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #180 | `dependabot/cargo/signal-hook-0.4.4@5d9e5ac025a3` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump signal-hook from 0.3.18 to 0.4.4 |
 | #181 | `dependabot/github_actions/taiki-e/install-action-2.87.20@e4aa0ea69562` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): Bump taiki-e/install-action from 2.87.15 to 2.87.20 |
+| #255 | `repair/ar1650-wire-contract@618eee92cd79` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | test fanout v1.14 wire contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37097131601 | `618eee92cd79` | pull_request | AWQ shadow observation | in_progress:- |
+| 37097131336 | `618eee92cd79` | pull_request | Repository quality | in_progress:- |
 | 37097063258 | `f587623b58a8` | push | Trusted main verification | in_progress:- |
 | 37097063246 | `f587623b58a8` | push | Repository quality | in_progress:- |
 | 37096680044 | `106fe12d98a2` | pull_request | AWQ shadow observation | completed:success |
@@ -27,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37096442365 | `88afab00db67` | pull_request | Repository quality | completed:cancelled |
 | 37096037679 | `dc56d621af4d` | pull_request | AWQ shadow observation | completed:success |
 | 37096037595 | `dc56d621af4d` | pull_request | Repository quality | completed:success |
-| 37095964128 | `2a14c9010b53` | pull_request | AWQ shadow observation | completed:cancelled |
-| 37095964026 | `2a14c9010b53` | pull_request | Repository quality | completed:cancelled |
