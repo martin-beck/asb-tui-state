@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. | ar1622-quickstart-20261005 |
+| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. | ar1647-comparison-orchestration |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await exact-main post-merge Repository Quality 37242182799 and Trusted main verification 37242182759 at merge SHA 0722db13; release AR-1701 only after both terminal green, documenting ASB live-admission boundary. | ar1701-live-control-20261005 |
 
 ## Open
@@ -16,7 +17,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
-| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. | - |
 
 ## Blocked
 
