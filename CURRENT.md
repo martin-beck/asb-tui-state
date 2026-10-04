@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Await independent review and hosted checks for PR #258 at exact head 080c388; repair any failure, then merge and run post-merge exact-main verification. | ar1700-live-provider |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Await independent review and hosted checks for PR #258 at exact squashed signed+DCO head c04e74e; repair any failure, then merge and run post-merge exact-main verification. | ar1700-live-provider |
 
 ## Open
 
