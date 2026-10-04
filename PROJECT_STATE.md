@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #261 | `feature/ar-1701-live-control@a497a407b74d` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: keep live benchmark control actionable |
+| #261 | `feature/ar-1701-live-control@aa6585d65b5f` | `main` | DIRTY | - | feat: keep live benchmark control actionable |
 
 ## Recent workflows
 
