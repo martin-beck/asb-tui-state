@@ -1,0 +1,36 @@
+AR-1697 exact paired current-head channel qualification receipt
+
+Classification: development/mock. No provider credentials were used. Install
+materialization was allowed; benchmark and replay operations were network
+denied.
+
+Exact paired heads:
+- ASB commit: ad43609b67825f7f422b371f5d8104e0a5b20f2e
+- ASB tree: 000c90efaeadb3129ede46a76cea0faaf5cc24de
+- TUI commit: 1cf4b43d7c6e8782179bbdd448d8ae14aa91fb34
+- TUI tree: 5c07a0067d34f7766eceee862cae961eca6d8dc1
+
+Channel matrix evidence (tools/run-channel-compatibility-matrix.py):
+- omitted and explicit dev selection: development_not_installed
+- stable, nightly, and experimental unavailable-channel diagnostics: typed
+  unavailable responses with no fallback
+- persisted unavailable selection and dev restoration: passed
+- failed upgrade rollback preserving the installed pair: passed
+- removal: passed
+- malformed manifest rejection: development_installation_invalid
+- receipt: /tmp/ar1697-channel-matrix.json
+- receipt sha256: d7074372a3831642c9d5b835d5285dbbb6ddb7ce58c35b9d566647c8708df225
+
+Channel-aware setup-to-offline-analysis evidence
+(tools/run-quickstart-acceptance.py):
+- `tui install --json`: development_installed and verified
+- installed status, launch, restart, tamper rejection, capture, strict
+  offline replay, comparison, and analysis: passed
+- exact development source provenance in install receipt: TUI
+  1cf4b43d7c6e8782179bbdd448d8ae14aa91fb34 and ASB
+  ad43609b67825f7f422b371f5d8104e0a5b20f2e
+- credentials: none
+- receipt: /tmp/ar1697-quickstart-exact2.json
+
+Development-only missing authentication, signatures, and key management were
+reported as visible warnings and did not block the qualification path.
