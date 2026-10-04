@@ -136,7 +136,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1666` | `feature/ar-1666-coverage` | `d857645fcffa` | 0 | behind 74, ahead 0 |
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 71, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 64, ahead 0 |
-| `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `080c388a5b5c` | 0 | behind 0, ahead 3 |
+| `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 247, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 247, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 247, ahead 156 |
@@ -161,7 +161,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-integration` | `DETACHED` | `e39b15e5c4c3` | 3 | behind 247, ahead 61 |
 | changed files | - | - | - | `src/help.rs`, `src/lib.rs`, `tests/help.rs` |
 | `asb-tui-live-control` | `ar1011-live-control` | `26058c07ff33` | 0 | behind 247, ahead 57 |
-| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `efe54aeaa01a` | 0 | behind 3, ahead 2 |
+| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `8c192d283ce9` | 0 | behind 0, ahead 7 |
 | `asb-tui-main-verify` | `fix/release-document-schema` | `2beb944be612` | 0 | behind 247, ahead 86 |
 | `asb-tui-pr188-review.b1iNKH` | `DETACHED` | `712a29155e89` | 0 | behind 247, ahead 10 |
 | `asb-tui-pr193-review` | `DETACHED` | `9d1351ce326f` | 0 | behind 246, ahead 1 |
