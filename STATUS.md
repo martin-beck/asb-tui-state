@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 33 |
+| **Planned** | Defined work awaiting promotion or dependencies | 32 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 119 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -151,7 +151,7 @@ flowchart LR
         AR_1640["AR-1640 - Done"]:::status_done
         AR_1641["AR-1641 - Done"]:::status_done
         AR_1642["AR-1642 - Done"]:::status_done
-        AR_1643["AR-1643 - Planned"]:::status_planned
+        AR_1643["AR-1643 - Open"]:::status_open
         AR_1644["AR-1644 - Done"]:::status_done
         AR_1645["AR-1645 - Done"]:::status_done
         AR_1646["AR-1646 - Done"]:::status_done
@@ -738,12 +738,13 @@ flowchart LR
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | Push signed commit 988b675, open PR, obtain independent review and exact-head hosted checks, then merge and verify exact-main checks. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
+| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
 
 ### Blocked (2)
 
@@ -752,7 +753,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (33)
+### Planned (32)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -762,7 +763,6 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1623](tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
-| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
