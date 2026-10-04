@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. | ar1613-dev-channel-20261004 |
+| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Fresh independent review of repaired receipt; release only if reviewer accepts the pinned approved pair 0d241cabc674a96191e67477758994c36427ebe2 despite read-only remote ASB advancement to ad43609b, otherwise await an approved current-pair qualification. | ar1613-dev-channel-20261004 |
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. | ar1651-comparison-20261004 |
 
 ## Open
