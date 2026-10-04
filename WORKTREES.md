@@ -23,7 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `repair-pr226` | `repair/pr226` | `686ec8c579e9` | 0 | behind 141, ahead 5 |
 | `repair-pr227` | `repair/pr227` | `7249f8084d78` | 0 | behind 141, ahead 2 |
 | `coverage-repair` | `repair/ar1611-coverage-followup` | `ac3c2656d819` | 0 | behind 185, ahead 0 |
-| `tui-1622` | `feature/ar-1622-quickstart` | `0722db137176` | 0 | behind 0, ahead 0 |
+| `tui-1622` | `feature/ar-1622-quickstart` | `0722db137176` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/qualification/current-main-quickstart.md`, `tools/run-current-main-quickstart.py`, `tools/test-current-main-quickstart.py` |
 | `tui-1625` | `feature/ar-1625-tui-coverage` | `308eabc6347f` | 0 | behind 160, ahead 0 |
 | `_ar1615-tui` | `DETACHED` | `867d302a8a9f` | 0 | behind 166, ahead 0 |
 | `_ar1615-tui-a5` | `DETACHED` | `a5eda0bc4ce3` | 0 | behind 159, ahead 0 |
@@ -127,6 +128,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1617-1618` | `feature/ar-1617-1618-tui` | `478a0a0e410f` | 0 | behind 170, ahead 0 |
 | `asb-tui-ar1621` | `feature/ar-1621-dev-auth-nonblocking` | `24213fede6ae` | 0 | behind 167, ahead 0 |
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 148, ahead 0 |
+| `asb-tui-ar1647` | `feature/ar-1647-comparison-orchestration` | `0722db137176` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1649-comparison` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 65, ahead 0 |
 | `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `0cddb9cca4eb` | 0 | behind 10, ahead 0 |
