@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green AWQ check for PR #259 at 0cddb9cca4eb24c78e31d22fea607059b0557aa3; then merge and run post-merge verification. | ar1651-comparison-20261004 |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. | ar1700-live-provider |
 
 ## Open
 
@@ -15,7 +16,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. | - |
 
 ## Blocked
 

@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
@@ -199,7 +199,7 @@ flowchart LR
     end
     subgraph series_17["17 - Additional work"]
         direction TB
-        AR_1700["AR-1700 - Open"]:::status_open
+        AR_1700["AR-1700 - In progress"]:::status_in_progress
         AR_1701["AR-1701 - Planned"]:::status_planned
         AR_1702["AR-1702 - Planned"]:::status_planned
     end
@@ -721,19 +721,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | ar1651-comparison-20261004 | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green AWQ check for PR #259 at 0cddb9cca4eb24c78e31d22fea607059b0557aa3; then merge and run post-merge verification. |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | ar1700-live-provider | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Unclaimed | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. |
 
 ### Blocked (2)
 
