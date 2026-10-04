@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #260 | `repair/ar-1704-coverage@fa7170619ff0` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test: repair trusted coverage after live provider setup |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37240185479 | `fa7170619ff0` | pull_request | AWQ shadow observation | in_progress:- |
+| 37240185206 | `fa7170619ff0` | pull_request | Repository quality | in_progress:- |
 | 37239022146 | `dd3987ae4a99` | push | Repository quality | completed:success |
 | 37239022140 | `dd3987ae4a99` | push | Trusted main verification | completed:failure |
 | 37238543874 | `c04e74ef0643` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37237861551 | `080c388a5b5c` | pull_request | Repository quality | completed:cancelled |
 | 37237385120 | `e50c101e6e63` | push | Trusted main verification | completed:success |
 | 37237385020 | `e50c101e6e63` | push | Repository quality | completed:success |
-| 37237114431 | `efe54aeaa01a` | pull_request | AWQ shadow observation | completed:failure |
-| 37237114297 | `efe54aeaa01a` | pull_request | Repository quality | completed:failure |
