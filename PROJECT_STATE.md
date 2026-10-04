@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #263 | `feature/ar-1647-comparison-orchestration@1f60345fe302` | `main` | BLOCKED | QUEUED:, QUEUED: | feat: orchestrate selected-agent comparisons |
+| #263 | `feature/ar-1647-comparison-orchestration@1f60345fe302` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: orchestrate selected-agent comparisons |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | in_progress:- |
-| 37243555001 | `1f60345fe302` | pull_request | Repository quality | queued:- |
+| 37243555001 | `1f60345fe302` | pull_request | Repository quality | in_progress:- |
 | 37243269515 | `53dd7953791b` | push | Trusted main verification | completed:success |
 | 37243269473 | `53dd7953791b` | push | Repository quality | in_progress:- |
 | 37242891298 | `04ecb5f25af2` | pull_request | AWQ shadow observation | completed:success |
