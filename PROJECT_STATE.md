@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #263 | `feature/ar-1647-comparison-orchestration@1f60345fe302` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | feat: orchestrate selected-agent comparisons |
+| #263 | `feature/ar-1647-comparison-orchestration@1f60345fe302` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: orchestrate selected-agent comparisons |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | in_progress:- |
+| 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | completed:success |
 | 37243555001 | `1f60345fe302` | pull_request | Repository quality | completed:success |
 | 37243269515 | `53dd7953791b` | push | Trusted main verification | completed:success |
 | 37243269473 | `53dd7953791b` | push | Repository quality | completed:success |
