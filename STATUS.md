@@ -736,7 +736,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Qualify the TUI wizard and routes for all opencode/opendesk provider/model tuples, defaults, overrides, restart, and offline parity. | Build the deterministic TUI/control matrix runner after provider refresh and comparison seams are available. |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | Push signed commit 988b675, open PR, obtain independent review and exact-head hosted checks, then merge and verify exact-main checks. |
 
 ### Open (2)
 
