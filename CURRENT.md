@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. | ar1622-quickstart-20261005 |
+| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. | ar1643-quickstart-runner |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | Push signed commit 988b675, open PR, obtain independent review and exact-head hosted checks, then merge and verify exact-main checks. | ar1657-compat-matrix-20261005 |
 
 ## Open
@@ -16,7 +17,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
-| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. | - |
 
 ## Blocked
 
