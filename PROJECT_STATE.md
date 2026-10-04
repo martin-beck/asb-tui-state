@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #260 | `repair/ar-1704-coverage@fa7170619ff0` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test: repair trusted coverage after live provider setup |
-| #261 | `feature/ar-1701-live-control@1a287a14c42a` | `main` | BLOCKED | QUEUED:, QUEUED: | feat: keep live benchmark control actionable |
+| #261 | `feature/ar-1701-live-control@1a287a14c42a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: keep live benchmark control actionable |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37240226605 | `1a287a14c42a` | pull_request | AWQ shadow observation | queued:- |
+| 37240226605 | `1a287a14c42a` | pull_request | AWQ shadow observation | in_progress:- |
 | 37240226300 | `1a287a14c42a` | pull_request | Repository quality | in_progress:- |
 | 37240185479 | `fa7170619ff0` | pull_request | AWQ shadow observation | in_progress:- |
 | 37240185206 | `fa7170619ff0` | pull_request | Repository quality | in_progress:- |
