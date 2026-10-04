@@ -159,8 +159,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-integration` | `DETACHED` | `e39b15e5c4c3` | 3 | behind 244, ahead 61 |
 | changed files | - | - | - | `src/help.rs`, `src/lib.rs`, `tests/help.rs` |
 | `asb-tui-live-control` | `ar1011-live-control` | `26058c07ff33` | 0 | behind 244, ahead 57 |
-| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `1cf4b43d7c6e` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/configuration_materialization.rs`, `src/launch_statistics.rs`, `src/ui.rs`, `tests/end_to_end_qualification.rs`, `docs/LIVE_PROVIDER.md` |
+| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `1cf4b43d7c6e` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/configuration_materialization.rs`, `src/fanout_dispatch.rs`, `src/launch_statistics.rs`, `src/ui.rs`, `tests/end_to_end_qualification.rs`, `docs/LIVE_PROVIDER.md` |
 | `asb-tui-main-verify` | `fix/release-document-schema` | `2beb944be612` | 0 | behind 244, ahead 86 |
 | `asb-tui-pr188-review.b1iNKH` | `DETACHED` | `712a29155e89` | 0 | behind 244, ahead 10 |
 | `asb-tui-pr193-review` | `DETACHED` | `9d1351ce326f` | 0 | behind 243, ahead 1 |
