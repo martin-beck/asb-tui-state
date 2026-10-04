@@ -10,22 +10,23 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #264 | `feature/ar-1702-live-capture@bc1bc57c3200` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | fix: complete live capture and offline replay flow |
+| #264 | `feature/ar-1702-live-capture@bc1bc57c3200` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | fix: complete live capture and offline replay flow |
 | #265 | `feature/ar-1657-compat-matrix@988b67500208` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: add agent provider compatibility matrix runner |
+| #266 | `feature/ar-1643-quickstart-runner@74ca6b5e0fc4` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: add executable fresh-user quickstart |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37244808005 | `74ca6b5e0fc4` | pull_request | AWQ shadow observation | in_progress:- |
+| 37244807891 | `74ca6b5e0fc4` | pull_request | Repository quality | in_progress:- |
 | 37244519930 | `988b67500208` | pull_request | AWQ shadow observation | in_progress:- |
 | 37244519772 | `988b67500208` | pull_request | Repository quality | in_progress:- |
 | 37244470879 | `bc1bc57c3200` | pull_request | AWQ shadow observation | completed:failure |
-| 37244470715 | `bc1bc57c3200` | pull_request | Repository quality | in_progress:- |
+| 37244470715 | `bc1bc57c3200` | pull_request | Repository quality | completed:failure |
 | 37243972467 | `9db7c6ba0446` | push | Repository quality | completed:success |
 | 37243972420 | `9db7c6ba0446` | push | Trusted main verification | completed:success |
 | 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | completed:success |
 | 37243555001 | `1f60345fe302` | pull_request | Repository quality | completed:success |
 | 37243269515 | `53dd7953791b` | push | Trusted main verification | completed:success |
 | 37243269473 | `53dd7953791b` | push | Repository quality | completed:success |
-| 37242891298 | `04ecb5f25af2` | pull_request | AWQ shadow observation | completed:success |
-| 37242891167 | `04ecb5f25af2` | pull_request | Repository quality | completed:success |
