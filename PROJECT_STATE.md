@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #260 | `repair/ar-1704-coverage@fa7170619ff0` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test: repair trusted coverage after live provider setup |
+| #260 | `repair/ar-1704-coverage@fa7170619ff0` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test: repair trusted coverage after live provider setup |
 
 ## Recent workflows
 
