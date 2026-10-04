@@ -1,0 +1,28 @@
+ASB TUI development-live OpenRouter implementation reconciliation
+Date: 2026-10-05
+
+TUI repository: martin-beck/asb-tui
+Exact TUI main: 53dd7953791b64bc008118a8f068d5c542a3ecb1
+
+AR-1700 evidence:
+- PR #258 merged at dd3987ae4a998b20ef125d730dd06509799de325.
+- The wizard selects OpenCode/OpenDesk, OpenRouter, a supported model, and an
+  API-key environment reference without persisting or displaying the secret.
+- Missing authentication, signatures, and development key management remain
+  warning-only during setup.
+
+AR-1701 evidence:
+- PR #261 merged at 0722db137176eb7ef205789adeb497d76e2fb84b; exact-main
+  Repository Quality 37242182799 and Trusted main 37242182759 passed.
+- The TUI preserves explicit live/local mode, provider/model identity, bounded
+  progress, cancellation, and typed failures through the installed run-control journey.
+- Actual provider reachability is supplied by the paired ASB development-live
+  implementation; no TUI-only evidence claims a provider request.
+
+Boundary:
+- The paired development-live path requires an operator OPENROUTER_API_KEY at
+  explicit live-run time; setup warnings remain non-blocking.
+- TUI AR-1702 (live capture, strict offline replay, and comparison screens)
+  remains planned and is not claimed by this receipt.
+- Production attestation, secret-management hardening, and public release
+  promotion remain separate gates.
