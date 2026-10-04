@@ -736,7 +736,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 at exact head 13f16067 is awaiting independent review and hosted checks 37242656745/37242656516; resolve any CI findings, then merge/release. Full paired qualification remains pending a current ASB binary with the runner workload/capture contract. |
-| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | ar1647-comparison-orchestration | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. |
+| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | ar1647-comparison-orchestration | Coordinate selected-agent execution and comparison from online or offline replay runs. | PR #263 at exact head 04ecb5f is awaiting independent review and hosted checks; resolve findings, merge through protected path, then watch exact-main checks. |
 
 ### Open (2)
 
