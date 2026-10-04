@@ -125,6 +125,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1617-1618` | `feature/ar-1617-1618-tui` | `478a0a0e410f` | 0 | behind 158, ahead 0 |
 | `asb-tui-ar1621` | `feature/ar-1621-dev-auth-nonblocking` | `24213fede6ae` | 0 | behind 155, ahead 0 |
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 136, ahead 0 |
+| `asb-tui-ar1649-comparison` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 53, ahead 0 |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 129, ahead 1 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 129, ahead 3 |
