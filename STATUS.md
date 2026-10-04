@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 36 |
 | **Future** | Deferred roadmap work | 0 |
@@ -130,7 +130,7 @@ flowchart LR
         AR_1619["AR-1619 - Done"]:::status_done
         AR_1620["AR-1620 - Done"]:::status_done
         AR_1621["AR-1621 - Done"]:::status_done
-        AR_1622["AR-1622 - Open"]:::status_open
+        AR_1622["AR-1622 - In progress"]:::status_in_progress
         AR_1623["AR-1623 - Planned"]:::status_planned
         AR_1624["AR-1624 - Planned"]:::status_planned
         AR_1625["AR-1625 - Done"]:::status_done
@@ -731,19 +731,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | ar1701-live-control-20261005 | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await exact-main post-merge Repository Quality 37242182799 and Trusted main verification 37242182759 at merge SHA 0722db13; release AR-1701 only after both terminal green, documenting ASB live-admission boundary. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
 
 ### Blocked (2)
 
