@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Obtain independent review for PR #261 at aa6585d6; then merge through protected path, verify exact post-merge checks, and release AR-1701. | ar1701-live-control-20261005 |
+| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await fresh exact-head Repository Quality run 37241810301 and AWQ run 37241810398 at rebased 97bc395e; if green confirm independent review remains valid, merge through protected path, verify exact post-merge checks, and release AR-1701. | ar1701-live-control-20261005 |
 
 ## Open
 
