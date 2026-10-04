@@ -128,8 +128,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1617-1618` | `feature/ar-1617-1618-tui` | `478a0a0e410f` | 0 | behind 175, ahead 0 |
 | `asb-tui-ar1621` | `feature/ar-1621-dev-auth-nonblocking` | `24213fede6ae` | 0 | behind 172, ahead 0 |
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 153, ahead 0 |
-| `asb-tui-ar1643` | `feature/ar-1643-quickstart-runner` | `9db7c6ba0446` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/qualification/fresh-user-quickstart.md`, `tools/run-fresh-user-quickstart.py`, `tools/test-fresh-user-quickstart.py` |
+| `asb-tui-ar1643` | `feature/ar-1643-quickstart-runner` | `74ca6b5e0fc4` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar1647` | `feature/ar-1647-comparison-orchestration` | `1f60345fe302` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar1649-comparison` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 17, ahead 0 |
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 70, ahead 0 |
