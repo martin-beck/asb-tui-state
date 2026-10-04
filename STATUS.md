@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
@@ -200,7 +200,7 @@ flowchart LR
     subgraph series_17["17 - Additional work"]
         direction TB
         AR_1700["AR-1700 - Done"]:::status_done
-        AR_1701["AR-1701 - Open"]:::status_open
+        AR_1701["AR-1701 - In progress"]:::status_in_progress
         AR_1702["AR-1702 - Planned"]:::status_planned
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - In progress"]:::status_in_progress
@@ -731,19 +731,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | ar1701-live-control-20261005 | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | ar1704-coverage-repair | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Promote after AR-1700 merge evidence is reconciled; add focused behavior coverage, obtain review, merge the signed repair, and verify exact-main checks. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
 
 ### Blocked (2)
 
