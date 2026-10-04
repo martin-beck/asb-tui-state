@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. | ar1622-quickstart-20261005 |
+| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | Push signed commit 13f16067, open PR, obtain independent review and exact-head hosted checks; full paired runner remains to be rerun against a current ASB binary exposing the required workload/capture commands. | ar1622-quickstart-20261005 |
 | P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. | ar1647-comparison-orchestration |
 
 ## Open
