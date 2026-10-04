@@ -140,6 +140,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 82, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 75, ahead 0 |
 | `asb-tui-ar1697` | `ar1697-channel-repair` | `53dd7953791b` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1697-pair` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 14, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 11, ahead 1 |
 | `asb-tui-ar1704` | `repair/ar-1704-coverage` | `3478ea722dea` | 0 | behind 8, ahead 0 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 258, ahead 155 |
