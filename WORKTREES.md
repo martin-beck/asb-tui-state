@@ -121,6 +121,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1604-output` | `repair/ar1616-output-contract-coverage` | `43bf705deb50` | 0 | behind 166, ahead 0 |
 | `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `d39423570468` | 0 | behind 197, ahead 0 |
 | `asb-tui-ar1610-coverage` | `repair/ar-1610-coverage` | `9861ee37692c` | 0 | behind 201, ahead 0 |
+| `asb-tui-ar1613` | `feat/ar-1613-real-dev-consumption` | `1cf4b43d7c6e` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1617-1618` | `feature/ar-1617-1618-tui` | `478a0a0e410f` | 0 | behind 158, ahead 0 |
 | `asb-tui-ar1621` | `feature/ar-1621-dev-auth-nonblocking` | `24213fede6ae` | 0 | behind 155, ahead 0 |
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 136, ahead 0 |
@@ -188,11 +189,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 244, ahead 127 |
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 143, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 161, ahead 0 |
-| `ar1688-post-tui` | `repair/ar1688-standalone-receipt` | `6fdb42480144` | 2 | behind 44, ahead 0 |
-| changed files | - | - | - | `tools/run-quickstart-acceptance.py`, `tools/test-quickstart-acceptance.py` |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 48, ahead 0 |
-| `asb-tui-debug.jtmDsk` | `DETACHED` | `9746b0a8059c` | 0 | behind 2, ahead 0 |
-| `review-tui213.Keje` | `DETACHED` | `a02999db25ce` | 0 | behind 160, ahead 9 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 165, ahead 1 |
 | `tmp.Zp6VTM707f` | `DETACHED` | `b864290a4d81` | 9 | behind 165, ahead 7 |
 | changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `README.md`, `docs/RELEASE_CHANNELS.md`, `release/channel-status.json`, `tools/build-dev-bundle.py`, `tools/test-dev-bundle.py`, `tools/validate-release-channel.py`, `tools/verify-dev-bundle.py` |
@@ -203,10 +200,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `tui-pr208-review` | `DETACHED` | `7711facd9938` | 0 | behind 181, ahead 0 |
 | `tui-pr213-review.i28fx0` | `DETACHED` | `82d66213c1a9` | 0 | behind 165, ahead 2 |
 | `tui-pr233` | `DETACHED` | `34b984d4bd8d` | 0 | behind 68, ahead 0 |
-| `tui-rebase226-manual.HFZlQp` | `DETACHED` | `ed9ee05b0e35` | 0 | behind 116, ahead 0 |
 | `tui-rebase226.VhKUAR` | `DETACHED` | `fd1b7887c5a9` | 0 | behind 119, ahead 3 |
 | `tui-rebase227-final.LCJw` | `DETACHED` | `ffea63e1b3f0` | 0 | behind 108, ahead 0 |
-| `tui-rebase227-manual.biJVAs` | `DETACHED` | `1f0146a86dc4` | 0 | behind 119, ahead 1 |
 | `tui224-repair.ADSaub` | `DETACHED` | `62498fd4dcf9` | 0 | behind 129, ahead 5 |
 | `tui227-docfix.O8ti` | `DETACHED` | `b226c96deb64` | 0 | behind 115, ahead 3 |
 | `tui227-invfix.bFTs` | `DETACHED` | `08c9d4515d47` | 0 | behind 107, ahead 0 |
