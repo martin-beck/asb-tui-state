@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 35 |
 | **Future** | Deferred roadmap work | 0 |
@@ -157,7 +157,7 @@ flowchart LR
         AR_1646["AR-1646 - Done"]:::status_done
         AR_1647["AR-1647 - Planned"]:::status_planned
         AR_1648["AR-1648 - Done"]:::status_done
-        AR_1649["AR-1649 - Open"]:::status_open
+        AR_1649["AR-1649 - In progress"]:::status_in_progress
         AR_1650["AR-1650 - Done"]:::status_done
         AR_1651["AR-1651 - Planned"]:::status_planned
         AR_1652["AR-1652 - Done"]:::status_done
@@ -700,19 +700,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | ar1613-dev-channel-20261004 | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. |
+| P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | ar1649-comparison-20261004 | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. |
 
 ### Blocked (2)
 

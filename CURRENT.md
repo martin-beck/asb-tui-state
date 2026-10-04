@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. | ar1613-dev-channel-20261004 |
+| P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. | ar1649-comparison-20261004 |
 
 ## Open
 
@@ -15,7 +16,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. | - |
-| P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. | - |
 
 ## Blocked
 
