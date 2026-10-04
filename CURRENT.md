@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await independent exact-head review and hosted Repository Quality/AWQ checks for PR #261 at 58ad740; then merge, verify exact post-merge checks, and release AR-1701. | ar1701-live-control-20261005 |
-| P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Restore the existing Trusted main 90% coverage gate after the merged live-provider changes without weakening quality policy. | Obtain independent review and green hosted PR checks for PR #260 at fa71706; merge through protected main, then watch exact-main Repository Quality and Trusted checks. | ar1704-coverage-repair |
+| P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Restore the existing Trusted main 90% coverage gate after the merged live-provider changes without weakening quality policy. | Obtain independent review and green hosted PR checks for PR #260 at repaired head 3478ea7; merge through protected main, then watch exact-main Repository Quality and Trusted checks. | ar1704-coverage-repair |
 
 ## Open
 
