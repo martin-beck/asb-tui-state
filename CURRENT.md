@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | PR #258 merged as dd3987a. Exact-main Trusted 37239022140 failed at 89.97% coverage; repair is delegated to AR-1704. Exact-main Repository Quality 37239022146 passed. Release this setup AR with the recorded post-merge evidence; live benchmark execution remains AR-1701. | ar1700-live-provider |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -176,6 +170,7 @@ Never edit this file directly.
 | P0 | [AR-1694](tasks/AR-1694.md): Deterministic TUI development artifact identity | Make repeated TUI dev-channel builds path-independent so the ASB handoff digest matches the actual installed executable. | No further action; deterministic materialization and hosted evidence are recorded in quality/AR-1694-deterministic-artifact-receipt.txt. Final paired journey remains AR-1691/AR-1693. | - |
 | P0 | [AR-1695](tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | No further action; complete RunRequest serialization and live ASB v1.14 Unix transport acceptance are recorded in the final paired receipt. | - |
 | P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | No further action; PR252 merged at TUI main 29f3f61 and its Trusted-main, repository-quality, and AWQ hosted checks passed without threshold weakening. | - |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | PR #258 merged as dd3987a. Exact-main Trusted 37239022140 failed at 89.97% coverage; repair is delegated to AR-1704. Exact-main Repository Quality 37239022146 passed. Release this setup AR with the recorded post-merge evidence; live benchmark execution remains AR-1701. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |
