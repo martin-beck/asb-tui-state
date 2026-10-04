@@ -136,6 +136,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1666` | `feature/ar-1666-coverage` | `d857645fcffa` | 0 | behind 74, ahead 0 |
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 71, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 64, ahead 0 |
+| `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `02614ff6e383` | 1 | behind 0, ahead 2 |
+| changed files | - | - | - | `docs/ui-module-inventory.json` |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 247, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 247, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 247, ahead 156 |
