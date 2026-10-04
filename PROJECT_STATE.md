@@ -2,20 +2,21 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `53dd7953791b64bc008118a8f068d5c542a3ecb1`
-- Local origin/main: `53dd7953791b64bc008118a8f068d5c542a3ecb1`
+- Product remote main: `9db7c6ba0446fe92fc7d40302c47007bf67ce525`
+- Local origin/main: `9db7c6ba0446fe92fc7d40302c47007bf67ce525`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #263 | `feature/ar-1647-comparison-orchestration@1f60345fe302` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: orchestrate selected-agent comparisons |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37243972467 | `9db7c6ba0446` | push | Repository quality | completed:success |
+| 37243972420 | `9db7c6ba0446` | push | Trusted main verification | completed:success |
 | 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | completed:success |
 | 37243555001 | `1f60345fe302` | pull_request | Repository quality | completed:success |
 | 37243269515 | `53dd7953791b` | push | Trusted main verification | completed:success |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37242656516 | `13f16067bfaf` | pull_request | Repository quality | completed:success |
 | 37242182799 | `0722db137176` | push | Repository quality | completed:success |
 | 37242182759 | `0722db137176` | push | Trusted main verification | completed:success |
-| 37241810398 | `97bc395eedb9` | pull_request | AWQ shadow observation | completed:success |
-| 37241810301 | `97bc395eedb9` | pull_request | Repository quality | completed:success |
