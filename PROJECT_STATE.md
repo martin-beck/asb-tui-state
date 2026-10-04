@@ -11,11 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #258 | `feat/ar-1700-live-openrouter@d4abd26f6d7e` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: support explicit development live provider runs |
+| #259 | `feature/ar1651-comparison-availability@864e785d2105` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(reports): expose truthful comparison availability |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37236446376 | `864e785d2105` | pull_request | AWQ shadow observation | in_progress:- |
+| 37236446180 | `864e785d2105` | pull_request | Repository quality | in_progress:- |
 | 37236256722 | `d4abd26f6d7e` | pull_request | AWQ shadow observation | in_progress:- |
 | 37236256453 | `d4abd26f6d7e` | pull_request | Repository quality | in_progress:- |
 | 37100001016 | `1cf4b43d7c6e` | push | Trusted main verification | completed:success |
@@ -26,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37099597177 | `a62bfb1bb1a5` | pull_request | Repository quality | completed:cancelled |
 | 37099025115 | `9746b0a8059c` | push | Trusted main verification | completed:success |
 | 37099025099 | `9746b0a8059c` | push | Repository quality | completed:success |
-| 37098668424 | `c7799e7ce106` | pull_request | AWQ shadow observation | completed:success |
-| 37098668306 | `c7799e7ce106` | pull_request | Repository quality | completed:success |
