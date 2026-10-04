@@ -25,6 +25,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `coverage-repair` | `repair/ar1611-coverage-followup` | `ac3c2656d819` | 0 | behind 190, ahead 0 |
 | `tui-1622` | `feature/ar-1622-quickstart` | `13f16067bfaf` | 0 | behind 4, ahead 0 |
 | `tui-1625` | `feature/ar-1625-tui-coverage` | `308eabc6347f` | 0 | behind 165, ahead 0 |
+| `tui-1657` | `feature/ar-1657-compat-matrix` | `9db7c6ba0446` | 0 | behind 0, ahead 0 |
 | `_ar1615-tui` | `DETACHED` | `867d302a8a9f` | 0 | behind 171, ahead 0 |
 | `_ar1615-tui-a5` | `DETACHED` | `a5eda0bc4ce3` | 0 | behind 164, ahead 0 |
 | `_pr218-verify` | `DETACHED` | `7b2333ecfdbb` | 0 | behind 161, ahead 0 |
