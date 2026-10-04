@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #258 | `feat/ar-1700-live-openrouter@c04e74ef0643` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | feat: support explicit development live provider runs |
+| #258 | `feat/ar-1700-live-openrouter@c04e74ef0643` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: support explicit development live provider runs |
 
 ## Recent workflows
 
