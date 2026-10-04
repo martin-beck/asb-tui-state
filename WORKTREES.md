@@ -127,8 +127,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 136, ahead 0 |
 | `asb-tui-ar1649-comparison` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 53, ahead 0 |
-| `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `864e785d2105` | 3 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json` |
+| `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `0cddb9cca4eb` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 129, ahead 1 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 129, ahead 3 |
 | `asb-tui-ar1656` | `ar-1656-provider-catalog-refresh` | `315afa2592d6` | 0 | behind 112, ahead 0 |
