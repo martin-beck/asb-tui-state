@@ -25,8 +25,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `coverage-repair` | `repair/ar1611-coverage-followup` | `ac3c2656d819` | 0 | behind 190, ahead 0 |
 | `tui-1622` | `feature/ar-1622-quickstart` | `13f16067bfaf` | 0 | behind 4, ahead 0 |
 | `tui-1625` | `feature/ar-1625-tui-coverage` | `308eabc6347f` | 0 | behind 165, ahead 0 |
-| `tui-1657` | `feature/ar-1657-compat-matrix` | `9db7c6ba0446` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `docs/qualification/agent-provider-model-matrix.md`, `tools/run-agent-provider-matrix.py`, `tools/test-agent-provider-matrix.py` |
+| `tui-1657` | `feature/ar-1657-compat-matrix` | `988b67500208` | 0 | behind 0, ahead 1 |
 | `_ar1615-tui` | `DETACHED` | `867d302a8a9f` | 0 | behind 171, ahead 0 |
 | `_ar1615-tui-a5` | `DETACHED` | `a5eda0bc4ce3` | 0 | behind 164, ahead 0 |
 | `_pr218-verify` | `DETACHED` | `7b2333ecfdbb` | 0 | behind 161, ahead 0 |
@@ -202,8 +201,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 160, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 178, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 65, ahead 0 |
-| `asb-tui-ar1702` | `feature/ar-1702-live-capture` | `9db7c6ba0446` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/runtime.rs`, `src/ui.rs` |
+| `asb-tui-ar1702` | `feature/ar-1702-live-capture` | `bc1bc57c3200` | 0 | behind 0, ahead 1 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 182, ahead 1 |
 | `tmp.Zp6VTM707f` | `DETACHED` | `b864290a4d81` | 9 | behind 182, ahead 7 |
 | changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `README.md`, `docs/RELEASE_CHANNELS.md`, `release/channel-status.json`, `tools/build-dev-bundle.py`, `tools/test-dev-bundle.py`, `tools/validate-release-channel.py`, `tools/verify-dev-bundle.py` |
