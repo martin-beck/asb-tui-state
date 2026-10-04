@@ -23,8 +23,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `repair-pr226` | `repair/pr226` | `686ec8c579e9` | 0 | behind 141, ahead 5 |
 | `repair-pr227` | `repair/pr227` | `7249f8084d78` | 0 | behind 141, ahead 2 |
 | `coverage-repair` | `repair/ar1611-coverage-followup` | `ac3c2656d819` | 0 | behind 185, ahead 0 |
-| `tui-1622` | `feature/ar-1622-quickstart` | `0722db137176` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `docs/qualification/current-main-quickstart.md`, `tools/run-current-main-quickstart.py`, `tools/test-current-main-quickstart.py` |
+| `tui-1622` | `feature/ar-1622-quickstart` | `13f16067bfaf` | 0 | behind 0, ahead 1 |
 | `tui-1625` | `feature/ar-1625-tui-coverage` | `308eabc6347f` | 0 | behind 160, ahead 0 |
 | `_ar1615-tui` | `DETACHED` | `867d302a8a9f` | 0 | behind 166, ahead 0 |
 | `_ar1615-tui-a5` | `DETACHED` | `a5eda0bc4ce3` | 0 | behind 159, ahead 0 |
