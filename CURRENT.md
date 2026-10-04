@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Blocked on paired ASB development-live control authority and exact cross-repository live-provider integration evidence; do not merge until ASB can admit live mode through the TUI fan-out route without local-mock fallback. After the ASB bridge lands, rerun independent review, merge PR #258, and verify exact-main. | ar1700-live-provider |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | PR #258 merged as dd3987a. Exact-main Trusted 37239022140 failed at 89.97% coverage; repair is delegated to AR-1704. Exact-main Repository Quality 37239022146 passed. Release this setup AR with the recorded post-merge evidence; live benchmark execution remains AR-1701. | ar1700-live-provider |
 
 ## Open
 
