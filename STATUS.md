@@ -725,7 +725,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | ar1700-live-provider | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. |
+| P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | ar1700-live-provider | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Await independent review and hosted checks for PR #258 at exact head 080c388; repair any failure, then merge and run post-merge exact-main verification. |
 
 ### Open (2)
 
