@@ -704,7 +704,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | ar1613-dev-channel-20261004 | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Fresh independent review of repaired receipt; release only if reviewer accepts the pinned approved pair 0d241cabc674a96191e67477758994c36427ebe2 despite read-only remote ASB advancement to ad43609b, otherwise await an approved current-pair qualification. |
+| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | ar1613-dev-channel-20261004 | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | ar1651-comparison-20261004 | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Finish review-ready comparison assessment implementation, then run full exact-head checks and open a PR. |
 
 ### Open (2)
