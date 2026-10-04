@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #262 | `feature/ar-1622-quickstart@13f16067bfaf` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: add current-main quickstart runner |
+| #262 | `feature/ar-1622-quickstart@13f16067bfaf` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | feat: add current-main quickstart runner |
 | #263 | `feature/ar-1647-comparison-orchestration@04ecb5f25af2` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: orchestrate selected-agent comparisons |
 
 ## Recent workflows
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37242891298 | `04ecb5f25af2` | pull_request | AWQ shadow observation | in_progress:- |
 | 37242891167 | `04ecb5f25af2` | pull_request | Repository quality | in_progress:- |
 | 37242656745 | `13f16067bfaf` | pull_request | AWQ shadow observation | in_progress:- |
-| 37242656516 | `13f16067bfaf` | pull_request | Repository quality | in_progress:- |
+| 37242656516 | `13f16067bfaf` | pull_request | Repository quality | completed:success |
 | 37242182799 | `0722db137176` | push | Repository quality | completed:success |
 | 37242182759 | `0722db137176` | push | Trusted main verification | completed:success |
 | 37241810398 | `97bc395eedb9` | pull_request | AWQ shadow observation | completed:success |
