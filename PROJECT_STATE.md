@@ -11,12 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #260 | `repair/ar-1704-coverage@fa7170619ff0` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test: repair trusted coverage after live provider setup |
-| #261 | `feature/ar-1701-live-control@1a287a14c42a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: keep live benchmark control actionable |
+| #261 | `feature/ar-1701-live-control@58ad740d5b3e` | `main` | BLOCKED | - | feat: keep live benchmark control actionable |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37240330189 | `58ad740d5b3e` | pull_request | AWQ shadow observation | pending:- |
+| 37240329972 | `58ad740d5b3e` | pull_request | Repository quality | pending:- |
 | 37240226605 | `1a287a14c42a` | pull_request | AWQ shadow observation | in_progress:- |
 | 37240226300 | `1a287a14c42a` | pull_request | Repository quality | in_progress:- |
 | 37240185479 | `fa7170619ff0` | pull_request | AWQ shadow observation | in_progress:- |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37238543703 | `c04e74ef0643` | pull_request | Repository quality | completed:success |
 | 37238042502 | `8c192d283ce9` | pull_request | AWQ shadow observation | completed:failure |
 | 37238042330 | `8c192d283ce9` | pull_request | Repository quality | completed:failure |
-| 37237861738 | `080c388a5b5c` | pull_request | AWQ shadow observation | completed:cancelled |
-| 37237861551 | `080c388a5b5c` | pull_request | Repository quality | completed:cancelled |
