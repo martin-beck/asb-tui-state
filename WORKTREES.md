@@ -127,7 +127,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 136, ahead 0 |
 | `asb-tui-ar1649-comparison` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 53, ahead 0 |
-| `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `1cf4b43d7c6e` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `1cf4b43d7c6e` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/reports.rs`, `tests/reports.rs` |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 129, ahead 1 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 129, ahead 3 |
 | `asb-tui-ar1656` | `ar-1656-provider-catalog-refresh` | `315afa2592d6` | 0 | behind 112, ahead 0 |
@@ -160,8 +161,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-integration` | `DETACHED` | `e39b15e5c4c3` | 3 | behind 244, ahead 61 |
 | changed files | - | - | - | `src/help.rs`, `src/lib.rs`, `tests/help.rs` |
 | `asb-tui-live-control` | `ar1011-live-control` | `26058c07ff33` | 0 | behind 244, ahead 57 |
-| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `1cf4b43d7c6e` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/configuration_materialization.rs`, `src/fanout_dispatch.rs`, `src/launch_statistics.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/end_to_end_qualification.rs`, `docs/LIVE_PROVIDER.md` |
+| `asb-tui-live-worker` | `feat/ar-1700-live-openrouter` | `d4abd26f6d7e` | 0 | behind 0, ahead 1 |
 | `asb-tui-main-verify` | `fix/release-document-schema` | `2beb944be612` | 0 | behind 244, ahead 86 |
 | `asb-tui-pr188-review.b1iNKH` | `DETACHED` | `712a29155e89` | 0 | behind 244, ahead 10 |
 | `asb-tui-pr193-review` | `DETACHED` | `9d1351ce326f` | 0 | behind 243, ahead 1 |
