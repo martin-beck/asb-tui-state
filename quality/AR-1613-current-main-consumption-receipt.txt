@@ -1,0 +1,30 @@
+AR-1613 current-main dev-channel consumption receipt
+
+Classification: development/mock
+Credentials: none
+Network policy: install materialization allowed; benchmark and replay denied
+Receipt JSON sha256: 6dbfe4992ea49cb5249052d955ab0302f6fe06d2dfdf98f1e34392777cadc1be
+
+Exact paired identities:
+- TUI commit: 1cf4b43d7c6e8782179bbdd448d8ae14aa91fb34
+- TUI tree: 5c07a0067d34f7766eceee862eca6d8dc1
+- ASB commit: 0d241cabc674a96191e67477758994c36427ebe2
+- ASB tree: cb13a898ae2cc317b712522959db7a715968629f
+- channel: dev; release manifest sha256: 86782220463003e06113595aa8d9ef42a6f2c3c811839303aac3f247f3c45a79
+- handoff manifest sha256: 4f6425c2b67e6949a8c5ec8082a1a10d7245e2b68b840b304a9aa5ca1a310293
+- installed executable sha256: 7f0a028a1b654c4e22af16e6b2f6855db8519c7ddc4e4facb1a08d662ea05a50
+
+Evidence:
+- Fresh `tui install --json`: `development_installed`, verified.
+- Installed/restarted status: `development_installed`, verified, same handoff digest.
+- Installed launch: `development_launch_ready`, verified.
+- Tampered installed manifest: `dev_channel_manifest_invalid`, rejected.
+- Provider/model/agent setup and development journey: passed.
+- Selected capture and strict offline replay: passed; network `denied`.
+- All-workload capture: 7 workloads / 7 tuples passed; incomplete coverage was rejected.
+- Comparison and analysis: end-to-end qualification passed.
+- Suites `provider_lifecycle_1656`, `coverage_setup_recording`, `development_journey`,
+  and `end_to_end_qualification`: passed.
+- Channel matrix: 11 cases, including unavailable-channel and malformed-manifest negatives.
+
+Development-only authentication, signature, and key-management warnings remained non-blocking.
