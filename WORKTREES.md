@@ -38,8 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1644-tui` | `repair/ar-1644-terminal-preflight` | `a24eed3ba5e5` | 0 | behind 134, ahead 0 |
 | `ar1650-tui` | `feat/ar-1650-tui` | `c67c686ab578` | 0 | behind 133, ahead 2 |
 | `ar1689-tui-fix` | `DETACHED` | `e88867129a35` | 0 | behind 49, ahead 0 |
-| `ar1701-tui` | `feature/ar-1701-live-control` | `58ad740d5b3e` | 3 | behind 0, ahead 2 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.json`, `tests/formal_state.rs` |
+| `ar1701-tui` | `feature/ar-1701-live-control` | `58ad740d5b3e` | 4 | behind 0, ahead 2 |
+| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `tests/formal_state.rs` |
 | `tui` | `DETACHED` | `fd6db5002740` | 0 | behind 71, ahead 0 |
 | `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `92a458a0fe88` | 0 | behind 248, ahead 285 |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 248, ahead 177 |
@@ -139,8 +139,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 72, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 65, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 1, ahead 1 |
-| `asb-tui-ar1704` | `repair/ar-1704-coverage` | `fa7170619ff0` | 4 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `tests/formal_state.rs` |
+| `asb-tui-ar1704` | `repair/ar-1704-coverage` | `3478ea722dea` | 0 | behind 0, ahead 2 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 248, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 248, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 248, ahead 156 |
