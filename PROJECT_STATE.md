@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #258 | `feat/ar-1700-live-openrouter@efe54aeaa01a` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: support explicit development live provider runs |
+| #258 | `feat/ar-1700-live-openrouter@080c388a5b5c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: support explicit development live provider runs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37237861738 | `080c388a5b5c` | pull_request | AWQ shadow observation | in_progress:- |
+| 37237861551 | `080c388a5b5c` | pull_request | Repository quality | in_progress:- |
 | 37237385120 | `e50c101e6e63` | push | Trusted main verification | completed:success |
 | 37237385020 | `e50c101e6e63` | push | Repository quality | completed:success |
 | 37237114431 | `efe54aeaa01a` | pull_request | AWQ shadow observation | completed:failure |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37236446180 | `864e785d2105` | pull_request | Repository quality | completed:failure |
 | 37236256722 | `d4abd26f6d7e` | pull_request | AWQ shadow observation | completed:failure |
 | 37236256453 | `d4abd26f6d7e` | pull_request | Repository quality | completed:failure |
-| 37100001016 | `1cf4b43d7c6e` | push | Trusted main verification | completed:success |
-| 37100001012 | `1cf4b43d7c6e` | push | Repository quality | completed:success |
