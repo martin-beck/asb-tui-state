@@ -38,7 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1644-tui` | `repair/ar-1644-terminal-preflight` | `a24eed3ba5e5` | 0 | behind 134, ahead 0 |
 | `ar1650-tui` | `feat/ar-1650-tui` | `c67c686ab578` | 0 | behind 133, ahead 2 |
 | `ar1689-tui-fix` | `DETACHED` | `e88867129a35` | 0 | behind 49, ahead 0 |
-| `ar1701-tui` | `feature/ar-1701-live-control` | `1a287a14c42a` | 0 | behind 0, ahead 1 |
+| `ar1701-tui` | `feature/ar-1701-live-control` | `1a287a14c42a` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `src/launch_statistics.rs`, `src/runtime.rs` |
 | `tui` | `DETACHED` | `fd6db5002740` | 0 | behind 71, ahead 0 |
 | `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `92a458a0fe88` | 0 | behind 248, ahead 285 |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 248, ahead 177 |
