@@ -16,6 +16,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37241356964 | `aa6585d65b5f` | workflow_dispatch | AWQ shadow observation | in_progress:- |
+| 37241354772 | `aa6585d65b5f` | workflow_dispatch | Repository quality | in_progress:- |
 | 37241196081 | `c36d65739a37` | push | Trusted main verification | in_progress:- |
 | 37241196042 | `c36d65739a37` | push | Repository quality | in_progress:- |
 | 37240822754 | `a497a407b74d` | pull_request | AWQ shadow observation | completed:failure |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37240701644 | `3478ea722dea` | pull_request | Repository quality | completed:success |
 | 37240330189 | `58ad740d5b3e` | pull_request | AWQ shadow observation | completed:failure |
 | 37240329972 | `58ad740d5b3e` | pull_request | Repository quality | completed:failure |
-| 37240226605 | `1a287a14c42a` | pull_request | AWQ shadow observation | completed:cancelled |
-| 37240226300 | `1a287a14c42a` | pull_request | Repository quality | completed:cancelled |
