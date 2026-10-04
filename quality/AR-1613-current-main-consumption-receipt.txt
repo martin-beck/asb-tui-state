@@ -3,11 +3,11 @@ AR-1613 current-main dev-channel consumption receipt
 Classification: development/mock
 Credentials: none
 Network policy: install materialization allowed; benchmark and replay denied
-Receipt JSON sha256: 6dbfe4992ea49cb5249052d955ab0302f6fe06d2dfdf98f1e34392777cadc1be
+Receipt JSON sha256: 61c62bcc955191dcdf6052b3dcfd54598f696aea05fa92ecd420aaa6bf3f3770
 
 Exact paired identities:
 - TUI commit: 1cf4b43d7c6e8782179bbdd448d8ae14aa91fb34
-- TUI tree: 5c07a0067d34f7766eceee862eca6d8dc1
+- TUI tree: 5c07a0067d34f7766eceee862cae961eca6d8dc1
 - ASB commit: 0d241cabc674a96191e67477758994c36427ebe2
 - ASB tree: cb13a898ae2cc317b712522959db7a715968629f
 - channel: dev; release manifest sha256: 86782220463003e06113595aa8d9ef42a6f2c3c811839303aac3f247f3c45a79
