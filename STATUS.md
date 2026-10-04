@@ -5,11 +5,11 @@
 
 ## Portfolio overview
 
-**155 ARs tracked** across 5 active status categories.
+**156 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 38 |
@@ -159,7 +159,7 @@ flowchart LR
         AR_1648["AR-1648 - Done"]:::status_done
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
-        AR_1651["AR-1651 - Planned"]:::status_planned
+        AR_1651["AR-1651 - In progress"]:::status_in_progress
         AR_1652["AR-1652 - Done"]:::status_done
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
@@ -195,6 +195,7 @@ flowchart LR
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Done"]:::status_done
+        AR_1697["AR-1697 - Planned"]:::status_planned
     end
     subgraph series_17["17 - Additional work"]
         direction TB
@@ -530,16 +531,20 @@ flowchart LR
     AR_1688 --> AR_1691
     AR_1690 --> AR_1691
     AR_1690 --> AR_1692
+    AR_1690 --> AR_1697
     AR_1691 --> AR_1693
     AR_1692 --> AR_1693
     AR_1692 --> AR_1694
+    AR_1692 --> AR_1697
     AR_1694 --> AR_1691
     AR_1694 --> AR_1693
+    AR_1694 --> AR_1697
     AR_1695 --> AR_1691
     AR_1695 --> AR_1693
     AR_1695 --> AR_1696
     AR_1696 --> AR_1691
     AR_1696 --> AR_1693
+    AR_1696 --> AR_1697
     AR_1696 --> AR_1701
     AR_1700 --> AR_1701
     AR_1701 --> AR_1702
@@ -702,24 +707,26 @@ flowchart LR
 | [AR-1687](tasks/AR-1687.md) | [AR-1676](tasks/AR-1676.md), [AR-1686](tasks/AR-1686.md) | [AR-1689](tasks/AR-1689.md) |
 | [AR-1688](tasks/AR-1688.md) | [AR-1677](tasks/AR-1677.md), [AR-1686](tasks/AR-1686.md) | [AR-1689](tasks/AR-1689.md), [AR-1691](tasks/AR-1691.md) |
 | [AR-1689](tasks/AR-1689.md) | [AR-1686](tasks/AR-1686.md), [AR-1687](tasks/AR-1687.md), [AR-1688](tasks/AR-1688.md) | None |
-| [AR-1690](tasks/AR-1690.md) | [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md) |
+| [AR-1690](tasks/AR-1690.md) | [AR-1674](tasks/AR-1674.md), [AR-1675](tasks/AR-1675.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1697](tasks/AR-1697.md) |
 | [AR-1691](tasks/AR-1691.md) | [AR-1676](tasks/AR-1676.md), [AR-1677](tasks/AR-1677.md), [AR-1688](tasks/AR-1688.md), [AR-1690](tasks/AR-1690.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md), [AR-1696](tasks/AR-1696.md) | [AR-1693](tasks/AR-1693.md) |
-| [AR-1692](tasks/AR-1692.md) | [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md), [AR-1694](tasks/AR-1694.md) |
+| [AR-1692](tasks/AR-1692.md) | [AR-1690](tasks/AR-1690.md) | [AR-1693](tasks/AR-1693.md), [AR-1694](tasks/AR-1694.md), [AR-1697](tasks/AR-1697.md) |
 | [AR-1693](tasks/AR-1693.md) | [AR-1691](tasks/AR-1691.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md), [AR-1695](tasks/AR-1695.md), [AR-1696](tasks/AR-1696.md) | None |
-| [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md) |
+| [AR-1694](tasks/AR-1694.md) | [AR-1692](tasks/AR-1692.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1697](tasks/AR-1697.md) |
 | [AR-1695](tasks/AR-1695.md) | [AR-1645](tasks/AR-1645.md), [AR-1648](tasks/AR-1648.md), [AR-1650](tasks/AR-1650.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1696](tasks/AR-1696.md) |
-| [AR-1696](tasks/AR-1696.md) | [AR-1610](tasks/AR-1610.md), [AR-1695](tasks/AR-1695.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1701](tasks/AR-1701.md) |
+| [AR-1696](tasks/AR-1696.md) | [AR-1610](tasks/AR-1610.md), [AR-1695](tasks/AR-1695.md) | [AR-1691](tasks/AR-1691.md), [AR-1693](tasks/AR-1693.md), [AR-1697](tasks/AR-1697.md), [AR-1701](tasks/AR-1701.md) |
+| [AR-1697](tasks/AR-1697.md) | [AR-1690](tasks/AR-1690.md), [AR-1692](tasks/AR-1692.md), [AR-1694](tasks/AR-1694.md), [AR-1696](tasks/AR-1696.md) | None |
 | [AR-1700](tasks/AR-1700.md) | [AR-1605](tasks/AR-1605.md), [AR-1656](tasks/AR-1656.md) | [AR-1701](tasks/AR-1701.md) |
 | [AR-1701](tasks/AR-1701.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | [AR-1702](tasks/AR-1702.md) |
 | [AR-1702](tasks/AR-1702.md) | [AR-1677](tasks/AR-1677.md), [AR-1701](tasks/AR-1701.md) | None |
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | ar1613-dev-channel-20261004 | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain real installed dev-channel materialization and selectable wizard-to-workload-to-capture/replay/comparison receipt; current exact-main tests and fixture acceptance pass but launch remains development_launch_unavailable. |
+| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | ar1613-dev-channel-20261004 | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
+| P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | ar1651-comparison-20261004 | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green hosted exact-head checks for PR #259 at 864e785d2105083ef07fd33edea69b6cb6c945ff; then merge and run post-merge verification. |
 
 ### Open (2)
 
@@ -748,7 +755,6 @@ flowchart LR
 | P0 | [AR-1623](tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
 | P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
 | P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Coordinate selected-agent execution and comparison from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. |
-| P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. |
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
@@ -771,6 +777,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
 | P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final receipt 2bcd1098 proves the default-dev journey only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
+| P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | Unclaimed | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
 | P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Unclaimed | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
 | P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Unclaimed | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Add capture selection, cassette status, strict offline replay, comparison, and analysis screens and qualify the complete live-to-offline journey at exact ASB/TUI heads. |
