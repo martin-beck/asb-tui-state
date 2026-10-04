@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 38 |
+| **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 115 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -200,7 +200,7 @@ flowchart LR
     subgraph series_17["17 - Additional work"]
         direction TB
         AR_1700["AR-1700 - Done"]:::status_done
-        AR_1701["AR-1701 - Planned"]:::status_planned
+        AR_1701["AR-1701 - Open"]:::status_open
         AR_1702["AR-1702 - Planned"]:::status_planned
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - In progress"]:::status_in_progress
@@ -737,12 +737,13 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | ar1704-coverage-repair | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Promote after AR-1700 merge evidence is reconciled; add focused behavior coverage, obtain review, merge the signed repair, and verify exact-main checks. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
+| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
 
 ### Blocked (2)
 
@@ -751,7 +752,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (38)
+### Planned (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -787,7 +788,6 @@ flowchart LR
 | P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
 | P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final receipt 2bcd1098 proves the default-dev journey only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
 | P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | Unclaimed | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
-| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
 | P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Unclaimed | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Add capture selection, cassette status, strict offline replay, comparison, and analysis screens and qualify the complete live-to-offline journey at exact ASB/TUI heads. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote after the provider, live-run, and capture/comparison ARs are released; run the clean-room paired command journey and publish the exact-head receipt. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
