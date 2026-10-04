@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 33 |
 | **Future** | Deferred roadmap work | 0 |
@@ -195,7 +195,7 @@ flowchart LR
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Done"]:::status_done
-        AR_1697["AR-1697 - Open"]:::status_open
+        AR_1697["AR-1697 - In progress"]:::status_in_progress
     end
     subgraph series_17["17 - Additional work"]
         direction TB
@@ -731,20 +731,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Qualify the TUI wizard and routes for all opencode/opendesk provider/model tuples, defaults, overrides, restart, and offline parity. | Build the deterministic TUI/control matrix runner after provider refresh and comparison seams are available. |
+| P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | ar1697-channel-repair-20261005-rerun | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1582](tasks/AR-1582.md): TUI benchmark results and offline replay | Unclaimed | Typed cassette replay bridge merged and independently reviewed; executable cross-process lifecycle is delegated to AR-1601 | Release after AR-1601 completes the executable cross-process record/seal/reopen/strict-offline-replay/compare seam; retain this AR in progress until then. |
-| P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | Unclaimed | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
 
 ### Blocked (2)
 
