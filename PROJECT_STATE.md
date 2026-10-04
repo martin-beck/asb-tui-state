@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #264 | `feature/ar-1702-live-capture@bc1bc57c3200` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | fix: complete live capture and offline replay flow |
+| #264 | `feature/ar-1702-live-capture@bc1bc57c3200` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: complete live capture and offline replay flow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37244470879 | `bc1bc57c3200` | pull_request | AWQ shadow observation | in_progress:- |
-| 37244470715 | `bc1bc57c3200` | pull_request | Repository quality | queued:- |
+| 37244470715 | `bc1bc57c3200` | pull_request | Repository quality | in_progress:- |
 | 37243972467 | `9db7c6ba0446` | push | Repository quality | completed:success |
 | 37243972420 | `9db7c6ba0446` | push | Trusted main verification | completed:success |
 | 37243555150 | `1f60345fe302` | pull_request | AWQ shadow observation | completed:success |
