@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 33 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 118 |
+| **Done** | Accepted, integrated, and durably verified | 119 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -195,7 +195,7 @@ flowchart LR
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Done"]:::status_done
-        AR_1697["AR-1697 - In progress"]:::status_in_progress
+        AR_1697["AR-1697 - Done"]:::status_done
     end
     subgraph series_17["17 - Additional work"]
         direction TB
@@ -731,13 +731,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Qualify the TUI wizard and routes for all opencode/opendesk provider/model tuples, defaults, overrides, restart, and offline parity. | Build the deterministic TUI/control matrix runner after provider refresh and comparison seams are available. |
-| P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | ar1697-channel-repair-20261005-rerun | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
 
 ### Open (2)
 
@@ -791,7 +790,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (118)
+### Done (119)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -901,6 +900,7 @@ flowchart LR
 | P0 | [AR-1694](tasks/AR-1694.md): Deterministic TUI development artifact identity | Unclaimed | Make repeated TUI dev-channel builds path-independent so the ASB handoff digest matches the actual installed executable. | No further action; deterministic materialization and hosted evidence are recorded in quality/AR-1694-deterministic-artifact-receipt.txt. Final paired journey remains AR-1691/AR-1693. |
 | P0 | [AR-1695](tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | Unclaimed | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | No further action; complete RunRequest serialization and live ASB v1.14 Unix transport acceptance are recorded in the final paired receipt. |
 | P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Unclaimed | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | No further action; PR252 merged at TUI main 29f3f61 and its Trusted-main, repository-quality, and AWQ hosted checks passed without threshold weakening. |
+| P0 | [AR-1697](tasks/AR-1697.md): Repair channel AR specifications and current-head qualification | Unclaimed | Complete valid AR-1674/1675 specifications and rerun the channel lifecycle and quickstart evidence at the current paired heads without bypassing predecessor dependencies. | Promote when dependencies are reconciled, then run the exact paired channel selection, manifest, lifecycle, and quickstart evidence at ASB ad43609b and TUI 1cf4b43d. |
 | P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | Unclaimed | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | PR #258 merged as dd3987a. Exact-main Trusted 37239022140 failed at 89.97&#37; coverage; repair is delegated to AR-1704. Exact-main Repository Quality 37239022146 passed. Release this setup AR with the recorded post-merge evidence; live benchmark execution remains AR-1701. |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await exact-main post-merge Repository Quality 37242182799 and Trusted main verification 37242182759 at merge SHA 0722db13; release AR-1701 only after both terminal green, documenting ASB live-admission boundary. |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Unclaimed | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. |
