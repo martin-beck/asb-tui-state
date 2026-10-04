@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 113 |
+| **Done** | Accepted, integrated, and durably verified | 114 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -159,7 +159,7 @@ flowchart LR
         AR_1648["AR-1648 - Done"]:::status_done
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
-        AR_1651["AR-1651 - In progress"]:::status_in_progress
+        AR_1651["AR-1651 - Done"]:::status_done
         AR_1652["AR-1652 - Done"]:::status_done
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
@@ -721,11 +721,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | ar1651-comparison-20261004 | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green AWQ check for PR #259 at 0cddb9cca4eb24c78e31d22fea607059b0557aa3; then merge and run post-merge verification. |
 | P0 | [AR-1700](tasks/AR-1700.md): TUI development live-provider setup | ar1700-live-provider | Add a first-class wizard route to select OpenCode/OpenDesk, OpenRouter, a supported model, and an API-key environment reference, with warning-only development connectivity checks. | Implement the live-provider wizard pages and persisted selection handoff, including provider/model refresh and actionable but non-blocking missing-key warnings. |
 
 ### Open (2)
@@ -784,7 +783,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (113)
+### Done (114)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -882,6 +881,7 @@ flowchart LR
 | P0 | [AR-1648](tasks/AR-1648.md): Selected-agent/workload fan-out | Unclaimed | Coordinate selected agents/workloads into durable online/offline run references. | No further action; ASB fan-out primitive is merged and paired review/hosted checks passed. |
 | P0 | [AR-1649](tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. |
 | P0 | [AR-1650](tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Coordinate selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | PR255 is merged at TUI main f83a39b6; run post-merge exact-head fan-out wire qualification and record the paired receipt before deciding completion. |
+| P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green AWQ check for PR #259 at 0cddb9cca4eb24c78e31d22fea607059b0557aa3; then merge and run post-merge verification. |
 | P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
