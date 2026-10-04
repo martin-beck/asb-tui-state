@@ -735,7 +735,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | ar1701-live-control-20261005 | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await exact-head Repository Quality/AWQ checks for PR #261 at aa6585d6; if green obtain independent review, merge, verify exact post-merge checks, and release AR-1701. |
+| P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | ar1701-live-control-20261005 | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await manually dispatched exact-head Repository Quality run 37241354772 and AWQ run 37241356964 for PR #261 at aa6585d6; if green obtain independent review, merge, verify exact post-merge checks, and release AR-1701. |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | ar1704-coverage-repair | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. |
 
 ### Open (2)
