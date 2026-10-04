@@ -139,8 +139,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 72, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 65, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 1, ahead 1 |
-| `asb-tui-ar1704` | `repair/ar-1704-coverage` | `dd3987ae4a99` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/fanout_dispatch.rs` |
+| `asb-tui-ar1704` | `repair/ar-1704-coverage` | `fa7170619ff0` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 248, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 248, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 248, ahead 156 |
