@@ -736,7 +736,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | ar1701-live-control-20261005 | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Add the live-run choice, preflight, progress and cancellation views and verify the TUI sends the selected configuration to the ASB live runner without silently selecting mock mode. |
-| P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | ar1704-coverage-repair | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Promote after AR-1700 merge evidence is reconciled; add focused behavior coverage, obtain review, merge the signed repair, and verify exact-main checks. |
+| P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | ar1704-coverage-repair | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Run full local quality and coverage at signed repair head fa71706; push PR, obtain independent review and hosted checks, merge protected main, then verify exact-main post-merge gates. |
 
 ### Open (2)
 
