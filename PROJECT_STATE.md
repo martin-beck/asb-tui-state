@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #265 | `feature/ar-1657-compat-matrix@1e7de688c967` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: add agent provider compatibility matrix runner |
 | #267 | `repair/ar-1702-selection-entrypoint@360f59001bf3` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: harden installed entrypoint and workload scope |
-| #268 | `repair/trusted-coverage-after-ar1702@b4183e33acc2` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test: restore trusted coverage after live capture |
+| #268 | `repair/trusted-coverage-after-ar1702@b4183e33acc2` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | test: restore trusted coverage after live capture |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37247784640 | `360f59001bf3` | pull_request | AWQ shadow observation | in_progress:- |
 | 37247784373 | `360f59001bf3` | pull_request | Repository quality | in_progress:- |
 | 37247583957 | `b4183e33acc2` | pull_request | AWQ shadow observation | in_progress:- |
-| 37247583681 | `b4183e33acc2` | pull_request | Repository quality | in_progress:- |
+| 37247583681 | `b4183e33acc2` | pull_request | Repository quality | completed:success |
 | 37247249320 | `c34c7f9d3764` | pull_request | AWQ shadow observation | completed:failure |
 | 37247249138 | `c34c7f9d3764` | pull_request | Repository quality | completed:failure |
 | 37247232271 | `3b3a975eb06c` | pull_request | AWQ shadow observation | completed:success |
