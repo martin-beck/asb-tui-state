@@ -26,6 +26,10 @@ tests, and protected hosted formal gate after the wizard/live-provider changes.
   capture/replay handoff, and typed human/JSON diagnostics.
 - Model-to-source and source-to-model parity remains exact; no UI route or
   transition is omitted from the formal inventory.
+- The formal journey includes the supported top-level command boundary:
+  `asb tui install` materializes the tested bundle and a subsequent bare
+  `asb tui` reaches the same modeled wizard/launch states. Direct invocation
+  of an internal TUI binary cannot satisfy this gate.
 - Current-head receipt records source/model revisions, exact test commands,
   and hosted gate identities without secrets or private paths.
 
