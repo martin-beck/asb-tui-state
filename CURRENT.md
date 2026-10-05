@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
+| P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. | - |
 
 ## Blocked
 
@@ -33,7 +34,6 @@ Never edit this file directly.
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. | - |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. | - |
-| P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. | - |
 | P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. | - |
 | P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. | - |
 | P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. | - |
