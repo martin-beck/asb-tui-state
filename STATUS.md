@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 19 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 136 |
+| **Done** | Accepted, integrated, and durably verified | 137 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -182,7 +182,7 @@ flowchart LR
         AR_1675["AR-1675 - Done"]:::status_done
         AR_1676["AR-1676 - Done"]:::status_done
         AR_1677["AR-1677 - Done"]:::status_done
-        AR_1678["AR-1678 - In progress"]:::status_in_progress
+        AR_1678["AR-1678 - Done"]:::status_done
         AR_1685["AR-1685 - Planned"]:::status_planned
         AR_1686["AR-1686 - Planned"]:::status_planned
         AR_1687["AR-1687 - Planned"]:::status_planned
@@ -741,13 +741,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. |
-| P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | ar1678-host-preflight | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Await exact-main post-merge Repository Quality and Trusted Main for merge fe22d5e3; if both green, release AR-1678 with the coverage receipt. |
 
 ### Blocked (2)
 
@@ -780,7 +779,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (136)
+### Done (137)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -897,6 +896,7 @@ flowchart LR
 | P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | Unclaimed | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
 | P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | Unclaimed | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Release after independent receipt review and live doctor reconciliation. |
 | P0 | [AR-1677](tasks/AR-1677.md): Channel-aware TUI quickstart and release gate | Unclaimed | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey preserve and explain the selected channel end to end. | Release after independent receipt review and live doctor reconciliation. |
+| P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | Unclaimed | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Await exact-main post-merge Repository Quality and Trusted Main for merge fe22d5e3; if both green, release AR-1678 with the coverage receipt. |
 | P0 | [AR-1688](tasks/AR-1688.md): TUI runner-owned cassette capture and replay qualification | Unclaimed | Verify TUI selection-driven recording and strict offline replay consume runner-owned sealed cassettes. | No further action; exact post-merge TUI runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded in the linked receipt. |
 | P0 | [AR-1690](tasks/AR-1690.md): TUI development-channel current-main consumption | Unclaimed | Consume the ASB dev-channel manifest, default to current paired main heads, and make the resolved source visible before wizard or launch. | No further action; current-main channel consumption and diagnostics are covered by the handoff implementation receipt. Final paired journey remains AR-1691/AR-1693. |
 | P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
