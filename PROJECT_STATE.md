@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #278 | `repair/ar-1713-rustup-cargo-shim@c20ce2fdc6b1` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | Repair validated rustup cargo shim resolution |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37266327328 | `c20ce2fdc6b1` | pull_request | AWQ shadow observation | in_progress:- |
+| 37266327105 | `c20ce2fdc6b1` | pull_request | Repository quality | in_progress:- |
 | 37265424193 | `525c601fbbd6` | push | Trusted main verification | completed:success |
 | 37265424191 | `525c601fbbd6` | push | Repository quality | completed:success |
 | 37265018416 | `214ebb0fce36` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37264393607 | `8aee394aa734` | pull_request | Repository quality | completed:success |
 | 37264353646 | `2e0b462b80ef` | pull_request | AWQ shadow observation | completed:success |
 | 37264353425 | `2e0b462b80ef` | pull_request | Repository quality | completed:success |
-| 37263907595 | `6e645b77ee07` | pull_request | AWQ shadow observation | completed:failure |
-| 37263907281 | `6e645b77ee07` | pull_request | Repository quality | completed:failure |
