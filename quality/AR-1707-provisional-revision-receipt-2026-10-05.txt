@@ -1,0 +1,27 @@
+AR-1707 provisional revision and formal UI gate receipt
+Date: 2026-10-05
+
+Qualification target
+- Product: martin-beck/asb-tui
+- Exact reviewed product PR head: a738130086799a080b20dd64b6df228facceccdc
+- Exact merged product commit: 19da04edff0d2954640dc0d268219d4435c58c29
+- Scope: retain raw control revision zero separately from the non-zero local
+  picker generation; reject a mismatched durable revision as stale; preserve
+  the revision through fan-out/materialization handoff.
+
+Evidence
+- Focused tests in PR #274 cover negotiated revision zero, stale revision
+  rejection, and the zero-versus-first-durable-revision non-alias property.
+- Hosted exact-head checks passed: Repository quality
+  (37260059944), AWQ core (37260060146), and post-merge Trusted Main /
+  Repository quality (37260526401, 37260526404).
+- The product diff updates the executable UI model, generated model, module
+  inventory, and renderer implementation together.
+
+Boundary
+- No credentials, provider responses, or private host paths are included.
+- Development authentication/signatures/key management remain warning-only;
+  production trust validation remains fail-closed.
+
+Conclusion: AR-1707 acceptance predicates are satisfied at the exact merged
+head above.

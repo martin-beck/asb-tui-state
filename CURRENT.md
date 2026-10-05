@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. | ar1707_revision_formal_gate |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -179,6 +173,7 @@ Never edit this file directly.
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Restore the existing Trusted main 90% coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. | - |
 | P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | No further TUI implementation; retain the credential-unavailable limitation and pair with ASB AR-1702 when its credential-backed smoke is promoted and completed. | - |
 | P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | No further action; installed PTY/control qualification is recorded, and the follow-up catalog/revision repair merged as 19da04ed with exact-main checks green. | - |
+| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |

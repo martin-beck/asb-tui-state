@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**162 ARs tracked** across 5 active status categories.
+**162 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 17 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 139 |
+| **Done** | Accepted, integrated, and durably verified | 140 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -206,7 +206,7 @@ flowchart LR
         AR_1704["AR-1704 - Done"]:::status_done
         AR_1705["AR-1705 - Done"]:::status_done
         AR_1706["AR-1706 - Done"]:::status_done
-        AR_1707["AR-1707 - In progress"]:::status_in_progress
+        AR_1707["AR-1707 - Done"]:::status_done
         AR_1708["AR-1708 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
@@ -751,12 +751,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | ar1707_revision_formal_gate | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. |
-
 ### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -794,7 +788,7 @@ flowchart LR
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Unclaimed | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed &#96;asb tui install&#96; followed by bare &#96;asb tui&#96; qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 
-### Done (139)
+### Done (140)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -927,6 +921,7 @@ flowchart LR
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Unclaimed | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. |
 | P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Unclaimed | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | No further TUI implementation; retain the credential-unavailable limitation and pair with ASB AR-1702 when its credential-backed smoke is promoted and completed. |
 | P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Unclaimed | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | No further action; installed PTY/control qualification is recorded, and the follow-up catalog/revision repair merged as 19da04ed with exact-main checks green. |
+| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Unclaimed | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
