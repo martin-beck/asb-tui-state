@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**163 ARs tracked** across 5 active status categories.
+**164 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 16 |
+| **Planned** | Defined work awaiting promotion or dependencies | 17 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 141 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -209,6 +209,7 @@ flowchart LR
         AR_1707["AR-1707 - Done"]:::status_done
         AR_1708["AR-1708 - In progress"]:::status_in_progress
         AR_1713["AR-1713 - Planned"]:::status_planned
+        AR_1714["AR-1714 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -281,6 +282,7 @@ flowchart LR
     AR_1343 --> AR_1344
     AR_1344 --> AR_1345
     AR_1575 --> AR_1703
+    AR_1575 --> AR_1714
     AR_1579 --> AR_1588
     AR_1579 --> AR_1599
     AR_1580 --> AR_1581
@@ -569,11 +571,13 @@ flowchart LR
     AR_1702 --> AR_1705
     AR_1702 --> AR_1706
     AR_1702 --> AR_1708
+    AR_1703 --> AR_1714
     AR_1704 --> AR_1707
     AR_1706 --> AR_1703
     AR_1706 --> AR_1707
     AR_1707 --> AR_1708
     AR_1708 --> AR_1713
+    AR_1713 --> AR_1714
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -633,7 +637,7 @@ flowchart LR
 | [AR-1343](tasks/AR-1343.md) | [AR-1342](tasks/AR-1342.md) | [AR-1344](tasks/AR-1344.md) |
 | [AR-1344](tasks/AR-1344.md) | [AR-1343](tasks/AR-1343.md) | [AR-1345](tasks/AR-1345.md) |
 | [AR-1345](tasks/AR-1345.md) | [AR-1344](tasks/AR-1344.md) | None |
-| [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | [AR-1703](tasks/AR-1703.md) |
+| [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | [AR-1703](tasks/AR-1703.md), [AR-1714](tasks/AR-1714.md) |
 | [AR-1579](tasks/AR-1579.md) | None | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) |
 | [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md), [AR-1586](tasks/AR-1586.md) |
@@ -744,13 +748,14 @@ flowchart LR
 | [AR-1700](tasks/AR-1700.md) | [AR-1605](tasks/AR-1605.md), [AR-1656](tasks/AR-1656.md) | [AR-1701](tasks/AR-1701.md), [AR-1703](tasks/AR-1703.md), [AR-1704](tasks/AR-1704.md) |
 | [AR-1701](tasks/AR-1701.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | [AR-1702](tasks/AR-1702.md), [AR-1703](tasks/AR-1703.md), [AR-1705](tasks/AR-1705.md), [AR-1706](tasks/AR-1706.md) |
 | [AR-1702](tasks/AR-1702.md) | [AR-1677](tasks/AR-1677.md), [AR-1701](tasks/AR-1701.md) | [AR-1703](tasks/AR-1703.md), [AR-1705](tasks/AR-1705.md), [AR-1706](tasks/AR-1706.md), [AR-1708](tasks/AR-1708.md) |
-| [AR-1703](tasks/AR-1703.md) | [AR-1575](tasks/AR-1575.md), [AR-1654](tasks/AR-1654.md), [AR-1700](tasks/AR-1700.md), [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md), [AR-1706](tasks/AR-1706.md) | None |
+| [AR-1703](tasks/AR-1703.md) | [AR-1575](tasks/AR-1575.md), [AR-1654](tasks/AR-1654.md), [AR-1700](tasks/AR-1700.md), [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md), [AR-1706](tasks/AR-1706.md) | [AR-1714](tasks/AR-1714.md) |
 | [AR-1704](tasks/AR-1704.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | [AR-1707](tasks/AR-1707.md) |
 | [AR-1705](tasks/AR-1705.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
 | [AR-1706](tasks/AR-1706.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | [AR-1703](tasks/AR-1703.md), [AR-1707](tasks/AR-1707.md) |
 | [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md) |
 | [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | [AR-1713](tasks/AR-1713.md) |
-| [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | None |
+| [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | [AR-1714](tasks/AR-1714.md) |
+| [AR-1714](tasks/AR-1714.md) | [AR-1575](tasks/AR-1575.md), [AR-1703](tasks/AR-1703.md), [AR-1713](tasks/AR-1713.md) | None |
 
 ## Complete AR inventory
 
@@ -775,7 +780,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (16)
+### Planned (17)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -795,6 +800,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 | P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Consume the ASB AR-1710/1711/1712 live-run and recording/comparison contracts through the installed asb tui journey; qualify explicit online mode, selected/all capture, strict offline replay, comparison, and typed unavailable diagnostics. |
+| P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Verify the owning product repair at an exact current TUI head, then qualify cargo/rustup shim materialization, hostile symlink refusal, warning-only development setup, and installed asb tui install followed by bare asb tui. |
 
 ### Done (141)
 
