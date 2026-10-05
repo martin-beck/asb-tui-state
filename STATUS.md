@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 27 |
 | **Future** | Deferred roadmap work | 0 |
@@ -168,7 +168,7 @@ flowchart LR
         AR_1657["AR-1657 - Done"]:::status_done
         AR_1658["AR-1658 - Done"]:::status_done
         AR_1659["AR-1659 - Done"]:::status_done
-        AR_1660["AR-1660 - Open"]:::status_open
+        AR_1660["AR-1660 - In progress"]:::status_in_progress
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1662["AR-1662 - Done"]:::status_done
         AR_1664["AR-1664 - Planned"]:::status_planned
@@ -735,18 +735,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | ar1660-root-qualification | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 | P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | ar1674_channel_qualification | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Implement the selection/reconfiguration screen and typed human/JSON projections for omitted dev, explicit dev, and unavailable future channels. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Unclaimed | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 
 ### Blocked (2)
 
