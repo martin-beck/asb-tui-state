@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #271 | `feature/ar-1678-host-preflight@88e368b9214a` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | feat(preflight): add bounded development host diagnostics |
+| #271 | `feature/ar-1678-host-preflight@aa80986a32f9` | `main` | BEHIND | - | feat(preflight): add bounded development host diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37254939717 | `aa80986a32f9` | pull_request | AWQ shadow observation | pending:- |
+| 37254939545 | `aa80986a32f9` | pull_request | Repository quality | pending:- |
 | 37254865987 | `88e368b9214a` | pull_request | AWQ shadow observation | in_progress:- |
 | 37254865838 | `88e368b9214a` | pull_request | Repository quality | in_progress:- |
 | 37253724155 | `795e0851926f` | push | Trusted main verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37252903370 | `478e1452ddd7` | push | Trusted main verification | completed:success |
 | 37252484706 | `42cf1e585969` | pull_request | AWQ shadow observation | completed:success |
 | 37252484504 | `42cf1e585969` | pull_request | Repository quality | completed:success |
-| 37252073124 | `fffa2a08f954` | pull_request | AWQ shadow observation | completed:success |
-| 37252072965 | `fffa2a08f954` | pull_request | Repository quality | completed:success |
