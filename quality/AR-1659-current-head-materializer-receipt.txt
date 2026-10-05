@@ -1,0 +1,36 @@
+AR: AR-1659
+Status: PASS (development/mock qualification)
+Product scope: standalone asb-tui only; no ASB source changed.
+
+Implementation and exact-main evidence:
+- PR #231 merged as 4cc45e2bff3c8bd29e1890cb28fcded91e9348df;
+- current TUI main: 2f1c34b7bf04664b707014ca21f19d9d995bc130;
+- current TUI tree: 1a3ea9bee8d9bf6a388d83848540f4f00ce837d3;
+- PR #231 hosted Repository Quality, AWQ shadow, and AWQ core checks passed;
+- current exact-main Repository Quality 37248948327 passed;
+- current exact-main Trusted Main 37248948396 passed.
+
+Focused current-head tests:
+- cargo test --locked development_handoff --no-fail-fast: 5 passed;
+  this covered progress phases, cancellation projection, rollback/retry,
+  provenance/error projections, UI navigation, and rendered outcomes;
+- cargo test --locked development_lifecycle --no-fail-fast: 7 passed;
+  this covered process cancellation, bounded cleanup, install/status/launch/
+  upgrade/remove reentrancy, atomic activation rollback, malformed state,
+  manifest digest binding, and unsafe filesystem rejection;
+- formal state handoff transition coverage passed as part of the focused suite.
+
+Verified implementation behavior:
+- progress states: cloning, building, installing, installed;
+- cancellation preserves the previous installation and cleans child process
+  groups/workspaces;
+- atomic activation stages executable/provenance/manifest and restores the
+  previous pair after activation failure;
+- rollback/retry uses upgrade semantics without losing the prior install;
+- incompatible, stale, malformed, or digest-mismatched manifests fail closed;
+- remove uses recoverable trash/restore behavior;
+- human projections expose progress, result, preservation, warnings, exact
+  source/tree/executable and ASB provenance; JSON exposes the same contract.
+
+AR-1659 acceptance is complete. Development-only authenticity and credential
+warnings remain visible and non-blocking.
