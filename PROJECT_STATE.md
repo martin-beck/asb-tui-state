@@ -11,19 +11,19 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #264 | `feature/ar-1702-live-capture@41d19d927429` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: complete live capture and offline replay flow |
-| #265 | `feature/ar-1657-compat-matrix@467af1a0c945` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | feat: add agent provider compatibility matrix runner |
+| #265 | `feature/ar-1657-compat-matrix@467af1a0c945` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: add agent provider compatibility matrix runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37245856851 | `467af1a0c945` | pull_request | AWQ shadow observation | in_progress:- |
-| 37245856767 | `467af1a0c945` | pull_request | Repository quality | queued:- |
+| 37245856767 | `467af1a0c945` | pull_request | Repository quality | in_progress:- |
 | 37245794656 | `41d19d927429` | pull_request | AWQ shadow observation | in_progress:- |
 | 37245794460 | `41d19d927429` | pull_request | Repository quality | in_progress:- |
 | 37245786664 | `7cf2f993b0df` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37245786286 | `7cf2f993b0df` | pull_request | Repository quality | completed:cancelled |
-| 37245707432 | `873cc2f2bf41` | push | Trusted main verification | in_progress:- |
+| 37245707432 | `873cc2f2bf41` | push | Trusted main verification | completed:success |
 | 37245707299 | `873cc2f2bf41` | push | Repository quality | in_progress:- |
 | 37245574757 | `33cbe2ebf1b8` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37245574606 | `33cbe2ebf1b8` | pull_request | Repository quality | completed:cancelled |
