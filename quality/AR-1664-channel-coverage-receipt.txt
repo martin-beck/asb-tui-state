@@ -1,0 +1,21 @@
+AR: AR-1664
+Status: DONE (historical coverage repair superseded by current main)
+Scope: standalone asb-tui channel-selection coverage; no ASB source changed.
+
+Evidence:
+- Historical trusted-main run 37002888017 at fa6483f failed the aggregate
+  locked coverage gate at 87.33%; its logs show no channel-selection test
+  failure and no channel-specific coverage assertion. The failure was an
+  aggregate threshold result, not a channel-selector behavior regression.
+- Current exact asb-tui main is fe22d5e38e0225416faad7da1e812e997d27e3b2.
+- Current Trusted Main run 37258255548 for fe22d5e is green.
+- `cargo test --locked channel_selection --no-fail-fast`: 6 passed.
+- `cargo test --locked --test top_level --no-fail-fast`: 10 passed.
+- Current channel-selection implementation contains focused coverage for
+  default dev selection, explicit selection, persistence/restart, unavailable
+  channel diagnostics, and closed channel names/availability.
+
+Conclusion:
+The historical AR failure is explained and no additional channel-selection
+implementation or test repair is required on current main. The later merged
+coverage repairs restored the trusted-main gate without weakening thresholds.
