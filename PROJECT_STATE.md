@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #281 | `repair/ar1714-top-level-fixture@4415f333ec63` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | test: stabilize top-level rustup toolchain fixture |
+| #281 | `repair/ar1714-top-level-fixture@4415f333ec63` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: stabilize top-level rustup toolchain fixture |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37269432568 | `4415f333ec63` | pull_request | AWQ shadow observation | in_progress:- |
+| 37269432568 | `4415f333ec63` | pull_request | AWQ shadow observation | completed:success |
 | 37269432311 | `4415f333ec63` | pull_request | Repository quality | completed:success |
 | 37269194598 | `161cc2f6b1e5` | push | Trusted main verification | completed:failure |
 | 37269194593 | `161cc2f6b1e5` | push | Repository quality | completed:success |
