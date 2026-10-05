@@ -1,0 +1,32 @@
+AR: AR-1653
+Status: PASS (development/mock qualification)
+Credentials: none. Benchmark/replay network: denied. Install materialization: allowed.
+
+Fresh clean-clone exact paired heads:
+- ASB commit: 401253e53160dc51b39b6618c2b2459cba569c7f
+- ASB tree: bf0282db3a2785fc78b7ce970efa859deb3bcff3
+- TUI commit: 2e4bade9ec5306131a58ec3ac061f6c19b42dc2a
+- TUI tree: 1fcd44b8759b321041d4f6fd9b626c78bc69031a
+
+Freshly built binaries:
+- ASB SHA-256: 83f18cef8cdbd13aadf846e84dfdde61bd1992e15f1a8297f5c85f11da728d64
+- TUI runner SHA-256: 0fec5dcb540be450ac03281f293c6b60715a6e4821ffa828e9d296ba4fbe3e80
+- Development-channel manifest SHA-256: e099ea3d629e6d51cbe67c0a33a6f145f47a58e64d8d5550e0c9e89099386bff
+
+Lifecycle evidence from the disposable clean-clone runner:
+- default dev install: development_installed;
+- status and restart persistence: development_installed;
+- launch: development_launch_ready;
+- failed upgrade rollback preserved the prior installation;
+- tamper-negative manifest rejection: dev_channel_manifest_invalid;
+- removal: development_removed;
+- 11-case channel matrix passed, including omitted/explicit dev, persisted channel selection,
+  unavailable future channels, rollback preservation, removal, and malformed-manifest handling;
+- provider/onboarding, selected/all capture, strict offline replay, comparison, and analysis passed;
+- no credentials were used and benchmark/replay network was denied.
+
+Quickstart receipt SHA-256:
+940de45bfb1c36adcd7a0d73839d1232e739beb45843c994204db8cc05574415
+
+The exact current-main clean-clone/default-dev lifecycle qualification passed. Production release
+status was not changed.
