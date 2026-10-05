@@ -1,0 +1,74 @@
+{
+  "ar": "AR-1706",
+  "classification": "development/mock",
+  "credentials": "none",
+  "installed_entrypoint": {
+    "cleanup": "passed",
+    "install": "asb tui install",
+    "install_status": "development_installed",
+    "launch": "asb tui",
+    "launch_status": "development_launch_ready",
+    "restart_status": "development_installed"
+  },
+  "journey": {
+    "all_capture": {
+      "tuple_count": 7,
+      "workload_count": 7
+    },
+    "analysis": "end_to_end_qualification passed",
+    "comparison": "end_to_end_qualification passed",
+    "selected_capture": {
+      "cassette_sha256": "5f4c28b06c33585f2ecd8cc515f948a7d874bfe6412425d87a29fad67c344ee1",
+      "replay": {
+        "cassette_sha256": "86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b",
+        "network": "denied",
+        "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+      },
+      "tuple_count": 1,
+      "workload_count": 1
+    },
+    "strict_offline_replay": {
+      "cassette_sha256": "86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b",
+      "network": "denied",
+      "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+    },
+    "tamper_negative": {
+      "asb_source_commit": "401253e53160dc51b39b6618c2b2459cba569c7f",
+      "asb_source_tree": "bf0282db3a2785fc78b7ce970efa859deb3bcff3",
+      "channel": "dev",
+      "channel_manifest_sha256": "90e37898a093d386f1e4c2030616c32077aec977fb42b3af9561851f20772486",
+      "classification": "development_only",
+      "code": "dev_channel_manifest_invalid",
+      "development_only": true,
+      "executable_sha256": "29de974e6396c58f715b2b56b3960934cf9504abafd58f95d024b2139afb52d3",
+      "installed": true,
+      "ok": false,
+      "schema_version": 1,
+      "source_commit": "fe22d5e38e0225416faad7da1e812e997d27e3b2",
+      "source_tree": "4b6d1f5f211abbd6a5cfe575e5f501df511ec6e6",
+      "verified": false
+    }
+  },
+  "network": {
+    "benchmark_and_replay": "denied",
+    "install_materialization": "allowed"
+  },
+  "provenance": {
+    "asb_binary_sha256": "b7226b9264796eaf3ed3ef23894600ce1fb12e9a75c3caa19ce09b2d13064758",
+    "asb_commit": "401253e53160dc51b39b6618c2b2459cba569c7f",
+    "asb_tree": "bf0282db3a2785fc78b7ce970efa859deb3bcff3",
+    "tui_commit": "fe22d5e38e0225416faad7da1e812e997d27e3b2",
+    "tui_installed_binary_sha256": "29de974e6396c58f715b2b56b3960934cf9504abafd58f95d024b2139afb52d3",
+    "tui_runner_binary_sha256": "a47240443044170a93a7db4acd75de1157709ba86d55cb57aedd04535d441412",
+    "tui_tree": "4b6d1f5f211abbd6a5cfe575e5f501df511ec6e6"
+  },
+  "pty_control": {
+    "broker_handoff_tests": "4 passed: inherited-fd SCM_RIGHTS, socket consumer, attached output PTY",
+    "development_journey_tests": "4 passed",
+    "live_mode": "explicit; no mock fallback",
+    "terminal_foundation_tests": "32 passed: PTY lifecycle, cancellation/cleanup, process groups, resize and terminal restoration",
+    "typed_failures": "credential-free development warnings and bounded control/provider failures retained"
+  },
+  "schema_version": 1,
+  "source_receipt_sha256": "fa8806e3ddf70f63113e5227e6ad0acf17cdd67bd679b08f2fdb2a9eb1cd12c3"
+}
