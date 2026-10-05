@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 5 active status categories.
+**159 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 21 |
 | **Future** | Deferred roadmap work | 0 |
@@ -204,7 +204,7 @@ flowchart LR
         AR_1702["AR-1702 - Done"]:::status_done
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
-        AR_1705["AR-1705 - Open"]:::status_open
+        AR_1705["AR-1705 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -735,18 +735,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; tmux and script PTYs reproduced development_launch_failed, so investigate the development broker/child launch host limitation. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Unclaimed | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | Promote after AR-1701 and AR-1702 are released; run the exact paired installed journey and credential-free/provider-failure matrix. |
+| P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | ar1705_openrouter_qualification | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | Promote after AR-1701 and AR-1702 are released; run the exact paired installed journey and credential-free/provider-failure matrix. |
 
 ### Blocked (2)
 
