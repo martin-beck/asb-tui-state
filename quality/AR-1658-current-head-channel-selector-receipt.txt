@@ -1,0 +1,34 @@
+AR: AR-1658
+Status: PASS (development/mock qualification)
+Credentials: none. Network policy: deny for qualification commands.
+
+Current exact TUI head:
+- commit: 2f1c34b7bf04664b707014ca21f19d9d995bc130
+- tree: 1a3ea9bee8d9bf6a388d83848540f4f00ce837d3
+- installed executable SHA-256: c8cd92f9203829ce8fff3b5acc40fa2daf0fcf39edef44fcf05dc7cb34cc1632
+
+Implementation evidence:
+- PR #229 merged as fa6483f9e45febb97d7eef6192fe9ebc07b86ada;
+- PR #229 Repository Quality, AWQ shadow, and AWQ core checks passed;
+- current exact-main Repository Quality 37248948327 passed;
+- current exact-main Trusted Main 37248948396 passed.
+
+Fresh current-head tests:
+- cargo test --locked channel --no-fail-fast: passed, including default-dev,
+  explicit-dev, persisted selection, unavailable-channel diagnostics, manifest
+  provenance, and lifecycle status coverage;
+- top-level channel tests passed, including restart persistence and no silent
+  fallback from unavailable channels;
+- fresh local dev install produced development_installed/verified=true;
+- status and launch produced development_installed and development_launch_ready,
+  with exact source commit/tree provenance;
+- human status output exposed channel, code, classification, installed, verified,
+  source commit, and source tree;
+- JSON status output exposed the same fields and exact provenance;
+- stable human and JSON requests returned stable_channel_unavailable with no fallback;
+- persisted stable selection remained stable_channel_unavailable across a new process;
+- explicit dev restored the dev channel, and a subsequent omitted-channel request
+  retained the restored dev selection.
+
+The current channel-selector implementation satisfies AR-1658. Development-only
+authentication/signature/key warnings remain non-blocking. No ASB source changed.
