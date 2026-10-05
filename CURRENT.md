@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. | ar1707_revision_formal_gate |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -37,7 +43,6 @@ Never edit this file directly.
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. | - |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. | - |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Qualify the complete selection-driven asb-tui journey through the supported `asb tui install` and `asb tui` commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. | - |
-| P0 | [AR-1707](tasks/AR-1707.md): Authoritative seeded-cassette activation in the TUI | Ensure the TUI activates and loads a runner-owned cassette catalog from a complete campaign without silently requiring local picker keys. | Implement and test the authoritative offline-ready campaign activation path; preserve strict identity and no-fabrication fences. | - |
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Promote after AR-1707 closes the offline-action activation gap; use the existing versioned v1.12 codec/client, request the catalog once the authenticated campaign is complete, dispatch selected strict replay, and rerun exact paired PTY qualification. | - |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. | - |
 

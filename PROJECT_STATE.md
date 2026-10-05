@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #275 | `ar-1707-authoritative-cassette-activation@18eabc08250b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: activate authoritative cassette catalog after offline setup |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37261779352 | `18eabc08250b` | pull_request | AWQ shadow observation | completed:success |
+| 37261779154 | `18eabc08250b` | pull_request | Repository quality | completed:success |
 | 37260526404 | `19da04edff0d` | push | Trusted main verification | completed:success |
 | 37260526401 | `19da04edff0d` | push | Repository quality | completed:success |
 | 37260060146 | `a73813008679` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37260040701 | `30c61511a19f` | pull_request | Repository quality | completed:cancelled |
 | 37259529599 | `14a7c8d517e7` | pull_request | AWQ shadow observation | completed:failure |
 | 37259529470 | `14a7c8d517e7` | pull_request | Repository quality | completed:failure |
-| 37259522238 | `e354175355ec` | workflow_dispatch | AWQ shadow observation | completed:success |
-| 37259520301 | `e354175355ec` | workflow_dispatch | Repository quality | completed:success |
