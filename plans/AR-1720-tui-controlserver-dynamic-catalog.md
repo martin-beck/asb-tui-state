@@ -24,6 +24,10 @@ warnings without blocking setup. Explicit live requests must remain distinct
 from local/mock and offline replay and must never silently substitute a static
 catalog or fallback provider.
 
-Dependency: ASB AR-1719 must provide the normalized dynamic catalog, typed
+Dependency: ASB AR-1719 provides the normalized dynamic catalog, typed
 availability/model-mismatch contract, deterministic fixtures, and privacy-safe
-receipt fields before this AR is promoted.
+receipt fields. It is merged at ASB commit `6bd9b836` with hosted evidence.
+This external dependency is not represented as a local task edge. AR-1713 is
+the later consumer of this bridge for installed live-run, capture, replay, and
+comparison qualification; that acceptance gate remains required and is not
+silently waived.
