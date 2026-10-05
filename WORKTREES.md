@@ -210,8 +210,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `e9e21047d32a` | 0 | behind 10, ahead 0 |
 | `asb-tui-ar1705` | `DETACHED` | `795e0851926f` | 0 | behind 9, ahead 0 |
 | `asb-tui-ar1706` | `DETACHED` | `fe22d5e38e02` | 0 | behind 3, ahead 0 |
-| `asb-tui-ar1707` | `feature/ar-1707-revision-formal-gate` | `15e864e7c4c8` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/revision.rs` |
+| `asb-tui-ar1707` | `feature/ar-1707-revision-formal-gate` | `15e864e7c4c8` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/lib.rs`, `tests/formal_state.rs`, `src/revision.rs` |
 | `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 15, ahead 0 |
 | `asb-tui-coverage.13uS92` | `DETACHED` | `15e864e7c4c8` | 0 | behind 0, ahead 0 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 28, ahead 1 |
