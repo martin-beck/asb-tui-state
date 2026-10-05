@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 4 active status categories.
+**159 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 30 |
 | **Future** | Deferred roadmap work | 0 |
@@ -166,7 +166,7 @@ flowchart LR
         AR_1655["AR-1655 - Planned"]:::status_planned
         AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Done"]:::status_done
-        AR_1658["AR-1658 - Open"]:::status_open
+        AR_1658["AR-1658 - In progress"]:::status_in_progress
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
@@ -735,12 +735,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | ar1658-current-head-qualification | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
-| P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Unclaimed | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. |
 
 ### Blocked (2)
 
