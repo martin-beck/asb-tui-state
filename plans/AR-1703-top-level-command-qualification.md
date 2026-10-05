@@ -39,6 +39,8 @@ and that the full selection-driven wizard remains usable from that entrypoint.
 ## Dependencies
 
 The implementation and feature ARs must be complete before this qualification
-is promoted: AR-1654, AR-1700, AR-1701, and AR-1702. Any ASB-side command or
-protocol defect is reported as an external dependency; this AR must not modify
-the ASB repository.
+is promoted: AR-1575, AR-1654, AR-1700, AR-1701, and AR-1702. AR-1575 is the
+paired live-materialization gate; bundle-only or directly invoked binary
+evidence does not replace a successful `asb tui install` followed by a
+terminal-capable bare `asb tui`. Any ASB-side command or protocol defect is
+reported as an external dependency; this AR must not modify the ASB repository.
