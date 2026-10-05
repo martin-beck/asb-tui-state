@@ -1,0 +1,71 @@
+{
+  "ar": "AR-1693",
+  "classification": "development/mock",
+  "credentials": "none",
+  "installed_entrypoint": {
+    "cleanup": "passed",
+    "default_channel": "dev (omitted)",
+    "explicit_channel": "dev",
+    "install": "asb tui install",
+    "install_status": "development_installed",
+    "launch": "asb tui",
+    "launch_status": "development_launch_ready",
+    "restart_status": "development_installed"
+  },
+  "journey": {
+    "all_capture": {
+      "tuple_count": 7,
+      "workload_count": 7
+    },
+    "analysis": "end_to_end_qualification passed",
+    "comparison": "end_to_end_qualification passed",
+    "end_to_end": "passed",
+    "provider_selection": "provider_lifecycle_1656 passed",
+    "selected_capture": {
+      "cassette_sha256": "5f4c28b06c33585f2ecd8cc515f948a7d874bfe6412425d87a29fad67c344ee1",
+      "replay": {
+        "cassette_sha256": "86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b",
+        "network": "denied",
+        "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+      },
+      "tuple_count": 1,
+      "workload_count": 1
+    },
+    "strict_offline_replay": {
+      "cassette_sha256": "86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b",
+      "network": "denied",
+      "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+    },
+    "tamper_negative": {
+      "asb_source_commit": "401253e53160dc51b39b6618c2b2459cba569c7f",
+      "asb_source_tree": "bf0282db3a2785fc78b7ce970efa859deb3bcff3",
+      "channel": "dev",
+      "channel_manifest_sha256": "e700c108c15b8d10bdc7b818abfb8e6f91e998686f8e78068f6073ecf864b94f",
+      "classification": "development_only",
+      "code": "dev_channel_manifest_invalid",
+      "development_only": true,
+      "executable_sha256": "fcd63e53d5aadbc0fa0a4c176ed56f344a9b1e61091c7ba22d036f386d1de2e9",
+      "installed": true,
+      "ok": false,
+      "schema_version": 1,
+      "source_commit": "68d9a787b6673f13773151e1d8cbbc1a032be7bb",
+      "source_tree": "6b0b55a68dfe136da5bf088b9ef888c43f0853e0",
+      "verified": false
+    }
+  },
+  "network": {
+    "benchmark_and_replay": "denied",
+    "install_materialization": "allowed"
+  },
+  "provenance": {
+    "asb_binary_sha256": "b7226b9264796eaf3ed3ef23894600ce1fb12e9a75c3caa19ce09b2d13064758",
+    "asb_commit": "401253e53160dc51b39b6618c2b2459cba569c7f",
+    "asb_tree": "bf0282db3a2785fc78b7ce970efa859deb3bcff3",
+    "tui_commit": "68d9a787b6673f13773151e1d8cbbc1a032be7bb",
+    "tui_installed_binary_sha256": "fcd63e53d5aadbc0fa0a4c176ed56f344a9b1e61091c7ba22d036f386d1de2e9",
+    "tui_runner_binary_sha256": "13b8b4ca10b4ef4809f85fa37dbc90af681b1c28859fce4690871368aa76117e",
+    "tui_tree": "6b0b55a68dfe136da5bf088b9ef888c43f0853e0"
+  },
+  "schema_version": 1,
+  "source_receipt_sha256": "ce66fd3aa520aab817ad529abe39cd37e1df4ac36e0185d57d460294c94a8122"
+}
