@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 25 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 128 |
+| **Done** | Accepted, integrated, and durably verified | 129 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -168,7 +168,7 @@ flowchart LR
         AR_1657["AR-1657 - Done"]:::status_done
         AR_1658["AR-1658 - Done"]:::status_done
         AR_1659["AR-1659 - Done"]:::status_done
-        AR_1660["AR-1660 - In progress"]:::status_in_progress
+        AR_1660["AR-1660 - Done"]:::status_done
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1662["AR-1662 - Done"]:::status_done
         AR_1664["AR-1664 - Planned"]:::status_planned
@@ -735,12 +735,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
-| P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | ar1660-root-qualification | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 | P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | ar1675_manifest_qualification | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
 
 ### Open (1)
@@ -786,7 +785,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (128)
+### Done (129)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -896,6 +895,7 @@ flowchart LR
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Unclaimed | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. |
 | P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Unclaimed | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. |
 | P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Unclaimed | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. |
+| P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Unclaimed | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Unclaimed | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
 | P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | Unclaimed | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Release after exact current-main channel matrix evidence and doctor reconciliation. |
