@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1623](tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. | ar1623-current-main-gate |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact repair head 3b3a975 routes all install/status/launch lifecycle calls through explicit asb-tui executable; ASB is provenance-only. Fresh checks 37247232171/37247232271 are running; obtain independent review before merge. Installed parity remains fail-closed pending compatible ASB bundle. | ar1657-compat-matrix-20261005 |
 
 ## Open
@@ -14,7 +15,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. | - |
-| P0 | [AR-1623](tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. | - |
 
 ## Blocked
 
