@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 5 active status categories.
+**159 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 30 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 124 |
+| **Done** | Accepted, integrated, and durably verified | 125 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -165,7 +165,7 @@ flowchart LR
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
         AR_1656["AR-1656 - Done"]:::status_done
-        AR_1657["AR-1657 - In progress"]:::status_in_progress
+        AR_1657["AR-1657 - Done"]:::status_done
         AR_1658["AR-1658 - Open"]:::status_open
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
@@ -735,12 +735,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -790,7 +784,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (124)
+### Done (125)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -897,6 +891,7 @@ flowchart LR
 | P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Unclaimed | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Unclaimed | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
 | P0 | [AR-1688](tasks/AR-1688.md): TUI runner-owned cassette capture and replay qualification | Unclaimed | Verify TUI selection-driven recording and strict offline replay consume runner-owned sealed cassettes. | No further action; exact post-merge TUI runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded in the linked receipt. |
