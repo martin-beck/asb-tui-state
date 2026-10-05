@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 20 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 133 |
+| **Done** | Accepted, integrated, and durably verified | 134 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -204,7 +204,7 @@ flowchart LR
         AR_1702["AR-1702 - Done"]:::status_done
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
-        AR_1705["AR-1705 - In progress"]:::status_in_progress
+        AR_1705["AR-1705 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -736,14 +736,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; tmux and script PTYs reproduced development_launch_failed, so investigate the development broker/child launch host limitation. |
 | P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | ar1678-host-preflight | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Add a bounded host/toolchain preflight screen and human/JSON diagnostics, then qualify retry, cleanup, and rollback against exact ASB/TUI heads. |
-| P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | ar1705_openrouter_qualification | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | Independent review of receipt and exact paired provenance; then release AR-1705 with credential-unavailable limitation explicit. |
 
 ### Blocked (2)
 
@@ -777,7 +776,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (133)
+### Done (134)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -905,6 +904,7 @@ flowchart LR
 | P0 | [AR-1701](tasks/AR-1701.md): TUI live benchmark control and progress | Unclaimed | Let the TUI explicitly launch a real OpenRouter benchmark for selected/all configured agents and display bounded progress, provider/model identity, and typed failures. | Await exact-main post-merge Repository Quality 37242182799 and Trusted main verification 37242182759 at merge SHA 0722db13; release AR-1701 only after both terminal green, documenting ASB live-admission boundary. |
 | P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Unclaimed | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Obtain independent review approval for PR #267 head e9e2104; then protected-merge, rerun exact-main quickstart, record merged-head receipt, and release. |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Unclaimed | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. |
+| P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Unclaimed | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | Independent review of receipt and exact paired provenance; then release AR-1705 with credential-unavailable limitation explicit. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
