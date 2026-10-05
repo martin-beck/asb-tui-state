@@ -25,8 +25,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `coverage-repair` | `repair/ar1611-coverage-followup` | `ac3c2656d819` | 0 | behind 194, ahead 0 |
 | `tui-1622` | `feature/ar-1622-quickstart` | `13f16067bfaf` | 0 | behind 8, ahead 0 |
 | `tui-1625` | `feature/ar-1625-tui-coverage` | `308eabc6347f` | 0 | behind 169, ahead 0 |
-| `tui-1657` | `feature/ar-1657-compat-matrix` | `3b3a975eb06c` | 3 | behind 0, ahead 6 |
-| changed files | - | - | - | `docs/qualification/agent-provider-model-matrix.md`, `tools/run-agent-provider-matrix.py`, `tools/test-agent-provider-matrix.py` |
+| `tui-1657` | `feature/ar-1657-compat-matrix` | `1e7de688c967` | 0 | behind 0, ahead 7 |
 | `_ar1615-tui` | `DETACHED` | `867d302a8a9f` | 0 | behind 175, ahead 0 |
 | `_ar1615-tui-a5` | `DETACHED` | `a5eda0bc4ce3` | 0 | behind 168, ahead 0 |
 | `_pr218-verify` | `DETACHED` | `7b2333ecfdbb` | 0 | behind 165, ahead 0 |
