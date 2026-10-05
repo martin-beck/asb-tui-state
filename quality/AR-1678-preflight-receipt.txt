@@ -1,0 +1,23 @@
+AR: AR-1678
+Status: IN_PROGRESS (development/mock implementation; hosted review pending)
+Product scope: standalone asb-tui only; no ASB source changed.
+
+Implementation:
+- PR #271, current signed+DCO head e0bda68;
+- exact branch base origin/main: 795e085;
+- bounded `development_preflight::run()` checks git, cargo, setsid, cc, and
+  private install-root path without exposing secrets or host paths;
+- stable JSON `Report` and matching human remediation lines;
+- development broker startup runs the preflight before UI startup and exits
+  with typed remediation when checks fail;
+- strict `development_launched` success semantics are unchanged.
+
+Focused evidence:
+- `cargo fmt --check`: passed;
+- `cargo test --locked development_preflight --no-fail-fast`: 2 passed;
+- commit signature: SSH ED25519 accepted;
+- hosted Repository Quality checks are queued/in progress;
+- independent review is pending.
+
+The implementation does not convert `development_launch_failed` into success.
+No release is claimed until hosted checks and independent review complete.
