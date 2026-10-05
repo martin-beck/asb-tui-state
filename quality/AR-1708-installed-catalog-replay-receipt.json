@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1708",
+  "classification": "development/mock",
+  "credentials": "none",
+  "network": {
+    "catalog_and_replay": "offline/denied",
+    "provider": "not contacted",
+    "install_materialization": "covered by the installed-entrypoint gate"
+  },
+  "installed_entrypoint": {
+    "install": "asb tui install",
+    "launch": "asb tui",
+    "boundary": "top-level ASB command boundary; no internal TUI binary invocation",
+    "paired_cross_repository_qualification": "passed"
+  },
+  "journey": {
+    "catalog_activation": "authenticated recording dispatch requests and validates a digest-only catalog once per campaign generation",
+    "selection": "catalog-fenced cassette selection passed",
+    "replay": "strict offline replay passed; live fallback denied",
+    "privacy": "cassette bytes, raw responses, and credentials are not retained"
+  },
+  "local_tests": {
+    "recording_dispatch": "14 passed",
+    "benchmark_route": "9 passed",
+    "development_qualification": "2 passed"
+  },
+  "provenance": {
+    "tui_commit": "525c601fbbd67c3ae3db03d597f90e79a45645d1",
+    "tui_tree": "f3a098f91ee5d67e417c38653b303844ca193e3f",
+    "asb_commit": "5ab8a50d7d9783033d4fbfe0d3e51dcaa236a4ea",
+    "asb_tree": "1da63bb1a68d377f16dd979e0e0884211c5f4fa2",
+    "paired_hosted_run": "37265679608",
+    "paired_hosted_result": "success",
+    "paired_test": "tui::tests::pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up"
+  },
+  "scope_note": "Development-only qualification. Public release remains fail-closed by the channel policy."
+}
