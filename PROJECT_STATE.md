@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #264 | `feature/ar-1702-live-capture@41d19d927429` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | fix: complete live capture and offline replay flow |
+| #264 | `feature/ar-1702-live-capture@41d19d927429` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: complete live capture and offline replay flow |
 | #265 | `feature/ar-1657-compat-matrix@467af1a0c945` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add agent provider compatibility matrix runner |
 
 ## Recent workflows
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37245856851 | `467af1a0c945` | pull_request | AWQ shadow observation | completed:success |
 | 37245856767 | `467af1a0c945` | pull_request | Repository quality | in_progress:- |
-| 37245794656 | `41d19d927429` | pull_request | AWQ shadow observation | in_progress:- |
+| 37245794656 | `41d19d927429` | pull_request | AWQ shadow observation | completed:success |
 | 37245794460 | `41d19d927429` | pull_request | Repository quality | completed:success |
 | 37245786664 | `7cf2f993b0df` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37245786286 | `7cf2f993b0df` | pull_request | Repository quality | completed:cancelled |
