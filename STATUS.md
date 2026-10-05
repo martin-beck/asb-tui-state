@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**162 ARs tracked** across 5 active status categories.
+**163 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 16 |
+| **Planned** | Defined work awaiting promotion or dependencies | 18 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 139 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -132,7 +132,7 @@ flowchart LR
         AR_1621["AR-1621 - Done"]:::status_done
         AR_1622["AR-1622 - Done"]:::status_done
         AR_1623["AR-1623 - Done"]:::status_done
-        AR_1624["AR-1624 - In progress"]:::status_in_progress
+        AR_1624["AR-1624 - Planned"]:::status_planned
         AR_1625["AR-1625 - Done"]:::status_done
         AR_1626["AR-1626 - Done"]:::status_done
         AR_1627["AR-1627 - Done"]:::status_done
@@ -208,6 +208,7 @@ flowchart LR
         AR_1706["AR-1706 - Done"]:::status_done
         AR_1707["AR-1707 - In progress"]:::status_in_progress
         AR_1708["AR-1708 - Planned"]:::status_planned
+        AR_1713["AR-1713 - Planned"]:::status_planned
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -572,6 +573,7 @@ flowchart LR
     AR_1706 --> AR_1703
     AR_1706 --> AR_1707
     AR_1707 --> AR_1708
+    AR_1708 --> AR_1713
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -747,16 +749,16 @@ flowchart LR
 | [AR-1705](tasks/AR-1705.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
 | [AR-1706](tasks/AR-1706.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | [AR-1703](tasks/AR-1703.md), [AR-1707](tasks/AR-1707.md) |
 | [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md) |
-| [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | None |
+| [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | [AR-1713](tasks/AR-1713.md) |
+| [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | None |
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | ar1707_revision_formal_gate | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. |
-| P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | ar1624-awq-awc-gate | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 
 ### Open (3)
 
@@ -773,7 +775,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (16)
+### Planned (18)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -793,6 +795,8 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Unclaimed | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed &#96;asb tui install&#96; followed by bare &#96;asb tui&#96; qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Consume the ASB AR-1710/1711/1712 live-run and recording/comparison contracts through the installed asb tui journey; qualify explicit online mode, selected/all capture, strict offline replay, comparison, and typed unavailable diagnostics. |
+| P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 
 ### Done (139)
 
