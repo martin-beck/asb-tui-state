@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #271 | `feature/ar-1678-host-preflight@7bb02709bdd9` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(preflight): add bounded development host diagnostics |
+| #271 | `feature/ar-1678-host-preflight@7bb02709bdd9` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | feat(preflight): add bounded development host diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37255825948 | `7bb02709bdd9` | pull_request | Repository quality | in_progress:- |
-| 37255825940 | `7bb02709bdd9` | pull_request | AWQ shadow observation | in_progress:- |
+| 37255825940 | `7bb02709bdd9` | pull_request | AWQ shadow observation | completed:failure |
 | 37255471987 | `4a56d8024969` | pull_request | AWQ shadow observation | completed:failure |
 | 37255471877 | `4a56d8024969` | pull_request | Repository quality | completed:failure |
 | 37254978857 | `e0bda6871209` | pull_request | AWQ shadow observation | completed:failure |
