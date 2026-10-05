@@ -4,7 +4,7 @@ Product scope: standalone asb-tui only; no ASB source changed.
 
 Implementation:
 - PR #271, current signed+DCO repair head 1902beb;
-- PR #272, signed+DCO coverage repair head df65755, based on merged main 68d9a78;
+- PR #272, signed+DCO coverage repair head 672a899, based on merged main 68d9a78;
 - exact branch base origin/main: 795e085;
 - bounded `development_preflight::run()` checks git, cargo, setsid, cc, PTY
   contract, and private install-root ownership/mode without exposing secrets
@@ -26,6 +26,8 @@ Focused evidence:
 - PR #272 focused preflight coverage tests: 4 passed;
 - `docs/ui-module-inventory.json` classifies `src/development_preflight.rs` as a
   development-only non-UI preflight exemption with an explicit owner rationale;
+- the inventory responsibility now explicitly records the preflight branch-coverage
+  ownership, satisfying the changed-module/UI-inventory coupling check;
 - explicit `ASB_TUI_DEV_*` absolute tool overrides are honored and validated
   when PATH is intentionally unavailable;
 - launch PTY validation considers the attached output PTY used by broker mode;
