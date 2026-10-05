@@ -1,0 +1,41 @@
+AR: AR-1623
+Classification: development/mock; credentials none; benchmark/replay network denied.
+
+Exact paired heads:
+- ASB commit 401253e53160dc51b39b6618c2b2459cba569c7f
+- ASB tree bf0282db3a2785fc78b7ce970efa859deb3bcff3
+- TUI commit 663184064bc27794d432f1b92b5dce8079961305
+- TUI tree 8d42cffe7ea928bb6a0ff4029936b20cb940f599
+
+Fresh current-main quickstart receipt SHA-256:
+603683c5749982ee3265d61520fb3dfdef54e7aa96280c40c3f5a371d4269830
+
+Fresh channel matrix receipt SHA-256:
+128cd34487ff57319079489bd9cb5bdcf96677558563eb0c8d57afb231192868
+
+Quickstart evidence:
+- development install, status, restart, and launch passed;
+- provider/onboarding, selected/all capture, strict offline replay, comparison, and analysis passed;
+- tamper-negative manifest rejection passed;
+- future stable/nightly/experimental channels rejected without fallback;
+- authentication absent and network denied for benchmark/replay.
+
+Channel matrix evidence:
+- omitted/explicit dev selection and persistence passed;
+- future-channel diagnostics passed;
+- failed upgrade preserved the prior installation and returned development_command_failed;
+- removal passed;
+- malformed manifest rejection passed.
+
+Release blocker:
+- exact-main Trusted Main run 37246280630 failed at TUI head 663184064bc27794d432f1b92b5dce8079961305;
+- Repository Quality run 37246280716 passed;
+- Trusted coverage reported 90.00% lines with fail-under-lines still exiting 1.
+
+Post-merge repair verification:
+- coverage repair PR #268 merged as 2e4bade9ec5306131a58ec3ac061f6c19b42dc2a;
+- exact-main Repository Quality 37247991100 passed;
+- exact-main Trusted Main 37247991040 passed.
+
+The qualification run and repaired exact-main gates are complete. This is
+development/mock evidence only; no production release status was changed.
