@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #276 | `feature/ar-1707-revision-formal-gate@38816075942c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(formal): fence wizard revisions across handoff |
+| #276 | `feature/ar-1707-revision-formal-gate@38816075942c` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(formal): fence wizard revisions across handoff |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37263133457 | `38816075942c` | pull_request | AWQ shadow observation | in_progress:- |
-| 37263133233 | `38816075942c` | pull_request | Repository quality | in_progress:- |
+| 37263133457 | `38816075942c` | pull_request | AWQ shadow observation | completed:failure |
+| 37263133233 | `38816075942c` | pull_request | Repository quality | completed:failure |
 | 37262495206 | `15e864e7c4c8` | push | Trusted main verification | completed:failure |
 | 37262495195 | `15e864e7c4c8` | push | Repository quality | completed:success |
 | 37261779352 | `18eabc08250b` | pull_request | AWQ shadow observation | completed:success |
