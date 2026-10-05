@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | - |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. | - |
 
 ## Blocked
@@ -30,7 +31,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | - |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. | - |
 | P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. | - |
