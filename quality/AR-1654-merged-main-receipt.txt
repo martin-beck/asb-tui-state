@@ -1,0 +1,27 @@
+AR: AR-1654
+Status: BLOCKED (strict development/mock qualification)
+Product scope: standalone asb-tui only; no ASB source changed.
+
+Exact merged-main binding:
+- TUI commit: 478e1452ddd7f0739b5c3447609fe77b180db9a5;
+- TUI tree: cd7b54cc46ba16692332949894f3001c58a72d21;
+- PR: #270;
+- exact-main Repository Quality: 37252903372 passed;
+- exact-main Trusted Main: 37252903370 passed.
+
+Strict runner evidence:
+- runner: tools/run-operator-quickstart.py;
+- private development bundle and exact embedded commit/tree provenance verified;
+- `asb tui install`: development bundle consumed successfully;
+- human and JSON install projections were checked;
+- bare `asb tui`: reached the development launch route but returned the typed
+  `development_launch_failed` product failure under this host's PTY;
+- strict runner rejected the result and emitted no passing AR receipt;
+- wizard, benchmark, recording/replay, comparison suites had passed locally,
+  but they do not override the failed public launch gate.
+
+Disposition:
+AR-1654 must remain pending until a terminal-capable worker produces
+`development_launched` through the public bare `asb tui` route. This is
+development/mock evidence only; no authentication, signing, or production
+release claim is implied.
