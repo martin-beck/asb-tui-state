@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #267 | `repair/ar-1702-selection-entrypoint@a91c337b554c` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: harden installed entrypoint and workload scope |
-| #270 | `feature/ar-1654-operator-quickstart@fffa2a08f954` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | feat(quickstart): qualify top-level asb tui journey |
+| #270 | `feature/ar-1654-operator-quickstart@fffa2a08f954` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(quickstart): qualify top-level asb tui journey |
 
 ## Recent workflows
 
