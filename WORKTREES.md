@@ -203,9 +203,11 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 204, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 91, ahead 0 |
 | `asb-tui-ar1654-impl.IYBF5J` | `ar-1654-operator-quickstart` | `42cf1e585969` | 0 | behind 8, ahead 0 |
-| `asb-tui-ar1654-main.H7WAyh` | `ar-1678-host-preflight` | `1902beb98fd1` | 0 | behind 1, ahead 0 |
+| `asb-tui-ar1654-main.H7WAyh` | `ar-1678-coverage` | `68d9a787b667` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/development_preflight.rs` |
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar1675` | `feature/ar-1675-manifest-diagnostics` | `9eaa2f5e0956` | 0 | behind 10, ahead 0 |
+| `asb-tui-ar1693` | `DETACHED` | `68d9a787b667` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `e9e21047d32a` | 0 | behind 4, ahead 0 |
 | `asb-tui-ar1705` | `DETACHED` | `795e0851926f` | 0 | behind 3, ahead 0 |
 | `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 9, ahead 0 |
