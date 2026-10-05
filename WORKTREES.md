@@ -202,8 +202,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 164, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 182, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 69, ahead 0 |
-| `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `3e4dfc4303f3` | 5 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/selection.rs`, `tests/benchmark_selection.rs`, `tests/formal_state.rs` |
+| `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `3e4dfc4303f3` | 7 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/formal_state.rs`, `src/selection.rs`, `tests/benchmark_selection.rs`, `tests/formal_state.rs`, `tests/top_level.rs` |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 0, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 1, ahead 2 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 186, ahead 1 |
