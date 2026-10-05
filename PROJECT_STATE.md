@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #276 | `feature/ar-1707-revision-formal-gate@38816075942c` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | feat(formal): fence wizard revisions across handoff |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37263133457 | `38816075942c` | pull_request | AWQ shadow observation | queued:- |
+| 37263133233 | `38816075942c` | pull_request | Repository quality | in_progress:- |
 | 37262495206 | `15e864e7c4c8` | push | Trusted main verification | completed:failure |
 | 37262495195 | `15e864e7c4c8` | push | Repository quality | completed:success |
 | 37261779352 | `18eabc08250b` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37260059944 | `a73813008679` | pull_request | Repository quality | completed:success |
 | 37260049271 | `30c61511a19f` | workflow_dispatch | AWQ shadow observation | completed:success |
 | 37260047358 | `30c61511a19f` | workflow_dispatch | Repository quality | completed:success |
-| 37260040953 | `30c61511a19f` | pull_request | AWQ shadow observation | completed:cancelled |
-| 37260040701 | `30c61511a19f` | pull_request | Repository quality | completed:cancelled |
