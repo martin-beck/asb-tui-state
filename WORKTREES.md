@@ -210,6 +210,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `e9e21047d32a` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar1705` | `DETACHED` | `795e0851926f` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar1706` | `DETACHED` | `fe22d5e38e02` | 0 | behind 1, ahead 0 |
+| `asb-tui-ar1707` | `DETACHED` | `19da04edff0d` | 0 | behind 0, ahead 0 |
 | `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 13, ahead 0 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 26, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 27, ahead 2 |
