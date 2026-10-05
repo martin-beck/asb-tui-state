@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 33 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 120 |
+| **Done** | Accepted, integrated, and durably verified | 121 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -151,7 +151,7 @@ flowchart LR
         AR_1640["AR-1640 - Done"]:::status_done
         AR_1641["AR-1641 - Done"]:::status_done
         AR_1642["AR-1642 - Done"]:::status_done
-        AR_1643["AR-1643 - In progress"]:::status_in_progress
+        AR_1643["AR-1643 - Done"]:::status_done
         AR_1644["AR-1644 - Done"]:::status_done
         AR_1645["AR-1645 - Done"]:::status_done
         AR_1646["AR-1646 - Done"]:::status_done
@@ -735,12 +735,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
-| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | ar1643-quickstart-runner | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 updated with signed merge 467af1a onto current main 873cc2f after PR #266; fresh checks 37245856767 and 37245856851 are running. Obtain independent review of exact head, then merge only after checks pass. Installed asb tui parity remains fail-closed and requires a compatible ASB bundle. |
 
 ### Open (1)
@@ -794,7 +793,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (120)
+### Done (121)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -887,6 +886,7 @@ flowchart LR
 | P0 | [AR-1640](tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1641](tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
 | P0 | [AR-1642](tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
+| P0 | [AR-1643](tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
 | P0 | [AR-1644](tasks/AR-1644.md): TUI terminal launch preflight | Unclaimed | Make TUI terminal selection/preflight clear and runnable for a fresh user while preserving the PTY contract. | No further action; merged TUI PR #223 and hosted PTY/UI-quality checks are green. |
 | P0 | [AR-1645](tasks/AR-1645.md): Setup-to-runtime configuration bridge | Unclaimed | Make persisted setup selections directly drive benchmark planning and execution. | No further action; paired ASB setup-to-plan/run bridge is merged and reviewed. |
 | P0 | [AR-1646](tasks/AR-1646.md): Development capture and replay route | Unclaimed | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. |
