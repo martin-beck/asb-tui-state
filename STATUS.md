@@ -579,7 +579,7 @@ flowchart LR
     AR_1707 --> AR_1708
     AR_1708 --> AR_1713
     AR_1713 --> AR_1714
-    AR_1713 --> AR_1720
+    AR_1720 --> AR_1713
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -756,9 +756,9 @@ flowchart LR
 | [AR-1706](tasks/AR-1706.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | [AR-1703](tasks/AR-1703.md), [AR-1707](tasks/AR-1707.md) |
 | [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md) |
 | [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | [AR-1713](tasks/AR-1713.md) |
-| [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | [AR-1714](tasks/AR-1714.md), [AR-1720](tasks/AR-1720.md) |
+| [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md), [AR-1720](tasks/AR-1720.md) | [AR-1714](tasks/AR-1714.md) |
 | [AR-1714](tasks/AR-1714.md) | [AR-1575](tasks/AR-1575.md), [AR-1703](tasks/AR-1703.md), [AR-1713](tasks/AR-1713.md) | None |
-| [AR-1720](tasks/AR-1720.md) | [AR-1713](tasks/AR-1713.md) | None |
+| [AR-1720](tasks/AR-1720.md) | None | [AR-1713](tasks/AR-1713.md) |
 
 ## Complete AR inventory
 
@@ -777,7 +777,7 @@ flowchart LR
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Release remains held at current main f3fdafd: rerun ASB AR-1597 matrix in a host capable of unshare --net (or approved equivalent isolated runner), then attach matrix-linked TUI receipt; current sandbox returns EPERM and runner correctly fails closed. |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification after the ASB router and live contracts are available; current renderer-neutral seams are qualified. |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | After AR-1720 promotes the TUI v1.15 catalog bridge, complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification; current renderer-neutral seams are qualified. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
 ### Planned (13)
@@ -796,7 +796,7 @@ flowchart LR
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Await external ASB AR-1719 implementation and exact-head provider-catalog evidence, plus local AR-1713 readiness; then promote the paired v1.15 ControlServer catalog bridge. |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Promote the TUI v1.15 ControlServer catalog bridge after consuming merged ASB AR-1719 contract evidence; retain the installed paired journey as an acceptance gate and leave AR-1713 blocked until that gate is qualified. |
 
 ### Done (144)
 
