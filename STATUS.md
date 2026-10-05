@@ -275,6 +275,7 @@ flowchart LR
     AR_1342 --> AR_1343
     AR_1343 --> AR_1344
     AR_1344 --> AR_1345
+    AR_1575 --> AR_1703
     AR_1579 --> AR_1588
     AR_1579 --> AR_1599
     AR_1580 --> AR_1581
@@ -618,7 +619,7 @@ flowchart LR
 | [AR-1343](tasks/AR-1343.md) | [AR-1342](tasks/AR-1342.md) | [AR-1344](tasks/AR-1344.md) |
 | [AR-1344](tasks/AR-1344.md) | [AR-1343](tasks/AR-1343.md) | [AR-1345](tasks/AR-1345.md) |
 | [AR-1345](tasks/AR-1345.md) | [AR-1344](tasks/AR-1344.md) | None |
-| [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | None |
+| [AR-1575](tasks/AR-1575.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md) | [AR-1703](tasks/AR-1703.md) |
 | [AR-1579](tasks/AR-1579.md) | None | [AR-1588](tasks/AR-1588.md), [AR-1599](tasks/AR-1599.md) |
 | [AR-1580](tasks/AR-1580.md) | [AR-1584](tasks/AR-1584.md) | [AR-1581](tasks/AR-1581.md), [AR-1583](tasks/AR-1583.md) |
 | [AR-1581](tasks/AR-1581.md) | [AR-1580](tasks/AR-1580.md), [AR-1584](tasks/AR-1584.md), [AR-1585](tasks/AR-1585.md) | [AR-1582](tasks/AR-1582.md), [AR-1583](tasks/AR-1583.md), [AR-1586](tasks/AR-1586.md) |
@@ -729,7 +730,7 @@ flowchart LR
 | [AR-1700](tasks/AR-1700.md) | [AR-1605](tasks/AR-1605.md), [AR-1656](tasks/AR-1656.md) | [AR-1701](tasks/AR-1701.md), [AR-1703](tasks/AR-1703.md), [AR-1704](tasks/AR-1704.md) |
 | [AR-1701](tasks/AR-1701.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | [AR-1702](tasks/AR-1702.md), [AR-1703](tasks/AR-1703.md), [AR-1705](tasks/AR-1705.md) |
 | [AR-1702](tasks/AR-1702.md) | [AR-1677](tasks/AR-1677.md), [AR-1701](tasks/AR-1701.md) | [AR-1703](tasks/AR-1703.md), [AR-1705](tasks/AR-1705.md) |
-| [AR-1703](tasks/AR-1703.md) | [AR-1654](tasks/AR-1654.md), [AR-1700](tasks/AR-1700.md), [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
+| [AR-1703](tasks/AR-1703.md) | [AR-1575](tasks/AR-1575.md), [AR-1654](tasks/AR-1654.md), [AR-1700](tasks/AR-1700.md), [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
 | [AR-1704](tasks/AR-1704.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | None |
 | [AR-1705](tasks/AR-1705.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
 
@@ -771,7 +772,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Unclaimed | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
 | P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Unclaimed | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final receipt 2bcd1098 proves the default-dev journey only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. |
-| P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote after the provider, live-run, and capture/comparison ARs are released; run the clean-room paired command journey and publish the exact-head receipt. |
+| P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
