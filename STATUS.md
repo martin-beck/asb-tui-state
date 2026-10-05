@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 5 active status categories.
+**159 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 24 |
 | **Future** | Deferred roadmap work | 0 |
@@ -180,7 +180,7 @@ flowchart LR
         AR_1673["AR-1673 - Planned"]:::status_planned
         AR_1674["AR-1674 - Done"]:::status_done
         AR_1675["AR-1675 - Done"]:::status_done
-        AR_1676["AR-1676 - Open"]:::status_open
+        AR_1676["AR-1676 - In progress"]:::status_in_progress
         AR_1677["AR-1677 - Planned"]:::status_planned
         AR_1678["AR-1678 - Planned"]:::status_planned
         AR_1685["AR-1685 - Planned"]:::status_planned
@@ -735,18 +735,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | Unclaimed | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Final paired evidence is recorded at ASB 502254bd/TUI c9777ed3 (TUI matrix 11; paired counts TUI compatibility 9, release discovery 5, top-level lifecycle 10, ASB lifecycle 5, including ASB previous-release restoration); keep planned until coordinator dependencies reconcile, then promote only with the receipt. |
+| P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | ar1676_channel_matrix | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Final paired evidence is recorded at ASB 502254bd/TUI c9777ed3 (TUI matrix 11; paired counts TUI compatibility 9, release discovery 5, top-level lifecycle 10, ASB lifecycle 5, including ASB previous-release restoration); keep planned until coordinator dependencies reconcile, then promote only with the receipt. |
 
 ### Blocked (2)
 
