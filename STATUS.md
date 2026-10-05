@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 5 active status categories.
+**159 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 20 |
 | **Future** | Deferred roadmap work | 0 |
@@ -182,7 +182,7 @@ flowchart LR
         AR_1675["AR-1675 - Done"]:::status_done
         AR_1676["AR-1676 - Done"]:::status_done
         AR_1677["AR-1677 - Done"]:::status_done
-        AR_1678["AR-1678 - Open"]:::status_open
+        AR_1678["AR-1678 - In progress"]:::status_in_progress
         AR_1685["AR-1685 - Planned"]:::status_planned
         AR_1686["AR-1686 - Planned"]:::status_planned
         AR_1687["AR-1687 - Planned"]:::status_planned
@@ -735,19 +735,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; tmux and script PTYs reproduced development_launch_failed, so investigate the development broker/child launch host limitation. |
+| P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | ar1678-host-preflight | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Add a bounded host/toolchain preflight screen and human/JSON diagnostics, then qualify retry, cleanup, and rollback against exact ASB/TUI heads. |
 | P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | ar1705_openrouter_qualification | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | Promote after AR-1701 and AR-1702 are released; run the exact paired installed journey and credential-free/provider-failure matrix. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | Unclaimed | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Add a bounded host/toolchain preflight screen and human/JSON diagnostics, then qualify retry, cleanup, and rollback against exact ASB/TUI heads. |
 
 ### Blocked (2)
 
