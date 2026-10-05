@@ -203,6 +203,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 192, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 79, ahead 0 |
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1675` | `feature/ar-1675-manifest-diagnostics` | `1c476df4848b` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `a91c337b554c` | 0 | behind 0, ahead 3 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 10, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 11, ahead 2 |
