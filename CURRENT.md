@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | ar1575-final-qual-20261005 |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. | ar1654-operator-quickstart |
-| P0 | [AR-1677](tasks/AR-1677.md): Channel-aware TUI quickstart and release gate | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey preserve and explain the selected channel end to end. | Final paired receipt at ASB 502254bd/TUI c9777ed3 proves the matrix-before-quickstart gate, provider/model setup, selected/all capture, strict offline replay, comparison, and analysis; keep planned until AR-1676 and AR-1660 dependency reconciliation permits promotion. | ar1677_quickstart_gate |
+| P0 | [AR-1677](tasks/AR-1677.md): Channel-aware TUI quickstart and release gate | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey preserve and explain the selected channel end to end. | Release after independent receipt review and live doctor reconciliation. | ar1677_quickstart_gate |
 
 ## Blocked
 
