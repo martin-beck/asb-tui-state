@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. | ar1659-current-head-qualification |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -165,6 +159,7 @@ Never edit this file directly.
 | P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. | - |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. | - |
 | P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. | - |
+| P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. | - |
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. | - |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. | - |
 | P0 | [AR-1688](tasks/AR-1688.md): TUI runner-owned cassette capture and replay qualification | Verify TUI selection-driven recording and strict offline replay consume runner-owned sealed cassettes. | No further action; exact post-merge TUI runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded in the linked receipt. | - |
