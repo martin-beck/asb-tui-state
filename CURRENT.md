@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1623](tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Repair exact-main Trusted coverage at TUI head 663184064bc27794d432f1b92b5dce8079961305 (run 37246280630), rerun the Trusted gate to green, then release AR-1623 using the recorded current-head qualification receipt. | ar1623-current-main-gate |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact repair head 3b3a975 routes all install/status/launch lifecycle calls through explicit asb-tui executable; ASB is provenance-only. Fresh checks 37247232171/37247232271 are running; obtain independent review before merge. Installed parity remains fail-closed pending compatible ASB bundle. | ar1657-compat-matrix-20261005 |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1e7de68 now queries paired ASB provider-catalog and fails closed on missing selectable choices. Fresh checks 37247836951/37247837114 are running; obtain independent review before merge. Current ASB catalog mismatch (openai/gpt-5.2 absent from TUI development matrix) remains an explicit qualification blocker. | ar1657-compat-matrix-20261005 |
 
 ## Open
 
