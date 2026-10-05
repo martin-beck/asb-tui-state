@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed `asb tui install` followed by bare `asb tui` qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. | ar1708_installed_qualification |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -180,6 +174,7 @@ Never edit this file directly.
 | P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | No further TUI implementation; retain the credential-unavailable limitation and pair with ASB AR-1702 when its credential-backed smoke is promoted and completed. | - |
 | P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | No further action; installed PTY/control qualification is recorded, and the follow-up catalog/revision repair merged as 19da04ed with exact-main checks green. | - |
 | P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | PR #276 merged as 525c601f; after exact-main Trusted Main 37265424193 and Repository Quality 37265424191 finish green, record the formal-gate receipt and release AR-1707. | - |
+| P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed `asb tui install` followed by bare `asb tui` qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. | - |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. | - |
