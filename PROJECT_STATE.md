@@ -12,12 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #267 | `repair/ar-1702-selection-entrypoint@a91c337b554c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: harden installed entrypoint and workload scope |
 | #269 | `feature/ar-1675-manifest-diagnostics@9eaa2f5e0956` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: report unavailable channel manifests |
-| #270 | `feature/ar-1654-operator-quickstart@cd1a3077553d` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(quickstart): qualify top-level asb tui journey |
+| #270 | `feature/ar-1654-operator-quickstart@13fce8de678d` | `main` | BLOCKED | - | feat(quickstart): qualify top-level asb tui journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37251309876 | `13fce8de678d` | pull_request | AWQ shadow observation | pending:- |
+| 37251309734 | `13fce8de678d` | pull_request | Repository quality | pending:- |
 | 37251254198 | `cd1a3077553d` | pull_request | AWQ shadow observation | in_progress:- |
 | 37251253878 | `cd1a3077553d` | pull_request | Repository quality | in_progress:- |
 | 37250935259 | `9eaa2f5e0956` | pull_request | AWQ shadow observation | completed:success |
@@ -28,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37249421779 | `a91c337b554c` | pull_request | Repository quality | completed:success |
 | 37249187739 | `ee0fbb3ec18d` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37249187605 | `ee0fbb3ec18d` | pull_request | Repository quality | completed:cancelled |
-| 37248948396 | `2f1c34b7bf04` | push | Trusted main verification | completed:success |
-| 37248948327 | `2f1c34b7bf04` | push | Repository quality | completed:success |
