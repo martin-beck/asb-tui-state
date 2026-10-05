@@ -50,3 +50,15 @@ Disposition
 AR-1624 cannot be released from this audit. Keep it in progress pending a
 coverage repair/requalification on exact main and terminal-green Repository
 Quality plus Trusted Main checks. No ASB files or repository were modified.
+
+Final requalification update (2026-10-05)
+-------------------------------------------
+- Current asb-tui origin/main is now
+  `525c601fbbd67c3ae3db03d597f90e79a45645d1` (tree
+  `f3a098f91ee5d67e417c38653b303844ca193e3f`).
+- Trusted Main run `37265424193` is green at that exact head.
+- Repository Quality run `37265424191` is green at that exact head.
+- Coordinator reconciliation commit `dcdfd68` and `handoffctl doctor --live`
+  pass after the concurrent state updates were reconciled.
+- The earlier coverage failure is superseded by these exact-head green checks;
+  the gate is now complete and eligible for release.
