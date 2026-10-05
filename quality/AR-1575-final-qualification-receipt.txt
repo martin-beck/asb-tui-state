@@ -1,0 +1,36 @@
+AR-1575 final qualification receipt
+Date: 2026-10-05
+Classification: development-only qualification; no production release claim
+
+Exact source heads qualified
+- ASB main: 401253e53160dc51b39b6618c2b2459cba569c7f
+  tree: bf0282db3a2785fc78b7ce970efa859deb3bcff3
+- asb-tui main: 2f1c34b7bf04664b707014ca21f19d9d995bc130
+  tree: 1a3ea9bee8d9bf6a388d83848540f4f00ce837d3
+
+Evidence
+- Fresh disposable clones; ASB release build passed.
+- asb-tui release build passed.
+- ASB tui_lifecycle exact-main tests: 5 passed; ignored set contained 0 tests.
+- asb-tui exact-main cargo test: 358 unit tests, 3 binary tests, and all
+  integration/doc tests passed (including development journey, formal model,
+  lifecycle, PTY broker handoff, and wizard suites).
+- Isolated credential-free bundle install succeeded with exact provenance:
+  source commit/tree above, ASB commit/tree above, executable SHA-256
+  eea9a1845bfab98853ba2eb209d29210172a25d598fdf9a0614a51bcfd6eac66,
+  channel manifest SHA-256
+  3314d3956a82acc084fe439dfc2e5ad168619ccbc28ff9f4e3b650df939fb64d.
+- Isolated status and doctor succeeded offline with network=denied and typed
+  development-only warnings; no credentials or provider traffic were used.
+
+Blocking finding
+- Live `asb tui install` materialization on the exact ASB main fails with the
+  typed `dev_command_failed` result. Reproduction of its bounded build command
+  with env_clear shows linker `cc` not found: the router supplies absolute CC
+  metadata but clears PATH, while rust/cargo build scripts invoke `cc` by name.
+  This is an ASB-side repair, outside AR-1575 and outside this qualification's
+  allowed scope. Bundle consumption is proven, but the required clean live
+  materialization and bare installed `asb tui` journey cannot be declared green
+  until that ASB router repair lands and is re-qualified.
+
+Terminal state: blocked; do not release AR-1575 as done.
