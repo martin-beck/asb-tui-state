@@ -202,7 +202,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 177, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 195, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 82, ahead 0 |
-| `asb-tui-ar1654-impl.IYBF5J` | `ar-1654-operator-quickstart` | `fffa2a08f954` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar1654-impl.IYBF5J` | `ar-1654-operator-quickstart` | `fffa2a08f954` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/run-operator-quickstart.py`, `tools/test-operator-quickstart.py` |
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 3, ahead 0 |
 | `asb-tui-ar1675` | `feature/ar-1675-manifest-diagnostics` | `9eaa2f5e0956` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `a91c337b554c` | 0 | behind 3, ahead 3 |
