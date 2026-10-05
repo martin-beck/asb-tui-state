@@ -1,0 +1,48 @@
+AR-1707 formal revision and UI gate receipt
+============================================
+
+Qualification scope
+-------------------
+The standalone asb-tui formal gate covers provisional, committed, stale,
+superseded, and unavailable revision outcomes. Revision admission is fenced
+by the complete catalog/channel/provider/model/source identity tuple. The
+formal model also records the required top-level qualification boundary:
+`asb tui install` followed by bare `asb tui`; an internal binary launch is
+not equivalent.
+
+Implementation and merge
+------------------------
+- Repository: martin-beck/asb-tui
+- Pull request: #276
+- Merge commit: 525c601fbbd67c3ae3db03d597f90e79a45645d1
+- Merge time: 2026-10-05T04:53:27Z
+- Final PR head: 214ebb0fce36a4d92329748ff807717c03cbc58b
+- Commit policy: SSH-signed and DCO-signed
+- Scope: asb-tui only; no ASB repository changes
+
+Exact-head hosted evidence
+--------------------------
+- Repository Quality: run 37265018266 — success
+- AWQ shadow: run 37265018416 — success
+
+Exact-main hosted evidence
+--------------------------
+- Trusted Main verification: run 37265424193 — success
+- Repository Quality: run 37265424191 — success
+
+Local qualification evidence
+----------------------------
+- `cargo clippy --locked --all-targets --all-features -- -D warnings` — passed
+- `cargo test --locked --all-targets` — passed
+- UI model validation: 8 routes, 32 elements — passed
+- UI model tests: 30 passed
+- UI source parity validation — passed
+- UI source parity tests: 3 passed
+- UI help validation: 90 elements — passed
+
+Privacy and boundary checks
+----------------------------
+This receipt contains public repository, commit, pull-request, workflow-run,
+and aggregate test identifiers only. It contains no credentials, host paths,
+private logs, or user data. Development-only missing authentication remains a
+warning; production trust and authorization remain fail-closed.
