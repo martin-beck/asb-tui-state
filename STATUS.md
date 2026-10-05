@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 33 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 121 |
+| **Done** | Accepted, integrated, and durably verified | 122 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -130,7 +130,7 @@ flowchart LR
         AR_1619["AR-1619 - Done"]:::status_done
         AR_1620["AR-1620 - Done"]:::status_done
         AR_1621["AR-1621 - Done"]:::status_done
-        AR_1622["AR-1622 - In progress"]:::status_in_progress
+        AR_1622["AR-1622 - Done"]:::status_done
         AR_1623["AR-1623 - Planned"]:::status_planned
         AR_1624["AR-1624 - Planned"]:::status_planned
         AR_1625["AR-1625 - Done"]:::status_done
@@ -735,11 +735,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | ar1622-quickstart-20261005 | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compat-matrix-20261005 | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact repair head 3b3a975 routes all install/status/launch lifecycle calls through explicit asb-tui executable; ASB is provenance-only. Fresh checks 37247232171/37247232271 are running; obtain independent review before merge. Installed parity remains fail-closed pending compatible ASB bundle. |
 
 ### Open (1)
@@ -793,7 +792,7 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (121)
+### Done (122)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -868,6 +867,7 @@ flowchart LR
 | P0 | [AR-1619](tasks/AR-1619.md): Cross-repository lifecycle protocol repair | Unclaimed | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. | Released after paired protected-main merges; retain protocol receipt for final handshake qualification. |
 | P0 | [AR-1620](tasks/AR-1620.md): Development bundle integrity and ASB integration repair | Unclaimed | Harden TUI bundle verification/publication and prove ASB consumes the exact immutable dev artifact. | Released after exact consumer merge; retain immutable manifest receipt for release-gate qualification. |
 | P0 | [AR-1621](tasks/AR-1621.md): Development authentication and provenance non-blocking audit | Unclaimed | Prove the TUI wizard and control paths never block development on absent authentication, signatures, or key management. | Released after paired protected-main auth audit merges; use evidence for final handshake and quickstart qualification. |
+| P0 | [AR-1622](tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
 | P0 | [AR-1625](tasks/AR-1625.md): TUI hosted coverage repair for live handshake | Unclaimed | Raise behavior-relevant TUI coverage above the hosted threshold and unblock exact-main AR-1615 acceptance without weakening quality gates. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
 | P0 | [AR-1626](tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after paired protected-main merge; rerun AR-1615 against the paired repaired heads. |
 | P0 | [AR-1627](tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
