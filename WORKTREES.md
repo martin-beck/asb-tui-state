@@ -206,6 +206,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 3, ahead 0 |
 | `asb-tui-ar1675` | `feature/ar-1675-manifest-diagnostics` | `9eaa2f5e0956` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `a91c337b554c` | 0 | behind 3, ahead 3 |
+| `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 0, ahead 0 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 13, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 14, ahead 2 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 199, ahead 1 |
