@@ -740,7 +740,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | ar1660-root-qualification | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
-| P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | ar1674_channel_qualification | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Implement the selection/reconfiguration screen and typed human/JSON projections for omitted dev, explicit dev, and unavailable future channels. |
+| P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | ar1674_channel_qualification | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Release after exact current-main channel matrix evidence and doctor reconciliation. |
 
 ### Open (1)
 
