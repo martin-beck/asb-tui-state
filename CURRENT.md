@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Review PR #276 at exact head 38816075942cb9ccd0f1e0c6e49fe38e63e9f3ed; require independent review and green Repository Quality/AWQ checks, then merge and rerun exact-main formal qualification. | ar1707_revision_formal_gate |
+| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | PR #276 merged as 525c601f; after exact-main Trusted Main 37265424193 and Repository Quality 37265424191 finish green, record the formal-gate receipt and release AR-1707. | ar1707_revision_formal_gate |
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. | ar1624-awq-awc-gate |
 
 ## Open
