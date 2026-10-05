@@ -10,12 +10,7 @@ Never edit this file directly.
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | ar1575-final-qual-20261005 |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. | ar1654-operator-quickstart |
 | P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Repair post-merge Trusted Main coverage: exact merge 68d9a787 passed behavior tests but Trusted Main 37256728211 failed total coverage at 88.00% versus the 90% gate. Add behavior-focused preflight coverage, merge through protected checks, rerun exact-main Trusted Main, then release. | ar1678-host-preflight |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final receipt 2bcd1098 proves the default-dev journey only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. | - |
+| P0 | [AR-1693](tasks/AR-1693.md): TUI default-dev journey qualification | Prove the simplest TUI setup-to-benchmark-to-offline-analysis journey using the omitted default dev channel and the ASB handoff. | Final receipt 2bcd1098 proves the default-dev journey only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. | ar1693_default_dev_journey |
 
 ## Blocked
 
