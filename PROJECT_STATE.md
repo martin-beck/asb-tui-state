@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #272 | `feature/ar-1678-coverage@672a8991a837` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test(preflight): cover host validation branches |
+| #272 | `feature/ar-1678-coverage@672a8991a837` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(preflight): cover host validation branches |
 
 ## Recent workflows
 
