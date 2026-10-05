@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | ar1575-final-qual-20261005 |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; do not release from headless failure. | ar1654-operator-quickstart |
-| P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Add capture selection, cassette status, strict offline replay, comparison, and analysis screens and qualify the complete live-to-offline journey at exact ASB/TUI heads. | ar1702_quickstart_release |
+| P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Wait for hosted checks and independent review on PR #267 head e9e2104; then protected-merge, rerun exact-main quickstart, record receipt, and release. | ar1702_quickstart_release |
 
 ## Blocked
 
