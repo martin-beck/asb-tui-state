@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 30 |
+| **Planned** | Defined work awaiting promotion or dependencies | 29 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 126 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -167,7 +167,7 @@ flowchart LR
         AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Done"]:::status_done
         AR_1658["AR-1658 - Done"]:::status_done
-        AR_1659["AR-1659 - Planned"]:::status_planned
+        AR_1659["AR-1659 - Open"]:::status_open
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1662["AR-1662 - Done"]:::status_done
@@ -735,11 +735,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
+| P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Unclaimed | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. |
 
 ### Blocked (2)
 
@@ -748,7 +749,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (30)
+### Planned (29)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -759,7 +760,6 @@ flowchart LR
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
-| P0 | [AR-1659](tasks/AR-1659.md): TUI materializer and installed handoff UX | Unclaimed | Make the temporary clone/build/install handoff understandable and recoverable from the TUI. | Implement progress, cancellation, cleanup, rollback, and incompatible-manifest screens over the ASB materializer contract. |
 | P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Unclaimed | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
 | P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Unclaimed | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
 | P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Unclaimed | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | After AR-1667 and AR-1660 dependencies are released, merge or reject candidate PR253 through hosted checks and run the paired exact-head journey receipt. |
