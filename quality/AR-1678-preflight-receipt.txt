@@ -1,9 +1,10 @@
 AR: AR-1678
-Status: IN_PROGRESS (development/mock implementation; hosted review pending)
+Status: IN_PROGRESS (development/mock implementation; coverage repair PR hosted review pending)
 Product scope: standalone asb-tui only; no ASB source changed.
 
 Implementation:
 - PR #271, current signed+DCO repair head 1902beb;
+- PR #272, signed+DCO coverage repair head df65755, based on merged main 68d9a78;
 - exact branch base origin/main: 795e085;
 - bounded `development_preflight::run()` checks git, cargo, setsid, cc, PTY
   contract, and private install-root ownership/mode without exposing secrets
@@ -21,6 +22,8 @@ Focused evidence:
 - `python3 tools/validate-ui-state-model.py`: valid (8 routes, 32 elements);
 - `python3 -m unittest tools/test-ui-state-model.py -v`: 30 passed;
 - `cargo test --locked --test formal_state --no-fail-fast`: 19 passed;
+- `cargo llvm-cov --locked --lib --fail-under-lines 90`: preflight module 95.83%;
+- PR #272 focused preflight coverage tests: 4 passed;
 - `docs/ui-module-inventory.json` classifies `src/development_preflight.rs` as a
   development-only non-UI preflight exemption with an explicit owner rationale;
 - explicit `ASB_TUI_DEV_*` absolute tool overrides are honored and validated
