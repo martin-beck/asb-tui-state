@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 17 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 138 |
+| **Done** | Accepted, integrated, and durably verified | 139 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -205,7 +205,7 @@ flowchart LR
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
         AR_1705["AR-1705 - Done"]:::status_done
-        AR_1706["AR-1706 - In progress"]:::status_in_progress
+        AR_1706["AR-1706 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -741,13 +741,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. |
-| P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | ar1706_pty_control_qualification | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | Promote after TUI AR-1701 and AR-1702 are released; refresh exact ASB/TUI heads and run the installed PTY/control matrix before AR-1703. |
 
 ### Blocked (2)
 
@@ -778,7 +777,7 @@ flowchart LR
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Done (138)
+### Done (139)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -910,6 +909,7 @@ flowchart LR
 | P0 | [AR-1702](tasks/AR-1702.md): TUI live capture, offline replay, and comparison | Unclaimed | Expose live response recording and the follow-up offline replay/comparison journey directly in the TUI for selected/all agents and current workloads. | Obtain independent review approval for PR #267 head e9e2104; then protected-merge, rerun exact-main quickstart, record merged-head receipt, and release. |
 | P0 | [AR-1704](tasks/AR-1704.md): Trusted-main coverage repair after live-provider integration | Unclaimed | Restore the existing Trusted main 90&#37; coverage gate after the merged live-provider changes without weakening quality policy. | Watch exact-main Repository Quality 37241196042 and Trusted main 37241196081 to terminal; release only after both pass and reconcile/doctor. |
 | P0 | [AR-1705](tasks/AR-1705.md): Installed TUI live OpenRouter journey qualification | Unclaimed | Qualify the clean-room installed asb tui journey through credential-backed live OpenRouter execution and typed no-fallback failures. | No further TUI implementation; retain the credential-unavailable limitation and pair with ASB AR-1702 when its credential-backed smoke is promoted and completed. |
+| P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Unclaimed | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | Promote after TUI AR-1701 and AR-1702 are released; refresh exact ASB/TUI heads and run the installed PTY/control matrix before AR-1703. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
