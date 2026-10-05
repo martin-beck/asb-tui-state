@@ -1,0 +1,30 @@
+AR: AR-1660
+Status: PASS (development/mock qualification)
+Credentials: none. Benchmark/replay network: denied. Install materialization: allowed.
+
+Fresh clean-clone exact paired heads:
+- ASB commit: 401253e53160dc51b39b6618c2b2459cba569c7f
+- ASB tree: bf0282db3a2785fc78b7ce970efa859deb3bcff3
+- TUI commit: 2f1c34b7bf04664b707014ca21f19d9d995bc130
+- TUI tree: 1a3ea9bee8d9bf6a388d83848540f4f00ce837d3
+
+Fresh exact-head command qualification:
+- `asb tui install` returned `development_installed` with verified provenance;
+- installed bare `asb tui` returned `development_launch_ready`;
+- status and restart persistence returned `development_installed`;
+- provider/model fixture selection and onboarding completed without credentials;
+- selected and all workload capture completed;
+- strict offline replay completed with network denied;
+- comparison and analysis completed;
+- tampered manifest was rejected as `dev_channel_manifest_invalid`;
+- future channel and removal diagnostics remained typed and fail-closed.
+
+The fresh-user runner emitted a complete JSON receipt at
+`/tmp/ar1660-fresh-user.json`; its paired provenance binds both exact heads,
+the installed executable digest, the `asb tui install` and `asb tui` route,
+and the selection/capture/replay/comparison stages. Focused local tests also
+passed on the same TUI head: `development_journey`,
+`end_to_end_qualification`, and `wizard`.
+
+This is development/mock evidence only. Missing authentication, signatures,
+and key management remain warning-only; no production release status changed.
