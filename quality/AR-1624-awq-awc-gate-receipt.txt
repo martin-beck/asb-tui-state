@@ -1,0 +1,52 @@
+AR-1624 AWQ/AWC quality and coordination gate audit
+====================================================
+
+Audit date: 2026-10-05
+Task: AR-1624
+Dependency: AR-1623 (released; state revision 6)
+State task revision at audit: 3
+State reconciliation commit: 294d4ab321901d4326e09f7d1c22c869f26614e6
+
+Coordination evidence
+---------------------
+- `handoffctl promote` and `handoffctl claim` completed for this task using
+  owner `ar1624-awq-awc-gate`.
+- Live state currently contains exactly two in-progress tasks: AR-1624 owned
+  by this worker and AR-1707 owned by `ar1707_revision_formal_gate`; no task
+  ownership overlap was observed.
+- `handoffctl doctor --live` passed: structure, references, privacy, generated
+  views, and live state are consistent.
+- `handoffctl render-status --check` passed after reconciliation.
+- Vendored Coordinator verification passed at v0.3.5 commit
+  `510817b93feb80dde13e5a6c61d657954fae2346`.
+- Source-header verification passed and the complete state test suite passed:
+  90 tests, 0 failures.
+- Recovery/staleness drill passed in the isolated coordinator test harness:
+  `test_recover_expired_requires_exact_expired_revision`,
+  `test_recover_expired_can_drain_multiple_expired_claims`,
+  `test_reconcile_and_live_staleness`, and
+  `test_run_preflight_and_durable_journal_precede_reconcile` (4 tests, 0
+  failures). The drill confirmed stale revisions and non-expired claims fail
+  closed, expired claims recover to open, and stale generated views are
+  detected/reconciled.
+
+Implementation and publication evidence
+----------------------------------------
+- AR-1624 is a coordination/evidence gate; no standalone product code change
+  or product PR is required by its plan.
+- Current `asb-tui` origin/main is
+  `15e864e7c4c88e79689d73d0bd40cee0eff9fc4e` (tree
+  `3556dd018c67a9a2099575fc74b5aa84257d8bf5`).
+- PR #275 merged at this exact main commit from
+  `18eabc08250b1a590b4bd91aee7f57133f860cc6`; its Repository Quality and AWQ
+  shadow checks were green before merge.
+- The required post-merge Trusted Main run 37262495206 failed on exact main
+  coverage: 87.96% lines/regions summary (threshold 90%); all Rust tests in
+  that run passed. Repository Quality run 37262495195 was still in progress at
+  audit time. Therefore the exact-main release gate is not green.
+
+Disposition
+-----------
+AR-1624 cannot be released from this audit. Keep it in progress pending a
+coverage repair/requalification on exact main and terminal-green Repository
+Quality plus Trusted Main checks. No ASB files or repository were modified.
