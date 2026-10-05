@@ -10,12 +10,7 @@ Never edit this file directly.
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | ar1575-final-qual-20261005 |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. | ar1654-operator-quickstart |
 | P0 | [AR-1678](tasks/AR-1678.md): TUI development install host preflight and typed recovery | Make the TUI default-dev install path detect missing host tools before launch and present actionable typed recovery without turning development authentication or signature warnings into blockers. | Await hosted Repository Quality and AWQ on repaired head 7bb02709, then obtain independent review, protected-merge, exact-main post-merge checks, and release with the updated receipt. | ar1678-host-preflight |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. | - |
+| P0 | [AR-1691](tasks/AR-1691.md): TUI default-dev fresh-user lifecycle gate | Qualify the TUI clone-to-analysis journey with omitted dev selection, ASB handoff, benchmark, recording, strict offline replay, comparison, and analysis. | Final receipt 2bcd1098 proves the default-dev lifecycle only. Keep planned until AR-1676 and AR-1677 complete explicit-channel, rollback, remove, and channel-aware release-gate coverage, then rerun and promote with complete matrix evidence. | ar1691_default_dev_qualification |
 
 ## Blocked
 
