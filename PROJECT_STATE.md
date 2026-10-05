@@ -3,21 +3,21 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `663184064bc27794d432f1b92b5dce8079961305`
-- Local origin/main: `873cc2f2bf415e04b27d3d6d488863cf0696ef36`
+- Local origin/main: `663184064bc27794d432f1b92b5dce8079961305`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #265 | `feature/ar-1657-compat-matrix@022dd8790dab` | `main` | BEHIND | QUEUED: | feat: add agent provider compatibility matrix runner |
+| #265 | `feature/ar-1657-compat-matrix@022dd8790dab` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | feat: add agent provider compatibility matrix runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37246392057 | `022dd8790dab` | pull_request | AWQ shadow observation | queued:- |
-| 37246391845 | `022dd8790dab` | pull_request | Repository quality | queued:- |
+| 37246392057 | `022dd8790dab` | pull_request | AWQ shadow observation | in_progress:- |
+| 37246391845 | `022dd8790dab` | pull_request | Repository quality | in_progress:- |
 | 37246280716 | `663184064bc2` | push | Repository quality | in_progress:- |
 | 37246280630 | `663184064bc2` | push | Trusted main verification | in_progress:- |
 | 37245856851 | `467af1a0c945` | pull_request | AWQ shadow observation | completed:success |
