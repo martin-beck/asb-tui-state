@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1676",
+  "head": "9eaa2f5e0956b5152ecfc5c467a69067522804a6",
+  "network": "denied",
+  "credentials": "none",
+  "cases": [
+    {
+      "name": "omitted-dev",
+      "exit_code": 3,
+      "response_code": "development_not_installed",
+      "channel": "dev"
+    },
+    {
+      "name": "explicit-dev",
+      "exit_code": 3,
+      "response_code": "development_not_installed",
+      "channel": "dev"
+    },
+    {
+      "name": "future-stable",
+      "exit_code": 3,
+      "response_code": "stable_channel_unavailable",
+      "channel": "stable"
+    },
+    {
+      "name": "future-nightly",
+      "exit_code": 3,
+      "response_code": "nightly_channel_unavailable",
+      "channel": "nightly"
+    },
+    {
+      "name": "future-experimental",
+      "exit_code": 3,
+      "response_code": "experimental_channel_unavailable",
+      "channel": "experimental"
+    },
+    {
+      "name": "persist-stable-selection",
+      "exit_code": 3,
+      "response_code": "stable_channel_unavailable",
+      "channel": "stable"
+    },
+    {
+      "name": "persisted-stable-selection",
+      "exit_code": 3,
+      "response_code": "stable_channel_unavailable",
+      "channel": "stable"
+    },
+    {
+      "name": "restore-dev-selection",
+      "exit_code": 3,
+      "response_code": "development_not_installed",
+      "channel": "dev"
+    },
+    {
+      "name": "rollback-preserves-channel",
+      "exit_code": 3,
+      "response_code": "development_command_failed",
+      "channel": "dev"
+    },
+    {
+      "name": "remove",
+      "exit_code": 0,
+      "response_code": "development_removed",
+      "channel": "dev"
+    },
+    {
+      "name": "malformed-manifest",
+      "exit_code": 3,
+      "response_code": "development_installation_invalid",
+      "channel": "dev"
+    }
+  ],
+  "provenance": {
+    "tui_commit": "9eaa2f5e0956b5152ecfc5c467a69067522804a6",
+    "tui_tree": "0a73e16b280fb0c8df9c0659f751ebce8edc49f0",
+    "asb_commit": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+    "asb_tree": "b67ad7f71716f9b47d6510d66fd1633a48a91b5c",
+    "manifest": "release/channel-status.json",
+    "manifest_sha256": "86782220463003e06113595aa8d9ef42a6f2c3c811839303aac3f247f3c45a79",
+    "executable_sha256": "2ef9b1cbf62a84177d2ad00c705f467d89621fbcac910f1bb078832412716102"
+  }
+}
