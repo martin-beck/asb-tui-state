@@ -18,6 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar222-review` | `DETACHED` | `78c190c37b22` | 0 | behind 184, ahead 0 |
 | `ar222-review-final` | `DETACHED` | `1eadb650d1c2` | 0 | behind 182, ahead 0 |
 | `ar222-review-repaired` | `DETACHED` | `6c5f29aaf884` | 0 | behind 183, ahead 0 |
+| `asb-tui-coverage.Rfd3LO` | `repair/ar-1708-coverage-gate` | `6e645b77ee07` | 0 | behind 0, ahead 1 |
 | `repair-pr224` | `repair/pr224` | `4b2779cb1af3` | 0 | behind 173, ahead 0 |
 | `repair-pr225` | `repair/pr225` | `7bf8f650a4a1` | 0 | behind 178, ahead 3 |
 | `repair-pr226` | `repair/pr226` | `686ec8c579e9` | 0 | behind 178, ahead 5 |
@@ -203,14 +204,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 210, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 97, ahead 0 |
 | `asb-tui-ar1654-impl.IYBF5J` | `ar-1654-operator-quickstart` | `42cf1e585969` | 0 | behind 14, ahead 0 |
-| `asb-tui-ar1654-main.H7WAyh` | `ar-1664-channel-coverage` | `fe22d5e38e02` | 0 | behind 3, ahead 0 |
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 18, ahead 0 |
-| `asb-tui-ar1675` | `feature/ar-1675-manifest-diagnostics` | `9eaa2f5e0956` | 0 | behind 16, ahead 0 |
 | `asb-tui-ar1693` | `DETACHED` | `68d9a787b667` | 0 | behind 6, ahead 0 |
 | `asb-tui-ar1702` | `repair/ar-1702-selection-entrypoint` | `e9e21047d32a` | 0 | behind 10, ahead 0 |
-| `asb-tui-ar1705` | `DETACHED` | `795e0851926f` | 0 | behind 9, ahead 0 |
 | `asb-tui-ar1706` | `DETACHED` | `fe22d5e38e02` | 0 | behind 3, ahead 0 |
-| `asb-tui-ar1707` | `feature/ar-1707-revision-formal-gate` | `38816075942c` | 0 | behind 0, ahead 1 |
 | `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 15, ahead 0 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 28, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 29, ahead 2 |
