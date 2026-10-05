@@ -1,0 +1,22 @@
+AR-1677 supplemental exact-main rerun
+Classification: development/mock; credentials none; benchmark/replay network denied.
+
+Exact paired heads:
+- TUI commit: c6b66e28d0b51b4f1b013a83cc8e9f1b92160ec2
+- TUI tree: 0a73e16b280fb0c8df9c0659f751ebce8edc49f0
+- ASB commit: 502254bd9eca1866bfb54b13f663c4aa4166c62a
+- ASB tree: 91da6742583a363679bab9f0674781f6921e60e2
+
+Fresh rerun evidence:
+- channel matrix: 11/11 passed;
+- `asb tui install`: verified;
+- bare `asb tui`: `development_launch_ready`;
+- restart/status provenance: passed;
+- provider/model fixture setup: passed;
+- selected and all-workload capture: passed;
+- strict offline replay: passed with network denied;
+- comparison and analysis: passed;
+- manifest tamper rejection: passed.
+
+The original AR-1677 receipt remains authoritative for the released task; this
+file binds the same evidence to the merged current-main commit after PR #269.
