@@ -1,0 +1,29 @@
+AR-1595 record and offline replay UX receipt
+============================================
+
+Date: 2026-10-05
+Task: AR-1595
+Dependencies: AR-1594 and AR-1582 (released)
+
+Implementation and review
+-------------------------
+- PR #279 added the focused selection-driven record/seal/replay acceptance
+  test and merged protected at exact main `f3fdafd22881de344e29fe5d90f86f55d1ad7867`.
+- The merged commit was SSH-signed and included the matching DCO trailer.
+- The route exercises selected recording, complete-coverage offline activation,
+  explicit cassette-bound replay, human/JSON projections, and fail-closed
+  missing-selection and partial-coverage cases.
+- Local focused suites passed: AR-1595 acceptance (2), benchmark route (9),
+  development journey (2), development qualification (2), and reports (16).
+
+Exact-head hosted evidence
+--------------------------
+- Trusted Main `37267209139`: success at `f3fdafd22881de344e29fe5d90f86f55d1ad7867`.
+- Repository Quality `37267209266`: success at
+  `f3fdafd22881de344e29fe5d90f86f55d1ad7867`.
+
+Scope and limitations
+---------------------
+- Development/mock operation remains credential-free and warning-only; strict
+  offline replay remains explicit and cannot silently fall back to live mode.
+- No ASB repository or source was modified by this AR.
