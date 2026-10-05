@@ -11,16 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #267 | `repair/ar-1702-selection-entrypoint@a91c337b554c` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: harden installed entrypoint and workload scope |
-| #270 | `feature/ar-1654-operator-quickstart@13fce8de678d` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | feat(quickstart): qualify top-level asb tui journey |
+| #270 | `feature/ar-1654-operator-quickstart@13fce8de678d` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat(quickstart): qualify top-level asb tui journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37251325413 | `c6b66e28d0b5` | push | Repository quality | in_progress:- |
-| 37251325390 | `c6b66e28d0b5` | push | Trusted main verification | in_progress:- |
-| 37251309876 | `13fce8de678d` | pull_request | AWQ shadow observation | in_progress:- |
-| 37251309734 | `13fce8de678d` | pull_request | Repository quality | in_progress:- |
+| 37251325413 | `c6b66e28d0b5` | push | Repository quality | completed:success |
+| 37251325390 | `c6b66e28d0b5` | push | Trusted main verification | completed:success |
+| 37251309876 | `13fce8de678d` | pull_request | AWQ shadow observation | completed:failure |
+| 37251309734 | `13fce8de678d` | pull_request | Repository quality | completed:failure |
 | 37251254198 | `cd1a3077553d` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37251253878 | `cd1a3077553d` | pull_request | Repository quality | completed:cancelled |
 | 37250935259 | `9eaa2f5e0956` | pull_request | AWQ shadow observation | completed:success |
