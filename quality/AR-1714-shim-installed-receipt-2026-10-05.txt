@@ -1,0 +1,21 @@
+AR-1714 validated development shim receipt
+Product: martin-beck/asb-tui
+Exact merged PR #281 head: 4415f333ec632f37173751fd7e8334e0dcc971bf
+Exact TUI main merge: 5880ceb965d0f8e598f70dad0c3863794f58b016
+
+Evidence:
+- PR #281 resolves the conventional development cargo/rustup shim to the
+  selected owner-private regular toolchain cargo and rejects unsafe rustup
+  homes/settings and hostile or out-of-root cargo targets.
+- Exact post-merge Repository quality and Trusted main workflows for
+  5880ceb passed, including installed_entrypoint and development_clone_build.
+- Hosted product checks passed: native repository quality/Rust/supply-chain/
+  privacy, Rust/supply-chain/privacy, and AWQ core policy.
+
+Boundary:
+- Development authentication, signatures, and key management remain
+  warning-only; filesystem trust and hostile path validation remain fail-closed.
+- No credentials, raw responses, or private host paths are recorded.
+
+Conclusion: AR-1714 installed shim and bare-launch acceptance predicates pass
+at exact TUI main 5880ceb.
