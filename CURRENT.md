@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1e7de68 now queries paired ASB provider-catalog and fails closed on missing selectable choices. Fresh checks 37247836951/37247837114 are running; obtain independent review before merge. Current ASB catalog mismatch (openai/gpt-5.2 absent from TUI development matrix) remains an explicit qualification blocker. | ar1657-compat-matrix-20261005 |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. | ar1657-compat-matrix-20261005 |
 
 ## Open
 
