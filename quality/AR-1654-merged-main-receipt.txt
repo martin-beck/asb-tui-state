@@ -17,6 +17,9 @@ Strict runner evidence:
 - bare `asb tui`: reached the development launch route but returned the typed
   `development_launch_failed` product failure under this host's PTY;
 - strict runner rejected the result and emitted no passing AR receipt;
+- retry under a detached tmux session and GNU `script` PTY both reproduced the
+  same `development_launch_failed` result (exit 1), so this is not merely a
+  pipe/stdin capture artifact;
 - wizard, benchmark, recording/replay, comparison suites had passed locally,
   but they do not override the failed public launch gate.
 
