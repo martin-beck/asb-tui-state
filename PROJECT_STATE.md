@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #267 | `repair/ar-1702-selection-entrypoint@442fd5e2f262` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: harden installed entrypoint and workload scope |
+| #267 | `repair/ar-1702-selection-entrypoint@ee0fbb3ec18d` | `main` | BEHIND | - | fix: harden installed entrypoint and workload scope |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37249187739 | `ee0fbb3ec18d` | pull_request | AWQ shadow observation | queued:- |
+| 37249187605 | `ee0fbb3ec18d` | pull_request | Repository quality | queued:- |
 | 37248948396 | `2f1c34b7bf04` | push | Trusted main verification | in_progress:- |
 | 37248948327 | `2f1c34b7bf04` | push | Repository quality | in_progress:- |
 | 37248540419 | `442fd5e2f262` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37247991040 | `2e4bade9ec53` | push | Trusted main verification | completed:success |
 | 37247837114 | `1e7de688c967` | pull_request | AWQ shadow observation | completed:success |
 | 37247836951 | `1e7de688c967` | pull_request | Repository quality | completed:success |
-| 37247784640 | `360f59001bf3` | pull_request | AWQ shadow observation | completed:success |
-| 37247784373 | `360f59001bf3` | pull_request | Repository quality | completed:success |
