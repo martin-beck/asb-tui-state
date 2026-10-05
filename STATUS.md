@@ -765,7 +765,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | ar1589_fresh_user | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | ar1595_record_replay | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | ar1713_live_run_comparison | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Consume the ASB AR-1710/1711/1712 live-run and recording/comparison contracts through the installed asb tui journey; qualify explicit online mode, selected/all capture, strict offline replay, comparison, and typed unavailable diagnostics. |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | ar1713_live_run_comparison | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification after the ASB router and live contracts are available; current renderer-neutral seams are qualified. |
 
 ### Open (3)
 
