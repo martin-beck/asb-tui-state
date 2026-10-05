@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**159 ARs tracked** across 5 active status categories.
+**159 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 25 |
 | **Future** | Deferred roadmap work | 0 |
@@ -85,7 +85,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - Open"]:::status_open
+        AR_1575["AR-1575 - In progress"]:::status_in_progress
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -735,18 +735,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | ar1654-operator-quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | ar1675_manifest_qualification | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 
 ### Blocked (2)
 
