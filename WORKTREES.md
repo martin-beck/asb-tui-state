@@ -113,6 +113,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1188-wizard-render` | `feature/ar1188-wizard-render` | `1f737c49fb3e` | 0 | behind 297, ahead 96 |
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 297, ahead 99 |
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 297, ahead 163 |
+| `asb-tui-ar1595` | `feature/ar-1595-record-replay` | `2e965849cd3a` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 290, ahead 0 |
 | `asb-tui-ar1601` | `ar1601-cassette-lifecycle` | `b4a6f84fdbee` | 0 | behind 290, ahead 0 |
 | `asb-tui-ar1601-final` | `feature/ar-1601-coverage-repair` | `941721294a23` | 0 | behind 265, ahead 0 |
@@ -204,6 +205,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 196, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 214, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 101, ahead 0 |
+| `asb-tui-ar1589` | `qual/ar1589` | `525c601fbbd6` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1654-impl.IYBF5J` | `ar-1654-operator-quickstart` | `42cf1e585969` | 0 | behind 18, ahead 0 |
 | `asb-tui-ar1674` | `DETACHED` | `2f1c34b7bf04` | 0 | behind 22, ahead 0 |
 | `asb-tui-ar1693` | `DETACHED` | `68d9a787b667` | 0 | behind 10, ahead 0 |
