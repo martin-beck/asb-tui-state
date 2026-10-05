@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1589",
+  "status": "journey_passed_hosted_asb_gate_blocked",
+  "classification": "development/mock",
+  "credentials": "none",
+  "network": {
+    "benchmark_and_replay": "denied",
+    "install_materialization": "allowed"
+  },
+  "provenance": {
+    "asb_commit": "caa0d6cb07c1bfe9d9fb2bef5f0aa422f93c7f96",
+    "asb_tree": "45a78bf8df3c2a2965c06725c7d285217e941bb8",
+    "tui_commit": "525c601fbbd67c3ae3db03d597f90e79a45645d1",
+    "tui_tree": "f3a098f91ee5d67e417c38653b303844ca193e3f",
+    "asb_binary_sha256": "04abb45931f15c59aa40b2ca16b191aa2f0e1a89edaefe40a61085f01e4a516d",
+    "installed_tui_executable_sha256": "59ab8c3584d54e84036b3c67ac13451aca55356071138578d45b0038e9ff3f1f",
+    "handoff_manifest_sha256": "e4f95252849904ed1dc4bee74b14ebf0de890340c474d2ebb14c4f27272efd92",
+    "runner_sha256": "f9af1b2d7628fd54e38e640b91973e96bb0f8cf76075f1efa8ce34c8bfe45279"
+  },
+  "journey": {
+    "install": "development_installed",
+    "bare_launch": "development_launch_ready",
+    "restart_status": "development_installed",
+    "wizard_provider_model_agent_selection": "passed",
+    "development_authentication_warning": "non_blocking",
+    "selected_capture": "passed",
+    "all_capture": "passed",
+    "strict_offline_replay": "passed",
+    "comparison": "passed",
+    "analysis": "passed",
+    "tampered_manifest": "dev_channel_manifest_invalid",
+    "channel_negative_cases": "typed_fail_closed",
+    "replay_network": "denied",
+    "selected_tuple_count": 1,
+    "all_tuple_count": 7,
+    "all_workload_count": 7,
+    "replay_result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+  },
+  "hosted_checks": {
+    "tui_exact_main": {
+      "trusted_main": "37265424193:success",
+      "repository_quality": "37265424191:success"
+    },
+    "asb_exact_main": {
+      "repository_quality": "37266305441:failure",
+      "rust_verification": "37266305531:failure",
+      "credential_free_benchmark_path": "37266305425:success",
+      "cross_repository_development_broker": "37266305427:success",
+      "formal_assurance": "37266305392:success",
+      "fault_assurance": "37266305415:success",
+      "hosted_portability": "37266305422:success",
+      "source_headers": "37266305478:success",
+      "aarch64_portability": "37266305497:in_progress"
+    }
+  },
+  "blocker": {
+    "repository": "martin-beck/agent-systems-benchmark",
+    "workflow": "Repository quality",
+    "run": 37266305441,
+    "cause": "ASB guide_inventory_matches_doctor_and_stale_claims_fail_closed expects an inventory without the benchmark-live command while the exact ASB main exposes that command; the same failing test causes the Rust verification and coverage job failure.",
+    "owner": "ASB",
+    "tui_action": "none",
+    "scope_boundary": "No ASB source or state was modified by this qualification."
+  }
+}
