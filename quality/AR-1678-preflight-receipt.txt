@@ -3,7 +3,7 @@ Status: IN_PROGRESS (development/mock implementation; hosted review pending)
 Product scope: standalone asb-tui only; no ASB source changed.
 
 Implementation:
-- PR #271, current signed+DCO repair head 7bb0270;
+- PR #271, current signed+DCO repair head 1902beb;
 - exact branch base origin/main: 795e085;
 - bounded `development_preflight::run()` checks git, cargo, setsid, cc, PTY
   contract, and private install-root ownership/mode without exposing secrets
@@ -18,11 +18,16 @@ Focused evidence:
 - `cargo fmt --check`: passed;
 - `cargo test --locked development_preflight --no-fail-fast`: 2 passed;
 - `cargo test --locked --test pty_broker_handoff --no-fail-fast`: 4 passed;
+- `python3 tools/validate-ui-state-model.py`: valid (8 routes, 32 elements);
+- `python3 -m unittest tools/test-ui-state-model.py -v`: 30 passed;
+- `cargo test --locked --test formal_state --no-fail-fast`: 19 passed;
+- `docs/ui-module-inventory.json` classifies `src/development_preflight.rs` as a
+  development-only non-UI preflight exemption with an explicit owner rationale;
 - explicit `ASB_TUI_DEV_*` absolute tool overrides are honored and validated
   when PATH is intentionally unavailable;
 - launch PTY validation considers the attached output PTY used by broker mode;
 - commit signature: SSH ED25519 accepted;
-- hosted Repository Quality checks are queued/in progress;
+- hosted Repository Quality checks for 1902beb are queued/in progress;
 - independent review is pending.
 
 The implementation does not convert `development_launch_failed` into success.
