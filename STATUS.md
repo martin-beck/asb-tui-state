@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
@@ -172,7 +172,7 @@ flowchart LR
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1662["AR-1662 - Done"]:::status_done
         AR_1664["AR-1664 - Done"]:::status_done
-        AR_1665["AR-1665 - Open"]:::status_open
+        AR_1665["AR-1665 - In progress"]:::status_in_progress
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Planned"]:::status_planned
         AR_1668["AR-1668 - Planned"]:::status_planned
@@ -741,18 +741,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | ar1575-final-qual-20261005 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. |
+| P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | tui-ar1665-metadata-20261005 | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. |
-| P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
 ### Blocked (2)
 
