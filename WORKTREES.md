@@ -202,8 +202,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 164, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 182, ahead 0 |
 | `ar1688-tui-306101` | `DETACHED` | `b344357ce0f2` | 0 | behind 69, ahead 0 |
-| `asb-tui-ar1702` | `feature/ar-1702-live-capture` | `bc1bc57c3200` | 6 | behind 4, ahead 1 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/selection.rs`, `src/ui.rs`, `tests/top_level.rs` |
+| `asb-tui-ar1702` | `feature/ar-1702-live-capture` | `1e2b1b8e070e` | 0 | behind 4, ahead 2 |
 | `asb-tui-pr264-jQGjqB` | `DETACHED` | `41d19d927429` | 0 | behind 1, ahead 2 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 186, ahead 1 |
 | `tmp.Zp6VTM707f` | `DETACHED` | `b864290a4d81` | 9 | behind 186, ahead 7 |
