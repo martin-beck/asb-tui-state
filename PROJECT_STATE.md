@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #273 | `repair/ar-1706-development-pty-preflight@ea9694c2e49f` | `main` | DIRTY | - | Repair development PTY catalog bootstrap |
-| #274 | `fix/zero-control-revision-selection@33c922f5dc7a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: keep live picker usable at control revision zero |
+| #274 | `fix/zero-control-revision-selection@33c922f5dc7a` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS: | fix: keep live picker usable at control revision zero |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37258883624 | `ea9694c2e49f` | workflow_dispatch | AWQ shadow observation | in_progress:- |
 | 37258881473 | `ea9694c2e49f` | workflow_dispatch | Repository quality | in_progress:- |
 | 37258792174 | `33c922f5dc7a` | pull_request | AWQ shadow observation | in_progress:- |
-| 37258792009 | `33c922f5dc7a` | pull_request | Repository quality | in_progress:- |
+| 37258792009 | `33c922f5dc7a` | pull_request | Repository quality | completed:failure |
 | 37258255548 | `fe22d5e38e02` | push | Trusted main verification | completed:success |
 | 37258255471 | `fe22d5e38e02` | push | Repository quality | completed:success |
 | 37257819009 | `672a8991a837` | pull_request | AWQ shadow observation | completed:success |
