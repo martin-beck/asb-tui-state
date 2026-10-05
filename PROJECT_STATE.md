@@ -10,16 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #271 | `feature/ar-1678-host-preflight@e0bda6871209` | `main` | BLOCKED | - | feat(preflight): add bounded development host diagnostics |
+| #271 | `feature/ar-1678-host-preflight@e0bda6871209` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(preflight): add bounded development host diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37254978857 | `e0bda6871209` | pull_request | AWQ shadow observation | pending:- |
-| 37254978798 | `e0bda6871209` | pull_request | Repository quality | pending:- |
-| 37254939717 | `aa80986a32f9` | pull_request | AWQ shadow observation | in_progress:- |
-| 37254939545 | `aa80986a32f9` | pull_request | Repository quality | in_progress:- |
+| 37254978857 | `e0bda6871209` | pull_request | AWQ shadow observation | in_progress:- |
+| 37254978798 | `e0bda6871209` | pull_request | Repository quality | in_progress:- |
+| 37254939717 | `aa80986a32f9` | pull_request | AWQ shadow observation | completed:cancelled |
+| 37254939545 | `aa80986a32f9` | pull_request | Repository quality | completed:cancelled |
 | 37254865987 | `88e368b9214a` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37254865838 | `88e368b9214a` | pull_request | Repository quality | completed:cancelled |
 | 37253724155 | `795e0851926f` | push | Trusted main verification | completed:success |
