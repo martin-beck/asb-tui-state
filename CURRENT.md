@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. | ar1707_revision_formal_gate |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | - |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Remain pending until a paired exact-main run returns development_launched: strace shows ASB process_group(0) leaves the child in a background controlling-PTY group and SIGTTOU-stops it before terminal operation; repair belongs to ASB launcher, then rerun install and bare asb tui. | - |
-| P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | Specify provisional, committed, stale, superseded, and unavailable revision outcomes; add focused transition/parity coverage and run the protected formal UI gate at the exact current TUI head. | - |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. | - |
 
 ## Blocked
