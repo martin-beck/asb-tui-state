@@ -212,6 +212,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-c6` | `DETACHED` | `c6b66e28d0b5` | 0 | behind 12, ahead 0 |
 | `asb-tui-pr267-1OEocB` | `DETACHED` | `3e4dfc4303f3` | 0 | behind 25, ahead 1 |
 | `asb-tui-pre1702` | `DETACHED` | `41d19d927429` | 0 | behind 26, ahead 2 |
+| `asb-tui-zero-rev.NTWy4F` | `DETACHED` | `fe22d5e38e02` | 0 | behind 0, ahead 0 |
 | `review-tui213.ZIVe` | `DETACHED` | `6953c6a581bd` | 0 | behind 211, ahead 1 |
 | `tmp.Zp6VTM707f` | `DETACHED` | `b864290a4d81` | 9 | behind 211, ahead 7 |
 | changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `README.md`, `docs/RELEASE_CHANNELS.md`, `release/channel-status.json`, `tools/build-dev-bundle.py`, `tools/test-dev-bundle.py`, `tools/validate-release-channel.py`, `tools/verify-dev-bundle.py` |
