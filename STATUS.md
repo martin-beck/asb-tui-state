@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 13 |
+| **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 143 |
+| **Done** | Accepted, integrated, and durably verified | 144 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -209,7 +209,7 @@ flowchart LR
         AR_1707["AR-1707 - Done"]:::status_done
         AR_1708["AR-1708 - Done"]:::status_done
         AR_1713["AR-1713 - In progress"]:::status_in_progress
-        AR_1714["AR-1714 - Planned"]:::status_planned
+        AR_1714["AR-1714 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -782,7 +782,7 @@ flowchart LR
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Release remains held at current main f3fdafd: rerun ASB AR-1597 matrix in a host capable of unshare --net (or approved equivalent isolated runner), then attach matrix-linked TUI receipt; current sandbox returns EPERM and runner correctly fails closed. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (13)
+### Planned (12)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -798,9 +798,8 @@ flowchart LR
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
-| P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | PR #280/#281 repaired and merged at TUI head 5880ceb; post-merge Trusted Main and Repository Quality both pass. Run the exact clean-room asb tui install followed by bare asb tui journey after AR-1575, AR-1703, and AR-1713 are released, including hostile fixtures and cleanup. |
 
-### Done (143)
+### Done (144)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -936,6 +935,7 @@ flowchart LR
 | P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Unclaimed | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | No further action; installed PTY/control qualification is recorded, and the follow-up catalog/revision repair merged as 19da04ed with exact-main checks green. |
 | P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Unclaimed | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | PR #276 merged as 525c601f; after exact-main Trusted Main 37265424193 and Repository Quality 37265424191 finish green, record the formal-gate receipt and release AR-1707. |
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Unclaimed | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed &#96;asb tui install&#96; followed by bare &#96;asb tui&#96; qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. |
+| P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Release after exact installed-entrypoint and hostile shim evidence recorded at TUI head 5880ceb. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
