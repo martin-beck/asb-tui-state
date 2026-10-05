@@ -3,18 +3,21 @@ Status: IN_PROGRESS (development/mock implementation; hosted review pending)
 Product scope: standalone asb-tui only; no ASB source changed.
 
 Implementation:
-- PR #271, current signed+DCO head e0bda68;
+- PR #271, current signed+DCO repair head 4a56d80;
 - exact branch base origin/main: 795e085;
-- bounded `development_preflight::run()` checks git, cargo, setsid, cc, and
-  private install-root path without exposing secrets or host paths;
+- bounded `development_preflight::run()` checks git, cargo, setsid, cc, PTY
+  contract, and private install-root ownership/mode without exposing secrets
+  or host paths;
 - stable JSON `Report` and matching human remediation lines;
-- development broker startup runs the preflight before UI startup and exits
-  with typed remediation when checks fail;
+- `asb-tui preflight` exposes the same human/JSON report;
+- install and upgrade run the preflight before materialization;
+- transient PTY/socket EAGAIN is retried under a bounded deadline;
 - strict `development_launched` success semantics are unchanged.
 
 Focused evidence:
 - `cargo fmt --check`: passed;
 - `cargo test --locked development_preflight --no-fail-fast`: 2 passed;
+- `cargo test --locked --test pty_broker_handoff --no-fail-fast`: 4 passed;
 - commit signature: SSH ED25519 accepted;
 - hosted Repository Quality checks are queued/in progress;
 - independent review is pending.
