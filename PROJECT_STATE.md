@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #267 | `repair/ar-1702-selection-entrypoint@a91c337b554c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix: harden installed entrypoint and workload scope |
+| #267 | `repair/ar-1702-selection-entrypoint@a91c337b554c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: harden installed entrypoint and workload scope |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37249421950 | `a91c337b554c` | pull_request | AWQ shadow observation | in_progress:- |
-| 37249421779 | `a91c337b554c` | pull_request | Repository quality | in_progress:- |
+| 37249421950 | `a91c337b554c` | pull_request | AWQ shadow observation | completed:success |
+| 37249421779 | `a91c337b554c` | pull_request | Repository quality | completed:success |
 | 37249187739 | `ee0fbb3ec18d` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37249187605 | `ee0fbb3ec18d` | pull_request | Repository quality | completed:cancelled |
 | 37248948396 | `2f1c34b7bf04` | push | Trusted main verification | completed:success |
