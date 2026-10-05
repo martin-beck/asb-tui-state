@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | ASB-side repair must preserve PATH or use an absolute linker invocation for development materialization; then rerun exact-head live install and bare asb tui broker journey. | ar1575-final-qual-20261005 |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; do not release from headless failure. | ar1654-operator-quickstart |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain a terminal-capable exact merged-main run where bare asb tui returns development_launched; tmux and script PTYs reproduced development_launch_failed, so investigate the development broker/child launch host limitation. | ar1654-operator-quickstart |
 
 ## Open
 
