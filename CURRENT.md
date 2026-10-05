@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Qualify TUI recovery and visible diagnostics against the paired ASB fault matrix. | ar1596_fault_recovery |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Release remains blocked: add matrix-linked TUI qualification evidence for ASB AR-1597 cases (setup missing-auth, record invalid-input, replay invalid-cassette, benchmark invalid-plan, recovery doctor) and map stale/unsupported/timeout/cancel/crash/cleanup diagnostics; then rerun exact-main tests and independently verify. | ar1596_fault_recovery |
 | P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification after the ASB router and live contracts are available; current renderer-neutral seams are qualified. | ar1713_live_run_comparison |
 
 ## Open
