@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 28 |
+| **Planned** | Defined work awaiting promotion or dependencies | 27 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 127 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -178,7 +178,7 @@ flowchart LR
         AR_1668["AR-1668 - Planned"]:::status_planned
         AR_1672["AR-1672 - Planned"]:::status_planned
         AR_1673["AR-1673 - Planned"]:::status_planned
-        AR_1674["AR-1674 - Planned"]:::status_planned
+        AR_1674["AR-1674 - Open"]:::status_open
         AR_1675["AR-1675 - Planned"]:::status_planned
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
@@ -735,12 +735,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Promote and run the exact-head end-to-end qualification after ASB transport, bootstrap, supervision, and workspace-quality gates are released. |
 | P0 | [AR-1660](tasks/AR-1660.md): Fresh-user wizard-to-comparison TUI acceptance | Unclaimed | Qualify one simple TUI journey from default-dev install and provider setup through benchmark, offline replay, and comparison. | Implement the disposable TUI acceptance runner and exact-head receipt for the paired release gate. |
+| P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | Unclaimed | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Implement the selection/reconfiguration screen and typed human/JSON projections for omitted dev, explicit dev, and unavailable future channels. |
 
 ### Blocked (2)
 
@@ -749,7 +750,7 @@ flowchart LR
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 
-### Planned (28)
+### Planned (27)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -764,7 +765,6 @@ flowchart LR
 | P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Unclaimed | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | After AR-1667 and AR-1660 dependencies are released, merge or reject candidate PR253 through hosted checks and run the paired exact-head journey receipt. |
 | P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Unclaimed | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
 | P0 | [AR-1673](tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
-| P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | Unclaimed | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Implement the selection/reconfiguration screen and typed human/JSON projections for omitted dev, explicit dev, and unavailable future channels. |
 | P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | Unclaimed | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
 | P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | Unclaimed | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Final paired evidence is recorded at ASB 502254bd/TUI c9777ed3 (TUI matrix 11; paired counts TUI compatibility 9, release discovery 5, top-level lifecycle 10, ASB lifecycle 5, including ASB previous-release restoration); keep planned until coordinator dependencies reconcile, then promote only with the receipt. |
 | P0 | [AR-1677](tasks/AR-1677.md): Channel-aware TUI quickstart and release gate | Unclaimed | Make the TUI clone-to-wizard-to-benchmark-to-offline-comparison journey preserve and explain the selected channel end to end. | Final paired receipt at ASB 502254bd/TUI c9777ed3 proves the matrix-before-quickstart gate, provider/model setup, selected/all capture, strict offline replay, comparison, and analysis; keep planned until AR-1676 and AR-1660 dependency reconciliation permits promotion. |
