@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 144 |
+| **Done** | Accepted, integrated, and durably verified | 145 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -103,7 +103,7 @@ flowchart LR
         AR_1593["AR-1593 - Done"]:::status_done
         AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Done"]:::status_done
-        AR_1596["AR-1596 - In progress"]:::status_in_progress
+        AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Done"]:::status_done
         AR_1599["AR-1599 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | codex-root-ar1596-rereview-20261008 | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Terminal: PR #286 merged as 3bb597cfb0b5551357b66cb886cd8bb61d455bc6; exact post-merge Trusted main and Repository quality runs are green. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -807,7 +801,7 @@ flowchart LR
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 | P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Await external ASB AR-1719 implementation and exact-head provider-catalog evidence, plus local AR-1713 readiness; then promote the paired v1.15 ControlServer catalog bridge. |
 
-### Done (144)
+### Done (145)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -862,6 +856,7 @@ flowchart LR
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Unclaimed | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. |
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Unclaimed | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. |
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Unclaimed | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Terminal: PR #286 merged as 3bb597cfb0b5551357b66cb886cd8bb61d455bc6; exact post-merge Trusted main and Repository quality runs are green. |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Unclaimed | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata |

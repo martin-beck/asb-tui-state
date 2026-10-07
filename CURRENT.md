@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Terminal: PR #286 merged as 3bb597cfb0b5551357b66cb886cd8bb61d455bc6; exact post-merge Trusted main and Repository quality runs are green. | codex-root-ar1596-rereview-20261008 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -100,6 +94,7 @@ Never edit this file directly.
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. | - |
 | P0 | [AR-1594](tasks/AR-1594.md): Setup wizard requalification | Requalify provider, model, agent, auth, and shared-default editing in the real TUI wizard; PR195 merged at b4a6f84. | Run post-merge repository-quality and Trusted-main checks at b4a6f84, then perform exact-head setup-wizard qualification and review cancellation/restart and digest-only auth evidence. | - |
 | P0 | [AR-1595](tasks/AR-1595.md): Record and offline replay UX | Make recording, offline replay, and comparison a simple selectable TUI workflow. | Implement the selection-driven record/seal/replay/compare route after wizard requalification. | - |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Terminal: PR #286 merged as 3bb597cfb0b5551357b66cb886cd8bb61d455bc6; exact post-merge Trusted main and Repository quality runs are green. | - |
 | P0 | [AR-1598](tasks/AR-1598.md): Trusted-main coverage regression repair | Restore the enforced Trusted-main coverage floor after catalog protocol alignment. | Await merge of independently approved PR #194 exact head f9b97d6436cbf2778a6d440ad29fd20bd03a9694; then rerun exact post-merge Trusted-main verification and release AR-1598 with receipt. | - |
 | P0 | [AR-1599](tasks/AR-1599.md): Cross-repository development install qualification repair | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal | - |
 | P0 | [AR-1600](tasks/AR-1600.md): Channel-aware install UX qualification | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata | - |
