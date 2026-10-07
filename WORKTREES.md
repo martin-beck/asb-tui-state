@@ -114,8 +114,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 314, ahead 163 |
 | `asb-tui-ar1575-final-qualification` | `qualify/ar-1575-final-20261008` | `8474c4c9d0a2` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1595` | `feature/ar-1595-record-replay` | `2e965849cd3a` | 0 | behind 16, ahead 0 |
-| `asb-tui-ar1596-qual-20261008` | `qualify/ar-1596-fault-recovery-20261008` | `7ef48d841eb7` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `quality/AR-1596-fault-recovery-qualification-receipt.txt` |
+| `asb-tui-ar1596-qual-20261008` | `qualify/ar-1596-fault-recovery-20261008` | `430cf80b3f82` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
 | `asb-tui-ar1601` | `ar1601-cassette-lifecycle` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
 | `asb-tui-ar1601-final` | `feature/ar-1601-coverage-repair` | `941721294a23` | 0 | behind 282, ahead 0 |
@@ -152,8 +151,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1697-pair` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 70, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 67, ahead 1 |
 | `asb-tui-ar1704` | `repair/ar-1704-coverage` | `3478ea722dea` | 0 | behind 64, ahead 0 |
-| `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `8474c4c9d0a2` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `tools/run-operator-quickstart.py`, `tools/test-operator-quickstart.py` |
+| `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `820ab9eb678d` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 314, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 314, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 314, ahead 156 |
