@@ -126,7 +126,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1604-output` | `repair/ar1616-output-contract-coverage` | `43bf705deb50` | 0 | behind 230, ahead 0 |
 | `asb-tui-ar1607-adapter-impl` | `feature/ar-1607-adapter-ux` | `d39423570468` | 0 | behind 261, ahead 0 |
 | `asb-tui-ar1610-coverage` | `repair/ar-1610-coverage` | `9861ee37692c` | 0 | behind 265, ahead 0 |
-| `asb-tui-ar1613` | `feat/ar-1613-real-dev-consumption` | `1cf4b43d7c6e` | 0 | behind 64, ahead 0 |
+| `asb-tui-ar1613` | `feat/ar-1613-real-dev-consumption` | `24e766d71554` | 0 | behind 64, ahead 1 |
 | `asb-tui-ar1617-1618` | `feature/ar-1617-1618-tui` | `478a0a0e410f` | 0 | behind 222, ahead 0 |
 | `asb-tui-ar1621` | `feature/ar-1621-dev-auth-nonblocking` | `24213fede6ae` | 0 | behind 219, ahead 0 |
 | `asb-tui-ar1639-qual` | `DETACHED` | `5146a08db5de` | 0 | behind 200, ahead 0 |
