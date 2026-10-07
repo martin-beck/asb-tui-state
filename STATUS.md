@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pty-runner-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Implement and independently review a bounded controlling-PTY operator-quickstart runner, then requalify AR-1654 after the paired ASB development-broker foreground-terminal repair lands. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pty-runner-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. |
 
 ### Open (1)
 
