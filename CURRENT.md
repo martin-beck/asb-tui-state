@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent review of PR #287 exact signed+DCO head a55a50cbd28d2a3f649a84a80121999f3e3f3c3a after exact-head Repository quality and AWQ checks finish; repair findings or merge when approved, then verify post-merge CI before AR-1654 requalification. | codex-ar1721-pr287-review-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head a55a50c: send q only after an explicit launch-readiness predicate, and keep terminating the authenticated process group after the leader exits until no descendants remain; add early-output-before-raw-mode and TERM/HUP-resistant descendant tests, then rerun exact-head checks and independent review. | codex-ar1721-pr287-review-20261008 |
 
 ## Blocked
 
