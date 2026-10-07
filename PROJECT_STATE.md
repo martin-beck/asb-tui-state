@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@a55a50cbd28d` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@a55a50cbd28d` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37700690740 | `a55a50cbd28d` | pull_request | AWQ shadow observation | queued:- |
+| 37700690740 | `a55a50cbd28d` | pull_request | AWQ shadow observation | in_progress:- |
 | 37700690492 | `a55a50cbd28d` | pull_request | Repository quality | in_progress:- |
 | 37699975624 | `3bb597cfb0b5` | push | Repository quality | completed:success |
 | 37699975515 | `3bb597cfb0b5` | push | Trusted main verification | completed:success |
