@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #286 | `qualify/ar-1596-fault-recovery-20261008@7ef48d841eb7` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | AR-1596: qualify fault and recovery matrix |
+| #286 | `qualify/ar-1596-fault-recovery-20261008@7ef48d841eb7` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1596: qualify fault and recovery matrix |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37698132616 | `7ef48d841eb7` | pull_request | AWQ shadow observation | in_progress:- |
-| 37698132148 | `7ef48d841eb7` | pull_request | Repository quality | in_progress:- |
+| 37698132616 | `7ef48d841eb7` | pull_request | AWQ shadow observation | completed:success |
+| 37698132148 | `7ef48d841eb7` | pull_request | Repository quality | completed:success |
 | 37666327326 | `8474c4c9d0a2` | push | Repository quality | completed:success |
 | 37666327178 | `8474c4c9d0a2` | push | Trusted main verification | completed:success |
 | 37665424846 | `8cfe73415791` | pull_request | AWQ shadow observation | completed:success |
