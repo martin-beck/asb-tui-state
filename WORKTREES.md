@@ -208,3 +208,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1721-tui-main` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 4, ahead 0 |
 | `asb-origin-main-verify.QOga6I` | `DETACHED` | `f1b2b3404181` | 0 | behind 0, ahead 0 |
 | `asb-tui-current-audit-2238546` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 4, ahead 0 |
+| `asb285.EP9qDg` | `DETACHED` | `d5dd7cdeaed7` | 0 | behind 0, ahead 1 |
