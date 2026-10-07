@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. | codex-ar1721-pty-runner-20261008 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Obtain independent re-review of PR #286 exact head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40 after hosted checks finish; do not merge until review approves the corrected backend-selection receipt and all exact-head checks are green. | - |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. | - |
 
 ## Blocked
 

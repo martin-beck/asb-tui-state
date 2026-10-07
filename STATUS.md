@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -211,7 +211,7 @@ flowchart LR
         AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
-        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -765,17 +765,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pty-runner-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. |
-
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Unclaimed | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Obtain independent re-review of PR #286 exact head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40 after hosted checks finish; do not merge until review approves the corrected backend-selection receipt and all exact-head checks are green. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. |
 
 ### Blocked (7)
 
