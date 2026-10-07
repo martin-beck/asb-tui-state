@@ -114,7 +114,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 314, ahead 163 |
 | `asb-tui-ar1575-final-qualification` | `qualify/ar-1575-final-20261008` | `8474c4c9d0a2` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1595` | `feature/ar-1595-record-replay` | `2e965849cd3a` | 0 | behind 16, ahead 0 |
-| `asb-tui-ar1596-qual-20261008` | `qualify/ar-1596-fault-recovery-20261008` | `8474c4c9d0a2` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1596-qual-20261008` | `qualify/ar-1596-fault-recovery-20261008` | `8474c4c9d0a2` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `quality/AR-1596-fault-recovery-qualification-receipt.txt` |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
 | `asb-tui-ar1601` | `ar1601-cassette-lifecycle` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
 | `asb-tui-ar1601-final` | `feature/ar-1601-coverage-repair` | `941721294a23` | 0 | behind 282, ahead 0 |
