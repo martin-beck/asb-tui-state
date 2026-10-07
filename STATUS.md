@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair3-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head 63f01a3 so bounded teardown covers every authenticated launcher-session descendant including separate foreground process groups without signaling unrelated or reused identities, and wraps selector/setup failures in guaranteed child, PTY, subreaper and terminal-state restoration; add adversarial regressions, then obtain fresh exact-head review and terminal-green CI. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair3-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 head 4bc055a43ee37defec5c8d2a686fc7fdcfdf0461 and require all hosted checks terminal green; repair any finding, otherwise merge through the protected path and verify exact-main post-merge checks. |
 
 ### Blocked (7)
 
