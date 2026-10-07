@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head a55a50c: send q only after an explicit launch-readiness predicate, and keep terminating the authenticated process group after the leader exits until no descendants remain; add early-output-before-raw-mode and TERM/HUP-resistant descendant tests, then rerun exact-head checks and independent review. | - |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head a55a50c: send q only after an explicit launch-readiness predicate, and keep terminating the authenticated process group after the leader exits until no descendants remain; add early-output-before-raw-mode and TERM/HUP-resistant descendant tests, then rerun exact-head checks and independent review. | codex-ar1721-pr287-review-20261008 |
 
 ## Blocked
 
