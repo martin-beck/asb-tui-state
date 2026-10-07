@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | codex-ar1596-pr286-repair-20261008 | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Amend PR #286 exact head 7ef48d841eb7105bf7bc056825f21f46652152d3 receipt to state the exact explicit bubblewrap-network invocation and disclose that the default auto selector currently returns runner_unavailable before reaching Bubblewrap on this host, or repair ASB auto selection and rerun; retain fail-closed isolation, rerun exact-head checks, then obtain independent rereview. |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | codex-ar1596-pr286-repair-20261008 | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Obtain independent re-review of PR #286 exact head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40 after hosted checks finish; do not merge until review approves the corrected backend-selection receipt and all exact-head checks are green. |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pty-runner-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Implement and independently review a bounded controlling-PTY operator-quickstart runner, then requalify AR-1654 after the paired ASB development-broker foreground-terminal repair lands. |
 
 ### Blocked (7)
