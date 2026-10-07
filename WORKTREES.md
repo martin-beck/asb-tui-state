@@ -203,5 +203,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-wizard-rebase` | `DETACHED` | `f83a3d867492` | 0 | behind 308, ahead 127 |
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 207, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 225, ahead 0 |
+| `ar1720-tui` | `repair/ar-1720-dynamic-catalog` | `eb9a483cd8cc` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/main.rs` |
 | `ar1721-tui-main` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 0, ahead 0 |
 | `asb-tui-current-audit-2238546` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 0, ahead 0 |
