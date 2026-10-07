@@ -11,11 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #286 | `qualify/ar-1596-fault-recovery-20261008@430cf80b3f82` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1596: qualify fault and recovery matrix |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@820ab9eb678d` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37699344997 | `820ab9eb678d` | pull_request | AWQ shadow observation | in_progress:- |
+| 37699344593 | `820ab9eb678d` | pull_request | Repository quality | in_progress:- |
 | 37699201556 | `430cf80b3f82` | pull_request | AWQ shadow observation | in_progress:- |
 | 37699201126 | `430cf80b3f82` | pull_request | Repository quality | in_progress:- |
 | 37698132616 | `7ef48d841eb7` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37665424428 | `8cfe73415791` | pull_request | Repository quality | completed:success |
 | 37664578133 | `d5dd7cdeaed7` | pull_request | AWQ shadow observation | completed:failure |
 | 37664577913 | `d5dd7cdeaed7` | pull_request | Repository quality | completed:cancelled |
-| 37648882963 | `f1b2b3404181` | push | Repository quality | completed:success |
-| 37648882929 | `f1b2b3404181` | push | Trusted main verification | completed:success |
