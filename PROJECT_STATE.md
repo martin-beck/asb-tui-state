@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `eb9a483cd8cc000ae4002f3c486af988f1797dbd`
+- Product remote main: `f1b2b34041812d26a10078974653ad60c56bddbb`
 - Local origin/main: `eb9a483cd8cc000ae4002f3c486af988f1797dbd`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
@@ -15,15 +15,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37648882963 | `f1b2b3404181` | push | Repository quality | in_progress:- |
+| 37648882929 | `f1b2b3404181` | push | Trusted main verification | in_progress:- |
+| 37648176879 | `df6545d450f2` | pull_request | AWQ shadow observation | completed:success |
+| 37648176374 | `df6545d450f2` | pull_request | Repository quality | completed:success |
+| 37647381563 | `24d9e991b1b7` | pull_request | AWQ shadow observation | completed:failure |
+| 37647381118 | `24d9e991b1b7` | pull_request | Repository quality | completed:failure |
+| 37646981068 | `c81817cbfc86` | pull_request | AWQ shadow observation | completed:failure |
+| 37646980430 | `c81817cbfc86` | pull_request | Repository quality | completed:cancelled |
 | 37291741782 | `eb9a483cd8cc` | push | Repository quality | completed:success |
 | 37291741746 | `eb9a483cd8cc` | push | Trusted main verification | completed:success |
 | 37290950025 | `d671d50a16e8` | pull_request | AWQ shadow observation | completed:success |
 | 37290949420 | `d671d50a16e8` | pull_request | Repository quality | completed:success |
-| 37290791124 | `d1fc78cf5fa9` | pull_request | AWQ shadow observation | completed:failure |
-| 37290790660 | `d1fc78cf5fa9` | pull_request | Repository quality | completed:failure |
-| 37281283812 | `ef0679d89c7e` | push | Trusted main verification | completed:success |
-| 37281283798 | `ef0679d89c7e` | push | Repository quality | completed:success |
-| 37280662165 | `769711695c80` | pull_request | AWQ shadow observation | completed:success |
-| 37280661821 | `769711695c80` | pull_request | Repository quality | completed:success |
-| 37269906969 | `5880ceb965d0` | push | Repository quality | completed:success |
-| 37269906963 | `5880ceb965d0` | push | Trusted main verification | completed:success |
