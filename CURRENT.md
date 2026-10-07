@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Obtain independent re-review of PR #286 exact head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40 after hosted checks finish; do not merge until review approves the corrected backend-selection receipt and all exact-head checks are green. | codex-root-ar1596-rereview-20261008 |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Merge PR #286 at exact reviewed head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40, then require terminal-green post-merge Repository quality and AWQ shadow before releasing AR-1596 done. | codex-root-ar1596-rereview-20261008 |
 
 ## Open
 
