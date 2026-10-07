@@ -151,7 +151,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1697-pair` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 73, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 70, ahead 1 |
 | `asb-tui-ar1704` | `repair/ar-1704-coverage` | `3478ea722dea` | 0 | behind 67, ahead 0 |
-| `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `63f01a3ddc23` | 0 | behind 0, ahead 3 |
+| `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `63f01a3ddc23` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `tools/run-operator-quickstart.py` |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 317, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 317, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 317, ahead 156 |
