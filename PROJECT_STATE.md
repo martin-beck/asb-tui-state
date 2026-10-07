@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@820ab9eb678d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@a55a50cbd28d` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37700690740 | `a55a50cbd28d` | pull_request | AWQ shadow observation | queued:- |
+| 37700690492 | `a55a50cbd28d` | pull_request | Repository quality | in_progress:- |
 | 37699975624 | `3bb597cfb0b5` | push | Repository quality | completed:success |
 | 37699975515 | `3bb597cfb0b5` | push | Trusted main verification | completed:success |
 | 37699344997 | `820ab9eb678d` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37698132148 | `7ef48d841eb7` | pull_request | Repository quality | completed:success |
 | 37666327326 | `8474c4c9d0a2` | push | Repository quality | completed:success |
 | 37666327178 | `8474c4c9d0a2` | push | Trusted main verification | completed:success |
-| 37665424846 | `8cfe73415791` | pull_request | AWQ shadow observation | completed:success |
-| 37665424428 | `8cfe73415791` | pull_request | Repository quality | completed:success |
