@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head 63f01a3 so bounded teardown covers every authenticated launcher-session descendant including separate foreground process groups without signaling unrelated or reused identities, and wraps selector/setup failures in guaranteed child, PTY, subreaper and terminal-state restoration; add adversarial regressions, then obtain fresh exact-head review and terminal-green CI. | - |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 head 63f01a3 so bounded teardown covers every authenticated launcher-session descendant including separate foreground process groups without signaling unrelated or reused identities, and wraps selector/setup failures in guaranteed child, PTY, subreaper and terminal-state restoration; add adversarial regressions, then obtain fresh exact-head review and terminal-green CI. | codex-ar1721-pr287-repair3-20261008 |
 
 ## Blocked
 
