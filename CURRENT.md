@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent exact-head review of PR #287 at 820ab9eb678d19e1270da1171a0b7709aaed8ecf, wait for required hosted checks, repair any findings, merge only when green, then verify post-merge CI before paired AR-1654 requalification. | codex-root-ar1721-sync-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain independent review of PR #287 exact signed+DCO head a55a50cbd28d2a3f649a84a80121999f3e3f3c3a after exact-head Repository quality and AWQ checks finish; repair findings or merge when approved, then verify post-merge CI before AR-1654 requalification. | codex-root-ar1721-sync-20261008 |
 
 ## Blocked
 
