@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | codex-root-ar1596-rereview-20261008 | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Merge PR #286 at exact reviewed head 430cf80b3f82cc6a1deefe7ea41ccd401fdc5f40, then require terminal-green post-merge Repository quality and AWQ shadow before releasing AR-1596 done. |
+| P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | codex-root-ar1596-rereview-20261008 | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Terminal: PR #286 merged as 3bb597cfb0b5551357b66cb886cd8bb61d455bc6; exact post-merge Trusted main and Repository quality runs are green. |
 
 ### Open (1)
 
