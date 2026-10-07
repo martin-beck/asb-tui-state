@@ -182,6 +182,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr193-review` | `DETACHED` | `9d1351ce326f` | 0 | behind 316, ahead 1 |
 | `asb-tui-pr198-merge.rSBFZY` | `DETACHED` | `4238ec567572` | 0 | behind 304, ahead 0 |
 | `asb-tui-pr202-repair` | `feature/ar-1605-pty-repair` | `e743e875afc7` | 0 | behind 284, ahead 8 |
+| `asb-tui-pr287-review-20261008` | `DETACHED` | `a55a50cbd28d` | 0 | behind 0, ahead 2 |
 | `asb-tui-pr47` | `rebased-pr47` | `a159fda0c118` | 0 | behind 317, ahead 88 |
 | `asb-tui-pr48` | `rebased-pr48` | `f366cc495e1e` | 0 | behind 317, ahead 88 |
 | `asb-tui-pr63-fix` | `DETACHED` | `8ccf7b93245e` | 0 | behind 317, ahead 119 |
