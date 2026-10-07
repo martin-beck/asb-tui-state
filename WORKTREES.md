@@ -112,6 +112,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1188-wizard-render` | `feature/ar1188-wizard-render` | `1f737c49fb3e` | 0 | behind 314, ahead 96 |
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 314, ahead 99 |
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 314, ahead 163 |
+| `asb-tui-ar1575-final-qualification` | `qualify/ar-1575-final-20261008` | `8474c4c9d0a2` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1595` | `feature/ar-1595-record-replay` | `2e965849cd3a` | 0 | behind 16, ahead 0 |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
 | `asb-tui-ar1601` | `ar1601-cassette-lifecycle` | `b4a6f84fdbee` | 0 | behind 307, ahead 0 |
@@ -137,6 +138,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `0cddb9cca4eb` | 0 | behind 68, ahead 0 |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 199, ahead 1 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 199, ahead 3 |
+| `asb-tui-ar1654-requal-20261008` | `repair/ar-1654-quickstart-requal-20261008` | `8474c4c9d0a2` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1656` | `ar-1656-provider-catalog-refresh` | `315afa2592d6` | 0 | behind 182, ahead 0 |
 | `asb-tui-ar1658` | `feature/ar-1658-tui-channel-selector` | `e4c6fd537f87` | 0 | behind 140, ahead 0 |
 | `asb-tui-ar1660-quickstart` | `repair/ar-1660-quickstart` | `749f6f46fff1` | 0 | behind 119, ahead 0 |
