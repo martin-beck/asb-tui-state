@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #285 | `repair/ar-1693-exact-tui-ref@d5dd7cdeaed7` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix(quickstart): reject mismatched TUI materializer refs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37664578133 | `d5dd7cdeaed7` | pull_request | AWQ shadow observation | in_progress:- |
+| 37664577913 | `d5dd7cdeaed7` | pull_request | Repository quality | in_progress:- |
 | 37648882963 | `f1b2b3404181` | push | Repository quality | completed:success |
 | 37648882929 | `f1b2b3404181` | push | Trusted main verification | completed:success |
 | 37648176879 | `df6545d450f2` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37646980430 | `c81817cbfc86` | pull_request | Repository quality | completed:cancelled |
 | 37291741782 | `eb9a483cd8cc` | push | Repository quality | completed:success |
 | 37291741746 | `eb9a483cd8cc` | push | Trusted main verification | completed:success |
-| 37290950025 | `d671d50a16e8` | pull_request | AWQ shadow observation | completed:success |
-| 37290949420 | `d671d50a16e8` | pull_request | Repository quality | completed:success |
