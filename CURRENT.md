@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1596](tasks/AR-1596.md): Fault and recovery qualification | Exercise and explain setup, cassette, replay, and benchmark failures without hidden blocking. | Release remains held at current main f3fdafd: rerun ASB AR-1597 matrix in a host capable of unshare --net (or approved equivalent isolated runner), then attach matrix-linked TUI receipt; current sandbox returns EPERM and runner correctly fails closed. | codex-ar1596-fault-recovery-20261008 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Implement and independently review a bounded controlling-PTY operator-quickstart runner, then requalify AR-1654 after the paired ASB development-broker foreground-terminal repair lands. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
