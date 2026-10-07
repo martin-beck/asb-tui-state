@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #286 | `qualify/ar-1596-fault-recovery-20261008@7ef48d841eb7` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1596: qualify fault and recovery matrix |
+| #286 | `qualify/ar-1596-fault-recovery-20261008@7ef48d841eb7` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | AR-1596: qualify fault and recovery matrix |
 
 ## Recent workflows
 
