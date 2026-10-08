@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -174,7 +174,7 @@ flowchart LR
         AR_1664["AR-1664 - Done"]:::status_done
         AR_1665["AR-1665 - Blocked"]:::status_blocked
         AR_1666["AR-1666 - Done"]:::status_done
-        AR_1667["AR-1667 - Open"]:::status_open
+        AR_1667["AR-1667 - In progress"]:::status_in_progress
         AR_1668["AR-1668 - Planned"]:::status_planned
         AR_1672["AR-1672 - Planned"]:::status_planned
         AR_1673["AR-1673 - Planned"]:::status_planned
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Unclaimed | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
+| P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | codex-ar1667-published-bundle-20261008 | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
 
 ### Blocked (5)
 
