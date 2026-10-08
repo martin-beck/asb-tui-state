@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. | codex-ar1597-usability-20261008 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Upgrade the vendored Agent Workflow Coordinator from v0.3.5 to exact upstream v0.3.14, validate superseded_by chain semantics, bind AR-1672 to done successor AR-1668, and prove AR-1673 becomes dependency-ready without weakening fail-closed admission. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -28,7 +34,6 @@ Never edit this file directly.
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. | - |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. | - |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Qualify the complete selection-driven asb-tui journey through the supported `asb tui install` and `asb tui` commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. | - |
-| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Upgrade the vendored Agent Workflow Coordinator from v0.3.5 to exact upstream v0.3.14, validate superseded_by chain semantics, bind AR-1672 to done successor AR-1668, and prove AR-1673 becomes dependency-ready without weakening fail-closed admission. | - |
 
 ## Done
 
