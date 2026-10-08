@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-pr290-repair-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Repair PR #290 P1 at exact reviewed head e183cd0: replace superlinear trailing JSON suffix search with bounded linear extraction and add near-2-MiB hostile/nested/string-brace/trailing-junk regression; rerun local gates and fresh exact-head hosted checks, then obtain a different-agent re-review. |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-pr290-repair-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Fresh independent exact-head review and hosted checks for PR #290; do not merge until root integration. |
 
 ### Blocked (5)
 
