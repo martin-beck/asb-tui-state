@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1703",
+  "classification": "development/mock",
+  "result": "passed",
+  "credentials": "none",
+  "development_policy": {
+    "authentication": "warning-only",
+    "signature_and_key_management": "warning-only",
+    "functional_exactness_review_and_ci": "required",
+    "production_release_claim": false
+  },
+  "paired_sources": {
+    "agent-systems-benchmark": {
+      "commit": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+      "tree": "40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde"
+    },
+    "asb-tui": {
+      "commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+    }
+  },
+  "fresh_builds": {
+    "asb_binary_sha256": "01c8158e2d79a8901b6fa0e8b20b4af12388460ab3242990d496907b4ea6e105",
+    "tui_binary_sha256": "f510834dab431591e6df689fce1004e4341e488ba7d0bac8aa83a469638adc04",
+    "development_bundle_executable_sha256": "9c741d423daae70c3fb28ffa2ff407b78fcc1fe0420ef1f481684f4daa984875",
+    "source_materialized_executable_sha256": "4e7380628502b986af435ae823f49e7f2e1e4de67c0393ec3190580f1d979728"
+  },
+  "input_receipts": {
+    "operator_quickstart_sha256": "01a970ee3028bf5061da533ad53628ee3c79796b6bed4278c928a5fcb21cd98f",
+    "current_main_quickstart_sha256": "0c5d282b68a6e05954c66d43b3616e277210b0112c253c1653b1345b872bb3f5",
+    "post_launch_journey_sha256": "87baff9888eb8b0f308feaa7b37f2a55a057cf61b52b8463a06574afabf47ac6"
+  },
+  "top_level_commands": {
+    "install": {
+      "command": "asb tui install",
+      "human": "passed",
+      "json": "passed",
+      "code": "development_bundle_consumed",
+      "network": "local_bundle",
+      "exact_source_and_artifact_provenance": true
+    },
+    "launch": {
+      "command": "asb tui",
+      "human": "passed",
+      "json": "passed",
+      "code": "development_launched",
+      "terminal": {
+        "controlling": true,
+        "foreground_process_group": true,
+        "rows": 24,
+        "columns": 80
+      },
+      "unconfigured_wizard_visible": true,
+      "configured_landing_behavior": "passed-by-exact-head-tests"
+    }
+  },
+  "selection_and_execution": {
+    "provider_and_model": "passed",
+    "agents": ["opencode", "opendesk"],
+    "shared_defaults": "passed",
+    "benchmark_hierarchy": {
+      "pool": "core",
+      "group": "quality",
+      "benchmark": "chat",
+      "selected_measure": "latency.first",
+      "explicitly_deselected_measure": "tokens.total"
+    },
+    "benchmark_run": "passed-development-fixture",
+    "live_statistics": {
+      "progress_zero_to_one_hundred_percent": true,
+      "throughput_and_latency_present": true,
+      "provenance": "development/mock"
+    },
+    "final_results": {
+      "complete_measure_results": true,
+      "recent_run_visible": true,
+      "compatible_comparison": true
+    }
+  },
+  "capture_replay_comparison": {
+    "selected_scope": {"workload_count": 1, "tuple_count": 1},
+    "all_scope": {"workload_count": 7, "tuple_count": 7},
+    "incomplete_matrix_fails_closed": true,
+    "strict_replay_network": "denied",
+    "comparison": "passed",
+    "analysis": "passed"
+  },
+  "lifecycle_and_negatives": {
+    "restart": "passed",
+    "rollback_preservation": "passed",
+    "remove": "passed",
+    "missing_toolchain": "trusted_tool_unavailable",
+    "relative_or_symlinked_or_writable_toolchain": "trusted_tool_invalid",
+    "tampered_manifest": "dev_channel_manifest_invalid",
+    "absent_terminal": "fails-closed",
+    "unavailable_provider": "typed-and-nonselectable",
+    "unsupported_channels": ["stable", "nightly", "experimental"]
+  },
+  "evidence_boundary": {
+    "real_top_level_pty": "install and launch are exercised through the exact public commands; first-run wizard visibility and terminal restoration are observed before bounded quit",
+    "selection_run_results": "full user-visible selection, benchmark, statistics, result, history, replay, comparison, and analysis behavior is exercised by exact-head renderer-neutral and in-process development fixtures",
+    "continuous_keystroke_pty_claim": false,
+    "live_provider_claim": false,
+    "production_claim": false
+  },
+  "tests": {
+    "complete_cargo_test_locked_release": "passed",
+    "library_tests": {"passed": 385, "failed": 0},
+    "top_level_installed_entrypoint": "passed",
+    "end_to_end_visible_transcript": "passed",
+    "wizard_render_and_formal_model": "passed",
+    "benchmark_and_measure_selection": "passed",
+    "live_statistics_and_final_results": "passed",
+    "pty_and_terminal_restoration": "passed"
+  },
+  "hosted_ci": {
+    "agent-systems-benchmark": {
+      "head": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+      "successful_runs": [37852141052, 37852141065, 37852141069, 37852141078, 37852141086, 37852141097, 37852141128, 37852141151, 37852141152, 37852141200]
+    },
+    "asb-tui": {
+      "head": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "successful_runs": [37784767206, 37784767389]
+    }
+  },
+  "privacy_and_cleanup": {
+    "credential_values_recorded": false,
+    "private_paths_recorded": false,
+    "raw_logs_recorded": false,
+    "benchmark_and_replay_network_denied": true,
+    "disposable_installations_removed": true
+  },
+  "independent_review": {
+    "status": "pending",
+    "reviewed_state_commit": null,
+    "reviewed_state_tree": null,
+    "findings": []
+  }
+}

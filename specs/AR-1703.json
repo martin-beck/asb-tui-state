@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1703.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "exact-top-level-entrypoints",
+      "description": "A clean disposable development home executes exact asb tui install followed by bare asb tui through a real controlling foreground PTY and binds exact paired source and executable identities."
+    },
+    {
+      "id": "selection-driven-journey",
+      "description": "Exact-head development fixtures cover first-run wizard and configured landing behavior, provider, model, agent, pool, group, benchmark and measure selection, benchmark launch, bounded live statistics, final results and recent-run history."
+    },
+    {
+      "id": "capture-replay-comparison",
+      "description": "Selected and all-workload capture, sealing, strict network-denied offline replay, comparison and analysis pass with incomplete coverage failing closed."
+    },
+    {
+      "id": "truthful-development-boundary",
+      "description": "Missing development authentication, signatures and key management remain visible warnings; the receipt distinguishes real PTY command evidence from renderer-neutral fixture evidence and makes no live-provider, continuous-keystroke or production-release claim."
+    },
+    {
+      "id": "negative-lifecycle-and-cleanup",
+      "description": "Restart, rollback preservation, removal, unavailable channel/provider, absent terminal, untrusted toolchain and tampered artifact paths remain typed, actionable, fail-closed and cleanly removed."
+    }
+  ],
+  "definition_of_done": [
+    "Fresh exact-main builds and privacy-safe receipts prove the complete development-classified operator journey without credentials or benchmark/replay network access.",
+    "The complete locked release test suite and exact-head hosted CI pass for both paired repositories.",
+    "Independent review accepts the exact state receipt and evidence boundary before normal handoffctl release."
+  ],
+  "inputs": [
+    {
+      "id": "completed-dependencies",
+      "description": "Completed AR-1575, AR-1654, AR-1700, AR-1701, AR-1702 and AR-1706 exact qualification and feature prerequisites."
+    },
+    {
+      "id": "paired-current-main",
+      "description": "Exact ASB and asb-tui remote main commits and trees recorded in the AR-1703 receipt."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "clean-room-receipt",
+      "description": "Privacy-safe AR-1703 top-level clean-room qualification receipt with exact identities, typed results, evidence limits and hosted CI."
+    },
+    {
+      "id": "terminal-state",
+      "description": "Independent-review-backed terminal coordination state with spec acceptance bound to the exact receipt digest."
+    }
+  ],
+  "allowed_tools": ["cargo", "gh", "git", "python3", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "direct-asb-product-edit", "done-admission-bypass", "generated-view-edit", "networked-benchmark", "production-claim", "unreviewed-release"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {
+      "id": "top-level-commands",
+      "description": "Exact asb tui install and bare asb tui human and machine-readable development paths pass with exact provenance and real PTY evidence."
+    },
+    {
+      "id": "complete-development-journey",
+      "description": "Wizard, selections, benchmark, statistics, results, selected/all capture, strict replay, comparison, analysis, lifecycle and negative fixtures pass."
+    },
+    {
+      "id": "quality-review-and-hosted",
+      "description": "Full local product/state gates, privacy review, independent exact-state review and exact-head hosted CI pass before release."
+    }
+  ]
+}
