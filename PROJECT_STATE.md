@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
+| #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37719420515 | `93e396af3fec` | pull_request | AWQ shadow observation | in_progress:- |
-| 37719420355 | `93e396af3fec` | pull_request | Repository quality | in_progress:- |
+| 37719420355 | `93e396af3fec` | pull_request | Repository quality | completed:failure |
 | 37719361825 | `69f0584cee27` | dynamic | Dependabot Updates | completed:success |
 | 37719268538 | `69f0584cee27` | push | Trusted main verification | completed:success |
 | 37719268449 | `69f0584cee27` | push | Repository quality | completed:success |
