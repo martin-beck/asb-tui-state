@@ -9,16 +9,16 @@
     "AR-1720"
   ],
   "id": "AR-1723",
-  "next_action": "Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597.",
+  "next_action": "Obtain independent exact-head review of PR 292 at 0b2012d1252a4e97c586a029e25ad0f003db3d99, watch required hosted checks, repair any findings, and do not self-merge.",
   "owner": "codex-ar1723-low-typing-20261008",
   "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T08:14:20+00:00",
+  "updated_at": "2026-10-08T08:14:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -271,3 +271,10 @@ never block local or deterministic qualification.
 
 - 2026-10-08T08:14:20+00:00: Recorded command exit 0; command argv SHA-256
   3d17a1a28e1c455d1791fbd3604990afc2336529fbdc501d0b90f098496072ad.
+
+- 2026-10-08T08:14:47+00:00: Published signed+DCO candidate PR 292. Exact head
+  0b2012d1252a4e97c586a029e25ad0f003db3d99, tree d91bca589bf8dca0fbb52a83a5572d3969c515e7.
+  Authoritative renderer route reports selection=3, navigation=1, confirmation=6, free-form=0,
+  total=10. Full locked Rust suite and repository quality gates passed locally, including
+  formal/help/UI_OWNERS/source parity, privacy, restart, cancellation, journey, documentation,
+  promoted self-test, and product shell quality.

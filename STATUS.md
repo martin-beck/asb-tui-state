@@ -777,7 +777,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | codex-ar1723-low-typing-20261008 | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597. |
+| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | codex-ar1723-low-typing-20261008 | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Obtain independent exact-head review of PR 292 at 0b2012d1252a4e97c586a029e25ad0f003db3d99, watch required hosted checks, repair any findings, and do not self-merge. |
 
 ### Blocked (6)
 
