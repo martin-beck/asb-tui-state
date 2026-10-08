@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**170 ARs tracked** across 4 active status categories.
+**171 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -26,17 +26,17 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 170 |
+| Tasks | 171 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 0 |
+| Open or active | 1 |
 | Blocked | 4 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 170 | 0 | 4 | 159 |
+| unassigned | unassigned | 171 | 1 | 4 | 159 |
 
 ## Task drill-down
 
@@ -2420,6 +2420,20 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. |
 | Next action | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
 
+### AR-1726 — Repair supersession profile lifecycle gate
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the supersession profile gate valid across AR-1673&#x27;s dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. |
+| Next action | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. |
+
 
 ## Dependency graph
 
@@ -2619,6 +2633,7 @@ flowchart LR
         AR_1723["AR-1723 - Done"]:::status_done
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - Done"]:::status_done
+        AR_1726["AR-1726 - Open"]:::status_open
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -2934,6 +2949,7 @@ flowchart LR
     AR_1668 --> AR_1723
     AR_1672 --> AR_1673
     AR_1672 --> AR_1686
+    AR_1673 --> AR_1726
     AR_1674 --> AR_1675
     AR_1674 --> AR_1676
     AR_1674 --> AR_1690
@@ -2995,6 +3011,7 @@ flowchart LR
     AR_1714 --> AR_1724
     AR_1720 --> AR_1723
     AR_1721 --> AR_1725
+    AR_1722 --> AR_1726
     AR_1723 --> AR_1724
     AR_1724 --> AR_1725
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3145,7 +3162,7 @@ flowchart LR
 | [AR-1667](../tasks/AR-1667.md) | [AR-1655](../tasks/AR-1655.md), [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md), [AR-1666](../tasks/AR-1666.md) | [AR-1668](../tasks/AR-1668.md), [AR-1672](../tasks/AR-1672.md), [AR-1673](../tasks/AR-1673.md) |
 | [AR-1668](../tasks/AR-1668.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1672](../tasks/AR-1672.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1673](../tasks/AR-1673.md), [AR-1686](../tasks/AR-1686.md) |
-| [AR-1673](../tasks/AR-1673.md) | [AR-1667](../tasks/AR-1667.md), [AR-1672](../tasks/AR-1672.md) | None |
+| [AR-1673](../tasks/AR-1673.md) | [AR-1667](../tasks/AR-1667.md), [AR-1672](../tasks/AR-1672.md) | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) |
 | [AR-1674](../tasks/AR-1674.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md) | [AR-1675](../tasks/AR-1675.md), [AR-1676](../tasks/AR-1676.md), [AR-1690](../tasks/AR-1690.md) |
 | [AR-1675](../tasks/AR-1675.md) | [AR-1658](../tasks/AR-1658.md), [AR-1674](../tasks/AR-1674.md) | [AR-1676](../tasks/AR-1676.md), [AR-1690](../tasks/AR-1690.md) |
 | [AR-1676](../tasks/AR-1676.md) | [AR-1653](../tasks/AR-1653.md), [AR-1674](../tasks/AR-1674.md), [AR-1675](../tasks/AR-1675.md) | [AR-1677](../tasks/AR-1677.md), [AR-1678](../tasks/AR-1678.md), [AR-1687](../tasks/AR-1687.md), [AR-1691](../tasks/AR-1691.md) |
@@ -3177,12 +3194,19 @@ flowchart LR
 | [AR-1714](../tasks/AR-1714.md) | [AR-1575](../tasks/AR-1575.md), [AR-1703](../tasks/AR-1703.md), [AR-1713](../tasks/AR-1713.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1720](../tasks/AR-1720.md) | [AR-1713](../tasks/AR-1713.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
-| [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | None |
+| [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) |
 | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | [AR-1721](../tasks/AR-1721.md), [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | None |
+| [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | [AR-1673](../tasks/AR-1673.md), [AR-1722](../tasks/AR-1722.md) | None |
 
 ## Complete AR inventory
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md): Repair supersession profile lifecycle gate | Unclaimed | Make the supersession profile gate valid across AR-1673&#x27;s dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. |
 
 ### Blocked (4)
 
@@ -3302,8 +3326,3 @@ flowchart LR
 | P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
 | P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
-| P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
-| P0 | [AR-1644](../tasks/AR-1644.md): TUI terminal launch preflight | Unclaimed | Make TUI terminal selection/preflight clear and runnable for a fresh user while preserving the PTY contract. | No further action; merged TUI PR #223 and hosted PTY/UI-quality checks are green. |
-| P0 | [AR-1645](../tasks/AR-1645.md): Setup-to-runtime configuration bridge | Unclaimed | Make persisted setup selections directly drive benchmark planning and execution. | No further action; paired ASB setup-to-plan/run bridge is merged and reviewed. |
-| P0 | [AR-1646](../tasks/AR-1646.md): Development capture and replay route | Unclaimed | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. |
-| P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Coordinate selected-agent execution and comparison from online or offline replay runs. | PR #263 repair head 1f60345 is awaiting independent review and fresh hosted checks; resolve findings, merge through protected path, then watch exact-main checks. |

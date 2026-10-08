@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1726.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "supersession-invariant",
+      "description": "AR-1672 resolves through completed AR-1668 and satisfies AR-1673 independently of AR-1673's current supported phase."
+    },
+    {
+      "id": "phase-invariants",
+      "description": "Open, actively claimed, and accepted done phases enforce their exact owner, lease, spec, and acceptance invariants."
+    },
+    {
+      "id": "fail-closed",
+      "description": "Malformed successor chains and invalid phase ownership, lease, or acceptance combinations are rejected deterministically."
+    },
+    {
+      "id": "state-only",
+      "description": "The repair changes only coordinator profile tests and evidence; no asb-tui or ASB product source or authority changes."
+    },
+    {
+      "id": "exact-hosted",
+      "description": "Independent review and exact final-head hosted Coordination verification pass after AR-1673 is terminal done."
+    }
+  ],
+  "definition_of_done": [
+    "Focused synthetic phase and hostile metadata tests pass together with the unchanged supersession-chain negatives.",
+    "The complete state, vendor, generated-view, privacy, and applicable formal gates pass at the exact accepted head.",
+    "Independent review approves the exact state-only change and terminal hosted Coordination verification succeeds after release."
+  ],
+  "inputs": [
+    {
+      "id": "terminal-ar1673",
+      "description": "Completed AR-1673 task, passing spec acceptance, and paired launch-diagnostics receipt."
+    },
+    {
+      "id": "supersession-profile",
+      "description": "Existing AR-1672 to AR-1668 replacement linkage and focused downstream profile test."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "phase-complete-profile-gate",
+      "description": "Lifecycle-tolerant profile assertion with deterministic valid and hostile phase fixtures."
+    },
+    {
+      "id": "hosted-recovery-receipt",
+      "description": "Privacy-safe exact-head review and terminal hosted Coordination verification evidence."
+    }
+  ],
+  "allowed_tools": [
+    "git",
+    "gh",
+    "python",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "product-code",
+    "direct-vendored-file-patch",
+    "dependency-bypass",
+    "generated-view-edit"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "environmental"
+  ],
+  "gates": [
+    {
+      "id": "phase-contract",
+      "description": "Open, in-progress, done, and hostile phase fixtures enforce exact owner, lease, spec, and acceptance rules."
+    },
+    {
+      "id": "supersession-contract",
+      "description": "The valid replacement chain remains admitted and all malformed or unfinished chains fail closed."
+    },
+    {
+      "id": "state-quality",
+      "description": "All state, vendor, generated-view, privacy, and applicable formal checks pass without product changes."
+    },
+    {
+      "id": "hosted",
+      "description": "Independent exact-head review and terminal post-release Coordination verification pass."
+    }
+  ]
+}
