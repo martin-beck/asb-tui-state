@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
-| #293 | `feature/ar1724-rustup-layout@c0c9103e5073` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | fix(dev): trust bounded owner Rustup layouts |
+| #293 | `feature/ar1724-rustup-layout@c0c9103e5073` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix(dev): trust bounded owner Rustup layouts |
 
 ## Recent workflows
 
