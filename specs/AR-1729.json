@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1729.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "deterministic-race",
+      "description": "A focused fixture deterministically exits after spawn and before identity or foreground observation, and the runner captures its bounded output and exit status without a false PTY-foreground failure."
+    },
+    {
+      "id": "interactive-proof-preserved",
+      "description": "Interactive launches still require a live authenticated session leader, controlling PTY, matching foreground group, nonzero terminal size, readiness, bounded quit, and cleanup."
+    },
+    {
+      "id": "typed-fast-exit",
+      "description": "Successful, nonzero, malformed, and output-free fast exits are classified distinctly from a live child that failed controlling-terminal or foreground-group establishment."
+    },
+    {
+      "id": "identity-and-cleanup",
+      "description": "No unauthenticated or reused PID is signalled, all descriptors are closed, authenticated fixture descendants are bounded and reaped, and no unrelated process is affected."
+    },
+    {
+      "id": "quality-and-publication",
+      "description": "Focused adversarial tests, full project gates, independent exact-tree review, signed+DCO merge, and exact-main post-merge workflows pass."
+    }
+  ],
+  "definition_of_done": [
+    "The fast noninteractive child-exit interleaving is deterministic in tests and no longer produces a false foreground-group failure.",
+    "Interactive controlling-PTY admission and authenticated cleanup remain fail-closed and fully covered.",
+    "The independently reviewed signed+DCO repair is merged and exact-main Repository Quality and Trusted Main workflows are terminal green."
+  ],
+  "inputs": [
+    {
+      "id": "ar-1703-review",
+      "description": "Independent AR-1703 review evidence of two pre-execution qualification failures caused by the foreground-observation startup race."
+    },
+    {
+      "id": "operator-runner",
+      "description": "Current asb-tui tools/run-operator-quickstart.py and its controlling-PTY contract tests."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "race-safe-runner",
+      "description": "A bounded qualification runner that handles legitimate fast noninteractive exits without weakening interactive PTY proof."
+    },
+    {
+      "id": "deterministic-regression-suite",
+      "description": "Focused synchronized race, identity, classification, cleanup, and interactive-preservation tests."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "gh",
+    "git",
+    "python3",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "application-runtime-change",
+    "credential-output",
+    "foreground-check-removal",
+    "interactive-contract-relaxation",
+    "pid-identity-bypass",
+    "production-policy-change",
+    "unreviewed-merge"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "property-or-fuzz"
+  ],
+  "gates": [
+    {
+      "id": "focused-race-and-safety",
+      "description": "Deterministic race, fast-exit classification, interactive PTY, PID identity, descriptor, descendant, and unrelated-process safety tests pass."
+    },
+    {
+      "id": "repository-quality",
+      "description": "Formatting, lint, rustdoc, full locked tests, workflow, shell, privacy, provenance, and applicable model/source-parity checks pass."
+    },
+    {
+      "id": "publication",
+      "description": "Independent exact-tree approval, signed+DCO integration, and both exact-main post-merge workflows pass before release."
+    }
+  ]
+}
