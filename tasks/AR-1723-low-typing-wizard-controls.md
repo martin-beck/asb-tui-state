@@ -9,16 +9,16 @@
     "AR-1720"
   ],
   "id": "AR-1723",
-  "next_action": "Wait for both required hosted PR 292 checks to complete successfully; repair any hosted failure, then hand merge authority to the parent coordinator because this worker must not self-merge.",
+  "next_action": "Parent coordinator may merge independently reviewed PR 292; after merge, verify exact origin/main post-merge gates and requalify AR-1597. This worker must not self-merge.",
   "owner": "codex-ar1723-low-typing-20261008",
   "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T08:22:15+00:00",
+  "updated_at": "2026-10-08T08:22:28+00:00",
   "worktree_key": ""
 }
 ---
@@ -321,3 +321,8 @@ never block local or deterministic qualification.
 
 - 2026-10-08T08:22:15+00:00: Recorded command exit 0; command argv SHA-256
   e362cc1d79ac2aca07e6839804a90eba7352ff2db48a5581b0ff82d8d0045abb.
+
+- 2026-10-08T08:22:28+00:00: All hosted PR 292 checks passed at exact head
+  0b2012d1252a4e97c586a029e25ad0f003db3d99: native Rust/supply-chain/privacy gate 6m13s, required
+  native-first gate 6m20s, and AWQ v0.32.0 observation 21s. Independent review already approved with
+  no findings. Candidate is merge-ready but remains unmerged by this worker.
