@@ -219,7 +219,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1720-tui` | `repair/ar-1720-dynamic-catalog` | `df6545d450f2` | 0 | behind 6, ahead 0 |
 | `ar1721-tui-main` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 9, ahead 0 |
 | `asb-origin-main-verify.QOga6I` | `DETACHED` | `f1b2b3404181` | 0 | behind 5, ahead 0 |
-| `asb-tui-ar1721-pr287-review9` | `DETACHED` | `d48125647beb` | 0 | behind 0, ahead 9 |
 | `asb-tui-ar1726-qualification` | `DETACHED` | `3bb597cfb0b5` | 0 | behind 0, ahead 0 |
 | `asb-tui-current-audit-2238546` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 9, ahead 0 |
 | `asb285.EP9qDg` | `DETACHED` | `d5dd7cdeaed7` | 0 | behind 5, ahead 1 |
