@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. | codex-ar1721-pr287-review7-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. | - |
 
 ## Blocked
 

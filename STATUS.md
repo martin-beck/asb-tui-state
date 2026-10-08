@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -211,7 +211,7 @@ flowchart LR
         AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
-        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-review7-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. |
 
 ### Blocked (7)
 
