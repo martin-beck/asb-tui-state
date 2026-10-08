@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
@@ -163,7 +163,7 @@ flowchart LR
         AR_1652["AR-1652 - Done"]:::status_done
         AR_1653["AR-1653 - Done"]:::status_done
         AR_1654["AR-1654 - Done"]:::status_done
-        AR_1655["AR-1655 - Open"]:::status_open
+        AR_1655["AR-1655 - In progress"]:::status_in_progress
         AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Done"]:::status_done
         AR_1658["AR-1658 - Done"]:::status_done
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
+| P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | codex-ar1655-release-gate-20261008 | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
 
 ### Blocked (5)
 
