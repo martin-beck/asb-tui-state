@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #296 | `repair/ar-1721-route-plumbing@bb8f503be6cf` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | fix: honor development provider routes |
+| #296 | `repair/ar-1721-route-plumbing@bb8f503be6cf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: honor development provider routes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37861624025 | `bb8f503be6cf` | pull_request | AWQ shadow observation | in_progress:- |
+| 37861624025 | `bb8f503be6cf` | pull_request | AWQ shadow observation | completed:success |
 | 37861623781 | `bb8f503be6cf` | pull_request | Repository quality | completed:success |
 | 37860939191 | `7c69b415563a` | pull_request | AWQ shadow observation | completed:success |
 | 37860938908 | `7c69b415563a` | pull_request | Repository quality | completed:success |
