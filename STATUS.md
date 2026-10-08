@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-ar1668-post-launch-journey-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | After AR-1667 and AR-1660 dependencies are released, merge or reject candidate PR253 through hosted checks and run the paired exact-head journey receipt. |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-ar1668-post-launch-journey-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Await independent review of the signed exact-head receipt; if approved, remove exact task-owned caches/worktrees/branch and close done. |
 
 ### Blocked (5)
 
