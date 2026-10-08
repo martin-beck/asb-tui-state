@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair supersession profile lifecycle gate",
-  "updated_at": "2026-10-08T14:01:25+00:00",
+  "updated_at": "2026-10-08T14:02:08+00:00",
   "worktree_key": ""
 }
 ---
@@ -66,3 +66,6 @@ and in hosted Coordination verification, the authoritative state is clean and
 synchronized, and no product repository was modified.
 
 - 2026-10-08T14:01:25+00:00: Claimed by codex-tui-ar1726-supersession-lifecycle.
+
+- 2026-10-08T14:02:08+00:00: Recorded command exit 0; command argv SHA-256
+  ec3adf61dfe4d98b61bc2e6b1efa651ddb5d0215abbc3489e6442c3832551a52.
