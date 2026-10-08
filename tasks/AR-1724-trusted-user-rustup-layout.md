@@ -2,22 +2,22 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T12:37:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1714",
     "AR-1723"
   ],
   "id": "AR-1724",
   "next_action": "PR #293 exact reviewed head e54495471536af6a583c81b2414b059d0a0f72a6 is independently approved and all hosted checks are green; parent merge authority should perform signed exact-tree integration and post-merge exact-main validation. Author must not self-merge.",
-  "owner": "codex-ar1724-rustup-layout-20261008",
+  "owner": "",
   "plan": "../plans/AR-1724-trusted-user-rustup-layout.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T09:28:23+00:00",
+  "updated_at": "2026-10-08T09:28:44+00:00",
   "worktree_key": ""
 }
 ---
@@ -356,3 +356,10 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 
 - 2026-10-08T09:28:23+00:00: Recorded command exit 0; command argv SHA-256
   03fedacc9e9aea573cd4cda88dcb45999055d414880ba172ddd6fb048627f819.
+
+- 2026-10-08T09:28:44+00:00: PR #293 merged as signed exact-tree main
+  50acbc4af69480b7fbd34db19520a96ce1190a67 after independent approval. Exact-main local full suite,
+  clippy, fmt, detached fresh-user tests, and host-shaped no-override install/status/launch passed;
+  Repository quality 37755769636 and Trusted main 37755769842 are green. Privacy-safe receipt
+  quality/AR-1724-trusted-user-rustup-layout-receipt-20261008.json
+  sha256:98a72beadc32696ec718fa063a3e3cb79785fd5bad505b151f8678df3fda5eb0.
