@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | codex-ar1667-published-bundle-20261008 | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Create fresh exact-head worktrees and run only the published/content-addressed default-dev downstream-consumption matrix. |
+| P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | codex-ar1667-published-bundle-20261008 | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Await independent review of the signed privacy-safe exact-head receipt; if approved, remove task-owned private caches/worktrees, verify cleanup, then release done. |
 
 ### Blocked (5)
 
