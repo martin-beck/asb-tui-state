@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "task": "AR-1725",
+  "classification": "development_verified",
+  "product": {
+    "repository": "https://github.com/martin-beck/asb-tui",
+    "pull_request": 294,
+    "reviewed_commit": "db6839c86e73f3e3c10e8c0b336fbc5a1329b443",
+    "reviewed_tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7",
+    "merge_commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "merge_tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+  },
+  "paired_asb": {
+    "repository": "https://github.com/martin-beck/agent-systems-benchmark",
+    "commit": "fd956d857970f039db0a4aad03c9e15e59b13da6",
+    "tree": "8369576975cdef8cac0619f85efcf93c3336e8a3",
+    "executable_sha256": "33280b35efdc8619e0318be21889f9f48e05b923a4a61180a8ec63af7e697205"
+  },
+  "candidate": {
+    "executable_sha256": "7f7743aa660e3f1fa370408b648d1f9998c5569a8df6759efd787fe218c2a74f",
+    "control_receipt_sha256": "90cddd1d11fc16b30809fd02140de792ff315572dcdb4bea469f9de83edde871",
+    "external_parent_overrides": "absent",
+    "isolated_home": true
+  },
+  "parent_toolchain_preflight": {
+    "relative_candidate": {
+      "code": "trusted_tool_invalid",
+      "exit": 3
+    },
+    "symlinked_cargo": {
+      "code": "trusted_tool_invalid",
+      "exit": 3
+    },
+    "writable_cargo": {
+      "code": "trusted_tool_invalid",
+      "exit": 3
+    },
+    "symlinked_rustup": {
+      "code": "trusted_tool_invalid",
+      "exit": 3
+    },
+    "missing_candidate": {
+      "code": "trusted_tool_unavailable",
+      "exit": 4
+    },
+    "post_validation_substitution_test": "passed"
+  },
+  "operator_journey": {
+    "install": "development_bundle_consumed",
+    "launch": "development_launched",
+    "terminal": "controlling-foreground-80x24",
+    "provider_lifecycle": "passed",
+    "setup_and_recording": "passed",
+    "development_journey": "passed",
+    "end_to_end_qualification": "passed",
+    "credentials": "none",
+    "benchmark_and_replay_network": "denied"
+  },
+  "verification": {
+    "focused_operator_tests": {
+      "count": 46,
+      "result": "passed"
+    },
+    "complete_local_repository_gates": "passed",
+    "independent_review": {
+      "result": "approved",
+      "findings": []
+    },
+    "pull_request_repository_quality_run": {
+      "id": 37783829877,
+      "result": "success"
+    },
+    "pull_request_awq_observation_run": {
+      "id": 37783830804,
+      "result": "success"
+    },
+    "postmerge_repository_quality_run": {
+      "id": 37784767206,
+      "head_sha": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "result": "success"
+    },
+    "postmerge_trusted_main_run": {
+      "id": 37784767389,
+      "head_sha": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "result": "success"
+    },
+    "privacy_review": "passed"
+  },
+  "development_policy": {
+    "authentication": "warning-only",
+    "signature_and_key_management": "warning-only",
+    "provider_credentials": "not-required",
+    "functional_exactness_review_and_ci": "required-and-passed"
+  }
+}
