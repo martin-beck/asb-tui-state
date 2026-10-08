@@ -1,0 +1,99 @@
+{
+  "ar": "AR-1667",
+  "boundaries": {
+    "live_provider_contact": "not performed or claimed",
+    "missing_development_authentication": "nonblocking warning",
+    "missing_development_key_management": "nonblocking warning",
+    "missing_development_signatures": "nonblocking warning",
+    "public_release": "not claimed",
+    "source_built_fallback": "not exercised or claimed"
+  },
+  "classification": "development/mock",
+  "credentials": "none",
+  "dependencies": {
+    "AR-1655": "done",
+    "AR-1658": "done",
+    "AR-1659": "done",
+    "AR-1660": "done",
+    "AR-1666": "done"
+  },
+  "downstream_matrix": {
+    "atomic_publication": "content-addressed selector and immutable version verified",
+    "benchmark": "passed through the paired development fixture",
+    "cancellation": "recoverable cancellation passed",
+    "comparison": "passed with typed availability and analysis",
+    "failed_upgrade": "cached input failure preserved the prior installation byte for byte",
+    "human_and_json": "install and bare launch passed in both projections",
+    "install": "development_bundle_consumed",
+    "launch": "development_launched under an 80x24 controlling PTY",
+    "provider_model_agent_setup": "passed",
+    "record_all": "7 of 7 workload tuples complete and offline ready",
+    "record_selected": "1 of 1 workload tuple complete and offline ready",
+    "remove": "selector and immutable version removed",
+    "replay": "generated and reference strict replay passed with network denied",
+    "rollback": "activation failure and retry preserved the previous installation",
+    "tamper": "edited selector rejected and restored installation recovered",
+    "wizard": "passed"
+  },
+  "evidence_digests": {
+    "activation_rollback_sha256": "bcc59e98a6da3a90964be4ba1333e35315a6875cf91907b3abce7f56e7c29618",
+    "bundle_verification_sha256": "749b782c5fd3d065372f80a5149549b70981af576d270b52c0d623a2b4edcf69",
+    "cancel_sha256": "3e1e8f0a5d175ff241faf9368d24e92fee38419b30d494a48456829342785c86",
+    "capture_replay_sha256": "1b553295207bef37746dcb6b59b6fa540d0ac3f732bcf8660e86c8b692b818e9",
+    "formal_schema_privacy_sha256": "1fd3ae967a42e068088ea75475a7f61fd8e08d2b75050b27897ec9f7d3e6751c",
+    "lifecycle_sha256": "ff9575158d2ad23932218a970a6a5f4cb7c0b4dea69eac6edc458bc90a503f0c",
+    "native_quality_sha256": "6f4e3395c075f5be6dc400bc7d07e3aaa59a8f220d2bb12b2acf562c82f109a5",
+    "operator_quickstart_sha256": "de7b8cdf2bb04fb11a5e599598069df1170caca0c32393a217e2f8d4ecb474bc",
+    "provider_atomic_sha256": "3f04fefe9996651a4ed73314bc0c284d41509c257c1717ba4536c419040ca3e7",
+    "provider_diagnostics_sha256": "9ab4acb7515e27b72f83175d34f2469ad56d607ad8d99de37f5b5804cae523ec",
+    "provider_rollback_sha256": "5c3302b3c2f20bc3dac06081cedf000a09d658fa33aa2b384a15075aaa415c52",
+    "publisher_sha256": "c0e5bdf4c7b3968c30cf63fd7c40897eb0c389d9db7f1baa8419a38777b99cd1",
+    "retry_rollback_sha256": "5a70837c6826e00157204049ea7c2437db7ebc03581c43b995044f10934dcfcc"
+  },
+  "evidence_mapping": {
+    "planned_ASB_AR-1658": "done ASB AR-1690 and merged PR 460",
+    "planned_ASB_AR-1659": "done ASB AR-1690 and AR-1694 and merged PR 461",
+    "planned_ASB_AR-1660": "done TUI AR-1655 exact paired journey receipt",
+    "planned_ASB_AR-1667": "merged ASB PR 453 launch diagnostics",
+    "paired_handoff": "done ASB AR-1692",
+    "source_materialization_AR-1737": "out of scope and not a blocker"
+  },
+  "excluded_evidence": {
+    "legacy_channel_compatibility_helper": "excluded because its pre-created empty-root expectation is stale against current ASB; no passing claim is made",
+    "superseded_diagnostic_runs": "excluded because they used the publisher root instead of the leaf or an incomplete private Rust view"
+  },
+  "hosted_exact_head": {
+    "asb": "9 of 9 workflows passed as bound by the AR-1655 receipt",
+    "tui": "2 of 2 workflows passed as bound by the AR-1655 receipt"
+  },
+  "privacy": {
+    "absolute_paths_recorded": false,
+    "prompts_responses_credentials_and_raw_captures_recorded": false,
+    "secret_scans": "passed"
+  },
+  "production_claim": false,
+  "provenance": {
+    "asb_binary_sha256": "c49c55eb288b3709ba9bff990d8bc6b958a4ff332f48ea71766a0ab5b03292b2",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_commit_signature": "verified ED25519 and DCO",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "bundle_manifest_sha256": "6ebf1e891197643e10c3ebc783ffeac9a15cafd341de4f328fd2774398854a39",
+    "bundle_sha256": "2282fedd6991fe916a3e02c2918849f8363bf81b128e3ffb36c5ad99e4efb57a",
+    "tui_commit": "be3e99ce86270d5fd181c291d70d1a242506898b",
+    "tui_commit_signature": "verified ED25519 and DCO",
+    "tui_tree": "b47033659e2def84265d16e20fec6b5df64eea6d"
+  },
+  "quality": {
+    "cargo_clippy_all_targets_deny_warnings": "passed",
+    "cargo_fmt": "passed",
+    "cargo_test_locked_full": "passed",
+    "formal_ui_model_and_source_parity": "passed",
+    "product_gitleaks": "passed",
+    "release_build": "passed",
+    "rustdoc_deny_warnings": "passed",
+    "schema_tutorial_help_and_credential_boundary": "passed",
+    "shell_and_workflow_quality": "passed",
+    "source_worktrees_clean": true
+  },
+  "schema_version": 1
+}
