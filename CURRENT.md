@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Repair PR #290 P1 at exact reviewed head e183cd0: replace superlinear trailing JSON suffix search with bounded linear extraction and add near-2-MiB hostile/nested/string-brace/trailing-junk regression; rerun local gates and fresh exact-head hosted checks, then obtain a different-agent re-review. | codex-ar1654-pr290-review-20261008 |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Repair PR #290 P1 at exact reviewed head e183cd0: replace superlinear trailing JSON suffix search with bounded linear extraction and add near-2-MiB hostile/nested/string-brace/trailing-junk regression; rerun local gates and fresh exact-head hosted checks, then obtain a different-agent re-review. | - |
 
 ## Blocked
 
