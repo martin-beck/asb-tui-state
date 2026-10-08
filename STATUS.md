@@ -9,14 +9,14 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 152 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 0 |
+| **Superseded** | Replaced by another AR | 1 |
 
 ## Dependency graph
 
@@ -176,7 +176,7 @@ flowchart LR
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Done"]:::status_done
         AR_1668["AR-1668 - Done"]:::status_done
-        AR_1672["AR-1672 - In progress"]:::status_in_progress
+        AR_1672["AR-1672 - Superseded"]:::status_superseded
         AR_1673["AR-1673 - Planned"]:::status_planned
         AR_1674["AR-1674 - Done"]:::status_done
         AR_1675["AR-1675 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | codex-root-ar1672-supersession-20261008 | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
-
 ### Blocked (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -950,3 +944,9 @@ flowchart LR
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Unclaimed | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. |
 | P1 | [AR-1666](tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | No further action; merged PR #232 and exact post-merge trusted-main verification are green. |
 | P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Unclaimed | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
+
+### Superseded (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Unclaimed | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |

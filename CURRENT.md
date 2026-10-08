@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. | codex-root-ar1672-supersession-20261008 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -188,3 +182,9 @@ Never edit this file directly.
 | P1 | [AR-1664](tasks/AR-1664.md): Trusted-main channel-selection coverage repair | Repair the trusted-main coverage qualification failure at fa6483f with behavior-focused channel-selection tests while retaining strict thresholds and development nonblocking behavior. | Inspect hosted run 37002888017, reproduce at exact head fa6483f in an isolated worktree, and add focused channel-selection behavior coverage without weakening thresholds. | - |
 | P1 | [AR-1666](tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Raise current TUI main coverage from 89.43% to the strict 90% gate through behavior-focused tests without weakening thresholds. | No further action; merged PR #232 and exact post-merge trusted-main verification are green. | - |
 | P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. | - |
+
+## Superseded
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. | - |
