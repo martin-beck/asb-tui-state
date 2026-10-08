@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Await different-agent independent review of exact paired receipt 6cdad403; release only if no P0/P1 findings. | codex-ar1655-release-gate-20261008 |
+| P0 | [AR-1655](tasks/AR-1655.md): Paired wizard release and quality gate | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Remove task-owned generated caches/worktrees, then release and reconcile after final live doctor. | codex-ar1655-release-gate-20261008 |
 
 ## Blocked
 
