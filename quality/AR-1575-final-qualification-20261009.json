@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1575",
+  "classification": "development/mock",
+  "result": "passed",
+  "credentials": "none",
+  "development_policy": {
+    "authentication": "warning-only",
+    "signature_and_key_management": "warning-only",
+    "provider_credentials": "not-required",
+    "functional_exactness_review_and_ci": "required"
+  },
+  "paired_sources": {
+    "agent-systems-benchmark": {
+      "commit": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+      "tree": "40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde"
+    },
+    "asb-tui": {
+      "commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+    }
+  },
+  "artifacts": {
+    "asb_binary_sha256": "1c3925bf7cf288a0be01f39f1962b6c6366251ce5ac71909846bc58add060c01",
+    "tui_bundle_binary_sha256": "9c741d423daae70c3fb28ffa2ff407b78fcc1fe0420ef1f481684f4daa984875",
+    "bundle_manifest_sha256": "ddecbe1309c1c70f69fda890ad80439ec0a18d15d3e217c974efd4b2cb68826f",
+    "source_materialized_tui_sha256": "e684c1022f659df3d701175b90a220f16190c24f1dcc267381b2792ebbc6d302",
+    "handoff_materialized_tui_sha256": "4e7380628502b986af435ae823f49e7f2e1e4de67c0393ec3190580f1d979728",
+    "materialization_note": "The bundle, source-lifecycle, and handoff executables are independently built exact-source artifacts; distinct digests are identities, not a byte-reproducibility claim."
+  },
+  "receipt_digests": {
+    "operator_quickstart": "90629f7aeafcf51ddc53fca7a8f3bf657513dd20f6bb3ef94f1e725121f9cf2b",
+    "current_main_quickstart": "22d60609433e08cc1e66c524f4f62b2d9a10345b6cdaa991ce699a0474140f3c"
+  },
+  "operator_boundary": {
+    "commands": [
+      "asb tui install",
+      "asb tui"
+    ],
+    "human_install": "passed",
+    "json_install": {
+      "exit": 0,
+      "code": "development_bundle_consumed"
+    },
+    "human_launch": "passed",
+    "json_launch": {
+      "exit": 0,
+      "code": "development_launched"
+    },
+    "terminal": {
+      "controlling": true,
+      "foreground_process_group": true,
+      "rows": 24,
+      "columns": 80,
+      "unconfigured_first_run_wizard_cancel_then_landing_quit": true
+    }
+  },
+  "normal_source_lifecycle": {
+    "external_asb_toolchain_overrides_asserted_absent": true,
+    "toolchain_candidates": "auto-resolved from the standard parent home",
+    "install": {
+      "exit": 0,
+      "code": "development_built"
+    },
+    "status": {
+      "exit": 0,
+      "code": "development_installed"
+    },
+    "doctor": {
+      "exit": 0,
+      "code": "development_verified"
+    },
+    "upgrade": {
+      "exit": 0,
+      "code": "development_built"
+    },
+    "post_upgrade_status": {
+      "exit": 0,
+      "code": "development_installed"
+    },
+    "remove": {
+      "exit": 0,
+      "code": "development_removed"
+    },
+    "repeated_remove": {
+      "exit": 3,
+      "code": "channel_unavailable"
+    },
+    "post_remove_status": {
+      "exit": 3,
+      "code": "channel_unavailable"
+    }
+  },
+  "journey": {
+    "wizard_and_provider_selection": "passed",
+    "agents": [
+      "opencode",
+      "opendesk"
+    ],
+    "models": "provider-catalog-compatible fixtures",
+    "benchmark_selection_and_execution": "passed",
+    "selected_and_all_workload_capture": "passed",
+    "record_and_seal": "passed",
+    "strict_offline_replay": "passed",
+    "comparison_and_analysis": "passed",
+    "benchmark_and_replay_network": "denied",
+    "configured_startup_landing_model": "passed"
+  },
+  "broker_and_descriptor": {
+    "inherited_socket_missing_fails_closed": "passed",
+    "scm_rights_negotiation": "passed",
+    "real_fd0_broker_handoff": "passed",
+    "real_socket_consumer_with_attached_pty": "passed",
+    "transient_and_terminal_pty_errors_distinguished": "passed",
+    "descriptor_current_identity_binding": "passed",
+    "descriptor_stale_identity_rejected": "passed"
+  },
+  "typed_failures": {
+    "relative_candidate": "trusted_tool_invalid",
+    "symlinked_cargo": "trusted_tool_invalid",
+    "writable_cargo": "trusted_tool_invalid",
+    "symlinked_rustup": "trusted_tool_invalid",
+    "missing_candidate": "trusted_tool_unavailable",
+    "unsupported_channels": [
+      "stable",
+      "nightly",
+      "experimental"
+    ],
+    "malformed_manifest": "development_installation_invalid",
+    "tampered_manifest": "dev_channel_manifest_invalid",
+    "incomplete_capture_matrix": "offline_not_ready",
+    "provider_fallback": "denied"
+  },
+  "local_tests": {
+    "asb_tui_lifecycle": {
+      "passed": 5,
+      "failed": 0
+    },
+    "asb_router_unit_slice": {
+      "passed": 79,
+      "failed": 0
+    },
+    "tui_broker_descriptor_journey_slice": {
+      "passed": 20,
+      "failed": 0
+    },
+    "operator_downstream_suites": {
+      "passed": 4,
+      "failed": 0
+    },
+    "current_main_downstream_suites": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "cleanup": {
+    "install_root_empty_after_remove": true,
+    "runner_disposable_roots_removed": true,
+    "residual_qualification_processes_or_sessions": 0,
+    "credential_or_secret_values_recorded": false,
+    "private_paths_recorded": false,
+    "raw_logs_recorded": false
+  },
+  "hosted": {
+    "agent-systems-benchmark": {
+      "head": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+      "successful_runs": [
+        37852141052,
+        37852141065,
+        37852141069,
+        37852141078,
+        37852141086,
+        37852141097,
+        37852141128,
+        37852141151,
+        37852141152,
+        37852141200
+      ]
+    },
+    "asb-tui": {
+      "head": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "successful_runs": [
+        37784767206,
+        37784767389
+      ]
+    }
+  },
+  "independent_review": {
+    "status": "pending",
+    "reviewed_state_commit": null,
+    "reviewed_state_tree": null,
+    "findings": []
+  }
+}
