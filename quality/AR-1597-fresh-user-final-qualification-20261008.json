@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1597",
+  "status": "passed",
+  "classification": "development/mock fresh-user usability qualification",
+  "production_claim": false,
+  "decision": "The exact current-main disposable TUI journey satisfies the fresh-user install-to-comparison, low-typing, and no-documentation-lookup predicates.",
+  "provenance": {
+    "tui_commit": "50acbc4af69480b7fbd34db19520a96ce1190a67",
+    "tui_tree": "c3bece7a5e4b74b68026bf905cde2f8962951519",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "fresh_user_receipt_sha256": "0a94d9dc7bf46ae2140da5f272c7061534f2d9c646e6dc0228f7c2ea5bcab938",
+    "ar_1723_receipt_sha256": "13525b548f00a79a600a0a5838667bd135a478c2f1ab8ed3a4132c5d60e21c42",
+    "ar_1724_receipt_sha256": "98a72beadc32696ec718fa063a3e3cb79785fd5bad505b151f8678df3fda5eb0",
+    "bound_completed_journey_receipt": "quality/AR-1668-post-merge-exact-main-receipt-4c29ec76-1a5888ce.json",
+    "bound_completed_journey_sha256": "55868417ccea5f0cd7b28394efba5717d33d8f90cb3454d86c4c519432a0818b"
+  },
+  "journey": {
+    "default_dev_install": "passed",
+    "status_and_restart_persistence": "passed",
+    "development_launch": "passed",
+    "onboarding_and_setup": "passed",
+    "provider_and_model_selection": "passed",
+    "benchmark": "passed",
+    "selected_capture": "1 workload and 1 tuple passed",
+    "all_capture": "7 workloads and 7 tuples passed",
+    "incomplete_matrix_rejection": "passed",
+    "strict_offline_replay": "passed with network denied",
+    "comparison_and_analysis": "passed",
+    "manifest_tamper_rejection": "passed",
+    "credentials": "none"
+  },
+  "interaction_audit": {
+    "authoritative_renderer_test": "wizard_render::ar1668_authoritative_openrouter_wizard_completes_through_renderer_seam",
+    "route": [
+      "wizard.agent",
+      "wizard.provider",
+      "wizard.model",
+      "wizard.configuration",
+      "wizard.authentication",
+      "wizard.recording",
+      "wizard.replay",
+      "wizard.review"
+    ],
+    "selection_actions": 3,
+    "navigation_actions": 1,
+    "confirmation_actions": 6,
+    "free_form_characters": 0,
+    "total_key_events": 10,
+    "documentation_lookup": "none"
+  },
+  "independent_review": {
+    "reviewer": "independent agent under the same development GitHub identity",
+    "conclusion": "approved exact heads with no P0, P1, or P2 findings",
+    "fresh_user_rerun": "passed and reproduced the identical receipt digest",
+    "renderer_rerun": "passed with 10 actions and zero free-form characters",
+    "privacy_scan": "passed",
+    "cleanup": "runner and reviewer disposable roots and processes absent"
+  },
+  "scope_boundary": {
+    "asb_product_modified": false,
+    "public_asb_tui_install_then_bare_asb_tui": "owned separately by blocked AR-1575 and planned AR-1703",
+    "clean_home_operator_probe": "trusted_tool_invalid because that separate harness relocates HOME away from the conventional Rustup layout",
+    "preserved_home_public_probe": "development_bundle_consumed, development_installed, and development_launched",
+    "effect_on_ar_1597": "non-blocking because AR-1597 owns the disposable TUI usability journey, not AR-1703's public-command boundary"
+  },
+  "privacy": {
+    "credential_values_read_or_recorded": false,
+    "raw_provider_payloads_recorded": false,
+    "private_paths_recorded": false,
+    "authentication_signatures_and_key_management": "development warning-only conditions"
+  },
+  "conclusion": "A fresh development user can complete the exact TUI setup-to-offline-comparison journey with bounded controls, ten key events, no free-form typing, no documentation lookup, no credentials, and network-denied replay."
+}
