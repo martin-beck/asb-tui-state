@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1722.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "official-vendor",
+      "description": "The complete vendored coordinator file set is synchronized from exact upstream v0.3.14 without direct vendored-file patches."
+    },
+    {
+      "id": "supersession-chain",
+      "description": "A superseded dependency is satisfied only when its finite superseded_by chain terminates in an existing done task."
+    },
+    {
+      "id": "fail-closed",
+      "description": "Missing, malformed, cyclic, self-referential, unfinished, and non-superseded successor metadata is rejected without mutation."
+    },
+    {
+      "id": "downstream-admission",
+      "description": "AR-1672 explicitly points to completed AR-1668 and AR-1673 becomes dependency-ready through the supported coordinator lifecycle."
+    },
+    {
+      "id": "project-integrity",
+      "description": "Project binding, Git authority, generated views, privacy, signatures, DCO, and live coordinator state remain valid."
+    }
+  ],
+  "definition_of_done": [
+    "Exact upstream release identity and complete vendor manifest are recorded.",
+    "Coordinator unit, formal, vendor, generated-view, privacy, and live-state gates pass.",
+    "Independent review accepts the vendor diff, supersession linkage, and fail-closed regression coverage."
+  ],
+  "inputs": [
+    {
+      "id": "upstream-release",
+      "description": "Exact Agent Workflow Coordinator v0.3.14 source and release identity."
+    },
+    {
+      "id": "superseded-task",
+      "description": "AR-1672 and its completed replacement AR-1668."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "vendor-upgrade",
+      "description": "Verified coordinator v0.3.14 vendor set and manifest."
+    },
+    {
+      "id": "supersession-link",
+      "description": "Validated AR-1672 to AR-1668 replacement linkage."
+    }
+  ],
+  "allowed_tools": [
+    "git",
+    "python",
+    "tools/handoffctl",
+    "tools/handoffctl_vendor.py",
+    "upstream-tools/vendor.py"
+  ],
+  "forbidden_tools": [
+    "direct-vendored-file-patch",
+    "product-code",
+    "unsigned-commit",
+    "dependency-bypass"
+  ],
+  "required_evidence_classes": [
+    "mechanical",
+    "contract-test"
+  ],
+  "gates": [
+    {
+      "id": "vendor-integrity",
+      "description": "The vendor manifest and every synchronized file match exact upstream v0.3.14."
+    },
+    {
+      "id": "admission-integrity",
+      "description": "The valid replacement link admits AR-1673 and all invalid replacement chains remain rejected."
+    }
+  ]
+}
