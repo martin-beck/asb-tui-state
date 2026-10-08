@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T17:01:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1673",
     "AR-1722"
   ],
   "id": "AR-1726",
   "next_action": "Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green.",
-  "owner": "codex-tui-ar1726-supersession-lifecycle",
+  "owner": "",
   "plan": "../plans/AR-1726-supersession-profile-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Repair supersession profile lifecycle gate",
-  "updated_at": "2026-10-08T14:14:32+00:00",
+  "updated_at": "2026-10-08T14:18:30+00:00",
   "worktree_key": ""
 }
 ---
@@ -110,3 +110,10 @@ synchronized, and no product repository was modified.
 
 - 2026-10-08T14:14:32+00:00: Bound the privacy-safe exact-head lifecycle repair receipt and passing
   spec revision 1 acceptance.
+
+- 2026-10-08T14:18:30+00:00: State-only lifecycle profile repair approved at exact head
+  e1b9b1a27e1d0e65f7e97504fdc720922a867cec/tree 6f78b5d6c934ea89186fd4742b502ccac4deb194 with
+  receipt quality/AR-1726-supersession-profile-lifecycle-20261008.json sha256
+  a18be10cc1484e13fb7e94562bf322e491d9a2f7f1523fe65267c2558943c3f2. Focused 4/4, full 175/175, 13
+  hostile variants, all five TLC models, vendor/header/privacy/generated/live gates, independent
+  review, and hosted Coordination run 37790853908 passed. No product repository changed.
