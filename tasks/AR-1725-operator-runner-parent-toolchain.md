@@ -16,11 +16,21 @@
   "plan": "../plans/AR-1725-operator-runner-parent-toolchain.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:edabf732aab0b25d9b3378332c263a040fb98c497115af1319d54a567bed81d9",
+    "evidence_ref": "quality/AR-1725-operator-runner-parent-toolchain-20261008.json",
+    "spec_ref": "specs/AR-1725.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1725.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Operator quickstart parent toolchain propagation repair",
-  "updated_at": "2026-10-08T13:38:05+00:00",
+  "updated_at": "2026-10-08T13:39:03+00:00",
   "worktree_key": "asb-tui-ar-1725-operator-runner-parent-toolchain"
 }
 ---
@@ -129,3 +139,8 @@ gate.
 
 - 2026-10-08T13:38:05+00:00: Recorded command exit 0; command argv SHA-256
   295a36ead997dee194faa41e3c5a6df62f0e241de14a0ba6125245bca6fba22b.
+
+- 2026-10-08T13:39:03+00:00: Recorded pass acceptance for complete specs/AR-1725.json revision 1
+  against privacy-safe exact-merge receipt
+  quality/AR-1725-operator-runner-parent-toolchain-20261008.json SHA-256
+  edabf732aab0b25d9b3378332c263a040fb98c497115af1319d54a567bed81d9.
