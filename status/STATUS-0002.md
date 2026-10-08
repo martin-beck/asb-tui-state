@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
 | P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
 | P0 | [AR-1644](../tasks/AR-1644.md): TUI terminal launch preflight | Unclaimed | Make TUI terminal selection/preflight clear and runnable for a fresh user while preserving the PTY contract. | No further action; merged TUI PR #223 and hosted PTY/UI-quality checks are green. |

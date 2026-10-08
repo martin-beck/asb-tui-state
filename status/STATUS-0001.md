@@ -682,7 +682,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
-| Next action | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
+| Next action | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
 
 ### AR-1579 — TUI development-channel lifecycle
 
@@ -3188,7 +3188,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
 | P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
 
 ### Open (2)
@@ -3313,3 +3313,4 @@ flowchart LR
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
+| P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
