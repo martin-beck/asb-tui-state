@@ -53,7 +53,7 @@
     "recording": "live",
     "replay": "strict offline replay",
     "validated_through": "WorkspaceState renderer and formal wizard completion into ProviderSetupDraft against authoritative agent and provider catalogs",
-    "transcript_sha256": "cfe3b2e4f925cad1df4a871bbdb7817fbe6e39c3561f61f1ce1ac23cf1ff542f"
+    "transcript_sha256": "5c8f255f4480e2111d04b499ad516ea19b93ddb86605ff768deb3618cb501d6e"
   },
   "fresh_user_journey": {
     "result": "passed",
@@ -94,7 +94,7 @@
     "post_launch_receipt_sha256": "08a63a2d3209429f7cd27427e7aa27aa55341923689f1cb4e96cd2e987bf3c16",
     "quickstart_receipt_sha256": "e95460e33014139345c8edec7803c6028bd9f4567d2127e93cb591bf3dc01e8e",
     "channel_matrix_receipt_sha256": "4cf7f41ed2e2b0635266935095f89f92750dd325eebbc932254af4403069150d",
-    "post_launch_transcript_sha256": "6316dabd0cbb74dbecc5e034a25f424bdcbdbe0bad639de17484439cae2ce87e",
+    "post_launch_transcript_sha256": "d233368ea1d19c6110704a9f841360a9a18363096b1de5d7a4ba3800998a42b1",
     "benchmark_live_results_transcript_sha256": "812bc7705cf960de9b09e95a5b7f3658d85c1fd223aab5b2978d43f29d585096"
   },
   "verification": {
@@ -112,7 +112,7 @@
     "script_wrapper_harness_interference": {
       "observation": "wrapping Cargo itself in script supplied an outer controlling PTY and the PTY-ownership test timed out waiting for the broker TUI to exit",
       "classification": "harness interference, not an exact-main product failure",
-      "wrapped_full_suite_transcript_sha256": "5bb0861bc4a7d6e934d65b0e49218a591f6f66e22dc62b0852e3f0dc7e997ccf",
+      "wrapped_full_suite_transcript_sha256": "b5b462371df4c11f9341e8e1f561d46f2ca936c00bd6df3f6098f9a4ddd55ddc",
       "wrapped_narrow_reproduction_sha256": [
         "a263cda66aa877b4c424fbeff4dff5c64ac19be401e42df178cbcd3d3a2af604",
         "e7396ad5e0bebed3b2456bc231f670624c9899450736505d258011c667b2e8ed"
@@ -123,7 +123,7 @@
       "observation": "the first composed runner attempt rejected a group-writable ambient rustup home",
       "classification": "host toolchain trust precondition",
       "resolution": "rerun with exact owner-private toolchain binaries passed",
-      "transcript_sha256": "78580e1445139a79b89ffb60723773bae0c20e5398a4dd43d1cee5c0680c2d53"
+      "transcript_sha256": "eeedccfa27c8ac9e68709ed9f54cbbdc9528ad3d63c522f2bbce1fb5f3a1165c"
     }
   },
   "cleanup": {
@@ -133,10 +133,17 @@
     "isolated_source_scratch_removed": true,
     "exact_source_checkouts_clean_before_removal": true,
     "original_product_checkout_mutated": false,
-    "coordinator_state_mutated": false,
+    "coordinator_state_mutated": true,
     "pre_existing_unrelated_temporary_state_preserved": true,
     "evidence_directory_retained": true,
-    "cleanup_manifest_sha256": "da307de0330b2267d38052a7bf33177ec9ad223c280863e9f8a00786a6de4d51"
+    "cleanup_manifest_sha256": "9ba5d3be0358928291e01e624200db2e882d441f49cb1ec1025aa7c486b7b5b8",
+    "independent_review_remediation": {
+      "registered_asb_worktrees_removed": 1,
+      "registered_tui_worktrees_removed": 2,
+      "task_owned_cache_roots_removed": 2,
+      "retained_transcripts_absolute_private_paths_remaining": 0,
+      "review_finding": "resolved before closeout"
+    }
   },
   "privacy": {
     "credentials": "none",
