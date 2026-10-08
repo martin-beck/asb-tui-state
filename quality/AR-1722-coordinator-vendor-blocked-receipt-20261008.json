@@ -1,71 +1,87 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "task": "AR-1722",
-  "classification": "upstream_release_blocked",
-  "candidate": {
+  "classification": "development_verified",
+  "upstream": {
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.3.14",
-    "commit": "2666c9d7a56ce02340e1b4b09344a227936a34cf",
-    "official_sync_completed": true,
-    "vendor_verification": "passed",
+    "channel": "development",
+    "version_metadata": "v0.3.57",
+    "commit": "c2eb41879be4f2d50c6b5650e82339e10d5961d8",
+    "tree": "565458ccedfb8cee71f3e8751bc5531de8f8995c",
+    "sync_command": "tools/vendor.py sync-development",
+    "release_evidence": false
+  },
+  "vendor_integrity": {
+    "manifest_schema": 2,
+    "manifest_sha256": "863abc1e28ffaf3d6faf3dab0f08c6d6d03a95af053a4508c7bf3776878dea1b",
+    "entries": 46,
+    "git_blob_bytes": "passed",
+    "sha256_digests": "passed",
+    "git_file_modes": "passed",
     "project_profile_unchanged": true,
     "project_binding_unchanged": true,
-    "backend_selector_unchanged": true
+    "backend_selector_unchanged": true,
+    "direct_vendor_patch_used": false
   },
-  "downstream_contract": {
+  "supersession_contract": {
     "supersession_link": "AR-1672 -> AR-1668",
     "successor_status": "done",
     "dependent_task": "AR-1673",
-    "dependent_status": "planned_unowned",
-    "dependency_admission": "ready",
-    "valid_and_invalid_chain_tests": 4,
-    "valid_and_invalid_chain_tests_result": "passed"
+    "dependent_status": "open",
+    "dependent_revision": 2,
+    "actual_promotion": "passed",
+    "invalid_chain_variants": [
+      "missing-successor-field",
+      "malformed-successor-id",
+      "missing-successor-task",
+      "self-reference",
+      "cycle",
+      "unfinished-successor"
+    ],
+    "invalid_chain_result": "fail-closed"
   },
-  "completed_gates": {
-    "complete_python_tests": {
-      "count": 121,
+  "verification": {
+    "state_python_tests": {
+      "count": 173,
       "result": "passed"
     },
     "source_header_files": {
-      "count": 19,
+      "count": 48,
       "result": "passed"
     },
-    "vendor_manifest": "passed",
-    "diff_check": "passed"
-  },
-  "blocking_gate": {
-    "gate": "formal_pr_publication",
-    "classification": "official_vendor_runtime_incomplete",
-    "missing_manifest_entry": "tools/tlc_runner.py",
-    "finding": "The official vendor synchronizer omits a runner required by the synchronized formal verification script, so a clean offline downstream snapshot cannot execute its publication-tier formal gate.",
-    "downstream_patch_or_copy_used": false
-  },
-  "tag_audit": {
-    "range": "v0.3.14..v0.3.57",
-    "result": "no_official_tag_contains_complete_formal_runtime_closure",
-    "first_following_tag": {
-      "version": "v0.3.15",
-      "commit": "64b9842763e86a38c86b741137b290e57b19e6f9",
-      "official_sync_and_vendor_verification": "passed",
-      "standalone_formal_pr_publication": "failed_missing_runner"
+    "vendor_verifier": "passed",
+    "privacy_and_secret_scan": "passed",
+    "render_status": "passed",
+    "doctor": "passed",
+    "upstream_portable_smoke": {
+      "models": 1,
+      "result": "passed"
+    },
+    "upstream_pr_publication": {
+      "models": 6,
+      "result": "passed",
+      "containment": "required-user-cgroup-private-development-admission"
+    },
+    "downstream_full_tla": {
+      "models": 5,
+      "result": "passed",
+      "largest_model_distinct_states": 49824704
     }
   },
-  "unreleased_upstream_repair": {
-    "commit": "9e6990d77fd54126ca9bfa8671319b785472c91e",
-    "pull_request": "https://github.com/martin-beck/agent-workflow-coordinator/pull/85",
-    "pull_request_state": "closed_unmerged",
-    "included_by_official_tag": false
+  "independent_review": {
+    "result": "approved",
+    "findings": [],
+    "reviewed_state_commit": "8b137e2b7081d409c5866329e7eccabf9d6e3001",
+    "reviewed_state_tree": "e4e535959b51012e082422b39aa809c2b91a2ecc",
+    "hosted_workflow": "Coordination verification",
+    "hosted_run_id": 37779592308,
+    "hosted_result": "success"
   },
-  "environment_observation": {
-    "classification": "canonical_formal_queue_permission_denied",
-    "scope": "separate from the vendor-completeness defect",
-    "private_diagnostic_queue_used": false,
-    "reason": "A private queue would be noncanonical diagnostic evidence and cannot replace publication evidence."
-  },
-  "required_resolution": "Publish an official signed coordinator tag whose vendor manifest contains the formal runner closure represented by commit 9e6990d77fd54126ca9bfa8671319b785472c91e or an equivalent reviewed repair, then resynchronize and rerun all downstream gates.",
-  "publication": {
-    "pull_request_created": false,
-    "merge_attempted": false,
-    "reason": "A candidate with a known failing required formal gate is not publishable."
+  "development_policy": {
+    "authentication": "warning-only",
+    "signature": "warning-only",
+    "dco": "warning-only",
+    "release_publication": "not-required",
+    "technical_review_tests_and_ci": "required-and-passed"
   }
 }
