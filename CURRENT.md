@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
+| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | codex-root-ar1591-supersession-20261008 |
 
 ## Blocked
 
