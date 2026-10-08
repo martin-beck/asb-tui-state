@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1713",
+  "classification": "development_mock_partial",
+  "completed": false,
+  "credentials": "absent",
+  "provider_calls": "none",
+  "privacy": {
+    "contains_absolute_paths": false,
+    "contains_credentials": false,
+    "contains_prompts_or_responses": false,
+    "contains_host_identity": false
+  },
+  "provenance": {
+    "asb_commit": "457317b21dbe300907ba7889ff68a16514fcd5c5",
+    "asb_tree": "bd5cc8111417b7b9031988b0c6e354db3354ac0f",
+    "asb_debug_binary_sha256": "9f4f03963e03974f6ddd3783f56ee5281940c537b49e6e11b30b6e1061c681b4",
+    "tui_commit": "3bb597cfb0b5551357b66cb886cd8bb61d455bc6",
+    "tui_tree": "c437cfcf92342bada9246c0a8b57abda3c24e35c",
+    "tui_debug_binary_sha256": "06aa8e32b49ada78aeaae56d6abab73a09f9ad792be6b237aabf64887f716220",
+    "development_bundle_sha256": "f55017a1eb1a0653c959b551a3ee42982f47e9e3bc13fc6f10c8b4f32970d6d3"
+  },
+  "installed_boundary": {
+    "install": {
+      "command": "asb tui install --json",
+      "exit_code": 0,
+      "code": "development_bundle_consumed",
+      "development_only": true,
+      "warnings": [
+        "development_missing_authentication_allowed",
+        "development_missing_signatures_allowed",
+        "development_missing_key_management_allowed"
+      ]
+    },
+    "status": {
+      "command": "asb tui status --json",
+      "exit_code": 0,
+      "code": "development_installed",
+      "network": "denied"
+    },
+    "bare_launch": {
+      "exit_code": 4,
+      "code": "development_launch_failed",
+      "cause": "development_host_preflight_failed",
+      "detail": "The ASB installed launcher clears the child environment and does not propagate PATH or validated development tool paths required by the TUI preflight."
+    },
+    "live_provider_route": {
+      "recognized": true,
+      "exit_code": 4,
+      "code": "development_launch_failed",
+      "provider_call_started": false,
+      "fallback_started": false
+    },
+    "dynamic_catalog_route": {
+      "recognized": true,
+      "exit_code": 4,
+      "code": "development_launch_failed",
+      "provider_call_started": false,
+      "fallback_started": false
+    }
+  },
+  "provider_free_qualification": {
+    "tui_focused_tests": {
+      "passed": 30,
+      "failed": 0,
+      "coverage": [
+        "explicit live local-mock and offline modes",
+        "selected and all fan-out",
+        "recording seal and catalog identity",
+        "strict network-denied replay without live fallback",
+        "bounded comparison and development journey"
+      ]
+    },
+    "asb_tui_router_tests": {
+      "passed": 70,
+      "failed": 0
+    },
+    "current_main_wrapper": {
+      "passed": false,
+      "stage": "channel compatibility rollback fixture",
+      "expected_code": "development_command_failed",
+      "observed_code": "development_tool_unavailable",
+      "journey_started": false
+    }
+  },
+  "remaining_blocker": "The installed ASB-to-TUI development launch must propagate a bounded trusted tool environment before bare TUI, live-provider, selected or all capture, strict replay, and comparison can be qualified through installed commands. Live-provider evidence also still requires external provider authorization and is not substituted by this development receipt.",
+  "scope_exclusions": [
+    "No ASB or TUI product source was modified.",
+    "No production or public-release qualification is claimed.",
+    "No AR-1721 or PR-287 qualification tooling was changed."
+  ]
+}
