@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | PR #291 is independently approved and all hosted checks are green. A separate integrator must merge it, then rerun the exact-current-main paired receipt and remove/bind cleanup of task-owned caches/worktrees before AR closeout. | - |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | PR #291 is independently approved and all hosted checks are green. A separate integrator must merge it, then rerun the exact-current-main paired receipt and remove/bind cleanup of task-owned caches/worktrees before AR closeout. | codex-root-ar1668-integration-20261008 |
 
 ## Blocked
 
