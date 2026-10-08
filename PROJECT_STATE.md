@@ -11,12 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
-| #290 | `qualification/ar-1654-quickstart-20261008b@e183cd0bfb8c` | `main` | BLOCKED | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1654: qualify first-run operator quickstart |
+| #290 | `qualification/ar-1654-quickstart-20261008b@74fad130ca67` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1654: qualify first-run operator quickstart |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37729232454 | `74fad130ca67` | pull_request | AWQ shadow observation | in_progress:- |
+| 37729232368 | `74fad130ca67` | pull_request | Repository quality | in_progress:- |
 | 37727630250 | `e183cd0bfb8c` | pull_request | AWQ shadow observation | completed:success |
 | 37727630006 | `e183cd0bfb8c` | pull_request | Repository quality | completed:success |
 | 37725154795 | `ee45ff349779` | push | Repository quality | completed:success |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37723348030 | `bfda799b6cfa` | pull_request | Repository quality | completed:success |
 | 37719420515 | `93e396af3fec` | pull_request | AWQ shadow observation | completed:failure |
 | 37719420355 | `93e396af3fec` | pull_request | Repository quality | completed:failure |
-| 37719361825 | `69f0584cee27` | dynamic | Dependabot Updates | completed:success |
-| 37719268538 | `69f0584cee27` | push | Trusted main verification | completed:success |
