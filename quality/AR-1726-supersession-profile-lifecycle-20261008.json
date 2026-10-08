@@ -1,0 +1,72 @@
+{
+  "ar": "AR-1726",
+  "change": {
+    "commit": "418b33cd080242790172cd96ea7e6f0466393f46",
+    "dco": true,
+    "signature": "verified",
+    "tree": "55eabb62be0361ae204582d73e9c7c7c0a2f24f9"
+  },
+  "classification": "state-only-test-repair",
+  "coordinator_vendor": {
+    "commit": "c2eb41879be4f2d50c6b5650e82339e10d5961d8",
+    "version": "0.3.57",
+    "verification": "passed"
+  },
+  "formal": {
+    "Handoffctl": {
+      "distinct_states": 49824704,
+      "generated_states": 71689664,
+      "result": "no-error"
+    },
+    "HandoffctlBinding": "no-error",
+    "HandoffctlLocks": "no-error",
+    "HandoffctlRun": "no-error",
+    "HandoffctlStorage": "no-error",
+    "tla2tools_sha256_verified": true,
+    "tla2tools_version": "1.7.4"
+  },
+  "gates": {
+    "generated_views": "passed",
+    "headers": "passed",
+    "live_doctor": "passed",
+    "privacy_scan": "passed",
+    "state_tests": {
+      "passed": 175,
+      "total": 175
+    },
+    "supersession_profile": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "hosted": {
+    "previous_terminal_phase_failure": 37788632907,
+    "repaired_exact_head_run": 37790610320,
+    "result": "success"
+  },
+  "invariants": {
+    "accepted_phases": [
+      "open-unowned",
+      "in-progress-owned-with-lease",
+      "done-unowned-with-passing-bound-acceptance"
+    ],
+    "hostile_owner_lease_acceptance_variants_rejected": 13,
+    "malformed_successor_chains_remain_fail_closed": true,
+    "replacement_chain": "AR-1672->AR-1668(done)",
+    "terminal_downstream": "AR-1673(done)"
+  },
+  "privacy": {
+    "credentials": "none",
+    "private_paths": "none",
+    "raw_logs": "none"
+  },
+  "product_changes": {
+    "agent-systems-benchmark": false,
+    "asb-tui": false
+  },
+  "schema_version": 1,
+  "validated_state": {
+    "commit": "2461a3d78ddf9622be0821159cacf0a2c0e653a1",
+    "tree": "0a9ccce1d60beca8923df3a7d63710713bd7d348"
+  }
+}
