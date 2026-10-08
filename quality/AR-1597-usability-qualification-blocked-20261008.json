@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1597",
+  "status": "blocked",
+  "classification": "development/mock usability qualification",
+  "production_claim": false,
+  "decision": "The functional journey is already qualified, but the exact authoritative TUI route does not satisfy the required very-little-typing and all-choices-selection-driven acceptance phrase.",
+  "provenance": {
+    "tui_commit": "4c29ec76fa2982c42b9b4465af019a62f61b0d66",
+    "tui_tree": "81fcd6cb3d7fd666cf0c80199ac639b1cb9e6a1b",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "plan_sha256": "e85a85157cf8a73be6bed87c70deab6a303f215e5161219bd11e5f0999bb937f",
+    "tests_wizard_render_blob": "d93eabe575c8866017fb2a5ba921c0f8d790181f",
+    "src_ui_blob": "c858e6880009a11a90a2ca518fc10755806e87e7",
+    "src_wizard_blob": "12a5a0edc29d5d8a6df70b46dced51f9c08a8ad0",
+    "ui_help_blob": "0f3927a9ceda85fa31164a083bf719108056fbbc"
+  },
+  "bound_completed_journey": {
+    "receipt": "quality/AR-1668-post-merge-exact-main-receipt-4c29ec76-1a5888ce.json",
+    "sha256": "55868417ccea5f0cd7b28394efba5717d33d8f90cb3454d86c4c519432a0818b",
+    "covered": [
+      "default-dev install",
+      "authoritative eight-screen wizard",
+      "benchmark and visible results",
+      "selected and all-workload recording",
+      "strict network-denied replay",
+      "comparison and analysis",
+      "rollback, removal, privacy, cleanup, hosted checks"
+    ]
+  },
+  "focused_reproduction": {
+    "test": "wizard_render::ar1668_authoritative_openrouter_wizard_completes_through_renderer_seam",
+    "command_class": "cargo +1.93.0 test --locked, exact single integration test",
+    "result": "passed",
+    "passed": 1,
+    "failed": 0,
+    "rendered_route": [
+      "wizard.agent",
+      "wizard.provider",
+      "wizard.model",
+      "wizard.configuration",
+      "wizard.authentication",
+      "wizard.recording",
+      "wizard.replay",
+      "wizard.review"
+    ],
+    "validated_selection": "opencode,opendesk|openrouter|openai/gpt-4o|shared-defaults|live|strict-offline"
+  },
+  "interaction_audit": {
+    "total_key_events": 132,
+    "navigation_or_selection_key_events": 10,
+    "free_form_character_key_events": 122,
+    "free_form_by_field": {
+      "configuration": 12,
+      "credential_reference": 85,
+      "recording": 4,
+      "replay": 21
+    },
+    "selection_driven": [
+      "agents",
+      "provider",
+      "model"
+    ],
+    "not_selection_driven": [
+      "configuration defaults",
+      "credential-reference handoff in the exact qualified route",
+      "recording mode",
+      "replay policy"
+    ],
+    "authentication_note": "The development fixture has a one-key F action, but the exact OpenRouter credential-reference journey under qualification enters the reference as 85 characters; this does not repair the other free-form fields."
+  },
+  "documentation_lookup_audit": {
+    "external_documentation_consulted_by_harness": false,
+    "network_or_document_file_lookup_performed_by_harness": false,
+    "conclusion": "The hermetic regression receives fixture catalogs and key events only. However, its free-form literals are supplied by test code rather than selected from visible supported choices, so it cannot prove that a fresh user needs no documentation lookup."
+  },
+  "acceptance": {
+    "functional_install_to_comparison": "passed by the bound AR-1668 exact-main receipt",
+    "authoritative_renderer_route": "passed",
+    "very_little_typing": "failed",
+    "all_choices_selection_driven": "failed",
+    "no_documentation_lookup_for_a_fresh_user": "not objectively established",
+    "overall": "blocked"
+  },
+  "required_repair": {
+    "ownership": "dedicated asb-tui implementation AR",
+    "scope": [
+      "replace free-form configuration defaults with bounded supported selections or valid preselected defaults",
+      "make credential-reference handoff selectable without typing the digest/reference",
+      "replace recording-mode free-form text with enumerated choices",
+      "replace replay-policy free-form text with enumerated choices",
+      "add a reproducible authoritative-renderer action counter that fails when unsupported free-form typing is reintroduced"
+    ],
+    "requalification": "Rerun AR-1597 at exact current main, bind the result to the completed journey receipt, require independent review, and preserve the no-documentation/no-network harness boundary."
+  },
+  "cleanup": {
+    "task_owned_worktree_removed": true,
+    "task_owned_build_output_removed_with_worktree": true,
+    "task_owned_processes_remaining": 0,
+    "asb_product_mutated": false,
+    "tui_product_mutated": false,
+    "unrelated_state_preserved": true
+  },
+  "privacy": {
+    "credentials": "none",
+    "raw_prompts_or_provider_responses_recorded": false,
+    "absolute_private_paths_recorded": false,
+    "hostnames_or_tokens_recorded": false
+  }
+}
