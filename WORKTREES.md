@@ -142,7 +142,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1650` | `repair/ar1650-fanout-tui` | `74320fe69ad8` | 0 | behind 140, ahead 0 |
 | `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `0cddb9cca4eb` | 0 | behind 85, ahead 0 |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 216, ahead 1 |
-| `asb-tui-ar1654-integration` | `integration/ar-1654-pr290` | `ee45ff349779` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1654-integration` | `integration/ar-1654-pr290` | `be3e99ce8627` | 0 | behind 0, ahead 3 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 216, ahead 3 |
 | `asb-tui-ar1654-quickstart-20261008b` | `qualification/ar-1654-quickstart-20261008b` | `74fad130ca67` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar1654-requal-20261008` | `repair/ar-1654-quickstart-requal-20261008` | `8474c4c9d0a2` | 0 | behind 17, ahead 0 |
