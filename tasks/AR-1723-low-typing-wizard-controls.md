@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T11:37:35+00:00",
   "depends_on": [
     "AR-1668",
     "AR-1707",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1723",
   "next_action": "Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597.",
-  "owner": "",
+  "owner": "codex-ar1723-low-typing-20261008",
   "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T07:36:52+00:00",
+  "updated_at": "2026-10-08T07:37:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -38,3 +38,5 @@ never block local or deterministic qualification.
 
 - 2026-10-08T07:36:52+00:00: Dependencies AR-1668, AR-1707, and AR-1720 are done; independently
   reviewed AR-1597 evidence requires bounded controls and an action-count regression.
+
+- 2026-10-08T07:37:35+00:00: Claimed by codex-ar1723-low-typing-20261008.

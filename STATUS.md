@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**168 ARs tracked** across 6 active status categories.
+**168 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -213,7 +213,7 @@ flowchart LR
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - In progress"]:::status_in_progress
-        AR_1723["AR-1723 - Open"]:::status_open
+        AR_1723["AR-1723 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -773,17 +773,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-ar1722-coordinator-v0314-20261008 | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Synchronize exact upstream v0.3.14 vendor set in isolated state branch, add downstream chain tests and linkage, then qualify and publish for independent review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | Unclaimed | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597. |
+| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | codex-ar1723-low-typing-20261008 | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597. |
 
 ### Blocked (5)
 
