@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. | codex-ar1575-requal-20261008 |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Complete an ASB development-broker foreground-terminal repair so interactive launch does not leave the TUI in a private background process group, and repair the operator qualification helper to provide a nonzero controlling PTY with a bounded quit path; then rerun exact-head asb tui install followed by bare asb tui and the full quickstart matrix. | codex-ar1654-quickstart-20261008 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. | - |
 
 ## Blocked
 

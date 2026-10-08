@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
@@ -85,7 +85,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - Open"]:::status_open
+        AR_1575["AR-1575 - In progress"]:::status_in_progress
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -765,17 +765,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-ar1575-requal-20261008 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-quickstart-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Complete an ASB development-broker foreground-terminal repair so interactive launch does not leave the TUI in a private background process group, and repair the operator qualification helper to provide a nonzero controlling PTY with a bounded quit path; then rerun exact-head asb tui install followed by bare asb tui and the full quickstart matrix. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. |
 
 ### Blocked (4)
 
