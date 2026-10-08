@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-rereview3-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 at 4baab1e984a5e6e119cf2566310bdd9f661a4e41 and require all hosted checks terminal green before merge. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-rereview3-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 so authenticated teardown covers resistant descendants that create a new session without targeting ambient children; add exact no-survivor and subreaper-restoration regressions, then obtain another independent exact-head review. |
 
 ### Blocked (7)
 
