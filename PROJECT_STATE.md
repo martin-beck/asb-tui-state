@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@4bc055a43ee3` | `main` | BLOCKED | QUEUED:, QUEUED: | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@4bc055a43ee3` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | test(quickstart): use a real controlling PTY |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37705076360 | `4bc055a43ee3` | pull_request | AWQ shadow observation | queued:- |
-| 37705076186 | `4bc055a43ee3` | pull_request | Repository quality | queued:- |
+| 37705076360 | `4bc055a43ee3` | pull_request | AWQ shadow observation | in_progress:- |
+| 37705076186 | `4bc055a43ee3` | pull_request | Repository quality | completed:success |
 | 37703291693 | `63f01a3ddc23` | pull_request | AWQ shadow observation | completed:success |
 | 37703291156 | `63f01a3ddc23` | pull_request | Repository quality | completed:success |
 | 37700690740 | `a55a50cbd28d` | pull_request | AWQ shadow observation | completed:success |
