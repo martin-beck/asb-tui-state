@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1727](tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command. | - |
+| P0 | [AR-1727](tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command. | codex-asb-tui-ar1727-unblock-vendor |
 
 ## Blocked
 

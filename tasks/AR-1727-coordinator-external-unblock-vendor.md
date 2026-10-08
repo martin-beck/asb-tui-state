@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T18:21:20+00:00",
   "depends_on": [
     "AR-1722",
     "AR-1726"
   ],
   "id": "AR-1727",
   "next_action": "Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1727-unblock-vendor",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:22:00+00:00",
+  "updated_at": "2026-10-08T14:21:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -71,3 +71,5 @@ After AR-1727 is accepted and released, invoke the newly supported `unblock`
 command on exact current AR-1575 revision with a note binding the completed
 AR-1725 and Coordinator AR-0085 evidence. Then claim and requalify AR-1575
 normally. AR-1727 is not permission to change either product repository.
+
+- 2026-10-08T14:21:20+00:00: Claimed by codex-asb-tui-ar1727-unblock-vendor.
