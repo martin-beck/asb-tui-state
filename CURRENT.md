@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Qualify the complete selection-driven asb-tui journey through the supported `asb tui install` and `asb tui` commands. | Independent reviewer must verify exact paired identities, receipt quality/AR-1703-top-level-clean-room-qualification-20261009.json at SHA-256 98ff279cc7bde587812d1eba92c98e385033d69f190cf42c588ad5485d6250b2, real top-level install/bare-launch PTY evidence, renderer-neutral selection/run/statistics evidence boundary, hosted exact-head CI, privacy, spec revision 1, and deterministic state gates; attach acceptance and release only after approval. | codex-tui-ar1703-clean-room-20261009 |
 | P1 | [AR-1728](tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded. | codex-tui-ar1728-action-pin-20261009 |
 
 ## Blocked
