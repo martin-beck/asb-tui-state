@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. | codex-ar1713-qualification-20261008 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -175,6 +169,7 @@ Never edit this file directly.
 | P0 | [AR-1706](tasks/AR-1706.md): Current-main PTY/control repair qualification | Qualify the exact current-main installed TUI PTY/control route for live handoff, typed failures, and no mock fallback. | No further action; installed PTY/control qualification is recorded, and the follow-up catalog/revision repair merged as 19da04ed with exact-main checks green. | - |
 | P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | PR #276 merged as 525c601f; after exact-main Trusted Main 37265424193 and Repository Quality 37265424191 finish green, record the formal-gate receipt and release AR-1707. | - |
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed `asb tui install` followed by bare `asb tui` qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. | - |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. | - |
 | P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Release after exact installed-entrypoint and hostile shim evidence recorded at TUI head 5880ceb. | - |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. | - |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. | - |
