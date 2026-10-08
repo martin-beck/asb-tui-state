@@ -43,6 +43,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1650-tui` | `feat/ar-1650-tui` | `c67c686ab578` | 0 | behind 202, ahead 2 |
 | `ar1689-tui-fix` | `DETACHED` | `e88867129a35` | 0 | behind 118, ahead 0 |
 | `ar1701-tui` | `feature/ar-1701-live-control` | `97bc395eedb9` | 0 | behind 62, ahead 0 |
+| `tui` | `DETACHED` | `3bb597cfb0b5` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar-1200` | `feature/ar-1200-asb-router-client` | `92a458a0fe88` | 0 | behind 317, ahead 285 |
 | `asb-tui-ar-1220` | `docs/ar-1220-first-run-agent` | `adf1270df6bb` | 0 | behind 317, ahead 177 |
 | `asb-tui-ar-1221` | `docs/ar-1221-tui-readiness` | `11f4a0671da4` | 0 | behind 317, ahead 181 |
