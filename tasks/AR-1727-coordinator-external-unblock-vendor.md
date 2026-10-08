@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T18:21:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1722",
     "AR-1726"
   ],
   "id": "AR-1727",
   "next_action": "Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate.",
-  "owner": "codex-asb-tui-ar1727-unblock-vendor",
+  "owner": "",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:32:49+00:00",
+  "updated_at": "2026-10-08T14:32:57+00:00",
   "worktree_key": ""
 }
 ---
@@ -123,3 +123,9 @@ normally. AR-1727 is not permission to change either product repository.
   not nested semantic mismatch. External unblock itself and immutable AR-1575 r74 fixture tests
   passed, but pause-isolation predicate fails. No candidate was committed or published; AR-1575
   remains blocked and unmodified.
+
+- 2026-10-08T14:32:57+00:00: Blocked on upstream Coordinator resume-provenance repair. Exact ee68fbd
+  probe accepted duplicate current-revision pauses, wrong task identity, and nested step_state
+  status/revision mismatches; selected Git backend blocks none. Required follow-up must fix and
+  hostile-test both Git and SQLite before official resync. No AR-1727 candidate/receipt acceptance
+  or AR-1575 unblock was published.
