@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -214,7 +214,7 @@ flowchart LR
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - Blocked"]:::status_blocked
         AR_1723["AR-1723 - Done"]:::status_done
-        AR_1724["AR-1724 - Open"]:::status_open
+        AR_1724["AR-1724 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -777,11 +777,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Unclaimed | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. |
+| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | codex-ar1724-rustup-layout-20261008 | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. |
 
 ### Blocked (6)
 

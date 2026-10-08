@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. | - |
+| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. | codex-ar1724-rustup-layout-20261008 |
 
 ## Blocked
 

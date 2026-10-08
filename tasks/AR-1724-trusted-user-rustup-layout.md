@@ -2,22 +2,22 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T12:37:58+00:00",
   "depends_on": [
     "AR-1714",
     "AR-1723"
   ],
   "id": "AR-1724",
   "next_action": "Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey.",
-  "owner": "",
+  "owner": "codex-ar1724-rustup-layout-20261008",
   "plan": "../plans/AR-1724-trusted-user-rustup-layout.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T08:37:55+00:00",
+  "updated_at": "2026-10-08T08:37:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,5 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 - 2026-10-08T08:37:55+00:00: Dependencies AR-1714 and AR-1723 are done. AR-1597 exact-main
   reproduction proves the conventional owner-owned Rustup layout and detached-wrapper gaps;
   implement the narrow TUI-only repair with hostile-path rejection.
+
+- 2026-10-08T08:37:58+00:00: Claimed by codex-ar1724-rustup-layout-20261008.
