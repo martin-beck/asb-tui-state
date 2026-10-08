@@ -1,0 +1,95 @@
+{
+  "ar": "AR-1668",
+  "boundaries": {
+    "live_execution_mode": "configuration materialization only",
+    "live_provider_contact": "not performed or claimed",
+    "missing_development_authentication": "visible nonblocking warning",
+    "missing_development_key_management": "visible nonblocking warning",
+    "missing_development_signatures": "visible nonblocking warning",
+    "public_release": "not claimed"
+  },
+  "classification": "development/mock",
+  "credentials": "none",
+  "dependencies": {
+    "AR-1660": "done",
+    "AR-1667": "done"
+  },
+  "evidence_digests": {
+    "bundle_verification_sha256": "749b782c5fd3d065372f80a5149549b70981af576d270b52c0d623a2b4edcf69",
+    "capture_replay_sha256": "1b553295207bef37746dcb6b59b6fa540d0ac3f732bcf8660e86c8b692b818e9",
+    "focused_journey_sha256": "f778d3f5cf075b2dc815a2dcdf9c25a586142eb4002524300d39b32ec8fbbb1b",
+    "formal_schema_privacy_sha256": "2c646dc8d6124305559e8007c2d966ead4a6bc302f95cab9f95caca62c0ad14d",
+    "lifecycle_sha256": "37d8cd456e1c711917ad21c60a1f2a3a3b4e4872b277daab90fb095051618ffc",
+    "native_quality_sha256": "7b0e58926c41f297a5256ef1344c3d16f5d319acae73ab0c43a1be9324ffe160",
+    "operator_quickstart_sha256": "91814a044f15090429804046f70e97011df5f593f98104462785c8f7759d00d0",
+    "publisher_sha256": "702fb3629fbf459c8151ceb6e4d23227e86bf41a5e1a778c5e9dc4018960ce2a"
+  },
+  "historical_candidate": {
+    "merge": "f587623b58a8b98c90cb2ea57a9dc36bf9be880d",
+    "pr": 253,
+    "status": "already merged and ancestral to exact current TUI main; not revived or re-merged"
+  },
+  "hosted_exact_head": {
+    "asb": "9 of 9 workflows passed as bound by the independently reviewed AR-1667 receipt",
+    "tui": "2 of 2 workflows passed as bound by the independently reviewed AR-1667 receipt"
+  },
+  "journey": {
+    "agent_choices": [
+      "opencode",
+      "opendesk"
+    ],
+    "benchmark": "core/quality/chat with latency.first passed",
+    "comparison_and_analysis": "passed with bounded visible results",
+    "default_channel": "dev",
+    "human_and_json": "install and bare launch passed in both projections",
+    "install": "development_bundle_consumed from exact published leaf",
+    "launch": "development_launched under an 80x24 controlling PTY",
+    "model_choices": [
+      "cohere/north-mini-code:free",
+      "openai/gpt-4o",
+      "fixture-model"
+    ],
+    "provider": "OpenRouter-shaped development setup",
+    "pty_wizard": "first-run wizard opened through the real controlling PTY; exact-head semantic journey persisted the OpenRouter provider, both agents and compatible model across restart",
+    "record_all": "7 of 7 workload tuples complete and offline ready",
+    "record_selected": "1 of 1 workload tuple complete and offline ready",
+    "remove": "development_removed with selector and immutable version removed",
+    "replay": "generated and reference strict replay passed with network denied and no fallback",
+    "rollback": "missing-bundle upgrade failed closed and preserved the prior installation byte for byte",
+    "shared_defaults": "selected/all atomic apply and restart persistence passed"
+  },
+  "network": {
+    "benchmark_record_replay_comparison": "denied",
+    "install": "local published bundle only"
+  },
+  "privacy": {
+    "absolute_paths_recorded": false,
+    "prompts_responses_credentials_and_raw_captures_recorded": false,
+    "secret_scans": "passed"
+  },
+  "production_claim": false,
+  "provenance": {
+    "asb_binary_sha256": "47d0c680dbb645afa172fb88f3e5d0d2ba6e059eae189c3ff9c12399c4e9da38",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_commit_signature": "verified ED25519 and DCO",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "bundle_manifest_sha256": "750d750c5da68e30a4fa09b6a39e8ea49611085ca72d70529926aeb2c3bed35c",
+    "bundle_sha256": "2282fedd6991fe916a3e02c2918849f8363bf81b128e3ffb36c5ad99e4efb57a",
+    "tui_commit": "be3e99ce86270d5fd181c291d70d1a242506898b",
+    "tui_commit_signature": "verified ED25519 and DCO",
+    "tui_tree": "b47033659e2def84265d16e20fec6b5df64eea6d"
+  },
+  "quality": {
+    "cargo_clippy_all_targets_deny_warnings": "passed",
+    "cargo_fmt": "passed",
+    "cargo_test_locked_full": "passed",
+    "formal_ui_model_and_source_parity": "passed",
+    "product_gitleaks": "passed",
+    "release_build": "passed",
+    "rustdoc_deny_warnings": "passed",
+    "schema_tutorial_help_and_credential_boundary": "passed",
+    "shell_and_workflow_quality": "passed",
+    "source_worktrees_clean": true
+  },
+  "schema_version": 1
+}
