@@ -5,7 +5,7 @@
   "acceptance_predicates": [
     {
       "id": "exact-delta",
-      "description": "The candidate changes only the trusted-main taiki-e/install-action pin from immutable 76b5a2d6 to immutable 83ac0ad6 on exact current main."
+      "description": "The candidate changes only the trusted-main taiki-e/install-action pin from immutable 4076c08d to immutable 83ac0ad6 on exact current main."
     },
     {
       "id": "upstream-review",
