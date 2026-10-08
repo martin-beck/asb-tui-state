@@ -682,7 +682,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
-| Next action | Independent reviewer must verify corrected receipt quality/AR-1575-final-qualification-20261009.json at SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f, including exact paired identities, demonstrated focused TUI total 18, no-extra-override lifecycle, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
+| Next action | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. |
 
 ### AR-1579 — TUI development-channel lifecycle
 
@@ -3241,7 +3241,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify corrected receipt quality/AR-1575-final-qualification-20261009.json at SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f, including exact paired identities, demonstrated focused TUI total 18, no-extra-override lifecycle, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. |
 
 ### Open (1)
 
@@ -3356,3 +3356,4 @@ flowchart LR
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
+| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
