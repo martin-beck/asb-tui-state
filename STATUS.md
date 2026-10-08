@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair9-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 after review 5450556752: preserve bounded authenticated fixture-lineage containment when the supervisor is stopped or stalled during post-SCM_RIGHTS startup failure and teardown; add TERM/HUP-resistant startup and teardown regressions under both incoming parent subreaper states proving no supervisor, fixture process, or descriptor survivor, then publish signed+DCO head for fresh independent exact-head review. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair9-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Independently review PR #287 at exact signed+DCO head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d after review 5450556752; require terminal-green exact-head hosted checks before merge. Do not merge without fresh review. |
 
 ### Blocked (7)
 
