@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 164 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 174 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 2 |
-| Blocked | 3 |
+| Open or active | 1 |
+| Blocked | 4 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 174 | 2 | 3 | 164 |
+| unassigned | unassigned | 174 | 1 | 4 | 164 |
 
 ## Task drill-down
 
@@ -2018,11 +2018,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1686-consumer-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. |
@@ -2643,7 +2643,7 @@ flowchart LR
         AR_1677["AR-1677 - Done"]:::status_done
         AR_1678["AR-1678 - Done"]:::status_done
         AR_1685["AR-1685 - Planned"]:::status_planned
-        AR_1686["AR-1686 - In progress"]:::status_in_progress
+        AR_1686["AR-1686 - Blocked"]:::status_blocked
         AR_1687["AR-1687 - Planned"]:::status_planned
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
@@ -3255,19 +3255,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | codex-tui-ar1686-consumer-20261009 | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. |
 | P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. |
 
-### Blocked (3)
+### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](../tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](../tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
+| P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
 ### Planned (3)

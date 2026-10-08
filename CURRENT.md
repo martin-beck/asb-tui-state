@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. | codex-tui-ar1686-consumer-20261009 |
 | P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. | codex-tui-ar1729-fast-exit-20261009 |
 
 ## Blocked
@@ -16,6 +15,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. | - |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. | - |
+| P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. | - |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. | - |
 
 ## Planned
