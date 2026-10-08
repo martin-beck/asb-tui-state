@@ -17,8 +17,8 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37860221603 | `f1076cd8d75c` | dynamic | Dependabot Updates | completed:success |
-| 37860121374 | `f1076cd8d75c` | push | Repository quality | in_progress:- |
-| 37860121369 | `f1076cd8d75c` | push | Trusted main verification | in_progress:- |
+| 37860121374 | `f1076cd8d75c` | push | Repository quality | completed:success |
+| 37860121369 | `f1076cd8d75c` | push | Trusted main verification | completed:success |
 | 37859495436 | `218735341aeb` | pull_request | AWQ shadow observation | completed:failure |
 | 37859495156 | `218735341aeb` | pull_request | Repository quality | completed:failure |
 | 37859387230 | `4a7fda9eda8b` | pull_request | AWQ shadow observation | completed:success |
