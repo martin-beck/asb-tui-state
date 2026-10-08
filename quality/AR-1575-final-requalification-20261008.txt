@@ -1,0 +1,63 @@
+AR-1575 exact paired final requalification receipt
+Date: 2026-10-08
+Classification: development-only, credential-free; no production or live-provider claim
+
+Exact source identities
+- ASB commit: 1a5888ce1c96414015bbaf223ac42302871d47fe
+- ASB tree: e5c4645c9e4384fb57424eaa42139a99b78c5c69
+- asb-tui commit: ee45ff34977968f2c775c455b41bb083521265e9
+- asb-tui tree: 8c6da522704e222c68716cc691e6abed37d8db10
+- ASB AR-1726 signed merge 736a65cd8904b8f4a6f1715fc86ae1c854fe2232
+  is an ancestor of the qualified ASB head and retains a matching DCO trailer.
+
+Exact artifact identities
+- ASB release executable SHA-256:
+  921e119af9795c2d52d4ea964de9a756f9f9cecb5de293cae810f59e753535ec
+- asb-tui development executable SHA-256:
+  bc50ff4a8128095f8aa62569affc1be83df28b52fc2d906bdf58146f2032c748
+- development bundle manifest SHA-256:
+  1a2465e927f612ea62ea7c7643fc3106dcf0d564c1c5476821754fb84c743e05
+- installed channel manifest SHA-256:
+  32c42e616d41a83e177f11571c1f6e5f4ef941ad951515deda12a99b7467dad8
+
+Passing evidence
+- Development preflight passed on the conventional user-owned Rustup layout
+  and emitted the bounded group-writable Rustup warning plus the three expected
+  development-only authentication, signature, and key-management warnings.
+- Content-addressed bundle install, offline status, offline doctor, same-version
+  upgrade, post-upgrade status, and removal passed with exact paired identities.
+- Offline source install, absent launch/status, substituted active metadata,
+  repeated removal, and post-removal status returned typed failures without
+  fallback or provider egress.
+- ASB tui_lifecycle integration: 5 passed.
+- ASB tui unit slice: 77 passed serially, including descriptor identity,
+  development broker, Rustup descriptor pairing, tool propagation, offline
+  cassette, quota, timeout, and typed failure tests.
+- asb-tui broker_entry, pty_broker_handoff, development_qualification,
+  end_to_end_qualification, and benchmark_route: 18 passed. These cover dynamic
+  broker descriptors, inherited socket/PTY adoption, credential-free setup,
+  strict offline replay, comparison, and no-live-fallback behavior.
+
+Blocking exact-head findings
+1. Source materialization remains broken at the qualified ASB head. Three clean
+   public `asb tui install --channel dev --json` attempts returned typed
+   `dev_command_failed`. The descriptor-bound reproduction identifies the exact
+   failure: the env-cleared Cargo build invokes the validated absolute GCC
+   driver, whose `collect2` cannot locate `ld`. ASB sets deterministic global
+   `RUSTFLAGS`; Cargo therefore does not apply the separate target-specific
+   linker-search flag. The same build succeeds when the validated linker search
+   root is included in the effective flags. ASB AR-1737 owns this narrow repair;
+   it must retain an empty ambient PATH and all hostile-path rejection.
+2. The installed bare launch reaches the renderer under a controlling PTY, but
+   the exact qualified heads do not produce a clean lifecycle response after
+   the bounded `q` path; both the repository helper and an independent delayed
+   key probe end in typed `development_launch_timeout`. TUI AR-1654 owns the
+   already active controlling-PTY/quit/trailing-response repair and must be
+   merged and requalified rather than duplicated here.
+
+Conclusion
+- Credential-free bundle consumption, descriptor/broker compatibility, offline
+  behavior, typed failures, upgrade, and removal are qualified.
+- AR-1575 is not complete. Re-run the exact paired source-built install through
+  clean bare launch after ASB AR-1737 and TUI AR-1654 are released. Do not infer
+  live credentials, live-provider success, stable release, or production trust.
