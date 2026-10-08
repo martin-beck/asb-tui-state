@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T08:14:47+00:00",
+  "updated_at": "2026-10-08T08:15:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -278,3 +278,6 @@ never block local or deterministic qualification.
   total=10. Full locked Rust suite and repository quality gates passed locally, including
   formal/help/UI_OWNERS/source parity, privacy, restart, cancellation, journey, documentation,
   promoted self-test, and product shell quality.
+
+- 2026-10-08T08:15:09+00:00: Recorded command exit 8; command argv SHA-256
+  db6ac697b54def18a536322794319e60a75a8d6a2ec2dcbfb3ae8b57a9cca566.
