@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**173 ARs tracked** across 6 active status categories.
+**173 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2018,11 +2018,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-tui-ar1686-consumer-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. |
@@ -2629,7 +2629,7 @@ flowchart LR
         AR_1677["AR-1677 - Done"]:::status_done
         AR_1678["AR-1678 - Done"]:::status_done
         AR_1685["AR-1685 - Planned"]:::status_planned
-        AR_1686["AR-1686 - Open"]:::status_open
+        AR_1686["AR-1686 - In progress"]:::status_in_progress
         AR_1687["AR-1687 - Planned"]:::status_planned
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
@@ -3237,17 +3237,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | codex-tui-ar1686-consumer-20261009 | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
 | P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | codex-tui-ar1728-action-pin-20261009 | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
 
 ### Blocked (3)
 
