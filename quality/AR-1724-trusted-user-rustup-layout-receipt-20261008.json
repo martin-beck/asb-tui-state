@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1724",
+  "status": "passed",
+  "classification": "development-only trusted tool resolution repair",
+  "production_claim": false,
+  "repository": "martin-beck/asb-tui",
+  "reviewed_pr": 293,
+  "reviewed_head": "e54495471536af6a583c81b2414b059d0a0f72a6",
+  "reviewed_tree": "c3bece7a5e4b74b68026bf905cde2f8962951519",
+  "merged_main": "50acbc4af69480b7fbd34db19520a96ce1190a67",
+  "merge_parents": [
+    "1b8f4374bd5b9ae8f27406cab4c6fc60100de9f8",
+    "e54495471536af6a583c81b2414b059d0a0f72a6"
+  ],
+  "integrity": {
+    "candidate_commits_signed": true,
+    "merge_signature": "good",
+    "signer": "martin.beck2@gmx.de",
+    "dco": "present",
+    "exact_tree_preserved": true,
+    "independent_review": "approved exact head and tree with no remaining P0, P1, or P2 findings"
+  },
+  "review_repairs": [
+    "Persist the development warning when only the conventional owner-controlled Rustup shim path is group-writable.",
+    "Keep Cargo and Rustc descriptors bound from initial validation rather than reopening Rustup paths in a second pass."
+  ],
+  "accepted_development_layout": {
+    "scope": "conventional owner-controlled Rustup development layout",
+    "warning": "development_user_owned_group_writable_rustup_paths_allowed",
+    "cargo_and_rustc": "regular owner-only executable objects with descriptor-bound execution",
+    "rejected": [
+      "wrong owner",
+      "world-writable path",
+      "group-writable executable",
+      "symlink",
+      "out-of-root path",
+      "non-regular object",
+      "Cargo/Rustc identity mismatch",
+      "post-validation drift"
+    ]
+  },
+  "qualification": {
+    "library_tests": "385 passed",
+    "lifecycle_tests": "16 passed",
+    "complete_locked_test_suite": "passed",
+    "cargo_clippy_locked_all_targets_deny_warnings": "passed",
+    "cargo_fmt_check": "passed",
+    "fresh_user_wrapper": "2 passed",
+    "detached_checkout_ref_forwarding": "passed",
+    "host_shaped_install_status_launch_without_overrides": "passed with the required development warning"
+  },
+  "hosted_pr": [
+    {"workflow": "Repository quality", "run_id": 37754718507, "job_id": 113236718605, "conclusion": "success"},
+    {"workflow": "AWQ native-first", "run_id": 37754718891, "job_id": 113236716941, "conclusion": "success"},
+    {"workflow": "AWQ observation", "job_id": 113238630232, "conclusion": "success"}
+  ],
+  "hosted_exact_main": [
+    {"workflow": "Repository quality", "run_id": 37755769636, "job_id": 113239804930, "conclusion": "success"},
+    {"workflow": "Trusted main verification", "run_id": 37755769842, "job_id": 113239805977, "conclusion": "success"}
+  ],
+  "scope": {
+    "asb_product_modified": false,
+    "credentials_read_or_recorded": false,
+    "private_paths_recorded": false,
+    "development_authentication_signatures_and_key_management": "visible warning-only conditions"
+  },
+  "conclusion": "The standalone TUI now accepts the narrow conventional owner-controlled Rustup development layout with an explicit warning, preserves descriptor-bound Cargo/Rustc execution, rejects hostile substitutions, and forwards exact refs for detached fresh-user qualification."
+}
