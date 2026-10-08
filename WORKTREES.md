@@ -150,6 +150,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1658` | `feature/ar-1658-tui-channel-selector` | `e4c6fd537f87` | 0 | behind 160, ahead 0 |
 | `asb-tui-ar1660-quickstart` | `repair/ar-1660-quickstart` | `749f6f46fff1` | 0 | behind 139, ahead 0 |
 | `asb-tui-ar1666` | `feature/ar-1666-coverage` | `d857645fcffa` | 0 | behind 161, ahead 0 |
+| `asb-tui-ar1668-integration` | `integration/ar-1668-pr291` | `be3e99ce8627` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1668-post-launch-20261008` | `qualification/ar-1668-post-launch-20261008` | `2e2dd3bb2453` | 0 | behind 0, ahead 1 |
 | `asb-tui-ar1674` | `repair/ar-1674-channel-option` | `34b984d4bd8d` | 0 | behind 158, ahead 0 |
 | `asb-tui-ar1676-compat` | `repair/ar-1676-compat` | `ba6ae084d60e` | 0 | behind 151, ahead 0 |
