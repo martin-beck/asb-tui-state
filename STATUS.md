@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | codex-ar1720-review-20261008 | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh independent agent reviews PR #289 exact head bfda799b6cfa47af765f76801b39c97bc0e19968; repair findings if any, otherwise require exact-head hosted checks before prescribed integration. |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | codex-ar1720-review-20261008 | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Repair legacy ProviderCatalog request-known-generation and same-generation digest fences; add adversarial tests; obtain fresh independent review before integration. |
 
 ### Blocked (6)
 
