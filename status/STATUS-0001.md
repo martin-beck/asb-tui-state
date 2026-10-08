@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2424,11 +2424,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-tui-ar1726-supersession-lifecycle |
 | Parent | None |
 | Children | None |
 | Summary | Make the supersession profile gate valid across AR-1673&#x27;s dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. |
@@ -2633,7 +2633,7 @@ flowchart LR
         AR_1723["AR-1723 - Done"]:::status_done
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - Done"]:::status_done
-        AR_1726["AR-1726 - Open"]:::status_open
+        AR_1726["AR-1726 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3202,11 +3202,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md): Repair supersession profile lifecycle gate | Unclaimed | Make the supersession profile gate valid across AR-1673&#x27;s dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. |
+| P0 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md): Repair supersession profile lifecycle gate | codex-tui-ar1726-supersession-lifecycle | Make the supersession profile gate valid across AR-1673&#x27;s dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. |
 
 ### Blocked (4)
 
@@ -3325,4 +3325,3 @@ flowchart LR
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
-| P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |

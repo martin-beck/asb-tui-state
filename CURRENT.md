@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](tasks/AR-1726-supersession-profile-lifecycle.md): Repair supersession profile lifecycle gate | Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. | - |
+| P0 | [AR-1726](tasks/AR-1726-supersession-profile-lifecycle.md): Repair supersession profile lifecycle gate | Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants. | Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green. | codex-tui-ar1726-supersession-lifecycle |
 
 ## Blocked
 

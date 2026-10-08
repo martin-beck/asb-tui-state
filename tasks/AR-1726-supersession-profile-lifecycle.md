@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T17:01:25+00:00",
   "depends_on": [
     "AR-1673",
     "AR-1722"
   ],
   "id": "AR-1726",
   "next_action": "Replace the lifecycle-brittle AR-1673 profile assertion with phase-complete invariant checks, run the full state and formal gates, obtain independent review, and restore exact-main Coordination verification to green.",
-  "owner": "",
+  "owner": "codex-tui-ar1726-supersession-lifecycle",
   "plan": "../plans/AR-1726-supersession-profile-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair supersession profile lifecycle gate",
-  "updated_at": "2026-10-08T14:00:00+00:00",
+  "updated_at": "2026-10-08T14:01:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -64,3 +64,5 @@ code, resolver/channel authority, or the supersession algorithm.
 AR-1726 is done only when the final terminal AR-1673 profile passes locally
 and in hosted Coordination verification, the authoritative state is clean and
 synchronized, and no product repository was modified.
+
+- 2026-10-08T14:01:25+00:00: Claimed by codex-tui-ar1726-supersession-lifecycle.
