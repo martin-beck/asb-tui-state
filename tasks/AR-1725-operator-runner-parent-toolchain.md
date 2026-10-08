@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1725-operator-runner-parent-toolchain",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T16:47:28+00:00",
   "depends_on": [
     "AR-1721",
     "AR-1724"
   ],
   "id": "AR-1725",
   "next_action": "Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI.",
-  "owner": "",
+  "owner": "codex-tui-ar1725-parent-toolchain",
   "plan": "../plans/AR-1725-operator-runner-parent-toolchain.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Operator quickstart parent toolchain propagation repair",
-  "updated_at": "2026-10-08T12:42:26+00:00",
+  "updated_at": "2026-10-08T12:47:28+00:00",
   "worktree_key": "asb-tui-ar-1725-operator-runner-parent-toolchain"
 }
 ---
@@ -51,3 +51,5 @@ wizard, or runtime behavior. Development authentication, signatures, key
 management, and provider credentials remain warning-only and never block this
 gate.
 
+
+- 2026-10-08T12:47:28+00:00: Claimed by codex-tui-ar1725-parent-toolchain.
