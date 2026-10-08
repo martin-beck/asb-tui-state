@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1713",
+  "classification": "development/mock",
+  "credentials": "none",
+  "provenance": {
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "tui_commit": "69f0584cee27001b1ae10b7311192124a855858c",
+    "tui_tree": "fe43554b9e541bedc75b3236bee0927c297a5969",
+    "tui_executable_sha256": "6190209b8828f0f7aa8f1bfac6f39dcc7f6bae1d4cf3871b93cb00290801d96e",
+    "tui_executable_size": 4895520,
+    "channel_manifest_sha256": "1482a42205d5e89c314f30269b4d1c4faa9f61dbd34a14cde81806caf6fba0a0"
+  },
+  "installed_entrypoint": {
+    "install": "development_bundle_consumed",
+    "install_network": "used",
+    "status": "development_installed",
+    "status_network": "denied",
+    "bare_tui_route": "entered through a PTY; bounded qualification teardown",
+    "live_provider_route": "entered through a PTY; bounded qualification teardown",
+    "dynamic_catalog_route": "entered through a PTY; bounded qualification teardown",
+    "remove": "development_removed"
+  },
+  "journey": {
+    "selected_capture": "passed by deterministic provider-free fixture",
+    "all_capture": "passed by deterministic provider-free fixture",
+    "strict_offline_replay": "passed; network denied; no live fallback",
+    "comparison": "passed with bounded comparable fixture results"
+  },
+  "tests": {
+    "broker_entry": "1 passed",
+    "development_journey": "2 passed",
+    "development_qualification": "2 passed",
+    "end_to_end_qualification": "2 passed",
+    "cargo_fmt_check": "passed",
+    "cargo_clippy_all_targets_deny_warnings": "passed",
+    "cargo_test_locked_full": "passed",
+    "asb_postmerge_workflows": "9 of 9 passed",
+    "tui_exact_main_workflows": "Trusted Main and Repository Quality passed"
+  },
+  "boundary": {
+    "provider_contact": "none",
+    "live_provider_evidence": "not performed; route readiness only",
+    "development_warnings": [
+      "development_missing_authentication_allowed",
+      "development_missing_signatures_allowed",
+      "development_missing_key_management_allowed"
+    ],
+    "production_claim": false
+  }
+}
