@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
@@ -210,7 +210,7 @@ flowchart LR
         AR_1708["AR-1708 - Done"]:::status_done
         AR_1713["AR-1713 - Done"]:::status_done
         AR_1714["AR-1714 - Done"]:::status_done
-        AR_1720["AR-1720 - Open"]:::status_open
+        AR_1720["AR-1720 - In progress"]:::status_in_progress
         AR_1721["AR-1721 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Repair legacy ProviderCatalog request-known-generation and same-generation digest fences; add adversarial tests; obtain fresh independent review before integration. |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | codex-ar1720-repair-20261008 | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Repair legacy ProviderCatalog request-known-generation and same-generation digest fences; add adversarial tests; obtain fresh independent review before integration. |
 
 ### Blocked (6)
 
