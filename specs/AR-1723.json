@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1723.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "bounded-controls",
+      "description": "Configuration/default, credential reference, recording mode, and replay policy use typed bounded controls on the supported wizard path."
+    },
+    {
+      "id": "zero-free-form",
+      "description": "The authoritative supported fresh-user route completes with zero free-form characters and at most 24 total key events, with categorized regression evidence."
+    },
+    {
+      "id": "exact-handoff",
+      "description": "Selections preserve exact provider, model, configuration, credential-reference name, recording mode, replay policy, generation, and digest through the existing control request without fallback."
+    },
+    {
+      "id": "formal-and-ownership-parity",
+      "description": "Every changed screen, element, action, and transition appears in the executable formal model, source inventory, and UI ownership declarations, and CI rejects drift."
+    },
+    {
+      "id": "contextual-help",
+      "description": "Every changed control and performable action has meaningful context-specific help and visible keyboard guidance validated by CI."
+    },
+    {
+      "id": "privacy-and-development-boundary",
+      "description": "No credential value, raw provider payload, prompt, or private path enters TUI state or evidence; missing development authentication, signatures, and key management remain warning-only."
+    }
+  ],
+  "definition_of_done": [
+    "Focused controls, renderer, navigation, persistence, cancellation, formal-model, ownership, help, stale-selection, codec, and privacy tests pass.",
+    "An exact-head authoritative journey satisfies the zero-free-form and total-action bounds without documentation lookup.",
+    "Independent review, required hosted checks, signed/DCO merge, exact-main post-merge checks, and a privacy-safe receipt pass."
+  ],
+  "inputs": [
+    {
+      "id": "ar1597-blocker",
+      "description": "Independently reviewed AR-1597 receipt identifying 122 free-form characters across four supported-path fields."
+    },
+    {
+      "id": "catalog-contract",
+      "description": "Exact dynamic provider/model catalog, typed selection, revision, and digest contracts delivered through AR-1720."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "bounded-wizard-controls",
+      "description": "Typed selection controls and safe defaults for all four formerly free-form supported-path fields."
+    },
+    {
+      "id": "action-count-receipt",
+      "description": "Privacy-safe exact-head evidence reporting categorized navigation, selection, and free-form action counts."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "credential-output",
+    "raw-provider-payload-persistence",
+    "silent-fallback",
+    "gate-weakening",
+    "asb-product-change"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "formal",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "usability-regression",
+      "description": "The authoritative supported wizard journey uses zero free-form characters and no more than 24 total key events."
+    },
+    {
+      "id": "model-help-ownership",
+      "description": "Formal model, source inventory, UI ownership, and contextual-help completeness gates pass for every changed control."
+    },
+    {
+      "id": "privacy",
+      "description": "Credential values, prompts, raw provider payloads, and private paths are absent from state, output, logs, and evidence."
+    }
+  ]
+}
