@@ -2,20 +2,21 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d`
-- Local origin/main: `f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d`
+- Product remote main: `c99ff65cda05b325445c7762040b74a54a45652c`
+- Local origin/main: `c99ff65cda05b325445c7762040b74a54a45652c`
 - Primary worktree head: `d8668bd4021df5a66ea9577b96b5af6e102af1f9`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #296 | `repair/ar-1721-route-plumbing@bb8f503be6cf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: honor development provider routes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37862418709 | `c99ff65cda05` | push | Repository quality | in_progress:- |
+| 37862418655 | `c99ff65cda05` | push | Trusted main verification | in_progress:- |
 | 37861624025 | `bb8f503be6cf` | pull_request | AWQ shadow observation | completed:success |
 | 37861623781 | `bb8f503be6cf` | pull_request | Repository quality | completed:success |
 | 37860939191 | `7c69b415563a` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37859495436 | `218735341aeb` | pull_request | AWQ shadow observation | completed:failure |
 | 37859495156 | `218735341aeb` | pull_request | Repository quality | completed:failure |
 | 37859387230 | `4a7fda9eda8b` | pull_request | AWQ shadow observation | completed:success |
-| 37859387047 | `4a7fda9eda8b` | pull_request | Repository quality | completed:success |
-| 37784767389 | `168ea56a1e37` | push | Trusted main verification | completed:success |
