@@ -8,18 +8,18 @@
     "AR-1726"
   ],
   "id": "AR-1727",
-  "next_action": "Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate.",
+  "next_action": "Finish exact e863b57/eee60359 68-file vendor qualification, bind spec revision 2 receipt, obtain independent exact-head review and hosted acceptance, release done, then unblock AR-1575 through the supported exact-revision command.",
   "owner": "codex-asb-tui-ar1727-unblock-vendor",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T15:33:26+00:00",
+  "updated_at": "2026-10-08T15:34:11+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,19 +32,21 @@ AR-1725 completed. The currently vendored Coordinator at
 implements pause-snapshot `resume`; AR-1575 was released blocked and has no
 pause snapshot, so no supported command can reopen it.
 
-Upstream Coordinator AR-0085 repaired the lifecycle with a distinct `unblock`
-transition and merged as `ee68fbd31ef5564586e4e81297a175abcaa49c6d`, tree
-`77803e514ec9384ec623b5b65deb5356165981ad`. PR #1199 received independent
-exact-tree approval, and exact-main Verify run 37791093382 and Formal run
-37791093305 passed. This downstream AR must consume that immutable development
-revision through the official synchronizer; no vendored file or AR-1575 task
-metadata may be patched by hand.
+Upstream Coordinator AR-0085 introduced the distinct `unblock` transition at
+`ee68fbd31ef5564586e4e81297a175abcaa49c6d`. AR-0086 then repaired exact pause
+provenance and merged through PR #1200 as `e863b57edc7f7a21b2aff2c7b45ce226e12637d2`,
+tree `eee603591b917eeca244425559d7c67bb88a7268`; postmerge Verify run 37800348877
+and Formal run 37800348812 passed. This downstream AR must consume that merged
+development revision through the official synchronizer; no vendored file or
+AR-1575 task metadata may be patched by hand.
 
 ## Required repair
 
-- Synchronize the complete official Coordinator development vendor set from
-  exact commit `ee68fbd31ef5564586e4e81297a175abcaa49c6d` and tree
-  `77803e514ec9384ec623b5b65deb5356165981ad` using `sync-development`.
+- Synchronize the complete 68-file official Coordinator development vendor set
+  from exact merge `e863b57edc7f7a21b2aff2c7b45ce226e12637d2` and tree
+  `eee603591b917eeca244425559d7c67bb88a7268` using `sync-development`; its
+  downstream schema-v2 manifest SHA-256 is
+  `d210d9a1b54cedafa1b721718f6661cf46d87d54757186d26a8fc11868ab2d43`.
 - Verify every manifest source/destination, Git blob, SHA-256 digest, file mode,
   version/classification field, and deterministic manifest digest. Preserve
   the asb-tui project binding, Git backend, profile, privacy policy, and all
@@ -157,3 +159,7 @@ normally. AR-1727 is not permission to change either product repository.
 
 - 2026-10-08T15:33:26+00:00: Recorded command exit 0; command argv SHA-256
   2b5a22ae491d25458915056a5139960b2122a488116773682a9065c24c5663f1.
+
+- 2026-10-08T15:34:11+00:00: Rebound AR-1727 to spec revision 2: merged e863b57/d210d9 is
+  authoritative downstream vendor identity; f003d25/97a871 remains reviewed-candidate provenance
+  only.
