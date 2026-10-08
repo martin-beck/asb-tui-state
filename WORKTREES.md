@@ -143,7 +143,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1651` | `feature/ar1651-comparison-availability` | `0cddb9cca4eb` | 0 | behind 85, ahead 0 |
 | `asb-tui-ar1653-channel` | `ar-1653-tui-dev-channel` | `af9c34bab2bf` | 0 | behind 216, ahead 1 |
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 216, ahead 3 |
-| `asb-tui-ar1654-quickstart-20261008b` | `qualification/ar-1654-quickstart-20261008b` | `ee45ff349779` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1654-quickstart-20261008b` | `qualification/ar-1654-quickstart-20261008b` | `ee45ff349779` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `tools/run-operator-quickstart.py`, `tools/test-operator-quickstart.py` |
 | `asb-tui-ar1654-requal-20261008` | `repair/ar-1654-quickstart-requal-20261008` | `8474c4c9d0a2` | 0 | behind 17, ahead 0 |
 | `asb-tui-ar1656` | `ar-1656-provider-catalog-refresh` | `315afa2592d6` | 0 | behind 199, ahead 0 |
 | `asb-tui-ar1658` | `feature/ar-1658-tui-channel-selector` | `e4c6fd537f87` | 0 | behind 157, ahead 0 |
