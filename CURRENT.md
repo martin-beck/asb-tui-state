@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification after the ASB router and live contracts are available; current renderer-neutral seams are qualified. | codex-ar1713-paired-qualification-20261008 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Complete installed asb tui install then bare asb tui live-provider, selected/all capture, strict replay, and comparison qualification after the ASB router and live contracts are available; current renderer-neutral seams are qualified. | - |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. | - |
 
 ## Blocked
