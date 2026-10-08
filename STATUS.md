@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-review8-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Fresh independent exact-head review of PR #287 at 33f27e6c6ebbac84525c917736bb0e05e392ccce: verify the fixture-exclusive supervisor/subreaper boundary preserves post-boundary ambient double-fork daemons while killing immediate fixture double-fork+setsid descendants, retaining diagnostic-only depth/process exhaustion, single PTY closure, and unchanged incoming subreaper state. Observe exact-head hosted checks; do not merge until review and checks are terminal clean. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-review8-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 exact head 33f27e6c6ebbac84525c917736bb0e05e392ccce: close every SCM_RIGHTS PTY master on parent-side startup validation/setup failure and replace unbounded supervisor waitpid paths with identity-safe bounded termination/reaping; add regressions, preserve fixture-exclusive ambient/fixture separation, rerun exact-head gates, then obtain fresh independent review. Do not merge current head. |
 
 ### Blocked (7)
 
