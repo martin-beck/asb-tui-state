@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1575.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "exact-paired-sources",
+      "description": "The privacy-safe receipt binds exact ASB commit 31ca7a481fca8b79bfbff126b92db6c6118beb7c/tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde and exact asb-tui commit 168ea56a1e3724bc72f097ffedf91c80704a72c2/tree b57c21fdf90404cc8a743e389ea1e2cd8528cfa7."
+    },
+    {
+      "id": "complete-development-journey",
+      "description": "Fresh-user install, status, doctor, upgrade, removal, bare PTY launch, first-run wizard, provider/model/workload selection, offline replay, comparison, analysis, and typed hostile cases pass without caller-supplied ASB development toolchain overrides."
+    },
+    {
+      "id": "broker-and-descriptor",
+      "description": "Inherited broker transport, SCM_RIGHTS negotiation, real controlling PTY handoff, descriptor identity binding, and stale identity rejection pass at the exact paired sources."
+    },
+    {
+      "id": "privacy-and-cleanup",
+      "description": "The receipt contains no credentials, private paths, or raw logs, benchmark and replay network access is denied, disposable state is removed, and no qualification processes or sessions remain."
+    },
+    {
+      "id": "independent-acceptance",
+      "description": "Independent review approved state commit 371755bf4deae427fb4917cedc7e931ba2f4f6a3/tree 124f19750824c39d0242bfe07026e880c67ae50b and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f with no findings."
+    }
+  ],
+  "definition_of_done": [
+    "The complete credential-free development journey passes against exact paired current-main identities and records privacy-safe evidence.",
+    "Focused ASB and TUI tests, exact-head hosted CI, deterministic state gates, cleanup, and typed negative behavior pass.",
+    "Independent review approves the exact state and receipt with no findings before normal handoffctl release."
+  ],
+  "inputs": [
+    {
+      "id": "task-and-plan",
+      "description": "AR-1575 task and final qualification rerun plan, including completed local and external prerequisites."
+    },
+    {
+      "id": "exact-paired-main",
+      "description": "Exact ASB and asb-tui source commits and trees recorded by the qualification receipt."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "qualification-receipt",
+      "description": "Privacy-safe quality/AR-1575-final-qualification-20261009.json bound by exact SHA-256."
+    },
+    {
+      "id": "accepted-terminal-state",
+      "description": "Independent-review-backed terminal coordinator state released only through handoffctl."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "gh",
+    "git",
+    "python3",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "credential-output",
+    "direct-product-edit",
+    "done-admission-bypass",
+    "generated-view-edit",
+    "networked-benchmark",
+    "unreviewed-release"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "environmental"
+  ],
+  "gates": [
+    {
+      "id": "receipt-integrity",
+      "description": "Receipt schema, exact digest, paired identities, focused counts, privacy, and cleanup assertions pass."
+    },
+    {
+      "id": "functional-qualification",
+      "description": "Operator quickstart, current-main journey, source lifecycle, broker/descriptor, offline replay, analysis, and typed-negative gates pass."
+    },
+    {
+      "id": "state-and-hosted",
+      "description": "Vendor, headers, unit, generated-view, live doctor, exact-head hosted CI, and independent review gates pass."
+    }
+  ]
+}
