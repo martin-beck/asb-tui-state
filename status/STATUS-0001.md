@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**173 ARs tracked** across 6 active status categories.
+**173 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2452,11 +2452,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-tui-ar1728-action-pin-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. |
@@ -2663,7 +2663,7 @@ flowchart LR
         AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
-        AR_1728["AR-1728 - Open"]:::status_open
+        AR_1728["AR-1728 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3237,17 +3237,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | Unclaimed | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
+| P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | codex-tui-ar1728-action-pin-20261009 | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
 
 ### Blocked (3)
 

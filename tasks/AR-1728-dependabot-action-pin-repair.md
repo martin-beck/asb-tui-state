@@ -2,23 +2,23 @@
 {
   "branch": "repair/ar-1728-install-action-pin",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T01:10:43+00:00",
   "depends_on": [
     "AR-1725"
   ],
   "id": "AR-1728",
   "next_action": "Reproduce Dependabot PR #288's reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR.",
-  "owner": "",
+  "owner": "codex-tui-ar1728-action-pin-20261009",
   "plan": "../plans/AR-1728-dependabot-action-pin-repair.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:05:16+00:00",
+  "updated_at": "2026-10-08T23:10:43+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
@@ -47,3 +47,5 @@ Main runs to succeed. Close PR #288 as superseded only after the replacement
 merge and post-merge verification are durable. Development release/auth policy
 remains warning-only; dependency identity, signature, DCO, review, CI, and
 post-merge validation are mandatory.
+
+- 2026-10-08T23:10:43+00:00: Claimed by codex-tui-ar1728-action-pin-20261009.
