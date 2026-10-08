@@ -11,11 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
+| #292 | `feature/ar1723-low-typing@0b2012d1252a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1723: replace wizard free-form setup with bounded controls |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37748515782 | `0b2012d1252a` | pull_request | AWQ shadow observation | in_progress:- |
+| 37748515389 | `0b2012d1252a` | pull_request | Repository quality | in_progress:- |
 | 37739974785 | `4c29ec76fa29` | push | Trusted main verification | completed:success |
 | 37739974746 | `4c29ec76fa29` | push | Repository quality | completed:success |
 | 37738322927 | `2e2dd3bb2453` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37729232368 | `74fad130ca67` | pull_request | Repository quality | completed:success |
 | 37727630250 | `e183cd0bfb8c` | pull_request | AWQ shadow observation | completed:success |
 | 37727630006 | `e183cd0bfb8c` | pull_request | Repository quality | completed:success |
-| 37725154795 | `ee45ff349779` | push | Repository quality | completed:success |
-| 37725154782 | `ee45ff349779` | push | Trusted main verification | completed:success |
