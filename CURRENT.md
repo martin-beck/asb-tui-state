@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. | codex-ar1721-pr287-review10-cleanup-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. | - |
 
 ## Blocked
 
