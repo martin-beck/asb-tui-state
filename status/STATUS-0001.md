@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 156 |
+| **Done** | Accepted, integrated, and durably verified | 157 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 2 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 170 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 3 |
+| Open or active | 2 |
 | Blocked | 4 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 170 | 3 | 4 | 156 |
+| unassigned | unassigned | 170 | 2 | 4 | 157 |
 
 ## Task drill-down
 
@@ -2368,11 +2368,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1722-vendor-upgrade |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. |
@@ -2615,7 +2615,7 @@ flowchart LR
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
-        AR_1722["AR-1722 - In progress"]:::status_in_progress
+        AR_1722["AR-1722 - Done"]:::status_done
         AR_1723["AR-1723 - Done"]:::status_done
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - In progress"]:::status_in_progress
@@ -3184,11 +3184,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Complete independent exact-head review and terminal hosted verification; record the development receipt and spec acceptance, release done, reconcile, and verify live state. |
 | P0 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md): Operator quickstart parent toolchain propagation repair | codex-tui-ar1725-parent-toolchain | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
 
 ### Open (1)
@@ -3216,7 +3215,7 @@ flowchart LR
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](../tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (156)
+### Done (157)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3314,3 +3313,5 @@ flowchart LR
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
+| P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
+| P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
