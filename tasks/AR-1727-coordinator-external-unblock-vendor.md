@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:21:34+00:00",
+  "updated_at": "2026-10-08T14:23:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -76,3 +76,6 @@ normally. AR-1727 is not permission to change either product repository.
 
 - 2026-10-08T14:21:34+00:00: Recorded command exit 0; command argv SHA-256
   46e5ebc51274802d780cef91b85f09529bded8a814967f1dd9ab78f27b96ca01.
+
+- 2026-10-08T14:23:16+00:00: Recorded command exit 0; command argv SHA-256
+  c849eba428f6c9c657706f16cbf9630a8e65fff0924bb21b843172c02c032f94.
