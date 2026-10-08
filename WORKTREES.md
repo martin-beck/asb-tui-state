@@ -19,8 +19,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar222-review-final` | `DETACHED` | `1eadb650d1c2` | 0 | behind 217, ahead 0 |
 | `ar222-review-repaired` | `DETACHED` | `6c5f29aaf884` | 0 | behind 218, ahead 0 |
 | `asb-tui-ar1707-rebase.0J4mKE` | `feature/ar-1707-revision-formal-gate-rebase` | `214ebb0fce36` | 0 | behind 32, ahead 0 |
-| `asb-tui-ar1720-audit` | `feature/ar-1720-controlserver-dynamic-catalog` | `69f0584cee27` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/control_codec.rs`, `src/control_transport.rs`, `src/live_projection.rs`, `src/protocol_compatibility.rs` |
+| `asb-tui-ar1720-audit` | `feature/ar-1720-controlserver-dynamic-catalog` | `69f0584cee27` | 11 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/ui-help.json`, `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/control_codec.rs`, `src/control_transport.rs`, `src/launch_statistics.rs`, `src/live_projection.rs`, `src/protocol_compatibility.rs`, `src/ui.rs`, `tests/wizard_render.rs` |
 | `asb-tui-ar1721-pr287-review8` | `DETACHED` | `33f27e6c6ebb` | 0 | behind 3, ahead 0 |
 | `asb-tui-coverage.Rfd3LO` | `repair/ar-1708-coverage-gate` | `2e0b462b80ef` | 0 | behind 34, ahead 0 |
 | `repair-pr224` | `repair/pr224` | `4b2779cb1af3` | 0 | behind 208, ahead 0 |
