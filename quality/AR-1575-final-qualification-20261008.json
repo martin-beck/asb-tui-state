@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1575",
+  "classification": "development/mock",
+  "result": "passed",
+  "credentials": "none",
+  "development_policy": {
+    "authentication": "warning-only",
+    "signature_and_key_management": "warning-only",
+    "provider_credentials": "not-required",
+    "functional_exactness_review_and_ci": "required"
+  },
+  "paired_sources": {
+    "agent-systems-benchmark": {"commit": "5e8e5b7fdb04a50950e0790d9d66c605e7978606", "tree": "eaef794258db33165d94fbf6a3e151f52059404c"},
+    "asb-tui": {"commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2", "tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"}
+  },
+  "artifacts": {
+    "asb_binary_sha256": "e358fd83b9f44652ec704649a600f23a094438060102e79c7d9867717fb9f7b1",
+    "tui_bundle_binary_sha256": "9c741d423daae70c3fb28ffa2ff407b78fcc1fe0420ef1f481684f4daa984875",
+    "bundle_manifest_sha256": "3690cfee8d578a382ebb0e0a6fd0fe507b55c0ddeb364ce5b2df33cd3431fe1f",
+    "source_materialized_tui_sha256": "e684c1022f659df3d701175b90a220f16190c24f1dcc267381b2792ebbc6d302",
+    "handoff_materialized_tui_sha256": "4e7380628502b986af435ae823f49e7f2e1e4de67c0393ec3190580f1d979728",
+    "materialization_note": "The source-lifecycle and quickstart-handoff executables are independent exact-source materializations made through separately configured qualification paths; their distinct digests are identities, not a byte-reproducibility claim."
+  },
+  "receipt_digests": {
+    "operator_quickstart": "c52b16b952f664c707e11f60b1a3b182a75732b651d3a02de756bcc18be0a5d5",
+    "post_launch": "f11e14649fd8713ba441193362451cb2a193373e624c8ea22744ffae4cf84023",
+    "quickstart": "487a5a19a7854b4e9cab250e4fe1eda5b9ae83029cb70bbf3630504a91e57bca",
+    "channel_matrix": "f1d1313ba58367fc31ebfd828304f284fe779c443127c5f53ea199d906c40f3a",
+    "source_lifecycle": "674adadf1293d7525d2c076cb2bbbe28f543a24236c9c98a4b17808d12c2c7d3",
+    "broker_pty_tests": "9a440a67353c2d03a4e7b04c6ee3210328f371fcf04af13a7ba3efb143c7ed67",
+    "descriptor_tests": "ec2c072eb3d13b30a095cd4e45add9150d9f0821e70c77476dda6e7aa15603ea"
+  },
+  "operator_boundary": {
+    "commands": ["asb tui install", "asb tui"],
+    "human_install": "passed",
+    "json_install": {"exit": 0, "code": "development_bundle_consumed"},
+    "human_launch": "passed",
+    "json_launch": {"exit": 0, "code": "development_launched"},
+    "terminal": {
+      "controlling": true,
+      "foreground_process_group": true,
+      "rows": 24,
+      "columns": 80,
+      "unconfigured_first_run_wizard_cancel_then_landing_quit": true
+    }
+  },
+  "normal_source_lifecycle": {
+    "external_toolchain_overrides_asserted_absent": true,
+    "toolchain_candidates": "auto-resolved from the standard parent HOME before isolated HOME",
+    "install": {"exit": 0, "code": "development_built"},
+    "status": {"exit": 0, "code": "development_installed"},
+    "doctor": {"exit": 0, "code": "development_verified"},
+    "upgrade": {"exit": 0, "code": "development_built"},
+    "post_upgrade_status": {"exit": 0, "code": "development_installed"},
+    "remove": {"exit": 0, "code": "development_removed"},
+    "repeated_remove": {"exit": 3, "code": "channel_unavailable"},
+    "post_remove_status": {"exit": 3, "code": "channel_unavailable"}
+  },
+  "journey": {
+    "wizard_and_provider_selection": "passed",
+    "agents": ["opencode", "opendesk"],
+    "models": "provider-catalog-compatible fixtures",
+    "benchmark_selection_and_execution": "passed",
+    "selected_and_all_workload_capture": "passed",
+    "record_and_seal": "passed",
+    "strict_offline_replay": "passed",
+    "comparison_and_analysis": "passed",
+    "benchmark_and_replay_network": "denied",
+    "configured_startup_landing_model": "passed by exact-head development journey and end-to-end suites"
+  },
+  "broker_and_descriptor": {
+    "inherited_socket_missing_fails_closed": "passed",
+    "scm_rights_negotiation": "passed",
+    "real_fd0_broker_handoff": "passed",
+    "real_socket_consumer_with_attached_pty": "passed",
+    "transient_and_terminal_pty_errors_distinguished": "passed",
+    "descriptor_valid": "passed",
+    "descriptor_stale_identity_rejected": "passed",
+    "descriptor_production_unknown_and_stale_shapes_rejected": "passed",
+    "asb_descriptor_binds_current_source_and_executable_identities": "passed"
+  },
+  "typed_failures": {
+    "trusted_tool_invalid": 3,
+    "trusted_tool_unavailable": 4,
+    "relative_candidate": "trusted_tool_invalid",
+    "symlinked_cargo": "trusted_tool_invalid",
+    "writable_cargo": "trusted_tool_invalid",
+    "symlinked_rustup": "trusted_tool_invalid",
+    "missing_candidate": "trusted_tool_unavailable",
+    "unsupported_channels": {"stable": 3, "nightly": 3, "experimental": 3},
+    "malformed_manifest": {"exit": 3, "code": "development_installation_invalid"},
+    "tampered_manifest": "dev_channel_manifest_invalid",
+    "absent_terminal": {
+      "scope": "exact-head TUI terminal-handoff boundary",
+      "outcome": "fails_closed",
+      "tests": 4,
+      "fallback": "denied"
+    },
+    "unavailable_provider": {
+      "outcome": "visible_with_typed_reason_but_unselectable",
+      "fallback": "denied"
+    },
+    "unavailable_model": {
+      "outcome": "visible_with_typed_reason_but_unselectable",
+      "fallback": "denied"
+    },
+    "provider_model_failure_tests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "provider_fallback": "denied"
+  },
+  "cleanup": {
+    "install_root_absent_or_empty_after_remove": true,
+    "qualification_root_removed": true,
+    "residual_non_ancestor_processes_or_sessions": 0,
+    "operator_supervisor_cleanup": "passed",
+    "credential_or_secret_values_recorded": false,
+    "private_paths_recorded": false,
+    "raw_logs_recorded": false
+  },
+  "hosted": {
+    "agent-systems-benchmark": {
+      "head": "5e8e5b7fdb04a50950e0790d9d66c605e7978606",
+      "successful_runs": [37793431344, 37793431370, 37793431378, 37793431382, 37793431395, 37793431401, 37793431436, 37793431469, 37793431599]
+    },
+    "asb-tui": {
+      "head": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+      "successful_runs": [37784767206, 37784767389]
+    }
+  },
+  "independent_review": {
+    "status": "pending",
+    "reviewed_state_commit": null,
+    "reviewed_state_tree": null,
+    "findings": []
+  }
+}
