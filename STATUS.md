@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 152 |
+| **Done** | Accepted, integrated, and durably verified | 153 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 1 |
 
@@ -96,7 +96,7 @@ flowchart LR
         AR_1586["AR-1586 - Done"]:::status_done
         AR_1587["AR-1587 - Done"]:::status_done
         AR_1588["AR-1588 - Done"]:::status_done
-        AR_1589["AR-1589 - In progress"]:::status_in_progress
+        AR_1589["AR-1589 - Done"]:::status_done
         AR_1590["AR-1590 - Done"]:::status_done
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | codex-root-ar1589-reconcile-20261008 | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Independent review must confirm the historical AR-1589 receipt plus later AR-1667/AR-1668 exact-main evidence satisfy every acceptance predicate and resolve the obsolete ASB hosted-check blocker before done release. |
-
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -793,7 +787,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (152)
+### Done (153)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -843,6 +837,7 @@ flowchart LR
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Unclaimed | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Unclaimed | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head bfc6424757c1d12c4cae42c04b92f45273c8e08c and await all hosted checks; merge/release only after independent approval and exact post-merge qualification. |
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Unclaimed | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. |
+| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Independent review must confirm the historical AR-1589 receipt plus later AR-1667/AR-1668 exact-main evidence satisfy every acceptance predicate and resolve the obsolete ASB hosted-check blocker before done release. |
 | P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Unclaimed | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. |
 | P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Unclaimed | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | PR #191 is updated at cb7b3723dd0ea2a4b02d06872bae4e4265fa5ae2; await hosted checks and independent exact-head review, then release the client validation work; AR-1593 owns v1.10/v1.12 alignment. |
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Unclaimed | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. |

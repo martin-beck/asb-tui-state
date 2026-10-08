@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Independent review must confirm the historical AR-1589 receipt plus later AR-1667/AR-1668 exact-main evidence satisfy every acceptance predicate and resolve the obsolete ASB hosted-check blocker before done release. | codex-root-ar1589-reconcile-20261008 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -81,6 +75,7 @@ Never edit this file directly.
 | P0 | [AR-1586](tasks/AR-1586.md): Real ASB bootstrap and control journey | Prove the TUI-side ordered first-run wizard bootstrap/control contract; real backend execution is AR-1587. | Implement and qualify the TUI-side ordered bootstrap/control plan at the highest common protocol version; assert typed ordering, identity/digest/revision/generation checks, transactional rollback, downgrade behavior, and representative setup/recording/benchmark mutations. AR-1587 owns real backend execution. | - |
 | P0 | [AR-1587](tasks/AR-1587.md): Real ASB ControlServer bridge qualification | Prove the complete wizard journey against the real ASB backend rather than synthetic fixtures. | Obtain independent review of PR #410 exact head bfc6424757c1d12c4cae42c04b92f45273c8e08c and await all hosted checks; merge/release only after independent approval and exact post-merge qualification. | - |
 | P0 | [AR-1588](tasks/AR-1588.md): asb-tui channel selection UX | Expose explicit release-channel selection with a simple default-dev TUI flow. | Await fresh hosted checks and independent review for PR #189 at 54318ed64df0dc2b1d4f08beee7037d767282a4e. | - |
+| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Independent review must confirm the historical AR-1589 receipt plus later AR-1667/AR-1668 exact-main evidence satisfy every acceptance predicate and resolve the obsolete ASB hosted-check blocker before done release. | - |
 | P0 | [AR-1590](tasks/AR-1590.md): Development broker PTY handoff seam | Make the real development broker fd and interactive PTY coexist safely for cross-project qualification. | Await fresh hosted checks and independent review for PR #190 at f0ef3dab5352473ff72e57defeb13831d6942f13. | - |
 | P0 | [AR-1592](tasks/AR-1592.md): TUI catalog compatibility client | Qualify the TUI catalog bootstrap client against the ASB common-version contract. | PR #191 is updated at cb7b3723dd0ea2a4b02d06872bae4e4265fa5ae2; await hosted checks and independent exact-head review, then release the client validation work; AR-1593 owns v1.10/v1.12 alignment. | - |
 | P0 | [AR-1593](tasks/AR-1593.md): TUI catalog protocol version alignment | Align asb-tui catalog negotiation with the ASB published protocol version. | Released at asb-tui PR #192 merge db80ffe; successor AR-1598 owns the post-merge Trusted-main coverage repair. | - |
