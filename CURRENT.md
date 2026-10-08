@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair unconditional PTY master/slave closure for every pre-spawn setup exception and post-spawn teardown exception in PR #287, add deterministic descriptor/subreaper regression coverage, then obtain a fresh independent exact-head review and terminal-green hosted checks before merge. | - |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair unconditional PTY master/slave closure for every pre-spawn setup exception and post-spawn teardown exception in PR #287, add deterministic descriptor/subreaper regression coverage, then obtain a fresh independent exact-head review and terminal-green hosted checks before merge. | codex-ar1721-pr287-repair4-20261008 |
 
 ## Blocked
 
