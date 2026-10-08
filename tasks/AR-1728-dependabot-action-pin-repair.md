@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1728-install-action-pin",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T01:10:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1725"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "integrate/ar-1728-reviewed",
   "observed_dirty": 0,
   "observed_head": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
-  "owner": "codex-tui-ar1728-action-pin-20261009",
+  "owner": "",
   "plan": "../plans/AR-1728-dependabot-action-pin-repair.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:41:29+00:00",
+  "updated_at": "2026-10-08T23:41:49+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
@@ -148,3 +148,11 @@ post-merge validation are mandatory.
 
 - 2026-10-08T23:41:29+00:00: Recorded command exit 0; command argv SHA-256
   c66c5a5b2813db924daa2f0331aacffcc143694bdb2c863e01494d0c33d35047.
+
+- 2026-10-08T23:41:49+00:00: Independent review approved exact candidate
+  4a7fda9eda8b6f2a792972ed962892f3ac8a88eb/tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b with no
+  findings. Signed+DCO merge f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d preserves that exact tree.
+  Candidate Repository Quality 37859387047 and AWQ 37859387230 passed; exact-main Repository Quality
+  37860121374 and Trusted Main 37860121369 passed. Stale PR #288 is closed unmerged. Mechanical
+  acceptance binds quality/AR-1728-action-pin-integration-20261009.json at SHA-256
+  d11030f815e4af442fabf934832bbe8ed01b7ff64868f59509e2d5853fd3aeff.
