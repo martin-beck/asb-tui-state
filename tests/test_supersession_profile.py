@@ -43,7 +43,14 @@ class SupersessionProfileTests(unittest.TestCase):
         self.assertEqual("superseded", metadata["AR-1672"]["status"])
         self.assertEqual("AR-1668", metadata["AR-1672"]["superseded_by"])
         self.assertEqual("done", metadata["AR-1668"]["status"])
-        self.assertEqual("open", metadata["AR-1673"]["status"])
+        # This profile test runs both before and while AR-1673 is claimed.  A
+        # valid claim must not make the supersession contract's own hosted
+        # verification fail merely because the dependent task advanced from
+        # dependency-ready ``open`` to its supported active lifecycle state.
+        self.assertIn(metadata["AR-1673"]["status"], {"open", "in_progress"})
+        if metadata["AR-1673"]["status"] == "in_progress":
+            self.assertTrue(metadata["AR-1673"].get("owner"))
+            self.assertTrue(metadata["AR-1673"].get("claim_expires"))
         self.assertIn("AR-1672", metadata["AR-1673"]["depends_on"])
         self.assertTrue(HANDOFF.dependency_satisfied("AR-1672", tasks))
 
