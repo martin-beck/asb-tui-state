@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. | codex-root-ar1589-reconcile-20261008 |
+| P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Independent review must confirm the historical AR-1589 receipt plus later AR-1667/AR-1668 exact-main evidence satisfy every acceptance predicate and resolve the obsolete ASB hosted-check blocker before done release. | codex-root-ar1589-reconcile-20261008 |
 
 ## Blocked
 
