@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**174 ARs tracked** across 6 active status categories.
+**174 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -604,11 +604,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-tui-ar1341-supersession-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the cross-repository development release-channel journey. |
@@ -2536,7 +2536,7 @@ flowchart LR
         AR_1338["AR-1338 - Done"]:::status_done
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Done"]:::status_done
-        AR_1341["AR-1341 - Open"]:::status_open
+        AR_1341["AR-1341 - In progress"]:::status_in_progress
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - Done"]:::status_done
         AR_1344["AR-1344 - Done"]:::status_done
@@ -3255,17 +3255,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1341](../tasks/AR-1341.md): Development channel cross-repository qualification | codex-tui-ar1341-supersession-20261009 | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1341](../tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 
 ### Blocked (3)
 
