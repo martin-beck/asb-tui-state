@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -175,7 +175,7 @@ flowchart LR
         AR_1665["AR-1665 - Blocked"]:::status_blocked
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Done"]:::status_done
-        AR_1668["AR-1668 - Open"]:::status_open
+        AR_1668["AR-1668 - In progress"]:::status_in_progress
         AR_1672["AR-1672 - Planned"]:::status_planned
         AR_1673["AR-1673 - Planned"]:::status_planned
         AR_1674["AR-1674 - Done"]:::status_done
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Unclaimed | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | After AR-1667 and AR-1660 dependencies are released, merge or reject candidate PR253 through hosted checks and run the paired exact-head journey receipt. |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-ar1668-post-launch-journey-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | After AR-1667 and AR-1660 dependencies are released, merge or reject candidate PR253 through hosted checks and run the paired exact-head journey receipt. |
 
 ### Blocked (5)
 
