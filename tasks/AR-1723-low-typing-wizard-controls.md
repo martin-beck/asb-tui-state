@@ -1,24 +1,24 @@
 ---
 {
-  "id": "AR-1723",
-  "title": "Replace wizard free-form setup with bounded controls",
-  "priority": "P0",
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "",
   "depends_on": [
     "AR-1668",
     "AR-1707",
     "AR-1720"
   ],
-  "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
-  "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "status": "planned",
+  "id": "AR-1723",
   "next_action": "Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597.",
   "owner": "",
-  "claim_expires": "",
-  "checkpoint_commit": "",
-  "task_revision": 1,
+  "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
+  "priority": "P0",
   "schema_version": 1,
-  "updated_at": "2026-10-08T07:35:00+00:00",
-  "branch": "",
+  "status": "open",
+  "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
+  "task_revision": 2,
+  "title": "Replace wizard free-form setup with bounded controls",
+  "updated_at": "2026-10-08T07:36:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,6 @@ contract supports it; it must not be required for the supported qualification
 journey. Raw credentials remain outside TUI state. Missing development
 authentication, signatures, and key management remain visible warnings and
 never block local or deterministic qualification.
+
+- 2026-10-08T07:36:52+00:00: Dependencies AR-1668, AR-1707, and AR-1720 are done; independently
+  reviewed AR-1597 evidence requires bounded controls and an action-count regression.
