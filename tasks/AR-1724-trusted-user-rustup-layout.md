@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T09:03:15+00:00",
+  "updated_at": "2026-10-08T09:03:28+00:00",
   "worktree_key": ""
 }
 ---
@@ -206,3 +206,6 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 
 - 2026-10-08T09:03:15+00:00: Recorded command exit 0; command argv SHA-256
   641f8eb1df0e02b855a2f61277d390afddba6be7ec796c189a706cbc225a2688.
+
+- 2026-10-08T09:03:28+00:00: Recorded command exit 0; command argv SHA-256
+  0271b28e6b1a026fee00b376cbc3d7227f6af024c9875c8c2363726eacf0f799.
