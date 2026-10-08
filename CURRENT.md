@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. | - |
+| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. | codex-root-ar1672-supersession-20261008 |
 
 ## Blocked
 

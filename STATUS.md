@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -176,7 +176,7 @@ flowchart LR
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Done"]:::status_done
         AR_1668["AR-1668 - Done"]:::status_done
-        AR_1672["AR-1672 - Open"]:::status_open
+        AR_1672["AR-1672 - In progress"]:::status_in_progress
         AR_1673["AR-1673 - Planned"]:::status_planned
         AR_1674["AR-1674 - Done"]:::status_done
         AR_1675["AR-1675 - Done"]:::status_done
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Unclaimed | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
+| P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | codex-root-ar1672-supersession-20261008 | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
 
 ### Blocked (5)
 
