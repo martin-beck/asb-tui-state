@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**172 ARs tracked** across 5 active status categories.
+**173 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -26,17 +26,17 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 172 |
+| Tasks | 173 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 2 |
 | Blocked | 3 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 172 | 1 | 3 | 161 |
+| unassigned | unassigned | 173 | 2 | 3 | 161 |
 
 ## Task drill-down
 
@@ -2448,6 +2448,20 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. |
 | Next action | Finish exact e863b57/eee60359 68-file vendor qualification, bind spec revision 2 receipt, obtain independent exact-head review and hosted acceptance, release done, then unblock AR-1575 through the supported exact-revision command. |
 
+### AR-1728 — Rebuild Dependabot action-pin update on current main
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. |
+| Next action | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
+
 
 ## Dependency graph
 
@@ -2649,6 +2663,7 @@ flowchart LR
         AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
+        AR_1728["AR-1728 - Open"]:::status_open
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3030,6 +3045,7 @@ flowchart LR
     AR_1722 --> AR_1727
     AR_1723 --> AR_1724
     AR_1724 --> AR_1725
+    AR_1725 --> AR_1728
     AR_1726 --> AR_1727
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3214,9 +3230,10 @@ flowchart LR
 | [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md), [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
 | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
-| [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | [AR-1721](../tasks/AR-1721.md), [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | None |
+| [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | [AR-1721](../tasks/AR-1721.md), [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md) |
 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | [AR-1673](../tasks/AR-1673.md), [AR-1722](../tasks/AR-1722.md) | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) | [AR-1722](../tasks/AR-1722.md), [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | None |
+| [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | None |
 
 ## Complete AR inventory
 
@@ -3225,6 +3242,12 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify corrected receipt quality/AR-1575-final-qualification-20261009.json at SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f, including exact paired identities, demonstrated focused TUI total 18, no-extra-override lifecycle, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | Unclaimed | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
 
 ### Blocked (3)
 
@@ -3333,9 +3356,3 @@ flowchart LR
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
-| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
-| P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
-| P0 | [AR-1635](../tasks/AR-1635.md): Control-state ownership test isolation | Unclaimed | Track ASB control-state test isolation required by paired TUI qualification. | No further action; consume the merged ASB evidence in paired qualification. |
-| P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
-| P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
-| P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |

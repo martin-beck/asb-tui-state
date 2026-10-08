@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1728.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "exact-delta",
+      "description": "The candidate changes only the trusted-main taiki-e/install-action pin from immutable 76b5a2d6 to immutable 83ac0ad6 on exact current main."
+    },
+    {
+      "id": "upstream-review",
+      "description": "The bounded upstream action delta is inspected for entrypoint, permission, download, network, and installed-tool changes relevant to the workflow."
+    },
+    {
+      "id": "project-provenance",
+      "description": "The replacement commit and merge are SSH-signed with matching DCO and bind the independently reviewed exact head and tree."
+    },
+    {
+      "id": "quality-and-postmerge",
+      "description": "Applicable local gates, exact-head PR checks, and both exact-main Repository Quality and Trusted Main workflows succeed."
+    },
+    {
+      "id": "stale-pr-disposition",
+      "description": "Dependabot PR #288 is not merged and is closed as superseded only after the replacement merge and post-merge verification succeed."
+    }
+  ],
+  "definition_of_done": [
+    "A one-line immutable pin update based on exact current main is independently reviewed and merged with SSH signature and matching DCO.",
+    "Supply-chain, workflow, privacy, repository-quality, and trusted-main gates pass on the exact candidate.",
+    "Both required post-merge workflows pass at the signed exact-tree main merge.",
+    "PR #288 is closed as superseded and the durable receipt contains exact public identities without credentials or private paths."
+  ],
+  "inputs": [
+    {
+      "id": "dependabot-pr-288",
+      "description": "Stale one-line Dependabot candidate at head 93e396af3fec4be624d685d5a1dd4072814b3088; independently reviewed with no code finding but failing project DCO/signature admission."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "reviewed-action-pin",
+      "description": "Current-main replacement PR and signed merge containing only the immutable action-pin update."
+    },
+    {
+      "id": "verification-receipt",
+      "description": "Exact candidate, review, merge, upstream identity, PR disposition, and terminal post-merge CI evidence."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "gh",
+    "git",
+    "python3",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "credential-output",
+    "dependabot-branch-rewrite",
+    "force-push-main",
+    "mutable-action-ref",
+    "policy-exception",
+    "unreviewed-merge",
+    "workflow-permission-expansion"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical"
+  ],
+  "gates": [
+    {
+      "id": "delta-and-provenance",
+      "description": "Exact one-line delta, upstream action review, SSH signature, matching DCO, and independent exact-tree approval pass."
+    },
+    {
+      "id": "quality",
+      "description": "Local workflow, supply-chain, privacy, and full applicable project gates plus exact-head PR CI pass."
+    },
+    {
+      "id": "publication",
+      "description": "Signed reviewed-tree merge, both exact-main workflows, and superseded PR #288 disposition are verified."
+    }
+  ]
+}
