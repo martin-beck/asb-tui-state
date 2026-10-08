@@ -10,13 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@4bc055a43ee3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@4baab1e984a5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@2a8d941846af` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37706943567 | `4baab1e984a5` | pull_request | AWQ shadow observation | in_progress:- |
+| 37706943240 | `4baab1e984a5` | pull_request | Repository quality | in_progress:- |
 | 37706127389 | `2a8d941846af` | pull_request | AWQ shadow observation | completed:failure |
 | 37706127265 | `2a8d941846af` | pull_request | Repository quality | completed:failure |
 | 37706059698 | `3bb597cfb0b5` | dynamic | Dependabot Updates | completed:success |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37703291156 | `63f01a3ddc23` | pull_request | Repository quality | completed:success |
 | 37700690740 | `a55a50cbd28d` | pull_request | AWQ shadow observation | completed:success |
 | 37700690492 | `a55a50cbd28d` | pull_request | Repository quality | completed:success |
-| 37699975624 | `3bb597cfb0b5` | push | Repository quality | completed:success |
-| 37699975515 | `3bb597cfb0b5` | push | Trusted main verification | completed:success |
