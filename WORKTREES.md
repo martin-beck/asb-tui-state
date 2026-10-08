@@ -116,6 +116,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1189` | `feature/ar1189-ui-inventory` | `704f1f855611` | 0 | behind 331, ahead 99 |
 | `asb-tui-ar1197-config-edit` | `feature/ar1197-config-edit` | `c67bea00b602` | 0 | behind 331, ahead 163 |
 | `asb-tui-ar1575-final-qualification` | `qualify/ar-1575-final-20261008` | `8474c4c9d0a2` | 0 | behind 17, ahead 0 |
+| `asb-tui-ar1575-requal-20261008` | `DETACHED` | `ee45ff349779` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1595` | `feature/ar-1595-record-replay` | `2e965849cd3a` | 0 | behind 33, ahead 0 |
 | `asb-tui-ar1596-qual-20261008` | `qualify/ar-1596-fault-recovery-20261008` | `430cf80b3f82` | 0 | behind 15, ahead 0 |
 | `asb-tui-ar1600-qual` | `DETACHED` | `b4a6f84fdbee` | 0 | behind 324, ahead 0 |
