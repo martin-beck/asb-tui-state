@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1722.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
     {
-      "id": "official-vendor",
-      "description": "The complete vendored coordinator file set is synchronized from exact upstream v0.3.14 without direct vendored-file patches."
+      "id": "official-development-vendor",
+      "description": "The complete 46-entry vendored coordinator file set is synchronized by the official sync-development path from exact upstream commit c2eb41879be4f2d50c6b5650e82339e10d5961d8 without direct vendored-file patches."
     },
     {
       "id": "supersession-chain",
@@ -21,18 +21,18 @@
     },
     {
       "id": "project-integrity",
-      "description": "Project binding, Git authority, generated views, privacy, signatures, DCO, and live coordinator state remain valid."
+      "description": "Project binding, Git authority, backend, profile, generated views, privacy, and live coordinator state remain valid; development authentication, signatures, DCO, and release publication are warning-only."
     }
   ],
   "definition_of_done": [
-    "Exact upstream release identity and complete vendor manifest are recorded.",
+    "Exact upstream development commit/tree identity and complete schema-v2 vendor manifest are recorded.",
     "Coordinator unit, formal, vendor, generated-view, privacy, and live-state gates pass.",
     "Independent review accepts the vendor diff, supersession linkage, and fail-closed regression coverage."
   ],
   "inputs": [
     {
-      "id": "upstream-release",
-      "description": "Exact Agent Workflow Coordinator v0.3.14 source and release identity."
+      "id": "upstream-development-commit",
+      "description": "Clean Agent Workflow Coordinator source at exact commit c2eb41879be4f2d50c6b5650e82339e10d5961d8."
     },
     {
       "id": "superseded-task",
@@ -42,7 +42,7 @@
   "outputs": [
     {
       "id": "vendor-upgrade",
-      "description": "Verified coordinator v0.3.14 vendor set and manifest."
+      "description": "Verified schema-v2 development vendor set and manifest at exact Coordinator commit and tree identity."
     },
     {
       "id": "supersession-link",
@@ -59,7 +59,6 @@
   "forbidden_tools": [
     "direct-vendored-file-patch",
     "product-code",
-    "unsigned-commit",
     "dependency-bypass"
   ],
   "required_evidence_classes": [
@@ -69,7 +68,7 @@
   "gates": [
     {
       "id": "vendor-integrity",
-      "description": "The vendor manifest and every synchronized file match exact upstream v0.3.14."
+      "description": "The vendor manifest and all 46 synchronized blobs and modes match exact upstream commit c2eb41879be4f2d50c6b5650e82339e10d5961d8."
     },
     {
       "id": "admission-integrity",
