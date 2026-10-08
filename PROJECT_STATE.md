@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
 | #296 | `repair/ar-1721-route-plumbing@218735341aeb` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | fix: honor development provider routes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37860221603 | `f1076cd8d75c` | dynamic | Dependabot Updates | completed:success |
 | 37860121374 | `f1076cd8d75c` | push | Repository quality | in_progress:- |
 | 37860121369 | `f1076cd8d75c` | push | Trusted main verification | in_progress:- |
 | 37859495436 | `218735341aeb` | pull_request | AWQ shadow observation | completed:failure |
@@ -28,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37783830804 | `db6839c86e73` | pull_request | AWQ shadow observation | completed:success |
 | 37783829877 | `db6839c86e73` | pull_request | Repository quality | completed:success |
 | 37755769842 | `50acbc4af694` | push | Trusted main verification | completed:success |
-| 37755769636 | `50acbc4af694` | push | Repository quality | completed:success |
