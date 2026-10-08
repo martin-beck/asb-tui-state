@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1723",
+  "status": "passed",
+  "classification": "development/mock usability implementation",
+  "production_claim": false,
+  "repository": "martin-beck/asb-tui",
+  "reviewed_pr": 292,
+  "reviewed_head": "0b2012d1252a4e97c586a029e25ad0f003db3d99",
+  "reviewed_tree": "d91bca589bf8dca0fbb52a83a5572d3969c515e7",
+  "merged_main": "1b8f4374bd5b9ae8f27406cab4c6fc60100de9f8",
+  "merge_parents": [
+    "4c29ec76fa2982c42b9b4465af019a62f61b0d66",
+    "0b2012d1252a4e97c586a029e25ad0f003db3d99"
+  ],
+  "integrity": {
+    "candidate_signature": "good",
+    "merge_signature": "good",
+    "signer": "martin.beck2@gmx.de",
+    "dco": "present",
+    "exact_tree_preserved": true,
+    "independent_review": "approved with no P0, P1, or P2 findings"
+  },
+  "authoritative_renderer_journey": {
+    "trace": [
+      "wizard.agent",
+      "wizard.provider",
+      "wizard.model",
+      "wizard.configuration",
+      "wizard.authentication",
+      "wizard.recording",
+      "wizard.replay",
+      "wizard.review"
+    ],
+    "selection_actions": 3,
+    "navigation_actions": 1,
+    "confirmation_actions": 6,
+    "free_form_characters": 0,
+    "total_key_events": 10,
+    "maximum_allowed_key_events": 24
+  },
+  "local_exact_main": {
+    "cargo_test_locked": "passed",
+    "rust_unit_and_binary_tests": "381 passed",
+    "integration_and_documentation_tests": "passed",
+    "cargo_clippy_locked_all_targets_deny_warnings": "passed",
+    "cargo_fmt_check": "passed",
+    "formal_model": "passed",
+    "ui_help": "90 elements valid; 10 tests passed",
+    "ui_state_model": "8 routes and 32 elements valid; 31 tests passed",
+    "ui_source_parity": "3 tests passed",
+    "development_end_to_end_contract": "10 stages and 4 recoveries valid",
+    "tutorials": "first-run and benchmark-readiness passed"
+  },
+  "hosted_exact_main": [
+    {
+      "workflow": "Repository quality",
+      "run_id": 37749746163,
+      "job_id": 113219770654,
+      "conclusion": "success"
+    },
+    {
+      "workflow": "Trusted main verification",
+      "run_id": 37749746177,
+      "job_id": 113219771253,
+      "conclusion": "success"
+    }
+  ],
+  "privacy": {
+    "credential_values_read_or_recorded": false,
+    "provider_payloads_recorded": false,
+    "private_paths_recorded": false,
+    "authentication_signatures_and_key_management": "visible warning-only development conditions"
+  },
+  "conclusion": "The supported wizard path now uses bounded selection controls for configuration defaults, credential-reference names, recording mode, and replay policy. It completes through the authoritative renderer in 10 key events with zero free-form characters."
+}
