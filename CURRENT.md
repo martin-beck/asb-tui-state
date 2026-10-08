@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. | codex-tui-ar1575-qualification-20261009 |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify exact paired identities, privacy-safe receipt quality/AR-1575-final-qualification-20261009.json, no-extra-override source lifecycle, operator and current-main receipt digests, hosted exact-head CI, and deterministic state gates; release only after acceptance. | codex-tui-ar1575-qualification-20261009 |
 
 ## Blocked
 

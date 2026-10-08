@@ -682,7 +682,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
-| Next action | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
+| Next action | Independent reviewer must verify exact paired identities, privacy-safe receipt quality/AR-1575-final-qualification-20261009.json, no-extra-override source lifecycle, operator and current-main receipt digests, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
 
 ### AR-1579 — TUI development-channel lifecycle
 
@@ -3224,7 +3224,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify exact paired identities, privacy-safe receipt quality/AR-1575-final-qualification-20261009.json, no-extra-override source lifecycle, operator and current-main receipt digests, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
 
 ### Blocked (3)
 
