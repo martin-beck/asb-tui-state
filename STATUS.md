@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**167 ARs tracked** across 4 active status categories.
+**167 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 8 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 153 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -104,7 +104,7 @@ flowchart LR
         AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Done"]:::status_done
         AR_1596["AR-1596 - Done"]:::status_done
-        AR_1597["AR-1597 - Planned"]:::status_planned
+        AR_1597["AR-1597 - Open"]:::status_open
         AR_1598["AR-1598 - Done"]:::status_done
         AR_1599["AR-1599 - Done"]:::status_done
     end
@@ -768,6 +768,12 @@ flowchart LR
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
+
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -777,11 +783,10 @@ flowchart LR
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (8)
+### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P0 | [AR-1673](tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
 | P0 | [AR-1685](tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
