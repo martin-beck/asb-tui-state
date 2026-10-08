@@ -24,6 +24,12 @@
       "description": "Evidence is exact and privacy-safe, independent exact-head review passes, the reviewed tree merges, and exact-main required CI is terminal green."
     }
   ],
+  "definition_of_done": [
+    "The focused repair is signed, DCO-compliant, independently reviewed, and merged without changing ASB, renderer, wizard, or runtime behavior.",
+    "Deterministic focused tests and the complete applicable asb-tui repository gates pass at the reviewed head.",
+    "The actual no-override paired operator runner completes install, bare controlling-PTY launch, setup, benchmark, recording, strict replay, comparison, analysis, and cleanup.",
+    "Privacy-safe evidence binds exact ASB and TUI commits, trees, executable digests, merge identity, independent review, and terminal post-merge CI."
+  ],
   "inputs": [
     {
       "id": "ar1575-default-reproduction",
@@ -33,6 +39,53 @@
       "id": "ar1575-control",
       "description": "The identical gate passes bare PTY launch and all four journey suites when validated ASB_DEV_CARGO and ASB_DEV_RUSTUP_HOME candidates are supplied; receipt SHA-256 is 48903d51c51a418ec910dea9f09e348febd460802285bbb5952fc8c20b84faef."
     }
+  ],
+  "outputs": [
+    {
+      "id": "parent-toolchain-runner-repair",
+      "description": "The operator runner preserves pre-isolation Cargo and Rustup candidates for parent ASB validation while retaining the child TUI Rustup handoff."
+    },
+    {
+      "id": "exact-paired-acceptance",
+      "description": "A privacy-safe exact-identity receipt proves the no-override public journey and hostile parent-toolchain rejection matrix."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "gh",
+    "git",
+    "python3",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "asb-product-change",
+    "credential-output",
+    "hard-coded-host-path",
+    "host-network-fallback",
+    "mock-success",
+    "production-policy-weakening",
+    "renderer-change",
+    "runtime-change",
+    "validation-bypass",
+    "wizard-change"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "environmental",
+    "mechanical"
+  ],
+  "gates": [
+    {
+      "id": "focused-toolchain-contract",
+      "description": "Positive isolated-HOME resolution and exact typed negative preflight cases pass without moving validation authority out of ASB."
+    },
+    {
+      "id": "complete-public-journey",
+      "description": "The exact paired asb tui install and bare asb tui path completes the full credential-free selection-driven development journey."
+    },
+    {
+      "id": "review-merge-postmerge",
+      "description": "Independent exact-head review, protected merge, and exact-main Repository Quality and Trusted Main workflows are terminal green."
+    }
   ]
 }
-
