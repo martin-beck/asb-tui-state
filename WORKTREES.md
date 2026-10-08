@@ -189,6 +189,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-pr287-rereview2-20261008` | `DETACHED` | `4bc055a43ee3` | 0 | behind 0, ahead 4 |
 | `asb-tui-pr287-rereview3-20261008` | `DETACHED` | `4baab1e984a5` | 0 | behind 0, ahead 5 |
 | `asb-tui-pr287-review-20261008` | `DETACHED` | `a55a50cbd28d` | 0 | behind 0, ahead 2 |
+| `asb-tui-pr287-review10-20261008` | `DETACHED` | `d8a02d0eafdd` | 0 | behind 0, ahead 10 |
 | `asb-tui-pr287-review7-20261008` | `DETACHED` | `d06c9396a0fc` | 0 | behind 0, ahead 7 |
 | `asb-tui-pr47` | `rebased-pr47` | `a159fda0c118` | 0 | behind 317, ahead 88 |
 | `asb-tui-pr48` | `rebased-pr48` | `f366cc495e1e` | 0 | behind 317, ahead 88 |
