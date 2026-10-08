@@ -10,7 +10,7 @@
   "id": "AR-1725",
   "next_action": "Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI.",
   "observed_branch": "repair/ar-1725-operator-runner-parent-toolchain",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "50acbc4af69480b7fbd34db19520a96ce1190a67",
   "owner": "codex-tui-ar1725-parent-toolchain",
   "plan": "../plans/AR-1725-operator-runner-parent-toolchain.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Operator quickstart parent toolchain propagation repair",
-  "updated_at": "2026-10-08T12:55:40+00:00",
+  "updated_at": "2026-10-08T12:55:48+00:00",
   "worktree_key": "asb-tui-ar-1725-operator-runner-parent-toolchain"
 }
 ---
