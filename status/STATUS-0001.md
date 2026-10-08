@@ -2236,7 +2236,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. |
-| Next action | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
+| Next action | Independent reviewer must verify exact paired identities, receipt quality/AR-1703-top-level-clean-room-qualification-20261009.json at SHA-256 98ff279cc7bde587812d1eba92c98e385033d69f190cf42c588ad5485d6250b2, real top-level install/bare-launch PTY evidence, renderer-neutral selection/run/statistics evidence boundary, hosted exact-head CI, privacy, spec revision 1, and deterministic state gates; attach acceptance and release only after approval. |
 
 ### AR-1704 — Trusted-main coverage repair after live-provider integration
 
@@ -3241,7 +3241,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1703](../tasks/AR-1703.md): Top-level asb tui install and launch qualification | codex-tui-ar1703-clean-room-20261009 | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
+| P0 | [AR-1703](../tasks/AR-1703.md): Top-level asb tui install and launch qualification | codex-tui-ar1703-clean-room-20261009 | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Independent reviewer must verify exact paired identities, receipt quality/AR-1703-top-level-clean-room-qualification-20261009.json at SHA-256 98ff279cc7bde587812d1eba92c98e385033d69f190cf42c588ad5485d6250b2, real top-level install/bare-launch PTY evidence, renderer-neutral selection/run/statistics evidence boundary, hosted exact-head CI, privacy, spec revision 1, and deterministic state gates; attach acceptance and release only after approval. |
 | P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | codex-tui-ar1728-action-pin-20261009 | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
 
 ### Blocked (3)
@@ -3351,4 +3351,3 @@ flowchart LR
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
-| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
