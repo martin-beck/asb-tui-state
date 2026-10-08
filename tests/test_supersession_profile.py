@@ -43,7 +43,7 @@ class SupersessionProfileTests(unittest.TestCase):
         self.assertEqual("superseded", metadata["AR-1672"]["status"])
         self.assertEqual("AR-1668", metadata["AR-1672"]["superseded_by"])
         self.assertEqual("done", metadata["AR-1668"]["status"])
-        self.assertEqual("planned", metadata["AR-1673"]["status"])
+        self.assertEqual("open", metadata["AR-1673"]["status"])
         self.assertIn("AR-1672", metadata["AR-1673"]["depends_on"])
         self.assertTrue(HANDOFF.dependency_satisfied("AR-1672", tasks))
 
