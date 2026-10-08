@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1686",
+  "classification": "development/mock",
+  "result": "blocked",
+  "privacy": {
+    "credentials": "none",
+    "provider_network": "denied",
+    "raw_prompts_or_responses": false,
+    "private_paths_or_host_identity": false
+  },
+  "paired_provenance": {
+    "asb_commit": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+    "asb_tree": "40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde",
+    "asb_executable_sha256": "306813dd312633077ce86ccaa62119ca4d5ad97f00ed3d0c0c2cbcb6c3bacfaa",
+    "tui_commit": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+    "tui_tree": "6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b",
+    "tui_executable_sha256": "8e9acc5d7594896ef3cf024d18e85e948d087943fe426bdbd7e0e4c7ae559391"
+  },
+  "baseline": {
+    "exit_code": 2,
+    "receipt_sha256": "0839e8c5d765ae56582bda8f6b5a8fffdd4a1330c6c25054b4c39af705aceb41",
+    "plan_create": {
+      "passed": true,
+      "plan_schema_version": 2,
+      "experiment_sha256": "75e401b31ff80630e3f268d3d607bce1366948f0fbf2d776e30213e95ef4b6f3"
+    },
+    "local_mock_run_and_reports": "passed",
+    "stale_executable_rejection": {
+      "passed": true,
+      "exit_code": 3,
+      "diagnostic": "agent executable digest does not match"
+    },
+    "tui_journey": "development_journey_ready",
+    "comparison": {
+      "passed": false,
+      "comparable": false,
+      "unavailable_reasons": [
+        "baseline:provider_selection_unavailable",
+        "ar1686-b:provider_selection_unavailable"
+      ]
+    },
+    "capture_replay": {
+      "passed": false,
+      "status": "not_run",
+      "reason": "the consumer runner has no ASB-owned capture/cassette authority bound to the generated plan"
+    }
+  },
+  "typed_interface_probe": {
+    "plan_create_with_provider_selection": {
+      "exit_code": 2,
+      "error_code": "usage",
+      "message": "unsupported plan create option"
+    },
+    "validate_generated_plan_with_valid_provider_selection": {
+      "exit_code": 3,
+      "error_code": "validation",
+      "message": "provider selection does not match the experiment identity"
+    }
+  },
+  "source_evidence": {
+    "plan_create_implementation": "crates/asb-cli/src/lib.rs:create_plan",
+    "experiment_template": "crates/asb-protocol/fixtures/v1/experiment-manifest.json",
+    "accepted_selection_argument": false,
+    "template_identity": {
+      "agent_implementation": "asb-example",
+      "provider": "example",
+      "model": "model-v1"
+    },
+    "conclusion": "current ASB plan create cannot bind the TUI-selected agent/provider/model tuple, so the required positive journey cannot be repaired in the TUI repository"
+  },
+  "dependency": {
+    "repository": "martin-beck/agent-systems-benchmark-state",
+    "state_commit": "69d56b7919df4dcd217cb6de397122816e418866",
+    "state_tree": "298b435e5511c7b2f805acdc82bbd060a4a1ff65",
+    "task": "AR-1686",
+    "task_revision": 6,
+    "status": "open",
+    "owner": null,
+    "blocked_dependency": {
+      "task": "AR-1652",
+      "task_revision": 13,
+      "status": "blocked"
+    }
+  },
+  "next_action": "Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands."
+}
