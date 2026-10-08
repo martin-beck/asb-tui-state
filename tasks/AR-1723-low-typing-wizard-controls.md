@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T08:22:28+00:00",
+  "updated_at": "2026-10-08T08:22:31+00:00",
   "worktree_key": ""
 }
 ---
@@ -326,3 +326,6 @@ never block local or deterministic qualification.
   0b2012d1252a4e97c586a029e25ad0f003db3d99: native Rust/supply-chain/privacy gate 6m13s, required
   native-first gate 6m20s, and AWQ v0.32.0 observation 21s. Independent review already approved with
   no findings. Candidate is merge-ready but remains unmerged by this worker.
+
+- 2026-10-08T08:22:31+00:00: Recorded command exit 0; command argv SHA-256
+  61a449187ba93f94cb152db730b4bf3a7665db149cbf105fe8af34e0f564727b.
