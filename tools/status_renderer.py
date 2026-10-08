@@ -42,6 +42,13 @@ class StatusRenderError(ValueError):
     """The task graph cannot be represented safely and unambiguously."""
 
 
+# Keep a margin below the repository-wide 200 KiB privacy/size guard.  The
+# margin leaves room for the index and for future renderer metadata without
+# making a page unexpectedly cross the hard limit.
+STATUS_FILE_LIMIT = 200_000
+STATUS_PAGE_TARGET = 180_000
+
+
 def _plain(value: object) -> str:
     """Render untrusted front matter as inert, single-line Markdown text."""
     text = " ".join(str(value or "-").splitlines())
@@ -173,6 +180,72 @@ def _overview(tasks: list[Task], statuses: tuple[str, ...], project_title: str) 
     return lines
 
 
+def _rollup_group(meta: Meta) -> tuple[str, str]:
+    """Return safe, deterministic role/team labels without exposing task bodies."""
+    role = str(meta.get("role") or "unassigned")
+    team = str(meta.get("team") or "unassigned")
+    return role, team
+
+
+def _hierarchy_rollups(tasks: list[Task]) -> list[str]:
+    """Render company, role/team, and task drill-down projections."""
+    counts = Counter(meta["status"] for _, meta, _ in tasks)
+    lines = [
+        "",
+        "## Company hierarchy rollup",
+        "",
+        "This deterministic view contains task metadata only; raw logs, command output, and "
+        "credentials are never rendered.",
+        "",
+        "| Metric | Value |",
+        "| --- | ---: |",
+        f"| Tasks | {len(tasks)} |",
+        f"| Parent tasks | {sum(bool(meta.get('children')) for _, meta, _ in tasks)} |",
+        f"| Child tasks | {sum(bool(meta.get('parent_task_ref')) for _, meta, _ in tasks)} |",
+        f"| Open or active | {counts['open'] + counts['in_progress']} |",
+        f"| Blocked | {counts['blocked']} |",
+        "",
+        "## Role and team rollup",
+        "",
+        "| Role | Team | Tasks | Open/active | Blocked | Done |",
+        "| --- | --- | ---: | ---: | ---: | ---: |",
+    ]
+    groups: dict[tuple[str, str], list[Meta]] = {}
+    for _, meta, _ in tasks:
+        groups.setdefault(_rollup_group(meta), []).append(meta)
+    for (role, team), members in sorted(groups.items()):
+        group_counts = Counter(item["status"] for item in members)
+        lines.append(
+            f"| {_plain(role)} | {_plain(team)} | {len(members)} | "
+            f"{group_counts['open'] + group_counts['in_progress']} | "
+            f"{group_counts['blocked']} | {group_counts['done']} |"
+        )
+    lines.extend(["", "## Task drill-down", ""])
+    for _, meta, _ in sorted(tasks, key=lambda task: task[1]["id"]):
+        children = ", ".join(sorted(str(item) for item in meta.get("children", []))) or "None"
+        parent = str(meta.get("parent_task_ref") or "None")
+        role, team = _rollup_group(meta)
+        lines.extend(
+            [
+                f"### {_plain(meta['id'])} — {_plain(meta['title'])}",
+                "",
+                "| Field | Value |",
+                "| --- | --- |",
+                f"| Status | {_plain(meta['status'])} |",
+                f"| Priority | {_plain(meta['priority'])} |",
+                f"| Role | {_plain(role)} |",
+                f"| Team | {_plain(team)} |",
+                f"| Owner | {_plain(meta.get('owner') or 'Unclaimed')} |",
+                f"| Parent | {_plain(parent)} |",
+                f"| Children | {_plain(children)} |",
+                f"| Summary | {_plain(meta['summary'])} |",
+                f"| Next action | {_plain(meta['next_action'])} |",
+                "",
+            ]
+        )
+    return lines
+
+
 def _graph_data(tasks: list[Task]) -> tuple[dict[str, list[str]], list[tuple[str, str]]]:
     reverse: dict[str, list[str]] = {meta["id"]: [] for _, meta, _ in tasks}
     edges: list[tuple[str, str]] = []
@@ -293,7 +366,92 @@ def render_status(
     filenames = _validated_filenames(tasks, statuses, priorities)
     reverse, edges = _graph_data(tasks)
     lines = _overview(tasks, statuses, project_title)
+    lines.extend(_hierarchy_rollups(tasks))
     lines.extend(_graph(tasks, statuses, edges))
     lines.extend(_dependencies(tasks, filenames, reverse))
     lines.extend(_inventory(tasks, statuses, priorities, filenames))
     return "\n".join(lines).rstrip() + "\n"
+
+
+def _status_index(full: str, page_names: list[str]) -> str:
+    """Return a compact root index for a status view split across pages."""
+    lines = full.splitlines()
+    overview_end = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line in {"## Company hierarchy rollup", "## Dependency graph"}
+        ),
+        len(lines),
+    )
+    overview = lines[:overview_end]
+    links = [
+        "",
+        "## Complete status view",
+        "",
+        "The generated status view is split into deterministic pages to keep every file below "
+        "the 200,000-byte repository limit. The linked pages preserve the complete graph, "
+        "dependency index, and AR inventory without omission.",
+        "",
+    ]
+    links.extend(f"- [{name.removesuffix('.md')}]({name})" for name in page_names)
+    return "\n".join([*overview, *links]).rstrip() + "\n"
+
+
+def _split_status(full: str) -> list[str]:
+    """Split complete status text at stable line boundaries."""
+    prefix = (
+        "<!-- This page is generated; the root STATUS.md index links the complete view. -->\n\n"
+    )
+    chunks: list[str] = []
+    current: list[str] = []
+    current_bytes = len(prefix.encode())
+    budget = STATUS_PAGE_TARGET - len(prefix.encode())
+    for line in full.splitlines(keepends=True):
+        pieces = [line]
+        while len(pieces[0].encode()) > budget:
+            encoded = pieces[0].encode()
+            cut = encoded[:budget].decode("utf-8", "ignore")
+            if not cut:
+                raise StatusRenderError("status line cannot be split within the page budget")
+            pieces[0] = cut
+            pieces.insert(1, encoded[len(cut.encode()) :].decode("utf-8"))
+        for piece in pieces:
+            line_bytes = len(piece.encode())
+            if current and current_bytes + line_bytes > STATUS_PAGE_TARGET:
+                chunks.append(prefix + "".join(current).replace("](tasks/", "](../tasks/"))
+                current = []
+                current_bytes = len(prefix.encode())
+            current.append(piece)
+            current_bytes += line_bytes
+    if current:
+        chunks.append(prefix + "".join(current).replace("](tasks/", "](../tasks/"))
+    return chunks
+
+
+def render_status_pages_from_text(full: str) -> dict[str, str]:
+    """Paginate an already rendered status document deterministically."""
+    if len(full.encode()) <= STATUS_FILE_LIMIT:
+        return {"STATUS.md": full}
+    chunks = _split_status(full)
+    page_names = [f"status/STATUS-{index:04d}.md" for index in range(1, len(chunks) + 1)]
+    pages: dict[str, str] = dict(zip(page_names, chunks, strict=True))
+    pages["STATUS.md"] = _status_index(full, page_names)
+    if any(len(content.encode()) > STATUS_FILE_LIMIT for content in pages.values()):
+        raise StatusRenderError("status projection exceeds the per-file size limit")
+    return {"STATUS.md": pages.pop("STATUS.md"), **pages}
+
+
+def render_status_pages(
+    tasks: list[Task],
+    statuses: tuple[str, ...],
+    priorities: tuple[str, ...],
+    project_title: str,
+) -> dict[str, str]:
+    """Render STATUS.md and deterministic shards when the complete view is large.
+
+    The returned keys are repository-relative paths.  Small projects retain the
+    historical single-file representation; larger projects receive a compact
+    root index and numbered pages under ``status/``.
+    """
+    return render_status_pages_from_text(render_status(tasks, statuses, priorities, project_title))

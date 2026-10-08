@@ -46,10 +46,19 @@ class GitBackendPolicyTests(unittest.TestCase):
         self.assertEqual("martin-beck/asb-tui-state", binding["state_repository"])
         self.assertEqual("martin-beck/asb-tui", binding["product_repository"])
 
-    def test_vendor_identity_is_exact_release(self) -> None:
+    def test_vendor_identity_is_exact_development_commit(self) -> None:
         manifest = json.loads((ROOT / "coordinator.vendor.json").read_text())
-        self.assertEqual("v0.3.5", manifest["upstream"]["version"])
-        self.assertRegex(manifest["upstream"]["commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(2, manifest["schema_version"])
+        self.assertEqual("development", manifest["upstream"]["channel"])
+        self.assertEqual("v0.3.57", manifest["upstream"]["version"])
+        self.assertEqual(
+            "c2eb41879be4f2d50c6b5650e82339e10d5961d8",
+            manifest["upstream"]["commit"],
+        )
+        self.assertEqual(
+            "565458ccedfb8cee71f3e8751bc5531de8f8995c",
+            manifest["upstream"]["tree"],
+        )
 
     def test_git_task_load_never_constructs_or_creates_sqlite(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
