@@ -153,6 +153,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1697-pair` | `DETACHED` | `1cf4b43d7c6e` | 0 | behind 73, ahead 0 |
 | `asb-tui-ar1700-repair` | `ar1700-live-provider-repair` | `c04e74ef0643` | 0 | behind 70, ahead 1 |
 | `asb-tui-ar1704` | `repair/ar-1704-coverage` | `3478ea722dea` | 0 | behind 67, ahead 0 |
+| `asb-tui-ar1721-integration` | `integration/ar-1721-pr287` | `3bb597cfb0b5` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1721-pr287-rereview4` | `DETACHED` | `7369a56db8ae` | 0 | behind 0, ahead 6 |
 | `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `d8a02d0eafdd` | 0 | behind 0, ahead 10 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 317, ahead 155 |
