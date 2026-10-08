@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**167 ARs tracked** across 6 active status categories.
+**167 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -212,7 +212,7 @@ flowchart LR
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
-        AR_1722["AR-1722 - Open"]:::status_open
+        AR_1722["AR-1722 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -768,17 +768,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | codex-ar1597-usability-20261008 | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | Unclaimed | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Upgrade the vendored Agent Workflow Coordinator from v0.3.5 to exact upstream v0.3.14, validate superseded_by chain semantics, bind AR-1672 to done successor AR-1668, and prove AR-1673 becomes dependency-ready without weakening fail-closed admission. |
+| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-ar1722-coordinator-v0314-20261008 | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Upgrade the vendored Agent Workflow Coordinator from v0.3.5 to exact upstream v0.3.14, validate superseded_by chain semantics, bind AR-1672 to done successor AR-1668, and prove AR-1673 becomes dependency-ready without weakening fail-closed admission. |
 
 ### Blocked (4)
 
