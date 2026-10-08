@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1673](tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. | - |
+| P0 | [AR-1673](tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. | codex-tui-ar1673-launch-diagnostics |
 
 ## Blocked
 

@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1646](../tasks/AR-1646.md): Development capture and replay route | Unclaimed | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. |
 | P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Coordinate selected-agent execution and comparison from online or offline replay runs. | PR #263 repair head 1f60345 is awaiting independent review and fresh hosted checks; resolve findings, merge through protected path, then watch exact-main checks. |
 | P0 | [AR-1648](../tasks/AR-1648.md): Selected-agent/workload fan-out | Unclaimed | Coordinate selected agents/workloads into durable online/offline run references. | No further action; ASB fan-out primitive is merged and paired review/hosted checks passed. |
 | P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Coordinate typed selected-agent comparison analysis and human/JSON reports. | Implement or qualify comparability analysis and confounder/unavailable evidence reporting. |

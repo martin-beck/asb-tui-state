@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -1920,11 +1920,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-tui-ar1673-launch-diagnostics |
 | Parent | None |
 | Children | None |
 | Summary | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. |
@@ -2580,7 +2580,7 @@ flowchart LR
         AR_1667["AR-1667 - Done"]:::status_done
         AR_1668["AR-1668 - Done"]:::status_done
         AR_1672["AR-1672 - Superseded"]:::status_superseded
-        AR_1673["AR-1673 - Open"]:::status_open
+        AR_1673["AR-1673 - In progress"]:::status_in_progress
         AR_1674["AR-1674 - Done"]:::status_done
         AR_1675["AR-1675 - Done"]:::status_done
         AR_1676["AR-1676 - Done"]:::status_done
@@ -3184,11 +3184,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1673](../tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
+| P0 | [AR-1673](../tasks/AR-1673.md): Paired TUI launch diagnostics consumption | codex-tui-ar1673-launch-diagnostics | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
 
 ### Blocked (4)
 
@@ -3311,4 +3311,3 @@ flowchart LR
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
 | P0 | [AR-1644](../tasks/AR-1644.md): TUI terminal launch preflight | Unclaimed | Make TUI terminal selection/preflight clear and runnable for a fresh user while preserving the PTY contract. | No further action; merged TUI PR #223 and hosted PTY/UI-quality checks are green. |
 | P0 | [AR-1645](../tasks/AR-1645.md): Setup-to-runtime configuration bridge | Unclaimed | Make persisted setup selections directly drive benchmark planning and execution. | No further action; paired ASB setup-to-plan/run bridge is merged and reviewed. |
-| P0 | [AR-1646](../tasks/AR-1646.md): Development capture and replay route | Unclaimed | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. |
