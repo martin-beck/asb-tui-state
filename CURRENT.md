@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1727](tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Finish exact e863b57/eee60359 68-file vendor qualification, bind spec revision 2 receipt, obtain independent exact-head review and hosted acceptance, release done, then unblock AR-1575 through the supported exact-revision command. | codex-asb-tui-ar1727-unblock-vendor |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

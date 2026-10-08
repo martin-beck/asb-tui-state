@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**172 ARs tracked** across 5 active status categories.
+**172 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 160 |
+| **Done** | Accepted, integrated, and durably verified | 161 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 2 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 172 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 4 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 172 | 1 | 4 | 160 |
+| unassigned | unassigned | 172 | 0 | 4 | 161 |
 
 ## Task drill-down
 
@@ -2438,11 +2438,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-tui-ar1727-unblock-vendor |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. |
@@ -2648,7 +2648,7 @@ flowchart LR
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
-        AR_1727["AR-1727 - In progress"]:::status_in_progress
+        AR_1727["AR-1727 - Done"]:::status_done
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3220,12 +3220,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | codex-asb-tui-ar1727-unblock-vendor | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Finish exact e863b57/eee60359 68-file vendor qualification, bind spec revision 2 receipt, obtain independent exact-head review and hosted acceptance, release done, then unblock AR-1575 through the supported exact-revision command. |
-
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3245,7 +3239,7 @@ flowchart LR
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](../tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (160)
+### Done (161)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3340,3 +3334,5 @@ flowchart LR
 | P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |
+| P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
+| P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |

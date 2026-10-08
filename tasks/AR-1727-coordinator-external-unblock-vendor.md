@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T19:29:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1722",
     "AR-1726"
   ],
   "id": "AR-1727",
   "next_action": "Finish exact e863b57/eee60359 68-file vendor qualification, bind spec revision 2 receipt, obtain independent exact-head review and hosted acceptance, release done, then unblock AR-1575 through the supported exact-revision command.",
-  "owner": "codex-asb-tui-ar1727-unblock-vendor",
+  "owner": "",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T15:40:18+00:00",
+  "updated_at": "2026-10-08T15:40:27+00:00",
   "worktree_key": ""
 }
 ---
@@ -198,3 +198,7 @@ normally. AR-1727 is not permission to change either product repository.
 
 - 2026-10-08T15:40:18+00:00: Bound passing spec revision 2 acceptance to reviewed receipt SHA-256
   0f196b3f9c53f036610bd3483a73bd06026dbadd5505fc3bc5d6f0a880247131 and hosted run 37802402135.
+
+- 2026-10-08T15:40:27+00:00: Completed exact merged Coordinator vendor qualification:
+  e863b57/eee60359, 68 files, manifest d210d9, spec revision 2 receipt 0f196b3f, independent
+  approval, and hosted run 37802402135 green.
