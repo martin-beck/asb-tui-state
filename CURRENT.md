@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Root integration may merge PR #290 through the protected path, then watch exact-main post-merge Repository Quality and Trusted Main checks before release. | - |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Root integration may merge PR #290 through the protected path, then watch exact-main post-merge Repository Quality and Trusted Main checks before release. | codex-root-ar1654-integration-20261008 |
 
 ## Blocked
 
