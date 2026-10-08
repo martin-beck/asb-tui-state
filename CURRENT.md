@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. | - |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. | codex-tui-ar1575-final-qualification |
 
 ## Blocked
 

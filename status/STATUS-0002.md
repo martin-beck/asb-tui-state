@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
 | P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
