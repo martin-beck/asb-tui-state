@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. | - |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. | codex-root-ar1720-integration-20261008 |
 
 ## Blocked
 
