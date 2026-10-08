@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 head 4bc055a43ee37defec5c8d2a686fc7fdcfdf0461 and require all hosted checks terminal green; repair any finding, otherwise merge through the protected path and verify exact-main post-merge checks. | codex-ar1721-pr287-rereview2-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair unconditional PTY master/slave closure for every pre-spawn setup exception and post-spawn teardown exception in PR #287, add deterministic descriptor/subreaper regression coverage, then obtain a fresh independent exact-head review and terminal-green hosted checks before merge. | codex-ar1721-pr287-rereview2-20261008 |
 
 ## Blocked
 
