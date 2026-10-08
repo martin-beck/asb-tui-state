@@ -141,7 +141,7 @@
       "failed": 0
     },
     "tui_broker_descriptor_journey_slice": {
-      "passed": 20,
+      "passed": 18,
       "failed": 0
     },
     "operator_downstream_suites": {
