@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T15:29:21+00:00",
+  "updated_at": "2026-10-08T15:29:24+00:00",
   "worktree_key": ""
 }
 ---
@@ -136,3 +136,6 @@ normally. AR-1727 is not permission to change either product repository.
   verified 68 blobs, digests, and modes.
 
 - 2026-10-08T15:29:21+00:00: Claimed by codex-asb-tui-ar1727-unblock-vendor.
+
+- 2026-10-08T15:29:24+00:00: Recorded command exit 0; command argv SHA-256
+  6b0340b78e00b5e8d62e9973b7e72f6c6de22448e8636894d4001797a91460ec.
