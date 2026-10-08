@@ -2446,7 +2446,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. |
-| Next action | Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command. |
+| Next action | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. |
 
 
 ## Dependency graph
@@ -3224,7 +3224,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | codex-asb-tui-ar1727-unblock-vendor | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command. |
+| P0 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | codex-asb-tui-ar1727-unblock-vendor | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. |
 
 ### Blocked (4)
 
@@ -3339,4 +3339,3 @@ flowchart LR
 | P0 | [AR-1635](../tasks/AR-1635.md): Control-state ownership test isolation | Unclaimed | Track ASB control-state test isolation required by paired TUI qualification. | No further action; consume the merged ASB evidence in paired qualification. |
 | P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
-| P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |

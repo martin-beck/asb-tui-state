@@ -8,7 +8,7 @@
     "AR-1726"
   ],
   "id": "AR-1727",
-  "next_action": "Vendor exact Coordinator merge ee68fbd through the official development synchronizer, qualify pause/resume and external unblock behavior, obtain independent review, restore hosted state CI, then unblock AR-1575 through the supported command.",
+  "next_action": "Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate.",
   "owner": "codex-asb-tui-ar1727-unblock-vendor",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:31:49+00:00",
+  "updated_at": "2026-10-08T14:32:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -115,3 +115,11 @@ normally. AR-1727 is not permission to change either product repository.
 
 - 2026-10-08T14:31:49+00:00: Recorded command exit 0; command argv SHA-256
   49422686ca0f1bbde90467035a1fab27cfafa3d3cb45b2d5e3011fef1f823378.
+
+- 2026-10-08T14:32:49+00:00: Acceptance blocked by confirmed upstream resume provenance defects at
+  ee68fbd/tree 77803e5. validate_session_record and Git decode accept duplicate same-revision pause
+  records, mismatched nested step_state status/revision, and wrong task identity; apply_resume
+  reopens in all four cases. SQLite ordinary insertion uniquely blocks only duplicate task/revision,
+  not nested semantic mismatch. External unblock itself and immutable AR-1575 r74 fixture tests
+  passed, but pause-isolation predicate fails. No candidate was committed or published; AR-1575
+  remains blocked and unmodified.
