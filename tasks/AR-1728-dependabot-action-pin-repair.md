@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:12:06+00:00",
+  "updated_at": "2026-10-08T23:12:30+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
@@ -61,3 +61,6 @@ post-merge validation are mandatory.
 
 - 2026-10-08T23:12:06+00:00: Recorded command exit 2; command argv SHA-256
   48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
+
+- 2026-10-08T23:12:30+00:00: Recorded command exit 0; command argv SHA-256
+  bbc07e543e53f68406e5e3fc42762cb295c6f1f7e41d8d987408075cd27f1c7b.
