@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Repair supersession profile lifecycle gate",
-  "updated_at": "2026-10-08T14:12:44+00:00",
+  "updated_at": "2026-10-08T14:13:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -93,3 +93,6 @@ synchronized, and no product repository was modified.
 
 - 2026-10-08T14:12:44+00:00: Recorded command exit 0; command argv SHA-256
   06772bc9154dad668996374b78203a6c9748bfa9da646c80417598f678aa92e2.
+
+- 2026-10-08T14:13:54+00:00: Recorded command exit 0; command argv SHA-256
+  daeba602ff7952fcc6ac9d4b3cc7cb69016f321225fb1982224b0764aa05b09e.
