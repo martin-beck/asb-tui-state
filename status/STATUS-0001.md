@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**173 ARs tracked** across 5 active status categories.
+**174 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -26,17 +26,17 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 173 |
+| Tasks | 174 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 2 |
+| Open or active | 3 |
 | Blocked | 3 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 173 | 2 | 3 | 163 |
+| unassigned | unassigned | 174 | 3 | 3 | 163 |
 
 ## Task drill-down
 
@@ -2462,6 +2462,20 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. |
 | Next action | Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded. |
 
+### AR-1729 — Make operator-runner fast noninteractive PTY exit race-safe
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. |
+| Next action | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. |
+
 
 ## Dependency graph
 
@@ -2664,6 +2678,7 @@ flowchart LR
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
         AR_1728["AR-1728 - In progress"]:::status_in_progress
+        AR_1729["AR-1729 - Open"]:::status_open
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3030,6 +3045,7 @@ flowchart LR
     AR_1702 --> AR_1706
     AR_1702 --> AR_1708
     AR_1703 --> AR_1714
+    AR_1703 --> AR_1729
     AR_1704 --> AR_1707
     AR_1706 --> AR_1703
     AR_1706 --> AR_1707
@@ -3041,6 +3057,7 @@ flowchart LR
     AR_1714 --> AR_1724
     AR_1720 --> AR_1723
     AR_1721 --> AR_1725
+    AR_1721 --> AR_1729
     AR_1722 --> AR_1726
     AR_1722 --> AR_1727
     AR_1723 --> AR_1724
@@ -3217,7 +3234,7 @@ flowchart LR
 | [AR-1700](../tasks/AR-1700.md) | [AR-1605](../tasks/AR-1605.md), [AR-1656](../tasks/AR-1656.md) | [AR-1701](../tasks/AR-1701.md), [AR-1703](../tasks/AR-1703.md), [AR-1704](../tasks/AR-1704.md) |
 | [AR-1701](../tasks/AR-1701.md) | [AR-1696](../tasks/AR-1696.md), [AR-1700](../tasks/AR-1700.md) | [AR-1702](../tasks/AR-1702.md), [AR-1703](../tasks/AR-1703.md), [AR-1705](../tasks/AR-1705.md), [AR-1706](../tasks/AR-1706.md) |
 | [AR-1702](../tasks/AR-1702.md) | [AR-1677](../tasks/AR-1677.md), [AR-1701](../tasks/AR-1701.md) | [AR-1703](../tasks/AR-1703.md), [AR-1705](../tasks/AR-1705.md), [AR-1706](../tasks/AR-1706.md), [AR-1708](../tasks/AR-1708.md) |
-| [AR-1703](../tasks/AR-1703.md) | [AR-1575](../tasks/AR-1575.md), [AR-1654](../tasks/AR-1654.md), [AR-1700](../tasks/AR-1700.md), [AR-1701](../tasks/AR-1701.md), [AR-1702](../tasks/AR-1702.md), [AR-1706](../tasks/AR-1706.md) | [AR-1714](../tasks/AR-1714.md) |
+| [AR-1703](../tasks/AR-1703.md) | [AR-1575](../tasks/AR-1575.md), [AR-1654](../tasks/AR-1654.md), [AR-1700](../tasks/AR-1700.md), [AR-1701](../tasks/AR-1701.md), [AR-1702](../tasks/AR-1702.md), [AR-1706](../tasks/AR-1706.md) | [AR-1714](../tasks/AR-1714.md), [AR-1729](../tasks/AR-1729.md) |
 | [AR-1704](../tasks/AR-1704.md) | [AR-1696](../tasks/AR-1696.md), [AR-1700](../tasks/AR-1700.md) | [AR-1707](../tasks/AR-1707.md) |
 | [AR-1705](../tasks/AR-1705.md) | [AR-1701](../tasks/AR-1701.md), [AR-1702](../tasks/AR-1702.md) | None |
 | [AR-1706](../tasks/AR-1706.md) | [AR-1701](../tasks/AR-1701.md), [AR-1702](../tasks/AR-1702.md) | [AR-1703](../tasks/AR-1703.md), [AR-1707](../tasks/AR-1707.md) |
@@ -3226,7 +3243,7 @@ flowchart LR
 | [AR-1713](../tasks/AR-1713.md) | [AR-1708](../tasks/AR-1708.md) | [AR-1714](../tasks/AR-1714.md), [AR-1720](../tasks/AR-1720.md) |
 | [AR-1714](../tasks/AR-1714.md) | [AR-1575](../tasks/AR-1575.md), [AR-1703](../tasks/AR-1703.md), [AR-1713](../tasks/AR-1713.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1720](../tasks/AR-1720.md) | [AR-1713](../tasks/AR-1713.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) |
-| [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
+| [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md), [AR-1729](../tasks/AR-1729.md) |
 | [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md), [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
 | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
@@ -3234,6 +3251,7 @@ flowchart LR
 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | [AR-1673](../tasks/AR-1673.md), [AR-1722](../tasks/AR-1722.md) | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) | [AR-1722](../tasks/AR-1722.md), [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | None |
 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | None |
+| [AR-1729](../tasks/AR-1729.md) | [AR-1703](../tasks/AR-1703.md), [AR-1721](../tasks/AR-1721.md) | None |
 
 ## Complete AR inventory
 
@@ -3243,6 +3261,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | codex-tui-ar1686-consumer-20261009 | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. |
 | P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | codex-tui-ar1728-action-pin-20261009 | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Unclaimed | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. |
 
 ### Blocked (3)
 
@@ -3346,9 +3370,3 @@ flowchart LR
 | P0 | [AR-1626](../tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after paired protected-main merge; rerun AR-1615 against the paired repaired heads. |
 | P0 | [AR-1627](../tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
 | P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
-| P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
-| P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
-| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
-| P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
