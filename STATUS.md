@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -211,7 +211,7 @@ flowchart LR
         AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
-        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Open"]:::status_open
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-rereview4-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 at 7369a56db8ae17b1bc4c9e83589c6e75d4fbdd4f and observe all hosted checks; repair any finding before merge. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 at 7369a56db8ae17b1bc4c9e83589c6e75d4fbdd4f and observe all hosted checks; repair any finding before merge. |
 
 ### Blocked (7)
 
