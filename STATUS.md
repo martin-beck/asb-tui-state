@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**169 ARs tracked** across 6 active status categories.
+**169 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -85,7 +85,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - Open"]:::status_open
+        AR_1575["AR-1575 - In progress"]:::status_in_progress
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -777,17 +777,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
 | P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
 
 ### Blocked (3)
 
