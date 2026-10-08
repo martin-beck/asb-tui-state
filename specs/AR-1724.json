@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1724.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "owner-layout",
+      "description": "The conventional owner-owned Rustup Cargo shim and selected toolchain auto-resolve in development mode with a stable warning."
+    },
+    {
+      "id": "hostile-layouts",
+      "description": "Wrong-owner, world-writable, symlink-substituted, out-of-root, non-regular, mutable executable, malformed settings, and cargo/rustc mismatch fixtures fail before mutation or execution."
+    },
+    {
+      "id": "detached-runner",
+      "description": "The fresh-user wrapper forwards an exact tested TUI ref for detached checkouts and rejects ref/head drift."
+    },
+    {
+      "id": "end-to-end",
+      "description": "Disposable install, bare launch, benchmark, recording, strict network-denied replay, comparison, cleanup, and low-typing evidence pass at exact heads."
+    },
+    {
+      "id": "review-and-ci",
+      "description": "Independent review, signed+DCO exact-tree merge, required hosted checks, and exact-main post-merge validation pass."
+    }
+  ],
+  "inputs": [
+    {
+      "id": "ar1597-reproduction",
+      "description": "Exact-main AR-1597 reproduction returning development_tool_unavailable without overrides and development_command_failed with the exact toolchain Cargo override."
+    },
+    {
+      "id": "asb-parity",
+      "description": "Current ASB development router accepts the owner-owned group-writable Rustup layout with an explicit warning while retaining hostile-path rejection."
+    }
+  ]
+}
