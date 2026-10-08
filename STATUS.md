@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 147 |
+| **Done** | Accepted, integrated, and durably verified | 148 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -210,7 +210,7 @@ flowchart LR
         AR_1708["AR-1708 - Done"]:::status_done
         AR_1713["AR-1713 - Done"]:::status_done
         AR_1714["AR-1714 - Done"]:::status_done
-        AR_1720["AR-1720 - In progress"]:::status_in_progress
+        AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
@@ -765,12 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-quickstart-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Complete an ASB development-broker foreground-terminal repair so interactive launch does not leave the TUI in a private background process group, and repair the operator qualification helper to provide a nonzero controlling PTY with a bounded quit path; then rerun exact-head asb tui install followed by bare asb tui and the full quickstart matrix. |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | codex-root-ar1720-integration-20261008 | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. |
 
 ### Blocked (5)
 
@@ -799,7 +798,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (147)
+### Done (148)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -938,6 +937,7 @@ flowchart LR
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Unclaimed | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed &#96;asb tui install&#96; followed by bare &#96;asb tui&#96; qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. |
 | P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. |
 | P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Release after exact installed-entrypoint and hostile shim evidence recorded at TUI head 5880ceb. |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
