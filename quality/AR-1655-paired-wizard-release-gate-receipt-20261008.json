@@ -1,0 +1,177 @@
+{
+  "ar": "AR-1655",
+  "awq": {
+    "doctor": "pass",
+    "native_gates_retained": true,
+    "pr_tier": "pass",
+    "requirements": [
+      "AWQ-CORE-001",
+      "AWQ-CORE-002",
+      "AWQ-CORE-003",
+      "AWQ-CORE-004",
+      "ASB-TUI-SIGNATURE-CONTRACTS"
+    ],
+    "version": "0.32.0",
+    "wheel_sha256": "bf610d925de51dfd643e47c467bd82fcad128dc43793bae1a0aeebd5b5ea4848"
+  },
+  "boundaries": {
+    "live_provider_contact": "not performed or claimed",
+    "missing_development_authentication": "nonblocking warning",
+    "missing_development_key_management": "nonblocking warning",
+    "missing_development_signatures": "nonblocking warning",
+    "public_release": "not claimed"
+  },
+  "classification": "development/mock",
+  "cleanup": {
+    "external_build_and_evidence_cache": "retained only until review",
+    "journey_processes": "none",
+    "source_worktrees": "clean",
+    "temporary_install_roots": "removed"
+  },
+  "coordinator": {
+    "backend": "git",
+    "commit": "510817b93feb80dde13e5a6c61d657954fae2346",
+    "recovery_cases": [
+      "exact expired revision required",
+      "multiple expired claims drain safely",
+      "live staleness detected and reconciled",
+      "durable run journal precedes reconcile"
+    ],
+    "sqlite_authority_present": false,
+    "state_gitleaks": "passed",
+    "tests": "90 passed",
+    "vendor_verification": "passed",
+    "version": "v0.3.5"
+  },
+  "credentials": "none",
+  "dependencies": {
+    "AR-1623": "done",
+    "AR-1624": "done",
+    "AR-1651": "done",
+    "AR-1652": "done",
+    "AR-1653": "done",
+    "AR-1654": "done",
+    "AR-1657": "done"
+  },
+  "evidence_digests": {
+    "awq_check_sha256": "f75c40c16c3122cca6ed26815608f3a51570777db6f29e2287933a734ac7a216",
+    "awq_doctor_sha256": "1cf790b0ad197c3a91161dbb0b24dbb654e41b23de802ca4af0be845b33041c8",
+    "channel_matrix_sha256": "670dac11f0badeef0a7bd5afeb087bf86b9a9759725699114ef73e6fb849abcd",
+    "current_main_quickstart_sha256": "0f6bb8208230a7a9452a016be14bb1d5561e4df541942f73a72f0b768f4315c6",
+    "operator_quickstart_sha256": "aba643980595972b3d4a5b697e19e3ce378844d98101de66de25bf8d6df4f196"
+  },
+  "hosted": {
+    "asb": [
+      {
+        "conclusion": "success",
+        "run_id": 37719574548,
+        "workflow": "Huawei MIT source headers"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574552,
+        "workflow": "Hosted portability and native qualification"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574960,
+        "workflow": "Cross-repository development broker qualification"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574657,
+        "workflow": "Credential-free benchmark path"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574567,
+        "workflow": "Fault assurance"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574756,
+        "workflow": "Rust verification"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574501,
+        "workflow": "Emulated aarch64 portability"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574479,
+        "workflow": "Repository quality"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37719574598,
+        "workflow": "Formal assurance"
+      }
+    ],
+    "tui": [
+      {
+        "conclusion": "success",
+        "run_id": 37730512544,
+        "workflow": "Trusted main verification"
+      },
+      {
+        "conclusion": "success",
+        "run_id": 37730512549,
+        "workflow": "Repository quality"
+      }
+    ]
+  },
+  "journey": {
+    "benchmark": "development fixture passed",
+    "comparison": "passed with typed availability and analysis",
+    "development_channel": "11 lifecycle, persistence, rollback, removal and malformed-manifest cases passed",
+    "network": {
+      "benchmark_and_replay": "denied",
+      "install": "local or exact-head materialization only"
+    },
+    "recording": {
+      "all": "passed",
+      "incomplete_coverage": "rejected",
+      "selected": "passed"
+    },
+    "replay": "strict offline passed with network denied and no live fallback",
+    "setup_selection": "agent, provider, model, authentication reference, benchmark pool and measures passed",
+    "tamper_recovery": "edited handoff rejected and original installation restored",
+    "top_level_install": "development_bundle_consumed",
+    "top_level_launch": "development_launched under an 80x24 controlling PTY"
+  },
+  "privacy": {
+    "absolute_paths_recorded": false,
+    "prompts_responses_credentials_and_raw_captures_recorded": false,
+    "secret_scans": "passed"
+  },
+  "production_claim": false,
+  "provenance": {
+    "asb_binary_sha256": "6b35fb05af51951976b2a9d764cddccb1cab71c6b60479c2d12c68d965ab08ed",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "tui_binary_sha256": "313fd5ff621c6780dd2a54ef1878346f8c2a8c9ce54bad415339b86fe5da166d",
+    "tui_commit": "be3e99ce86270d5fd181c291d70d1a242506898b",
+    "tui_tree": "b47033659e2def84265d16e20fec6b5df64eea6d"
+  },
+  "quality": {
+    "cargo_clippy_all_targets_deny_warnings": "passed",
+    "cargo_fmt": "passed",
+    "cargo_test_locked_full": "passed",
+    "formal_ui_model_and_source_parity": "passed",
+    "product_gitleaks": "passed",
+    "promoted_self_test": "passed",
+    "release_build": "passed",
+    "rustdoc_deny_warnings": "passed",
+    "schema_tutorial_help_and_credential_boundary": "passed",
+    "shell_and_workflow_quality": "passed",
+    "source_worktrees_clean": true
+  },
+  "schema_version": 1,
+  "toolchain_boundary": {
+    "gate_weakened": false,
+    "initial_result": "strict trust policy rejected group-writable rustup metadata",
+    "remediation": "reran with a disposable private Rust 1.93.0 view and exact direct Cargo",
+    "system_toolchain_mutated": false
+  }
+}
