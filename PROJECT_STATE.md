@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@7369a56db8ae` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@7369a56db8ae` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@2a8d941846af` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
 
 ## Recent workflows
