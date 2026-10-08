@@ -19,6 +19,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar222-review-final` | `DETACHED` | `1eadb650d1c2` | 0 | behind 206, ahead 0 |
 | `ar222-review-repaired` | `DETACHED` | `6c5f29aaf884` | 0 | behind 207, ahead 0 |
 | `asb-tui-ar1707-rebase.0J4mKE` | `feature/ar-1707-revision-formal-gate-rebase` | `214ebb0fce36` | 0 | behind 21, ahead 0 |
+| `asb-tui-ar1721-pr287-review8` | `DETACHED` | `33f27e6c6ebb` | 0 | behind 0, ahead 8 |
 | `asb-tui-coverage.Rfd3LO` | `repair/ar-1708-coverage-gate` | `2e0b462b80ef` | 0 | behind 23, ahead 0 |
 | `repair-pr224` | `repair/pr224` | `4b2779cb1af3` | 0 | behind 197, ahead 0 |
 | `repair-pr225` | `repair/pr225` | `7bf8f650a4a1` | 0 | behind 202, ahead 3 |
