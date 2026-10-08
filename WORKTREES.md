@@ -76,7 +76,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1593-version-alignment` | `feature/ar-1593-version-alignment` | `62d0aebe65e6` | 0 | behind 343, ahead 21 |
 | `asb-tui-ar-1594-wizard` | `feature/ar-1594-wizard-requalification` | `db80ffe48656` | 0 | behind 342, ahead 0 |
 | `asb-tui-ar-1598-coverage` | `feature/ar-1598-trusted-coverage` | `f9b97d6436cb` | 0 | behind 340, ahead 2 |
-| `asb-tui-ar-1725-operator-runner-parent-toolchain` | `repair/ar-1725-operator-runner-parent-toolchain` | `a9bff45505b6` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1725-operator-runner-parent-toolchain` | `repair/ar-1725-operator-runner-parent-toolchain` | `a9bff45505b6` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/run-operator-quickstart.py`, `tools/test-operator-quickstart.py` |
 | `asb-tui-ar-190-review` | `DETACHED` | `f0ef3dab5352` | 0 | behind 343, ahead 16 |
 | `asb-tui-ar-192-repair` | `DETACHED` | `e8f5bf82b3e6` | 0 | behind 343, ahead 22 |
 | `asb-tui-ar-auth-enrollment` | `feature/ar-auth-enrollment` | `7b98db87ae41` | 0 | behind 343, ahead 223 |
