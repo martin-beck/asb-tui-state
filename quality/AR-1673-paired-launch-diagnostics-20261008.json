@@ -1,0 +1,76 @@
+{
+  "ar": "AR-1673",
+  "cases": [
+    {
+      "channel": "dev",
+      "code": "development_launched",
+      "exit_code": 0,
+      "name": "omitted-dev-json-pty",
+      "network": "denied",
+      "ok": true
+    },
+    {
+      "channel": "dev",
+      "code": "development_launched",
+      "exit_code": 0,
+      "name": "explicit-dev-json-pty",
+      "network": "denied",
+      "ok": true
+    },
+    {
+      "channel": "dev",
+      "code": "development_launched",
+      "exit_code": 0,
+      "name": "explicit-dev-human-pty",
+      "warnings_visible": true
+    },
+    {
+      "channel": "stable",
+      "code": "channel_unavailable",
+      "exit_code": 3,
+      "name": "explicit-unavailable-stable-json-pty",
+      "network": "denied",
+      "ok": false
+    },
+    {
+      "channel": "dev",
+      "code": "environment_path_invalid",
+      "exit_code": 3,
+      "name": "unsafe-cache-root-json-pty",
+      "network": "denied",
+      "ok": false
+    }
+  ],
+  "classification": "development",
+  "credentials": "none",
+  "installation": {
+    "code": "development_bundle_consumed",
+    "exit_code": 0,
+    "warnings": [
+      "development_missing_authentication_allowed",
+      "development_missing_signatures_allowed",
+      "development_missing_key_management_allowed"
+    ]
+  },
+  "operator_quickstart": {
+    "coverage_setup_recording": "passed",
+    "development_journey": "passed",
+    "end_to_end_qualification": "passed",
+    "provider_lifecycle_1656": "passed"
+  },
+  "provenance": {
+    "asb_binary_sha256": "195b55b03b92bef86c3a83ff07ef30bed0f9b86af6994fdb3ea80f70cb8cdeac",
+    "asb_commit": "1ab175c30eb039877782487aa863823c5c9e9733",
+    "asb_tree": "e43c597a5389c5d983fcbe63409eee01ec59f7ff",
+    "tui_binary_sha256": "9c741d423daae70c3fb28ffa2ff407b78fcc1fe0420ef1f481684f4daa984875",
+    "tui_commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "tui_tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+  },
+  "schema_version": 1,
+  "terminal": {
+    "columns": 80,
+    "controlling": true,
+    "foreground_process_group": true,
+    "rows": 24
+  }
+}
