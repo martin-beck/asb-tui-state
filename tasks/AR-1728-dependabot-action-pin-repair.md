@@ -7,7 +7,7 @@
     "AR-1725"
   ],
   "id": "AR-1728",
-  "next_action": "Reproduce Dependabot PR #288's reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR.",
+  "next_action": "Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded.",
   "observed_branch": "repair/ar-1728-install-action-pin",
   "observed_dirty": 0,
   "observed_head": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:25:49+00:00",
+  "updated_at": "2026-10-08T23:26:18+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
@@ -112,3 +112,10 @@ post-merge validation are mandatory.
 
 - 2026-10-08T23:25:49+00:00: Recorded command exit 0; command argv SHA-256
   58d59edeb0306b78b28c7fbe398ecf04fb056a6aa4520ac9e98a61174b5cb959.
+
+- 2026-10-08T23:26:18+00:00: Published replacement PR #295 from exact main 168ea56a with one
+  immutable pin line only. Candidate 4a7fda9/tree 6cac9a3 is SSH-signed with matching DCO. Local
+  full Rust, supply-chain, coverage, workflow, privacy, model, tutorial, and fixture gates pass;
+  upstream action entrypoints are byte-identical and only unrelated manifests changed. Exact-head
+  hosted checks are currently in progress. Stop for independent review; do not merge or close PR
+  #288 yet.
