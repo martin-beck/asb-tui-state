@@ -9,9 +9,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 145 |
@@ -208,7 +208,7 @@ flowchart LR
         AR_1706["AR-1706 - Done"]:::status_done
         AR_1707["AR-1707 - Done"]:::status_done
         AR_1708["AR-1708 - Done"]:::status_done
-        AR_1713["AR-1713 - In progress"]:::status_in_progress
+        AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
         AR_1721["AR-1721 - In progress"]:::status_in_progress
@@ -765,14 +765,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | codex-ar1713-receipt-publish-20261008 | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair7-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair the ambient ownership race at PR #287 head d06c9396: do not classify arbitrary post-baseline children adopted by the general runner as fixture lineage. Use a fixture-owned supervisor/subreaper or equivalently provable boundary; add both-incoming-subreaper regression where a baseline ambient child double-forks/setsid after capture and survives fixture cleanup, while immediate fixture double-fork and depth/process exhaustion still complete bounded TERM/KILL/rescan/reap. Then publish signed+DCO repair and obtain fresh exact-head review. |
 
-### Blocked (6)
+### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -781,6 +780,7 @@ flowchart LR
 | P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Complete an ASB development-broker foreground-terminal repair so interactive launch does not leave the TUI in a private background process group, and repair the operator qualification helper to provide a nonzero controlling PTY with a bounded quit path; then rerun exact-head asb tui install followed by bare asb tui and the full quickstart matrix. |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
 ### Planned (13)
