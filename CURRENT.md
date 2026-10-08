@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1725](tasks/AR-1725-operator-runner-parent-toolchain.md): Operator quickstart parent toolchain propagation repair | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. | codex-tui-ar1725-parent-toolchain |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

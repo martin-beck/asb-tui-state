@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1725-operator-runner-parent-toolchain",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T16:47:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1721",
     "AR-1724"
@@ -12,7 +12,7 @@
   "observed_branch": "repair/ar-1725-operator-runner-parent-toolchain",
   "observed_dirty": 0,
   "observed_head": "db6839c86e73f3e3c10e8c0b336fbc5a1329b443",
-  "owner": "codex-tui-ar1725-parent-toolchain",
+  "owner": "",
   "plan": "../plans/AR-1725-operator-runner-parent-toolchain.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1725.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Operator quickstart parent toolchain propagation repair",
-  "updated_at": "2026-10-08T13:39:14+00:00",
+  "updated_at": "2026-10-08T13:39:31+00:00",
   "worktree_key": "asb-tui-ar-1725-operator-runner-parent-toolchain"
 }
 ---
@@ -147,3 +147,11 @@ gate.
 
 - 2026-10-08T13:39:14+00:00: Recorded command exit 0; command argv SHA-256
   696b9a643298484bbb8a2105dd28546541f2612013ad0899f028de082054792b.
+
+- 2026-10-08T13:39:31+00:00: PR #294 merged as exact main commit
+  168ea56a1e3724bc72f097ffedf91c80704a72c2 with reviewed tree
+  b57c21fdf90404cc8a743e389ea1e2cd8528cfa7. Independent exact-head review approved with no findings.
+  Accepted spec revision 1 is bound to privacy-safe receipt SHA-256
+  edabf732aab0b25d9b3378332c263a040fb98c497115af1319d54a567bed81d9. Post-merge Repository Quality
+  run 37784767206 and Trusted Main run 37784767389 both completed success against the exact merge
+  SHA.
