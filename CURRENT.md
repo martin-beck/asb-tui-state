@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Repair legacy ProviderCatalog request-known-generation and same-generation digest fences; add adversarial tests; obtain fresh independent review before integration. | codex-ar1720-repair-20261008 |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. | codex-ar1720-repair-20261008 |
 
 ## Blocked
 
