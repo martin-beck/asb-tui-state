@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**168 ARs tracked** across 5 active status categories.
+**168 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 153 |
+| **Done** | Accepted, integrated, and durably verified | 154 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 2 |
 
@@ -213,7 +213,7 @@ flowchart LR
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - Blocked"]:::status_blocked
-        AR_1723["AR-1723 - In progress"]:::status_in_progress
+        AR_1723["AR-1723 - Done"]:::status_done
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -773,12 +773,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | codex-ar1723-low-typing-20261008 | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Parent coordinator may merge independently reviewed PR 292; after merge, verify exact origin/main post-merge gates and requalify AR-1597. This worker must not self-merge. |
-
 ### Blocked (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -801,7 +795,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (153)
+### Done (154)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -947,6 +941,7 @@ flowchart LR
 | P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Release after exact installed-entrypoint and hostile shim evidence recorded at TUI head 5880ceb. |
 | P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Fresh different-agent independent re-review of PR #289 exact repair head fc7c954d46fd5f4eb03c519f59e18ca22ef00c80; require hosted runs 37724269054 and 37724269209 terminal green before integration. |
 | P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. |
+| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | Unclaimed | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Parent coordinator may merge independently reviewed PR 292; after merge, verify exact origin/main post-merge gates and requalify AR-1597. This worker must not self-merge. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |

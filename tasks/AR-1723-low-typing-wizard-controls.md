@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T11:37:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1668",
     "AR-1707",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1723",
   "next_action": "Parent coordinator may merge independently reviewed PR 292; after merge, verify exact origin/main post-merge gates and requalify AR-1597. This worker must not self-merge.",
-  "owner": "codex-ar1723-low-typing-20261008",
+  "owner": "",
   "plan": "../plans/AR-1723-low-typing-wizard-controls.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T08:31:19+00:00",
+  "updated_at": "2026-10-08T08:31:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -386,3 +386,10 @@ never block local or deterministic qualification.
 
 - 2026-10-08T08:31:19+00:00: Recorded command exit 0; command argv SHA-256
   4ea899a68cb6db32ed14fa586fecb3daa60f3421516d1059792d7dd688c58a3f.
+
+- 2026-10-08T08:31:34+00:00: PR 292 merged as signed two-parent exact-tree commit
+  1b8f4374bd5b9ae8f27406cab4c6fc60100de9f8. Independent review approved with no P0/P1/P2. Exact-main
+  local gates passed, renderer journey is 10 key events with zero free-form characters, and hosted
+  Repository quality 37749746163 plus Trusted main 37749746177 succeeded. Receipt
+  quality/AR-1723-low-typing-wizard-controls-receipt-20261008.json SHA-256
+  13525b548f00a79a600a0a5838667bd135a478c2f1ab8ed3a4132c5d60e21c42.
