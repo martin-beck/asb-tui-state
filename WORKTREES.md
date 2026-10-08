@@ -163,8 +163,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `d8a02d0eafdd` | 0 | behind 11, ahead 0 |
 | `asb-tui-ar1723-integration-20261008` | `DETACHED` | `1b8f4374bd5b` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1723-low-typing-20261008` | `feature/ar1723-low-typing` | `0b2012d1252a` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar1724-rustup-layout-20261008` | `feature/ar1724-rustup-layout` | `1b8f4374bd5b` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/TOP_LEVEL_ROUTING.md`, `docs/ui-module-inventory.json`, `src/development_handoff.rs`, `src/development_lifecycle.rs`, `tools/run-fresh-user-quickstart.py`, `tools/test-fresh-user-quickstart.py` |
+| `asb-tui-ar1724-rustup-layout-20261008` | `feature/ar1724-rustup-layout` | `2f8c9a821e1b` | 0 | behind 0, ahead 1 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 338, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 338, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 338, ahead 156 |
