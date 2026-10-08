@@ -5,18 +5,18 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 153 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 1 |
+| **Superseded** | Replaced by another AR | 2 |
 
 ## Dependency graph
 
@@ -98,7 +98,7 @@ flowchart LR
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Done"]:::status_done
         AR_1590["AR-1590 - Done"]:::status_done
-        AR_1591["AR-1591 - In progress"]:::status_in_progress
+        AR_1591["AR-1591 - Superseded"]:::status_superseded
         AR_1592["AR-1592 - Done"]:::status_done
         AR_1593["AR-1593 - Done"]:::status_done
         AR_1594["AR-1594 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | codex-root-ar1591-supersession-20261008 | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
-
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -950,8 +944,9 @@ flowchart LR
 | P1 | [AR-1666](tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | No further action; merged PR #232 and exact post-merge trusted-main verification are green. |
 | P2 | [AR-1331](tasks/AR-1331-production-credential-hardening.md): TUI production credential hardening follow-up | Unclaimed | Track future TUI credential secrecy and authentication hardening. | Keep non-gating until production deployment is requested; implement reviewed secure credential storage and authentication UX. |
 
-### Superseded (1)
+### Superseded (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Unclaimed | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 | P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Unclaimed | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |

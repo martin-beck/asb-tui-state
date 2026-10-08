@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | codex-root-ar1591-supersession-20261008 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -192,4 +186,5 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone TUI consumption | Qualify fresh-clone consumption of the released development TUI journey. | Promote after the real bridge and final wizard qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 | P0 | [AR-1672](tasks/AR-1672.md): TUI post-launch fresh-user journey qualification | Requalify the TUI install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after the ASB launch repair is released. | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. | - |
