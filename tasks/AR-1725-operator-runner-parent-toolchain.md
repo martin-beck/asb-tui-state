@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Operator quickstart parent toolchain propagation repair",
-  "updated_at": "2026-10-08T13:19:51+00:00",
+  "updated_at": "2026-10-08T13:20:29+00:00",
   "worktree_key": "asb-tui-ar-1725-operator-runner-parent-toolchain"
 }
 ---
@@ -101,3 +101,6 @@ gate.
 
 - 2026-10-08T13:19:44+00:00: Recorded command exit 0; command argv SHA-256
   1ab006b9babd2307add8e476b9d7c96ac75e7053400483360882612abce99bdb.
+
+- 2026-10-08T13:20:29+00:00: Recorded command exit 0; command argv SHA-256
+  a028c5678d12dc15dd17f4c17089ac618f6aa4e71706361d42da1a3b86a804f2.
