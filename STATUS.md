@@ -773,7 +773,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | codex-ar1597-usability-20261008 | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
-| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-ar1722-coordinator-v0314-20261008 | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Upgrade the vendored Agent Workflow Coordinator from v0.3.5 to exact upstream v0.3.14, validate superseded_by chain semantics, bind AR-1672 to done successor AR-1668, and prove AR-1673 becomes dependency-ready without weakening fail-closed admission. |
+| P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-ar1722-coordinator-v0314-20261008 | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Synchronize exact upstream v0.3.14 vendor set in isolated state branch, add downstream chain tests and linkage, then qualify and publish for independent review. |
 
 ### Blocked (4)
 
