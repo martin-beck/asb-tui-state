@@ -15,13 +15,21 @@
   "plan": "../plans/AR-1728-dependabot-action-pin-repair.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "mechanical",
+    "evidence_digest": "sha256:d11030f815e4af442fabf934832bbe8ed01b7ff64868f59509e2d5853fd3aeff",
+    "evidence_ref": "quality/AR-1728-action-pin-integration-20261009.json",
+    "spec_ref": "specs/AR-1728.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:41:06+00:00",
+  "updated_at": "2026-10-08T23:41:29+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
@@ -137,3 +145,6 @@ post-merge validation are mandatory.
 
 - 2026-10-08T23:41:06+00:00: Recorded command exit 0; command argv SHA-256
   9e04fa2e8da05026d5a3de49221eef2a1653132551a845d6d7b96be216c076ab.
+
+- 2026-10-08T23:41:29+00:00: Recorded command exit 0; command argv SHA-256
+  c66c5a5b2813db924daa2f0331aacffcc143694bdb2c863e01494d0c33d35047.
