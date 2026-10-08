@@ -161,6 +161,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1721-integration` | `integration/ar-1721-pr287` | `69f0584cee27` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar1721-pr287-rereview4` | `DETACHED` | `7369a56db8ae` | 0 | behind 13, ahead 0 |
 | `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `d8a02d0eafdd` | 0 | behind 9, ahead 0 |
+| `asb-tui-ar1723-low-typing-20261008` | `feature/ar1723-low-typing` | `4c29ec76fa29` | 0 | behind 0, ahead 0 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 336, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 336, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 336, ahead 156 |
