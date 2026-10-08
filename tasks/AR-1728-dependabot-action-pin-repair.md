@@ -9,7 +9,7 @@
   "id": "AR-1728",
   "next_action": "Reproduce Dependabot PR #288's reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR.",
   "observed_branch": "repair/ar-1728-install-action-pin",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
   "owner": "codex-tui-ar1728-action-pin-20261009",
   "plan": "../plans/AR-1728-dependabot-action-pin-repair.md",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:12:30+00:00",
+  "updated_at": "2026-10-08T23:12:40+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---

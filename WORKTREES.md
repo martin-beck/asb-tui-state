@@ -168,7 +168,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1723-low-typing-20261008` | `feature/ar1723-low-typing` | `0b2012d1252a` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar1724-integration-20261008` | `DETACHED` | `50acbc4af694` | 0 | behind 2, ahead 0 |
 | `asb-tui-ar1724-rustup-layout-20261008` | `DETACHED` | `e54495471536` | 0 | behind 3, ahead 0 |
-| `asb-tui-ar1728-install-action-pin` | `repair/ar-1728-install-action-pin` | `168ea56a1e37` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar1728-install-action-pin` | `repair/ar-1728-install-action-pin` | `168ea56a1e37` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/trusted-main.yml` |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 345, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 345, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 345, ahead 156 |
