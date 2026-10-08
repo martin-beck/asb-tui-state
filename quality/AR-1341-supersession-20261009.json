@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1341",
+  "result": "superseded",
+  "superseded_by": "AR-1703",
+  "evidence_chain": [
+    {
+      "ar": "AR-1575",
+      "receipt": "quality/AR-1575-final-qualification-20261009.json",
+      "sha256": "67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f",
+      "coverage": [
+        "default development source resolution and exact-source clone/build/materialization",
+        "status, doctor, upgrade, post-upgrade status, removal and repeated removal",
+        "strict offline failure and typed hostile identity paths",
+        "cleanup and privacy"
+      ]
+    },
+    {
+      "ar": "AR-1703",
+      "receipt": "quality/AR-1703-top-level-clean-room-qualification-20261009.json",
+      "sha256": "98ff279cc7bde587812d1eba92c98e385033d69f190cf42c588ad5485d6250b2",
+      "coverage": [
+        "public asb tui install followed by bare asb tui",
+        "real 80x24 controlling foreground PTY launch",
+        "selection-driven development journey and explicit evidence boundary"
+      ]
+    }
+  ],
+  "qualified_products": {
+    "asb_commit": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+    "asb_tree": "40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde",
+    "tui_commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "tui_tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+  },
+  "current_tui_descendant": {
+    "commit": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+    "tree": "6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b",
+    "delta_from_qualified_head": "independently reviewed immutable GitHub Action pin only",
+    "exact_main_ci": "pass"
+  },
+  "obsolete_blockers": {
+    "stale_embedded_identity": "repaired and exact identity plus stale rejection qualified",
+    "hardcoded_system_cargo": "repaired by bounded Cargo/Rustup resolution; qualification passed without caller toolchain override"
+  },
+  "independent_review": {
+    "result": "approve_supersession",
+    "finding_count": 0,
+    "conclusion": "AR-1575 plus AR-1703 cover every AR-1341 predicate; AR-1703 alone would not cover clone/build/status/upgrade"
+  },
+  "boundary": {
+    "classification": "development/mock",
+    "production_release_claim": false,
+    "credentials": false,
+    "private_paths": false,
+    "raw_logs": false
+  }
+}
