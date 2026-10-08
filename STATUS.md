@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -211,7 +211,7 @@ flowchart LR
         AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
-        AR_1721["AR-1721 - Open"]:::status_open
+        AR_1721["AR-1721 - In progress"]:::status_in_progress
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 exact head 33f27e6c6ebbac84525c917736bb0e05e392ccce: close every SCM_RIGHTS PTY master on parent-side startup validation/setup failure and replace unbounded supervisor waitpid paths with identity-safe bounded termination/reaping; add regressions, preserve fixture-exclusive ambient/fixture separation, rerun exact-head gates, then obtain fresh independent review. Do not merge current head. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-ar1721-pr287-repair8-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 exact head 33f27e6c6ebbac84525c917736bb0e05e392ccce: close every SCM_RIGHTS PTY master on parent-side startup validation/setup failure and replace unbounded supervisor waitpid paths with identity-safe bounded termination/reaping; add regressions, preserve fixture-exclusive ambient/fixture separation, rerun exact-head gates, then obtain fresh independent review. Do not merge current head. |
 
 ### Blocked (7)
 
