@@ -8,9 +8,9 @@
   ],
   "id": "AR-1728",
   "next_action": "Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded.",
-  "observed_branch": "repair/ar-1728-install-action-pin",
+  "observed_branch": "integrate/ar-1728-reviewed",
   "observed_dirty": 0,
-  "observed_head": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
+  "observed_head": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
   "owner": "codex-tui-ar1728-action-pin-20261009",
   "plan": "../plans/AR-1728-dependabot-action-pin-repair.md",
   "priority": "P1",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:33:45+00:00",
+  "updated_at": "2026-10-08T23:33:53+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
