@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 at 4baab1e984a5e6e119cf2566310bdd9f661a4e41 and require all hosted checks terminal green before merge. | codex-ar1721-pr287-repair4-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Obtain a fresh independent exact-head review of PR #287 at 4baab1e984a5e6e119cf2566310bdd9f661a4e41 and require all hosted checks terminal green before merge. | - |
 
 ## Blocked
 
