@@ -11,12 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
-| #289 | `feature/ar-1720-controlserver-dynamic-catalog@bfda799b6cfa` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1720: bridge dynamic provider catalog v1.15 |
+| #289 | `feature/ar-1720-controlserver-dynamic-catalog@fc7c954d46fd` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1720: bridge dynamic provider catalog v1.15 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37724269209 | `fc7c954d46fd` | pull_request | AWQ shadow observation | in_progress:- |
+| 37724269054 | `fc7c954d46fd` | pull_request | Repository quality | in_progress:- |
 | 37723348396 | `bfda799b6cfa` | pull_request | AWQ shadow observation | completed:success |
 | 37723348030 | `bfda799b6cfa` | pull_request | Repository quality | completed:success |
 | 37719420515 | `93e396af3fec` | pull_request | AWQ shadow observation | completed:failure |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37717575504 | `d8a02d0eafdd` | pull_request | AWQ shadow observation | completed:success |
 | 37717575143 | `d8a02d0eafdd` | pull_request | Repository quality | completed:success |
 | 37715139735 | `d48125647beb` | pull_request | AWQ shadow observation | completed:success |
-| 37715139417 | `d48125647beb` | pull_request | Repository quality | completed:success |
-| 37712742271 | `33f27e6c6ebb` | pull_request | AWQ shadow observation | completed:success |
