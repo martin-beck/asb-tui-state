@@ -11,14 +11,14 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 164 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 3 |
+| **Superseded** | Replaced by another AR | 4 |
 
 ## Company hierarchy rollup
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 174 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 2 |
+| Open or active | 1 |
 | Blocked | 2 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 174 | 2 | 2 | 164 |
+| unassigned | unassigned | 174 | 1 | 2 | 164 |
 
 ## Task drill-down
 
@@ -660,11 +660,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | superseded |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1345-supersession-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main ASB and asb-tui development journey at exact heads. |
@@ -2540,7 +2540,7 @@ flowchart LR
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - Done"]:::status_done
         AR_1344["AR-1344 - Done"]:::status_done
-        AR_1345["AR-1345 - In progress"]:::status_in_progress
+        AR_1345["AR-1345 - Superseded"]:::status_superseded
     end
     subgraph series_15["15 - Additional work"]
         direction TB
@@ -3255,11 +3255,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1345](../tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | codex-tui-ar1345-supersession-20261009 | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
 | P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. |
 
 ### Blocked (2)
@@ -3367,3 +3366,5 @@ flowchart LR
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
+| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
+| P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
