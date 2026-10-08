@@ -11,11 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@93e396af3fec` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
+| #291 | `qualification/ar-1668-post-launch-20261008@2e2dd3bb2453` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | Fix authoritative wizard adapter catalog retention |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37738322927 | `2e2dd3bb2453` | pull_request | AWQ shadow observation | in_progress:- |
+| 37738322600 | `2e2dd3bb2453` | pull_request | Repository quality | in_progress:- |
 | 37730512549 | `be3e99ce8627` | push | Repository quality | completed:success |
 | 37730512544 | `be3e99ce8627` | push | Trusted main verification | completed:success |
 | 37729232454 | `74fad130ca67` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37725154782 | `ee45ff349779` | push | Trusted main verification | completed:success |
 | 37724269209 | `fc7c954d46fd` | pull_request | AWQ shadow observation | completed:success |
 | 37724269054 | `fc7c954d46fd` | pull_request | Repository quality | completed:success |
-| 37723348396 | `bfda799b6cfa` | pull_request | AWQ shadow observation | completed:success |
-| 37723348030 | `bfda799b6cfa` | pull_request | Repository quality | completed:success |
