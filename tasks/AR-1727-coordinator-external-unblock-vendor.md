@@ -15,11 +15,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:32:57+00:00",
+  "updated_at": "2026-10-08T15:29:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -129,3 +129,8 @@ normally. AR-1727 is not permission to change either product repository.
   status/revision mismatches; selected Git backend blocks none. Required follow-up must fix and
   hostile-test both Git and SQLite before official resync. No AR-1727 candidate/receipt acceptance
   or AR-1575 unblock was published.
+
+- 2026-10-08T15:29:18+00:00: Upstream Coordinator PR #1200 merged as
+  e863b57edc7f7a21b2aff2c7b45ce226e12637d2 tree eee603591b917eeca244425559d7c67bb88a7268; postmerge
+  Verify 37800348877 and Formal 37800348812 passed; exact official sync-development recovery
+  verified 68 blobs, digests, and modes.
