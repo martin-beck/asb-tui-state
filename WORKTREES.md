@@ -146,6 +146,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1654-quickstart` | `ar-1654-quickstart` | `629e93534763` | 0 | behind 219, ahead 3 |
 | `asb-tui-ar1654-quickstart-20261008b` | `qualification/ar-1654-quickstart-20261008b` | `74fad130ca67` | 0 | behind 1, ahead 0 |
 | `asb-tui-ar1654-requal-20261008` | `repair/ar-1654-quickstart-requal-20261008` | `8474c4c9d0a2` | 0 | behind 20, ahead 0 |
+| `asb-tui-ar1655-release-gate` | `qualification/ar-1655-paired-wizard-gate-20261008` | `be3e99ce8627` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar1656` | `ar-1656-provider-catalog-refresh` | `315afa2592d6` | 0 | behind 202, ahead 0 |
 | `asb-tui-ar1658` | `feature/ar-1658-tui-channel-selector` | `e4c6fd537f87` | 0 | behind 160, ahead 0 |
 | `asb-tui-ar1660-quickstart` | `repair/ar-1660-quickstart` | `749f6f46fff1` | 0 | behind 139, ahead 0 |
