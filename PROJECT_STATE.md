@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@d8a02d0eafdd` | `main` | BLOCKED | QUEUED:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
+| #287 | `repair/ar-1721-operator-quickstart-controlling-pty@d8a02d0eafdd` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test(quickstart): use a real controlling PTY |
 | #288 | `dependabot/github_actions/taiki-e/install-action-2.87.22@2a8d941846af` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | chore(deps): bump taiki-e/install-action from 2.87.15 to 2.87.22 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37717575504 | `d8a02d0eafdd` | pull_request | AWQ shadow observation | queued:- |
+| 37717575504 | `d8a02d0eafdd` | pull_request | AWQ shadow observation | in_progress:- |
 | 37717575143 | `d8a02d0eafdd` | pull_request | Repository quality | in_progress:- |
 | 37715139735 | `d48125647beb` | pull_request | AWQ shadow observation | completed:success |
 | 37715139417 | `d48125647beb` | pull_request | Repository quality | completed:success |
