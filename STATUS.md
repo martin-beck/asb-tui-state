@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-pr290-rereview-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Fresh independent exact-head review and hosted checks for PR #290; do not merge until root integration. |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-pr290-rereview-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Root integration may merge PR #290 through the protected path, then watch exact-main post-merge Repository Quality and Trusted Main checks before release. |
 
 ### Blocked (5)
 
