@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1668",
+  "status": "passed",
+  "classification": "development/mock",
+  "production_claim": false,
+  "supersedes": {
+    "receipt": "quality/AR-1668-post-launch-fresh-user-journey-receipt-20261008.json",
+    "sha256": "42623ded7e937549a3faf47a38811773124ae6eae317d4451356c93937cf5967",
+    "reason": "the earlier receipt predates the catalog-preservation repair and is not bound to merged exact TUI main"
+  },
+  "provenance": {
+    "tui_commit": "4c29ec76fa2982c42b9b4465af019a62f61b0d66",
+    "tui_tree": "81fcd6cb3d7fd666cf0c80199ac639b1cb9e6a1b",
+    "asb_commit": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+    "asb_tree": "e5c4645c9e4384fb57424eaa42139a99b78c5c69",
+    "tui_binary_sha256": "0c6d9b377d5aefe8d24938575b6b0f81a0bb2c04be4be6105711742a3ae30db8",
+    "asb_binary_sha256": "96eb56df4d79751a2694082acc5d893146a1040ffc65234acf1609b8a69e87fb"
+  },
+  "hosted_exact_main": {
+    "repository_quality": {
+      "run_id": 37739974746,
+      "conclusion": "success"
+    },
+    "trusted_main": {
+      "run_id": 37739974785,
+      "conclusion": "success"
+    }
+  },
+  "authoritative_renderer_formal_wizard": {
+    "result": "passed",
+    "startup": "authoritative unconfigured live snapshot opened the wizard",
+    "rendered_route": [
+      "wizard.agent",
+      "wizard.provider",
+      "wizard.model",
+      "wizard.configuration",
+      "wizard.authentication",
+      "wizard.recording",
+      "wizard.replay",
+      "wizard.review"
+    ],
+    "agent_selection": [
+      "opencode",
+      "opendesk"
+    ],
+    "provider": "openrouter",
+    "model": "openai/gpt-4o",
+    "defaults": "shared",
+    "authentication": "credential_reference",
+    "raw_secret_present": false,
+    "execution_mode": "live",
+    "recording": "live",
+    "replay": "strict offline replay",
+    "validated_through": "WorkspaceState renderer and formal wizard completion into ProviderSetupDraft against authoritative agent and provider catalogs",
+    "transcript_sha256": "cfe3b2e4f925cad1df4a871bbdb7817fbe6e39c3561f61f1ce1ac23cf1ff542f"
+  },
+  "fresh_user_journey": {
+    "result": "passed",
+    "channel": "dev",
+    "install": "development_installed from exact merged TUI source",
+    "launch": "development_launch_ready under a controlling PTY",
+    "restart": "installed exact provenance and manifest digest persisted",
+    "benchmark": "core/quality/chat with latency.first launched",
+    "live_statistics": "completed at 100 percent with development/mock provenance",
+    "final_results": "complete performance measures",
+    "selected_recording": {
+      "workload_count": 1,
+      "tuple_count": 1,
+      "cassette_sha256": "c10566dde82bb333c1400980183611e8c1e688f9e26f589ba76ccd5ca6ae86a8"
+    },
+    "all_recording": {
+      "workload_count": 7,
+      "tuple_count": 7
+    },
+    "strict_offline_replay": {
+      "network": "denied",
+      "live_fallback": false,
+      "generated_cassette_sha256": "c5317e23f358fd099a549cfb2db6cc36ddc407fe88add936b18764bd6970df97",
+      "reference_cassette_sha256": "b76c8dd9335add880e5232ad63f7359d4cca8ec7d4bbade1dee6b40e409d38e9",
+      "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5"
+    },
+    "comparison": "passed",
+    "analysis": "passed",
+    "rollback": "missing local source upgrade failed closed and preserved the installed candidate",
+    "tamper": "edited channel manifest was rejected as dev_channel_manifest_invalid",
+    "remove": "development_removed",
+    "warnings": [
+      "development_missing_authentication_allowed",
+      "development_missing_signatures_allowed",
+      "development_missing_key_management_allowed"
+    ],
+    "credential_payload_recorded": false,
+    "post_launch_receipt_sha256": "08a63a2d3209429f7cd27427e7aa27aa55341923689f1cb4e96cd2e987bf3c16",
+    "quickstart_receipt_sha256": "e95460e33014139345c8edec7803c6028bd9f4567d2127e93cb591bf3dc01e8e",
+    "channel_matrix_receipt_sha256": "4cf7f41ed2e2b0635266935095f89f92750dd325eebbc932254af4403069150d",
+    "post_launch_transcript_sha256": "6316dabd0cbb74dbecc5e034a25f424bdcbdbe0bad639de17484439cae2ce87e",
+    "benchmark_live_results_transcript_sha256": "812bc7705cf960de9b09e95a5b7f3658d85c1fd223aab5b2978d43f29d585096"
+  },
+  "verification": {
+    "cargo_test_locked_direct": "passed",
+    "authoritative_renderer_test": "passed",
+    "end_to_end_qualification_tests": "2 passed",
+    "direct_narrow_pty_rerun": {
+      "test": "real_asb_tui_broker_handoff_uses_fd0_and_attached_output_pty",
+      "result": "passed",
+      "passed": 1,
+      "failed": 0,
+      "elapsed_seconds": 0.12,
+      "evidence_sha256": "8832b0b0d922dadb566a57f97c8212725fddc71c7ce57fb68ddf2289b9c07c27"
+    },
+    "script_wrapper_harness_interference": {
+      "observation": "wrapping Cargo itself in script supplied an outer controlling PTY and the PTY-ownership test timed out waiting for the broker TUI to exit",
+      "classification": "harness interference, not an exact-main product failure",
+      "wrapped_full_suite_transcript_sha256": "5bb0861bc4a7d6e934d65b0e49218a591f6f66e22dc62b0852e3f0dc7e997ccf",
+      "wrapped_narrow_reproduction_sha256": [
+        "a263cda66aa877b4c424fbeff4dff5c64ac19be401e42df178cbcd3d3a2af604",
+        "e7396ad5e0bebed3b2456bc231f670624c9899450736505d258011c667b2e8ed"
+      ],
+      "resolution": "the same narrow test passed immediately without the outer script wrapper, and the complete direct cargo test suite subsequently passed"
+    },
+    "initial_toolchain_precondition": {
+      "observation": "the first composed runner attempt rejected a group-writable ambient rustup home",
+      "classification": "host toolchain trust precondition",
+      "resolution": "rerun with exact owner-private toolchain binaries passed",
+      "transcript_sha256": "78580e1445139a79b89ffb60723773bae0c20e5398a4dd43d1cee5c0680c2d53"
+    }
+  },
+  "cleanup": {
+    "journey_disposable_roots_removed": true,
+    "task_owned_temporary_directories_remaining": 0,
+    "task_owned_processes_remaining": 0,
+    "isolated_source_scratch_removed": true,
+    "exact_source_checkouts_clean_before_removal": true,
+    "original_product_checkout_mutated": false,
+    "coordinator_state_mutated": false,
+    "pre_existing_unrelated_temporary_state_preserved": true,
+    "evidence_directory_retained": true,
+    "cleanup_manifest_sha256": "da307de0330b2267d38052a7bf33177ec9ad223c280863e9f8a00786a6de4d51"
+  },
+  "privacy": {
+    "credentials": "none",
+    "raw_prompts_or_provider_responses_recorded": false,
+    "absolute_private_paths_recorded": false,
+    "hostnames_or_tokens_recorded": false
+  }
+}
