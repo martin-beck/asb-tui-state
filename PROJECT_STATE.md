@@ -16,6 +16,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37706059698 | `3bb597cfb0b5` | dynamic | Dependabot Updates | queued:- |
+| 37706057764 | `3bb597cfb0b5` | dynamic | Dependabot Updates | in_progress:- |
 | 37705076360 | `4bc055a43ee3` | pull_request | AWQ shadow observation | completed:success |
 | 37705076186 | `4bc055a43ee3` | pull_request | Repository quality | completed:success |
 | 37703291693 | `63f01a3ddc23` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37699975515 | `3bb597cfb0b5` | push | Trusted main verification | completed:success |
 | 37699344997 | `820ab9eb678d` | pull_request | AWQ shadow observation | completed:success |
 | 37699344593 | `820ab9eb678d` | pull_request | Repository quality | completed:success |
-| 37699201556 | `430cf80b3f82` | pull_request | AWQ shadow observation | completed:success |
-| 37699201126 | `430cf80b3f82` | pull_request | Repository quality | completed:success |
