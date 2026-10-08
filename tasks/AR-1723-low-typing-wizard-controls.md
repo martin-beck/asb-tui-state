@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T07:38:52+00:00",
+  "updated_at": "2026-10-08T07:42:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -55,3 +55,6 @@ never block local or deterministic qualification.
 
 - 2026-10-08T07:38:52+00:00: Recorded command exit 0; command argv SHA-256
   e83eb7cb291dae8668d2cf8f01aa77793881d41749856c2acd560b147001189f.
+
+- 2026-10-08T07:42:32+00:00: Recorded command exit 1; command argv SHA-256
+  22652158b656ead6aaee2f7d7f9c9602c3302c37b733b355be38a03406e9dc43.
