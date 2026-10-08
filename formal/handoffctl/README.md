@@ -4,23 +4,44 @@ This directory defines the machine-checked contract for every task-lifecycle
 mutation performed by `tools/handoffctl`. The TLA+ model is an abstraction of
 the Python implementation, not a replacement implementation.
 
+## Evidence classification
+
+[`../evidence.json`](../evidence.json) records the structured formal-evidence contract required by
+Agent Workflow Quality v0.24.0. It classifies these six TLC runs as bounded-model evidence and
+records the largest finite process, task, actor, project, worktree, and revision domains used by
+their checked configurations. Each `.cfg` file remains authoritative for the exact bound of its
+model.
+
+The correspondence classification is `best-effort`. Passing TLC establishes the invariants and
+temporal properties below only for the tracked TLA+ specifications under those finite bounds and
+assumptions. The implementation tests are separate evidence that selected Python behavior
+corresponds to the abstractions; neither evidence source claims or requires implementation refinement or the
+correctness of Python, Git, SQLite, operating-system, kernel, filesystem, or arbitrary wrapped
+commands. The explicit assumptions, non-claims, and limitations in `formal/evidence.json` are part
+of this contract and must remain aligned with the configurations and runner.
+
 ## Transition contract
 
 Every accepted lifecycle command increments `task_revision` exactly once and validates the result.
+Task hierarchy edges are reciprocal and acyclic; the bounded lifecycle model includes one parent
+with one child and rejects `release --status done` while that child is non-terminal. The Python
+validator additionally checks arbitrary task graphs and migration preservation.
 For Git authority, the task and generated projections update under the same repository lock and a
 detected pre-commit failure restores them. For SQLite authority, one database transaction commits
 the task first and generated projections are recoverable output. A rejected command leaves
-authoritative revision, task state and owner unchanged.
+authoritative revision, task status and owner unchanged.
 
 | Command | Required source | Required actor/revision | Result |
 | --- | --- | --- | --- |
 | `promote` | `planned`, unowned, dependencies done | exact revision | `open` |
-| `resume` | `blocked`, unowned | exact revision | `open` |
+| `pause` | `in_progress`, owned | exact revision and owner | `blocked`, ownership and lease cleared |
+| `resume` | `blocked`, unowned, paused session | exact revision and session reference | `open` |
+| `unblock` | `blocked`, unowned, no current-revision session | exact revision | `open` |
 | `claim` | `open`, dependencies done | owner has no active task | `in_progress`, lease set |
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
-| `recover-expired` | expired `in_progress` | exact revision | `open`, ownership cleared |
+| `recover-expired` | expired `in_progress` with a valid session | exact revision | `open`, ownership cleared, session restored |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
 
 `release --status` currently accepts every schema status other than
@@ -51,12 +72,16 @@ from the bound project is accepted; a call from any other project preserves stat
 identity is constant, accepted/rejected classification matches caller identity, and weak fairness
 of correct calls establishes that a correctly invoked coordinator can continue to make progress.
 The implementation refines this guard by checking the profile UUID, state Git root and origin,
-product identity and origin, and caller working directory before normal command execution.
+product identity and origin, and caller working directory before normal command execution. A
+wrapped command started from a product checkout has an additional runtime guard: its Git root and
+branch must match the active task's declared worktree key and branch. This command preflight is
+outside the lifecycle abstraction below and does not alter the TLA+ transition relation.
 
 ## Checked properties
 
 `Handoffctl.tla` exhaustively enumerates two processes, two tasks, every
-coherent initial status/owner combination, ready and blocked dependencies,
+coherent initial status/owner combination, absent, unique-valid,
+unique-incoherent and duplicate pause provenance, ready and blocked dependencies,
 every lifecycle command, current and stale revisions, injected pre-commit
 rollback, and every process interleaving. `HandoffctlLocks.tla` separately
 enumerates three processes as readers and writers, including two simultaneous
@@ -66,13 +91,24 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 - coherent ownership and at most one active task per actor;
 - no lost or duplicate accepted mutation through exact revision accounting;
 - atomic task/projection revision advancement and rollback;
+- reciprocal, bounded acyclic parent/child edges and done-rollup admission;
 - rejection of invalid source, owner, dependency, and revision combinations;
+- rejection of pause/external-block cross-mode transitions without mutation;
+- rejection of missing, incoherent, or duplicate provenance for paused resume;
 - timeout without state mutation when another process holds the lock;
+- acceptance of eligible recovery despite simultaneous expiries and an unrelated repository
+  finding;
 - deadlock freedom and eventual completion under weak process/lock fairness.
 
-Two processes are sufficient for pairwise lifecycle races; two tasks cover the
-one-active-task-per-actor invariant. The separate three-process lock model
-covers two readers plus one writer and two worktree identities resolving one repository-common lock.
+Two processes are sufficient for pairwise lifecycle races in the general model; its two tasks cover
+the one-active-task-per-actor invariant. `HandoffctlRecovery.tla` separately starts two tasks as
+simultaneously expired claims owned by two distinct actors while an unrelated repository finding
+persists. Without injected I/O failure or lock timeout, which the general transition and lock
+models cover, it proves every eligible held recovery is accepted and both distinct claims are
+eventually recovered.
+
+The separate three-process lock model covers two readers plus one writer and two worktree
+identities resolving one repository-common lock.
 `HandoffctlRun.tla` covers preflight rejection, external execution, durable journaling, task-record
 failure, and post-reconciliation success or failure. The binding model covers the configured
 project and one foreign caller, including rejection without mutation and fair progress. These are
@@ -130,3 +166,42 @@ uv run python -m unittest discover -s tests -p 'test_*.py'
 `verify.sh` downloads the official TLA+ 1.7.4 verifier into a temporary
 directory and verifies its pinned SHA-256 before execution. It does not retain
 the JAR or modify coordinator state.
+
+Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
+and is non-exhaustive; it cannot produce publication or full evidence.
+`verify.sh --tier pr-publication` checks every invariant family. Five models
+use their full configurations; the general lifecycle model uses the
+one-process `HandoffctlPR.cfg`, while the separate lock and recovery models
+retain independent-process races. This exact-head PR tier is not the complete
+two-process lifecycle cross-product and cannot produce full release evidence.
+`verify.sh --tier full-exhaustive` runs all six full configurations on the
+scheduled weekly or manually dispatched gate. A release claim requires its
+fresh exact-head full attestation; neither smaller tier substitutes for it.
+
+Each model is executed through `tools/tlc_runner.py`, never directly through
+TLC. The runner uses finite workers (`2`), a `4096m` heap for cgroup-contained
+same-repository publication and weekly runs, a `512m` heap for hosted smoke, CPU
+quota (`200%`), process limit (`64`), a 1200-second ordinary PR or 6000-second
+release-sensitive/weekly per-model deadline, and cgroup memory/swap limits (`6G`/`6G`) for contained runs
+and (`3G`/`3G`) for hosted smoke. A canonical host-wide admission lock prevents
+multiple formal jobs from competing for memory while leaving coordinator worker
+processes and leases untouched. A durable per-job queue record survives caller
+death for stale-job recovery; completed, failed, and canceled outcomes retain
+the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
+
+The runner retains `/tmp/agent-workflow-coordinator-tlc-admission.lock` as the canonical
+publication lock. The verifier uses that shared admission path by default. For an isolated
+clean-destination diagnostic on a host where the shared path is inaccessible, the verifier accepts
+an explicit private queue and lock pair:
+
+```bash
+formal/handoffctl/verify.sh --tier portable-smoke \
+  --diagnostic-queue /absolute/private-tlc-queue \
+  --diagnostic-admission-lock /absolute/private-tlc-admission.lock
+```
+
+Both distinct absolute paths are required together and are propagated as explicit runner CLI
+arguments; there is no verifier environment override. The resulting attestation is classified
+`diagnostic-private-admission`, sets `canonical_publication_evidence` to false, and states that it
+cannot support publication or release claims. Hosted and checked-in workflows omit these flags and
+therefore retain the canonical shared admission path and fail-closed publication semantics.
