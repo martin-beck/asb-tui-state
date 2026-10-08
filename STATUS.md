@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 4 active status categories.
+**166 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 148 |
+| **Done** | Accepted, integrated, and durably verified | 149 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -162,7 +162,7 @@ flowchart LR
         AR_1651["AR-1651 - Done"]:::status_done
         AR_1652["AR-1652 - Done"]:::status_done
         AR_1653["AR-1653 - Done"]:::status_done
-        AR_1654["AR-1654 - In progress"]:::status_in_progress
+        AR_1654["AR-1654 - Done"]:::status_done
         AR_1655["AR-1655 - Planned"]:::status_planned
         AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-root-ar1654-integration-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Root integration may merge PR #290 through the protected path, then watch exact-main post-merge Repository Quality and Trusted Main checks before release. |
-
 ### Blocked (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -798,7 +792,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (148)
+### Done (149)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -906,6 +900,7 @@ flowchart LR
 | P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Obtain independent review and green AWQ check for PR #259 at 0cddb9cca4eb24c78e31d22fea607059b0557aa3; then merge and run post-merge verification. |
 | P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1653](tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Root integration may merge PR #290 through the protected path, then watch exact-main post-merge Repository Quality and Trusted Main checks before release. |
 | P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Unclaimed | Expose add/edit provider and connected supported-model selection in the TUI with redacted, development-only non-blocking diagnostics. | Publish merged receipt and release AR-1656. |
 | P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Unclaimed | Implemented deterministic AR-1657 development compatibility matrix runner, receipt, operator guide, and CI contract test. | PR #265 exact head 1654bc5 is signed-merge updated onto current main 2e4bade after PR #268. Fresh checks 37248386404/37248386596 are running; obtain fresh independent review before merge. Preserve fail-closed ASB catalog mismatch and explicit tui_binary lifecycle routing. |
 | P0 | [AR-1658](tasks/AR-1658.md): TUI development release-channel selector | Unclaimed | Expose a simple channel selector with dev as the default and exact current-main provenance. | Implement the selection screen, persistence, resolver diagnostics, and human/JSON projections for dev and future channels. |
