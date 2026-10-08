@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-root-ar1668-integration-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | PR #291 is independently approved and all hosted checks are green. A separate integrator must merge it, then rerun the exact-current-main paired receipt and remove/bind cleanup of task-owned caches/worktrees before AR closeout. |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-root-ar1668-integration-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Independent rereview must verify corrected signed receipt b9821c55de94462d8be0f6d8aa8f309e2d19314f (SHA-256 55868417ccea5f0cd7b28394efba5717d33d8f90cb3454d86c4c519432a0818b), removed AR-owned roots/worktrees, path-sanitized evidence, and resolved P1/P2 before done release. |
 
 ### Blocked (5)
 
