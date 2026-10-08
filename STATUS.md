@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -208,7 +208,7 @@ flowchart LR
         AR_1706["AR-1706 - Done"]:::status_done
         AR_1707["AR-1707 - Done"]:::status_done
         AR_1708["AR-1708 - Done"]:::status_done
-        AR_1713["AR-1713 - Open"]:::status_open
+        AR_1713["AR-1713 - In progress"]:::status_in_progress
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
         AR_1721["AR-1721 - Done"]:::status_done
@@ -765,11 +765,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Unclaimed | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | codex-ar1713-qualification-20261008 | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. |
 
 ### Blocked (6)
 

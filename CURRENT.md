@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. | - |
+| P0 | [AR-1713](tasks/AR-1713.md): TUI live run, recording, and comparison handoff | Expose the complete TUI live-run, selected/all recording, offline replay, and result-comparison handoff with clear typed readiness and no fallback. | Repair the external ASB installed development launcher to propagate a bounded trusted tool environment to the TUI preflight, then rerun exact-head bare TUI, live-provider, selected/all capture, strict replay, and comparison qualification; provider-backed evidence still requires explicit external authorization. | codex-ar1713-qualification-20261008 |
 
 ## Blocked
 
