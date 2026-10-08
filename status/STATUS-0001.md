@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -674,11 +674,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1575-final-qualification |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
@@ -2516,7 +2516,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - In progress"]:::status_in_progress
+        AR_1575["AR-1575 - Open"]:::status_open
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -3220,11 +3220,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
 
 ### Blocked (3)
 
@@ -3340,3 +3340,4 @@ flowchart LR
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
+| P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
