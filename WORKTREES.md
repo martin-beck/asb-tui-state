@@ -19,8 +19,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar222-review-final` | `DETACHED` | `1eadb650d1c2` | 0 | behind 217, ahead 0 |
 | `ar222-review-repaired` | `DETACHED` | `6c5f29aaf884` | 0 | behind 218, ahead 0 |
 | `asb-tui-ar1707-rebase.0J4mKE` | `feature/ar-1707-revision-formal-gate-rebase` | `214ebb0fce36` | 0 | behind 32, ahead 0 |
-| `asb-tui-ar1720-audit` | `feature/ar-1720-controlserver-dynamic-catalog` | `bfda799b6cfa` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `src/live_projection.rs` |
+| `asb-tui-ar1720-audit` | `feature/ar-1720-controlserver-dynamic-catalog` | `fc7c954d46fd` | 0 | behind 0, ahead 2 |
 | `asb-tui-ar1721-pr287-review8` | `DETACHED` | `33f27e6c6ebb` | 0 | behind 3, ahead 0 |
 | `asb-tui-coverage.Rfd3LO` | `repair/ar-1708-coverage-gate` | `2e0b462b80ef` | 0 | behind 34, ahead 0 |
 | `repair-pr224` | `repair/pr224` | `4b2779cb1af3` | 0 | behind 208, ahead 0 |
