@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**169 ARs tracked** across 6 active status categories.
+**170 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -26,17 +26,17 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 169 |
+| Tasks | 170 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 3 |
+| Open or active | 4 |
 | Blocked | 3 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 169 | 3 | 3 | 156 |
+| unassigned | unassigned | 170 | 4 | 3 | 156 |
 
 ## Task drill-down
 
@@ -2406,6 +2406,20 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. |
 | Next action | PR #293 exact reviewed head e54495471536af6a583c81b2414b059d0a0f72a6 is independently approved and all hosted checks are green; parent merge authority should perform signed exact-tree integration and post-merge exact-main validation. Author must not self-merge. |
 
+### AR-1725 — Operator quickstart parent toolchain propagation repair
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. |
+| Next action | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
+
 
 ## Dependency graph
 
@@ -2604,6 +2618,7 @@ flowchart LR
         AR_1722["AR-1722 - In progress"]:::status_in_progress
         AR_1723["AR-1723 - Done"]:::status_done
         AR_1724["AR-1724 - Done"]:::status_done
+        AR_1725["AR-1725 - Open"]:::status_open
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -2979,7 +2994,9 @@ flowchart LR
     AR_1713 --> AR_1720
     AR_1714 --> AR_1724
     AR_1720 --> AR_1723
+    AR_1721 --> AR_1725
     AR_1723 --> AR_1724
+    AR_1724 --> AR_1725
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3159,10 +3176,11 @@ flowchart LR
 | [AR-1713](../tasks/AR-1713.md) | [AR-1708](../tasks/AR-1708.md) | [AR-1714](../tasks/AR-1714.md), [AR-1720](../tasks/AR-1720.md) |
 | [AR-1714](../tasks/AR-1714.md) | [AR-1575](../tasks/AR-1575.md), [AR-1703](../tasks/AR-1703.md), [AR-1713](../tasks/AR-1713.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1720](../tasks/AR-1720.md) | [AR-1713](../tasks/AR-1713.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) |
-| [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | None |
+| [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
 | [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | None |
 | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
-| [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | None |
+| [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
+| [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | [AR-1721](../tasks/AR-1721.md), [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | None |
 
 ## Complete AR inventory
 
@@ -3173,11 +3191,12 @@ flowchart LR
 | P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for the ASB env-cleared linker handoff repair (drafted as AR-1737 for authoritative registration) and active TUI AR-1654 controlling-PTY/quit response repair to merge and qualify; then rerun exact paired source-built install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure evidence. |
 | P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1673](../tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
+| P0 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md): Operator quickstart parent toolchain propagation repair | Unclaimed | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
 
 ### Blocked (3)
 
@@ -3294,9 +3313,3 @@ flowchart LR
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
 | P0 | [AR-1640](../tasks/AR-1640.md): TUI nested-build linker contract | Unclaimed | Make TUI consume ASB&#x27;s bounded auxiliary-linker contract for nested builds with private tools and no ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
-| P0 | [AR-1641](../tasks/AR-1641.md): Setup agent selection and defaults | Unclaimed | Allow first-time setup to select coding agents and persist shared provider/model defaults. | No further action; paired ASB agent-selection implementation is merged and reviewed. |
-| P0 | [AR-1642](../tasks/AR-1642.md): Development credential setup | Unclaimed | Provide a simple, redacted, non-blocking provider API-key setup path for development mode. | No further action; merged ASB PR #443 and independent secrecy review passed. |
-| P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | PR #266 repair head 4904188 awaits fresh hosted checks and independent review; resolve findings, merge protected, then watch exact-main post-merge checks. |
-| P0 | [AR-1644](../tasks/AR-1644.md): TUI terminal launch preflight | Unclaimed | Make TUI terminal selection/preflight clear and runnable for a fresh user while preserving the PTY contract. | No further action; merged TUI PR #223 and hosted PTY/UI-quality checks are green. |
-| P0 | [AR-1645](../tasks/AR-1645.md): Setup-to-runtime configuration bridge | Unclaimed | Make persisted setup selections directly drive benchmark planning and execution. | No further action; paired ASB setup-to-plan/run bridge is merged and reviewed. |
-| P0 | [AR-1646](../tasks/AR-1646.md): Development capture and replay route | Unclaimed | Coordinate a bounded development route for workload capture, sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths satisfy the scoped capture, sealing, and strict offline replay contract. |
