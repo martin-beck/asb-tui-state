@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1728",
+  "result": "pass",
+  "scope": "immutable taiki-e/install-action pin replacement",
+  "product_repository": "martin-beck/asb-tui",
+  "reviewed_candidate": {
+    "pull_request": 295,
+    "base_commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "head_commit": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
+    "tree": "6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b",
+    "diff": "one immutable SHA line in .github/workflows/trusted-main.yml",
+    "ssh_signature": "valid",
+    "dco": "pass",
+    "independent_review": "approved with no findings"
+  },
+  "pin": {
+    "upstream_repository": "taiki-e/install-action",
+    "old_commit": "4076c08d76dba979c11a7285295b0716c1d67908",
+    "old_tag": "v2.87.15",
+    "new_commit": "83ac0ad63c0167e6f06796fab0fce28db1bf3db0",
+    "new_tag": "v2.87.22",
+    "tag_kind": "unsigned lightweight",
+    "review_result": "action.yml, main.sh, and cargo-audit, cargo-deny, and cargo-llvm-cov manifests are byte-identical; only changelog and unrelated manifests changed"
+  },
+  "local_gates": {
+    "full_locked_rust": "pass",
+    "line_coverage_percent": 90.10,
+    "cargo_deny": "pass",
+    "cargo_audit": "pass",
+    "actionlint": "pass",
+    "zizmor": "pass",
+    "gitleaks": "pass",
+    "workflow_shell_model_tutorial_fixture_privacy": "pass",
+    "clean_tree": "pass"
+  },
+  "candidate_ci": [
+    {
+      "run_id": 37859387047,
+      "workflow": "Repository quality",
+      "head": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 37859387230,
+      "workflow": "AWQ shadow observation",
+      "head": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
+      "conclusion": "success"
+    }
+  ],
+  "integration": {
+    "merge_commit": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+    "merge_tree": "6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b",
+    "first_parent": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "second_parent": "4a7fda9eda8b6f2a792972ed962892f3ac8a88eb",
+    "ssh_signature": "valid",
+    "pull_request_state": "merged"
+  },
+  "post_merge_ci": [
+    {
+      "run_id": 37860121374,
+      "workflow": "Repository quality",
+      "head": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 37860121369,
+      "workflow": "Trusted main verification",
+      "head": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+      "conclusion": "success"
+    }
+  ],
+  "superseded_pull_request": {
+    "pull_request": 288,
+    "state": "closed",
+    "merged": false,
+    "disposition": "Dependabot automatically closed it as no longer needed after the replacement reached main"
+  },
+  "privacy": {
+    "credentials": false,
+    "private_paths": false,
+    "raw_logs": false
+  }
+}
