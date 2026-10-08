@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. | codex-ar1724-rustup-layout-20261008 |
+| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Await independent review and hosted checks for PR #293 at exact signed head 2f8c9a821e1b23e20a23562f524eba2e0c698e54; author must not self-merge. | codex-ar1724-rustup-layout-20261008 |
 
 ## Blocked
 

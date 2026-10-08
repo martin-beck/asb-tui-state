@@ -8,16 +8,16 @@
     "AR-1723"
   ],
   "id": "AR-1724",
-  "next_action": "Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey.",
+  "next_action": "Await independent review and hosted checks for PR #293 at exact signed head 2f8c9a821e1b23e20a23562f524eba2e0c698e54; author must not self-merge.",
   "owner": "codex-ar1724-rustup-layout-20261008",
   "plan": "../plans/AR-1724-trusted-user-rustup-layout.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T08:58:31+00:00",
+  "updated_at": "2026-10-08T08:58:44+00:00",
   "worktree_key": ""
 }
 ---
@@ -144,3 +144,8 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 
 - 2026-10-08T08:58:31+00:00: Recorded command exit 0; command argv SHA-256
   6d9217d60161bc0bc1fbf4e7a26b3155c558515bac748df0478c063c6cb0b7a5.
+
+- 2026-10-08T08:58:44+00:00: Implemented TUI-only bounded owner Rustup layout acceptance with
+  descriptor-bound Cargo/Rustc, persistent warning, hostile-path tests, legacy compatibility, and
+  detached wrapper ref forwarding. Full locked suite and exact candidate host/fresh-user journey
+  pass; PR #293 opened.
