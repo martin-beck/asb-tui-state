@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 so authenticated teardown covers resistant descendants that create a new session without targeting ambient children; add exact no-survivor and subreaper-restoration regressions, then obtain another independent exact-head review. | codex-ar1721-pr287-rereview3-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 so authenticated teardown covers resistant descendants that create a new session without targeting ambient children; add exact no-survivor and subreaper-restoration regressions, then obtain another independent exact-head review. | - |
 
 ## Blocked
 
