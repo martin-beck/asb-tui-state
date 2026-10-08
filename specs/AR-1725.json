@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1725.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "parent-toolchain-propagation",
+      "description": "The operator runner resolves candidate Cargo and Rustup inputs before replacing HOME and forwards them through the parent ASB development variable names without hard-coded host paths."
+    },
+    {
+      "id": "validation-authority",
+      "description": "ASB remains the authoritative validator; missing, relative, symlinked, wrongly owned, writable, inconsistent, or substituted candidates fail with typed diagnostics before TUI execution."
+    },
+    {
+      "id": "isolated-home-regression",
+      "description": "The documented runner succeeds with an isolated HOME and no externally supplied parent toolchain overrides, while deterministic focused positive and negative fixtures pass."
+    },
+    {
+      "id": "complete-public-journey",
+      "description": "Exact paired heads pass bundle install, bare controlling-PTY launch, selection-driven setup and benchmark, selected/all recording, strict network-denied replay, comparison, analysis, and cleanup without credentials."
+    },
+    {
+      "id": "privacy-review-and-ci",
+      "description": "Evidence is exact and privacy-safe, independent exact-head review passes, the reviewed tree merges, and exact-main required CI is terminal green."
+    }
+  ],
+  "inputs": [
+    {
+      "id": "ar1575-default-reproduction",
+      "description": "At exact ASB fd956d857970f039db0a4aad03c9e15e59b13da6 and TUI 50acbc4af69480b7fbd34db19520a96ce1190a67, the unmodified documented runner returns trusted_tool_unavailable after replacing HOME."
+    },
+    {
+      "id": "ar1575-control",
+      "description": "The identical gate passes bare PTY launch and all four journey suites when validated ASB_DEV_CARGO and ASB_DEV_RUSTUP_HOME candidates are supplied; receipt SHA-256 is 48903d51c51a418ec910dea9f09e348febd460802285bbb5952fc8c20b84faef."
+    }
+  ]
+}
+

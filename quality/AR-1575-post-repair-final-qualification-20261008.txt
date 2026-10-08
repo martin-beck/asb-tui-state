@@ -1,0 +1,48 @@
+AR-1575 exact paired post-repair qualification receipt
+Date: 2026-10-08
+Classification: development-only, credential-free; no production or live-provider claim
+
+Exact source identities
+- ASB commit: fd956d857970f039db0a4aad03c9e15e59b13da6
+- ASB tree: 8369576975cdef8cac0619f85efcf93c3336e8a3
+- asb-tui commit: 50acbc4af69480b7fbd34db19520a96ce1190a67
+- asb-tui tree: c3bece7a5e4b74b68026bf905cde2f8962951519
+- ASB AR-1737 merge 9aeea48c40417108b95c0a2743b2d4b3220f56bd is an ancestor.
+- TUI AR-1654 and its controlling-PTY repair are done and are ancestors of the TUI head.
+
+Passing evidence
+- Normal auto-detected Rustup source materialization passed through
+  `asb tui install --channel dev --json`; no Cargo or Rustup override was used.
+- The materialized executable SHA-256 was
+  2ec5b8d23a223972dd4a207b0de0c8d62343459a16a427f4e3401bf351e297a4.
+- Offline status returned `development_installed`; offline doctor returned
+  `development_verified`; same-head upgrade passed and reproduced the same
+  executable digest.
+- Removal succeeded, and an omitted-channel repeated removal returned the
+  stable typed `extension_not_installed` result without network use.
+- The exact private development bundle executable SHA-256 was
+  4bc8df2afd66333238c91129eaaca7f378bc1955cc13c86ba0f406edf030a756.
+- With validated explicit parent ASB Cargo/Rustup candidates, the documented
+  operator gate passed bundle install, bare `asb tui`, real 80x24 controlling
+  foreground PTY quit, provider lifecycle, setup/recording, development
+  journey, and end-to-end qualification. Benchmark and replay network were
+  denied, credentials were absent, and the receipt SHA-256 was
+  48903d51c51a418ec910dea9f09e348febd460802285bbb5952fc8c20b84faef.
+
+Remaining exact-head blocker
+- The unmodified documented `tools/run-operator-quickstart.py` replaces HOME
+  with a disposable root and forwards only child-facing
+  `ASB_TUI_DEV_RUSTUP_HOME`. The parent ASB router resolves
+  `ASB_DEV_CARGO`/`ASB_DEV_RUSTUP_HOME`, so bare launch stops before TUI
+  execution with typed `trusted_tool_unavailable`.
+- The passing controlled rerun proves that the installed runtime, PTY handoff,
+  wizard, benchmark, offline replay, and comparison are healthy. AR-1725 owns
+  the narrow TUI qualification-runner environment propagation repair and its
+  isolated-HOME/hostile-input regressions.
+
+Conclusion
+- ASB AR-1737 repaired real source materialization and TUI AR-1654 repaired
+  the runtime PTY path. AR-1575 remains blocked only on AR-1725 so the
+  documented no-extra-override gate itself proves the complete public journey.
+- Authentication, signatures, key management, and provider credentials are
+  warning-only and are not blockers.
