@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T14:21:20+00:00",
+  "updated_at": "2026-10-08T14:21:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -73,3 +73,6 @@ AR-1725 and Coordinator AR-0085 evidence. Then claim and requalify AR-1575
 normally. AR-1727 is not permission to change either product repository.
 
 - 2026-10-08T14:21:20+00:00: Claimed by codex-asb-tui-ar1727-unblock-vendor.
+
+- 2026-10-08T14:21:34+00:00: Recorded command exit 0; command argv SHA-256
+  46e5ebc51274802d780cef91b85f09529bded8a814967f1dd9ab78f27b96ca01.
