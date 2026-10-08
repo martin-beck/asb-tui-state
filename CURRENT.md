@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 after review 5450556752: preserve bounded authenticated fixture-lineage containment when the supervisor is stopped or stalled during post-SCM_RIGHTS startup failure and teardown; add TERM/HUP-resistant startup and teardown regressions under both incoming parent subreaper states proving no supervisor, fixture process, or descriptor survivor, then publish signed+DCO head for fresh independent exact-head review. | - |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Repair PR #287 after review 5450556752: preserve bounded authenticated fixture-lineage containment when the supervisor is stopped or stalled during post-SCM_RIGHTS startup failure and teardown; add TERM/HUP-resistant startup and teardown regressions under both incoming parent subreaper states proving no supervisor, fixture process, or descriptor survivor, then publish signed+DCO head for fresh independent exact-head review. | codex-ar1721-pr287-repair9-20261008 |
 
 ## Blocked
 
