@@ -1,0 +1,82 @@
+{
+  "ar": "AR-1727",
+  "classification": "development-vendor-qualification",
+  "coordinator_vendor": {
+    "candidate_provenance": {
+      "commit": "f003d25e1ff99f30c24853553d1d72ebf0211657",
+      "manifest_sha256": "97a8717255cbefe0e866106685548cb3a6b53cfdb2dfc22d139e5a961233707a"
+    },
+    "channel": "development",
+    "files": 68,
+    "manifest_sha256": "d210d9a1b54cedafa1b721718f6661cf46d87d54757186d26a8fc11868ab2d43",
+    "merge_commit": "e863b57edc7f7a21b2aff2c7b45ce226e12637d2",
+    "tree": "eee603591b917eeca244425559d7c67bb88a7268",
+    "version": "v0.3.57"
+  },
+  "formal": {
+    "classification": "diagnostic-private-admission",
+    "non_claim": "Local private-admission results are noncanonical and do not replace hosted publication evidence.",
+    "portable_smoke": {
+      "models": 1,
+      "receipt_sha256": "a3de5631f3bbafb47ef864254c99ba8e4fcf9ac389ce88655d7ecfc16f7b1c5a",
+      "result": "success"
+    },
+    "pr_publication": {
+      "models": 6,
+      "receipt_sha256": "3ab26b8741e7de3ff80eda3a39850747c4e698695754c4634e9be245fdf7afb0",
+      "result": "success"
+    }
+  },
+  "gates": {
+    "generated_views": "passed",
+    "headers": "passed",
+    "live_doctor": "passed",
+    "privacy_scan": "passed",
+    "state_tests": {
+      "passed": 200,
+      "total": 200
+    },
+    "vendor_integrity": "68 Git blobs, SHA-256 digests, source paths, and modes match the exact merge tree"
+  },
+  "hosted": {
+    "accepted_exact_head_run": 37802402135,
+    "result": "success"
+  },
+  "invariants": {
+    "ar1575_fixture": "immutable blocked revision 74 task and session blobs",
+    "ar1575_live_descendant": "validated without transient status or revision pinning",
+    "external_unblock_then_claim": true,
+    "hostile_resume_and_unblock": [
+      "duplicate-current-revision",
+      "wrong-task-identity",
+      "nested-status-mismatch",
+      "nested-revision-mismatch",
+      "missing-pause",
+      "stale-revision",
+      "active-owner",
+      "active-lease"
+    ],
+    "pause_and_external_block_modes_disjoint": true,
+    "project_binding_backend_profile_unchanged": true,
+    "supersession_and_terminal_lifecycle_preserved": true
+  },
+  "privacy": {
+    "credentials": "none",
+    "private_paths": "none",
+    "raw_logs": "none"
+  },
+  "product_changes": {
+    "agent-systems-benchmark": false,
+    "asb-tui": false
+  },
+  "review": {
+    "exact_head": "37b8a1abef596c3ff1cea950bb256843d1be01c0",
+    "result": "approved-no-findings",
+    "tree": "20c2d31a7b4e799dba4a52740b94ae97348223c6"
+  },
+  "schema_version": 1,
+  "spec": {
+    "ref": "specs/AR-1727.json",
+    "revision": 2
+  }
+}
