@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 156 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 170 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 4 |
-| Blocked | 3 |
+| Open or active | 3 |
+| Blocked | 4 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 170 | 4 | 3 | 156 |
+| unassigned | unassigned | 170 | 3 | 4 | 156 |
 
 ## Task drill-down
 
@@ -674,11 +674,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1575-final-qualification |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
@@ -2488,7 +2488,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - In progress"]:::status_in_progress
+        AR_1575["AR-1575 - Blocked"]:::status_blocked
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -3184,11 +3184,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-final-qualification | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
 | P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
 
 ### Open (2)
@@ -3198,12 +3197,13 @@ flowchart LR
 | P0 | [AR-1673](../tasks/AR-1673.md): Paired TUI launch diagnostics consumption | Unclaimed | Consume the ASB launch-diagnostics repair and verify the installed TUI preserves development-channel identity and warning-only diagnostics. | After the ASB launch repair is released, run installed PTY and JSON launch negatives against exact paired heads and attach the receipt. |
 | P0 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md): Operator quickstart parent toolchain propagation repair | Unclaimed | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
 
-### Blocked (3)
+### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](../tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](../tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for TUI AR-1725 to repair the documented operator runner parent ASB toolchain propagation under isolated HOME; then rerun the no-extra-override exact paired gate and release only if every public journey stage passes. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
 ### Planned (5)
