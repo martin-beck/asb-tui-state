@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Await external ASB AR-1719 implementation and exact-head provider-catalog evidence, plus local AR-1713 readiness; then promote the paired v1.15 ControlServer catalog bridge. | - |
+| P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Await external ASB AR-1719 implementation and exact-head provider-catalog evidence, plus local AR-1713 readiness; then promote the paired v1.15 ControlServer catalog bridge. | codex-ar1720-existing-main-audit-20261008 |
 
 ## Blocked
 
