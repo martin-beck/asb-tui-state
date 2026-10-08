@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1345",
+  "result": "superseded",
+  "superseded_by": "AR-1575",
+  "primary_evidence": {
+    "ar": "AR-1575",
+    "status": "done",
+    "receipt": "quality/AR-1575-final-qualification-20261009.json",
+    "sha256": "67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f",
+    "accepted_state_commit": "371755bf4deae427fb4917cedc7e931ba2f4f6a3",
+    "accepted_state_tree": "124f19750824c39d0242bfe07026e880c67ae50b"
+  },
+  "corroborating_evidence": {
+    "ar": "AR-1703",
+    "status": "done",
+    "receipt": "quality/AR-1703-top-level-clean-room-qualification-20261009.json",
+    "sha256": "98ff279cc7bde587812d1eba92c98e385033d69f190cf42c588ad5485d6250b2",
+    "coverage": "literal asb tui install and bare asb tui foreground controlling-PTY command boundary plus complete downstream journey"
+  },
+  "qualified_products": {
+    "asb_commit": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
+    "asb_tree": "40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde",
+    "tui_commit": "168ea56a1e3724bc72f097ffedf91c80704a72c2",
+    "tui_tree": "b57c21fdf90404cc8a743e389ea1e2cd8528cfa7"
+  },
+  "predicate_coverage": [
+    "fresh no-override development materialization",
+    "status, doctor, upgrade and removal lifecycle",
+    "real broker SCM_RIGHTS and controlling-PTY handoff",
+    "typed missing, malformed, stale and unsupported identity failures",
+    "strict offline replay and no-credential operation",
+    "privacy, cleanup and independent acceptance"
+  ],
+  "obsolete_blocker": {
+    "historical": "trusted_tool_unavailable for group-writable rustup layout",
+    "repair": "bounded conventional Rustup/Cargo resolver with hostile-path and object-binding tests",
+    "qualification": "AR-1575 source materialization passed without caller-supplied development toolchain override"
+  },
+  "current_tui_descendant": {
+    "commit": "f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d",
+    "tree": "6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b",
+    "delta": "independently reviewed immutable workflow action pin only",
+    "repository_quality_run": 37860121374,
+    "trusted_main_run": 37860121369,
+    "conclusion": "success"
+  },
+  "independent_review": {
+    "result": "approve_supersession",
+    "finding_count": 0,
+    "formal_successor": "AR-1575"
+  },
+  "boundary": {
+    "classification": "development/mock",
+    "production_release_claim": false,
+    "credentials": false,
+    "private_paths": false,
+    "raw_logs": false
+  }
+}
