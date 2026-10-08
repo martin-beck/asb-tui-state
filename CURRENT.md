@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain fresh independent exact-head review and terminal-green hosted checks for PR #290 at e183cd0; repair any findings, then hand off to the coordinator for signed integration and exact-main post-merge assurance. | - |
+| P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Obtain fresh independent exact-head review and terminal-green hosted checks for PR #290 at e183cd0; repair any findings, then hand off to the coordinator for signed integration and exact-main post-merge assurance. | codex-ar1654-pr290-review-20261008 |
 
 ## Blocked
 
