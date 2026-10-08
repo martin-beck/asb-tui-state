@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**167 ARs tracked** across 5 active status categories.
+**168 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 153 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -213,6 +213,7 @@ flowchart LR
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - In progress"]:::status_in_progress
+        AR_1723["AR-1723 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -525,6 +526,7 @@ flowchart LR
     AR_1667 --> AR_1668
     AR_1667 --> AR_1672
     AR_1667 --> AR_1673
+    AR_1668 --> AR_1723
     AR_1672 --> AR_1673
     AR_1672 --> AR_1686
     AR_1674 --> AR_1675
@@ -581,9 +583,11 @@ flowchart LR
     AR_1706 --> AR_1703
     AR_1706 --> AR_1707
     AR_1707 --> AR_1708
+    AR_1707 --> AR_1723
     AR_1708 --> AR_1713
     AR_1713 --> AR_1714
     AR_1713 --> AR_1720
+    AR_1720 --> AR_1723
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -730,7 +734,7 @@ flowchart LR
 | [AR-1665](tasks/AR-1665.md) | [AR-1661](tasks/AR-1661.md), [AR-1662](tasks/AR-1662.md), [AR-1664](tasks/AR-1664.md) | [AR-1666](tasks/AR-1666.md), [AR-1685](tasks/AR-1685.md) |
 | [AR-1666](tasks/AR-1666.md) | [AR-1664](tasks/AR-1664.md), [AR-1665](tasks/AR-1665.md) | [AR-1667](tasks/AR-1667.md) |
 | [AR-1667](tasks/AR-1667.md) | [AR-1655](tasks/AR-1655.md), [AR-1658](tasks/AR-1658.md), [AR-1659](tasks/AR-1659.md), [AR-1660](tasks/AR-1660.md), [AR-1666](tasks/AR-1666.md) | [AR-1668](tasks/AR-1668.md), [AR-1672](tasks/AR-1672.md), [AR-1673](tasks/AR-1673.md) |
-| [AR-1668](tasks/AR-1668.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md) | None |
+| [AR-1668](tasks/AR-1668.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md) | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1672](tasks/AR-1672.md) | [AR-1660](tasks/AR-1660.md), [AR-1667](tasks/AR-1667.md) | [AR-1673](tasks/AR-1673.md), [AR-1686](tasks/AR-1686.md) |
 | [AR-1673](tasks/AR-1673.md) | [AR-1667](tasks/AR-1667.md), [AR-1672](tasks/AR-1672.md) | None |
 | [AR-1674](tasks/AR-1674.md) | [AR-1658](tasks/AR-1658.md), [AR-1659](tasks/AR-1659.md) | [AR-1675](tasks/AR-1675.md), [AR-1676](tasks/AR-1676.md), [AR-1690](tasks/AR-1690.md) |
@@ -758,13 +762,14 @@ flowchart LR
 | [AR-1704](tasks/AR-1704.md) | [AR-1696](tasks/AR-1696.md), [AR-1700](tasks/AR-1700.md) | [AR-1707](tasks/AR-1707.md) |
 | [AR-1705](tasks/AR-1705.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | None |
 | [AR-1706](tasks/AR-1706.md) | [AR-1701](tasks/AR-1701.md), [AR-1702](tasks/AR-1702.md) | [AR-1703](tasks/AR-1703.md), [AR-1707](tasks/AR-1707.md) |
-| [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md) |
+| [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md), [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | [AR-1713](tasks/AR-1713.md) |
 | [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | [AR-1714](tasks/AR-1714.md), [AR-1720](tasks/AR-1720.md) |
 | [AR-1714](tasks/AR-1714.md) | [AR-1575](tasks/AR-1575.md), [AR-1703](tasks/AR-1703.md), [AR-1713](tasks/AR-1713.md) | None |
-| [AR-1720](tasks/AR-1720.md) | [AR-1713](tasks/AR-1713.md) | None |
+| [AR-1720](tasks/AR-1720.md) | [AR-1713](tasks/AR-1713.md) | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1721](tasks/AR-1721.md) | [AR-1653](tasks/AR-1653.md) | None |
 | [AR-1722](tasks/AR-1722.md) | [AR-0002](tasks/AR-0002.md) | None |
+| [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](tasks/AR-1668.md), [AR-1707](tasks/AR-1707.md), [AR-1720](tasks/AR-1720.md) | None |
 
 ## Complete AR inventory
 
@@ -784,7 +789,7 @@ flowchart LR
 | P0 | [AR-1597](tasks/AR-1597.md): Fresh-user development qualification | Unclaimed | Prove a fresh user can install, configure, benchmark, replay offline, and compare through the TUI. | Execute and independently verify the disposable default-dev install-to-comparison journey. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (6)
+### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -794,6 +799,7 @@ flowchart LR
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
+| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | Unclaimed | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Promote immediately; implement bounded controls, formal-model and help parity, and an authoritative zero-free-form action-count regression, then requalify AR-1597. |
 
 ### Done (153)
 
