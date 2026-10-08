@@ -163,8 +163,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1721-integration` | `integration/ar-1721-pr287` | `69f0584cee27` | 0 | behind 19, ahead 0 |
 | `asb-tui-ar1721-pr287-rereview4` | `DETACHED` | `7369a56db8ae` | 0 | behind 24, ahead 0 |
 | `asb-tui-ar1721-pty-runner` | `repair/ar-1721-operator-quickstart-controlling-pty` | `d8a02d0eafdd` | 0 | behind 20, ahead 0 |
-| `asb-tui-ar1721-route-repair-20261009` | `repair/ar-1721-route-plumbing` | `218735341aeb` | 8 | behind 2, ahead 1 |
-| changed files | - | - | - | `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/control_transport.rs`, `src/main.rs`, `src/runtime.rs`, `src/ui.rs`, `tests/formal_state.rs` |
+| `asb-tui-ar1721-route-repair-20261009` | `repair/ar-1721-route-plumbing` | `7c69b415563a` | 0 | behind 2, ahead 2 |
 | `asb-tui-ar1723-integration-20261008` | `DETACHED` | `1b8f4374bd5b` | 0 | behind 9, ahead 0 |
 | `asb-tui-ar1723-low-typing-20261008` | `feature/ar1723-low-typing` | `0b2012d1252a` | 0 | behind 10, ahead 0 |
 | `asb-tui-ar1724-integration-20261008` | `DETACHED` | `50acbc4af694` | 0 | behind 4, ahead 0 |
