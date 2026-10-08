@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1727.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "official-development-vendor",
+      "description": "The complete vendor set is synchronized by the official development path from exact Coordinator commit ee68fbd31ef5564586e4e81297a175abcaa49c6d and tree 77803e514ec9384ec623b5b65deb5356165981ad."
+    },
+    {
+      "id": "external-unblock",
+      "description": "An exact-revision unowned externally blocked task reopens without fabricated pause history and can subsequently be claimed."
+    },
+    {
+      "id": "pause-isolation",
+      "description": "Genuine paused tasks remain session-bound to resume, while cross-mode, malformed, duplicate, stale, active, and ambiguous provenance fails closed."
+    },
+    {
+      "id": "project-integrity",
+      "description": "Binding, backend, profile, supersession, lifecycle phase, generated views, privacy, and live state remain valid without product changes."
+    },
+    {
+      "id": "review-and-hosted",
+      "description": "Independent exact-head review and accepted plus post-release hosted Coordination verification pass."
+    }
+  ],
+  "definition_of_done": [
+    "Exact upstream commit/tree and complete development vendor manifest identity are recorded and mechanically verified.",
+    "External unblock, pause isolation, hostile provenance, supersession, and lifecycle profile tests pass with applicable formal evidence.",
+    "Independent review, hosted Coordination verification, reconciliation, snapshot, and live doctor pass before and after release."
+  ],
+  "inputs": [
+    {
+      "id": "coordinator-ar0085",
+      "description": "Merged and exact-main verified Coordinator AR-0085 implementation at ee68fbd31ef5564586e4e81297a175abcaa49c6d."
+    },
+    {
+      "id": "release-blocked-ar1575",
+      "description": "Unowned AR-1575 blocked at an exact revision after its external repair dependency completed."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "vendor-upgrade",
+      "description": "Verified development-classified Coordinator vendor manifest and complete synchronized file set."
+    },
+    {
+      "id": "unblock-readiness",
+      "description": "Reviewed evidence that AR-1575 can be reopened through the supported exact-revision command."
+    }
+  ],
+  "allowed_tools": [
+    "git",
+    "gh",
+    "python",
+    "tools/handoffctl",
+    "tools/handoffctl_vendor.py",
+    "upstream-tools/vendor.py"
+  ],
+  "forbidden_tools": [
+    "direct-vendored-file-patch",
+    "direct-task-edit",
+    "fabricated-session-record",
+    "product-code",
+    "dependency-bypass"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "environmental"
+  ],
+  "gates": [
+    {
+      "id": "vendor-integrity",
+      "description": "All synchronized bytes, modes, hashes, source paths, version fields, and manifest digest match the exact upstream Git tree."
+    },
+    {
+      "id": "lifecycle-integrity",
+      "description": "External unblock and pause resume remain distinct, exact, concurrent-safe, and fail-closed."
+    },
+    {
+      "id": "downstream-integrity",
+      "description": "Supersession, terminal lifecycle, binding/backend/profile, privacy, generated views, and live doctor remain valid."
+    },
+    {
+      "id": "hosted",
+      "description": "Independent review and exact accepted/post-release hosted Coordination verification succeed."
+    }
+  ]
+}
