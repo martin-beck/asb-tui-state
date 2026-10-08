@@ -8,13 +8,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Use the ASB plan-create path in the paired TUI acceptance journey and record exact-head positive and stale-identity evidence. | codex-tui-ar1686-consumer-20261009 |
+| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. | codex-tui-ar1729-fast-exit-20261009 |
 | P1 | [AR-1728](tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Obtain independent defect-first review of PR #295 exact head 4a7fda9eda8b6f2a792972ed962892f3ac8a88eb tree 6cac9a3eee931f4df51e3d1a9ea3f7520d2fbd0b, require exact-head Repository Quality and AWQ observation success, then merge only the reviewed tree, verify both exact-main workflows, and close PR #288 as superseded. | codex-tui-ar1728-action-pin-20261009 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Claim in an isolated exact-main worktree, reproduce the child-exit-before-identity/foreground-observation interleaving deterministically, repair the runner and focused tests, then publish a signed+DCO PR for independent review. | - |
 
 ## Blocked
 
