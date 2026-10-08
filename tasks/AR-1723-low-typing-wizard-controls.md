@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Replace wizard free-form setup with bounded controls",
-  "updated_at": "2026-10-08T07:37:35+00:00",
+  "updated_at": "2026-10-08T07:37:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -40,3 +40,6 @@ never block local or deterministic qualification.
   reviewed AR-1597 evidence requires bounded controls and an action-count regression.
 
 - 2026-10-08T07:37:35+00:00: Claimed by codex-ar1723-low-typing-20261008.
+
+- 2026-10-08T07:37:42+00:00: Recorded command exit 0; command argv SHA-256
+  9d4fb1971e8537df234621ae98ef5afd37bdcac53f8a96b0683427969d8df36e.
