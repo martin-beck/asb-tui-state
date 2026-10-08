@@ -8,16 +8,16 @@
     "AR-1723"
   ],
   "id": "AR-1724",
-  "next_action": "Await independent review and hosted checks for PR #293 at exact signed head 2f8c9a821e1b23e20a23562f524eba2e0c698e54; author must not self-merge.",
+  "next_action": "Independent review approved exact signed head e54495471536af6a583c81b2414b059d0a0f72a6; await green hosted Repository Quality and AWQ checks, then parent merge authority may integrate. Author must not self-merge.",
   "owner": "codex-ar1724-rustup-layout-20261008",
   "plan": "../plans/AR-1724-trusted-user-rustup-layout.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T09:14:29+00:00",
+  "updated_at": "2026-10-08T09:14:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -275,3 +275,8 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 
 - 2026-10-08T09:14:29+00:00: Recorded command exit 0; command argv SHA-256
   f7ce080583c208762870a6502d7c5ba01e2ba7e66b78bf98cdd0b35a8d6d79af.
+
+- 2026-10-08T09:14:46+00:00: Independent reviewer found and verified repairs for shim-only warning
+  propagation and second-pass Rustup path fallback. Exact final head/tree
+  e54495471536af6a583c81b2414b059d0a0f72a6/c3bece7a5e4b74b68026bf905cde2f8962951519 approved with no
+  P0/P1/P2; full independent 385-test validation passed. Hosted checks remain in progress.
