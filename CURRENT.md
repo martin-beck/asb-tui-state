@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Obtain independent exact-head review of PR 292 at 0b2012d1252a4e97c586a029e25ad0f003db3d99, watch required hosted checks, repair any findings, and do not self-merge. | codex-ar1723-low-typing-20261008 |
+| P0 | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md): Replace wizard free-form setup with bounded controls | Make the supported fresh-user wizard path use bounded selections and safe defaults instead of free-form configuration, credential-reference, recording-mode, and replay-policy entry. | Wait for both required hosted PR 292 checks to complete successfully; repair any hosted failure, then hand merge authority to the parent coordinator because this worker must not self-merge. | codex-ar1723-low-typing-20261008 |
 
 ## Blocked
 
