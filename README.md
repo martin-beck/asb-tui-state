@@ -4,7 +4,8 @@ This public repository is the Git-authoritative coordination state for
 [`martin-beck/asb-tui`](https://github.com/martin-beck/asb-tui).
 
 It currently vendors the exact `agent-workflow-coordinator` development commit
-`c2eb41879be4f2d50c6b5650e82339e10d5961d8` through the upstream
+`e863b57edc7f7a21b2aff2c7b45ce226e12637d2` and tree
+`eee603591b917eeca244425559d7c67bb88a7268` through the upstream
 `sync-development` path and deliberately selects the tracked Markdown/Git backend. The schema-v2
 manifest is development evidence, not release evidence. This state repository does not use or
 create a SQLite authority database.

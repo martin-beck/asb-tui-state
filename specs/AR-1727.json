@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
     {
       "id": "official-development-vendor",
-      "description": "The complete vendor set is synchronized by the official development path from exact Coordinator commit ee68fbd31ef5564586e4e81297a175abcaa49c6d and tree 77803e514ec9384ec623b5b65deb5356165981ad."
+      "description": "The complete 68-file vendor set is synchronized by the official development path from merged Coordinator commit e863b57edc7f7a21b2aff2c7b45ce226e12637d2, tree eee603591b917eeca244425559d7c67bb88a7268, and schema-v2 manifest SHA-256 d210d9a1b54cedafa1b721718f6661cf46d87d54757186d26a8fc11868ab2d43. Reviewed topic commit f003d25e1ff99f30c24853553d1d72ebf0211657 and manifest SHA-256 97a8717255cbefe0e866106685548cb3a6b53cfdb2dfc22d139e5a961233707a are candidate provenance only."
     },
     {
       "id": "external-unblock",
@@ -32,7 +32,7 @@
   "inputs": [
     {
       "id": "coordinator-ar0085",
-      "description": "Merged and exact-main verified Coordinator AR-0085 implementation at ee68fbd31ef5564586e4e81297a175abcaa49c6d."
+      "description": "Merged and exact-main verified Coordinator AR-0085 plus AR-0086 implementation at e863b57edc7f7a21b2aff2c7b45ce226e12637d2, with postmerge Verify 37800348877 and Formal 37800348812 successful."
     },
     {
       "id": "release-blocked-ar1575",
