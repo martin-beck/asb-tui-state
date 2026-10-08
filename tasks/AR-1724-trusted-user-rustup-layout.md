@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T08:58:44+00:00",
+  "updated_at": "2026-10-08T08:58:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -149,3 +149,6 @@ warnings and never block local/mock execution. Do not modify ASB product code.
   descriptor-bound Cargo/Rustc, persistent warning, hostile-path tests, legacy compatibility, and
   detached wrapper ref forwarding. Full locked suite and exact candidate host/fresh-user journey
   pass; PR #293 opened.
+
+- 2026-10-08T08:58:54+00:00: Recorded command exit 0; command argv SHA-256
+  7e9a097df169bd1d040d17f89f79ec1f7d01625c542199b091f7a2e90defb19b.
