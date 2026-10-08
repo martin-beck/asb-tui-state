@@ -682,7 +682,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
-| Next action | Independent reviewer must verify exact paired identities, privacy-safe receipt quality/AR-1575-final-qualification-20261009.json, no-extra-override source lifecycle, operator and current-main receipt digests, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
+| Next action | Independent reviewer must verify corrected receipt quality/AR-1575-final-qualification-20261009.json at SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f, including exact paired identities, demonstrated focused TUI total 18, no-extra-override lifecycle, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
 
 ### AR-1579 — TUI development-channel lifecycle
 
@@ -3224,7 +3224,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify exact paired identities, privacy-safe receipt quality/AR-1575-final-qualification-20261009.json, no-extra-override source lifecycle, operator and current-main receipt digests, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Independent reviewer must verify corrected receipt quality/AR-1575-final-qualification-20261009.json at SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f, including exact paired identities, demonstrated focused TUI total 18, no-extra-override lifecycle, hosted exact-head CI, and deterministic state gates; release only after acceptance. |
 
 ### Blocked (3)
 
@@ -3339,4 +3339,3 @@ flowchart LR
 | P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |
-| P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Track TUI compatibility with ASB&#x27;s explicit auxiliary-linker resolution so cleared development installation can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
