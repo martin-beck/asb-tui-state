@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 4 active status categories.
+**166 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 151 |
+| **Done** | Accepted, integrated, and durably verified | 152 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -175,7 +175,7 @@ flowchart LR
         AR_1665["AR-1665 - Blocked"]:::status_blocked
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Done"]:::status_done
-        AR_1668["AR-1668 - In progress"]:::status_in_progress
+        AR_1668["AR-1668 - Done"]:::status_done
         AR_1672["AR-1672 - Planned"]:::status_planned
         AR_1673["AR-1673 - Planned"]:::status_planned
         AR_1674["AR-1674 - Done"]:::status_done
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-root-ar1668-integration-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Independent rereview must verify corrected signed receipt b9821c55de94462d8be0f6d8aa8f309e2d19314f (SHA-256 55868417ccea5f0cd7b28394efba5717d33d8f90cb3454d86c4c519432a0818b), removed AR-owned roots/worktrees, path-sanitized evidence, and resolved P1/P2 before done release. |
-
 ### Blocked (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -795,7 +789,7 @@ flowchart LR
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (151)
+### Done (152)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -913,6 +907,7 @@ flowchart LR
 | P0 | [AR-1661](tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed TUI coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 | P0 | [AR-1662](tasks/AR-1662.md): TUI coordinator validation and privacy-receipt repair | Unclaimed | Resolve the remaining fail-closed coordinator findings without weakening claims or privacy checks. | Reconcile the unclaimed active AR-1613 through supported coordinator operations and replace the historical absolute-path receipt with a privacy-safe equivalent preserving its digest/provenance semantics. |
 | P0 | [AR-1667](tasks/AR-1667.md): Paired dev release and downstream consumption qualification | Unclaimed | Consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. | Release done, then reconcile, snapshot, and run live coordinator doctor. |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | Unclaimed | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Independent rereview must verify corrected signed receipt b9821c55de94462d8be0f6d8aa8f309e2d19314f (SHA-256 55868417ccea5f0cd7b28394efba5717d33d8f90cb3454d86c4c519432a0818b), removed AR-owned roots/worktrees, path-sanitized evidence, and resolved P1/P2 before done release. |
 | P0 | [AR-1674](tasks/AR-1674.md): TUI channel selection and persisted default | Unclaimed | Expose a simple channel choice in the TUI, default it to dev, persist it for later runs, and show the resolved channel before setup or launch. | Release after exact current-main channel matrix evidence and doctor reconciliation. |
 | P0 | [AR-1675](tasks/AR-1675.md): TUI channel manifest consumption and diagnostics | Unclaimed | Consume the ASB channel manifest, show exact current-main provenance, and render stale or mismatched manifests with actionable diagnostics. | Bind the TUI materializer and launch handoff to the versioned ASB manifest and add valid, stale, digest-mismatch, and unavailable-channel fixtures. |
 | P0 | [AR-1676](tasks/AR-1676.md): TUI channel lifecycle compatibility runner | Unclaimed | Run the TUI channel matrix through install, restart, upgrade, rollback, launch, and remove against the paired ASB heads. | Release after independent receipt review and live doctor reconciliation. |
