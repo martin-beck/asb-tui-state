@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "task": "AR-1722",
+  "classification": "upstream_release_blocked",
+  "candidate": {
+    "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
+    "version": "v0.3.14",
+    "commit": "2666c9d7a56ce02340e1b4b09344a227936a34cf",
+    "official_sync_completed": true,
+    "vendor_verification": "passed",
+    "project_profile_unchanged": true,
+    "project_binding_unchanged": true,
+    "backend_selector_unchanged": true
+  },
+  "downstream_contract": {
+    "supersession_link": "AR-1672 -> AR-1668",
+    "successor_status": "done",
+    "dependent_task": "AR-1673",
+    "dependent_status": "planned_unowned",
+    "dependency_admission": "ready",
+    "valid_and_invalid_chain_tests": 4,
+    "valid_and_invalid_chain_tests_result": "passed"
+  },
+  "completed_gates": {
+    "complete_python_tests": {
+      "count": 121,
+      "result": "passed"
+    },
+    "source_header_files": {
+      "count": 19,
+      "result": "passed"
+    },
+    "vendor_manifest": "passed",
+    "diff_check": "passed"
+  },
+  "blocking_gate": {
+    "gate": "formal_pr_publication",
+    "classification": "official_vendor_runtime_incomplete",
+    "missing_manifest_entry": "tools/tlc_runner.py",
+    "finding": "The official vendor synchronizer omits a runner required by the synchronized formal verification script, so a clean offline downstream snapshot cannot execute its publication-tier formal gate.",
+    "downstream_patch_or_copy_used": false
+  },
+  "tag_audit": {
+    "range": "v0.3.14..v0.3.57",
+    "result": "no_official_tag_contains_complete_formal_runtime_closure",
+    "first_following_tag": {
+      "version": "v0.3.15",
+      "commit": "64b9842763e86a38c86b741137b290e57b19e6f9",
+      "official_sync_and_vendor_verification": "passed",
+      "standalone_formal_pr_publication": "failed_missing_runner"
+    }
+  },
+  "unreleased_upstream_repair": {
+    "commit": "9e6990d77fd54126ca9bfa8671319b785472c91e",
+    "pull_request": "https://github.com/martin-beck/agent-workflow-coordinator/pull/85",
+    "pull_request_state": "closed_unmerged",
+    "included_by_official_tag": false
+  },
+  "environment_observation": {
+    "classification": "canonical_formal_queue_permission_denied",
+    "scope": "separate from the vendor-completeness defect",
+    "private_diagnostic_queue_used": false,
+    "reason": "A private queue would be noncanonical diagnostic evidence and cannot replace publication evidence."
+  },
+  "required_resolution": "Publish an official signed coordinator tag whose vendor manifest contains the formal runner closure represented by commit 9e6990d77fd54126ca9bfa8671319b785472c91e or an equivalent reviewed repair, then resynchronize and rerun all downstream gates.",
+  "publication": {
+    "pull_request_created": false,
+    "merge_attempted": false,
+    "reason": "A candidate with a known failing required formal gate is not publishable."
+  }
+}
