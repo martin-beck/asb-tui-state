@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1726-supersession-profile-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:a18be10cc1484e13fb7e94562bf322e491d9a2f7f1523fe65267c2558943c3f2",
+    "evidence_ref": "quality/AR-1726-supersession-profile-lifecycle-20261008.json",
+    "spec_ref": "specs/AR-1726.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the supersession profile gate valid across AR-1673's dependency-ready, actively claimed, and accepted terminal lifecycle without weakening ownership or acceptance invariants.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Repair supersession profile lifecycle gate",
-  "updated_at": "2026-10-08T14:14:10+00:00",
+  "updated_at": "2026-10-08T14:14:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -99,3 +107,6 @@ synchronized, and no product repository was modified.
 
 - 2026-10-08T14:14:10+00:00: Recorded command exit 0; command argv SHA-256
   4b71a80d345f184777bd4921c6727398ba1e8285147993dc4dd37d445d14e3df.
+
+- 2026-10-08T14:14:32+00:00: Bound the privacy-safe exact-head lifecycle repair receipt and passing
+  spec revision 1 acceptance.
