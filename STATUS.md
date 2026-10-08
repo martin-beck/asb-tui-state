@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**168 ARs tracked** across 5 active status categories.
+**169 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 154 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -214,6 +214,7 @@ flowchart LR
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - Blocked"]:::status_blocked
         AR_1723["AR-1723 - Done"]:::status_done
+        AR_1724["AR-1724 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -587,7 +588,9 @@ flowchart LR
     AR_1708 --> AR_1713
     AR_1713 --> AR_1714
     AR_1713 --> AR_1720
+    AR_1714 --> AR_1724
     AR_1720 --> AR_1723
+    AR_1723 --> AR_1724
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -765,11 +768,12 @@ flowchart LR
 | [AR-1707](tasks/AR-1707.md) | [AR-1201](tasks/AR-1201-formal-ui-source-parity.md), [AR-1592](tasks/AR-1592.md), [AR-1704](tasks/AR-1704.md), [AR-1706](tasks/AR-1706.md) | [AR-1708](tasks/AR-1708.md), [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1708](tasks/AR-1708.md) | [AR-1702](tasks/AR-1702.md), [AR-1707](tasks/AR-1707.md) | [AR-1713](tasks/AR-1713.md) |
 | [AR-1713](tasks/AR-1713.md) | [AR-1708](tasks/AR-1708.md) | [AR-1714](tasks/AR-1714.md), [AR-1720](tasks/AR-1720.md) |
-| [AR-1714](tasks/AR-1714.md) | [AR-1575](tasks/AR-1575.md), [AR-1703](tasks/AR-1703.md), [AR-1713](tasks/AR-1713.md) | None |
+| [AR-1714](tasks/AR-1714.md) | [AR-1575](tasks/AR-1575.md), [AR-1703](tasks/AR-1703.md), [AR-1713](tasks/AR-1713.md) | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md) |
 | [AR-1720](tasks/AR-1720.md) | [AR-1713](tasks/AR-1713.md) | [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1721](tasks/AR-1721.md) | [AR-1653](tasks/AR-1653.md) | None |
 | [AR-1722](tasks/AR-1722.md) | [AR-0002](tasks/AR-0002.md) | None |
-| [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](tasks/AR-1668.md), [AR-1707](tasks/AR-1707.md), [AR-1720](tasks/AR-1720.md) | None |
+| [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](tasks/AR-1668.md), [AR-1707](tasks/AR-1707.md), [AR-1720](tasks/AR-1720.md) | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md) |
+| [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](tasks/AR-1714.md), [AR-1723](tasks/AR-1723-low-typing-wizard-controls.md) | None |
 
 ## Complete AR inventory
 
@@ -789,7 +793,7 @@ flowchart LR
 | P0 | [AR-1722](tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | Unclaimed | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (6)
+### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -799,6 +803,7 @@ flowchart LR
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
+| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Unclaimed | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Promote and repair TUI development Cargo discovery for the conventional owner-owned Rustup layout, then rerun the detached exact-main fresh-user journey. |
 
 ### Done (154)
 
