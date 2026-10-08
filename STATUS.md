@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 4 active status categories.
+**166 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 145 |
+| **Done** | Accepted, integrated, and durably verified | 146 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -211,7 +211,7 @@ flowchart LR
         AR_1713["AR-1713 - Blocked"]:::status_blocked
         AR_1714["AR-1714 - Done"]:::status_done
         AR_1720["AR-1720 - Planned"]:::status_planned
-        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Done"]:::status_done
     end
     AR_1192 --> AR_1195
     AR_1192 --> AR_1317
@@ -765,12 +765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | codex-root-ar1721-integration-20261008 | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. |
-
 ### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -801,7 +795,7 @@ flowchart LR
 | P0 | [AR-1703](tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 | P0 | [AR-1720](tasks/AR-1720.md): TUI ControlServer dynamic provider-catalog bridge | Unclaimed | Add the TUI side of the additive v1.15 ControlServer dynamic provider-catalog bridge, exposing ASB OpenRouter free-model catalog data to the wizard without fallback. | Await external ASB AR-1719 implementation and exact-head provider-catalog evidence, plus local AR-1713 readiness; then promote the paired v1.15 ControlServer catalog bridge. |
 
-### Done (145)
+### Done (146)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -939,6 +933,7 @@ flowchart LR
 | P0 | [AR-1707](tasks/AR-1707.md): Provisional revision and formal UI gate requalification | Unclaimed | Define and qualify TUI provisional/stale revision semantics and rerun the executable formal UI model/source-parity gate at current main. | PR #276 merged as 525c601f; after exact-main Trusted Main 37265424193 and Repository Quality 37265424191 finish green, record the formal-gate receipt and release AR-1707. |
 | P0 | [AR-1708](tasks/AR-1708.md): TUI authenticated cassette catalog and strict replay activation | Unclaimed | Activate the existing digest-only cassette catalog and strict offline replay client route during authenticated TUI bootstrap and selection-driven use. | Implementation merged as PR #275; claim after AR-1707 closes, then run exact-main installed &#96;asb tui install&#96; followed by bare &#96;asb tui&#96; qualification, verify catalog/replay request trace and post-merge hosted checks, then release this AR. |
 | P0 | [AR-1714](tasks/AR-1714.md): Validated development cargo/rustup shim install repair | Unclaimed | Repair and qualify the development cargo/rustup shim used by asb tui install, including hostile symlink rejection and the exact installed bare-TUI journey. | Release after exact installed-entrypoint and hostile shim evidence recorded at TUI head 5880ceb. |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Unclaimed | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Coordinator: locally integrate exact approved PR #287 head d8a02d0eafdd0defe2dd735d66ceb2862aa2666d into current main with a signed+DCO integration commit, rerun focused and full post-integration gates, push through the protected path, and require terminal-green exact-main Repository Quality and Trusted Main before releasing AR-1721; repair rather than merge if the tree or gates change. |
 | P1 | [AR-1198](tasks/AR-1198-help-catalog-ci-hardening.md): Contextual-help catalog CI hardening | Unclaimed | Make document-backed contextual help complete, meaningful, privacy-safe, and continuously enforced by CI. | Complete final cross-check of help catalog, UI module inventory, formal model, and UI_OWNERS; retain startup readiness/persistence and authenticated catalog/lifecycle blockers. |
 | P1 | [AR-1225](tasks/AR-1225-coverage-hardening-post-merge.md): Coverage hardening post-merge assurance | Unclaimed | Qualify asb-tui coverage hardening after merge. | Record the exact post-merge workflow run IDs and keep the task open if any required assurance is pending or fails. |
 | P1 | [AR-1227](tasks/AR-1227-formal-model-foundation-post-merge.md): Formal UI model foundation post-merge assurance | Unclaimed | Qualify the corrected formal UI model foundation after merge. | Record exact post-merge workflow evidence for corrected PR #70. |
