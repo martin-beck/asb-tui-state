@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Fresh independent exact-head review of PR #287 at 33f27e6c6ebbac84525c917736bb0e05e392ccce: verify the fixture-exclusive supervisor/subreaper boundary preserves post-boundary ambient double-fork daemons while killing immediate fixture double-fork+setsid descendants, retaining diagnostic-only depth/process exhaustion, single PTY closure, and unchanged incoming subreaper state. Observe exact-head hosted checks; do not merge until review and checks are terminal clean. | codex-ar1721-pr287-repair7-20261008 |
+| P0 | [AR-1721](tasks/AR-1721.md): Repair operator quickstart controlling-PTY runner | Make the operator quickstart exercise bare asb tui through a real nonzero controlling PTY with bounded interaction and teardown. | Fresh independent exact-head review of PR #287 at 33f27e6c6ebbac84525c917736bb0e05e392ccce: verify the fixture-exclusive supervisor/subreaper boundary preserves post-boundary ambient double-fork daemons while killing immediate fixture double-fork+setsid descendants, retaining diagnostic-only depth/process exhaustion, single PTY closure, and unchanged incoming subreaper state. Observe exact-head hosted checks; do not merge until review and checks are terminal clean. | - |
 
 ## Blocked
 
