@@ -9,9 +9,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 148 |
@@ -85,7 +85,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - In progress"]:::status_in_progress
+        AR_1575["AR-1575 - Blocked"]:::status_blocked
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -765,19 +765,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-ar1575-requal-20261008 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. |
 | P0 | [AR-1654](tasks/AR-1654.md): Self-explanatory operator quickstart | codex-ar1654-quickstart-20261008 | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Complete an ASB development-broker foreground-terminal repair so interactive launch does not leave the TUI in a private background process group, and repair the operator qualification helper to provide a nonzero controlling PTY with a bounded quit path; then rerun exact-head asb tui install followed by bare asb tui and the full quickstart matrix. |
 
-### Blocked (4)
+### Blocked (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1341](tasks/AR-1341.md): Development channel cross-repository qualification | Unclaimed | Qualify the cross-repository development release-channel journey. | Qualify the default-dev clone/build/install/launch journey against exact ASB and asb-tui main heads, including failure and cleanup paths. |
 | P0 | [AR-1345](tasks/AR-1345.md): ASB/asb-tui exact-head final qualification | Unclaimed | Qualify the complete current-main ASB and asb-tui development journey at exact heads. | Promote and run exact-head cross-project qualification against ASB 852dcb1 and asb-tui 474f9fc, including credential-free development setup and broker launch. |
+| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Wait for ASB AR-1726 to merge its bounded development-only user-owned 0775 rustup shim exception; then rerun exact paired install, status, bare launch, upgrade, removal, descriptor, broker, offline, and typed-failure qualification. |
 | P0 | [AR-1589](tasks/AR-1589.md): Fresh-user development-channel qualification | Unclaimed | Qualify the complete fresh-user dev-channel setup, benchmark, recording, replay, and comparison journey. | Promote after the real backend bridge, recovery, and result/replay work are released; execute and independently verify the pinned fresh-user default-dev journey. |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
