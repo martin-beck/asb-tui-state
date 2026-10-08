@@ -769,7 +769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-ar1668-post-launch-journey-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Await independent code/evidence review and all hosted checks for PR #291; implementation worker must not merge. |
+| P0 | [AR-1668](tasks/AR-1668.md): Paired TUI post-launch fresh-user journey qualification | codex-ar1668-post-launch-journey-20261008 | Qualify the paired TUI install, wizard provider/model setup, benchmark, selected/all recording, strict offline replay, comparison, rollback, and removal journey at exact ASB/TUI heads. | Await hosted quality runs 37738322600 and 37738322927 for independently approved PR #291; implementation worker must not merge. After independent integration, rerun exact-main receipt and bind cleanup. |
 
 ### Blocked (5)
 
