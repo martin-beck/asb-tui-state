@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | Independent review approved exact signed head e54495471536af6a583c81b2414b059d0a0f72a6; await green hosted Repository Quality and AWQ checks, then parent merge authority may integrate. Author must not self-merge. | codex-ar1724-rustup-layout-20261008 |
+| P0 | [AR-1724](tasks/AR-1724-trusted-user-rustup-layout.md): Trusted owner Rustup layout and detached quickstart repair | Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed. | PR #293 exact reviewed head e54495471536af6a583c81b2414b059d0a0f72a6 is independently approved and all hosted checks are green; parent merge authority should perform signed exact-tree integration and post-merge exact-main validation. Author must not self-merge. | codex-ar1724-rustup-layout-20261008 |
 
 ## Blocked
 

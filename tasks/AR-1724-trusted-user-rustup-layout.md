@@ -8,16 +8,16 @@
     "AR-1723"
   ],
   "id": "AR-1724",
-  "next_action": "Independent review approved exact signed head e54495471536af6a583c81b2414b059d0a0f72a6; await green hosted Repository Quality and AWQ checks, then parent merge authority may integrate. Author must not self-merge.",
+  "next_action": "PR #293 exact reviewed head e54495471536af6a583c81b2414b059d0a0f72a6 is independently approved and all hosted checks are green; parent merge authority should perform signed exact-tree integration and post-merge exact-main validation. Author must not self-merge.",
   "owner": "codex-ar1724-rustup-layout-20261008",
   "plan": "../plans/AR-1724-trusted-user-rustup-layout.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept the conventional owner-owned group-writable Rustup development layout with an explicit warning while keeping executable and substitution boundaries fail-closed.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Trusted owner Rustup layout and detached quickstart repair",
-  "updated_at": "2026-10-08T09:18:46+00:00",
+  "updated_at": "2026-10-08T09:18:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -298,3 +298,7 @@ warnings and never block local/mock execution. Do not modify ASB product code.
 
 - 2026-10-08T09:18:46+00:00: Recorded command exit 0; command argv SHA-256
   340fb8a6ca45643a10324a0d11d54bfd3ccfe2f8f32bdb880c8f37b405e803ee.
+
+- 2026-10-08T09:18:58+00:00: Hosted Repository Quality run 37754718507 job 113236718605, AWQ
+  native-first run 37754718891 job 113236716941, and AWQ observation job 113238630232 all passed at
+  exact head. Independent review approved with no P0/P1/P2.
