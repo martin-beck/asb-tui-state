@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. | codex-tui-ar1575-qualification-20261009 |
 | P1 | [AR-1728](tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288's reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. | codex-tui-ar1728-action-pin-20261009 |
 
 ## Blocked

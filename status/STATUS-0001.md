@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 161 |
+| **Done** | Accepted, integrated, and durably verified | 162 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 2 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 173 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 2 |
+| Open or active | 1 |
 | Blocked | 3 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 173 | 2 | 3 | 161 |
+| unassigned | unassigned | 173 | 1 | 3 | 162 |
 
 ## Task drill-down
 
@@ -674,11 +674,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1575-qualification-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. |
@@ -2530,7 +2530,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1575["AR-1575 - In progress"]:::status_in_progress
+        AR_1575["AR-1575 - Done"]:::status_done
         AR_1579["AR-1579 - Done"]:::status_done
         AR_1580["AR-1580 - Done"]:::status_done
         AR_1581["AR-1581 - Done"]:::status_done
@@ -3237,11 +3237,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | codex-tui-ar1575-qualification-20261009 | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. |
 | P1 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md): Rebuild Dependabot action-pin update on current main | codex-tui-ar1728-action-pin-20261009 | Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements. | Reproduce Dependabot PR #288&#x27;s reviewed one-line immutable action-pin update from exact current main with project-compliant SSH signature and matching DCO, then independently review, merge, verify exact-main CI, and close the superseded Dependabot PR. |
 
 ### Blocked (3)
@@ -3262,7 +3261,7 @@ flowchart LR
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P0 | [AR-1703](../tasks/AR-1703.md): Top-level asb tui install and launch qualification | Unclaimed | Qualify the complete selection-driven asb-tui journey through the supported &#96;asb tui install&#96; and &#96;asb tui&#96; commands. | Promote only after AR-1575 and AR-1654 prove live materialization and terminal-capable bare launch, plus provider, live-run, and capture/comparison ARs are released; then run the clean-room paired command journey and publish the exact-head receipt. |
 
-### Done (161)
+### Done (162)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3302,6 +3301,7 @@ flowchart LR
 | P0 | [AR-1342](../tasks/AR-1342.md): ASB control protocol compatibility matrix | Unclaimed | Make cross-project protocol compatibility explicit before development-channel qualification. | Obtain independent review and hosted required checks for PR #178 at exact head df7ffdc1a422d2f847e531d891af59f333fda63d; resolve only evidence-backed findings, then merge/release and verify post-merge. |
 | P0 | [AR-1343](../tasks/AR-1343.md): asb-tui development broker entrypoint | Unclaimed | Expose the development broker descriptor entrypoint for ASB lifecycle handoff. | PR #179 is at exact head d3034eab6ebb111e63affe18da9cf74228d7ca8b with all required hosted checks green; await independent review approval, then coordinator may merge/release and close AR. |
 | P0 | [AR-1344](../tasks/AR-1344.md): asb-tui dynamic development broker identity | Unclaimed | Implement dynamic development broker identity | Independent review and hosted green checks for asb-tui PR #182 at c6326873183ae7f71e5ceab7999834716c0406da |
+| P0 | [AR-1575](../tasks/AR-1575.md): ASB/asb-tui final qualification rerun | Unclaimed | Requalify the complete credential-free ASB/asb-tui setup and broker journey at exact heads. | Release AR-1575 done after recording independent acceptance of exact reviewed state 371755bf4deae427fb4917cedc7e931ba2f4f6a3, tree 124f19750824c39d0242bfe07026e880c67ae50b, and receipt SHA-256 67088f879c9500ccdfd4c9c25ed7eba9f3e161213e044adad5aea9f8bdd3953f. |
 | P0 | [AR-1579](../tasks/AR-1579.md): TUI development-channel lifecycle | Unclaimed | Make the dev release channel a real, repeatable install and lifecycle path. | Promote and implement the real dev-channel install/status/launch lifecycle with clean-state provenance evidence. |
 | P0 | [AR-1580](../tasks/AR-1580.md): TUI PTY control integration | Unclaimed | Prove the actual TUI-to-ASB inherited control channel and cleanup behavior. | Add SPDX/copyright header to tests/pty_broker_handoff.rs; harden bounded server synchronization and guaranteed child/socket cleanup; rerun hosted gates and review exact head. |
 | P0 | [AR-1581](../tasks/AR-1581.md): Complete wizard bootstrap/control coverage | Unclaimed | Cover every real first-run wizard projection and control transition. | Run cargo fmt on formal auth-field test, push signed repair, rerun hosted gates; then merge/release scoped projection repair. AR-1586 owns real backend bootstrap. |
@@ -3352,3 +3352,4 @@ flowchart LR
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
 | P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
+| P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
