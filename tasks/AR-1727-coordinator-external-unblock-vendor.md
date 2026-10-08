@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T19:29:21+00:00",
   "depends_on": [
     "AR-1722",
     "AR-1726"
   ],
   "id": "AR-1727",
   "next_action": "Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1727-unblock-vendor",
   "plan": "../plans/AR-1727-coordinator-external-unblock-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Vendor Coordinator external-unblock repair",
-  "updated_at": "2026-10-08T15:29:18+00:00",
+  "updated_at": "2026-10-08T15:29:21+00:00",
   "worktree_key": ""
 }
 ---
@@ -134,3 +134,5 @@ normally. AR-1727 is not permission to change either product repository.
   e863b57edc7f7a21b2aff2c7b45ce226e12637d2 tree eee603591b917eeca244425559d7c67bb88a7268; postmerge
   Verify 37800348877 and Formal 37800348812 passed; exact official sync-development recovery
   verified 68 blobs, digests, and modes.
+
+- 2026-10-08T15:29:21+00:00: Claimed by codex-asb-tui-ar1727-unblock-vendor.

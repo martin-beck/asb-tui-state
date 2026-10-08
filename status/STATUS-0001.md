@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2438,11 +2438,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1727-unblock-vendor |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. |
@@ -2648,7 +2648,7 @@ flowchart LR
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
-        AR_1727["AR-1727 - Open"]:::status_open
+        AR_1727["AR-1727 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3220,11 +3220,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Unclaimed | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. |
+| P0 | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | codex-asb-tui-ar1727-unblock-vendor | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. |
 
 ### Blocked (4)
 
@@ -3339,4 +3339,3 @@ flowchart LR
 | P0 | [AR-1635](../tasks/AR-1635.md): Control-state ownership test isolation | Unclaimed | Track ASB control-state test isolation required by paired TUI qualification. | No further action; consume the merged ASB evidence in paired qualification. |
 | P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
-| P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s bounded linker-tool propagation repair. | No further action; paired lifecycle evidence covers validated linker propagation. |

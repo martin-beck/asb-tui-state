@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1727](tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. | - |
+| P0 | [AR-1727](tasks/AR-1727-coordinator-external-unblock-vendor.md): Vendor Coordinator external-unblock repair | Adopt the reviewed Coordinator external-unblock lifecycle repair so release-blocked asb-tui qualifications can legally return to open without fabricated pause history. | Wait for an independently reviewed upstream Coordinator successor to ee68fbd that makes resume require exactly one current-revision pause record with matching task ID and nested step_state status/revision on Git and SQLite; then resync only through sync-development and rerun every AR-1727 gate. | codex-asb-tui-ar1727-unblock-vendor |
 
 ## Blocked
 
