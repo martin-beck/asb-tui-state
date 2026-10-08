@@ -19,16 +19,16 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Integrate the taiki-e/install-action pin update carried by stale DCO-invalid Dependabot PR #288 without weakening signature, DCO, exact-main, or independent-review requirements.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Rebuild Dependabot action-pin update on current main",
-  "updated_at": "2026-10-08T23:13:12+00:00",
+  "updated_at": "2026-10-08T23:14:51+00:00",
   "worktree_key": "asb-tui-ar1728-install-action-pin"
 }
 ---
 
 Dependabot PR #288 changes only `.github/workflows/trusted-main.yml`, updating
 `taiki-e/install-action` from immutable commit
-`76b5a2d6647bc0a6b597e5640070b9dc07966d4c` to immutable commit
+`4076c08d76dba979c11a7285295b0716c1d67908` to immutable commit
 `83ac0ad63c0167e6f06796fab0fce28db1bf3db0`. Independent read-only review found
 no defect in that dependency delta, but the PR is based on
 `69f0584cee27001b1ae10b7311192124a855858c`, trails current main, has no
@@ -67,3 +67,6 @@ post-merge validation are mandatory.
 
 - 2026-10-08T23:13:12+00:00: Recorded command exit 0; command argv SHA-256
   9c3b938fca33fe1fdc4495685e6a1e7dd1b373f2b4d685fcfbef4e1fa5bcea61.
+
+- 2026-10-08T23:14:51+00:00: Recorded command exit 0; command argv SHA-256
+  7c0758348a69ce85a12fb6e9db133c56d1b94f2815c6817884711062aece1956.
