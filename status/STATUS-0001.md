@@ -2376,7 +2376,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. |
-| Next action | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
+| Next action | Complete independent exact-head review and terminal hosted verification; record the development receipt and spec acceptance, release done, reconcile, and verify live state. |
 
 ### AR-1723 — Replace wizard free-form setup with bounded controls
 
@@ -3188,7 +3188,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Wait for an official signed Agent Workflow Coordinator tag whose vendor manifest includes tools/tlc_runner.py and the complete formal runtime closure from commit 9e6990d77fd54126ca9bfa8671319b785472c91e or equivalent; then resynchronize and rerun every gate. |
+| P0 | [AR-1722](../tasks/AR-1722.md): Coordinator supersession-chain vendor upgrade | codex-tui-ar1722-vendor-upgrade | Adopt the official coordinator supersession-chain contract so evidence-backed replacement ARs safely satisfy downstream dependencies. | Complete independent exact-head review and terminal hosted verification; record the development receipt and spec acceptance, release done, reconcile, and verify live state. |
 | P0 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md): Operator quickstart parent toolchain propagation repair | codex-tui-ar1725-parent-toolchain | Keep the public operator quickstart usable under its isolated HOME by propagating the validated parent ASB development toolchain boundary. | Repair tools/run-operator-quickstart.py so it resolves and forwards the validated parent ASB Cargo/Rustup inputs before replacing HOME, add real isolated-HOME and hostile-input regressions, rerun the exact paired public journey, obtain independent review, merge, and verify exact-main CI. |
 
 ### Open (1)
