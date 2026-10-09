@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #298 | `repair/ar-1729-trusted-coverage@5d6ff48287a3` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | test: restore trusted-main Rust coverage |
+| #298 | `repair/ar-1729-trusted-coverage@5d6ff48287a3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: restore trusted-main Rust coverage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37865605668 | `5d6ff48287a3` | pull_request | AWQ shadow observation | in_progress:- |
-| 37865605269 | `5d6ff48287a3` | pull_request | Repository quality | in_progress:- |
+| 37865605668 | `5d6ff48287a3` | pull_request | AWQ shadow observation | completed:success |
+| 37865605269 | `5d6ff48287a3` | pull_request | Repository quality | completed:success |
 | 37863955542 | `46ae919c5a3d` | push | Trusted main verification | completed:failure |
 | 37863955499 | `46ae919c5a3d` | push | Repository quality | completed:success |
 | 37862864050 | `2db2c4d00dc7` | pull_request | AWQ shadow observation | completed:success |
