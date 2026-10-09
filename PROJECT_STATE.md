@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #297 | `repair/ar-1729-fast-exit-pty-race@6d4854eb7ba1` | `main` | BEHIND | QUEUED:, IN_PROGRESS: | fix: make fast noninteractive PTY exits race-safe |
+| #297 | `repair/ar-1729-fast-exit-pty-race@6d4854eb7ba1` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS: | fix: make fast noninteractive PTY exits race-safe |
 
 ## Recent workflows
 
