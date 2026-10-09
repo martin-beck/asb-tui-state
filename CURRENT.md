@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Reproduce trusted-main coverage at exact merge 46ae919, add minimal behavior-bearing Rust tests to restore the 90% line gate without exclusions or threshold changes, publish signed+DCO follow-up PR, and stop for independent review. | codex-tui-ar1729-fast-exit-20261009 |
+| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Run remaining trusted-workflow-equivalent gates at signed+DCO head 7c2e76c, publish the follow-up PR, wait for exact-head CI, and stop for independent review. | codex-tui-ar1729-fast-exit-20261009 |
 
 ## Blocked
 

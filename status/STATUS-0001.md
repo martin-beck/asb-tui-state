@@ -2474,7 +2474,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. |
-| Next action | Reproduce trusted-main coverage at exact merge 46ae919, add minimal behavior-bearing Rust tests to restore the 90&#37; line gate without exclusions or threshold changes, publish signed+DCO follow-up PR, and stop for independent review. |
+| Next action | Run remaining trusted-workflow-equivalent gates at signed+DCO head 7c2e76c, publish the follow-up PR, wait for exact-head CI, and stop for independent review. |
 
 
 ## Dependency graph
@@ -3259,7 +3259,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Reproduce trusted-main coverage at exact merge 46ae919, add minimal behavior-bearing Rust tests to restore the 90&#37; line gate without exclusions or threshold changes, publish signed+DCO follow-up PR, and stop for independent review. |
+| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Run remaining trusted-workflow-equivalent gates at signed+DCO head 7c2e76c, publish the follow-up PR, wait for exact-head CI, and stop for independent review. |
 
 ### Blocked (2)
 
