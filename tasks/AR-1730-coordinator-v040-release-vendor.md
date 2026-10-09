@@ -10,13 +10,21 @@
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:3454abf33951032083612a3605f22c7ead5147d21c970c20d883b4cb217915a4",
+    "evidence_ref": "quality/AR-1730-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1730.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T18:06:47+00:00",
+  "updated_at": "2026-10-09T18:07:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -191,3 +199,6 @@ unrelated repository may be changed.
 
 - 2026-10-09T18:06:47+00:00: Recorded command exit 0; command argv SHA-256
   8c15bca9f4f859742f1d444f78eb81d8c348644902ad97183ebdcab94e28b292.
+
+- 2026-10-09T18:07:18+00:00: Accepted exact AR-1730 spec at revision 52: receipt binds merge
+  4d5143e, exact-main verification run 37970814210 success, and post-merge doctor/quality evidence.
