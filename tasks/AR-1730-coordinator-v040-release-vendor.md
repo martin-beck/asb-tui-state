@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T20:46:52+00:00",
   "depends_on": [],
   "id": "AR-1730",
-  "next_action": "Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR.",
+  "next_action": "PR #52 is published at exact head 0334247df99a7fbc3f2bee1ad0c6fdd869832bae/tree 592ec00ca84f683d2957cadfb8b4b5ba2c8ce178 against observed main 42025e36d27c45f48c742cef67cf55b6ed464917. Obtain independent exact-tree review, wait for all required hosted Coordination checks, repair findings if any, then merge only the reviewed tree.",
   "owner": "codex-asb-tui-ar1730-v040-20261009",
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:59:02+00:00",
+  "updated_at": "2026-10-09T17:59:13+00:00",
   "worktree_key": ""
 }
 ---
@@ -155,3 +155,7 @@ unrelated repository may be changed.
 
 - 2026-10-09T17:59:02+00:00: Recorded command exit 0; command argv SHA-256
   cc5c0c4c8ae5a3a9dc407141536d9b1f0289a9ec305a9028b668182a450470f3.
+
+- 2026-10-09T17:59:13+00:00: Signed+DCO candidate rebased onto current main, pushed through
+  handoffctl, and PR #52 opened. Full 270-test offline uv suite and deterministic
+  vendor/privacy/doctor/commit gates pass.

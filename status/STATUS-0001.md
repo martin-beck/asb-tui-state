@@ -2488,7 +2488,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
-| Next action | Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR. |
+| Next action | PR #52 is published at exact head 0334247df99a7fbc3f2bee1ad0c6fdd869832bae/tree 592ec00ca84f683d2957cadfb8b4b5ba2c8ce178 against observed main 42025e36d27c45f48c742cef67cf55b6ed464917. Obtain independent exact-tree review, wait for all required hosted Coordination checks, repair findings if any, then merge only the reviewed tree. |
 
 
 ## Dependency graph
@@ -3275,7 +3275,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | PR #52 is published at exact head 0334247df99a7fbc3f2bee1ad0c6fdd869832bae/tree 592ec00ca84f683d2957cadfb8b4b5ba2c8ce178 against observed main 42025e36d27c45f48c742cef67cf55b6ed464917. Obtain independent exact-tree review, wait for all required hosted Coordination checks, repair findings if any, then merge only the reviewed tree. |
 
 ### Blocked (2)
 
