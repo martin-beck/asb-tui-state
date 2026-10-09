@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Record post-merge receipt for merge 4d5143e and exact-main verification run 37970814210 at eafacba, run doctor --live, then release AR-1730 done. | codex-asb-tui-ar1730-v040-20261009 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
