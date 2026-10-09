@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1730.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "upstream-identity", "description": "Upstream Agent Workflow Coordinator v0.4.0 is independently bound to commit 712b36ea3d188237cbe8104e70d905094f93a96b and tree c496306050a805111f89b3f7bc4cfb0910f27535; the lightweight tag limitation is recorded without an annotated-tag signature claim."},
+    {"id": "release-vendor-integrity", "description": "ASB-TUI state adopts the exact release only through the official vendor synchronizer, with complete byte, mode, source, digest, version, and manifest verification; no vendored bytes are patched."},
+    {"id": "compatibility", "description": "ASB-TUI's coordinator-bound profiles, task lifecycle, generated views, and compatibility fixtures remain correct under the v0.4.0 vendor, including hostile and negative cases."},
+    {"id": "state-health", "description": "Binding, Git backend, privacy, worktree ownership, formal checks, reconciliation, and live doctor remain valid without ASB or unrelated repository changes."},
+    {"id": "review-and-hosted", "description": "Independent exact-tree review, signed DCO publication, exact-head CI, exact-main post-merge verification, and a privacy-safe receipt pass."}
+  ],
+  "definition_of_done": [
+    "Exact upstream commit/tree and lightweight-tag provenance are recorded and mechanically verified.",
+    "The complete release vendor is synchronized and verified through the official path, with any compatibility repair confined to downstream-owned files.",
+    "Independent review, all applicable local and hosted gates, signed merge, post-merge checks, reconciliation, and live doctor pass.",
+    "A receipt and spec acceptance bind immutable public identities without credentials, prompts, raw logs, or private paths."
+  ],
+  "inputs": [
+    {"id": "coordinator-v040", "description": "Upstream Coordinator tag v0.4.0 at verified commit 712b36ea3d188237cbe8104e70d905094f93a96b and tree c496306050a805111f89b3f7bc4cfb0910f27535."},
+    {"id": "asb-tui-state", "description": "ASB-TUI state main with the prior development vendor and preserved task/lifecycle evidence."}
+  ],
+  "outputs": [
+    {"id": "release-vendor", "description": "Exact schema-v1 Coordinator v0.4.0 vendor manifest and complete synchronized file set."},
+    {"id": "compatibility-receipt", "description": "Privacy-safe evidence for downstream compatibility, review, CI, signed merge, and post-merge health."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["vendored-byte-patching", "direct-generated-view-edit", "force-push", "credential-output", "gate-weakening", "cross-repository-change", "unreviewed-merge"],
+  "required_evidence_classes": ["mechanical", "contract-test", "environmental"],
+  "gates": [
+    {"id": "vendor-integrity", "description": "Exact source identity, complete vendor digests/modes, release version, and manifest verification pass."},
+    {"id": "compatibility-and-quality", "description": "Downstream compatibility, unit, formal, privacy, generated-view, and full applicable quality gates pass unchanged."},
+    {"id": "publication", "description": "Independent review, signed DCO exact-head publication, exact-main post-merge workflows, reconciliation, and live doctor pass."}
+  ]
+}
