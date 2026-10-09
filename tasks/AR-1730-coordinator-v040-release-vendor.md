@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T18:06:17+00:00",
+  "updated_at": "2026-10-09T18:06:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -182,3 +182,6 @@ unrelated repository may be changed.
 - 2026-10-09T18:06:17+00:00: PR #52 merged through handoffctl wrapper at 2026-10-09T18:04:55Z;
   exact-main Coordination verification run 37970814210 is green at eafacba. The stale pre-merge next
   action is superseded; post-merge receipt and live doctor remain.
+
+- 2026-10-09T18:06:25+00:00: Recorded command exit 0; command argv SHA-256
+  f95757d8021b896e65ad8d34326d4982f2bd7ae07cdf86fbeefdb496923230c4.
