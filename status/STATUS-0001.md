@@ -2488,7 +2488,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
-| Next action | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. |
+| Next action | In isolated worktree /srv/data/projects/asb-tui-state-ar1730-v040, verify clean exact v0.4.0 source checkout at 712b36ea3d188237cbe8104e70d905094f93a96b/tree c496306050a805111f89b3f7bc4cfb0910f27535, run official release vendor sync, and review all changed bytes. |
 
 
 ## Dependency graph
@@ -3275,7 +3275,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | In isolated worktree /srv/data/projects/asb-tui-state-ar1730-v040, verify clean exact v0.4.0 source checkout at 712b36ea3d188237cbe8104e70d905094f93a96b/tree c496306050a805111f89b3f7bc4cfb0910f27535, run official release vendor sync, and review all changed bytes. |
 
 ### Blocked (2)
 
