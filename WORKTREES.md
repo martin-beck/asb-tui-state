@@ -169,7 +169,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar1724-integration-20261008` | `DETACHED` | `50acbc4af694` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar1724-rustup-layout-20261008` | `DETACHED` | `e54495471536` | 0 | behind 9, ahead 0 |
 | `asb-tui-ar1728-install-action-pin` | `integrate/ar-1728-reviewed` | `f1076cd8d75c` | 0 | behind 4, ahead 0 |
-| `asb-tui-ar1729-fast-exit-pty-race` | `repair/ar-1729-fast-exit-pty-race` | `2db2c4d00dc7` | 0 | behind 0, ahead 2 |
+| `asb-tui-ar1729-fast-exit-pty-race` | `integration/ar-1729-fast-exit-pty-race` | `c99ff65cda05` | 0 | behind 0, ahead 0 |
 | `asb-tui-audit-20260915` | `DETACHED` | `caa06ce0083c` | 0 | behind 351, ahead 155 |
 | `asb-tui-awq-v032-shadow` | `feature/awq-v032-shadow` | `2bc987ee0a9a` | 0 | behind 351, ahead 34 |
 | `asb-tui-catalog-slice` | `feat/wizard-catalog-slice` | `4faccc047551` | 0 | behind 351, ahead 156 |
