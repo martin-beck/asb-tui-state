@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. | - |
+| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. | codex-asb-tui-ar1730-v040-20261009 |
 
 ## Blocked
 

@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2480,11 +2480,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1730-v040-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
@@ -2693,7 +2693,7 @@ flowchart LR
         AR_1727["AR-1727 - Done"]:::status_done
         AR_1728["AR-1728 - Done"]:::status_done
         AR_1729["AR-1729 - Done"]:::status_done
-        AR_1730["AR-1730 - Open"]:::status_open
+        AR_1730["AR-1730 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3271,11 +3271,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Unclaimed | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree. |
 
 ### Blocked (2)
 

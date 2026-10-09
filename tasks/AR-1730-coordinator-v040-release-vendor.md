@@ -2,21 +2,21 @@
 {
   "branch": "upgrade/ar-1730-coordinator-v0.4.0-release",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T20:46:52+00:00",
   "depends_on": [],
   "id": "AR-1730",
   "next_action": "Promote and claim after state reconciliation; verify upstream v0.4.0 commit/tree and lightweight-tag provenance, then synchronize the exact release through the official vendor path in an isolated state worktree.",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1730-v040-20261009",
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:46:47+00:00",
+  "updated_at": "2026-10-09T17:46:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ unrelated repository may be changed.
 
 - 2026-10-09T17:46:47+00:00: Defined exact Coordinator v0.4.0 release vendor and ASB-TUI
   compatibility scope; upstream commit/tree and lightweight-tag boundary recorded.
+
+- 2026-10-09T17:46:52+00:00: Claimed by codex-asb-tui-ar1730-v040-20261009.
