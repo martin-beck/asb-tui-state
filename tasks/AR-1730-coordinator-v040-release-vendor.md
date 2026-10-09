@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T20:46:52+00:00",
   "depends_on": [],
   "id": "AR-1730",
-  "next_action": "In isolated worktree /srv/data/projects/asb-tui-state-ar1730-v040, verify clean exact v0.4.0 source checkout at 712b36ea3d188237cbe8104e70d905094f93a96b/tree c496306050a805111f89b3f7bc4cfb0910f27535, run official release vendor sync, and review all changed bytes.",
+  "next_action": "Vendor sync and exact 79-file source/tree/mode/digest comparison pass in isolated worktree. Prepare signed DCO candidate after reviewing full vendor diff; rerun full tests with host jsonschema dependency or record that environmental blocker, then independent review.",
   "owner": "codex-asb-tui-ar1730-v040-20261009",
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:52:55+00:00",
+  "updated_at": "2026-10-09T17:53:12+00:00",
   "worktree_key": ""
 }
 ---
@@ -90,3 +90,8 @@ unrelated repository may be changed.
 
 - 2026-10-09T17:52:55+00:00: Recorded command exit 0; command argv SHA-256
   6d2372f92b08f161cd0fad9d11998d28c827eee91c6b245d9e940bdbf7209c38.
+
+- 2026-10-09T17:53:12+00:00: Release vendor verifier, source/tree comparison, headers, focused
+  Git-backend tests, doctor, and render-status pass. Full suite has only two import errors because
+  host lacks jsonschema; no vendor assertion remains. TLC correctly fails closed without
+  systemd-run.

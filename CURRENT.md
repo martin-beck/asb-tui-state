@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | In isolated worktree /srv/data/projects/asb-tui-state-ar1730-v040, verify clean exact v0.4.0 source checkout at 712b36ea3d188237cbe8104e70d905094f93a96b/tree c496306050a805111f89b3f7bc4cfb0910f27535, run official release vendor sync, and review all changed bytes. | codex-asb-tui-ar1730-v040-20261009 |
+| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Vendor sync and exact 79-file source/tree/mode/digest comparison pass in isolated worktree. Prepare signed DCO candidate after reviewing full vendor diff; rerun full tests with host jsonschema dependency or record that environmental blocker, then independent review. | codex-asb-tui-ar1730-v040-20261009 |
 
 ## Blocked
 
