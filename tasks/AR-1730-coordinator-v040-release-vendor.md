@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T20:46:52+00:00",
   "depends_on": [],
   "id": "AR-1730",
-  "next_action": "PR #52 was rebased for exact current-main qualification: head 09d9fefa4884aa0a0b6f5779a3f80ca6c1a42231/tree 7529a0e7b6d916e5b77a7e1b5e2f93922b2339ef, base observed dc4206ffcdfe220b84dd9374354e2d7f43b9a7e8. Wait for exact-head Coordination verification, obtain renewed independent review of this head, then execute only the documented handoffctl merge transition.",
+  "next_action": "Record post-merge receipt for merge 4d5143e and exact-main verification run 37970814210 at eafacba, run doctor --live, then release AR-1730 done.",
   "owner": "codex-asb-tui-ar1730-v040-20261009",
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T18:06:02+00:00",
+  "updated_at": "2026-10-09T18:06:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -178,3 +178,7 @@ unrelated repository may be changed.
 
 - 2026-10-09T18:06:02+00:00: Recorded command exit 0; command argv SHA-256
   011f085228a02e424eb077dd1b8a10c2729cf0e8f33a57c98f94e01983de6e08.
+
+- 2026-10-09T18:06:17+00:00: PR #52 merged through handoffctl wrapper at 2026-10-09T18:04:55Z;
+  exact-main Coordination verification run 37970814210 is green at eafacba. The stale pre-merge next
+  action is superseded; post-merge receipt and live doctor remain.

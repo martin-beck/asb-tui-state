@@ -2488,7 +2488,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
-| Next action | PR #52 was rebased for exact current-main qualification: head 09d9fefa4884aa0a0b6f5779a3f80ca6c1a42231/tree 7529a0e7b6d916e5b77a7e1b5e2f93922b2339ef, base observed dc4206ffcdfe220b84dd9374354e2d7f43b9a7e8. Wait for exact-head Coordination verification, obtain renewed independent review of this head, then execute only the documented handoffctl merge transition. |
+| Next action | Record post-merge receipt for merge 4d5143e and exact-main verification run 37970814210 at eafacba, run doctor --live, then release AR-1730 done. |
 
 
 ## Dependency graph
@@ -3275,7 +3275,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | PR #52 was rebased for exact current-main qualification: head 09d9fefa4884aa0a0b6f5779a3f80ca6c1a42231/tree 7529a0e7b6d916e5b77a7e1b5e2f93922b2339ef, base observed dc4206ffcdfe220b84dd9374354e2d7f43b9a7e8. Wait for exact-head Coordination verification, obtain renewed independent review of this head, then execute only the documented handoffctl merge transition. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Record post-merge receipt for merge 4d5143e and exact-main verification run 37970814210 at eafacba, run doctor --live, then release AR-1730 done. |
 
 ### Blocked (2)
 
@@ -3380,3 +3380,4 @@ flowchart LR
 | P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
 | P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
+| P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
