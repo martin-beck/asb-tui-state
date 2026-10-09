@@ -2488,7 +2488,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
-| Next action | Candidate 1bbe07ef859c5ee0f5500bd1dce6196abe3e2a55/tree 2c90200194c517533611f857e45ee20ecaefbf52 is signed+DCO and exact 79-file vendor/source/tree verification, vendor/header/privacy/doctor/render-status/gitleaks gates pass. Obtain independent exact-tree review, then publish through the state PR path; full local suite remains blocked only by missing host jsonschema imports. |
+| Next action | Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR. |
 
 
 ## Dependency graph
@@ -3275,7 +3275,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Candidate 1bbe07ef859c5ee0f5500bd1dce6196abe3e2a55/tree 2c90200194c517533611f857e45ee20ecaefbf52 is signed+DCO and exact 79-file vendor/source/tree verification, vendor/header/privacy/doctor/render-status/gitleaks gates pass. Obtain independent exact-tree review, then publish through the state PR path; full local suite remains blocked only by missing host jsonschema imports. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR. |
 
 ### Blocked (2)
 

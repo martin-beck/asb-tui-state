@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T20:46:52+00:00",
   "depends_on": [],
   "id": "AR-1730",
-  "next_action": "Candidate 1bbe07ef859c5ee0f5500bd1dce6196abe3e2a55/tree 2c90200194c517533611f857e45ee20ecaefbf52 is signed+DCO and exact 79-file vendor/source/tree verification, vendor/header/privacy/doctor/render-status/gitleaks gates pass. Obtain independent exact-tree review, then publish through the state PR path; full local suite remains blocked only by missing host jsonschema imports.",
+  "next_action": "Full locked state suite passes 270 tests in the offline uv environment with jsonschema 4.25.1; vendor/source/tree/mode/digest, headers, doctor, render-status, gitleaks, diff, and commit-policy gates pass. Rebase signed candidate onto current pushed main, obtain independent exact-tree review, and publish PR.",
   "owner": "codex-asb-tui-ar1730-v040-20261009",
   "plan": "../plans/AR-1730-coordinator-v040-release-vendor.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:56:45+00:00",
+  "updated_at": "2026-10-09T17:56:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -127,3 +127,7 @@ unrelated repository may be changed.
 
 - 2026-10-09T17:56:45+00:00: Recorded command exit 0; command argv SHA-256
   a1ea4160ba79d0810b99722945a4c1e0adb083cb68c814dd36f4d12c0f0d71be.
+
+- 2026-10-09T17:56:52+00:00: The documented host lacked jsonschema; repository-independent cached uv
+  wheels supplied an offline test environment without changing product dependencies. Full suite now
+  passes 270 tests; TLC containment remains an expected host capability skip/fail-closed diagnostic.
