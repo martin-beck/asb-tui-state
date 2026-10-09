@@ -233,6 +233,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb218-tui` | `repair/ar-1630-unavailable-agent-coverage` | `8c5e0d5f424f` | 0 | behind 255, ahead 2 |
 | `tui-ar1614-impl` | `feature/ar-1614-dev-channel-bundle` | `7bcd4c4ca095` | 0 | behind 273, ahead 0 |
 | `ar1720-tui` | `repair/ar-1720-dynamic-catalog` | `df6545d450f2` | 0 | behind 45, ahead 0 |
+| `tui` | `DETACHED` | `60ab530dd1a0` | 0 | behind 0, ahead 0 |
 | `ar1721-tui-main` | `DETACHED` | `eb9a483cd8cc` | 0 | behind 48, ahead 0 |
 | `asb-origin-main-verify.QOga6I` | `DETACHED` | `f1b2b3404181` | 0 | behind 44, ahead 0 |
 | `asb-tui-ar1726-qualification` | `DETACHED` | `3bb597cfb0b5` | 0 | behind 39, ahead 0 |
