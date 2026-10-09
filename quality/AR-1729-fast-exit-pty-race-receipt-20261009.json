@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1729",
+  "result": "pass",
+  "scope": "fast noninteractive PTY exit race repair and trusted-main coverage closure",
+  "product_repository": "martin-beck/asb-tui",
+  "repair": {
+    "pull_request": 297,
+    "underlying_commit": "6d4854eb7ba1c03a6e6a97e720d6b5cc38860737",
+    "underlying_tree": "79543f0a02f377d912e67977c2fee46561aa56f0",
+    "reviewed_head": "2db2c4d00dc70bdd4bb51943588aa2327abdfc71",
+    "reviewed_tree": "93e600b445624cad72b291e48f0bb24d2ea42e33",
+    "signed": true,
+    "dco": "pass",
+    "candidate_repository_quality_run": 37862863805,
+    "candidate_awq_run": 37862864050,
+    "first_merge": "46ae919c5a3da74bd609a33d3b379803674e7572",
+    "first_merge_tree": "93e600b445624cad72b291e48f0bb24d2ea42e33"
+  },
+  "deterministic_safety_evidence": {
+    "focused_tests": 55,
+    "race_synchronization": "child exit was synchronized between spawn and identity/foreground observation",
+    "fast_exit_classes": [
+      "success",
+      "nonzero",
+      "malformed-output",
+      "output-free"
+    ],
+    "interactive_proof": "live session leader, controlling PTY, foreground group, nonzero window, readiness, bounded quit, and cleanup remained required",
+    "identity_and_cleanup": "PID generation checks, descriptor closure, authenticated descendant cleanup, and unrelated-process survival passed"
+  },
+  "coverage_mismatch": {
+    "first_merge_repository_quality_run": 37863955499,
+    "first_merge_repository_quality_conclusion": "success",
+    "first_merge_trusted_main_run": 37863955542,
+    "first_merge_trusted_main_conclusion": "failure",
+    "observed_line_coverage_percent": 89.99,
+    "missed_lines": 3289,
+    "total_lines": 32869,
+    "diagnosis": "the previously reported 90.10 percent was measured before the AR-1721 route change joined the candidate; the full merged-tree coverage command had not been rerun",
+    "disposition": "reported transparently and repaired with behavior-bearing tests only; no production exclusion or threshold change"
+  },
+  "coverage_repair": {
+    "pull_request": 298,
+    "base_commit": "46ae919c5a3da74bd609a33d3b379803674e7572",
+    "approved_head": "5d6ff48287a3b25a5210f5902e27365cd9028e5f",
+    "approved_tree": "72d0e08883130aebc4a88fb9914007ff93a0f555",
+    "change": "one focused formal-state test covering public typed route-error mappings and display behavior",
+    "production_files_changed": 0,
+    "line_coverage_percent": 90.01,
+    "missed_lines": 3282,
+    "total_lines": 32869,
+    "candidate_repository_quality_run": 37865605269,
+    "candidate_awq_run": 37865605668,
+    "independent_review": "approved exact head and tree",
+    "signed": true,
+    "dco": "pass"
+  },
+  "final_integration": {
+    "merge_commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+    "merge_tree": "72d0e08883130aebc4a88fb9914007ff93a0f555",
+    "first_parent": "46ae919c5a3da74bd609a33d3b379803674e7572",
+    "second_parent": "5d6ff48287a3b25a5210f5902e27365cd9028e5f",
+    "ssh_signature": "valid",
+    "dco": "pass",
+    "repository_quality_run": 37866323231,
+    "repository_quality_conclusion": "success",
+    "trusted_main_run": 37866323304,
+    "trusted_main_conclusion": "success"
+  },
+  "acceptance_predicates": {
+    "deterministic-race": "pass",
+    "interactive-proof-preserved": "pass",
+    "typed-fast-exit": "pass",
+    "identity-and-cleanup": "pass",
+    "quality-and-publication": "pass"
+  },
+  "privacy": {
+    "credentials": false,
+    "private_paths": false,
+    "raw_logs": false,
+    "personal_identifiers": false
+  }
+}
