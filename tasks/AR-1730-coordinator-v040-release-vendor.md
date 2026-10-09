@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:46:52+00:00",
+  "updated_at": "2026-10-09T17:47:02+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,6 @@ unrelated repository may be changed.
   compatibility scope; upstream commit/tree and lightweight-tag boundary recorded.
 
 - 2026-10-09T17:46:52+00:00: Claimed by codex-asb-tui-ar1730-v040-20261009.
+
+- 2026-10-09T17:47:02+00:00: Recorded command exit 129; command argv SHA-256
+  9c83eec5a6380eaa4f352108892294ce1a0aa1d78ca8fb6d7c0f94d3a45b69a7.
