@@ -20,6 +20,7 @@ import time
 import uuid
 from collections import Counter
 from collections.abc import Iterator
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, cast
 
@@ -85,7 +86,15 @@ if __package__:
         render_status,
         render_status_pages_from_text,
     )
-    from .task_spec import done_admission_error, task_spec_errors
+    from .task_spec import (
+        DEFAULT_EVIDENCE_POLICY,
+        EvidencePolicy,
+        done_admission_error,
+        evidence_policy,
+        require_policy_unchanged,
+        task_spec_errors,
+        task_spec_policy_errors,
+    )
 else:  # pragma: no cover - direct script execution
     try:
         from board_metrics import build_metrics  # type: ignore[import-not-found,no-redef]  # noqa: I001
@@ -158,8 +167,13 @@ else:  # pragma: no cover - direct script execution
         render_status_pages_from_text,
     )
     from task_spec import (  # type: ignore[import-not-found,no-redef]
+        DEFAULT_EVIDENCE_POLICY,
+        EvidencePolicy,
         done_admission_error,
+        evidence_policy,
+        require_policy_unchanged,
         task_spec_errors,
+        task_spec_policy_errors,
     )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -200,6 +214,7 @@ STATUSES = (
 LIFECYCLE_MUTATION_COMMANDS = (
     "claim",
     "heartbeat",
+    "accept",
     "release",
     "promote",
     "pause",
@@ -248,7 +263,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.57"
+COORDINATOR_VERSION = "0.4.0"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -664,8 +679,6 @@ UUID_PRIVACY_EXEMPT = frozenset(
         Path(".handoffctl.json"),
         Path("coordinator.binding.json"),
         Path("coordinator.backend.json"),
-        Path("tests/test_handoffctl.py"),
-        Path("tests/test_sqlite_storage.py"),
         Path("tools/handoffctl.py"),
     }
 )
@@ -743,14 +756,16 @@ def coordinator_lock_path() -> Path:
 
 @contextlib.contextmanager
 def locked(
-    *, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS
+    *, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS, phase: str = "other"
 ) -> Iterator[CoordinatorLockGuard]:
     lock_path = coordinator_lock_path()
     lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
     fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
     try:
         operation = fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH
-        deadline = time.monotonic() + timeout
+        tracing = bool(os.environ.get("HANDOFFCTL_LOCK_TRACE"))
+        started = time.monotonic()
+        deadline = started + timeout
         while True:
             try:
                 fcntl.flock(fd, operation | fcntl.LOCK_NB)
@@ -759,17 +774,82 @@ def locked(
                 remaining = deadline - time.monotonic()
                 if remaining <= 0:
                     mode = "exclusive" if exclusive else "shared"
+                    if tracing:
+                        trace_lock_metric(phase, mode, time.monotonic() - started, None)
                     raise LockTimeoutError(
                         f"LOCK_TIMEOUT after {timeout:.1f}s acquiring {mode} coordinator lock"
                     ) from error
                 time.sleep(min(LOCK_POLL_SECONDS, remaining))
+        acquired = time.monotonic() if tracing else started
         guard = CoordinatorLockGuard._create(lock_path, fd, exclusive=exclusive)
         yield guard
     finally:
+        metric: tuple[str, str, float, float] | None = None
         if "guard" in locals():
+            if tracing:
+                metric = (
+                    phase,
+                    "exclusive" if exclusive else "shared",
+                    acquired - started,
+                    time.monotonic() - acquired,
+                )
             guard._invalidate()
         fcntl.flock(fd, fcntl.LOCK_UN)
         os.close(fd)
+        if metric is not None:
+            trace_lock_metric(*metric)
+
+
+def trace_lock_metric(phase: str, mode: str, wait: float, hold: float | None) -> None:
+    """Emit optional private, bounded lock timing without command or path data."""
+    destination = os.environ.get("HANDOFFCTL_LOCK_TRACE")
+    if not destination:
+        return
+    record = {
+        "phase": phase,
+        "mode": mode,
+        "wait_ms": round(wait * 1000, 3),
+        "hold_ms": None if hold is None else round(hold * 1000, 3),
+        "timeout": hold is None,
+        "ended_ns": time.monotonic_ns(),
+    }
+    try:
+        descriptor = os.open(destination, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o600)
+        with os.fdopen(descriptor, "ab") as stream:
+            stream.write((json.dumps(record, sort_keys=True) + "\n").encode())
+    except (OSError, ValueError):
+        pass
+
+
+def observation_marker(name: str) -> Path:
+    """Order scans for one checkout's independent task and projection files."""
+    return RUNTIME / name
+
+
+def reserve_observation_ticket() -> int:
+    """Order slow scans without occupying the authority lock while they run."""
+    path = observation_marker("observation-sequence")
+    path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+    descriptor = os.open(path.with_suffix(".lock"), os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        fcntl.flock(descriptor, fcntl.LOCK_EX)
+        previous = int(path.read_text()) if path.exists() else 0
+        if previous < 0:
+            raise RuntimeError("invalid observation sequence")
+        ticket = previous + 1
+        atomic(path, f"{ticket}\n")
+        return ticket
+    finally:
+        fcntl.flock(descriptor, fcntl.LOCK_UN)
+        os.close(descriptor)
+
+
+def published_observation_ticket() -> int:
+    path = observation_marker("observation-published")
+    value = int(path.read_text()) if path.exists() else 0
+    if value < 0:
+        raise RuntimeError("invalid published observation ticket")
+    return value
 
 
 def atomic(path: Path, text: str) -> None:
@@ -862,86 +942,108 @@ def render_current(tasks: list[Task]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def parse_worktree_listing(raw: str) -> list[tuple[Path, str, str]]:
+    """Reuse Git's exact listed head/branch, falling back only for incomplete records."""
+    records: list[tuple[Path, str, str]] = []
+    for block in raw.split("\n\n"):
+        lines = block.splitlines()
+        if not lines or not lines[0].startswith("worktree "):
+            continue
+        head = next((line[5:] for line in lines[1:] if line.startswith("HEAD ")), "")
+        if re.fullmatch(r"[0-9a-f]{40,64}", head) is None:
+            head = ""
+        branch = next((line[7:] for line in lines[1:] if line.startswith("branch ")), "")
+        branch = branch.removeprefix("refs/heads/")
+        if not branch and "detached" in lines:
+            branch = "DETACHED"
+        records.append((Path(lines[0][9:]), head, branch))
+    return records
+
+
+def scan_worktree(item: tuple[Path, str, str]) -> dict[str, Any]:
+    """Observe one independent product checkout without changing its Git state."""
+    path, listed_head, listed_branch = item
+    head = listed_head or run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
+    branch = listed_branch or (
+        run(
+            ["git", "-C", str(path), "symbolic-ref", "--short", "-q", "HEAD"], check=False
+        ).stdout.strip()
+        or "DETACHED"
+    )
+    changed = run(["git", "-C", str(path), "status", "--porcelain=v1"]).stdout.splitlines()
+    counts = run(
+        ["git", "-C", str(path), "rev-list", "--left-right", "--count", "origin/main...HEAD"],
+        check=False,
+    ).stdout.split()
+    return {
+        "key": path.name,
+        "branch": branch,
+        "head": head,
+        "dirty": len(changed),
+        "paths": [line[3:] for line in changed[:50]],
+        "behind": int(counts[0]) if len(counts) == 2 else None,
+        "ahead": int(counts[1]) if len(counts) == 2 else None,
+    }
+
+
 def project_scan() -> State:
     settings = config()
     base = Path(settings["projects_root"])
     repo = base / settings["product_worktree"]
 
-    def listed_worktrees(checkout: Path) -> list[Path]:
+    def listed_worktrees(checkout: Path) -> list[tuple[Path, str, str]]:
         raw = run(["git", "-C", str(checkout), "worktree", "list", "--porcelain"]).stdout
-        return [Path(line[9:]) for line in raw.splitlines() if line.startswith("worktree ")]
+        return parse_worktree_listing(raw)
 
     # The coordinator repository may have many linked worker checkouts. Their
     # relationship to the coordinator's origin/main changes whenever state is
     # committed, so including them makes the generated live projections stale
     # after every coordinator update. Keep all product-repository worktrees,
     # but exclude every checkout owned by the coordinator repository.
-    coordinator_paths = {path.resolve() for path in listed_worktrees(ROOT)}
-    paths: list[Path] = []
-    for path in listed_worktrees(repo):
-        if path.resolve() not in coordinator_paths and path not in paths:
-            paths.append(path)
-    worktrees = []
-    for path in paths:
-        head = run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
-        branch = (
-            run(
-                ["git", "-C", str(path), "symbolic-ref", "--short", "-q", "HEAD"], check=False
-            ).stdout.strip()
-            or "DETACHED"
-        )
-        changed = run(["git", "-C", str(path), "status", "--porcelain=v1"]).stdout.splitlines()
-        counts = run(
-            ["git", "-C", str(path), "rev-list", "--left-right", "--count", "origin/main...HEAD"],
-            check=False,
-        ).stdout.split()
-        worktrees.append(
-            {
-                "key": path.name,
-                "branch": branch,
-                "head": head,
-                "dirty": len(changed),
-                "paths": [line[3:] for line in changed[:50]],
-                "behind": int(counts[0]) if len(counts) == 2 else None,
-                "ahead": int(counts[1]) if len(counts) == 2 else None,
-            }
-        )
+    coordinator_paths = {path.resolve() for path, _, _ in listed_worktrees(ROOT)}
+    paths: list[tuple[Path, str, str]] = []
+    seen_paths: set[Path] = set()
+    for path, head, branch in listed_worktrees(repo):
+        if path.resolve() not in coordinator_paths and path not in seen_paths:
+            paths.append((path, head, branch))
+            seen_paths.add(path)
     github = settings["github_repository"]
-    prs = json.loads(
-        run_github_observation(
-            [
-                "gh",
-                "pr",
-                "list",
-                "-R",
-                github,
-                "--state",
-                "open",
-                "--limit",
-                "100",
-                "--json",
-                "number,title,headRefName,headRefOid,baseRefName,isDraft,mergeStateStatus,statusCheckRollup",
-            ]
-        ).stdout
-    )
-    runs = json.loads(
-        run_github_observation(
-            [
-                "gh",
-                "run",
-                "list",
-                "-R",
-                github,
-                "--limit",
-                "12",
-                "--json",
-                "databaseId,headSha,status,conclusion,workflowName,event",
-            ]
-        ).stdout
-    )
-    remote_line = run(
-        ["git", "-C", str(repo), "ls-remote", "origin", "refs/heads/main"]
-    ).stdout.strip()
+    pr_args = [
+        "gh",
+        "pr",
+        "list",
+        "-R",
+        github,
+        "--state",
+        "open",
+        "--limit",
+        "100",
+        "--json",
+        "number,title,headRefName,headRefOid,baseRefName,isDraft,mergeStateStatus,statusCheckRollup",
+    ]
+    run_args = [
+        "gh",
+        "run",
+        "list",
+        "-R",
+        github,
+        "--limit",
+        "12",
+        "--json",
+        "databaseId,headSha,status,conclusion,workflowName,event",
+    ]
+    # Checkouts own separate Git indexes. Observe all fields freshly, but overlap
+    # the independent GitHub and remote reads with the bounded checkout scan.
+    with ThreadPoolExecutor(max_workers=min(32, max(1, len(paths))) + 3) as workers:
+        prs_result = workers.submit(run_github_observation, pr_args)
+        runs_result = workers.submit(run_github_observation, run_args)
+        remote_result = workers.submit(
+            run, ["git", "-C", str(repo), "ls-remote", "origin", "refs/heads/main"]
+        )
+        worktrees = list(workers.map(scan_worktree, paths))
+        prs = json.loads(prs_result.result().stdout)
+        runs = json.loads(runs_result.result().stdout)
+        remote_line = remote_result.result().stdout.strip()
     if not remote_line:
         raise RuntimeError("remote main is missing")
     return {
@@ -1156,12 +1258,12 @@ def supersession_errors(tasks: list[Task]) -> list[str]:
     return errors
 
 
-def basic_task_errors(path: Path, meta: Meta) -> list[str]:
+def basic_task_errors(path: Path, meta: Meta, policy: EvidencePolicy | None = None) -> list[str]:
     return [
         *field_errors(path, meta),
         *value_errors(path, meta),
         *reference_errors(path, meta),
-        *task_spec_errors(ROOT, meta),
+        *task_spec_errors(ROOT, meta, policy),
     ]
 
 
@@ -1243,13 +1345,18 @@ def mutation_global_errors(tasks: list[Task]) -> list[str]:
     return errors
 
 
-def mutation_errors(path: Path, before: dict[Path, str | None]) -> list[str]:
+def mutation_errors(
+    path: Path,
+    before: dict[Path, str | None],
+    policy: EvidencePolicy | None = None,
+) -> list[str]:
     """Validate a Git mutation without gating on unrelated repository findings."""
     tasks = all_tasks()
     selected = [meta for candidate, meta, _ in tasks if candidate == path]
     if len(selected) != 1:
         return [f"{path.name}: mutation target is not unique"]
-    errors = basic_task_errors(path, selected[0])
+    errors = [] if policy is not None else task_spec_policy_errors(ROOT)
+    errors.extend(basic_task_errors(path, selected[0], policy))
     errors.extend(claim_errors(selected[0], {}, {}, {}))
     errors.extend(mutation_global_errors(tasks))
     errors.extend(generated_view_errors(tasks))
@@ -1341,8 +1448,17 @@ def directive_validation_errors() -> list[str]:
     return []
 
 
-def validate(*, live: bool = False) -> list[str]:
+def validate(  # noqa: C901
+    *, live: bool = False, policy: EvidencePolicy | None = None, live_state: State | None = None
+) -> list[str]:
     errors: list[str] = []
+    selected_policy = policy
+    if selected_policy is None:
+        try:
+            selected_policy = evidence_policy(ROOT)
+        except RuntimeError as error:
+            errors.append(str(error))
+            selected_policy = DEFAULT_EVIDENCE_POLICY
     tasks = all_tasks()
     ids: dict[str, Path] = {}
     active_owners: dict[str, str] = {}
@@ -1353,7 +1469,7 @@ def validate(*, live: bool = False) -> list[str]:
         if task_id in ids:
             errors.append(f"duplicate {task_id}")
         ids[task_id] = path
-        errors.extend(basic_task_errors(path, meta))
+        errors.extend(basic_task_errors(path, meta, selected_policy))
         errors.extend(claim_errors(meta, active_owners, active_worktrees, active_branches))
     errors.extend(graph_errors(tasks))
     errors.extend(hierarchy_errors(tasks))
@@ -1369,7 +1485,7 @@ def validate(*, live: bool = False) -> list[str]:
     errors.extend(directive_validation_errors())
     errors.extend(privacy_errors())
     if live:
-        state = project_scan()
+        state = project_scan() if live_state is None else live_state
         project, worktrees = live_docs(state)
         if (
             not (ROOT / "PROJECT_STATE.md").exists()
@@ -1544,47 +1660,171 @@ def write_generated_views(tasks: list[Task], state: Meta) -> None:
     atomic(ROOT / "WORKTREES.md", worktrees)
 
 
-def reconcile(*, do_commit: bool, push: bool = False) -> bool:
-    if backend_selection()["backend"] == "sqlite":
-        return reconcile_sqlite(do_commit=do_commit, push=push)
+def policy_snapshot(policy: EvidencePolicy | None) -> EvidencePolicy:
+    """Use one caller-owned policy snapshot or load it once at the outer boundary."""
+    return evidence_policy(ROOT) if policy is None else policy
 
-    with locked():
-        if backend_selection()["backend"] != "git":
-            raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
-        sync_replica_before_write()
+
+def reconcile(
+    *,
+    do_commit: bool,
+    push: bool = False,
+    policy: EvidencePolicy | None = None,
+) -> bool:
+    selected_policy = policy_snapshot(policy)
+    if backend_selection()["backend"] == "sqlite":
+        return reconcile_sqlite(do_commit=do_commit, push=push, policy=selected_policy)
+    if push and not do_commit:
+        raise RuntimeError("PUSH_REQUIRES_COMMIT: reconcile --push also requires --commit")
+
+    # External product/GitHub observations are advisory and inherently
+    # non-atomic. Keep their potentially long latency outside the authority
+    # lock; only task/projection mutation and publication need serialization.
+    for _ in range(32):
+        scan_config = config() if CONFIG.exists() else None
+        scan_binding = project_binding()
+        ticket = reserve_observation_ticket()
         state = project_scan()
-        generated = generated_paths()
-        before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
-        before.update({path: path.read_text() if path.exists() else None for path in generated})
-        committed = False
-        try:
-            sync_task_observations(all_tasks(), state)
-            tasks = all_tasks()
-            write_generated_views(tasks, state)
-            errors = validate(live=False)
-            if errors:
-                raise RuntimeError("validation failed:\n" + "\n".join(errors))
-            for path in generated_paths():
-                before.setdefault(path, None)
-            touched = changed_paths(before, include_deleted=True)
-            title = project_settings()["project_title"]
-            committed = commit(f"chore(state): reconcile {title}", touched) if do_commit else False
-            head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
-            if push:
-                push_replica()
-            atomic(
-                RUNTIME / "last-reconcile.json",
-                json.dumps(
-                    {"at": now(), "state_commit": head, "project_main": state["remote_main"]},
-                    indent=2,
-                )
-                + "\n",
+        with locked(phase="git_reconcile"):
+            result = apply_git_reconciliation(
+                state, selected_policy, scan_config, scan_binding, ticket, do_commit, push
             )
-            return committed if do_commit else True
-        except Exception:
-            if not committed:
-                restore_paths(before)
-            raise
+        if result is not None:
+            return result
+    raise RuntimeError("OBSERVATION_SUPERSEDED: retry reconcile after concurrent publications")
+
+
+def observation_is_superseded(scan_config: Meta | None, scan_binding: Meta, ticket: int) -> bool:
+    """Fence an unlocked scan against changed inputs and newer publications."""
+    if backend_selection()["backend"] != "git":
+        raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
+    current_config = config() if CONFIG.exists() else None
+    if current_config != scan_config or project_binding() != scan_binding:
+        raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry reconcile")
+    sync_replica_before_write()
+    return ticket < published_observation_ticket()
+
+
+def pending_observation_paths() -> list[Path]:
+    """Return only coordinator-produced paths awaiting a reconciliation commit."""
+    marker = RUNTIME / "last-reconcile.json"
+    if not marker.exists():
+        return []
+    record = json.loads(marker.read_text())
+    raw = record.get("pending_paths", [])
+    if not isinstance(raw, list) or not all(isinstance(value, str) for value in raw):
+        raise RuntimeError("invalid pending reconciliation paths")
+    paths = [ROOT / value for value in raw]
+    validate_pending_path_scope(paths)
+    hashes = record.get("pending_hashes", {})
+    if not isinstance(hashes, dict) or set(hashes) != set(raw):
+        raise RuntimeError("invalid pending reconciliation hashes")
+    remaining: list[Path] = []
+    for value, path in zip(raw, paths, strict=True):
+        if hashes[value] == pending_path_digest(path):
+            remaining.append(path)
+        elif not pending_path_matches_head(path):
+            raise RuntimeError(
+                "PENDING_OBSERVATION_CHANGED: reconcile cannot commit edited content"
+            )
+    return remaining
+
+
+def pending_path_matches_head(path: Path) -> bool:
+    """Discard only paths already committed (or absent both locally and at HEAD)."""
+    relative = path.relative_to(ROOT).as_posix()
+    committed = run(["git", "-C", str(ROOT), "show", f"HEAD:{relative}"], check=False)
+    if committed.returncode:
+        return not path.exists()
+    return path.exists() and path.read_text(encoding="utf-8") == committed.stdout
+
+
+def validate_pending_path_scope(paths: list[Path]) -> None:
+    """Refuse marker paths outside task and generated projection namespaces."""
+    allowed = {path.resolve() for path, _, _ in all_tasks()}
+    allowed.update(path.resolve() for path in generated_paths())
+    if any(
+        path.resolve() not in allowed
+        and not (
+            path.parent.resolve() == (ROOT / "status").resolve()
+            and re.fullmatch(r"STATUS-[A-Za-z0-9_-]+\.md", path.name)
+        )
+        for path in paths
+    ):
+        raise RuntimeError("pending reconciliation path is outside coordinator projections")
+
+
+def pending_path_digest(path: Path) -> str | None:
+    """Bind a pending path to exact contents, including an intentional deletion."""
+    return hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else None
+
+
+def remaining_pending_paths(paths: list[Path], do_commit: bool) -> list[str]:
+    """Keep coordinator-produced paths until a commit request consumes them."""
+    if do_commit:
+        return []
+    return [str(path.relative_to(ROOT)) for path in paths]
+
+
+def apply_git_reconciliation(
+    state: State,
+    policy: EvidencePolicy,
+    scan_config: Meta | None,
+    scan_binding: Meta,
+    ticket: int,
+    do_commit: bool,
+    push: bool,
+) -> bool | None:
+    """Apply a completed external observation while holding the authority lock."""
+    if observation_is_superseded(scan_config, scan_binding, ticket):
+        return None
+    prior_pending = pending_observation_paths()
+    generated = generated_paths()
+    before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
+    before.update({path: path.read_text() if path.exists() else None for path in generated})
+    committed = False
+    try:
+        sync_task_observations(all_tasks(), state)
+        tasks = all_tasks()
+        write_generated_views(tasks, state)
+        errors = validate(live=False, policy=policy)
+        if errors:
+            raise RuntimeError("validation failed:\n" + "\n".join(errors))
+        require_policy_unchanged(ROOT, policy)
+        for path in generated_paths():
+            before.setdefault(path, None)
+        touched = changed_paths(before, include_deleted=True)
+        pending = sorted(set(prior_pending + touched))
+        title = project_settings()["project_title"]
+        committed = commit(f"chore(state): reconcile {title}", pending) if do_commit else False
+        head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
+        atomic(observation_marker("observation-published"), f"{ticket}\n")
+        atomic(
+            RUNTIME / "last-reconcile.json",
+            json.dumps(
+                {
+                    "at": now(),
+                    "ticket": ticket,
+                    "state_commit": head,
+                    "project_main": state["remote_main"],
+                    "pending_paths": remaining_pending_paths(pending, do_commit),
+                    "pending_hashes": {
+                        str(path.relative_to(ROOT)): pending_path_digest(path) for path in pending
+                    }
+                    if not do_commit
+                    else {},
+                },
+                indent=2,
+            )
+            + "\n",
+        )
+        if push:
+            push_replica()
+        return committed if do_commit else True
+    except Exception:
+        if not committed:
+            restore_paths(before)
+        raise
 
 
 def write_session_projections(session_records: list[Meta]) -> list[Path]:
@@ -1629,8 +1869,14 @@ def write_checkpoint_projections(checkpoint_records: list[Meta]) -> list[Path]:
     return [checkpoint_path(ROOT, task_id) for task_id in by_task]
 
 
-def write_sqlite_projections(tasks: list[Task], *, already_locked: bool = False) -> list[Path]:
+def write_sqlite_projections(
+    tasks: list[Task],
+    *,
+    already_locked: bool = False,
+    policy: EvidencePolicy | None = None,
+) -> list[Path]:
     """Regenerate byte-stable Markdown projections from one database snapshot."""
+    selected_policy = policy_snapshot(policy)
     with contextlib.nullcontext() if already_locked else locked():
         expected = {path.resolve() for path, _, _ in tasks}
         for path, meta, body in tasks:
@@ -1641,7 +1887,8 @@ def write_sqlite_projections(tasks: list[Task], *, already_locked: bool = False)
         views = rendered_task_views(tasks)
         for target, content in views.items():
             atomic(target, content)
-        errors = validate(live=False)
+        require_policy_unchanged(ROOT, selected_policy)
+        errors = validate(live=False, policy=selected_policy)
         if errors:
             raise RuntimeError("projection validation failed:\n" + "\n".join(errors))
         backend = storage_backend()
@@ -1657,9 +1904,10 @@ def write_sqlite_projections(tasks: list[Task], *, already_locked: bool = False)
         ]
 
 
-def export_sqlite_projections() -> list[Path]:
+def export_sqlite_projections(policy: EvidencePolicy | None = None) -> list[Path]:
     """Regenerate projections from the currently selected SQLite authority."""
-    return write_sqlite_projections(all_tasks())
+    selected_policy = policy_snapshot(policy)
+    return write_sqlite_projections(all_tasks(), policy=selected_policy)
 
 
 def refresh_sqlite_live_state() -> State | None:
@@ -1672,21 +1920,23 @@ def refresh_sqlite_live_state() -> State | None:
     return state
 
 
-def reconcile_sqlite(*, do_commit: bool, push: bool) -> bool:
+def reconcile_sqlite(*, do_commit: bool, push: bool, policy: EvidencePolicy | None = None) -> bool:
     """Export local authority; optional Git/GitHub publication is a replica only."""
     if push and not do_commit:
         raise RuntimeError("SQLite publication requires --commit with --push")
+    selected_policy = policy_snapshot(policy)
     before: dict[Path, str | None] = {path: path.read_text() for path in TASKS.glob("AR-*.md")}
     before.update({path: path.read_text() for path in (ROOT / "sessions").glob("AR-*.jsonl")})
     before.update({path: path.read_text() for path in (ROOT / "checkpoints").glob("AR-*.jsonl")})
     before.update({path: path.read_text() if path.exists() else None for path in generated_paths()})
     state = refresh_sqlite_live_state()
-    paths = export_sqlite_projections()
+    paths = export_sqlite_projections(selected_policy)
     if state is not None:
         project, worktrees = live_docs(state)
         atomic(ROOT / "PROJECT_STATE.md", project)
         atomic(ROOT / "WORKTREES.md", worktrees)
         paths.extend((ROOT / "PROJECT_STATE.md", ROOT / "WORKTREES.md"))
+    require_policy_unchanged(ROOT, selected_policy)
     candidates = set(paths) | set(before)
     touched = changed_paths({path: before.get(path) for path in candidates}, include_deleted=True)
     title = project_settings()["project_title"]
@@ -1762,10 +2012,14 @@ def require_update_role_admission(kind: str, owner_id: str) -> None:
         require_role_admission(owner_id)
 
 
-def require_done_admission(meta: Meta, tasks: list[Task] | None = None) -> None:
+def require_done_admission(
+    meta: Meta,
+    tasks: list[Task] | None = None,
+    policy: EvidencePolicy | None = None,
+) -> None:
     if meta.get("status") != "in_progress":
         return
-    error = done_admission_error(ROOT, meta)
+    error = done_admission_error(ROOT, meta, policy)
     if error:
         raise RuntimeError(error)
     if tasks is not None:
@@ -1775,10 +2029,14 @@ def require_done_admission(meta: Meta, tasks: list[Task] | None = None) -> None:
 
 
 def require_release_admission(
-    kind: str, status: str | None, meta: Meta, tasks: list[Task] | None = None
+    kind: str,
+    status: str | None,
+    meta: Meta,
+    tasks: list[Task] | None = None,
+    policy: EvidencePolicy | None = None,
 ) -> None:
     if kind == "release" and status == "done":
-        require_done_admission(meta, tasks)
+        require_done_admission(meta, tasks, policy)
 
 
 def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
@@ -2011,13 +2269,44 @@ def require_promotion_preflight(kind: str) -> None:
         raise RuntimeError("promotion requires a clean state repository")
 
 
+def apply_accept(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | None) -> str:
+    """Record one owner's exact-revision assertion against the referenced spec."""
+    if meta.get("owner") != args.owner:
+        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+    require_role_admission(str(args.owner))
+    if meta.get("status") != "in_progress":
+        raise RuntimeError("accept requires an active task")
+    if "spec_ref" not in meta or "spec_revision" not in meta:
+        raise RuntimeError("accept requires a referenced task spec")
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    meta["spec_acceptance"] = {
+        "spec_ref": meta["spec_ref"],
+        "spec_revision": meta["spec_revision"],
+        "status": "pass",
+        "evidence_class": args.evidence_class,
+        "evidence_ref": args.evidence_ref,
+        "evidence_digest": args.evidence_digest,
+    }
+    error = done_admission_error(ROOT, meta, policy)
+    if error:
+        raise RuntimeError(error)
+    return str(args.note)
+
+
 def apply_owned_change(  # noqa: C901
-    args: argparse.Namespace, kind: str, meta: Meta, tasks: list[Task] | None = None
+    args: argparse.Namespace,
+    kind: str,
+    meta: Meta,
+    tasks: list[Task] | None = None,
+    policy: EvidencePolicy | None = None,
 ) -> str:
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
     require_update_role_admission(kind, str(args.owner))
-    require_release_admission(kind, getattr(args, "status", None), meta, tasks)
+    require_release_admission(kind, getattr(args, "status", None), meta, tasks, policy)
     if kind == "heartbeat":
         if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
             raise RuntimeError("heartbeat requires an active task and positive lease")
@@ -2131,7 +2420,13 @@ def apply_gate(args: argparse.Namespace, meta: Meta) -> str:
         raise RuntimeError(str(error)) from error
 
 
-def apply_transition(args: argparse.Namespace, kind: str, meta: Meta, tasks: list[Task]) -> str:
+def apply_transition(
+    args: argparse.Namespace,
+    kind: str,
+    meta: Meta,
+    tasks: list[Task],
+    policy: EvidencePolicy | None = None,
+) -> str:
     """Dispatch one typed lifecycle transition for both storage backends."""
     if kind == "claim":
         return apply_claim(args, meta, tasks)
@@ -2146,11 +2441,12 @@ def apply_transition(args: argparse.Namespace, kind: str, meta: Meta, tasks: lis
         return apply_recover_expired(args, meta, tasks)
     if kind == "gate":
         return apply_gate(args, meta)
-    if kind == "checkpoint":
-        return apply_checkpoint(args, meta)
-    if kind == "rollback":
-        return apply_rollback(args, meta)
-    return apply_owned_change(args, kind, meta, tasks)
+    record_transition = {"checkpoint": apply_checkpoint, "rollback": apply_rollback}.get(kind)
+    if record_transition is not None:
+        return record_transition(args, meta)
+    if kind == "accept":
+        return apply_accept(args, meta, policy)
+    return apply_owned_change(args, kind, meta, tasks, policy)
 
 
 def rendered_task_views(tasks: list[Task]) -> dict[Path, str]:
@@ -2210,14 +2506,15 @@ def git_session_record(
     return record
 
 
-def mutate(args: argparse.Namespace, kind: str) -> None:  # noqa: C901
+def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None) -> None:  # noqa: C901
     if backend_selection()["backend"] == "sqlite":
-        mutate_sqlite(args, kind)
+        mutate_sqlite(args, kind, policy)
         return
-    with locked():
+    with locked(phase="git_mutate"):
         if backend_selection()["backend"] != "git":
             raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
         sync_replica_before_write()
+        selected_policy = policy_snapshot(policy)
         path, meta, body = locate(args.task)
         require_promotion_preflight(kind)
         before: dict[Path, str | None] = {path: path.read_text()}
@@ -2228,7 +2525,7 @@ def mutate(args: argparse.Namespace, kind: str) -> None:  # noqa: C901
             }
         )
         committed = False
-        note = apply_transition(args, kind, meta, all_tasks())
+        note = apply_transition(args, kind, meta, all_tasks(), selected_policy)
         meta["task_revision"] += 1
         meta["updated_at"] = now()
         session_record = git_session_record(args, kind, meta, before)
@@ -2260,7 +2557,8 @@ def mutate(args: argparse.Namespace, kind: str) -> None:  # noqa: C901
             write_task(path, meta, body)
             views = rendered_task_views(all_tasks())
             write_rendered_task_views(views)
-            errors = mutation_errors(path, before)
+            require_policy_unchanged(ROOT, selected_policy)
+            errors = mutation_errors(path, before, selected_policy)
             if errors:
                 raise RuntimeError("\n".join(errors))
             for target in generated_paths():
@@ -2295,8 +2593,11 @@ def _transition_note(body: str, note: str, at: str) -> str:
     )
 
 
-def mutate_sqlite(args: argparse.Namespace, kind: str) -> None:
+def mutate_sqlite(
+    args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None
+) -> None:
     """Linearize a lifecycle mutation at SQLite's committed CAS update."""
+    selected_policy = policy_snapshot(policy)
     backend = mutating_sqlite_backend()
     initial = backend.load_tasks()
     selected = next((task for task in initial if task[1]["id"] == args.task), None)
@@ -2308,18 +2609,20 @@ def mutate_sqlite(args: argparse.Namespace, kind: str) -> None:
     at = now()
 
     def transition(meta: Meta, tasks: list[Task]) -> tuple[str, str]:
-        note = apply_transition(args, kind, meta, tasks)
+        require_policy_unchanged(ROOT, selected_policy)
+        note = apply_transition(args, kind, meta, tasks, selected_policy)
         candidate = [
             (path, meta if item["id"] == args.task else item, text) for path, item, text in tasks
         ]
         errors = (
-            basic_task_errors(selected[0], meta)
+            basic_task_errors(selected[0], meta, selected_policy)
             + graph_errors(candidate)
             + hierarchy_errors(candidate)
             + supersession_errors(candidate)
         )
         if errors:
             raise RuntimeError("transition validation failed:\n" + "\n".join(errors))
+        require_policy_unchanged(ROOT, selected_policy)
         return note, _transition_note(selected[2], note, at)
 
     trigger = str(getattr(args, "_session_trigger", kind))
@@ -2349,7 +2652,7 @@ def mutate_sqlite(args: argparse.Namespace, kind: str) -> None:
         checkpoint_factory=checkpoint_factory,
     )
     try:
-        export_sqlite_projections()
+        export_sqlite_projections(selected_policy)
     except Exception as error:
         raise StorageCommittedError(
             f"SQLITE_COMMITTED_EXPORT_FAILED: task={args.task}; revision={expected + 1}; {error}"
@@ -2361,6 +2664,17 @@ def cmd_render_status(*, check: bool) -> None:
     if not project_settings()["status_view"]:
         raise RuntimeError("STATUS.md generation is disabled by .handoffctl.json")
     with locked(exclusive=not check):
+        try:
+            policy = evidence_policy(ROOT)
+        except RuntimeError as error:
+            raise RuntimeError(f"task-spec policy invalid: {error}") from error
+        task_errors = [
+            error
+            for path, meta, _body in all_tasks()
+            for error in basic_task_errors(path, meta, policy)
+        ]
+        if task_errors:
+            raise RuntimeError("task-spec validation failed: " + "; ".join(task_errors))
         expected = render_status_views(all_tasks())
         if check:
             if status_projection_errors(expected):
@@ -2393,11 +2707,9 @@ def role_doctor_errors() -> list[str]:
         return [f"role admission unavailable: {error}"]
 
 
-def cmd_doctor(*, live: bool) -> int:
-    """Validate static state and optionally compare the live generated views."""
-    sqlite = backend_selection()["backend"] == "sqlite"
-    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
-    errors = validate(live=live and (not sqlite or sqlite_live))
+def doctor_checks(*, live: bool, sqlite: bool, live_state: State | None) -> list[str]:
+    """Validate one authority view and its optional pre-scanned live input."""
+    errors = validate(live=live, live_state=live_state)
     errors.extend(role_doctor_errors())
     if sqlite:
         errors.extend(SQLiteBackend(DATABASE, project_binding(), TASKS).integrity_errors())
@@ -2408,6 +2720,52 @@ def cmd_doctor(*, live: bool) -> int:
         except (OSError, json.JSONDecodeError, AttributeError):
             code = "REPLICA_BLOCKED"
         errors.append(f"{code}: replica reconciliation requires operator review")
+    return errors
+
+
+def git_doctor_checks(*, live: bool) -> list[str]:
+    """Read one Git authority view while observing live data outside the lock."""
+    if not live:
+        with locked(exclusive=False, phase="doctor"):
+            return doctor_checks(live=False, sqlite=False, live_state=None)
+    for _ in range(3):
+        ticket = published_observation_ticket()
+        scan_config = config() if CONFIG.exists() else None
+        scan_binding = project_binding()
+        live_state = project_scan() if live else None
+        with locked(exclusive=False, phase="doctor"):
+            if backend_selection()["backend"] != "git":
+                raise RuntimeError("BACKEND_CHANGED: retry doctor")
+            if (config() if CONFIG.exists() else None) != scan_config:
+                raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry doctor")
+            if project_binding() != scan_binding:
+                raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry doctor")
+            errors = doctor_checks(live=live, sqlite=False, live_state=live_state)
+            # An intervening publication is harmless when its rendered live
+            # view agrees with this scan. Retry only a stale live comparison;
+            # never hide unrelated structural errors.
+            if (
+                ticket != published_observation_ticket()
+                and errors
+                and all(
+                    error in {"PROJECT_STATE.md is stale", "WORKTREES.md is stale"}
+                    for error in errors
+                )
+            ):
+                continue
+            return errors
+    return ["OBSERVATION_CHANGED: retry doctor"]
+
+
+def cmd_doctor(*, live: bool) -> int:
+    """Validate one consistent Git authority view without locking its live scan."""
+    sqlite = backend_selection()["backend"] == "sqlite"
+    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
+    check_live = live and (not sqlite or sqlite_live)
+    if sqlite:
+        errors = doctor_checks(live=check_live, sqlite=True, live_state=None)
+    else:
+        errors = git_doctor_checks(live=check_live)
     if errors:
         print("\n".join("ERROR: " + value for value in errors))
         return 1
@@ -2420,29 +2778,41 @@ def cmd_doctor(*, live: bool) -> int:
 
 
 def cmd_snapshot(task_id: str | None = None) -> None:
-    with locked(exclusive=False):
-        sqlite = backend_selection()["backend"] == "sqlite"
-        sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
-        errors = validate(live=not sqlite or sqlite_live)
-        if errors:
-            raise RuntimeError("snapshot refused:\n" + "\n".join(errors))
+    sqlite = backend_selection()["backend"] == "sqlite"
+    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
+    for _ in range(3):
+        ticket = published_observation_ticket() if not sqlite else None
+        live_state = project_scan() if not sqlite or sqlite_live else None
+        with locked(exclusive=False, phase="snapshot"):
+            if (backend_selection()["backend"] == "sqlite") != sqlite:
+                raise RuntimeError("BACKEND_CHANGED: retry snapshot")
+            if not sqlite and ticket != published_observation_ticket():
+                continue
+            errors = validate(live=not sqlite or sqlite_live, live_state=live_state)
+            if errors:
+                raise RuntimeError("snapshot refused:\n" + "\n".join(errors))
+            print_snapshot_under_lock(task_id, sqlite)
+            return
+    raise RuntimeError("OBSERVATION_CHANGED: retry snapshot")
+
+
+def print_snapshot_under_lock(task_id: str | None, sqlite: bool) -> None:
+    """Emit one validated snapshot while the caller holds the shared lock."""
+    if sqlite:
+        print("STORAGE_BACKEND=sqlite")
+    else:
+        print("STATE_COMMIT=" + run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip())
+    print((ROOT / "CURRENT.md").read_text(), end="")
+    if task_id is not None:
         if sqlite:
-            print("STORAGE_BACKEND=sqlite")
+            records = storage_backend().load_session_records(task_id)
+            record = records[-1] if records else None
         else:
-            print(
-                "STATE_COMMIT=" + run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip()
-            )
-        print((ROOT / "CURRENT.md").read_text(), end="")
-        if task_id is not None:
-            if sqlite:
-                records = storage_backend().load_session_records(task_id)
-                record = records[-1] if records else None
-            else:
-                record = latest_session(ROOT, task_id)
-            if record is None:
-                raise RuntimeError(f"no session snapshot for {task_id}")
-            validate_session_record(record)
-            print("SESSION_SNAPSHOT=" + json.dumps(record, sort_keys=True, separators=(",", ":")))
+            record = latest_session(ROOT, task_id)
+        if record is None:
+            raise RuntimeError(f"no session snapshot for {task_id}")
+        validate_session_record(record)
+        print("SESSION_SNAPSHOT=" + json.dumps(record, sort_keys=True, separators=(",", ":")))
 
 
 def cmd_board() -> None:
@@ -2711,9 +3081,12 @@ def _start_rollback(
 
 def cmd_rollback(args: argparse.Namespace) -> None:
     """Restore one checkpoint with a durable journal and coordinated Git revert."""
+    policy = evidence_policy(ROOT)
     checkpoint, product, current_commit, previous = _rollback_target(args)
+    require_policy_unchanged(ROOT, policy)
     started, skip_product = _start_rollback(args, checkpoint, product, current_commit, previous)
     try:
+        require_policy_unchanged(ROOT, policy)
         rollback_commit = (
             str(started["rollback_commit"])
             if skip_product
@@ -2737,7 +3110,8 @@ def cmd_rollback(args: argparse.Namespace) -> None:
     )
     args.rollback_checkpoint = checkpoint
     try:
-        mutate(args, "rollback")
+        require_policy_unchanged(ROOT, policy)
+        mutate(args, "rollback", policy)
     except Exception as error:
         ambiguous = build_record(
             checkpoint,
@@ -2762,13 +3136,20 @@ def cmd_rollback(args: argparse.Namespace) -> None:
     )
     with locked():
         _rollback_commit(ROOT, completed, "rollback_completed")
-    reconcile(do_commit=True, push=True)
+    reconcile(do_commit=True, push=True, policy=policy)
 
 
-def require_active_owner(task_id: str, owner: str) -> None:
+def require_active_owner(task_id: str, owner: str) -> EvidencePolicy:
     """Fence wrapped commands with a live claim before external effects."""
-    with locked(exclusive=False):
+    with locked(exclusive=False, phase="run_preflight"):
         _, meta, _ = locate(task_id)
+        try:
+            policy = evidence_policy(ROOT)
+        except RuntimeError as error:
+            raise RuntimeError(f"run preflight failed: {error}") from error
+        spec_errors = task_spec_errors(ROOT, meta, policy)
+        if spec_errors:
+            raise RuntimeError("run preflight failed: " + "; ".join(spec_errors))
         if meta.get("owner") != owner:
             raise RuntimeError("task claim does not match owner")
         if meta.get("status") != "in_progress":
@@ -2782,6 +3163,8 @@ def require_active_owner(task_id: str, owner: str) -> None:
         except GateError as error:
             raise RuntimeError(str(error)) from error
         assert_invocation_worktree(meta)
+        require_policy_unchanged(ROOT, policy)
+        return policy
 
 
 def invocation_worktree() -> tuple[str, str] | None:
@@ -2914,13 +3297,14 @@ def cmd_run(args: argparse.Namespace) -> int:
         raise RuntimeError("missing command")
     if backend_selection()["backend"] == "git":
         config()
-    require_active_owner(args.task, args.owner)
+    policy = require_active_owner(args.task, args.owner)
     # Never execute or consume untracked caller input. Scripts and data must be
     # named by argv or a stable file, whose content digest can be recorded too.
     command_hash = hashlib.sha256("\0".join(args.command).encode()).hexdigest()
     timeout = float(getattr(args, "timeout_seconds", COMMAND_TIMEOUT_SECONDS))
     if timeout <= 0:
         raise RuntimeError("command timeout must be positive")
+    require_policy_unchanged(ROOT, policy)
     timed_out = False
     try:
         proc = subprocess.run(args.command, check=False, stdin=subprocess.DEVNULL, timeout=timeout)
@@ -2953,10 +3337,11 @@ def cmd_run(args: argparse.Namespace) -> int:
         note=note,
         _session_trigger="run",
     )
-    mutate(update, "update")
+    mutate(update, "update", policy)
     sqlite = backend_selection()["backend"] == "sqlite"
     try:
-        reconcile(do_commit=not sqlite, push=not sqlite)
+        require_policy_unchanged(ROOT, policy)
+        reconcile(do_commit=not sqlite, push=not sqlite, policy=policy)
     except Exception as error:
         raise PostCommandReconcileError(
             "COMMAND_RECORDED_POST_RECONCILE_FAILED: "
@@ -3025,12 +3410,13 @@ def cmd_init(args: argparse.Namespace) -> None:
         DATABASE.unlink(missing_ok=True)
         raise
     if selected_backend == "sqlite":
-        export_sqlite_projections()
+        export_sqlite_projections(evidence_policy(ROOT))
     print(f"Initialized project binding {project_id} with {selected_backend} backend")
 
 
 def cmd_migrate(args: argparse.Namespace) -> None:  # noqa: C901
     """Explicitly and restart-safely switch authority between supported backends."""
+    policy = evidence_policy(ROOT)
     current = str(backend_selection()["backend"])
     if current == args.to:
         raise RuntimeError(f"coordinator already uses {current}")
@@ -3043,9 +3429,10 @@ def cmd_migrate(args: argparse.Namespace) -> None:  # noqa: C901
             command_results = legacy_command_results()
             session_records = storage_backend().load_session_records()
             checkpoint_records = storage_backend().load_checkpoint_records()
-            errors = validate(live=False)
+            errors = validate(live=False, policy=policy)
             if errors:
                 raise RuntimeError("migration preflight failed:\n" + "\n".join(errors))
+            require_policy_unchanged(ROOT, policy)
             checkpoint = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip()
             DATABASE.unlink(missing_ok=True)
             try:
@@ -3072,22 +3459,24 @@ def cmd_migrate(args: argparse.Namespace) -> None:  # noqa: C901
                     or imported_checkpoints != checkpoint_records
                 ):
                     raise RuntimeError("record migration equivalence check failed")
+                require_policy_unchanged(ROOT, policy)
                 provision_sqlite_barrier()
                 atomic(BACKEND_CONFIG, json.dumps(selection, indent=2, sort_keys=True) + "\n")
             except Exception:
                 DATABASE.unlink(missing_ok=True)
                 raise
-        export_sqlite_projections()
+        export_sqlite_projections(policy)
     else:
         backend = mutating_sqlite_backend()
 
         def project(tasks: list[Task]) -> None:
-            write_sqlite_projections(tasks, already_locked=True)
+            write_sqlite_projections(tasks, already_locked=True, policy=policy)
 
         def switch() -> None:
-            errors = validate(live=False)
+            errors = validate(live=False, policy=policy)
             if errors:
                 raise RuntimeError("rollback export failed:\n" + "\n".join(errors))
+            require_policy_unchanged(ROOT, policy)
             atomic(BACKEND_CONFIG, json.dumps(selection, indent=2, sort_keys=True) + "\n")
 
         backend.retire(project, switch)
@@ -3382,6 +3771,14 @@ def main() -> int:
     item.add_argument(
         "--status", required=True, choices=[value for value in STATUSES if value != "in_progress"]
     )
+    item.add_argument("--note", required=True)
+    item = commands.add_parser("accept")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--evidence-class", required=True)
+    item.add_argument("--evidence-ref", required=True)
+    item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("promote")
     item.add_argument("task")

@@ -16,7 +16,7 @@ $ tools/handoffctl doctor
 $ tools/handoffctl render-status --check
 ```
 
-These commands validate the exact development-classified Coordinator snapshot recorded in
+These commands validate the exact release-classified Coordinator snapshot recorded in
 `coordinator.vendor.json`, immutable project identities, explicit Git backend, task graph, privacy
 policy, generated views and failure-path tests. They must not create
 `.runtime/coordinator.sqlite3` or its journal files. A clean deterministic result says nothing about
