@@ -2488,7 +2488,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
-| Next action | Vendor sync and exact 79-file source/tree/mode/digest comparison pass in isolated worktree. Prepare signed DCO candidate after reviewing full vendor diff; rerun full tests with host jsonschema dependency or record that environmental blocker, then independent review. |
+| Next action | Candidate 1bbe07ef859c5ee0f5500bd1dce6196abe3e2a55/tree 2c90200194c517533611f857e45ee20ecaefbf52 is signed+DCO and exact 79-file vendor/source/tree verification, vendor/header/privacy/doctor/render-status/gitleaks gates pass. Obtain independent exact-tree review, then publish through the state PR path; full local suite remains blocked only by missing host jsonschema imports. |
 
 
 ## Dependency graph
@@ -3275,7 +3275,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Vendor sync and exact 79-file source/tree/mode/digest comparison pass in isolated worktree. Prepare signed DCO candidate after reviewing full vendor diff; rerun full tests with host jsonschema dependency or record that environmental blocker, then independent review. |
+| P0 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | codex-asb-tui-ar1730-v040-20261009 | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | Candidate 1bbe07ef859c5ee0f5500bd1dce6196abe3e2a55/tree 2c90200194c517533611f857e45ee20ecaefbf52 is signed+DCO and exact 79-file vendor/source/tree verification, vendor/header/privacy/doctor/render-status/gitleaks gates pass. Obtain independent exact-tree review, then publish through the state PR path; full local suite remains blocked only by missing host jsonschema imports. |
 
 ### Blocked (2)
 
@@ -3380,4 +3380,3 @@ flowchart LR
 | P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
 | P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
