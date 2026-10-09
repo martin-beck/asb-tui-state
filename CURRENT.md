@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | PR #52 is published at exact head 0334247df99a7fbc3f2bee1ad0c6fdd869832bae/tree 592ec00ca84f683d2957cadfb8b4b5ba2c8ce178 against observed main 42025e36d27c45f48c742cef67cf55b6ed464917. Obtain independent exact-tree review, wait for all required hosted Coordination checks, repair findings if any, then merge only the reviewed tree. | codex-asb-tui-ar1730-v040-20261009 |
+| P0 | [AR-1730](tasks/AR-1730-coordinator-v040-release-vendor.md): Coordinator v0.4.0 release vendor for ASB-TUI compatibility | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. | PR #52 exact head 0334247df99a7fbc3f2bee1ad0c6fdd869832bae/tree 592ec00ca84f683d2957cadfb8b4b5ba2c8ce178 has green Coordination verification run 37970093350 against base 42025e36d27c45f48c742cef67cf55b6ed464917. Independent exact-tree review is the only remaining pre-merge gate; merge only that reviewed tree, then verify exact-main post-merge CI. | codex-asb-tui-ar1730-v040-20261009 |
 
 ## Blocked
 
