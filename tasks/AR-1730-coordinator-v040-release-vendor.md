@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T00:00:00+00:00",
+  "updated_at": "2026-10-09T17:46:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ This AR owns only the ASB-TUI state vendor and downstream compatibility. It must
 preserve the project binding, Git backend, task lifecycle, privacy policy,
 generated views, and source-only product boundary. No ASB product/state or
 unrelated repository may be changed.
+
+- 2026-10-09T17:46:47+00:00: Defined exact Coordinator v0.4.0 release vendor and ASB-TUI
+  compatibility scope; upstream commit/tree and lightweight-tag boundary recorded.
