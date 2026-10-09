@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**174 ARs tracked** across 5 active status categories.
+**174 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 164 |
+| **Done** | Accepted, integrated, and durably verified | 165 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 174 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 2 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 174 | 1 | 2 | 164 |
+| unassigned | unassigned | 174 | 0 | 2 | 165 |
 
 ## Task drill-down
 
@@ -2466,11 +2466,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-tui-ar1729-fast-exit-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. |
@@ -2678,7 +2678,7 @@ flowchart LR
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
         AR_1728["AR-1728 - Done"]:::status_done
-        AR_1729["AR-1729 - In progress"]:::status_in_progress
+        AR_1729["AR-1729 - Done"]:::status_done
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3255,12 +3255,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Independent reviewer verifies one-file test-only PR #298 at exact head 5d6ff48287a3b25a5210f5902e27365cd9028e5f and the trusted-coverage evidence; do not merge until review passes. |
-
 ### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3276,7 +3270,7 @@ flowchart LR
 | P0 | [AR-1687](../tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 
-### Done (164)
+### Done (165)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3368,3 +3362,6 @@ flowchart LR
 | P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
 | P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
 | P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
+| P0 | [AR-1635](../tasks/AR-1635.md): Control-state ownership test isolation | Unclaimed | Track ASB control-state test isolation required by paired TUI qualification. | No further action; consume the merged ASB evidence in paired qualification. |
+| P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Track TUI compatibility with ASB&#x27;s trusted rustc propagation repair. | No further action; paired lifecycle evidence covers the scoped rustc contract. |
+| P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Track nested TUI compatibility with ASB&#x27;s validated development toolchain contract. | No further action; nested propagation is covered by the merged toolchain contracts and paired evidence. |
