@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37862448278 | `6d4854eb7ba1` | pull_request | AWQ shadow observation | in_progress:- |
 | 37862447805 | `6d4854eb7ba1` | pull_request | Repository quality | in_progress:- |
 | 37862418709 | `c99ff65cda05` | push | Repository quality | in_progress:- |
-| 37862418655 | `c99ff65cda05` | push | Trusted main verification | in_progress:- |
+| 37862418655 | `c99ff65cda05` | push | Trusted main verification | completed:failure |
 | 37861624025 | `bb8f503be6cf` | pull_request | AWQ shadow observation | completed:success |
 | 37861623781 | `bb8f503be6cf` | pull_request | Repository quality | completed:success |
 | 37860939191 | `7c69b415563a` | pull_request | AWQ shadow observation | completed:success |
