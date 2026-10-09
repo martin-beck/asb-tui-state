@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T18:05:04+00:00",
+  "updated_at": "2026-10-09T18:06:02+00:00",
   "worktree_key": ""
 }
 ---
@@ -175,3 +175,6 @@ unrelated repository may be changed.
 - 2026-10-09T18:05:04+00:00: Old PR head was not merged because protected-target preview differed
   after state main metadata advanced. Rebased and force-pushed only AR-1730 branch with lease; no
   other PR or product repository changed.
+
+- 2026-10-09T18:06:02+00:00: Recorded command exit 0; command argv SHA-256
+  011f085228a02e424eb077dd1b8a10c2729cf0e8f33a57c98f94e01983de6e08.
