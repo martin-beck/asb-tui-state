@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Wait for exact-head Repository Quality and AWQ checks on PR #298 at 5d6ff48287a3b25a5210f5902e27365cd9028e5f, then stop for independent review; do not merge. | codex-tui-ar1729-fast-exit-20261009 |
+| P0 | [AR-1729](tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Independent reviewer verifies one-file test-only PR #298 at exact head 5d6ff48287a3b25a5210f5902e27365cd9028e5f and the trusted-coverage evidence; do not merge until review passes. | codex-tui-ar1729-fast-exit-20261009 |
 
 ## Blocked
 
