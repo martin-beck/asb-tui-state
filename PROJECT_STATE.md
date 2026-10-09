@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #297 | `repair/ar-1729-fast-exit-pty-race@2db2c4d00dc7` | `main` | BLOCKED | QUEUED: | fix: make fast noninteractive PTY exits race-safe |
+| #297 | `repair/ar-1729-fast-exit-pty-race@2db2c4d00dc7` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: make fast noninteractive PTY exits race-safe |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37862864050 | `2db2c4d00dc7` | pull_request | AWQ shadow observation | pending:- |
-| 37862863805 | `2db2c4d00dc7` | pull_request | Repository quality | pending:- |
-| 37862448278 | `6d4854eb7ba1` | pull_request | AWQ shadow observation | in_progress:- |
+| 37862864050 | `2db2c4d00dc7` | pull_request | AWQ shadow observation | completed:success |
+| 37862863805 | `2db2c4d00dc7` | pull_request | Repository quality | completed:success |
+| 37862448278 | `6d4854eb7ba1` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37862447805 | `6d4854eb7ba1` | pull_request | Repository quality | completed:cancelled |
-| 37862418709 | `c99ff65cda05` | push | Repository quality | in_progress:- |
+| 37862418709 | `c99ff65cda05` | push | Repository quality | completed:success |
 | 37862418655 | `c99ff65cda05` | push | Trusted main verification | completed:failure |
 | 37861624025 | `bb8f503be6cf` | pull_request | AWQ shadow observation | completed:success |
 | 37861623781 | `bb8f503be6cf` | pull_request | Repository quality | completed:success |
