@@ -1,0 +1,12 @@
+{
+  "coordination_verification_run": 37970814210,
+  "merge_commit": "4d5143eac29d4c8b1a993080a531a1c52af40f20",
+  "merged_head": "0334247df99a7fbc3f2bee1ad0c6fdd869832bae",
+  "merged_tree": "592ec00ca84f683d2957cadfb8b4b5ba2c8ce178",
+  "post_merge_head": "eafacba2eb5d34864036912b3347343da79eed7e",
+  "pull_request": 52,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1730",
+  "verification_conclusion": "success"
+}\n
