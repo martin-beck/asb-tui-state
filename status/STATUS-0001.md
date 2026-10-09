@@ -2474,7 +2474,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. |
-| Next action | Independent reviewer verifies PR #297 at exact head 2db2c4d00dc70bdd4bb51943588aa2327abdfc71; do not merge until review passes. |
+| Next action | Reproduce trusted-main coverage at exact merge 46ae919, add minimal behavior-bearing Rust tests to restore the 90&#37; line gate without exclusions or threshold changes, publish signed+DCO follow-up PR, and stop for independent review. |
 
 
 ## Dependency graph
@@ -3259,7 +3259,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Independent reviewer verifies PR #297 at exact head 2db2c4d00dc70bdd4bb51943588aa2327abdfc71; do not merge until review passes. |
+| P0 | [AR-1729](../tasks/AR-1729.md): Make operator-runner fast noninteractive PTY exit race-safe | codex-tui-ar1729-fast-exit-20261009 | Repair the qualification runner so a legitimate fast noninteractive command exit between posix_spawn and foreground observation is captured deterministically without weakening interactive controlling-PTY proof. | Reproduce trusted-main coverage at exact merge 46ae919, add minimal behavior-bearing Rust tests to restore the 90&#37; line gate without exclusions or threshold changes, publish signed+DCO follow-up PR, and stop for independent review. |
 
 ### Blocked (2)
 
