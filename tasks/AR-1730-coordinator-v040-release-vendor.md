@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Coordinator v0.4.0 release vendor for ASB-TUI compatibility",
-  "updated_at": "2026-10-09T17:58:39+00:00",
+  "updated_at": "2026-10-09T17:59:02+00:00",
   "worktree_key": ""
 }
 ---
@@ -152,3 +152,6 @@ unrelated repository may be changed.
 
 - 2026-10-09T17:58:39+00:00: Recorded command exit 0; command argv SHA-256
   c6f82c85739fe6f106bd213e406d814cf8376edef441e049689e3efb70f11ca1.
+
+- 2026-10-09T17:59:02+00:00: Recorded command exit 0; command argv SHA-256
+  cc5c0c4c8ae5a3a9dc407141536d9b1f0289a9ec305a9028b668182a450470f3.
