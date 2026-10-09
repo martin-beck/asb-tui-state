@@ -3,12 +3,13 @@
 This public repository is the Git-authoritative coordination state for
 [`martin-beck/asb-tui`](https://github.com/martin-beck/asb-tui).
 
-It currently vendors the exact `agent-workflow-coordinator` development commit
-`e863b57edc7f7a21b2aff2c7b45ce226e12637d2` and tree
-`eee603591b917eeca244425559d7c67bb88a7268` through the upstream
-`sync-development` path and deliberately selects the tracked Markdown/Git backend. The schema-v2
-manifest is development evidence, not release evidence. This state repository does not use or
-create a SQLite authority database.
+It currently vendors the exact `agent-workflow-coordinator` v0.4.0 release commit
+`712b36ea3d188237cbe8104e70d905094f93a96b` and tree
+`c496306050a805111f89b3f7bc4cfb0910f27535` through the upstream release `sync` path and
+deliberately selects the tracked Markdown/Git backend. The upstream `v0.4.0` ref is a lightweight
+tag; this repository binds the verified commit/tree and makes no annotated-tag signature claim.
+The schema-v1 manifest is release-vendor evidence. This state repository does not use or create a
+SQLite authority database.
 
 Read `AGENTS.md` and `docs/DEVELOPMENT.md` before operating the coordinator. Generated files such
 as `CURRENT.md`, `STATUS.md`, `PROJECT_STATE.md`, and `WORKTREES.md` must never be edited directly.

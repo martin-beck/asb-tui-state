@@ -8,6 +8,7 @@ import datetime as dt
 import importlib.util
 import json
 import multiprocessing
+import os
 import re
 import subprocess
 import sys
@@ -19,6 +20,8 @@ from tempfile import TemporaryDirectory
 from types import SimpleNamespace
 from typing import Any, cast
 from unittest.mock import patch
+
+from fixture_ids import project_uuid
 
 SOURCE = Path(__file__).resolve().parent.parent / "tools/handoffctl.py"
 sys.path.insert(0, str(SOURCE.parent))
@@ -106,6 +109,13 @@ def concurrent_reconcile(root_value: str, start: Any) -> None:
         patch.object(CORE, "run", return_value=completed),
     ):
         CORE.reconcile(do_commit=False)
+
+
+def concurrent_observation_ticket(root_value: str, start: Any, outcomes: Any) -> None:
+    """Reserve an advisory scan ticket from one shared fixture across processes."""
+    configure_child(root_value)
+    start.wait(5)
+    outcomes.put(CORE.reserve_observation_ticket())
 
 
 def concurrent_promote(root_value: str, start: Any) -> None:
@@ -199,7 +209,7 @@ class HandoffTest(unittest.TestCase):
             json.dumps(
                 {
                     "schema_version": 1,
-                    "project_id": "11111111-1111-4111-8111-111111111111",
+                    "project_id": project_uuid("1"),
                     "project_name": "test-project",
                     "project_title": "Test Project",
                     "status_view": True,
@@ -211,7 +221,7 @@ class HandoffTest(unittest.TestCase):
             json.dumps(
                 {
                     "schema_version": 1,
-                    "project_id": "11111111-1111-4111-8111-111111111111",
+                    "project_id": project_uuid("1"),
                     "state_repository": "owner/state",
                     "product_repository": "owner/product",
                 }
@@ -247,6 +257,51 @@ class HandoffTest(unittest.TestCase):
         CORE.write_task(path, meta, "# Test\n")
         self.refresh_views()
         return cast(Path, path)
+
+    def enable_additive_policy(self) -> None:
+        """Commit the supported downstream policy in the isolated state root."""
+        (self.root / "task-spec-policy.json").write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "additional_evidence_classes": [
+                        "hosted",
+                        "offline",
+                        "privacy",
+                        "journey",
+                        "quality",
+                    ],
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        run_git(["git", "init", "-q", str(self.root)])
+        run_git(["git", "-C", str(self.root), "add", "task-spec-policy.json"])
+        run_git(
+            [
+                "git",
+                "-C",
+                str(self.root),
+                "-c",
+                "user.name=Policy Test",
+                "-c",
+                "user.email=policy@example.invalid",
+                "commit",
+                "-qm",
+                "policy fixture",
+            ],
+        )
+
+    def write_additive_spec(self) -> None:
+        """Write one realistic project spec that uses every additive class."""
+        value = json.loads(
+            (
+                Path(__file__).resolve().parents[1] / "examples/task-specs/downstream-additive.json"
+            ).read_text(encoding="utf-8")
+        )
+        value["spec_ref"] = "spec.json"
+        (self.root / "spec.json").write_text(json.dumps(value) + "\n", encoding="utf-8")
 
     def refresh_views(self) -> None:
         """Refresh both deterministic task views in a fixture repository."""
@@ -302,15 +357,13 @@ class HandoffTest(unittest.TestCase):
             patch.object(
                 CORE.uuid,
                 "uuid4",
-                return_value=CORE.uuid.UUID("33333333-3333-4333-8333-333333333333"),
+                return_value=CORE.uuid.UUID(project_uuid("3")),
             ),
             patch("builtins.print"),
         ):
             run.return_value = subprocess.CompletedProcess([], 0, str(self.root) + "\n", "")
             CORE.cmd_init(args)
-        self.assertEqual(
-            "33333333-3333-4333-8333-333333333333", CORE.project_settings()["project_id"]
-        )
+        self.assertEqual(project_uuid("3"), CORE.project_settings()["project_id"])
         with self.assertRaisesRegex(RuntimeError, "already initialized"):
             CORE.cmd_init(args)
 
@@ -322,7 +375,7 @@ class HandoffTest(unittest.TestCase):
             [],
             {**valid_settings, "schema_version": 2},
             {**valid_settings, "project_id": "bad"},
-            {**valid_settings, "project_id": "11111111-1111-1111-8111-111111111111"},
+            {**valid_settings, "project_id": project_uuid("1").replace("-4111-", "-1111-")},
             {**valid_settings, "project_name": "Bad Name"},
             {**valid_settings, "project_title": ""},
             {**valid_settings, "status_view": "yes"},
@@ -337,7 +390,7 @@ class HandoffTest(unittest.TestCase):
             {},
             {**valid_binding, "schema_version": 2},
             {**valid_binding, "project_id": "bad"},
-            {**valid_binding, "project_id": "11111111-1111-1111-8111-111111111111"},
+            {**valid_binding, "project_id": project_uuid("1").replace("-4111-", "-1111-")},
         ):
             with self.subTest(binding=value), self.assertRaises(RuntimeError):
                 CORE.BINDING.write_text(json.dumps(value))
@@ -1589,6 +1642,24 @@ class HandoffTest(unittest.TestCase):
         with CORE.locked(timeout=0.1):
             pass
 
+    def test_private_lock_trace_records_wait_hold_and_timeout(self) -> None:
+        trace = self.root / "lock-trace.jsonl"
+        with (
+            patch.dict(os.environ, {"HANDOFFCTL_LOCK_TRACE": str(trace)}),
+            CORE.locked(phase="fixture_hold"),
+            self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
+            CORE.locked(timeout=0, phase="fixture_wait"),
+        ):
+            pass
+        records = [json.loads(line) for line in trace.read_text().splitlines()]
+        self.assertEqual({"fixture_hold", "fixture_wait"}, {item["phase"] for item in records})
+        self.assertTrue(
+            next(item for item in records if item["phase"] == "fixture_wait")["timeout"]
+        )
+        self.assertIsInstance(records[0]["ended_ns"], int)
+        with patch.dict(os.environ, {"HANDOFFCTL_LOCK_TRACE": str(self.root)}):
+            CORE.trace_lock_metric("fixture", "shared", 0, 0)
+
     def test_lock_yields_capability_and_invalidates_after_scope(self) -> None:
         with CORE.locked(timeout=0.1) as guard:
             self.assertEqual(CORE.coordinator_lock_path().resolve(), guard.path)
@@ -1848,12 +1919,8 @@ class HandoffTest(unittest.TestCase):
         binary.write_bytes(b"\\xff")
         large = self.root / "large.md"
         large.write_text("x" * 200001)
-        sample_uuid = "33333333-3333-4333-8333-333333333333"
-        for relative in (
-            Path("tools/handoffctl.py"),
-            Path("tests/test_handoffctl.py"),
-            Path("tests/test_sqlite_storage.py"),
-        ):
+        sample_uuid = project_uuid("3")
+        for relative in (Path("tools/handoffctl.py"),):
             fixture = self.root / relative
             fixture.parent.mkdir(exist_ok=True)
             fixture.write_text(sample_uuid)
@@ -1863,8 +1930,6 @@ class HandoffTest(unittest.TestCase):
         self.assertIn("exceeds 200 KiB", errors)
         self.assertIn("notes.md: session-like UUID", errors)
         self.assertNotIn("tools/handoffctl.py: session-like UUID", errors)
-        self.assertNotIn("tests/test_handoffctl.py: session-like UUID", errors)
-        self.assertNotIn("tests/test_sqlite_storage.py: session-like UUID", errors)
         self.assertNotIn("coordinator.binding.json: session-like UUID", errors)
         self.assertIn("coordinator.binding.json: possible credential", errors)
 
@@ -1995,7 +2060,10 @@ class HandoffTest(unittest.TestCase):
             )
         )
 
+        calls: list[list[str]] = []
+
         def fake_run(args: list[str], **_: object) -> object:  # noqa: C901
+            calls.append(args)
             joined = " ".join(args)
             stdout = ""
             returncode = 0
@@ -2004,7 +2072,10 @@ class HandoffTest(unittest.TestCase):
                 if checkout == str(CORE.ROOT):
                     stdout = f"worktree {CORE.ROOT}\n\nworktree {state_task}\n"
                 else:
-                    stdout = f"worktree {product}\n\nworktree {second}\n"
+                    stdout = (
+                        f"worktree {product}\nHEAD {'b' * 40}\nbranch refs/heads/main\n\n"
+                        f"worktree {second}\nHEAD {'c' * 40}\ndetached\n"
+                    )
             elif "symbolic-ref" in joined and str(second) in joined:
                 returncode = 1
             elif "symbolic-ref" in joined:
@@ -2033,6 +2104,8 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(2, len(state["worktrees"]))
         self.assertEqual(1, state["worktrees"][0]["dirty"])
         self.assertEqual("DETACHED", state["worktrees"][1]["branch"])
+        self.assertFalse(any("symbolic-ref" in args for args in calls))
+        self.assertFalse(any("rev-parse" in args and str(second) in args for args in calls))
 
     def test_project_scan_excludes_all_coordinator_worktrees(self) -> None:
         product = self.root / "product"
@@ -2078,6 +2151,50 @@ class HandoffTest(unittest.TestCase):
             {item["key"] for item in state["worktrees"]},
         )
 
+    def test_project_scan_observes_worktrees_concurrently_in_inventory_order(self) -> None:
+        product = self.root / "product"
+        second = self.root / "second"
+        product.mkdir()
+        second.mkdir()
+        CORE.CONFIG.parent.mkdir()
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(self.root),
+                    "product_worktree": product.name,
+                    "github_repository": "owner/repo",
+                }
+            )
+        )
+        simultaneous = threading.Barrier(2, timeout=2)
+
+        def fake_run(args: list[str], **_: object) -> subprocess.CompletedProcess[str]:
+            joined = " ".join(args)
+            if "worktree list" in joined:
+                stdout = (
+                    f"worktree {CORE.ROOT}\n"
+                    if str(CORE.ROOT) in args
+                    else f"worktree {product}\n\nworktree {second}\n"
+                )
+            elif args[:2] == ["gh", "pr"] or args[:2] == ["gh", "run"]:
+                stdout = "[]"
+            else:
+                stdout = "a" * 40 + "\n"
+            return subprocess.CompletedProcess(args, 0, stdout=stdout, stderr="")
+
+        def fake_scan(item: tuple[Path, str, str]) -> dict[str, object]:
+            simultaneous.wait()
+            if item[0] == product:
+                time.sleep(0.01)
+            return {"key": item[0].name}
+
+        with (
+            patch.object(CORE, "run", side_effect=fake_run),
+            patch.object(CORE, "scan_worktree", side_effect=fake_scan),
+        ):
+            state = CORE.project_scan()
+        self.assertEqual([product.name, second.name], [item["key"] for item in state["worktrees"]])
+
     def test_changed_paths_preserves_existing_and_deleted_semantics(self) -> None:
         changed = self.root / "changed.md"
         changed.write_text("after")
@@ -2100,6 +2217,394 @@ class HandoffTest(unittest.TestCase):
             (self.root / "PROJECT_STATE.md").write_text("stale")
             errors = CORE.validate(live=True)
             self.assertIn("PROJECT_STATE.md is stale", errors)
+
+    def test_git_reconcile_observes_product_without_authority_lock(self) -> None:
+        self.make_task()
+        observed = False
+
+        def scan_without_lock() -> Any:
+            nonlocal observed
+            # A second descriptor must be able to acquire the same lock while
+            # the slow external observation phase is in progress.
+            with CORE.locked(timeout=0):
+                observed = True
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=scan_without_lock):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertTrue(observed)
+
+    def test_git_snapshot_observes_product_without_shared_lock(self) -> None:
+        self.make_task()
+
+        def scan_without_lock() -> Any:
+            with CORE.locked(timeout=0):
+                pass
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=scan_without_lock):
+            CORE.reconcile(do_commit=False)
+            with patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")):
+                CORE.cmd_snapshot()
+
+    def test_git_doctor_scans_unlocked_but_validates_under_shared_lock(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        actual_validate = CORE.validate
+
+        def unlocked_scan() -> Any:
+            with CORE.locked(timeout=0):
+                pass
+            return self.fake_scan()
+
+        def locked_validation(*, live: bool, live_state: Any) -> list[str]:
+            with (
+                self.assertRaises(CORE.LockTimeoutError),
+                CORE.locked(timeout=0),
+            ):
+                pass
+            return cast(list[str], actual_validate(live=live, live_state=live_state))
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=unlocked_scan),
+            patch.object(CORE, "validate", side_effect=locked_validation),
+        ):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+
+    def test_git_doctor_accepts_equivalent_publication_during_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def interleaved_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                    CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=interleaved_scan):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+        self.assertEqual(1, scans)
+
+    def test_git_doctor_retries_changed_publication_during_scan(self) -> None:
+        self.make_task()
+        older = self.fake_scan()
+        newer = self.fake_scan()
+        newer["remote_main"] = "c" * 40
+        with patch.object(CORE, "project_scan", return_value=older):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def interleaved_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=newer):
+                    CORE.reconcile(do_commit=False)
+                return older
+            return newer
+
+        with patch.object(CORE, "project_scan", side_effect=interleaved_scan):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+        self.assertEqual(2, scans)
+
+    def test_git_doctor_fails_boundedly_if_every_scan_is_overtaken(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def overtaken_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            newer = self.fake_scan()
+            newer["remote_main"] = "c" * 40
+            with patch.object(CORE, "project_scan", return_value=newer):
+                CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=overtaken_scan),
+            patch("builtins.print") as printed,
+        ):
+            self.assertEqual(1, CORE.cmd_doctor(live=True))
+        self.assertEqual(3, scans)
+        printed.assert_called_once_with("ERROR: OBSERVATION_CHANGED: retry doctor")
+
+    def test_git_doctor_does_not_hide_structural_error_behind_overtaken_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def overtaken_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=overtaken_scan),
+            patch.object(
+                CORE,
+                "doctor_checks",
+                return_value=["PROJECT_STATE.md is stale", "structural error"],
+            ),
+            patch("builtins.print") as printed,
+        ):
+            self.assertEqual(1, CORE.cmd_doctor(live=True))
+        self.assertEqual(1, scans)
+        printed.assert_called_once_with("ERROR: PROJECT_STATE.md is stale\nERROR: structural error")
+
+    def test_git_doctor_rejects_changed_binding_after_scan(self) -> None:
+        self.make_task()
+
+        def changed_binding_scan() -> Any:
+            binding = json.loads(CORE.BINDING.read_text())
+            binding["product_repository"] = "owner/other"
+            CORE.BINDING.write_text(json.dumps(binding))
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=changed_binding_scan),
+            self.assertRaisesRegex(RuntimeError, "OBSERVATION_INPUT_CHANGED"),
+        ):
+            CORE.cmd_doctor(live=True)
+
+    def test_git_reconcile_does_not_publish_an_overtaken_scan(self) -> None:
+        self.make_task(worktree_key="worker-one")
+        older = self.fake_scan()
+        newer = self.fake_scan()
+        for state, head in ((older, "a" * 40), (newer, "b" * 40)):
+            state["worktrees"] = [
+                {
+                    "key": "worker-one",
+                    "branch": "feature/one",
+                    "head": head,
+                    "dirty": 0,
+                    "paths": [],
+                    "behind": 0,
+                    "ahead": 1,
+                }
+            ]
+        scans = 0
+
+        def out_of_order_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                self.assertTrue(CORE.reconcile(do_commit=False))
+                return older
+            return newer
+
+        with patch.object(CORE, "project_scan", side_effect=out_of_order_scan):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertEqual(3, scans)
+        self.assertEqual("b" * 40, CORE.locate("AR-0001")[1]["observed_head"])
+        self.assertEqual(CORE.live_docs(newer)[1], (self.root / "WORKTREES.md").read_text())
+        self.assertEqual("3\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_overtaken_commit_and_push_honor_durability_request(self) -> None:
+        task_path = self.make_task()
+        scans = 0
+
+        def publish_newer_plain_reconcile() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                self.assertTrue(CORE.reconcile(do_commit=False))
+                task_path.write_text(task_path.read_text() + "\nUnrelated draft note.\n")
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=publish_newer_plain_reconcile),
+            patch.object(CORE, "commit", return_value=True) as commit,
+            patch.object(CORE, "push_replica") as push,
+        ):
+            self.assertTrue(CORE.reconcile(do_commit=True, push=True))
+        commit.assert_called_once()
+        self.assertNotIn(task_path, commit.call_args.args[1])
+        push.assert_called_once()
+        self.assertEqual("3\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_commit_collects_pending_paths_from_earlier_plain_reconcile(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+            pending = json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())[
+                "pending_paths"
+            ]
+            self.assertTrue(pending)
+            with patch.object(CORE, "commit", return_value=True) as commit:
+                self.assertTrue(CORE.reconcile(do_commit=True))
+        self.assertTrue(
+            {CORE.ROOT / value for value in pending}.issubset(set(commit.call_args.args[1]))
+        )
+        self.assertEqual(
+            [], json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())["pending_paths"]
+        )
+
+    def test_pending_task_content_change_refuses_later_commit(self) -> None:
+        task_path = self.make_task(worktree_key="worker-one")
+        state = self.fake_scan()
+        state["worktrees"] = [
+            {
+                "key": "worker-one",
+                "branch": "feature/one",
+                "head": "b" * 40,
+                "dirty": 0,
+                "paths": [],
+                "behind": 0,
+                "ahead": 1,
+            }
+        ]
+        with patch.object(CORE, "project_scan", return_value=state):
+            CORE.reconcile(do_commit=False)
+            task_path.write_text(task_path.read_text() + "\nUnrelated draft note.\n")
+            with self.assertRaisesRegex(RuntimeError, "PENDING_OBSERVATION_CHANGED"):
+                CORE.reconcile(do_commit=True)
+
+    def test_committed_task_transition_clears_stale_pending_hash(self) -> None:
+        task_path = self.make_task(worktree_key="worker-one")
+        CORE.run(["git", "init", "-b", "main", str(self.root)])
+        for key, value in (
+            ("user.name", "Fixture"),
+            ("user.email", "fixture@example.invalid"),
+            ("commit.gpgsign", "false"),
+        ):
+            CORE.run(["git", "-C", str(self.root), "config", key, value])
+        CORE.run(["git", "-C", str(self.root), "add", "--all"])
+        CORE.run(["git", "-C", str(self.root), "commit", "-m", "fixture baseline"])
+        state = self.fake_scan()
+        state["worktrees"] = [
+            {
+                "key": "worker-one",
+                "branch": "feature/one",
+                "head": "b" * 40,
+                "dirty": 0,
+                "paths": [],
+                "behind": 0,
+                "ahead": 1,
+            }
+        ]
+        with patch.object(CORE, "project_scan", return_value=state):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+            self.assertIn(
+                str(task_path.relative_to(self.root)),
+                json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())["pending_paths"],
+            )
+            meta, body = CORE.read_task(task_path)
+            meta["status"] = "in_progress"
+            meta["owner"] = "worker-one"
+            meta["claim_expires"] = "2030-01-01T00:00:00+00:00"
+            meta["task_revision"] = 2
+            CORE.write_task(task_path, meta, body)
+            self.refresh_views()
+            CORE.run(["git", "-C", str(self.root), "add", "--all"])
+            CORE.run(["git", "-C", str(self.root), "commit", "-m", "fixture claim"])
+            self.assertTrue(CORE.reconcile(do_commit=False))
+
+    def test_observation_tickets_are_checkout_local(self) -> None:
+        first = CORE.reserve_observation_ticket()
+        other_runtime = self.root / "other-checkout" / ".runtime"
+        with patch.object(CORE, "RUNTIME", other_runtime):
+            self.assertEqual(1, CORE.reserve_observation_ticket())
+            self.assertEqual(0, CORE.published_observation_ticket())
+        self.assertEqual(1, first)
+        self.assertEqual(2, CORE.reserve_observation_ticket())
+
+    def test_failed_push_keeps_locally_published_observation_ticket(self) -> None:
+        self.make_task()
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica", side_effect=OSError("push failed")),
+            self.assertRaisesRegex(OSError, "push failed"),
+        ):
+            CORE.reconcile(do_commit=True, push=True)
+        self.assertEqual("1\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_failed_publication_marker_recovers_on_later_scan(self) -> None:
+        self.make_task()
+        real_atomic = CORE.atomic
+
+        def fail_marker(path: Path, value: str) -> None:
+            if path.name == "last-reconcile.json":
+                raise OSError("marker write failed")
+            real_atomic(path, value)
+
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "atomic", side_effect=fail_marker),
+            self.assertRaisesRegex(OSError, "marker write failed"),
+        ):
+            CORE.reconcile(do_commit=True)
+        self.assertEqual("1\n", CORE.observation_marker("observation-published").read_text())
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertEqual("2\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_snapshot_retries_when_reconcile_publishes_during_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def scan_with_interleaved_publication() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                    CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=scan_with_interleaved_publication),
+            patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+        ):
+            CORE.cmd_snapshot()
+        self.assertEqual(2, scans)
+
+    def test_observation_tickets_are_unique_across_workers(self) -> None:
+        start = multiprocessing.Event()
+        outcomes: Any = multiprocessing.Queue()
+        processes = [
+            multiprocessing.Process(
+                target=concurrent_observation_ticket,
+                args=(str(self.root), start, outcomes),
+            )
+            for _ in range(8)
+        ]
+        for process in processes:
+            process.start()
+        start.set()
+        values = [outcomes.get(timeout=5) for _ in processes]
+        for process in processes:
+            process.join(5)
+            self.assertEqual(0, process.exitcode)
+        self.assertEqual(list(range(1, 9)), sorted(values))
+
+    def test_git_reconcile_rejects_changed_scan_binding(self) -> None:
+        self.make_task()
+
+        def change_binding() -> Any:
+            binding = json.loads(CORE.BINDING.read_text())
+            binding["product_repository"] = "owner/other"
+            CORE.BINDING.write_text(json.dumps(binding))
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=change_binding),
+            self.assertRaisesRegex(RuntimeError, "OBSERVATION_INPUT_CHANGED"),
+        ):
+            CORE.reconcile(do_commit=False)
+        self.assertFalse((self.root / "PROJECT_STATE.md").exists())
 
     def test_generated_view_validation_reports_stale_and_renderer_errors(self) -> None:
         self.make_task()
@@ -2403,6 +2908,53 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
         command.assert_not_called()
+
+    def test_run_a_b_a_policy_swap_has_no_command_or_journal_effect(self) -> None:
+        self.enable_additive_policy()
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        CORE.CONFIG.parent.mkdir(exist_ok=True)
+        CORE.CONFIG.write_text("{}")
+        policy_path = self.root / "task-spec-policy.json"
+        original_payload = policy_path.read_bytes()
+        original_check = CORE.require_policy_unchanged
+        checks = 0
+
+        def a_b_a_check(root: Path, expected: Any) -> None:
+            nonlocal checks
+            checks += 1
+            if checks == 1:
+                original_check(root, expected)
+                return
+            saved = self.root / "task-spec-policy.saved"
+            policy_path.replace(saved)
+            policy_path.write_bytes(original_payload.replace(b'"hosted"', b'"remote"', 1))
+            try:
+                original_check(root, expected)
+            finally:
+                policy_path.unlink()
+                saved.replace(policy_path)
+
+        real_subprocess_run = CORE.subprocess.run
+        commands: list[object] = []
+
+        def observe_run(command: object, *args: object, **kwargs: object) -> object:
+            commands.append(command)
+            return real_subprocess_run(command, *args, **kwargs)
+
+        with (
+            patch.object(CORE, "assert_invocation_worktree"),
+            patch.object(CORE, "require_policy_unchanged", side_effect=a_b_a_check),
+            patch.object(CORE.subprocess, "run", side_effect=observe_run),
+            self.assertRaisesRegex(RuntimeError, "changed during operation"),
+        ):
+            CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
+        self.assertNotIn(["true"], commands)
+        self.assertEqual(original_payload, policy_path.read_bytes())
+        self.assertFalse((self.root / "sessions/AR-0001.jsonl").exists())
 
     def test_replica_prewrite_fast_forward_and_dirty_refusal(self) -> None:
         CORE.CONFIG.parent.mkdir()
@@ -2917,6 +3469,7 @@ class HandoffTest(unittest.TestCase):
             patch("builtins.print") as output,
             patch.object(CORE, "validate", return_value=[]),
             patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
         ):
             CORE.cmd_snapshot("AR-0001")
         self.assertTrue(any("SESSION_SNAPSHOT=" in str(call) for call in output.call_args_list))
@@ -2940,6 +3493,7 @@ class HandoffTest(unittest.TestCase):
             patch("builtins.print"),
             patch.object(CORE, "validate", return_value=[]),
             patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
             self.assertRaisesRegex(RuntimeError, "no session snapshot"),
         ):
             CORE.cmd_snapshot("AR-9999")
@@ -3039,6 +3593,257 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(
             CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
         )
+
+    def test_additive_policy_is_shared_by_doctor_render_run_and_done_lifecycle(self) -> None:
+        self.enable_additive_policy()
+        self.write_additive_spec()
+        acceptance = {
+            "spec_ref": "spec.json",
+            "spec_revision": 1,
+            "status": "pass",
+            "evidence_class": "hosted",
+            "evidence_ref": "quality/AR-0001",
+            "evidence_digest": "sha256:" + "a" * 64,
+        }
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            spec_ref="spec.json",
+            spec_revision=1,
+            spec_acceptance=acceptance,
+        )
+        self.assertEqual([], CORE.validate())
+        CORE.cmd_render_status(check=True)
+        with patch.object(CORE, "assert_invocation_worktree"):
+            CORE.require_active_owner("AR-0001", "worker-a")
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            status="done",
+            note="accepted",
+        )
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica"),
+        ):
+            CORE.mutate(args, "release")
+        self.assertEqual("done", CORE.locate("AR-0001")[1]["status"])
+
+    def test_accept_records_spec_evidence_before_done_without_weakening_gate(self) -> None:
+        self.enable_additive_policy()
+        self.write_additive_spec()
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            spec_ref="spec.json",
+            spec_revision=1,
+        )
+        release = argparse.Namespace(
+            task="AR-0001", owner="worker-a", status="done", note="finished"
+        )
+        accept = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            evidence_class="hosted",
+            evidence_ref="quality/AR-0001",
+            evidence_digest="sha256:" + "a" * 64,
+            note="reviewed evidence",
+        )
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica"),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "spec_acceptance is incomplete"):
+                CORE.mutate(release, "release")
+            for replacement, message in (
+                ({"owner": "other"}, "owned by worker-a"),
+                ({"expected_revision": 2}, "stale revision"),
+                ({"evidence_class": "unknown"}, "evidence class is unknown"),
+                ({"evidence_ref": "../bad"}, "evidence ref is invalid"),
+                ({"evidence_digest": "sha256:bad"}, "evidence digest is invalid"),
+            ):
+                bad = argparse.Namespace(**{**vars(accept), **replacement})
+                with self.assertRaisesRegex(RuntimeError, message):
+                    CORE.mutate(bad, "accept")
+                self.assertNotIn("spec_acceptance", CORE.locate("AR-0001")[1])
+            CORE.mutate(accept, "accept")
+            accepted = CORE.locate("AR-0001")[1]
+            self.assertEqual(2, accepted["task_revision"])
+            self.assertEqual("in_progress", accepted["status"])
+            self.assertEqual("pass", accepted["spec_acceptance"]["status"])
+            CORE.mutate(release, "release")
+        self.assertEqual("done", CORE.locate("AR-0001")[1]["status"])
+
+    def test_accept_requires_active_task_with_referenced_spec(self) -> None:
+        self.make_task(
+            status="in_progress", owner="worker-a", claim_expires="2099-01-01T00:00:00+00:00"
+        )
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            evidence_class="contract-test",
+            evidence_ref="quality/AR-0001",
+            evidence_digest="sha256:" + "a" * 64,
+            note="accepted",
+        )
+        with self.assertRaisesRegex(RuntimeError, "requires a referenced task spec"):
+            CORE.apply_accept(args, CORE.locate("AR-0001")[1], CORE.DEFAULT_EVIDENCE_POLICY)
+
+    def test_policy_and_spec_failures_cover_every_read_only_preflight(self) -> None:
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        with patch.object(
+            CORE, "evidence_policy", side_effect=RuntimeError("invalid project policy")
+        ):
+            self.assertIn("invalid project policy", CORE.validate())
+            with self.assertRaisesRegex(RuntimeError, "task-spec policy invalid"):
+                CORE.cmd_render_status(check=True)
+            with self.assertRaisesRegex(RuntimeError, "run preflight failed"):
+                CORE.require_active_owner("AR-0001", "worker-a")
+
+        path, meta, body = CORE.locate("AR-0001")
+        meta.update(spec_ref="missing.json", spec_revision=1)
+        CORE.write_task(path, meta, body)
+        self.refresh_views()
+        with self.assertRaisesRegex(RuntimeError, "task-spec validation failed"):
+            CORE.cmd_render_status(check=True)
+        with self.assertRaisesRegex(RuntimeError, "run preflight failed"):
+            CORE.require_active_owner("AR-0001", "worker-a")
+
+    def test_done_policy_snapshot_rejects_missing_evidence_and_open_child(self) -> None:
+        meta = {"id": "AR-0001", "status": "in_progress"}
+        with self.assertRaisesRegex(RuntimeError, "spec_acceptance is incomplete"):
+            CORE.require_done_admission(meta, policy=CORE.DEFAULT_EVIDENCE_POLICY)
+        accepted = {
+            **meta,
+            "spec_ref": "spec.json",
+            "spec_revision": 1,
+            "spec_acceptance": {
+                "spec_ref": "spec.json",
+                "spec_revision": 1,
+                "status": "pass",
+                "evidence_class": "contract-test",
+                "evidence_ref": "quality/AR-0001",
+                "evidence_digest": "sha256:" + "a" * 64,
+            },
+        }
+        spec = json.loads(
+            (Path(__file__).resolve().parents[1] / "examples/task-specs/AR-0070.json").read_text()
+        )
+        spec["spec_ref"] = "spec.json"
+        (self.root / "spec.json").write_text(json.dumps(spec), encoding="utf-8")
+        with (
+            patch.object(CORE, "open_child_error", return_value="open child remains"),
+            self.assertRaisesRegex(RuntimeError, "open child remains"),
+        ):
+            CORE.require_done_admission(
+                accepted, [(self.root / "task", accepted, "body")], CORE.DEFAULT_EVIDENCE_POLICY
+            )
+        CORE.require_done_admission({"status": "open"}, policy=CORE.DEFAULT_EVIDENCE_POLICY)
+
+    def test_policy_change_during_git_mutation_is_atomic(self) -> None:
+        self.enable_additive_policy()
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        task_before = CORE.locate("AR-0001")[0].read_text(encoding="utf-8")
+        current_before = (self.root / "CURRENT.md").read_text(encoding="utf-8")
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            status=None,
+            priority=None,
+            summary=None,
+            next_action="changed",
+            note="race",
+        )
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(
+                CORE,
+                "require_policy_unchanged",
+                side_effect=RuntimeError("task-spec policy changed during operation"),
+            ),
+            self.assertRaisesRegex(RuntimeError, "policy changed during operation"),
+        ):
+            CORE.mutate(args, "update")
+        self.assertEqual(task_before, CORE.locate("AR-0001")[0].read_text(encoding="utf-8"))
+        self.assertEqual(current_before, (self.root / "CURRENT.md").read_text(encoding="utf-8"))
+        self.assertFalse((self.root / "sessions/AR-0001.jsonl").exists())
+
+    def test_policy_validation_and_reconcile_failures_leave_state_unchanged(self) -> None:
+        path = self.make_task()
+        before = path.read_text(encoding="utf-8")
+        self.assertTrue(
+            any(
+                "mutation target is not unique" in error
+                for error in CORE.mutation_errors(self.root / "tasks/missing.md", {})
+            )
+        )
+        task = CORE.locate("AR-0001")
+        with patch.object(CORE, "all_tasks", return_value=[task, task]):
+            self.assertIn("duplicate AR-0001", CORE.validate())
+        failing_backend = unittest.mock.Mock()
+        failing_backend.load_tasks.return_value = [task]
+        failing_backend.load_checkpoint_records.side_effect = RuntimeError("checkpoint fault")
+        failing_backend.load_session_records.return_value = []
+        with patch.object(CORE, "storage_backend", return_value=failing_backend):
+            self.assertIn("checkpoint validation failed", "\n".join(CORE.validate()))
+
+        with (
+            patch.object(
+                CORE, "backend_selection", side_effect=[{"backend": "git"}, {"backend": "sqlite"}]
+            ),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            self.assertRaisesRegex(RuntimeError, "BACKEND_CHANGED"),
+        ):
+            CORE.reconcile(do_commit=False)
+        with (
+            patch.object(CORE, "backend_selection", return_value={"backend": "git"}),
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "write_generated_views"),
+            patch.object(CORE, "validate", return_value=["injected policy validation"]),
+            self.assertRaisesRegex(RuntimeError, "validation failed"),
+        ):
+            CORE.reconcile(do_commit=False)
+        self.assertEqual(before, path.read_text(encoding="utf-8"))
+
+    def test_policy_lifecycle_helpers_reject_inactive_gate_and_prune_stale_view(self) -> None:
+        self.make_task(status="open", owner="worker-a")
+        with self.assertRaisesRegex(RuntimeError, "claim is not active"):
+            CORE.require_active_owner("AR-0001", "worker-a")
+        path, meta, body = CORE.locate("AR-0001")
+        meta.update(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        CORE.write_task(path, meta, body)
+        with (
+            patch.object(CORE, "transition_allowed", side_effect=CORE.GateError("gate denied")),
+            self.assertRaisesRegex(RuntimeError, "gate denied"),
+        ):
+            CORE.require_active_owner("AR-0001", "worker-a")
+        self.assertEqual("body", CORE._transition_note("body", "", "now"))
+        stale = self.root / "status/STATUS-9999.md"
+        stale.parent.mkdir()
+        stale.write_text("stale", encoding="utf-8")
+        CORE.write_status_views({"STATUS.md": "current\n"})
+        self.assertFalse(stale.exists())
 
     def test_doctor_reports_replica_circuit_breaker(self) -> None:
         CORE.REPLICA_BLOCKED.parent.mkdir(exist_ok=True)
@@ -3187,6 +3992,7 @@ class HandoffTest(unittest.TestCase):
         with (
             patch.object(sys, "argv", ["handoffctl", "doctor", "--live"]),
             patch.object(CORE, "validate", return_value=["bad"]),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
             patch.object(CORE, "assert_project_binding"),
             patch("builtins.print"),
         ):

@@ -51,20 +51,15 @@ class GitBackendPolicyTests(unittest.TestCase):
         self.assertEqual("martin-beck/asb-tui-state", binding["state_repository"])
         self.assertEqual("martin-beck/asb-tui", binding["product_repository"])
 
-    def test_vendor_identity_is_exact_development_commit(self) -> None:
+    def test_vendor_identity_is_exact_release_commit(self) -> None:
         manifest = json.loads((ROOT / "coordinator.vendor.json").read_text())
-        self.assertEqual(2, manifest["schema_version"])
-        self.assertEqual("development", manifest["upstream"]["channel"])
-        self.assertEqual("v0.3.57", manifest["upstream"]["version"])
+        self.assertEqual(1, manifest["schema_version"])
+        self.assertEqual("v0.4.0", manifest["upstream"]["version"])
         self.assertEqual(
-            "e863b57edc7f7a21b2aff2c7b45ce226e12637d2",
+            "712b36ea3d188237cbe8104e70d905094f93a96b",
             manifest["upstream"]["commit"],
         )
-        self.assertEqual(
-            "eee603591b917eeca244425559d7c67bb88a7268",
-            manifest["upstream"]["tree"],
-        )
-        self.assertEqual(68, len(manifest["files"]))
+        self.assertEqual(79, len(manifest["files"]))
 
     def test_ar1575_r74_fixture_is_external_blocked_and_claimable_after_unblock(self) -> None:
         source_commit = "6a599085279b8ac637fb6dc2cf4006e902b9f8d4"
