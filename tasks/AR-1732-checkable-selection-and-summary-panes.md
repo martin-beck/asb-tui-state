@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Add checkable selections and separated wizard summary panes",
-  "updated_at": "2026-10-12T23:42:20+00:00",
+  "updated_at": "2026-10-12T23:42:41+00:00",
   "worktree_key": "asb-tui-ar-1732-checkable-selection-panes"
 }
 ---
@@ -197,4 +197,7 @@ visually distinct from selection.
   dafbcc2f03f1edfda5366ae06014a424d9b49d6943dd08812d730fd992b8a703.
 
 - 2026-10-12T23:42:17+00:00: Recorded command exit 101; command argv SHA-256
+  f62eb58d4e0ca95e2a8d88381d52488a9bd75bbcb64fd697895b961adb3225ea.
+
+- 2026-10-12T23:42:41+00:00: Recorded command exit 101; command argv SHA-256
   f62eb58d4e0ca95e2a8d88381d52488a9bd75bbcb64fd697895b961adb3225ea.
