@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1731.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"explicit-selection","description":"Space visibly toggles the focused available agent and select-all visibly selects the allowed catalog set."},
+    {"id":"guarded-continuation","description":"Enter advances only with a valid nonempty agent selection; empty Enter keeps the Agent route active and gives concise actionable feedback."},
+    {"id":"model-renderer-parity","description":"Formal transition model, renderer, contextual hot-key/help catalog, and runtime tests agree for every Agent-step key outcome."},
+    {"id":"catalog-safety","description":"Search, multi-selection, unavailable options, draft restoration, and compatibility filtering remain catalog-bound with no inferred or free-form agent."},
+    {"id":"runtime-coverage","description":"PTY or equivalent runtime coverage proves visible selection, guarded Enter continuation, context help, resize, and cleanup."}
+  ],
+  "definition_of_done": ["An operator can unambiguously select agents and understand why continuation is blocked.", "The checked formal model and UI tests prevent selection/continuation regressions.", "Independent review, signed-DCO merge, and exact-main CI pass."],
+  "inputs": [{"id":"wizard","description":"Existing catalog-backed wizard and formal state model."},{"id":"ui-help","description":"Contextual help and hot-key catalog."}],
+  "outputs": [{"id":"picker-contract","description":"Explicit checked keyboard contract for Agent-step selection and continuation."},{"id":"runtime-regression","description":"Visible interaction regression coverage for installed/PTY-capable TUI execution."}],
+  "allowed_tools": ["cargo","git","gh","tools/handoffctl","pty-fixtures"],
+  "forbidden_tools": ["free-form-agent-input","implicit-agent-selection","unavailable-option-enable","formal-model-bypass","credential-output","history-rewrite","force-push"],
+  "required_evidence_classes": ["contract-test","bounded-model","mechanical"],
+  "gates": [{"id":"key-contract","description":"Formal/model, renderer, help-catalog, and runtime keyboard regression matrix passes."},{"id":"publication","description":"Independent exact-head review, signed-DCO merge, and exact-main UI-quality checks pass."}]
+}
