@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T00:13:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1723"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar1731-visual-language-shell",
   "observed_dirty": 0,
   "observed_head": "97e6692946c3d91b3f4964b9f6a556673bdc35c8",
-  "owner": "codex-asb-tui-ar1731-visual-20261013",
+  "owner": "",
   "plan": "../plans/AR-1731-visual-language-and-wizard-shell.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:52:21+00:00",
+  "updated_at": "2026-10-12T22:52:24+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
@@ -151,3 +151,5 @@ copying their code, marks, or assets.
 
 - 2026-10-12T22:52:21+00:00: AR-1731 merged at 4fd9d2b and exact-main quality and trusted-main runs
   succeeded.
+
+- 2026-10-12T22:52:24+00:00: Released after recorded exact-main qualification.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1731](tasks/AR-1731-visual-language-and-wizard-shell.md): Establish ASB TUI visual language and wizard shell | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. | Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls. | codex-asb-tui-ar1731-visual-20261013 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
