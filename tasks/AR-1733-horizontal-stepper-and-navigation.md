@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T00:23:15+00:00",
+  "claim_expires": "2026-10-13T00:55:16+00:00",
   "depends_on": [
     "AR-1731"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add horizontal wizard stepper and conventional navigation",
-  "updated_at": "2026-10-12T22:53:15+00:00",
+  "updated_at": "2026-10-12T22:55:16+00:00",
   "worktree_key": "asb-tui-ar-1733-horizontal-stepper-navigation"
 }
 ---
@@ -41,3 +41,5 @@ future, and blocked/unavailable steps remain distinguishable without color.
   is now dependency-ready.
 
 - 2026-10-12T22:53:15+00:00: Claimed by codex-asb-tui-ar1733-stepper-20261013.
+
+- 2026-10-12T22:55:16+00:00: Heartbeat by codex-asb-tui-ar1733-stepper-20261013.
