@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:13:54+00:00",
+  "updated_at": "2026-10-12T22:16:47+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
@@ -43,3 +43,6 @@ copying their code, marks, or assets.
   implementation task dependency-ready.
 
 - 2026-10-12T22:13:54+00:00: Claimed by codex-asb-tui-ar1731-visual-20261013.
+
+- 2026-10-12T22:16:47+00:00: Recorded command exit 0; command argv SHA-256
+  f74c7cab610b86d7e3f79428ee8b1e08bd01ec2c912c7cf2ba3806c3d7e68d3b.
