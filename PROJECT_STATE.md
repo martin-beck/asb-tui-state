@@ -10,11 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #299 | `feature/ar1731-visual-language-shell@97e6692946c3` | `main` | BLOCKED | - | feat(ui): establish visual wizard shell |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38317768242 | `97e6692946c3` | pull_request | AWQ shadow observation | queued:- |
 | 37866323304 | `60ab530dd1a0` | push | Trusted main verification | completed:success |
 | 37866323231 | `60ab530dd1a0` | push | Repository quality | completed:success |
 | 37865605668 | `5d6ff48287a3` | pull_request | AWQ shadow observation | completed:success |
@@ -26,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37862448278 | `6d4854eb7ba1` | pull_request | AWQ shadow observation | completed:cancelled |
 | 37862447805 | `6d4854eb7ba1` | pull_request | Repository quality | completed:cancelled |
 | 37862418709 | `c99ff65cda05` | push | Repository quality | completed:success |
-| 37862418655 | `c99ff65cda05` | push | Trusted main verification | completed:failure |
