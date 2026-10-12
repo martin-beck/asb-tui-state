@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 167 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 181 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 2 |
 | Blocked | 2 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 181 | 1 | 2 | 167 |
+| unassigned | unassigned | 181 | 2 | 2 | 167 |
 
 ## Task drill-down
 
@@ -2522,7 +2522,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2780,7 +2780,7 @@ flowchart LR
         AR_1730["AR-1730 - Done"]:::status_done
         AR_1731["AR-1731 - Done"]:::status_done
         AR_1732["AR-1732 - Open"]:::status_open
-        AR_1733["AR-1733 - Planned"]:::status_planned
+        AR_1733["AR-1733 - Open"]:::status_open
         AR_1734["AR-1734 - Planned"]:::status_planned
         AR_1735["AR-1735 - Planned"]:::status_planned
         AR_1736["AR-1736 - Planned"]:::status_planned
@@ -3377,11 +3377,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md): Add checkable selections and separated wizard summary panes | Unclaimed | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. |
+| P1 | [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Unclaimed | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. |
 
 ### Blocked (2)
 
@@ -3390,14 +3391,13 @@ flowchart LR
 | P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (7)
+### Planned (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1687](../tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
-| P1 | [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Unclaimed | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. |
 | P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Unclaimed | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Render focus-aware concise footer help and a discoverable context-sensitive hotkey overlay for every current element and action. |
 | P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Unclaimed | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
 | P1 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Unclaimed | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. |
