@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T00:13:54+00:00",
   "depends_on": [
     "AR-1723"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1731-visual-20261013",
   "plan": "../plans/AR-1731-visual-language-and-wizard-shell.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:13:51+00:00",
+  "updated_at": "2026-10-12T22:13:54+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
@@ -41,3 +41,5 @@ copying their code, marks, or assets.
 
 - 2026-10-12T22:13:51+00:00: AR-1723 is done; the merged visual-fidelity series makes this first
   implementation task dependency-ready.
+
+- 2026-10-12T22:13:54+00:00: Claimed by codex-asb-tui-ar1731-visual-20261013.

@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2494,11 +2494,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1731-visual-20261013 |
 | Parent | None |
 | Children | None |
 | Summary | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. |
@@ -2778,7 +2778,7 @@ flowchart LR
         AR_1728["AR-1728 - Done"]:::status_done
         AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - Done"]:::status_done
-        AR_1731["AR-1731 - Open"]:::status_open
+        AR_1731["AR-1731 - In progress"]:::status_in_progress
         AR_1732["AR-1732 - Planned"]:::status_planned
         AR_1733["AR-1733 - Planned"]:::status_planned
         AR_1734["AR-1734 - Planned"]:::status_planned
@@ -3377,11 +3377,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md): Establish ASB TUI visual language and wizard shell | Unclaimed | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. | Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls. |
+| P1 | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md): Establish ASB TUI visual language and wizard shell | codex-asb-tui-ar1731-visual-20261013 | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. | Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls. |
 
 ### Blocked (2)
 
