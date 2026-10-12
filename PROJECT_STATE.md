@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #300 | `feature/ar1732-checkable-selection-panes@bbe99d88c5b0` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): add checkable selection summaries |
+| #300 | `feature/ar1732-checkable-selection-panes@bbe99d88c5b0` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add checkable selection summaries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38320871465 | `bbe99d88c5b0` | pull_request | AWQ shadow observation | in_progress:- |
-| 38320871025 | `bbe99d88c5b0` | pull_request | Repository quality | in_progress:- |
+| 38320871465 | `bbe99d88c5b0` | pull_request | AWQ shadow observation | completed:success |
+| 38320871025 | `bbe99d88c5b0` | pull_request | Repository quality | completed:success |
 | 38318403564 | `4fd9d2b84a22` | push | Repository quality | completed:success |
 | 38318402278 | `4fd9d2b84a22` | push | Trusted main verification | completed:success |
 | 38317768756 | `97e6692946c3` | pull_request | Repository quality | completed:success |
