@@ -1,0 +1,7 @@
+---
+{"branch":"","checkpoint_commit":"","claim_expires":"","depends_on":["AR-1732","AR-1733","AR-1734"],"id":"AR-1735","next_action":"Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system.","observed_branch":"","observed_dirty":0,"observed_head":"","owner":"","plan":"../plans/AR-1735-visual-route-and-resize-regression.md","priority":"P1","schema_version":1,"spec_acceptance":{"evidence_class":"contract-test","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1735.json","spec_revision":1,"status":"planned"},"spec_ref":"specs/AR-1735.json","spec_revision":1,"status":"planned","summary":"Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.","task_revision":1,"title":"Qualify visual fidelity across routes, resize, and terminal capabilities","updated_at":"2026-10-12T00:00:00Z","worktree_key":"asb-tui-ar-1735-visual-route-resize-regression"}
+---
+
+Visual regressions are product regressions: snapshots must prove hierarchy,
+selection visibility, step location, footer help, and small-terminal behavior,
+not merely that drawing does not panic.

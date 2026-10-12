@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**175 ARs tracked** across 4 active status categories.
+**181 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 166 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -26,7 +26,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 175 |
+| Tasks | 181 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
 | Open or active | 0 |
@@ -36,7 +36,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 175 | 0 | 2 | 166 |
+| unassigned | unassigned | 181 | 0 | 2 | 166 |
 
 ## Task drill-down
 
@@ -2490,6 +2490,90 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Adopt the exact Agent Workflow Coordinator v0.4.0 release and qualify ASB-TUI state compatibility without patching vendored bytes or weakening provenance gates. |
 | Next action | Record post-merge receipt for merge 4d5143e and exact-main verification run 37970814210 at eafacba, run doctor --live, then release AR-1730 done. |
 
+### AR-1731 — Establish ASB TUI visual language and wizard shell
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. |
+| Next action | Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls. |
+
+### AR-1732 — Add checkable selections and separated wizard summary panes
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. |
+| Next action | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. |
+
+### AR-1733 — Add horizontal wizard stepper and conventional navigation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. |
+| Next action | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. |
+
+### AR-1734 — Render contextual footer help and current hotkeys
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. |
+| Next action | Render focus-aware concise footer help and a discoverable context-sensitive hotkey overlay for every current element and action. |
+
+### AR-1735 — Qualify visual fidelity across routes, resize, and terminal capabilities
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. |
+| Next action | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
+
+### AR-1736 — Accept professional wizard visual fidelity and usability
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. |
+| Next action | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. |
+
 
 ## Dependency graph
 
@@ -2694,6 +2778,12 @@ flowchart LR
         AR_1728["AR-1728 - Done"]:::status_done
         AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - Done"]:::status_done
+        AR_1731["AR-1731 - Planned"]:::status_planned
+        AR_1732["AR-1732 - Planned"]:::status_planned
+        AR_1733["AR-1733 - Planned"]:::status_planned
+        AR_1734["AR-1734 - Planned"]:::status_planned
+        AR_1735["AR-1735 - Planned"]:::status_planned
+        AR_1736["AR-1736 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3076,9 +3166,19 @@ flowchart LR
     AR_1722 --> AR_1726
     AR_1722 --> AR_1727
     AR_1723 --> AR_1724
+    AR_1723 --> AR_1731
     AR_1724 --> AR_1725
     AR_1725 --> AR_1728
     AR_1726 --> AR_1727
+    AR_1731 --> AR_1732
+    AR_1731 --> AR_1733
+    AR_1731 --> AR_1734
+    AR_1732 --> AR_1734
+    AR_1732 --> AR_1735
+    AR_1733 --> AR_1734
+    AR_1733 --> AR_1735
+    AR_1734 --> AR_1735
+    AR_1735 --> AR_1736
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3260,7 +3360,7 @@ flowchart LR
 | [AR-1720](../tasks/AR-1720.md) | [AR-1713](../tasks/AR-1713.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) |
 | [AR-1721](../tasks/AR-1721.md) | [AR-1653](../tasks/AR-1653.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md), [AR-1729](../tasks/AR-1729.md) |
 | [AR-1722](../tasks/AR-1722.md) | [AR-0002](../tasks/AR-0002.md) | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md), [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
-| [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) |
+| [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1668](../tasks/AR-1668.md), [AR-1707](../tasks/AR-1707.md), [AR-1720](../tasks/AR-1720.md) | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md), [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md) |
 | [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1714](../tasks/AR-1714.md), [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) |
 | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | [AR-1721](../tasks/AR-1721.md), [AR-1724](../tasks/AR-1724-trusted-user-rustup-layout.md) | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md) |
 | [AR-1726](../tasks/AR-1726-supersession-profile-lifecycle.md) | [AR-1673](../tasks/AR-1673.md), [AR-1722](../tasks/AR-1722.md) | [AR-1727](../tasks/AR-1727-coordinator-external-unblock-vendor.md) |
@@ -3268,6 +3368,12 @@ flowchart LR
 | [AR-1728](../tasks/AR-1728-dependabot-action-pin-repair.md) | [AR-1725](../tasks/AR-1725-operator-runner-parent-toolchain.md) | None |
 | [AR-1729](../tasks/AR-1729.md) | [AR-1703](../tasks/AR-1703.md), [AR-1721](../tasks/AR-1721.md) | None |
 | [AR-1730](../tasks/AR-1730-coordinator-v040-release-vendor.md) | None | None |
+| [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md) | [AR-1723](../tasks/AR-1723-low-typing-wizard-controls.md) | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md), [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md), [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md) |
+| [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md) | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md) | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md), [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) |
+| [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md) | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md) | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md), [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) |
+| [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md) | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md), [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md), [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md) | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) |
+| [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md), [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md), [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md) | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md) |
+| [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md) | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) | None |
 
 ## Complete AR inventory
 
@@ -3278,13 +3384,19 @@ flowchart LR
 | P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (3)
+### Planned (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1687](../tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
+| P1 | [AR-1731](../tasks/AR-1731-visual-language-and-wizard-shell.md): Establish ASB TUI visual language and wizard shell | Unclaimed | Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs. | Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls. |
+| P1 | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md): Add checkable selections and separated wizard summary panes | Unclaimed | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. |
+| P1 | [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Unclaimed | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. |
+| P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Unclaimed | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Render focus-aware concise footer help and a discoverable context-sensitive hotkey overlay for every current element and action. |
+| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Unclaimed | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
+| P1 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Unclaimed | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. |
 
 ### Done (166)
 
@@ -3354,27 +3466,3 @@ flowchart LR
 | P0 | [AR-1605](../tasks/AR-1605.md): OpenRouter setup wizard flow | Unclaimed | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. |
 | P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
-| P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
-| P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
-| P0 | [AR-1612](../tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
-| P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
-| P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Released with the immutable bundle merge; retain paired manifest evidence for release-gate qualification. |
-| P0 | [AR-1615](../tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | No further action; repository-owned exact PTY/control qualification passed on current ASB/TUI heads. |
-| P0 | [AR-1616](../tasks/AR-1616.md): Trusted coverage repair for guided output contract | Unclaimed | Restore trusted-main coverage margin with behavior-relevant output-contract tests without weakening the gate. | Promote after AR-1604 merge; add focused output-contract coverage, independent review, and exact-main verification. |
-| P0 | [AR-1617](../tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Unclaimed | Expose typed seal, interrupted-capture reopen, and bounded development cassette removal across the TUI/ASB route. | Released on protected main; retain receipt and hosted evidence for downstream handshake qualification. |
-| P0 | [AR-1618](../tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Unclaimed | Expose bounded selectable retry/repeat and digest-bound live/offline comparison actions through the TUI/ASB route. | Released on protected main; retain receipt and hosted evidence for downstream handshake qualification. |
-| P0 | [AR-1619](../tasks/AR-1619.md): Cross-repository lifecycle protocol repair | Unclaimed | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. | Released after paired protected-main merges; retain protocol receipt for final handshake qualification. |
-| P0 | [AR-1620](../tasks/AR-1620.md): Development bundle integrity and ASB integration repair | Unclaimed | Harden TUI bundle verification/publication and prove ASB consumes the exact immutable dev artifact. | Released after exact consumer merge; retain immutable manifest receipt for release-gate qualification. |
-| P0 | [AR-1621](../tasks/AR-1621.md): Development authentication and provenance non-blocking audit | Unclaimed | Prove the TUI wizard and control paths never block development on absent authentication, signatures, or key management. | Released after paired protected-main auth audit merges; use evidence for final handshake and quickstart qualification. |
-| P0 | [AR-1622](../tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Implemented exact-head disposable current-main quickstart wrapper, operator guide, and CI contract test while preserving development-fixture install/capture/replay/comparison semantics. | PR #262 merged as 53dd795. Hosted PR checks 37242656516 and 37242656745 passed; exact-main Repository Quality 37243269473 and Trusted 37243269515 passed. Keep AR in progress only until the paired quickstart is rerun with a compatible current ASB binary exposing workload-catalog/capture commands; then record exact paired evidence and release. |
-| P0 | [AR-1623](../tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics for the TUI. | Repair exact-main Trusted coverage at TUI head 663184064bc27794d432f1b92b5dce8079961305 (run 37246280630), rerun the Trusted gate to green, then release AR-1623 using the recorded current-head qualification receipt. |
-| P0 | [AR-1625](../tasks/AR-1625.md): TUI hosted coverage repair for live handshake | Unclaimed | Raise behavior-relevant TUI coverage above the hosted threshold and unblock exact-main AR-1615 acceptance without weakening quality gates. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
-| P0 | [AR-1626](../tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after paired protected-main merge; rerun AR-1615 against the paired repaired heads. |
-| P0 | [AR-1627](../tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
-| P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
-| P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind asb-tui lifecycle channel state to ASB&#x27;s persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
-| P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh TUI install, restart, upgrade, rollback, and human/JSON diagnostics for dev. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
-| P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
-| P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Coordinate TUI compatibility with ASB&#x27;s validated rustup propagation for current-main installation. | No further action; paired lifecycle evidence covers the scoped rustup contract. |
