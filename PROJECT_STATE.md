@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #300 | `feature/ar1732-checkable-selection-panes@0685b608f6fb` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | feat(ui): add checkable selection summaries |
+| #300 | `feature/ar1732-checkable-selection-panes@0685b608f6fb` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add checkable selection summaries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38323112337 | `0685b608f6fb` | pull_request | AWQ shadow observation | in_progress:- |
+| 38323112337 | `0685b608f6fb` | pull_request | AWQ shadow observation | completed:success |
 | 38323111673 | `0685b608f6fb` | pull_request | Repository quality | completed:success |
 | 38322441256 | `bd1b5c70cfe4` | pull_request | AWQ shadow observation | completed:success |
 | 38322440951 | `bd1b5c70cfe4` | pull_request | Repository quality | completed:success |
