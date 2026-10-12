@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**181 ARs tracked** across 5 active status categories.
+**181 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2508,11 +2508,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1732-selection-20261013 |
 | Parent | None |
 | Children | None |
 | Summary | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. |
@@ -2779,7 +2779,7 @@ flowchart LR
         AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - Done"]:::status_done
         AR_1731["AR-1731 - Done"]:::status_done
-        AR_1732["AR-1732 - Open"]:::status_open
+        AR_1732["AR-1732 - In progress"]:::status_in_progress
         AR_1733["AR-1733 - Open"]:::status_open
         AR_1734["AR-1734 - Planned"]:::status_planned
         AR_1735["AR-1735 - Planned"]:::status_planned
@@ -3377,11 +3377,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md): Add checkable selections and separated wizard summary panes | Unclaimed | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. |
+| P1 | [AR-1732](../tasks/AR-1732-checkable-selection-and-summary-panes.md): Add checkable selections and separated wizard summary panes | codex-asb-tui-ar1732-selection-20261013 | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-1733](../tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Unclaimed | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. |
 
 ### Blocked (2)
