@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:26:45+00:00",
+  "updated_at": "2026-10-12T22:30:27+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
@@ -103,3 +103,6 @@ copying their code, marks, or assets.
 
 - 2026-10-12T22:26:45+00:00: Recorded command exit 101; command argv SHA-256
   4e32c2c40f73fe4ec370f5682ab96df7305786e75b24bf93391381c4ba2cb77c.
+
+- 2026-10-12T22:30:27+00:00: Recorded command exit 101; command argv SHA-256
+  862b47cbb47aba95a9965ebc423f5fe69c30e4aedcc3c7b3036f1dc232bbbfb9.
