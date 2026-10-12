@@ -6,6 +6,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `asb-tui` | `main` | `60ab530dd1a0` | 0 | behind 2, ahead 0 |
 | `asb-tui-ar-1731-visual-language-shell` | `feature/ar1731-visual-language-shell` | `97e6692946c3` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `4fd9d2b84a22` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `src/lib.rs`, `src/ui.rs`, `src/wizard.rs`, `src/selection_control.rs` |
+| `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `4fd9d2b84a22` | 8 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/ui-help.json`, `docs/ui-module-inventory.json`, `docs/ui-state-model.json`, `src/formal_state.rs`, `src/lib.rs`, `src/ui.rs`, `src/wizard.rs`, `src/selection_control.rs` |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `4fd9d2b84a22` | 0 | behind 0, ahead 0 |
