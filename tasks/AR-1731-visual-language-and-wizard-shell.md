@@ -8,9 +8,9 @@
   ],
   "id": "AR-1731",
   "next_action": "Define and implement the renderer-neutral visual language and persistent wizard shell before changing individual controls.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar1731-visual-language-shell",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "60ab530dd1a09d6617514f9974217c9f08d48876",
   "owner": "codex-asb-tui-ar1731-visual-20261013",
   "plan": "../plans/AR-1731-visual-language-and-wizard-shell.md",
   "priority": "P1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:16:52+00:00",
+  "updated_at": "2026-10-12T22:16:55+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
