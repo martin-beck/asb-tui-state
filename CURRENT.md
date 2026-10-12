@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1732](tasks/AR-1732-checkable-selection-and-summary-panes.md): Add checkable selections and separated wizard summary panes | Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions. | Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions. | codex-asb-tui-ar1732-selection-20261013 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1733](tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. | - |
+| P1 | [AR-1733](tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. | codex-asb-tui-ar1733-stepper-20261013 |
 
 ## Blocked
 
