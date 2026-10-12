@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:fe05186212b96350beb3638b2dcd9ee4df4849b58e2c39c5ced3e8a216afe1b0",
+    "evidence_ref": "quality/AR-1731-postmerge-receipt-20261012.json",
     "spec_ref": "specs/AR-1731.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Create a professional, accessible ASB TUI visual language and persistent wizard shell informed by established high-value terminal UIs.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Establish ASB TUI visual language and wizard shell",
-  "updated_at": "2026-10-12T22:52:08+00:00",
+  "updated_at": "2026-10-12T22:52:21+00:00",
   "worktree_key": "asb-tui-ar-1731-visual-language-shell"
 }
 ---
@@ -148,3 +148,6 @@ copying their code, marks, or assets.
 
 - 2026-10-12T22:52:08+00:00: Recorded command exit 0; command argv SHA-256
   fbecca1c1c8e5eb0fa7b6d564acfc7784f3248330f19218eb17631afbe7e4f1b.
+
+- 2026-10-12T22:52:21+00:00: AR-1731 merged at 4fd9d2b and exact-main quality and trusted-main runs
+  succeeded.
