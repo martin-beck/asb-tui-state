@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #300 | `feature/ar1732-checkable-selection-panes@bd1b5c70cfe4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add checkable selection summaries |
+| #300 | `feature/ar1732-checkable-selection-panes@0685b608f6fb` | `main` | UNKNOWN | - | feat(ui): add checkable selection summaries |
 
 ## Recent workflows
 
