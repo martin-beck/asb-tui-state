@@ -9,8 +9,8 @@
   "id": "AR-1732",
   "next_action": "Implement accessible multi-selection controls with visible checked state, isolated selection summary, and well-structured descriptions.",
   "observed_branch": "feature/ar1732-checkable-selection-panes",
-  "observed_dirty": 5,
-  "observed_head": "0685b608f6fb919092cc0671cd6624906b8fce0c",
+  "observed_dirty": 0,
+  "observed_head": "e215b44fb58a4552ca8b5672984da7130bda1eb7",
   "owner": "codex-asb-tui-ar1732-selection-20261013",
   "plan": "../plans/AR-1732-checkable-selection-and-summary-panes.md",
   "priority": "P1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Add checkable selections and separated wizard summary panes",
-  "updated_at": "2026-10-12T23:45:29+00:00",
+  "updated_at": "2026-10-12T23:45:45+00:00",
   "worktree_key": "asb-tui-ar-1732-checkable-selection-panes"
 }
 ---
