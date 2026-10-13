@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #302 | `feature/ar1734-contextual-footer-hotkeys@9b9d452182ef` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): add contextual footer and help overlay |
+| #302 | `feature/ar1734-contextual-footer-hotkeys@9b9d452182ef` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | feat(ui): add contextual footer and help overlay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38335872481 | `9b9d452182ef` | pull_request | AWQ shadow observation | in_progress:- |
-| 38335872315 | `9b9d452182ef` | pull_request | Repository quality | in_progress:- |
+| 38335872315 | `9b9d452182ef` | pull_request | Repository quality | completed:success |
 | 38334928835 | `0cdb356725b0` | pull_request | AWQ shadow observation | completed:success |
 | 38334928584 | `0cdb356725b0` | pull_request | Repository quality | completed:success |
 | 38333485592 | `226bd1746644` | pull_request | AWQ shadow observation | completed:success |
