@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #309 | `feature/ar1689-fresh-user-integration@58b27883af35` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | Qualify paired fresh-user ASB/TUI journey |
+| #309 | `feature/ar1689-fresh-user-integration@58b27883af35` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Qualify paired fresh-user ASB/TUI journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38388611025 | `58b27883af35` | pull_request | AWQ shadow observation | in_progress:- |
-| 38388610897 | `58b27883af35` | pull_request | Repository quality | in_progress:- |
+| 38388611025 | `58b27883af35` | pull_request | AWQ shadow observation | completed:success |
+| 38388610897 | `58b27883af35` | pull_request | Repository quality | completed:success |
 | 38385411941 | `32c47f58583f` | push | Trusted main verification | completed:success |
 | 38385411931 | `32c47f58583f` | push | Repository quality | completed:success |
 | 38384478942 | `5dec11aefd8c` | pull_request | AWQ shadow observation | completed:success |
