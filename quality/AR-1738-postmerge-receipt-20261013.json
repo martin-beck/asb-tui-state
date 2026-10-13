@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1738",
+  "status": "qualified",
+  "scope": "asb-tui wizard catalog presentation",
+  "privacy": {
+    "credentials": "none",
+    "provider_network": "not used",
+    "terminal_capture": "bounded deterministic fixture only"
+  },
+  "implementation": {
+    "pull_request": "https://github.com/martin-beck/asb-tui/pull/310",
+    "base": "63400fdb3a06576145302a7d5ca596ac1e72f54d",
+    "reviewed_head": "a6097ca61605f7f80b4e21a777fe31dde7cd4c0b",
+    "main": "f44690918c39160edcbb56a78a78a639c27fe4fd"
+  },
+  "review": {
+    "independent_exact_head": "clean after exact-range model/inventory, source/help parity, visual regression, signature, and DCO review",
+    "reviewer_scope": "independent same-user agent, no product or state mutation"
+  },
+  "verification": {
+    "focused_render": "25 passing wizard-render tests",
+    "full_rust": "cargo test --locked passed before final golden-only update",
+    "visual": "visual regression 4/4 and Python visual gate 5/5 passed after final golden update",
+    "formal": "exact-range UI model validation, generated model, source parity, and module inventory validation passed"
+  },
+  "hosted": {
+    "pr_repository_quality": {
+      "run": "38398747562",
+      "conclusion": "success"
+    },
+    "pr_native_quality": {
+      "run": "38398746638",
+      "conclusion": "success"
+    },
+    "postmerge_repository_quality": {
+      "run": "38399660054",
+      "head": "f44690918c39160edcbb56a78a78a639c27fe4fd",
+      "conclusion": "success"
+    },
+    "postmerge_trusted_main": {
+      "run": "38399660149",
+      "head": "f44690918c39160edcbb56a78a78a639c27fe4fd",
+      "conclusion": "success"
+    }
+  }
+}
