@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #307 | `feature/ar1686-content-addressed-consumer@b20090ca3207` | `main` | BLOCKED | - | fix(qualification): consume ASB content-addressed runner |
+| #307 | `feature/ar1686-content-addressed-consumer@b20090ca3207` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(qualification): consume ASB content-addressed runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38379110527 | `b20090ca3207` | pull_request | AWQ shadow observation | completed:success |
+| 38379110227 | `b20090ca3207` | pull_request | Repository quality | completed:success |
 | 38375286777 | `0c5b7fa63c26` | push | Trusted main verification | completed:success |
 | 38375286774 | `0c5b7fa63c26` | push | Repository quality | completed:success |
 | 38374073086 | `78a76984dbf1` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38352720198 | `fa18db4c2d5a` | pull_request | Repository quality | completed:success |
 | 38351293924 | `f25720e6c630` | pull_request | AWQ shadow observation | completed:failure |
 | 38351293694 | `f25720e6c630` | pull_request | Repository quality | completed:failure |
-| 38350063529 | `c4f554e79c16` | push | Trusted main verification | completed:success |
-| 38350063478 | `c4f554e79c16` | push | Repository quality | completed:success |
