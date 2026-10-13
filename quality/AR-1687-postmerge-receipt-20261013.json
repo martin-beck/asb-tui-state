@@ -1,0 +1,21 @@
+{
+  "exact_main_repository_quality_run": 38385411931,
+  "exact_main_trusted_main_run": 38385411941,
+  "independent_review_comment": 6143796224,
+  "merge_commit": "32c47f58583f395cef15df9978f296c0c960d5d7",
+  "merged_head": "5dec11aefd8c981b7328e07a5e45818666850488",
+  "post_merge_checks": {
+    "repository_quality": "success",
+    "trusted_main_verification": "success"
+  },
+  "pull_request": 308,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1687",
+  "verification": {
+    "comparison_contract": "Human and JSON selected-agent comparison projections retain aggregate availability, unavailable reasons, confounders, and one typed baseline/candidate side per selected run.",
+    "full_exact_head_gate": "format, clippy, locked tests, documentation, formal model, source/visual/help parity, shell quality, publication headers, and privacy scans",
+    "negative_coverage": "Focused reports tests cover available, asymmetric missing-candidate, and multi-candidate provider/provenance-confounded cases without live provider traffic or credentials.",
+    "review": "Independent exact-head review verified formal inventory ownership, signature, DCO, output privacy, and hosted success."
+  }
+}
