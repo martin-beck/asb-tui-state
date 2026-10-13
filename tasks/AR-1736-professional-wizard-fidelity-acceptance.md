@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T04:19:48+00:00",
+  "updated_at": "2026-10-13T04:20:02+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -51,3 +51,6 @@ that the backend has not supplied.
 
 - 2026-10-13T04:19:48+00:00: Recorded command exit 0; command argv SHA-256
   26217a6f3993fbef4efc366111412aeb322290d630835ee783c797562f0b43bf.
+
+- 2026-10-13T04:20:02+00:00: Recorded command exit 0; command argv SHA-256
+  010536382b25784addbc3a272667780bd696feef2ee24acac680fe48ffef7a51.
