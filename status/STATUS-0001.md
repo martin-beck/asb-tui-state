@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2550,11 +2550,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1735-visual-regression-20261013 |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. |
@@ -2782,7 +2782,7 @@ flowchart LR
         AR_1732["AR-1732 - Done"]:::status_done
         AR_1733["AR-1733 - Done"]:::status_done
         AR_1734["AR-1734 - Done"]:::status_done
-        AR_1735["AR-1735 - Open"]:::status_open
+        AR_1735["AR-1735 - In progress"]:::status_in_progress
         AR_1736["AR-1736 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
@@ -3377,11 +3377,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Unclaimed | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
+| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
 
 ### Blocked (2)
 
@@ -3471,4 +3471,3 @@ flowchart LR
 | P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
 | P0 | [AR-1612](../tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
-| P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Released with the immutable bundle merge; retain paired manifest evidence for release-gate qualification. |

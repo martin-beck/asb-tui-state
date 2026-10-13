@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1735](tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. | - |
+| P1 | [AR-1735](tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. | codex-asb-tui-ar1735-visual-regression-20261013 |
 
 ## Blocked
 
