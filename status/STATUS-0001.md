@@ -2586,7 +2586,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. |
-| Next action | Commit the TUI key-contract and fail-closed runtime repair, run exact-head full gates and ASB PR #627 inherited-fd/PTY qualification, then publish a signed-DCO PR for independent review. |
+| Next action | Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge. |
 
 
 ## Dependency graph
@@ -3397,7 +3397,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Commit the TUI key-contract and fail-closed runtime repair, run exact-head full gates and ASB PR #627 inherited-fd/PTY qualification, then publish a signed-DCO PR for independent review. |
+| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge. |
 
 ### Blocked (3)
 
@@ -3484,3 +3484,4 @@ flowchart LR
 | P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
+| P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |

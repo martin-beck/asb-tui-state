@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
-  "next_action": "Commit the TUI key-contract and fail-closed runtime repair, run exact-head full gates and ASB PR #627 inherited-fd/PTY qualification, then publish a signed-DCO PR for independent review.",
+  "next_action": "Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T04:59:15+00:00",
+  "updated_at": "2026-10-13T04:59:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -307,3 +307,10 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T04:59:15+00:00: Recorded command exit 8; command argv SHA-256
   2fb6dc8925c790d11d3f5bf17d1856cd9a2cb5dad48d9a7e2a99f7d95425d59b.
+
+- 2026-10-13T04:59:39+00:00: Published signed+DCO product candidate PR #304 at base
+  cf45a645887a8f8713b72f7f717b08fc8786a9ec, head 85e35a62da8dc51f2b4f34d93f7fc581cd7d7204, tree
+  7d69c5fd6c88a1efc7df8204b56a74573efb5403. Final release binary sha256
+  9168d8885ebc04942c0507416bac0f8472c0584c926ea591850987d940c07d2f passed the exact unchanged ASB PR
+  #627 inherited-fd/PT​​Y qualification 1/1 in 4.43s with no matching child remaining. Local full
+  gates green; independent review assigned and hosted checks pending.
