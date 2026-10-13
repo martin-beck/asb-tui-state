@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar1738-wizard-catalog-viewport-and-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T14:38:33+00:00",
+  "claim_expires": "2026-10-13T14:46:04+00:00",
   "depends_on": [],
   "id": "AR-1738",
   "next_action": "Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:45:47+00:00",
+  "updated_at": "2026-10-13T12:46:04+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
@@ -159,3 +159,5 @@ production repairs separately.
 
 - 2026-10-13T12:45:47+00:00: Recorded command exit 0; command argv SHA-256
   cac54e471ea951e2b60461c4a3fbf08dd7edb5905112817569a3a678bb321665.
+
+- 2026-10-13T12:46:04+00:00: Heartbeat by codex-asb-tui-ar1738-20261013.
