@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #309 | `feature/ar1689-fresh-user-integration@58b27883af35` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Qualify paired fresh-user ASB/TUI journey |
+| #309 | `feature/ar1689-fresh-user-integration@0b8feb34819a` | `main` | UNKNOWN | - | Qualify paired fresh-user ASB/TUI journey |
 
 ## Recent workflows
 
