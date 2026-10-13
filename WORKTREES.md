@@ -9,5 +9,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `4cb2c3e21fd8` | 3 | behind 0, ahead 1 |
-| changed files | - | - | - | `src/ui.rs`, `src/wizard.rs`, `tests/terminal_foundation.rs` |
+| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `4cb2c3e21fd8` | 4 | behind 0, ahead 1 |
+| changed files | - | - | - | `src/ui.rs`, `src/wizard.rs`, `tests/terminal_foundation.rs`, `tests/visual_regression.rs` |
