@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #302 | `feature/ar1734-contextual-footer-hotkeys@f7b6bb84c6ff` | `main` | BLOCKED | QUEUED:, QUEUED: | feat(ui): add contextual footer and help overlay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38331600672 | `f7b6bb84c6ff` | pull_request | AWQ shadow observation | queued:- |
+| 38331600364 | `f7b6bb84c6ff` | pull_request | Repository quality | queued:- |
 | 38328184869 | `486d24709d90` | push | Trusted main verification | completed:success |
 | 38328184868 | `486d24709d90` | push | Repository quality | completed:success |
 | 38327576771 | `d996e5bbdb91` | pull_request | AWQ shadow observation | completed:success |
@@ -25,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38325993977 | `82ccd39c0604` | pull_request | AWQ shadow observation | completed:success |
 | 38324423923 | `bd1e5a06b44f` | push | Trusted main verification | completed:success |
 | 38324423906 | `bd1e5a06b44f` | push | Repository quality | completed:success |
-| 38323825390 | `e215b44fb58a` | pull_request | AWQ shadow observation | completed:success |
-| 38323825205 | `e215b44fb58a` | pull_request | Repository quality | completed:success |
