@@ -9,5 +9,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `3d978ba716f1` | 10 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `src/ui.rs`, `src/wizard.rs`, `tests/terminal_foundation.rs`, `docs/ui-visual-regression.json`, `tests/goldens/`, `tests/visual_regression.rs`, `tools/check-ui-visual-parity.py`, `tools/test-ui-visual-regression.py` |
+| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `3d978ba716f1` | 13 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/quality.yml`, `.github/workflows/trusted-main.yml`, `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/ui.rs`, `src/wizard.rs`, `tests/terminal_foundation.rs`, `docs/ui-visual-regression.json`, `tests/goldens/`, `tests/visual_regression.rs`, `tools/check-ui-visual-parity.py`, `tools/test-ui-visual-regression.py` |
