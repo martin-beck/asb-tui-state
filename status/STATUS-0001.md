@@ -2544,7 +2544,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. |
-| Next action | Obtain independent exact-head review of PR #302 and repair any findings before merge. |
+| Next action | Obtain independent exact-head re-review of repaired PR #302 at 226bd174664471810476aa02dcef86a332f2ee15, wait for hosted checks, and repair any new findings before merge. |
 
 ### AR-1735 — Qualify visual fidelity across routes, resize, and terminal capabilities
 
@@ -3381,7 +3381,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | codex-asb-tui-ar1734-context-help-20261013 | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Obtain independent exact-head review of PR #302 and repair any findings before merge. |
+| P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | codex-asb-tui-ar1734-context-help-20261013 | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Obtain independent exact-head re-review of repaired PR #302 at 226bd174664471810476aa02dcef86a332f2ee15, wait for hosted checks, and repair any new findings before merge. |
 
 ### Blocked (2)
 
