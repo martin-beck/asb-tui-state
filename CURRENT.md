@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1733](tasks/AR-1733-horizontal-stepper-and-navigation.md): Add horizontal wizard stepper and conventional navigation | Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states. | Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation. | codex-asb-tui-ar1733-stepper-20261013 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

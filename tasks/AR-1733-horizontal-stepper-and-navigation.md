@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "a6f5565feab637a405d4161b642417b86847ef60",
-  "claim_expires": "2026-10-13T01:57:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1731"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar1733-horizontal-stepper-navigation",
   "observed_dirty": 0,
   "observed_head": "d996e5bbdb913f2ea447c091bd56a5160b68f9a7",
-  "owner": "codex-asb-tui-ar1733-stepper-20261013",
+  "owner": "",
   "plan": "../plans/AR-1733-horizontal-stepper-and-navigation.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Add horizontal wizard stepper and conventional navigation",
-  "updated_at": "2026-10-13T00:44:53+00:00",
+  "updated_at": "2026-10-13T00:44:55+00:00",
   "worktree_key": "asb-tui-ar-1733-horizontal-stepper-navigation"
 }
 ---
@@ -199,3 +199,6 @@ future, and blocked/unavailable steps remain distinguishable without color.
 
 - 2026-10-13T00:44:53+00:00: Exact-main merge 486d24709d9045d8e4e2d91221db3a754d2fe3b6, post-merge
   quality and trusted-main verification, and independent review comment 6135352256 verified.
+
+- 2026-10-13T00:44:55+00:00: Released after PR 301 exact-main verification and approved independent
+  review.
