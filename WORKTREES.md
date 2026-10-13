@@ -6,7 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `asb-tui` | `main` | `60ab530dd1a0` | 0 | behind 34, ahead 0 |
 | `asb-tui-ar-1686-content-addressed-consumer` | `feature/ar1686-content-addressed-consumer` | `b20090ca3207` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1687-provider-comparison` | `feature/ar1687-provider-comparison` | `1313e9b2cfb7` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1687-provider-comparison` | `feature/ar1687-provider-comparison` | `1313e9b2cfb7` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/qualification/provider-bound-comparison.md` |
 | `asb-tui-ar-1731-visual-language-shell` | `feature/ar1731-visual-language-shell` | `97e6692946c3` | 0 | behind 33, ahead 0 |
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 28, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 24, ahead 0 |
