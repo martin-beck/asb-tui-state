@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Add horizontal wizard stepper and conventional navigation",
-  "updated_at": "2026-10-13T00:09:04+00:00",
+  "updated_at": "2026-10-13T00:09:19+00:00",
   "worktree_key": "asb-tui-ar-1733-horizontal-stepper-navigation"
 }
 ---
@@ -107,3 +107,6 @@ future, and blocked/unavailable steps remain distinguishable without color.
 
 - 2026-10-13T00:09:04+00:00: Recorded command exit 0; command argv SHA-256
   562a8cc5c8d7f33d5f5907d4ecb23b4038448b17565e22198464fa8cdbf0b042.
+
+- 2026-10-13T00:09:19+00:00: Recorded command exit 0; command argv SHA-256
+  41029adc2a1bf81ccbe22538741c1cfbbced1632f4b0411dcaab3b4607a2a52e.
