@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2578,11 +2578,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1737-offline-dispatch-20261013 |
 | Parent | None |
 | Children | None |
 | Summary | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. |
@@ -2798,7 +2798,7 @@ flowchart LR
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Blocked"]:::status_blocked
-        AR_1737["AR-1737 - Open"]:::status_open
+        AR_1737["AR-1737 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3393,11 +3393,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | Unclaimed | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Reproduce the exact ASB inherited-fd/PTY qualification against current asb-tui main, repair readiness-to-offline-run-control dispatch, and publish a reviewed PR with terminal-success CI. |
+| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Reproduce the exact ASB inherited-fd/PTY qualification against current asb-tui main, repair readiness-to-offline-run-control dispatch, and publish a reviewed PR with terminal-success CI. |
 
 ### Blocked (3)
 
@@ -3484,4 +3484,3 @@ flowchart LR
 | P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
-| P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |

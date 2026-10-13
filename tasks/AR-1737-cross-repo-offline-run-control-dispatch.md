@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
   "next_action": "Reproduce the exact ASB inherited-fd/PTY qualification against current asb-tui main, repair readiness-to-offline-run-control dispatch, and publish a reviewed PR with terminal-success CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1737-offline-dispatch-20261013",
   "plan": "../plans/AR-1737-cross-repo-offline-run-control-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T04:29:50+00:00",
+  "updated_at": "2026-10-13T04:29:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -47,3 +47,5 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T04:29:50+00:00: User prioritized the P0 current-main inherited-fd PTY
   readiness-to-offline Run Control repair.
+
+- 2026-10-13T04:29:52+00:00: Claimed by codex-asb-tui-ar1737-offline-dispatch-20261013.
