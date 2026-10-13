@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #308 | `feature/ar1687-provider-comparison@1313e9b2cfb7` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: project provider-bound comparison state |
+| #308 | `feature/ar1687-provider-comparison@5dec11aefd8c` | `main` | UNKNOWN | - | feat: project provider-bound comparison state |
 
 ## Recent workflows
 
