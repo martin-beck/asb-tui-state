@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1686.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "asb-owned-runner",
+      "description": "The TUI qualification delegates plan creation, local mock run, recording, strict replay, comparison, and negative identity checks to the checked-in ASB-owned runner rather than reconstructing those artifacts locally."
+    },
+    {
+      "id": "exact-pairing",
+      "description": "The consumer accepts only a qualified, credential-free, network-denied receipt whose ASB and TUI source identities match the exact paired invocation."
+    },
+    {
+      "id": "tui-journey",
+      "description": "After the ASB-owned qualification succeeds, the closed TUI journey probe succeeds without provider traffic or secret output."
+    },
+    {
+      "id": "publication",
+      "description": "The signed and DCO-certified exact head receives independent review, required hosted checks, merge, and exact-main post-merge verification."
+    }
+  ],
+  "definition_of_done": [
+    "An exact ASB/TUI paired qualification passes with content-addressed selection identity, local mock execution, recording, strict replay, comparison, and negative identity coverage.",
+    "The merged TUI main has independent review and green repository-quality and trusted-main verification."
+  ],
+  "inputs": [
+    {
+      "id": "asb-content-addressed-runner",
+      "description": "ASB AR-1686 authoritative runner and its qualified exact-pair receipt schema."
+    },
+    {
+      "id": "tui-consumer",
+      "description": "asb-tui content-addressed qualification wrapper and closed journey fixture."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "consumer-receipt",
+      "description": "Privacy-safe receipt binding exact ASB/TUI heads, denied network, absent credentials, and qualified runner output."
+    },
+    {
+      "id": "merged-consumer",
+      "description": "Reviewed and hosted-qualified TUI main merge."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "python",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "asb-product-change",
+    "credential-output",
+    "network-bypass",
+    "receipt-fabrication",
+    "gate-weakening",
+    "unreviewed-merge"
+  ],
+  "required_evidence_classes": [
+    "environmental"
+  ],
+  "gates": [
+    {
+      "id": "paired-qualification",
+      "description": "An exact paired ASB/TUI invocation produces a qualified, credential-free, network-denied receipt and the TUI journey probe succeeds."
+    },
+    {
+      "id": "publication",
+      "description": "Independent review, required PR checks, and both required exact-main post-merge workflows succeed."
+    }
+  ]
+}

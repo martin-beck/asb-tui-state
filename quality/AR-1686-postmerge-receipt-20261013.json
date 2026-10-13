@@ -1,0 +1,27 @@
+{
+  "exact_main_repository_quality_run": 38380231680,
+  "exact_main_trusted_main_run": 38380231907,
+  "independent_review_comment": 6143041932,
+  "merge_commit": "f4d3512d2226d1700cfd02f65c4391cf3513f02c",
+  "merged_head": "b20090ca3207a52a89ff5d6706c1585e91634902",
+  "paired_qualification": {
+    "asb_head": "d0e6a28a81b40a990e6b83b48a885e9ada96f0fd",
+    "credentials": "none",
+    "network": "denied",
+    "status": "qualified",
+    "tui_head": "b20090ca3207a52a89ff5d6706c1585e91634902"
+  },
+  "post_merge_checks": {
+    "repository_quality": "success",
+    "trusted_main_verification": "success"
+  },
+  "pull_request": 307,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1686",
+  "verification": {
+    "full_exact_head_gate": "format, clippy, locked tests, documentation, formal model, help, source/visual parity, shell quality",
+    "consumer_boundary": "TUI delegates plan, local mock run, recording, strict replay, comparison, and negative identity checks to the ASB-owned runner; TUI executes only its closed journey probe",
+    "independent_review": "exact-head review attested after a fresh ASB/TUI paired qualification; signature and DCO were verified"
+  }
+}
