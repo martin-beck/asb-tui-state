@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #301 | `feature/ar1733-horizontal-stepper-navigation@82ccd39c0604` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add responsive wizard journey stepper |
+| #301 | `feature/ar1733-horizontal-stepper-navigation@85f7fa970510` | `main` | UNKNOWN | - | feat(ui): add responsive wizard journey stepper |
 
 ## Recent workflows
 
