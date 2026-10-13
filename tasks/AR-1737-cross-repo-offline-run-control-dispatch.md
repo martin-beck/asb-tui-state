@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
-  "next_action": "Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge.",
+  "next_action": "Obtain independent exact-head approval and terminal hosted checks for repair PR #305; do not merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:26:22+00:00",
+  "updated_at": "2026-10-13T05:26:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -524,3 +524,11 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T05:26:22+00:00: Recorded command exit 0; command argv SHA-256
   3723b270cfae9e5b6872639eded7cde8b7a8f29ac3d3a429f281fa0ed3e36e7e.
+
+- 2026-10-13T05:26:34+00:00: PR #304 was merged externally at old head 85e35a62 while independent
+  review was withheld for merge-blocking exactly-once and negative-runtime coverage gaps. Published
+  follow-up repair PR #305 on merged main c4f554e79c16bcc910b4a9af6a665a230b3339fb: head
+  f25720e6c630e80c067182635bca74afc2e96de8, tree c4a37ee8e12d7f8a0d90aa152b7fcfa62436c0b9, binary
+  sha256 ef090ca66a2b376324d471686ff68fa5ec375afb62ea5f8573d09afc6357fa20. Exact ASB PR #627
+  inherited-fd/PTY qualification passed 1/1 in 4.44s with no exact child leak. Full local gates
+  green; independent review assigned and hosted checks pending. Implementation worker did not merge.

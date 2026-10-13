@@ -2586,7 +2586,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. |
-| Next action | Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge. |
+| Next action | Obtain independent exact-head approval and terminal hosted checks for repair PR #305; do not merge. |
 
 
 ## Dependency graph
@@ -3397,7 +3397,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Watch hosted checks and obtain independent exact-head approval for PR #304; do not merge. |
+| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Obtain independent exact-head approval and terminal hosted checks for repair PR #305; do not merge. |
 
 ### Blocked (3)
 
