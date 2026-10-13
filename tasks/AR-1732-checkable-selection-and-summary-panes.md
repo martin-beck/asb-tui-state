@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:8e684f3aa8c3547e93a3a6d8c659a472a31bfc0f2e34246c1aa8cbdb3b6a5278",
+    "evidence_ref": "quality/AR-1732-postmerge-receipt-20261013.json",
     "spec_ref": "specs/AR-1732.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1732.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Add checkable selections and separated wizard summary panes",
-  "updated_at": "2026-10-12T23:48:23+00:00",
+  "updated_at": "2026-10-13T00:00:02+00:00",
   "worktree_key": "asb-tui-ar-1732-checkable-selection-panes"
 }
 ---
@@ -225,3 +225,6 @@ visually distinct from selection.
 
 - 2026-10-12T23:48:23+00:00: Recorded command exit 0; command argv SHA-256
   33b2f16df5f076c588fb76562a62ebdf32de2cfdf9458d314a3fbf3c67156dcb.
+
+- 2026-10-13T00:00:02+00:00: Exact-main merge bd1e5a06, post-merge quality and trusted-main
+  verification, and independent review comment 6134846744 verified.
