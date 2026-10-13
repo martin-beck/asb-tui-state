@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T08:13:48+00:00",
   "depends_on": [
     "AR-1735"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar1736-professional-wizard-fidelity-acceptance",
   "observed_dirty": 2,
   "observed_head": "cf45a645887a8f8713b72f7f717b08fc8786a9ec",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1736-recovery-20261013",
   "plan": "../plans/AR-1736-professional-wizard-fidelity-acceptance.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1736.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T06:13:45+00:00",
+  "updated_at": "2026-10-13T06:13:48+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -136,3 +136,5 @@ that the backend has not supplied.
 - 2026-10-13T06:13:45+00:00: The user-authorized cleanup terminated the stale detached PTY runtime;
   the documented dirty handoff at cf45a645 with only src/wizard.rs and tests/wizard_render.rs
   remains intact and is safe to recover.
+
+- 2026-10-13T06:13:48+00:00: Claimed by codex-asb-tui-ar1736-recovery-20261013.
