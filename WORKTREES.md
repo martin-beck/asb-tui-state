@@ -9,4 +9,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `7ec0068ba8c0` | 0 | behind 0, ahead 4 |
+| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `cc917990e91b` | 0 | behind 0, ahead 5 |
