@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #303 | `feature/ar1735-visual-route-resize-regression@7419c6302f35` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1735: qualify visual routes and resize behavior |
+| #303 | `feature/ar1735-visual-route-resize-regression@cc917990e91b` | `main` | UNKNOWN | - | AR-1735: qualify visual routes and resize behavior |
 
 ## Recent workflows
 
