@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T03:06:40+00:00",
+  "updated_at": "2026-10-13T03:06:47+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -316,3 +316,6 @@ not merely that drawing does not panic.
   visual/formal/source/help/tutorial/journey/publication/release/shell/workflow/Gitleaks gates
   passed. Terminal foundation 33/33 and full/coverage runs proved zero surviving exact ASB TUI
   children. Local cargo-deny/cargo-audit commands unavailable; hosted gates remain required.
+
+- 2026-10-13T03:06:47+00:00: Recorded command exit 0; command argv SHA-256
+  18a2be3a706744a56fec350e8d671be94e9451dee4f55da072ae1938c11701ab.
