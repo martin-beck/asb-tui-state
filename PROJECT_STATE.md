@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #308 | `feature/ar1687-provider-comparison@bf0b47e0ccdc` | `main` | BLOCKED | QUEUED: | feat: project provider-bound comparison state |
+| #308 | `feature/ar1687-provider-comparison@bf0b47e0ccdc` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: project provider-bound comparison state |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38383170127 | `bf0b47e0ccdc` | pull_request | Repository quality | queued:- |
+| 38383171189 | `bf0b47e0ccdc` | pull_request | AWQ shadow observation | in_progress:- |
+| 38383170127 | `bf0b47e0ccdc` | pull_request | Repository quality | in_progress:- |
 | 38380231907 | `f4d3512d2226` | push | Trusted main verification | completed:success |
 | 38380231680 | `f4d3512d2226` | push | Repository quality | completed:success |
 | 38379110527 | `b20090ca3207` | pull_request | AWQ shadow observation | completed:success |
@@ -27,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38374072485 | `78a76984dbf1` | pull_request | Repository quality | completed:success |
 | 38353407528 | `aac882beebaf` | push | Repository quality | completed:success |
 | 38353407449 | `aac882beebaf` | push | Trusted main verification | completed:success |
-| 38352720661 | `fa18db4c2d5a` | pull_request | AWQ shadow observation | completed:success |
