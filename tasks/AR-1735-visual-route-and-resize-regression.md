@@ -9,7 +9,7 @@
     "AR-1734"
   ],
   "id": "AR-1735",
-  "next_action": "PR #303 is independently approved at cc917990e91b857c27f7898d34c0685461713401 with all hosted checks green; authorized maintainer may merge, then verify post-merge main before accepting and closing AR-1735.",
+  "next_action": "Complete. PR #303 merged as cf45a645887a8f8713b72f7f717b08fc8786a9ec; exact-main quality and trusted-main verification are green. AR-1736 may proceed.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
   "observed_dirty": 0,
   "observed_head": "cc917990e91b857c27f7898d34c0685461713401",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 266,
+  "task_revision": 267,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T04:17:43+00:00",
+  "updated_at": "2026-10-13T04:17:55+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -772,3 +772,8 @@ not merely that drawing does not panic.
   cf45a645887a8f8713b72f7f717b08fc8786a9ec. Independent review approved all 564 semantic cells and
   prior repairs in comment 6138030446. Exact-main Repository quality run 38345085528 and Trusted
   main verification run 38345085469 both completed successfully.
+
+- 2026-10-13T04:17:55+00:00: Post-merge verification complete: reviewed head
+  cc917990e91b857c27f7898d34c0685461713401 is an ancestor of signed main merge
+  cf45a645887a8f8713b72f7f717b08fc8786a9ec. Repository quality run 38345085528 and Trusted main
+  verification run 38345085469 passed on exact main.

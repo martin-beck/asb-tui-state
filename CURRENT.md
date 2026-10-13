@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1735](tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | PR #303 is independently approved at cc917990e91b857c27f7898d34c0685461713401 with all hosted checks green; authorized maintainer may merge, then verify post-merge main before accepting and closing AR-1735. | codex-asb-tui-ar1735-visual-regression-20261013 |
+| P1 | [AR-1735](tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Complete. PR #303 merged as cf45a645887a8f8713b72f7f717b08fc8786a9ec; exact-main quality and trusted-main verification are green. AR-1736 may proceed. | codex-asb-tui-ar1735-visual-regression-20261013 |
 
 ## Blocked
 
