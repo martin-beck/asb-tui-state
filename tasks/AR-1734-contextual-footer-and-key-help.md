@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T02:45:22+00:00",
   "depends_on": [
     "AR-1731",
     "AR-1732",
@@ -13,7 +13,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-tui-ar1734-context-help-20261013",
   "plan": "../plans/AR-1734-contextual-footer-and-key-help.md",
   "priority": "P1",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T00:45:20+00:00",
+  "updated_at": "2026-10-13T00:45:22+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -42,3 +42,5 @@ documentation lookup.
 
 - 2026-10-13T00:45:20+00:00: AR-1731 through AR-1733 are released; contextual help implementation is
   dependency-ready.
+
+- 2026-10-13T00:45:22+00:00: Claimed by codex-asb-tui-ar1734-context-help-20261013.

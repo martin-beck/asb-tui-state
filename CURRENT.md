@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1734](tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Render focus-aware concise footer help and a discoverable context-sensitive hotkey overlay for every current element and action. | - |
+| P1 | [AR-1734](tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Render focus-aware concise footer help and a discoverable context-sensitive hotkey overlay for every current element and action. | codex-asb-tui-ar1734-context-help-20261013 |
 
 ## Blocked
 
