@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T06:25:00+02:00",
+  "updated_at": "2026-10-13T04:29:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -44,3 +44,6 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13: Created from ASB PR #627's repeated hosted failure against
   current asb-tui main (`486d24709d9045d8e4e2d91221db3a754d2fe3b6`).
+
+- 2026-10-13T04:29:50+00:00: User prioritized the P0 current-main inherited-fd PTY
+  readiness-to-offline Run Control repair.
