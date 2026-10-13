@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T01:46:46+00:00",
+  "updated_at": "2026-10-13T01:47:58+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -377,3 +377,6 @@ documentation lookup.
 
 - 2026-10-13T01:46:46+00:00: Recorded command exit 8; command argv SHA-256
   edd0b2e431d2ec77df34e3863f6a89f61a5c081f964eec0642fe1a4bd4d43f98.
+
+- 2026-10-13T01:47:58+00:00: Recorded command exit 0; command argv SHA-256
+  626faca795e804b5fb804850b1066c6acdeaef8bded959b43f163e6268dee238.
