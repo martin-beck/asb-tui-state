@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #305 | `feature/ar1737-offline-run-control-dispatch@f25720e6c630` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1737: fence offline dispatch retries |
+| #305 | `feature/ar1737-offline-run-control-dispatch@f25720e6c630` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SKIPPED | AR-1737: fence offline dispatch retries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38351293924 | `f25720e6c630` | pull_request | AWQ shadow observation | in_progress:- |
+| 38351293924 | `f25720e6c630` | pull_request | AWQ shadow observation | completed:failure |
 | 38351293694 | `f25720e6c630` | pull_request | Repository quality | in_progress:- |
 | 38350063529 | `c4f554e79c16` | push | Trusted main verification | completed:success |
 | 38350063478 | `c4f554e79c16` | push | Repository quality | completed:success |
