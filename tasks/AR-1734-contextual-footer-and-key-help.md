@@ -9,7 +9,7 @@
     "AR-1733"
   ],
   "id": "AR-1734",
-  "next_action": "Obtain final independent exact-head review of PR #302 at 9b9d452182ef630c462126631e413d5ceef30467 and verify refreshed hosted checks before merge.",
+  "next_action": "Authorized coordinator may merge PR #302 only at reviewed head 9b9d452182ef630c462126631e413d5ceef30467; after merge verify post-merge CI and reconcile AR state.",
   "observed_branch": "feature/ar1734-contextual-footer-hotkeys",
   "observed_dirty": 0,
   "observed_head": "9b9d452182ef630c462126631e413d5ceef30467",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:21:57+00:00",
+  "updated_at": "2026-10-13T02:22:11+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -498,3 +498,10 @@ documentation lookup.
 
 - 2026-10-13T02:21:57+00:00: Recorded command exit 0; command argv SHA-256
   8e3f5d705911d4f7954d4704ec7bd3998fa3a6dbfb75bb8ea6a3882c7be560a7.
+
+- 2026-10-13T02:22:11+00:00: Final independent exact-head review approved head
+  9b9d452182ef630c462126631e413d5ceef30467/tree 99680d2cf0c5cb1a3f6a9da2b751570f431ba420:
+  https://github.com/martin-beck/asb-tui/pull/302#issuecomment-6136801071. Refreshed hosted native
+  and AWQ checks are green. Local full cargo tests, clippy, fmt, rustdoc, release build, UI
+  help/model/source-parity validators, shell quality, gitleaks, signatures/DCO, clean worktree, and
+  terminal suite passed. No merge performed per authorization boundary.

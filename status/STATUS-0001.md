@@ -2544,7 +2544,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. |
-| Next action | Obtain final independent exact-head review of PR #302 at 9b9d452182ef630c462126631e413d5ceef30467 and verify refreshed hosted checks before merge. |
+| Next action | Authorized coordinator may merge PR #302 only at reviewed head 9b9d452182ef630c462126631e413d5ceef30467; after merge verify post-merge CI and reconcile AR state. |
 
 ### AR-1735 — Qualify visual fidelity across routes, resize, and terminal capabilities
 
@@ -3381,7 +3381,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | codex-asb-tui-ar1734-context-help-20261013 | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Obtain final independent exact-head review of PR #302 at 9b9d452182ef630c462126631e413d5ceef30467 and verify refreshed hosted checks before merge. |
+| P1 | [AR-1734](../tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | codex-asb-tui-ar1734-context-help-20261013 | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Authorized coordinator may merge PR #302 only at reviewed head 9b9d452182ef630c462126631e413d5ceef30467; after merge verify post-merge CI and reconcile AR state. |
 
 ### Blocked (2)
 
