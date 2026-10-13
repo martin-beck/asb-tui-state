@@ -19,19 +19,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:a7cf77c4f831b56fa64095b505cf3b616e91bed1d5e060dc942b61492bf429dc",
+    "evidence_ref": "quality/AR-1734-postmerge-receipt-20261013.json",
     "spec_ref": "specs/AR-1734.json",
     "spec_revision": 1,
-    "status": "planned"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:22:11+00:00",
+  "updated_at": "2026-10-13T02:32:31+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -505,3 +505,6 @@ documentation lookup.
   and AWQ checks are green. Local full cargo tests, clippy, fmt, rustdoc, release build, UI
   help/model/source-parity validators, shell quality, gitleaks, signatures/DCO, clean worktree, and
   terminal suite passed. No merge performed per authorization boundary.
+
+- 2026-10-13T02:32:31+00:00: Exact-main merge 3d978ba716f17ed9c11ca7f732c646e68a06ab7f, post-merge
+  quality and trusted-main verification, and independent review comment 6136801071 verified.
