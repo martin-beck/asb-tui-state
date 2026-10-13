@@ -1,1 +1,30 @@
-{"schema_version":1,"spec_ref":"specs/AR-1687.json","spec_revision":1,"acceptance_predicates":[{"id":"availability","description":"TUI preserves provider-selection unavailable reasons by baseline or candidate side."},{"id":"confounders","description":"TUI preserves provider/model and execution confounders and never presents them as comparable."},{"id":"multi-candidate","description":"TUI preserves per-pair and aggregate comparison state for multiple candidates."},{"id":"development-boundary","description":"Missing development authentication, signatures, and key management remain visible warnings and never block."}],"definition_of_done":["Exact paired ASB/TUI receipt covers all availability and confounder cases.","Independent review, hosted checks, and privacy scan pass."],"required_evidence_classes":["paired","contract-test","hosted"],"gates":[{"id":"truthful-ui","description":"Human and JSON TUI projections agree with the ASB comparison qualification."}]}
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1687.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "availability", "description": "The TUI preserves provider-selection unavailable reasons by baseline or candidate side."},
+    {"id": "confounders", "description": "The TUI preserves provider/model and execution confounders and never presents them as comparable."},
+    {"id": "multi-candidate", "description": "The TUI preserves per-pair and aggregate comparison state for multiple candidates."},
+    {"id": "development-boundary", "description": "Missing development authentication, signatures, and key management remain visible warnings and never block."}
+  ],
+  "definition_of_done": [
+    "An exact paired ASB/TUI receipt covers available, unavailable, asymmetric, and multi-candidate provider-bound comparison states.",
+    "Independent review, hosted checks, and privacy scan pass for the merged exact head."
+  ],
+  "inputs": [
+    {"id": "asb-comparison-contract", "description": "ASB-owned provider-bound comparison output for available, unavailable, asymmetric, and multi-candidate cases."},
+    {"id": "tui-comparison-projection", "description": "TUI human and structured comparison projections."}
+  ],
+  "outputs": [
+    {"id": "comparison-qualification", "description": "Privacy-safe exact-pair receipt proving truthful provider-bound comparison presentation."},
+    {"id": "reviewed-merge", "description": "Signed, independently reviewed TUI implementation with required hosted verification."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "python", "tools/handoffctl"],
+  "forbidden_tools": ["asb-product-change", "credential-output", "live-provider-dependency", "silent-comparison-fallback", "gate-weakening", "unreviewed-merge"],
+  "required_evidence_classes": ["environmental"],
+  "gates": [
+    {"id": "truthful-ui", "description": "Human and JSON TUI projections agree with the ASB comparison qualification across all required states."},
+    {"id": "publication", "description": "Independent review, exact-head required checks, and exact-main post-merge verification pass."}
+  ]
+}
