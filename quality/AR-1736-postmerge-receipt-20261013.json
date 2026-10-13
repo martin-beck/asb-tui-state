@@ -1,0 +1,20 @@
+{
+  "exact_main_repository_quality_run": 38375286774,
+  "exact_main_trusted_main_run": 38375286777,
+  "independent_review_comment": 6142295911,
+  "merge_commit": "0c5b7fa63c26feca1b946a38c07a1b4d6487c61c",
+  "merged_head": "78a76984dbf159ea687c6ad77f3f4514329134d5",
+  "post_merge_checks": {
+    "repository_quality": "success",
+    "trusted_main_verification": "success"
+  },
+  "pull_request": 306,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1736",
+  "verification": {
+    "full_exact_head_gate": "format, clippy, locked tests, documentation, formal model, help, source/visual parity, shell quality",
+    "pty_acceptance": "terminal lifecycle, resize, monochrome, visual, and wizard render tests passed; no detached development runtime remains",
+    "review_presentation": "all seven completed setup choices are visible; authentication values are classified without rendering credential locators or digests"
+  }
+}
