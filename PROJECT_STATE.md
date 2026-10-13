@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #303 | `feature/ar1735-visual-route-resize-regression@4cb2c3e21fd8` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1735: qualify visual routes and resize behavior |
+| #303 | `feature/ar1735-visual-route-resize-regression@4cb2c3e21fd8` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS: | AR-1735: qualify visual routes and resize behavior |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38340116118 | `4cb2c3e21fd8` | pull_request | AWQ shadow observation | in_progress:- |
-| 38340115937 | `4cb2c3e21fd8` | pull_request | Repository quality | in_progress:- |
+| 38340115937 | `4cb2c3e21fd8` | pull_request | Repository quality | completed:failure |
 | 38336614827 | `3d978ba716f1` | push | Trusted main verification | completed:success |
 | 38336614820 | `3d978ba716f1` | push | Repository quality | completed:success |
 | 38335872481 | `9b9d452182ef` | pull_request | AWQ shadow observation | completed:success |
