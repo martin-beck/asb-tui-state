@@ -2558,7 +2558,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. |
-| Next action | Await independent exact-head review and hosted CI for PR #303; do not merge without approval. |
+| Next action | Await independent exact-head re-review and hosted CI for repaired PR #303 at 7419c6302f35e969bdb883b182d516aa4f652db1; do not merge without approval. |
 
 ### AR-1736 — Accept professional wizard visual fidelity and usability
 
@@ -3381,7 +3381,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Await independent exact-head review and hosted CI for PR #303; do not merge without approval. |
+| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Await independent exact-head re-review and hosted CI for repaired PR #303 at 7419c6302f35e969bdb883b182d516aa4f652db1; do not merge without approval. |
 
 ### Blocked (2)
 

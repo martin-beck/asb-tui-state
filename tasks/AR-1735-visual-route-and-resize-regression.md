@@ -9,7 +9,7 @@
     "AR-1734"
   ],
   "id": "AR-1735",
-  "next_action": "Await independent exact-head review and hosted CI for PR #303; do not merge without approval.",
+  "next_action": "Await independent exact-head re-review and hosted CI for repaired PR #303 at 7419c6302f35e969bdb883b182d516aa4f652db1; do not merge without approval.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
   "observed_dirty": 0,
   "observed_head": "7419c6302f35e969bdb883b182d516aa4f652db1",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T03:44:08+00:00",
+  "updated_at": "2026-10-13T03:44:39+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -619,3 +619,11 @@ not merely that drawing does not panic.
 
 - 2026-10-13T03:44:08+00:00: Recorded command exit 0; command argv SHA-256
   18a2be3a706744a56fec350e8d671be94e9451dee4f55da072ae1938c11701ab.
+
+- 2026-10-13T03:44:39+00:00: Pushed signed+DCO repairs for all four review P1s. Local evidence:
+  564/564 visual state-dimension-capability renders with semantic markers; exact visual goldens 4/4;
+  visual parity and drift tests green; terminal foundation 34/34 twice at default parallelism; live
+  injected Screen panic cleanup green with exact PID/start-time and pidfd reaping; full locked
+  Rust/clippy/doc/release suite green; coverage 90.57% lines;
+  model/source/help/tutorial/shell/workflow/gitleaks gates green. cargo-deny and cargo-audit remain
+  unavailable locally and are delegated to hosted Repository quality.
