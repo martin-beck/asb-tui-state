@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1689",
+  "classification": "development/mock",
+  "status": "qualified",
+  "privacy": {
+    "credentials": "none",
+    "install_materialization_network": "allowed",
+    "benchmark_capture_replay_network": "denied"
+  },
+  "paired_heads": {
+    "asb": "d0e6a28a81b40a990e6b83b48a885e9ada96f0fd",
+    "asb_tui_candidate": "0b8feb34819a8d0ae26622c59631042fbf055a4c",
+    "asb_tui_main": "63400fdb3a06576145302a7d5ca596ac1e72f54d"
+  },
+  "qualification": {
+    "receipt_sha256": "c90332c316ec6af7fff27420a8ae1bade2b6d3df2fb9c73ba99ace4951b6af94",
+    "wizard_selection": "bounded development wizard selection and end-to-end materialization passed",
+    "plan_run": "ASB content-addressed plan, local/mock execution, selected/all recording, strict offline replay, comparison, and analysis passed",
+    "typed_negatives": [
+      "development channel manifest tamper",
+      "unavailable provider",
+      "stale experiment identity",
+      "agent executable identity mismatch",
+      "workload identity mismatch",
+      "incomplete cassette coverage"
+    ]
+  },
+  "review": {
+    "pr": "https://github.com/martin-beck/asb-tui/pull/309",
+    "base": "32c47f58583f395cef15df9978f296c0c960d5d7",
+    "candidate": "0b8feb34819a8d0ae26622c59631042fbf055a4c",
+    "independent_exact_head_comment": "https://github.com/martin-beck/asb-tui/pull/309#issuecomment-6144516286"
+  },
+  "hosted": {
+    "pr_repository_quality": {
+      "run": "38389638508",
+      "conclusion": "success"
+    },
+    "pr_awq_shadow": {
+      "run": "38389638716",
+      "conclusion": "success"
+    },
+    "postmerge_repository_quality": {
+      "run": "38390430647",
+      "head": "63400fdb3a06576145302a7d5ca596ac1e72f54d",
+      "conclusion": "success"
+    },
+    "postmerge_trusted_main": {
+      "run": "38390430761",
+      "head": "63400fdb3a06576145302a7d5ca596ac1e72f54d",
+      "conclusion": "success"
+    }
+  }
+}
