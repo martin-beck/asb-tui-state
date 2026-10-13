@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
-  "next_action": "Obtain independent exact-head approval and terminal hosted checks for repair PR #305; do not merge.",
+  "next_action": "Obtain independent exact-head approval and terminal hosted checks for repair PR #305 at fa18db4; do not merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:41:45+00:00",
+  "updated_at": "2026-10-13T05:42:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -580,3 +580,12 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T05:41:45+00:00: Recorded command exit 0; command argv SHA-256
   0da31c88118668fffcc3739dd41c79b15e44568f8f21790a159b47ca7038f659.
+
+- 2026-10-13T05:42:16+00:00: Repaired PR #305 hosted formal-model gate with signed+DCO
+  fa18db4c2d5a85aa3166d13aaacd0d56055384d5 (tree 50f16d4e39f6403a12e25c889f0a8ca739ff6c1e): authored
+  and executable campaign+generation one-shot mutation, idempotent repeat, catalog-only recovery,
+  and stale/unavailable zero-I/O semantics; regenerated canonical model. Explicit base c4f554e..head
+  fa18db4 range validation, full fmt/clippy/test/doc/help/model/source/visual/shell gates green.
+  Release sha256 5f0ae14dc5d916efa26b010e41dd276568c93fd601b0e234199bd9e1177dc953 passed exact
+  unchanged ASB PR #627 inherited-FD/PTY qualification 1/1 in 4.44s with no exact child remaining.
+  Requested fresh independent exact-head review; implementation worker did not merge.
