@@ -9,8 +9,8 @@
   "id": "AR-1733",
   "next_action": "Implement a formal-model-backed horizontal wizard stepper, current-step highlight, and conventional keyboard navigation.",
   "observed_branch": "feature/ar1733-horizontal-stepper-navigation",
-  "observed_dirty": 6,
-  "observed_head": "85f7fa9705100c9938f8ff6e926faf65217488ed",
+  "observed_dirty": 0,
+  "observed_head": "d996e5bbdb913f2ea447c091bd56a5160b68f9a7",
   "owner": "codex-asb-tui-ar1733-stepper-20261013",
   "plan": "../plans/AR-1733-horizontal-stepper-and-navigation.md",
   "priority": "P1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Add horizontal wizard stepper and conventional navigation",
-  "updated_at": "2026-10-13T00:30:21+00:00",
+  "updated_at": "2026-10-13T00:30:24+00:00",
   "worktree_key": "asb-tui-ar-1733-horizontal-stepper-navigation"
 }
 ---
