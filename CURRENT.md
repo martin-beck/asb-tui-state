@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Reproduce the exact ASB inherited-fd/PTY qualification against current asb-tui main, repair readiness-to-offline-run-control dispatch, and publish a reviewed PR with terminal-success CI. | codex-asb-tui-ar1737-offline-dispatch-20261013 |
+| P0 | [AR-1737](tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Commit the TUI key-contract and fail-closed runtime repair, run exact-head full gates and ASB PR #627 inherited-fd/PTY qualification, then publish a signed-DCO PR for independent review. | codex-asb-tui-ar1737-offline-dispatch-20261013 |
 
 ## Blocked
 

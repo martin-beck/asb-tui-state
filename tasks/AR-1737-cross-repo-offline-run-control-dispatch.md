@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
-  "next_action": "Reproduce the exact ASB inherited-fd/PTY qualification against current asb-tui main, repair readiness-to-offline-run-control dispatch, and publish a reviewed PR with terminal-success CI.",
+  "next_action": "Commit the TUI key-contract and fail-closed runtime repair, run exact-head full gates and ASB PR #627 inherited-fd/PTY qualification, then publish a signed-DCO PR for independent review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T04:48:16+00:00",
+  "updated_at": "2026-10-13T04:48:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -220,3 +220,12 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T04:48:16+00:00: Recorded command exit 0; command argv SHA-256
   15e8d345ecdac4db66b7d66886e14c49abcd89a373066269480a7530059a0827.
+
+- 2026-10-13T04:48:54+00:00: Reproduced ASB PR #627 exact inherited-fd/PTY failure against asb-tui
+  main cf45a645887a8f8713b72f7f717b08fc8786a9ec tree 495de1c8ba2bd2dfa65b591aac425fa1fd1ec15b and
+  binary digest 9d000d2810c84f9ecf08efaffc138263c161de2835eead1012b624b05ece77a4. Root cause is
+  authoritative measure bulk-selection key drift from lowercase a to uppercase A: the paired PTY
+  sends lowercase a, leaving scope empty and the next recording action terminating the frontend.
+  Restoring lowercase a plus in-session fail-closed dispatcher preparation makes the unchanged
+  cross-repo test pass; focused readiness, premature, malformed, stale, unavailable, formal-model,
+  source-parity, and visual-parity tests are green.
