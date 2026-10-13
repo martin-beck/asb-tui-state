@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #304 | `feature/ar1737-offline-run-control-dispatch@85e35a62da8d` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS | AR-1737: restore offline run-control PTY dispatch |
+| #304 | `feature/ar1737-offline-run-control-dispatch@85e35a62da8d` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | AR-1737: restore offline run-control PTY dispatch |
 
 ## Recent workflows
 
