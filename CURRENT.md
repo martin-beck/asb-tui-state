@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | Obtain independent exact-head approval and terminal hosted checks for repair PR #305 at fa18db4; do not merge. | codex-asb-tui-ar1737-offline-dispatch-20261013 |
+| P0 | [AR-1737](tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | PR #305 is independently approved, mergeable, and all hosted checks are green; an authorized separate actor may merge, then verify post-merge main CI. | codex-asb-tui-ar1737-offline-dispatch-20261013 |
 
 ## Blocked
 

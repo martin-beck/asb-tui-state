@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T07:29:52+00:00",
   "depends_on": [],
   "id": "AR-1737",
-  "next_action": "Obtain independent exact-head approval and terminal hosted checks for repair PR #305 at fa18db4; do not merge.",
+  "next_action": "PR #305 is independently approved, mergeable, and all hosted checks are green; an authorized separate actor may merge, then verify post-merge main CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:49:39+00:00",
+  "updated_at": "2026-10-13T05:50:05+00:00",
   "worktree_key": ""
 }
 ---
@@ -616,3 +616,11 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T05:49:39+00:00: Recorded command exit 0; command argv SHA-256
   f1321eee52d360bb4f66439cc5fc531a2bbb1cf3d330fd1286c14d4719033f4b.
+
+- 2026-10-13T05:50:05+00:00: Independent exact-head review approved repair PR #305 at base
+  c4f554e79c16bcc910b4a9af6a665a230b3339fb, head fa18db4c2d5a85aa3166d13aaacd0d56055384d5, tree
+  50f16d4e39f6403a12e25c889f0a8ca739ff6c1e, binary sha256
+  5f0ae14dc5d916efa26b010e41dd276568c93fd601b0e234199bd9e1177dc953. Attestation:
+  https://github.com/martin-beck/asb-tui/pull/305#issuecomment-6139181298. Native quality,
+  Rust/supply-chain/privacy, and AWQ observation are terminal success; PR remains open and
+  mergeable. Implementation worker did not merge.
