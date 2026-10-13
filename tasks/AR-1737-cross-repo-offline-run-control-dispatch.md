@@ -15,19 +15,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:14b17945ac3a44fbc20d7834508d9ce1d6a41045371e5ecd5224a5a4d17775e1",
+    "evidence_ref": "quality/AR-1737-postmerge-receipt-20261013.json",
     "spec_ref": "specs/AR-1737.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:50:05+00:00",
+  "updated_at": "2026-10-13T05:57:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -624,3 +624,7 @@ Record only privacy-safe failure and qualification evidence.
   https://github.com/martin-beck/asb-tui/pull/305#issuecomment-6139181298. Native quality,
   Rust/supply-chain/privacy, and AWQ observation are terminal success; PR remains open and
   mergeable. Implementation worker did not merge.
+
+- 2026-10-13T05:57:19+00:00: PR #305 merged as aac882be; exact main Repository Quality #38353407528
+  and Trusted Main #38353407449 are green; independent exact-head review comment #6139181298 and
+  unchanged ASB inherited-FD PTY qualification are recorded in the privacy-safe receipt.
