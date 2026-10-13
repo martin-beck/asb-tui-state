@@ -1,0 +1,11 @@
+{
+  "exact_main_repository_quality_run": 38328184868,
+  "exact_main_trusted_main_run": 38328184869,
+  "independent_review_comment": 6135352256,
+  "merge_commit": "486d24709d9045d8e4e2d91221db3a754d2fe3b6",
+  "merged_head": "d996e5bbdb913f2ea447c091bd56a5160b68f9a7",
+  "pull_request": 301,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1733"
+}
