@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #305 | `feature/ar1737-offline-run-control-dispatch@fa18db4c2d5a` | `main` | UNKNOWN | - | AR-1737: fence offline dispatch retries |
+| #305 | `feature/ar1737-offline-run-control-dispatch@fa18db4c2d5a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1737: fence offline dispatch retries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38352720661 | `fa18db4c2d5a` | pull_request | AWQ shadow observation | in_progress:- |
+| 38352720198 | `fa18db4c2d5a` | pull_request | Repository quality | in_progress:- |
 | 38351293924 | `f25720e6c630` | pull_request | AWQ shadow observation | completed:failure |
 | 38351293694 | `f25720e6c630` | pull_request | Repository quality | completed:failure |
 | 38350063529 | `c4f554e79c16` | push | Trusted main verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38345085469 | `cf45a645887a` | push | Trusted main verification | completed:success |
 | 38344466210 | `cc917990e91b` | pull_request | AWQ shadow observation | completed:success |
 | 38344465970 | `cc917990e91b` | pull_request | Repository quality | completed:success |
-| 38343091387 | `7419c6302f35` | pull_request | AWQ shadow observation | completed:success |
-| 38343091073 | `7419c6302f35` | pull_request | Repository quality | completed:success |
