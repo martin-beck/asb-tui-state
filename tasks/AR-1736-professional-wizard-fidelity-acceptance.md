@@ -9,8 +9,8 @@
   "id": "AR-1736",
   "next_action": "Repair and independently review the TUI-owned Review summary, complete direct installed ordinary/narrow/low-capability PTY acceptance, and retain the exact ASB catalog limitation as an external integration blocker without ASB changes.",
   "observed_branch": "feature/ar1736-professional-wizard-fidelity-acceptance",
-  "observed_dirty": 2,
-  "observed_head": "cf45a645887a8f8713b72f7f717b08fc8786a9ec",
+  "observed_dirty": 0,
+  "observed_head": "d15724e1086c9c68971f2bc1e3758b3739e9ba4b",
   "owner": "codex-asb-tui-ar1736-recovery-20261013",
   "plan": "../plans/AR-1736-professional-wizard-fidelity-acceptance.md",
   "priority": "P1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T06:16:07+00:00",
+  "updated_at": "2026-10-13T06:16:13+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
