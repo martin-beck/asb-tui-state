@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:12:36+00:00",
+  "updated_at": "2026-10-13T12:12:50+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
@@ -48,3 +48,6 @@ production repairs separately.
 
 - 2026-10-13T12:12:33+00:00: Recorded command exit 1; command argv SHA-256
   7ca4558f1330f6854210b691cb99c18e6c2f4261c4cbfc2a22ce72a274c39a73.
+
+- 2026-10-13T12:12:50+00:00: Recorded command exit 0; command argv SHA-256
+  a8ead32e951460d96f5ef53ad26f5f0381d0ad41b3580927aa87ff0757275af4.
