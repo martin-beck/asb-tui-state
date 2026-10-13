@@ -10,11 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #309 | `feature/ar1689-fresh-user-integration@58b27883af35` | `main` | BLOCKED | - | Qualify paired fresh-user ASB/TUI journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38388610897 | `58b27883af35` | pull_request | Repository quality | queued:- |
 | 38385411941 | `32c47f58583f` | push | Trusted main verification | completed:success |
 | 38385411931 | `32c47f58583f` | push | Repository quality | completed:success |
 | 38384478942 | `5dec11aefd8c` | pull_request | AWQ shadow observation | completed:success |
@@ -26,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38380231907 | `f4d3512d2226` | push | Trusted main verification | completed:success |
 | 38380231680 | `f4d3512d2226` | push | Repository quality | completed:success |
 | 38379110527 | `b20090ca3207` | pull_request | AWQ shadow observation | completed:success |
-| 38379110227 | `b20090ca3207` | pull_request | Repository quality | completed:success |
