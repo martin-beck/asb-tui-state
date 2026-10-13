@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T04:09:43+00:00",
+  "updated_at": "2026-10-13T04:09:51+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -745,3 +745,6 @@ not merely that drawing does not panic.
   independent exact-head review are green. Review attestation:
   https://github.com/martin-beck/asb-tui/pull/303#issuecomment-6138030446. Per task boundary, did
   not merge.
+
+- 2026-10-13T04:09:51+00:00: Recorded command exit 0; command argv SHA-256
+  7d3d83a80c22eb66a0f15b253b5db5840a1ebc82ee84ce99f7ad5419353a6a8f.
