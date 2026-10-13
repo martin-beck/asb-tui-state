@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1736](tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -17,4 +23,3 @@ Never edit this file directly.
 | P0 | [AR-1685](tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. | - |
 | P0 | [AR-1687](tasks/AR-1687.md): TUI provider-bound comparison qualification | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. | - |
 | P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. | - |
-| P1 | [AR-1736](tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. | - |
