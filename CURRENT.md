@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1734](tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Authorized coordinator may merge PR #302 only at reviewed head 9b9d452182ef630c462126631e413d5ceef30467; after merge verify post-merge CI and reconcile AR state. | codex-asb-tui-ar1734-context-help-20261013 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

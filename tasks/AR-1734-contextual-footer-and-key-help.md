@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T02:50:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1731",
     "AR-1732",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar1734-contextual-footer-hotkeys",
   "observed_dirty": 0,
   "observed_head": "9b9d452182ef630c462126631e413d5ceef30467",
-  "owner": "codex-asb-tui-ar1734-context-help-20261013",
+  "owner": "",
   "plan": "../plans/AR-1734-contextual-footer-and-key-help.md",
   "priority": "P1",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:32:31+00:00",
+  "updated_at": "2026-10-13T02:32:34+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -508,3 +508,6 @@ documentation lookup.
 
 - 2026-10-13T02:32:31+00:00: Exact-main merge 3d978ba716f17ed9c11ca7f732c646e68a06ab7f, post-merge
   quality and trusted-main verification, and independent review comment 6136801071 verified.
+
+- 2026-10-13T02:32:34+00:00: Released after PR 302 exact-main verification and approved independent
+  review.
