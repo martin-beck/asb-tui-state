@@ -9,7 +9,7 @@
     "AR-1733"
   ],
   "id": "AR-1734",
-  "next_action": "Obtain independent exact-head re-review of PR #302 at 0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0, wait for refreshed hosted checks, and repair any new findings before merge.",
+  "next_action": "Obtain final independent exact-head review of PR #302 at 9b9d452182ef630c462126631e413d5ceef30467 and verify refreshed hosted checks before merge.",
   "observed_branch": "feature/ar1734-contextual-footer-hotkeys",
   "observed_dirty": 0,
   "observed_head": "9b9d452182ef630c462126631e413d5ceef30467",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:13:53+00:00",
+  "updated_at": "2026-10-13T02:14:29+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -478,3 +478,11 @@ documentation lookup.
 
 - 2026-10-13T02:13:53+00:00: Recorded command exit 0; command argv SHA-256
   2e8d3b06d7f3b9b3221192ed47e0f76c08f09cbd0785da21443fb54114d6614b.
+
+- 2026-10-13T02:14:29+00:00: Unified the remaining measure-group action identity in signed+DCO
+  commit 9b9d452182ef630c462126631e413d5ceef30467 (tree 99680d2cf0c5cb1a3f6a9da2b751570f431ba420).
+  One typed ToggleGroup/toggle_group action now matches runtime g dispatch, formal binding, help
+  catalog, contextual legality, and exhaustive Measures model-to-context plus execution regression.
+  Full cargo, clippy/fmt, rustdoc, release, UI help/model/source, shell, signature/DCO and Gitleaks
+  gates passed; terminal foundation remains 33/33 with no child. Final re-review requested at
+  issuecomment-6136717587.
