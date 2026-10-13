@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T04:29:52+00:00",
+  "updated_at": "2026-10-13T04:30:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -49,3 +49,6 @@ Record only privacy-safe failure and qualification evidence.
   readiness-to-offline Run Control repair.
 
 - 2026-10-13T04:29:52+00:00: Claimed by codex-asb-tui-ar1737-offline-dispatch-20261013.
+
+- 2026-10-13T04:30:58+00:00: Recorded command exit 0; command argv SHA-256
+  a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
