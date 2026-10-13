@@ -10,5 +10,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 20, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 13, ahead 0 |
 | `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `cc917990e91b` | 0 | behind 7, ahead 0 |
-| `asb-tui-ar-1736-professional-wizard-fidelity-acceptance` | `feature/ar1736-professional-wizard-fidelity-acceptance` | `d15724e1086c` | 0 | behind 0, ahead 1 |
+| `asb-tui-ar-1736-professional-wizard-fidelity-acceptance` | `feature/ar1736-professional-wizard-fidelity-acceptance` | `d15724e1086c` | 4 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/ui-help.json`, `docs/ui-module-inventory.json`, `docs/ui-state-model.generated.json`, `docs/ui-state-model.json` |
 | `asb-tui-ar-1737-offline-run-control-dispatch` | `feature/ar1737-offline-run-control-dispatch` | `fa18db4c2d5a` | 0 | behind 1, ahead 0 |
