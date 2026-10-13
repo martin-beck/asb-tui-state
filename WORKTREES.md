@@ -10,4 +10,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 14, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `cc917990e91b` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1736-professional-wizard-fidelity-acceptance` | `feature/ar1736-professional-wizard-fidelity-acceptance` | `cf45a645887a` | 0 | behind 0, ahead 0 |
+| `asb-tui-ar-1736-professional-wizard-fidelity-acceptance` | `feature/ar1736-professional-wizard-fidelity-acceptance` | `cf45a645887a` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `src/wizard.rs`, `tests/wizard_render.rs` |

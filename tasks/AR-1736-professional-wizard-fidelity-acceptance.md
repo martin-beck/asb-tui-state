@@ -9,7 +9,7 @@
   "id": "AR-1736",
   "next_action": "Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard.",
   "observed_branch": "feature/ar1736-professional-wizard-fidelity-acceptance",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "cf45a645887a8f8713b72f7f717b08fc8786a9ec",
   "owner": "codex-asb-tui-ar1736-fidelity-acceptance-20261013",
   "plan": "../plans/AR-1736-professional-wizard-fidelity-acceptance.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T04:26:02+00:00",
+  "updated_at": "2026-10-13T04:26:05+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
