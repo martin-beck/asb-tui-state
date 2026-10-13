@@ -9,5 +9,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 12, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1734-contextual-footer-hotkeys` | `feature/ar1734-contextual-footer-hotkeys` | `9b9d452182ef` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `4cb2c3e21fd8` | 13 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/ui-visual-regression.json`, `src/ui.rs`, `src/wizard.rs`, `tests/goldens/visual/configuration-ordinary-color.txt`, `tests/goldens/visual/help-ordinary-mono.txt`, `tests/goldens/visual/landing-wide-color.txt`, `tests/goldens/visual/measures-narrow-ascii.txt`, `tests/goldens/visual/reports-wide-color.txt`, `tests/goldens/visual/wizard-ordinary-mono.txt`, `tests/terminal_foundation.rs`, `tests/visual_regression.rs`, `tools/check-ui-visual-parity.py`, `tools/test-ui-visual-regression.py` |
+| `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `4b88283340cf` | 0 | behind 0, ahead 2 |
