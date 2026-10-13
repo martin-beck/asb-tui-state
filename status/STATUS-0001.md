@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**183 ARs tracked** across 5 active status categories.
+**184 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 1 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 176 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -26,7 +26,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 183 |
+| Tasks | 184 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
 | Open or active | 1 |
@@ -36,7 +36,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 183 | 1 | 1 | 176 |
+| unassigned | unassigned | 184 | 1 | 1 | 176 |
 
 ## Task drill-down
 
@@ -2602,6 +2602,20 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. |
 | Next action | Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair. |
 
+### AR-1739 — Guided tools, agents, and workloads installation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a guided TUI route that lets users select and install supported tools, coding agents, and workloads through ASB-owned lifecycle operations before setup. |
+| Next action | Define and consume the versioned ASB installation catalog and lifecycle contract, then promote when the required ASB command surface is available for the selected current-main pair. |
+
 
 ## Dependency graph
 
@@ -2814,6 +2828,7 @@ flowchart LR
         AR_1736["AR-1736 - Done"]:::status_done
         AR_1737["AR-1737 - Done"]:::status_done
         AR_1738["AR-1738 - In progress"]:::status_in_progress
+        AR_1739["AR-1739 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3406,6 +3421,7 @@ flowchart LR
 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md) | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md) | None |
 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md) | None | None |
 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md) | None | None |
+| [AR-1739](../tasks/AR-1739-guided-tool-agent-workload-installation.md) | None | None |
 
 ## Complete AR inventory
 
@@ -3421,11 +3437,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (1)
+### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
+| P0 | [AR-1739](../tasks/AR-1739-guided-tool-agent-workload-installation.md): Guided tools, agents, and workloads installation | Unclaimed | Add a guided TUI route that lets users select and install supported tools, coding agents, and workloads through ASB-owned lifecycle operations before setup. | Define and consume the versioned ASB installation catalog and lifecycle contract, then promote when the required ASB command surface is available for the selected current-main pair. |
 
 ### Done (176)
 
@@ -3496,6 +3513,3 @@ flowchart LR
 | P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
-| P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
-| P0 | [AR-1612](../tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
-| P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
