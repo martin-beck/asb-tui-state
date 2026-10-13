@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #302 | `feature/ar1734-contextual-footer-hotkeys@0cdb356725b0` | `main` | BLOCKED | QUEUED: | feat(ui): add contextual footer and help overlay |
+| #302 | `feature/ar1734-contextual-footer-hotkeys@0cdb356725b0` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): add contextual footer and help overlay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38334928835 | `0cdb356725b0` | pull_request | AWQ shadow observation | queued:- |
-| 38334928584 | `0cdb356725b0` | pull_request | Repository quality | queued:- |
+| 38334928835 | `0cdb356725b0` | pull_request | AWQ shadow observation | in_progress:- |
+| 38334928584 | `0cdb356725b0` | pull_request | Repository quality | in_progress:- |
 | 38333485592 | `226bd1746644` | pull_request | AWQ shadow observation | completed:success |
 | 38333485583 | `226bd1746644` | pull_request | Repository quality | completed:success |
 | 38331600672 | `f7b6bb84c6ff` | pull_request | AWQ shadow observation | completed:success |
