@@ -11,7 +11,7 @@
   "id": "AR-1735",
   "next_action": "Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
-  "observed_dirty": 6,
+  "observed_dirty": 8,
   "observed_head": "3d978ba716f17ed9c11ca7f732c646e68a06ab7f",
   "owner": "codex-asb-tui-ar1735-visual-regression-20261013",
   "plan": "../plans/AR-1735-visual-route-and-resize-regression.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T02:43:05+00:00",
+  "updated_at": "2026-10-13T02:43:08+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
