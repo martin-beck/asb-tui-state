@@ -2558,7 +2558,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. |
-| Next action | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
+| Next action | Await independent exact-head review and hosted CI for PR #303; do not merge without approval. |
 
 ### AR-1736 — Accept professional wizard visual fidelity and usability
 
@@ -3381,7 +3381,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system. |
+| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Await independent exact-head review and hosted CI for PR #303; do not merge without approval. |
 
 ### Blocked (2)
 

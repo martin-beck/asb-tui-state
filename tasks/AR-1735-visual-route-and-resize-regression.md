@@ -9,7 +9,7 @@
     "AR-1734"
   ],
   "id": "AR-1735",
-  "next_action": "Add deterministic visual-route, resize, accessibility, and formal parity regression coverage for the new fidelity system.",
+  "next_action": "Await independent exact-head review and hosted CI for PR #303; do not merge without approval.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
   "observed_dirty": 0,
   "observed_head": "4cb2c3e21fd86de2fbe9c2acefad8d9f9adb88dd",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T03:06:23+00:00",
+  "updated_at": "2026-10-13T03:06:40+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -308,3 +308,11 @@ not merely that drawing does not panic.
 
 - 2026-10-13T03:06:23+00:00: Recorded command exit 0; command argv SHA-256
   99e047aeb00fae9ddcf0295b9d9392d024b8f0641a556ed2c793dd021801fb32.
+
+- 2026-10-13T03:06:40+00:00: Implementation candidate published as PR #303. Exact base
+  3d978ba716f17ed9c11ca7f732c646e68a06ab7f, signed+DCO head
+  4cb2c3e21fd86de2fbe9c2acefad8d9f9adb88dd, tree 9e3c4634a82439f51a08539c629ab94e93f047e5. Full
+  cargo test, clippy, fmt, rustdoc, release build, coverage (90.29% lines),
+  visual/formal/source/help/tutorial/journey/publication/release/shell/workflow/Gitleaks gates
+  passed. Terminal foundation 33/33 and full/coverage runs proved zero surviving exact ASB TUI
+  children. Local cargo-deny/cargo-audit commands unavailable; hosted gates remain required.
