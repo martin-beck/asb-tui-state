@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #305 | `feature/ar1737-offline-run-control-dispatch@f25720e6c630` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | AR-1737: fence offline dispatch retries |
+| #305 | `feature/ar1737-offline-run-control-dispatch@fa18db4c2d5a` | `main` | UNKNOWN | - | AR-1737: fence offline dispatch retries |
 
 ## Recent workflows
 
