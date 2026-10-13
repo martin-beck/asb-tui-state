@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1735](tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Complete. PR #303 merged as cf45a645887a8f8713b72f7f717b08fc8786a9ec; exact-main quality and trusted-main verification are green. AR-1736 may proceed. | codex-asb-tui-ar1735-visual-regression-20261013 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

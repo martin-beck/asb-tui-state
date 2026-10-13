@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**181 ARs tracked** across 5 active status categories.
+**181 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 170 |
+| **Done** | Accepted, integrated, and durably verified | 171 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 181 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 2 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 181 | 1 | 2 | 170 |
+| unassigned | unassigned | 181 | 0 | 2 | 171 |
 
 ## Task drill-down
 
@@ -2550,11 +2550,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-tui-ar1735-visual-regression-20261013 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. |
@@ -2782,7 +2782,7 @@ flowchart LR
         AR_1732["AR-1732 - Done"]:::status_done
         AR_1733["AR-1733 - Done"]:::status_done
         AR_1734["AR-1734 - Done"]:::status_done
-        AR_1735["AR-1735 - In progress"]:::status_in_progress
+        AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
@@ -3377,12 +3377,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1735](../tasks/AR-1735-visual-route-and-resize-regression.md): Qualify visual fidelity across routes, resize, and terminal capabilities | codex-asb-tui-ar1735-visual-regression-20261013 | Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift. | Complete. PR #303 merged as cf45a645887a8f8713b72f7f717b08fc8786a9ec; exact-main quality and trusted-main verification are green. AR-1736 may proceed. |
-
 ### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3399,7 +3393,7 @@ flowchart LR
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 | P1 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Unclaimed | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard. |
 
-### Done (170)
+### Done (171)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3471,3 +3465,5 @@ flowchart LR
 | P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
 | P0 | [AR-1612](../tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
+| P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Released with the immutable bundle merge; retain paired manifest evidence for release-gate qualification. |
+| P0 | [AR-1615](../tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | No further action; repository-owned exact PTY/control qualification passed on current ASB/TUI heads. |

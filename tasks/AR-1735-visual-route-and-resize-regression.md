@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T05:33:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1732",
     "AR-1733",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
   "observed_dirty": 0,
   "observed_head": "cc917990e91b857c27f7898d34c0685461713401",
-  "owner": "codex-asb-tui-ar1735-visual-regression-20261013",
+  "owner": "",
   "plan": "../plans/AR-1735-visual-route-and-resize-regression.md",
   "priority": "P1",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1735.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T04:17:55+00:00",
+  "updated_at": "2026-10-13T04:18:00+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -777,3 +777,7 @@ not merely that drawing does not panic.
   cc917990e91b857c27f7898d34c0685461713401 is an ancestor of signed main merge
   cf45a645887a8f8713b72f7f717b08fc8786a9ec. Repository quality run 38345085528 and Trusted main
   verification run 38345085469 passed on exact main.
+
+- 2026-10-13T04:18:00+00:00: Released claim after accepted post-merge exact-main verification. PR
+  #303 is merged, independent review approved exact head, all PR and post-merge hosted checks are
+  green, and no ASB-TUI child remains.
