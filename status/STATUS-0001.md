@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**182 ARs tracked** across 5 active status categories.
+**182 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 175 |
+| **Done** | Accepted, integrated, and durably verified | 176 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 182 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 1 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 182 | 1 | 1 | 175 |
+| unassigned | unassigned | 182 | 0 | 1 | 176 |
 
 ## Task drill-down
 
@@ -2060,11 +2060,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-tui-ar1689-20261013 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
@@ -2758,7 +2758,7 @@ flowchart LR
         AR_1686["AR-1686 - Done"]:::status_done
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
-        AR_1689["AR-1689 - In progress"]:::status_in_progress
+        AR_1689["AR-1689 - Done"]:::status_done
         AR_1690["AR-1690 - Done"]:::status_done
         AR_1691["AR-1691 - Done"]:::status_done
         AR_1692["AR-1692 - Done"]:::status_done
@@ -3393,12 +3393,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | codex-asb-tui-ar1689-20261013 | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
-
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3411,7 +3405,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 
-### Done (175)
+### Done (176)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3486,3 +3480,4 @@ flowchart LR
 | P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Released with the immutable bundle merge; retain paired manifest evidence for release-gate qualification. |
 | P0 | [AR-1615](../tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | No further action; repository-owned exact PTY/control qualification passed on current ASB/TUI heads. |
 | P0 | [AR-1616](../tasks/AR-1616.md): Trusted coverage repair for guided output contract | Unclaimed | Restore trusted-main coverage margin with behavior-relevant output-contract tests without weakening the gate. | Promote after AR-1604 merge; add focused output-contract coverage, independent review, and exact-main verification. |
+| P0 | [AR-1617](../tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Unclaimed | Expose typed seal, interrupted-capture reopen, and bounded development cassette removal across the TUI/ASB route. | Released on protected main; retain receipt and hosted evidence for downstream handshake qualification. |
