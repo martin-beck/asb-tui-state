@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:d06252b781ceecb94d4f155955c7e379fa1bb3f2177d1cd910ee45791df8d766",
+    "evidence_ref": "quality/AR-1733-postmerge-receipt-20261013.json",
     "spec_ref": "specs/AR-1733.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Show the complete wizard journey as a responsive horizontal stepper with current, complete, unavailable, and future step states.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Add horizontal wizard stepper and conventional navigation",
-  "updated_at": "2026-10-13T00:33:16+00:00",
+  "updated_at": "2026-10-13T00:44:53+00:00",
   "worktree_key": "asb-tui-ar-1733-horizontal-stepper-navigation"
 }
 ---
@@ -196,3 +196,6 @@ future, and blocked/unavailable steps remain distinguishable without color.
 
 - 2026-10-13T00:33:16+00:00: Recorded command exit 0; command argv SHA-256
   c1d9f04a0276794859c1a36dc18a2a7a086c923ec7fd98b19ec860714545ba81.
+
+- 2026-10-13T00:44:53+00:00: Exact-main merge 486d24709d9045d8e4e2d91221db3a754d2fe3b6, post-merge
+  quality and trusted-main verification, and independent review comment 6135352256 verified.
