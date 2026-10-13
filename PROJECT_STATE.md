@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #302 | `feature/ar1734-contextual-footer-hotkeys@226bd1746644` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add contextual footer and help overlay |
+| #302 | `feature/ar1734-contextual-footer-hotkeys@0cdb356725b0` | `main` | BLOCKED | QUEUED: | feat(ui): add contextual footer and help overlay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38334928835 | `0cdb356725b0` | pull_request | AWQ shadow observation | queued:- |
+| 38334928584 | `0cdb356725b0` | pull_request | Repository quality | queued:- |
 | 38333485592 | `226bd1746644` | pull_request | AWQ shadow observation | completed:success |
 | 38333485583 | `226bd1746644` | pull_request | Repository quality | completed:success |
 | 38331600672 | `f7b6bb84c6ff` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38327576339 | `d996e5bbdb91` | pull_request | Repository quality | completed:success |
 | 38326663441 | `85f7fa970510` | pull_request | AWQ shadow observation | completed:success |
 | 38326663124 | `85f7fa970510` | pull_request | Repository quality | completed:success |
-| 38325994151 | `82ccd39c0604` | pull_request | Repository quality | completed:success |
-| 38325993977 | `82ccd39c0604` | pull_request | AWQ shadow observation | completed:success |
