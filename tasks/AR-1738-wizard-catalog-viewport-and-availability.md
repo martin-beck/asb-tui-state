@@ -7,8 +7,8 @@
   "id": "AR-1738",
   "next_action": "Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair.",
   "observed_branch": "feature/ar1738-wizard-catalog-viewport-and-availability",
-  "observed_dirty": 6,
-  "observed_head": "63400fdb3a06576145302a7d5ca596ac1e72f54d",
+  "observed_dirty": 0,
+  "observed_head": "ef0b23e0c2b4f7ca3539f572bc1c3ad4b3d90159",
   "owner": "codex-asb-tui-ar1738-20261013",
   "plan": "../plans/AR-1738-wizard-catalog-viewport-and-availability.md",
   "priority": "P0",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:17:31+00:00",
+  "updated_at": "2026-10-13T12:17:34+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
