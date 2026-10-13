@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**182 ARs tracked** across 4 active status categories.
+**182 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 172 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 182 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 0 |
-| Blocked | 3 |
+| Open or active | 1 |
+| Blocked | 2 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 182 | 0 | 3 | 172 |
+| unassigned | unassigned | 182 | 1 | 2 | 172 |
 
 ## Task drill-down
 
@@ -2564,7 +2564,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2797,7 +2797,7 @@ flowchart LR
         AR_1733["AR-1733 - Done"]:::status_done
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done
-        AR_1736["AR-1736 - Blocked"]:::status_blocked
+        AR_1736["AR-1736 - Open"]:::status_open
         AR_1737["AR-1737 - Done"]:::status_done
     end
     AR_0002 --> AR_1722
@@ -3393,13 +3393,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Blocked (3)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Unclaimed | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Repair and independently review the TUI-owned Review summary, complete direct installed ordinary/narrow/low-capability PTY acceptance, and retain the exact ASB catalog limitation as an external integration blocker without ASB changes. |
+
+### Blocked (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): TUI consumption of content-addressed qualification runner | Unclaimed | Consume the ASB content-addressed quickstart runner and prove the TUI preserves valid plan identity through run, capture, replay, and comparison. | Rerun the exact paired TUI consumer qualification after ASB AR-1686 lands. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
-| P1 | [AR-1736](../tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Unclaimed | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Repair and independently review the TUI-owned Review summary, complete direct installed ordinary/narrow/low-capability PTY acceptance, and retain the exact ASB catalog limitation as an external integration blocker without ASB changes. |
 
 ### Planned (3)
 

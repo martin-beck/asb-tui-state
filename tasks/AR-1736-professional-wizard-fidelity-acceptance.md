@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1736.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T04:29:47+00:00",
+  "updated_at": "2026-10-13T06:13:45+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -132,3 +132,7 @@ that the backend has not supplied.
 - 2026-10-13T04:29:47+00:00: Paused at user direction to prioritize P0 AR-1737. Registered worktree
   preserves the uncommitted TUI-owned Review fix and privacy-safe acceptance observations; no ASB
   product change.
+
+- 2026-10-13T06:13:45+00:00: The user-authorized cleanup terminated the stale detached PTY runtime;
+  the documented dirty handoff at cf45a645 with only src/wizard.rs and tests/wizard_render.rs
+  remains intact and is safe to recover.
