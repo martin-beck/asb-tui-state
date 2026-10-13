@@ -2,22 +2,23 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `bd1e5a06b44f3f89cfd041cbff2de6c89d0f3e30`
-- Local origin/main: `bd1e5a06b44f3f89cfd041cbff2de6c89d0f3e30`
+- Product remote main: `486d24709d9045d8e4e2d91221db3a754d2fe3b6`
+- Local origin/main: `486d24709d9045d8e4e2d91221db3a754d2fe3b6`
 - Primary worktree head: `60ab530dd1a09d6617514f9974217c9f08d48876`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #301 | `feature/ar1733-horizontal-stepper-navigation@d996e5bbdb91` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): add responsive wizard journey stepper |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38327576771 | `d996e5bbdb91` | pull_request | AWQ shadow observation | in_progress:- |
-| 38327576339 | `d996e5bbdb91` | pull_request | Repository quality | in_progress:- |
+| 38328184869 | `486d24709d90` | push | Trusted main verification | completed:success |
+| 38328184868 | `486d24709d90` | push | Repository quality | completed:success |
+| 38327576771 | `d996e5bbdb91` | pull_request | AWQ shadow observation | completed:success |
+| 38327576339 | `d996e5bbdb91` | pull_request | Repository quality | completed:success |
 | 38326663441 | `85f7fa970510` | pull_request | AWQ shadow observation | completed:success |
 | 38326663124 | `85f7fa970510` | pull_request | Repository quality | completed:success |
 | 38325994151 | `82ccd39c0604` | pull_request | Repository quality | completed:success |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38324423906 | `bd1e5a06b44f` | push | Repository quality | completed:success |
 | 38323825390 | `e215b44fb58a` | pull_request | AWQ shadow observation | completed:success |
 | 38323825205 | `e215b44fb58a` | pull_request | Repository quality | completed:success |
-| 38323112337 | `0685b608f6fb` | pull_request | AWQ shadow observation | completed:success |
-| 38323111673 | `0685b608f6fb` | pull_request | Repository quality | completed:success |
