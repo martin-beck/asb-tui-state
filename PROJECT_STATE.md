@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #308 | `feature/ar1687-provider-comparison@1313e9b2cfb7` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS: | feat: project provider-bound comparison state |
+| #308 | `feature/ar1687-provider-comparison@1313e9b2cfb7` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | feat: project provider-bound comparison state |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38383743933 | `1313e9b2cfb7` | pull_request | AWQ shadow observation | in_progress:- |
+| 38383743933 | `1313e9b2cfb7` | pull_request | AWQ shadow observation | completed:failure |
 | 38383743538 | `1313e9b2cfb7` | pull_request | Repository quality | completed:failure |
 | 38383171189 | `bf0b47e0ccdc` | pull_request | AWQ shadow observation | completed:cancelled |
 | 38383170127 | `bf0b47e0ccdc` | pull_request | Repository quality | completed:cancelled |
