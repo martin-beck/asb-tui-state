@@ -9,7 +9,7 @@
     "AR-1733"
   ],
   "id": "AR-1734",
-  "next_action": "Obtain independent exact-head re-review of repaired PR #302 at 226bd174664471810476aa02dcef86a332f2ee15, wait for hosted checks, and repair any new findings before merge.",
+  "next_action": "Obtain independent exact-head re-review of PR #302 at 0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0, wait for refreshed hosted checks, and repair any new findings before merge.",
   "observed_branch": "feature/ar1734-contextual-footer-hotkeys",
   "observed_dirty": 0,
   "observed_head": "0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:01:35+00:00",
+  "updated_at": "2026-10-13T02:02:05+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -434,3 +434,11 @@ documentation lookup.
 
 - 2026-10-13T02:01:35+00:00: Recorded command exit 0; command argv SHA-256
   e1cfd3832f23cc99c3ff9083c799416dbc8059dcb551148deeb0b16df22602ec.
+
+- 2026-10-13T02:02:05+00:00: Second-review repairs pushed in signed+DCO commit
+  0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0 (tree eaf89478cdef41e60bff2ec7adc5604145f87ab6):
+  fail-closed action legality now reuses wizard/preflight dispatch validation, F1 reaches help
+  during text focus and restores exact focus/drafts, route refresh closes the modal atomically, and
+  formal focus accepts only route-owned focusable model IDs. Full tests and quality validators
+  passed; clean coverage is 90.20 percent; terminal foundation 33/33 and no remaining child; all
+  five commits signed+DCO and Gitleaks clean. Re-review requested at issuecomment-6136478104.

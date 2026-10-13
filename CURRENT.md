@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1734](tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Obtain independent exact-head re-review of repaired PR #302 at 226bd174664471810476aa02dcef86a332f2ee15, wait for hosted checks, and repair any new findings before merge. | codex-asb-tui-ar1734-context-help-20261013 |
+| P1 | [AR-1734](tasks/AR-1734-contextual-footer-and-key-help.md): Render contextual footer help and current hotkeys | Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions. | Obtain independent exact-head re-review of PR #302 at 0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0, wait for refreshed hosted checks, and repair any new findings before merge. | codex-asb-tui-ar1734-context-help-20261013 |
 
 ## Blocked
 
