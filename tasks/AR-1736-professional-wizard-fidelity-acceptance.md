@@ -7,7 +7,7 @@
     "AR-1735"
   ],
   "id": "AR-1736",
-  "next_action": "Run an independently reviewed exact-head usability and fidelity acceptance journey across the installed asb-tui wizard.",
+  "next_action": "Repair and independently review the TUI-owned Review summary, complete direct installed ordinary/narrow/low-capability PTY acceptance, and retain the exact ASB catalog limitation as an external integration blocker without ASB changes.",
   "observed_branch": "feature/ar1736-professional-wizard-fidelity-acceptance",
   "observed_dirty": 2,
   "observed_head": "cf45a645887a8f8713b72f7f717b08fc8786a9ec",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T04:26:05+00:00",
+  "updated_at": "2026-10-13T04:26:22+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -108,3 +108,11 @@ that the backend has not supplied.
 
 - 2026-10-13T04:26:02+00:00: Recorded command exit 1; command argv SHA-256
   e4debf6c51f4912cd3ae8231ee56a6c316f64ff02e6651c9de9b8b159bf68978.
+
+- 2026-10-13T04:26:22+00:00: External integration condition reproduced on exact ASB main
+  da0cbe0848a10e61a2cd0b9a3144217842a3369b/tree 10a14f91c60aed4e98b9f3f62fc342fdfd9db930: in
+  isolated private project state, fixture codex tool install, selection, catalog generation, and
+  agent-catalog selection all succeeded, yet parent `asb tui` exposed all eight wizard agents as
+  unavailable. The authoritative parent selection-driven wizard therefore cannot advance. No ASB
+  files or claims were changed; AR-1736 continues only with TUI-owned Review presentation and direct
+  installed fidelity acceptance, and will not claim parent end-to-end setup.
