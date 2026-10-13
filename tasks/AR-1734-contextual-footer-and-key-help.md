@@ -11,7 +11,7 @@
   "id": "AR-1734",
   "next_action": "Obtain independent exact-head re-review of PR #302 at 0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0, wait for refreshed hosted checks, and repair any new findings before merge.",
   "observed_branch": "feature/ar1734-contextual-footer-hotkeys",
-  "observed_dirty": 2,
+  "observed_dirty": 5,
   "observed_head": "0cdb356725b0d0c4f42b7a6f02a0d721d1f885e0",
   "owner": "codex-asb-tui-ar1734-context-help-20261013",
   "plan": "../plans/AR-1734-contextual-footer-and-key-help.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T02:10:38+00:00",
+  "updated_at": "2026-10-13T02:10:42+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
