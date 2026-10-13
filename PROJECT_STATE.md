@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #302 | `feature/ar1734-contextual-footer-hotkeys@226bd1746644` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat(ui): add contextual footer and help overlay |
+| #302 | `feature/ar1734-contextual-footer-hotkeys@226bd1746644` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | feat(ui): add contextual footer and help overlay |
 
 ## Recent workflows
 
