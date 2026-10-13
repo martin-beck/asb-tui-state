@@ -10,14 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #308 | `feature/ar1687-provider-comparison@1313e9b2cfb7` | `main` | UNKNOWN | - | feat: project provider-bound comparison state |
+| #308 | `feature/ar1687-provider-comparison@1313e9b2cfb7` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | feat: project provider-bound comparison state |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38383171189 | `bf0b47e0ccdc` | pull_request | AWQ shadow observation | in_progress:- |
-| 38383170127 | `bf0b47e0ccdc` | pull_request | Repository quality | in_progress:- |
+| 38383743933 | `1313e9b2cfb7` | pull_request | AWQ shadow observation | in_progress:- |
+| 38383743538 | `1313e9b2cfb7` | pull_request | Repository quality | in_progress:- |
+| 38383171189 | `bf0b47e0ccdc` | pull_request | AWQ shadow observation | completed:cancelled |
+| 38383170127 | `bf0b47e0ccdc` | pull_request | Repository quality | completed:cancelled |
 | 38380231907 | `f4d3512d2226` | push | Trusted main verification | completed:success |
 | 38380231680 | `f4d3512d2226` | push | Repository quality | completed:success |
 | 38379110527 | `b20090ca3207` | pull_request | AWQ shadow observation | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38375286774 | `0c5b7fa63c26` | push | Repository quality | completed:success |
 | 38374073086 | `78a76984dbf1` | pull_request | AWQ shadow observation | completed:success |
 | 38374072485 | `78a76984dbf1` | pull_request | Repository quality | completed:success |
-| 38353407528 | `aac882beebaf` | push | Repository quality | completed:success |
-| 38353407449 | `aac882beebaf` | push | Trusted main verification | completed:success |
