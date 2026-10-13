@@ -14,3 +14,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `src/wizard.rs`, `tests/wizard_render.rs` |
 | `asb-tui-ar-1737-offline-run-control-dispatch` | `feature/ar1737-offline-run-control-dispatch` | `85e35a62da8d` | 2 | behind 0, ahead 3 |
 | changed files | - | - | - | `src/runtime.rs`, `src/ui.rs` |
+| `asb-review-1737.EgJvOp` | `DETACHED` | `85e35a62da8d` | 0 | behind 0, ahead 3 |
