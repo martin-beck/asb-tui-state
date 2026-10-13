@@ -7,5 +7,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui` | `main` | `60ab530dd1a0` | 0 | behind 7, ahead 0 |
 | `asb-tui-ar-1731-visual-language-shell` | `feature/ar1731-visual-language-shell` | `97e6692946c3` | 0 | behind 6, ahead 0 |
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 1, ahead 0 |
-| `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `85f7fa970510` | 5 | behind 0, ahead 2 |
-| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/wizard.rs`, `tests/terminal_foundation.rs`, `tests/wizard_render.rs` |
+| `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `85f7fa970510` | 6 | behind 0, ahead 2 |
+| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/wizard.rs`, `src/wizard_stepper.rs`, `tests/terminal_foundation.rs`, `tests/wizard_render.rs` |
