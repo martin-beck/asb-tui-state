@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #310 | `feature/ar1738-wizard-catalog-viewport-and-availability@ef0b23e0c2b4` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | fix(wizard): keep catalog focus visible |
+| #310 | `feature/ar1738-wizard-catalog-viewport-and-availability@fc05d60d3432` | `main` | UNKNOWN | - | fix(wizard): keep catalog focus visible |
 
 ## Recent workflows
 
