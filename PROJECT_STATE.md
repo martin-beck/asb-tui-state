@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #304 | `feature/ar1737-offline-run-control-dispatch@85e35a62da8d` | `main` | BLOCKED | QUEUED:, QUEUED: | AR-1737: restore offline run-control PTY dispatch |
+| #304 | `feature/ar1737-offline-run-control-dispatch@85e35a62da8d` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | AR-1737: restore offline run-control PTY dispatch |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38349092326 | `85e35a62da8d` | pull_request | AWQ shadow observation | queued:- |
-| 38349092083 | `85e35a62da8d` | pull_request | Repository quality | queued:- |
+| 38349092326 | `85e35a62da8d` | pull_request | AWQ shadow observation | in_progress:- |
+| 38349092083 | `85e35a62da8d` | pull_request | Repository quality | in_progress:- |
 | 38345085528 | `cf45a645887a` | push | Repository quality | completed:success |
 | 38345085469 | `cf45a645887a` | push | Trusted main verification | completed:success |
 | 38344466210 | `cc917990e91b` | pull_request | AWQ shadow observation | completed:success |
