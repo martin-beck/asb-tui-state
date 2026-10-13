@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2592,11 +2592,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-tui-ar1738-20261013 |
 | Parent | None |
 | Children | None |
 | Summary | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. |
@@ -2813,7 +2813,7 @@ flowchart LR
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Done"]:::status_done
         AR_1737["AR-1737 - Done"]:::status_done
-        AR_1738["AR-1738 - Open"]:::status_open
+        AR_1738["AR-1738 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3409,11 +3409,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md): Repair wizard catalog viewport and availability presentation | Unclaimed | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. | Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair. |
+| P0 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md): Repair wizard catalog viewport and availability presentation | codex-asb-tui-ar1738-20261013 | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. | Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair. |
 
 ### Blocked (1)
 
