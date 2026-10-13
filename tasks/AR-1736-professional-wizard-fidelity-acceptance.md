@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "environmental",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:e6efc1f3c062a156cee168462b38d3db54326cf9c497a034b96dcacb2f7202d4",
+    "evidence_ref": "quality/AR-1736-postmerge-receipt-20261013.json",
     "spec_ref": "specs/AR-1736.json",
     "spec_revision": 1,
-    "status": "planned"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1736.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T09:17:49+00:00",
+  "updated_at": "2026-10-13T09:27:00+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -202,3 +202,6 @@ that the backend has not supplied.
 
 - 2026-10-13T09:17:49+00:00: Recorded command exit 0; command argv SHA-256
   f6493ee96859b50bb94980b81f46ecca4f2f4b6094a6381661fe5f0455244347.
+
+- 2026-10-13T09:27:00+00:00: PR #306 merged at 0c5b7fa; independent exact-head review and exact-main
+  Repository quality plus Trusted main verification are green.
