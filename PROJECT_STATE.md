@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #301 | `feature/ar1733-horizontal-stepper-navigation@82ccd39c0604` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add responsive wizard journey stepper |
+| #301 | `feature/ar1733-horizontal-stepper-navigation@82ccd39c0604` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(ui): add responsive wizard journey stepper |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38325994151 | `82ccd39c0604` | pull_request | Repository quality | in_progress:- |
+| 38325994151 | `82ccd39c0604` | pull_request | Repository quality | completed:success |
 | 38325993977 | `82ccd39c0604` | pull_request | AWQ shadow observation | completed:success |
 | 38324423923 | `bd1e5a06b44f` | push | Trusted main verification | completed:success |
 | 38324423906 | `bd1e5a06b44f` | push | Repository quality | completed:success |
