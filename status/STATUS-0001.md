@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**182 ARs tracked** across 5 active status categories.
+**182 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 174 |
+| **Done** | Accepted, integrated, and durably verified | 175 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 182 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 1 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 182 | 1 | 1 | 174 |
+| unassigned | unassigned | 182 | 0 | 1 | 175 |
 
 ## Task drill-down
 
@@ -2032,11 +2032,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-tui-ar1687-20261013 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. |
@@ -2756,7 +2756,7 @@ flowchart LR
         AR_1678["AR-1678 - Done"]:::status_done
         AR_1685["AR-1685 - Planned"]:::status_planned
         AR_1686["AR-1686 - Done"]:::status_done
-        AR_1687["AR-1687 - In progress"]:::status_in_progress
+        AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
         AR_1690["AR-1690 - Done"]:::status_done
@@ -3393,12 +3393,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1687](../tasks/AR-1687.md): TUI provider-bound comparison qualification | codex-asb-tui-ar1687-20261013 | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
-
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3412,7 +3406,7 @@ flowchart LR
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 
-### Done (174)
+### Done (175)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3486,3 +3480,4 @@ flowchart LR
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can install the published dev channel and complete the selectable install-to-offline-comparison journey. | Obtain fresh independent review of current-head receipt; release AR-1613 done if accepted. |
 | P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Publish and qualify a clean-machine-installable TUI bundle for ASB&#x27;s default dev channel. | Released with the immutable bundle merge; retain paired manifest evidence for release-gate qualification. |
 | P0 | [AR-1615](../tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | No further action; repository-owned exact PTY/control qualification passed on current ASB/TUI heads. |
+| P0 | [AR-1616](../tasks/AR-1616.md): Trusted coverage repair for guided output contract | Unclaimed | Restore trusted-main coverage margin with behavior-relevant output-contract tests without weakening the gate. | Promote after AR-1604 merge; add focused output-contract coverage, independent review, and exact-main verification. |
