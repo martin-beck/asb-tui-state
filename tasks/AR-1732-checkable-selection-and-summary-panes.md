@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T00:23:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1731"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar1732-checkable-selection-panes",
   "observed_dirty": 0,
   "observed_head": "e215b44fb58a4552ca8b5672984da7130bda1eb7",
-  "owner": "codex-asb-tui-ar1732-selection-20261013",
+  "owner": "",
   "plan": "../plans/AR-1732-checkable-selection-and-summary-panes.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1732.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make all selectable wizard lists visibly checkable and separate selection summaries from contextual descriptions.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Add checkable selections and separated wizard summary panes",
-  "updated_at": "2026-10-13T00:00:02+00:00",
+  "updated_at": "2026-10-13T00:00:08+00:00",
   "worktree_key": "asb-tui-ar-1732-checkable-selection-panes"
 }
 ---
@@ -228,3 +228,5 @@ visually distinct from selection.
 
 - 2026-10-13T00:00:02+00:00: Exact-main merge bd1e5a06, post-merge quality and trusted-main
   verification, and independent review comment 6134846744 verified.
+
+- 2026-10-13T00:00:08+00:00: Released after PR 300 exact-main verification and approved review.
