@@ -9,7 +9,7 @@
     "AR-1734"
   ],
   "id": "AR-1735",
-  "next_action": "Await independent exact-head re-review and hosted CI for repaired PR #303 at 7419c6302f35e969bdb883b182d516aa4f652db1; do not merge without approval.",
+  "next_action": "PR #303 is independently approved at cc917990e91b857c27f7898d34c0685461713401 with all hosted checks green; authorized maintainer may merge, then verify post-merge main before accepting and closing AR-1735.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
   "observed_dirty": 0,
   "observed_head": "cc917990e91b857c27f7898d34c0685461713401",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 257,
+  "task_revision": 258,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T04:08:22+00:00",
+  "updated_at": "2026-10-13T04:09:43+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -738,3 +738,10 @@ not merely that drawing does not panic.
 
 - 2026-10-13T04:08:22+00:00: Recorded command exit 0; command argv SHA-256
   4259deb683518feb7d22e3d3b26ce0bfa13201140c995f4eeac678d5c805e836.
+
+- 2026-10-13T04:09:43+00:00: Repaired minimum-size semantic collapse by asserting
+  route/state/focus/warning/error meaning in every one of the 564 route-state/dimension/capability
+  cells. Full local gates, coverage, gitleaks, no-child cleanup, hosted CI, signatures/DCO, and
+  independent exact-head review are green. Review attestation:
+  https://github.com/martin-beck/asb-tui/pull/303#issuecomment-6138030446. Per task boundary, did
+  not merge.
