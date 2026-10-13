@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:18:39+00:00",
+  "updated_at": "2026-10-13T05:18:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -458,3 +458,6 @@ Record only privacy-safe failure and qualification evidence.
 
 - 2026-10-13T05:18:39+00:00: Recorded command exit 0; command argv SHA-256
   eeba86362e1fcda807e5c4b2f695d3d1a9880867bd49c8734e3e8557588557b5.
+
+- 2026-10-13T05:18:49+00:00: Recorded command exit 0; command argv SHA-256
+  84f68d2999ab3f3475f993efd92f1a1b23e186a4a9aaf87a24a4f86a7d9e9136.
