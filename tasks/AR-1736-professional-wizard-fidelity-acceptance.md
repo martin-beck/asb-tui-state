@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T06:13:48+00:00",
+  "updated_at": "2026-10-13T06:14:10+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -138,3 +138,6 @@ that the backend has not supplied.
   remains intact and is safe to recover.
 
 - 2026-10-13T06:13:48+00:00: Claimed by codex-asb-tui-ar1736-recovery-20261013.
+
+- 2026-10-13T06:14:10+00:00: Recorded command exit 1; command argv SHA-256
+  62b9d18184b5e71f387a48450402d3eac24cd6aeaff39113ae84349163237af1.
