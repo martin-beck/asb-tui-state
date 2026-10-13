@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**182 ARs tracked** across 5 active status categories.
+**182 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 171 |
+| **Done** | Accepted, integrated, and durably verified | 172 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 182 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 1 |
+| Open or active | 0 |
 | Blocked | 3 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 182 | 1 | 3 | 171 |
+| unassigned | unassigned | 182 | 0 | 3 | 172 |
 
 ## Task drill-down
 
@@ -2578,11 +2578,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-tui-ar1737-offline-dispatch-20261013 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. |
@@ -2798,7 +2798,7 @@ flowchart LR
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Blocked"]:::status_blocked
-        AR_1737["AR-1737 - In progress"]:::status_in_progress
+        AR_1737["AR-1737 - Done"]:::status_done
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3393,12 +3393,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-cross-repo-offline-run-control-dispatch.md): Repair offline run-control dispatch after TUI readiness | codex-asb-tui-ar1737-offline-dispatch-20261013 | Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness. | PR #305 is independently approved, mergeable, and all hosted checks are green; an authorized separate actor may merge, then verify post-merge main CI. |
-
 ### Blocked (3)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -3415,7 +3409,7 @@ flowchart LR
 | P0 | [AR-1687](../tasks/AR-1687.md): TUI provider-bound comparison qualification | Unclaimed | Verify the TUI presents provider-bound comparison availability and confounders truthfully for development/mock runs. | Consume ASB comparison output for available, unavailable, asymmetric, and multi-candidate cases and record privacy-safe TUI evidence. |
 | P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete fresh-user TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run a disposable exact-head paired journey using plan create and the runner-owned capture/replay routes, then publish a privacy-safe receipt for AR-1613. |
 
-### Done (171)
+### Done (172)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -3484,3 +3478,5 @@ flowchart LR
 | P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
 | P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
 | P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |
+| P0 | [AR-1611](../tasks/AR-1611.md): Installed frontend handoff and dev-channel launch | Unclaimed | Make the separately built TUI launchable from the ASB install router with an explicit, versioned environment and control handoff. | Promote after adapter selection and shared defaults are released; qualify installed-binary launch, restart, and incompatible-manifest diagnostics. |
+| P0 | [AR-1612](../tasks/AR-1612.md): Recording and offline replay selection UX | Unclaimed | Provide a simple wizard/TUI action to record selected or all workloads and use the sealed responses for the next offline run. | Promote after the installed handoff and shared-default persistence are released; wire selection, progress, sealing, offline activation, and comparison actions. |

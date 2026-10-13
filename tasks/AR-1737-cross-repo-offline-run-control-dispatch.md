@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T07:29:52+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1737",
   "next_action": "PR #305 is independently approved, mergeable, and all hosted checks are green; an authorized separate actor may merge, then verify post-merge main CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-asb-tui-ar1737-offline-dispatch-20261013",
+  "owner": "",
   "plan": "../plans/AR-1737-cross-repo-offline-run-control-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the current-main TUI readiness path so an inherited-fd PTY qualification dispatches the offline default run-control action after readiness.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Repair offline run-control dispatch after TUI readiness",
-  "updated_at": "2026-10-13T05:57:19+00:00",
+  "updated_at": "2026-10-13T05:57:27+00:00",
   "worktree_key": ""
 }
 ---
@@ -628,3 +628,7 @@ Record only privacy-safe failure and qualification evidence.
 - 2026-10-13T05:57:19+00:00: PR #305 merged as aac882be; exact main Repository Quality #38353407528
   and Trusted Main #38353407449 are green; independent exact-head review comment #6139181298 and
   unchanged ASB inherited-FD PTY qualification are recorded in the privacy-safe receipt.
+
+- 2026-10-13T05:57:27+00:00: Completed through reviewed PR #305 and post-merge exact-main
+  validation; receipt quality/AR-1737-postmerge-receipt-20261013.json binds the paired ASB
+  inherited-FD PTY result and immutable hosted evidence.
