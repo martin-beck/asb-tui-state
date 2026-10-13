@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T03:22:10+00:00",
+  "updated_at": "2026-10-13T03:22:18+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -436,3 +436,6 @@ not merely that drawing does not panic.
 
 - 2026-10-13T03:22:10+00:00: Recorded command exit 1; command argv SHA-256
   4dca52d9c67f0bdcd9ea328afdf50a95645608807be6185c448d6f47dd70694c.
+
+- 2026-10-13T03:22:18+00:00: Recorded command exit 0; command argv SHA-256
+  baee7b3fb5e58610973c8a4947be0b1d13c710ba1c6e13f359af3bc50e0da55c.
