@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `63400fdb3a06576145302a7d5ca596ac1e72f54d`
+- Product remote main: `f44690918c39160edcbb56a78a78a639c27fe4fd`
 - Local origin/main: `63400fdb3a06576145302a7d5ca596ac1e72f54d`
 - Primary worktree head: `60ab530dd1a09d6617514f9974217c9f08d48876`
 
@@ -10,14 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #310 | `feature/ar1738-wizard-catalog-viewport-and-availability@a6097ca61605` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix(wizard): keep catalog focus visible |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38398747562 | `a6097ca61605` | pull_request | AWQ shadow observation | in_progress:- |
-| 38398746638 | `a6097ca61605` | pull_request | Repository quality | in_progress:- |
+| 38399660149 | `f44690918c39` | push | Trusted main verification | queued:- |
+| 38399660054 | `f44690918c39` | push | Repository quality | queued:- |
+| 38398747562 | `a6097ca61605` | pull_request | AWQ shadow observation | completed:success |
+| 38398746638 | `a6097ca61605` | pull_request | Repository quality | completed:success |
 | 38397013956 | `fc05d60d3432` | pull_request | AWQ shadow observation | completed:failure |
 | 38397013671 | `fc05d60d3432` | pull_request | Repository quality | completed:failure |
 | 38396274055 | `ef0b23e0c2b4` | pull_request | AWQ shadow observation | completed:failure |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38390430647 | `63400fdb3a06` | push | Repository quality | completed:success |
 | 38389638716 | `0b8feb34819a` | pull_request | AWQ shadow observation | completed:success |
 | 38389638508 | `0b8feb34819a` | pull_request | Repository quality | completed:success |
-| 38388611025 | `58b27883af35` | pull_request | AWQ shadow observation | completed:success |
-| 38388610897 | `58b27883af35` | pull_request | Repository quality | completed:success |
