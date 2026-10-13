@@ -19,19 +19,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:993001a6b4a3f4fd6f2a39860a8eb8a8a8d026cf3583179402ed8fa8c9d00eea",
+    "evidence_ref": "https://github.com/martin-beck/asb-tui/pull/303",
     "spec_ref": "specs/AR-1735.json",
     "spec_revision": 1,
-    "status": "planned"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1735.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 265,
+  "task_revision": 266,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T04:16:57+00:00",
+  "updated_at": "2026-10-13T04:17:43+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
@@ -766,3 +766,9 @@ not merely that drawing does not panic.
 
 - 2026-10-13T04:16:57+00:00: Recorded command exit 0; command argv SHA-256
   0b935ca247c5dbe4952cc4dadcae427a800ecf4050bbd5a33598d0bb91d132e6.
+
+- 2026-10-13T04:17:43+00:00: Accepted against exact reviewed head
+  cc917990e91b857c27f7898d34c0685461713401, merged as signed main
+  cf45a645887a8f8713b72f7f717b08fc8786a9ec. Independent review approved all 564 semantic cells and
+  prior repairs in comment 6138030446. Exact-main Repository quality run 38345085528 and Trusted
+  main verification run 38345085469 both completed successfully.
