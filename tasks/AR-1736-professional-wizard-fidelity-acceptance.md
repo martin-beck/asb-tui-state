@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T11:52:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1735"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar1736-professional-wizard-fidelity-acceptance",
   "observed_dirty": 0,
   "observed_head": "78a76984dbf159ea687c6ad77f3f4514329134d5",
-  "owner": "codex-asb-tui-ar1736-recovery-20261013",
+  "owner": "",
   "plan": "../plans/AR-1736-professional-wizard-fidelity-acceptance.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1736.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Accept professional wizard visual fidelity and usability",
-  "updated_at": "2026-10-13T09:27:00+00:00",
+  "updated_at": "2026-10-13T09:27:03+00:00",
   "worktree_key": "asb-tui-ar-1736-professional-wizard-fidelity-acceptance"
 }
 ---
@@ -205,3 +205,6 @@ that the backend has not supplied.
 
 - 2026-10-13T09:27:00+00:00: PR #306 merged at 0c5b7fa; independent exact-head review and exact-main
   Repository quality plus Trusted main verification are green.
+
+- 2026-10-13T09:27:03+00:00: Released after PR #306 exact-main qualification; the documented ASB
+  catalog limitation remains external and was not claimed as resolved.

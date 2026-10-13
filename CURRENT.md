@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1736](tasks/AR-1736-professional-wizard-fidelity-acceptance.md): Accept professional wizard visual fidelity and usability | Independently qualify that the installed wizard is visually professional, keyboard-discoverable, responsive, and truthful across the complete supported route. | Repair and independently review the TUI-owned Review summary, complete direct installed ordinary/narrow/low-capability PTY acceptance, and retain the exact ASB catalog limitation as an external integration blocker without ASB changes. | codex-asb-tui-ar1736-recovery-20261013 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
