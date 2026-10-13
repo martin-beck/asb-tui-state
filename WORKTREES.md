@@ -5,6 +5,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `asb-tui` | `main` | `60ab530dd1a0` | 0 | behind 32, ahead 0 |
+| `asb-tui-ar-1686-content-addressed-consumer` | `feature/ar1686-content-addressed-consumer` | `0c5b7fa63c26` | 0 | behind 0, ahead 0 |
 | `asb-tui-ar-1731-visual-language-shell` | `feature/ar1731-visual-language-shell` | `97e6692946c3` | 0 | behind 31, ahead 0 |
 | `asb-tui-ar-1732-checkable-selection-panes` | `feature/ar1732-checkable-selection-panes` | `e215b44fb58a` | 0 | behind 26, ahead 0 |
 | `asb-tui-ar-1733-horizontal-stepper-navigation` | `feature/ar1733-horizontal-stepper-navigation` | `d996e5bbdb91` | 0 | behind 22, ahead 0 |
