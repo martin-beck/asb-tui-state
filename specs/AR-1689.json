@@ -1,1 +1,32 @@
-{"schema_version":1,"spec_ref":"specs/AR-1689.json","spec_revision":1,"acceptance_predicates":[{"id":"wizard-to-plan","description":"TUI wizard selections reach ASB plan creation with a fresh valid content identity."},{"id":"positive-journey","description":"Mock benchmark, selected/all recording, strict offline replay, comparison, and analysis complete."},{"id":"negative-journey","description":"Stale identity, unavailable provider, incomplete cassette, and no-network cases fail with typed diagnostics."},{"id":"receipt","description":"Receipt binds exact ASB/TUI heads and artifact digests without secrets."},{"id":"development-boundary","description":"Missing development authentication, signatures, and key management remain visible warnings and never block."}],"definition_of_done":["Fresh-user paired journey is reproducible from clean clones and its privacy-safe receipt is independently reviewed.","Hosted checks and exact-head post-merge verification pass."],"required_evidence_classes":["paired","journey","hosted"],"gates":[{"id":"paired-heads","description":"ASB and TUI source and installed executable identities are recorded and match the tested journey."},{"id":"offline","description":"Offline replay and comparison complete without provider contact."}]}
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1689.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "wizard-to-plan", "description": "TUI wizard selections reach ASB plan creation with a fresh valid content identity."},
+    {"id": "positive-journey", "description": "Mock benchmark, selected/all recording, strict offline replay, comparison, and analysis complete."},
+    {"id": "negative-journey", "description": "Stale identity, unavailable provider, incomplete cassette, and no-network cases fail with typed diagnostics."},
+    {"id": "receipt", "description": "Receipt binds exact ASB/TUI heads and artifact digests without secrets."},
+    {"id": "development-boundary", "description": "Missing development authentication, signatures, and key management remain visible warnings and never block."}
+  ],
+  "definition_of_done": [
+    "A clean-clone fresh-user paired journey is reproducible and has an independently reviewed privacy-safe receipt.",
+    "Required hosted checks and exact-main post-merge verification pass."
+  ],
+  "inputs": [
+    {"id": "asb-content-addressed-runner", "description": "ASB-owned plan/run/capture/replay/comparison qualification contract."},
+    {"id": "tui-wizard", "description": "Current asb-tui setup wizard and closed journey probe."}
+  ],
+  "outputs": [
+    {"id": "paired-fresh-user-receipt", "description": "Privacy-safe receipt binding exact ASB/TUI source and executable identities to the fresh-user journey."},
+    {"id": "post-merge-qualification", "description": "Signed, independently reviewed merged TUI qualification with exact-main workflow evidence."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "python", "tools/handoffctl"],
+  "forbidden_tools": ["asb-product-change", "credential-output", "network-bypass", "receipt-fabrication", "gate-weakening", "unreviewed-merge"],
+  "required_evidence_classes": ["environmental"],
+  "gates": [
+    {"id": "paired-heads", "description": "ASB and TUI source and installed executable identities are recorded and match the tested journey."},
+    {"id": "offline", "description": "Offline replay and comparison complete without provider contact."},
+    {"id": "publication", "description": "Independent review, required PR checks, and exact-main post-merge verification pass."}
+  ]
+}
