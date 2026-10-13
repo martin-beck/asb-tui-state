@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #310 | `feature/ar1738-wizard-catalog-viewport-and-availability@fc05d60d3432` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS: | fix(wizard): keep catalog focus visible |
+| #310 | `feature/ar1738-wizard-catalog-viewport-and-availability@fc05d60d3432` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SKIPPED | fix(wizard): keep catalog focus visible |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38397013956 | `fc05d60d3432` | pull_request | AWQ shadow observation | in_progress:- |
-| 38397013671 | `fc05d60d3432` | pull_request | Repository quality | in_progress:- |
+| 38397013956 | `fc05d60d3432` | pull_request | AWQ shadow observation | completed:failure |
+| 38397013671 | `fc05d60d3432` | pull_request | Repository quality | completed:failure |
 | 38396274055 | `ef0b23e0c2b4` | pull_request | AWQ shadow observation | completed:failure |
 | 38396273848 | `ef0b23e0c2b4` | pull_request | Repository quality | completed:failure |
 | 38390430761 | `63400fdb3a06` | push | Trusted main verification | completed:success |
