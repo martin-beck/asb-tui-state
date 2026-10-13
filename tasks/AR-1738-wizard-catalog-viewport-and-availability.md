@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar1738-wizard-catalog-viewport-and-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T14:46:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1738",
   "next_action": "Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair.",
   "observed_branch": "feature/ar1738-wizard-catalog-viewport-and-availability",
   "observed_dirty": 0,
   "observed_head": "a6097ca61605f7f80b4e21a777fe31dde7cd4c0b",
-  "owner": "codex-asb-tui-ar1738-20261013",
+  "owner": "",
   "plan": "../plans/AR-1738-wizard-catalog-viewport-and-availability.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1738.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:52:56+00:00",
+  "updated_at": "2026-10-13T12:52:59+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
@@ -172,3 +172,6 @@ production repairs separately.
 
 - 2026-10-13T12:52:56+00:00: PR #310 merged at f446909; independent exact-head review and
   PR/post-merge required checks passed.
+
+- 2026-10-13T12:52:59+00:00: Released after PR #310 merge and exact-main
+  repository-quality/trusted-main success.
