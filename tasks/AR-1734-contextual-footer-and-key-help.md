@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T02:45:22+00:00",
+  "claim_expires": "2026-10-13T02:50:24+00:00",
   "depends_on": [
     "AR-1731",
     "AR-1732",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a context-sensitive footer and hotkey overlay that explain the highlighted or hovered item and available actions.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Render contextual footer help and current hotkeys",
-  "updated_at": "2026-10-13T00:46:03+00:00",
+  "updated_at": "2026-10-13T00:50:24+00:00",
   "worktree_key": "asb-tui-ar-1734-contextual-footer-hotkeys"
 }
 ---
@@ -47,3 +47,5 @@ documentation lookup.
 
 - 2026-10-13T00:45:59+00:00: Recorded command exit 0; command argv SHA-256
   721c4b9bdc49e1801fc3f3209141a743a35a35512058546e7aad2aeb5abc78f2.
+
+- 2026-10-13T00:50:24+00:00: Heartbeat by codex-asb-tui-ar1734-context-help-20261013.
