@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**183 ARs tracked** across 4 active status categories.
+**183 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 176 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 183 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 0 |
+| Open or active | 1 |
 | Blocked | 1 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 183 | 0 | 1 | 176 |
+| unassigned | unassigned | 183 | 1 | 1 | 176 |
 
 ## Task drill-down
 
@@ -2592,7 +2592,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2813,7 +2813,7 @@ flowchart LR
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Done"]:::status_done
         AR_1737["AR-1737 - Done"]:::status_done
-        AR_1738["AR-1738 - Planned"]:::status_planned
+        AR_1738["AR-1738 - Open"]:::status_open
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3409,18 +3409,23 @@ flowchart LR
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md): Repair wizard catalog viewport and availability presentation | Unclaimed | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. | Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair. |
+
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (2)
+### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
-| P0 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md): Repair wizard catalog viewport and availability presentation | Unclaimed | Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons. | Promote, claim an isolated current-main worktree, reproduce the catalog viewport and typed availability defects under a PTY, then implement and qualify the asb-tui repair. |
 
 ### Done (176)
 

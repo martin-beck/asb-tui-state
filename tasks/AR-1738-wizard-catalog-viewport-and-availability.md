@@ -15,11 +15,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1738.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:10:00+00:00",
+  "updated_at": "2026-10-13T12:08:38+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
@@ -34,3 +34,6 @@ This AR owns only asb-tui's state-to-presentation seam. It must not fabricate
 an available agent, loosen ASB catalog validation, change ASB behavior, or
 hide an unavailable catalog. ASB owns the launcher lifetime and catalog
 production repairs separately.
+
+- 2026-10-13T12:08:38+00:00: P0 user-reported wizard viewport, raw identifier, and typed
+  availability repair is dependency-ready.
