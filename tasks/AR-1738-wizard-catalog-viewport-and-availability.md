@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1738-wizard-catalog-viewport-and-availability.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:f05a053d15bf6e8d80bfd523ecb3c6ba6c90331042d6cef81bd65dec18117ce7",
+    "evidence_ref": "quality/AR-1738-postmerge-receipt-20261013.json",
+    "spec_ref": "specs/AR-1738.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1738.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the visible wizard agent picker: keep focus in the rendered viewport, use human labels rather than internal element IDs, and preserve typed catalog availability reasons.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Repair wizard catalog viewport and availability presentation",
-  "updated_at": "2026-10-13T12:46:04+00:00",
+  "updated_at": "2026-10-13T12:52:56+00:00",
   "worktree_key": "asb-tui-ar-1738-wizard-catalog-viewport-and-availability"
 }
 ---
@@ -161,3 +169,6 @@ production repairs separately.
   cac54e471ea951e2b60461c4a3fbf08dd7edb5905112817569a3a678bb321665.
 
 - 2026-10-13T12:46:04+00:00: Heartbeat by codex-asb-tui-ar1738-20261013.
+
+- 2026-10-13T12:52:56+00:00: PR #310 merged at f446909; independent exact-head review and
+  PR/post-merge required checks passed.
