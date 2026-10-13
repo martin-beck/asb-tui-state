@@ -15,5 +15,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-tui-ar-1735-visual-route-resize-regression` | `feature/ar1735-visual-route-resize-regression` | `cc917990e91b` | 0 | behind 16, ahead 0 |
 | `asb-tui-ar-1736-professional-wizard-fidelity-acceptance` | `feature/ar1736-professional-wizard-fidelity-acceptance` | `78a76984dbf1` | 0 | behind 8, ahead 0 |
 | `asb-tui-ar-1737-offline-run-control-dispatch` | `feature/ar1737-offline-run-control-dispatch` | `fa18db4c2d5a` | 0 | behind 10, ahead 0 |
-| `asb-tui-ar-1738-wizard-catalog-viewport-and-availability` | `feature/ar1738-wizard-catalog-viewport-and-availability` | `63400fdb3a06` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/ui-state-model.json`, `src/ui.rs`, `src/wizard.rs`, `src/wizard_catalog.rs`, `tests/wizard_render.rs` |
+| `asb-tui-ar-1738-wizard-catalog-viewport-and-availability` | `feature/ar1738-wizard-catalog-viewport-and-availability` | `63400fdb3a06` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/ui-state-model.generated.json`, `docs/ui-state-model.json`, `src/ui.rs`, `src/wizard.rs`, `src/wizard_catalog.rs`, `tests/wizard_render.rs` |
