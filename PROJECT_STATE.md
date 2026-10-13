@@ -15,7 +15,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38350063478 | `c4f554e79c16` | push | Repository quality | queued:- |
+| 38350063529 | `c4f554e79c16` | push | Trusted main verification | queued:- |
+| 38350063478 | `c4f554e79c16` | push | Repository quality | in_progress:- |
 | 38349092326 | `85e35a62da8d` | pull_request | AWQ shadow observation | completed:success |
 | 38349092083 | `85e35a62da8d` | pull_request | Repository quality | completed:success |
 | 38345085528 | `cf45a645887a` | push | Repository quality | completed:success |
@@ -26,4 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 38343091073 | `7419c6302f35` | pull_request | Repository quality | completed:success |
 | 38340116118 | `4cb2c3e21fd8` | pull_request | AWQ shadow observation | completed:success |
 | 38340115937 | `4cb2c3e21fd8` | pull_request | Repository quality | completed:failure |
-| 38336614827 | `3d978ba716f1` | push | Trusted main verification | completed:success |
