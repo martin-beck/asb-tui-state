@@ -11,8 +11,8 @@
   "id": "AR-1735",
   "next_action": "Await independent exact-head re-review and hosted CI for repaired PR #303 at 7419c6302f35e969bdb883b182d516aa4f652db1; do not merge without approval.",
   "observed_branch": "feature/ar1735-visual-route-resize-regression",
-  "observed_dirty": 10,
-  "observed_head": "7419c6302f35e969bdb883b182d516aa4f652db1",
+  "observed_dirty": 0,
+  "observed_head": "7ec0068ba8c08a0b6a98b185abc15c6f12b56d25",
   "owner": "codex-asb-tui-ar1735-visual-regression-20261013",
   "plan": "../plans/AR-1735-visual-route-and-resize-regression.md",
   "priority": "P1",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the visual fidelity contract across every route, terminal size, color capability, and keyboard-only interaction without source/model/help drift.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Qualify visual fidelity across routes, resize, and terminal capabilities",
-  "updated_at": "2026-10-13T03:55:02+00:00",
+  "updated_at": "2026-10-13T03:55:05+00:00",
   "worktree_key": "asb-tui-ar-1735-visual-route-resize-regression"
 }
 ---
