@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Coordinator v0.7.11 release vendor for ASB-TUI state",
-  "updated_at": "2026-10-14T07:57:22+00:00",
+  "updated_at": "2026-10-14T07:57:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -108,3 +108,6 @@ provenance accurately; do not make an annotated-tag signature claim.
 - 2026-10-14T07:57:20+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-14T07:57:22+00:00: Released retry circuit launch slot.
+
+- 2026-10-14T07:57:25+00:00: Recorded command exit 0; command argv SHA-256
+  75680364d52805b8311e7b5dbf3037dce12e21f1b40a0cf970af2b0c89ba4475.
