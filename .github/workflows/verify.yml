@@ -26,12 +26,18 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
+        with:
+          version: "0.12.8"
       - name: Verify pinned coordinator release
         run: python3 tools/handoffctl_vendor.py verify --target .
       - name: Verify source policy
         run: python3 tools/check_source_headers.py
       - name: Scan public history for secrets
         run: tools/run_gitleaks.sh
+      - name: Enforce Coordinator complexity budget
+        run: |
+          uv run lizard -l python --CCN 14 tools/handoffctl.py tools/assumption_revalidation.py tools/retry_circuit.py
       - name: Coordinator and policy failure tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Verify Git-backed state
