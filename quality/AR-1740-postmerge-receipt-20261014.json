@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task": "AR-1740",
+  "status": "post_merge_verified",
+  "upstream_release": {
+    "tag": "v0.7.11",
+    "tag_kind": "lightweight",
+    "commit": "6f7cb5eeb411898c7812fdebc9da08e1f586c936",
+    "tree": "7a1aa2e956742bb1382a584c9c2f38f1794af815",
+    "manifest_files": 171
+  },
+  "publication": {
+    "pull_request": 56,
+    "reviewed_head": "c000c44c6c41a559d255c8c3a7dc6b2e5915e3bd",
+    "merge_commit": "6944566fcfb18801e242c54808bd497328463b66",
+    "merge_tree": "caff7f52a09c4a723fab52386a492f69bb85649a",
+    "exact_main_head": "0664494dc0dded29c290a4b5a949dfa77e3351c4",
+    "exact_main_verification_run": 38531377672,
+    "exact_main_verification": "success",
+    "independent_review": "approved"
+  },
+  "local_verification": {
+    "vendor_verifier": "passed",
+    "source_headers": "passed",
+    "secret_scan": "passed",
+    "complexity_budget": "passed",
+    "unit_tests": {
+      "result": "passed",
+      "count": 923
+    },
+    "bounded_formal_smoke": "passed",
+    "live_doctor": "passed"
+  }
+}
