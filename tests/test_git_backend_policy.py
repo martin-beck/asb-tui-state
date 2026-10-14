@@ -54,12 +54,12 @@ class GitBackendPolicyTests(unittest.TestCase):
     def test_vendor_identity_is_exact_release_commit(self) -> None:
         manifest = json.loads((ROOT / "coordinator.vendor.json").read_text())
         self.assertEqual(1, manifest["schema_version"])
-        self.assertEqual("v0.4.0", manifest["upstream"]["version"])
+        self.assertEqual("v0.7.11", manifest["upstream"]["version"])
         self.assertEqual(
-            "712b36ea3d188237cbe8104e70d905094f93a96b",
+            "6f7cb5eeb411898c7812fdebc9da08e1f586c936",
             manifest["upstream"]["commit"],
         )
-        self.assertEqual(79, len(manifest["files"]))
+        self.assertEqual(171, len(manifest["files"]))
 
     def test_ar1575_r74_fixture_is_external_blocked_and_claimable_after_unblock(self) -> None:
         source_commit = "6a599085279b8ac637fb6dc2cf4006e902b9f8d4"
