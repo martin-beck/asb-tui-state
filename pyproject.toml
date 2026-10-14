@@ -1,0 +1,11 @@
+[project]
+name = "asb-tui-state-quality"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "jsonschema[format]==4.25.1",
+  "lizard==1.24.0",
+]
+
+[tool.uv]
+package = false
