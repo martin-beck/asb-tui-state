@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Coordinator v0.7.11 release vendor for ASB-TUI state",
-  "updated_at": "2026-10-14T00:00:00+00:00",
+  "updated_at": "2026-10-14T06:59:03+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ The upstream v0.7.11 lightweight tag resolves to commit
 `7a1aa2e956742bb1382a584c9c2f38f1794af815`. Record the lightweight-tag
 provenance accurately; do not make an annotated-tag signature claim.
 
+
+- 2026-10-14T06:59:03+00:00: Upstream v0.7.11 release identity is refreshed and the dedicated
+  vendor-upgrade scope is dependency-ready.
