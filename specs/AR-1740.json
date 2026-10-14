@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1740.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "upstream-identity", "description": "Coordinator v0.7.11 is bound to commit 6f7cb5eeb411898c7812fdebc9da08e1f586c936 and tree 7a1aa2e956742bb1382a584c9c2f38f1794af815; lightweight-tag provenance is recorded accurately."},
+    {"id": "vendor-integrity", "description": "The complete v0.7.11 allowlist is synchronized only by the official vendor tool and verifies exact source, destination, mode, digest, version, and manifest identity without vendored-byte patches."},
+    {"id": "downstream-compatibility", "description": "ASB-TUI binding, Git backend, task lifecycle, generated views, privacy controls, and compatibility fixtures remain valid under the v0.7.11 snapshot."},
+    {"id": "state-health", "description": "No product, ASB, or unrelated state change occurs; reconciliation, bounded formal checks, and live doctor remain clean."},
+    {"id": "publication", "description": "Independent exact-tree review, signed DCO publication, exact-head CI, merge, exact-main post-merge verification, and privacy-safe receipt pass."}
+  ],
+  "definition_of_done": [
+    "ASB-TUI state pins and verifies the exact current Coordinator v0.7.11 release snapshot.",
+    "All downstream compatibility and state-health gates pass without weakening any policy.",
+    "Independent review, hosted CI, signed merge, post-merge verification, reconciliation, and live doctor are green."
+  ],
+  "inputs": [
+    {"id": "coordinator-v0711", "description": "Upstream Coordinator v0.7.11 release commit/tree."},
+    {"id": "asb-tui-state-main", "description": "Current ASB-TUI Git-backed coordination state with preserved history and binding."}
+  ],
+  "outputs": [
+    {"id": "release-vendor", "description": "Verified exact v0.7.11 Coordinator vendor manifest and snapshot."},
+    {"id": "compatibility-receipt", "description": "Privacy-safe review, CI, and post-merge compatibility receipt."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["vendored-byte-patching", "direct-generated-view-edit", "force-push", "credential-output", "gate-weakening", "cross-repository-change", "unreviewed-merge"],
+  "required_evidence_classes": ["mechanical", "contract-test", "bounded-model", "environmental"],
+  "gates": [
+    {"id": "vendor", "description": "Release identity and complete vendor verification pass."},
+    {"id": "quality", "description": "Compatibility, state tests, bounded formal checks, privacy, generated views, and live doctor pass."},
+    {"id": "publication", "description": "Independent review, signed exact-head CI, merge, and post-merge verification pass."}
+  ]
+}
