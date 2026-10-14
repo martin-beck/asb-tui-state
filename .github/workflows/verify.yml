@@ -29,6 +29,10 @@ jobs:
       - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
         with:
           version: "0.12.8"
+      - name: Install pinned complexity tool
+        run: |
+          uv tool install lizard==1.24.0
+          uv tool dir --bin >> "$GITHUB_PATH"
       - name: Verify pinned coordinator release
         run: python3 tools/handoffctl_vendor.py verify --target .
       - name: Verify source policy
