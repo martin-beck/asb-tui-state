@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1740 — Coordinator v0.7.11 release vendor for ASB-TUI state](tasks/AR-1740-coordinator-v0711-release-vendor.md) | Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility. | Verify the exact v0.7.11 release identity and vendor the complete allowlisted snapshot through the official synchronizer in an isolated current-main state worktree. | asb-tui-state-ar1740-v0711-20261014 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

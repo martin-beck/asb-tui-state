@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T09:59:06+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
     "candidate_digest": "sha256:812e1e4488bbe0d0441e2d642d9ce88005c13114db8003697558473578c0e824",
@@ -62,17 +62,17 @@
   },
   "id": "AR-1740",
   "next_action": "Verify the exact v0.7.11 release identity and vendor the complete allowlisted snapshot through the official synchronizer in an isolated current-main state worktree.",
-  "owner": "asb-tui-state-ar1740-v0711-20261014",
+  "owner": "",
   "plan": "../plans/AR-1740-coordinator-v0711-release-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Coordinator v0.7.11 release vendor for ASB-TUI state",
-  "updated_at": "2026-10-14T07:59:12+00:00",
+  "updated_at": "2026-10-14T07:59:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -182,3 +182,6 @@ provenance accurately; do not make an annotated-tag signature claim.
 
 - 2026-10-14T07:59:12+00:00: Accepted publication using the exact post-merge v0.7.11 qualification
   receipt.
+
+- 2026-10-14T07:59:32+00:00: Released after merged v0.7.11 vendor, independent exact-head review,
+  green hosted CI, post-merge verification, accepted predicates, and reconciliation.
