@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2620,11 +2620,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-tui-state-ar1740-v0711-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility. |
@@ -2843,7 +2843,7 @@ flowchart LR
         AR_1737["AR-1737 - Done"]:::status_done
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Planned"]:::status_planned
-        AR_1740["AR-1740 - Open"]:::status_open
+        AR_1740["AR-1740 - In progress"]:::status_in_progress
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3441,11 +3441,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1740](../tasks/AR-1740-coordinator-v0711-release-vendor.md): Coordinator v0.7.11 release vendor for ASB-TUI state | Unclaimed | Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility. | Verify the exact v0.7.11 release identity and vendor the complete allowlisted snapshot through the official synchronizer in an isolated current-main state worktree. |
+| P0 | [AR-1740](../tasks/AR-1740-coordinator-v0711-release-vendor.md): Coordinator v0.7.11 release vendor for ASB-TUI state | asb-tui-state-ar1740-v0711-20261014 | Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility. | Verify the exact v0.7.11 release identity and vendor the complete allowlisted snapshot through the official synchronizer in an isolated current-main state worktree. |
 
 ### Blocked (1)
 
