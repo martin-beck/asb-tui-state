@@ -17,6 +17,16 @@
         "predicate_id": "upstream-identity",
         "recorded_task_revision": 31,
         "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:812e1e4488bbe0d0441e2d642d9ce88005c13114db8003697558473578c0e824",
+        "candidate_ref": "quality/AR-1740-postmerge-receipt-20261014.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:812e1e4488bbe0d0441e2d642d9ce88005c13114db8003697558473578c0e824",
+        "evidence_ref": "quality/AR-1740-postmerge-receipt-20261014.json",
+        "predicate_id": "vendor-integrity",
+        "recorded_task_revision": 32,
+        "status": "pass"
       }
     ]
   },
@@ -30,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Coordinator v0.7.11 release vendor for ASB-TUI state",
-  "updated_at": "2026-10-14T07:59:02+00:00",
+  "updated_at": "2026-10-14T07:59:04+00:00",
   "worktree_key": ""
 }
 ---
@@ -129,4 +139,7 @@ provenance accurately; do not make an annotated-tag signature claim.
   75680364d52805b8311e7b5dbf3037dce12e21f1b40a0cf970af2b0c89ba4475.
 
 - 2026-10-14T07:59:02+00:00: Accepted upstream-identity using the exact post-merge v0.7.11
+  qualification receipt.
+
+- 2026-10-14T07:59:04+00:00: Accepted vendor-integrity using the exact post-merge v0.7.11
   qualification receipt.
