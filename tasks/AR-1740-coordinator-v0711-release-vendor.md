@@ -9,14 +9,32 @@
   "owner": "asb-tui-state-ar1740-v0711-20261014",
   "plan": "../plans/AR-1740-coordinator-v0711-release-vendor.md",
   "priority": "P0",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-14T08:28:20+00:00",
+        "id": "9b45575f53fc41139703eb2d157b6b75",
+        "identity": "sha256:807588f22c8d4fa05b4720fcecafacc2d14733d2581962706735fa999847ac35",
+        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
+        "reserved_at": "2026-10-14T07:57:20+00:00",
+        "task_revision": 27,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Coordinator v0.7.11 release vendor for ASB-TUI state",
-  "updated_at": "2026-10-14T07:57:15+00:00",
+  "updated_at": "2026-10-14T07:57:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -104,3 +122,5 @@ provenance accurately; do not make an annotated-tag signature claim.
 
 - 2026-10-14T07:57:15+00:00: Recorded command exit 0; command argv SHA-256
   763a123a24e6002a08eb9cfeff35c852ded9d851a58428ef0cb59e3c0f226939.
+
+- 2026-10-14T07:57:20+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
