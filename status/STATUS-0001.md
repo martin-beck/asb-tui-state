@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**187 ARs tracked** across 4 active status categories.
+**187 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 178 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 187 |
 | Parent tasks | 1 |
 | Child tasks | 1 |
-| Open or active | 0 |
+| Open or active | 1 |
 | Blocked | 1 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 187 | 0 | 1 | 178 |
+| unassigned | unassigned | 187 | 1 | 1 | 178 |
 
 ## Task drill-down
 
@@ -2634,7 +2634,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2872,7 +2872,7 @@ flowchart LR
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Planned"]:::status_planned
         AR_1740["AR-1740 - Done"]:::status_done
-        AR_1741["AR-1741 - Planned"]:::status_planned
+        AR_1741["AR-1741 - Open"]:::status_open
         AR_1742["AR-1742 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
@@ -3474,19 +3474,24 @@ flowchart LR
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1741](../tasks/AR-1741.md): Expose compatibility choices | Unclaimed | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. |
+
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (4)
+### Planned (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1739](../tasks/AR-1739-guided-tool-agent-workload-installation.md): Guided tools, agents, and workloads installation | Unclaimed | Add a guided TUI route that lets users select and install supported tools, coding agents, and workloads through ASB-owned lifecycle operations before setup. | Define and consume the versioned ASB installation catalog and lifecycle contract, then promote when the required ASB command surface is available for the selected current-main pair. |
-| P1 | [AR-1741](../tasks/AR-1741.md): Expose compatibility choices | Unclaimed | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1742](../tasks/AR-1742.md): Render disabled compatibility | Unclaimed | Render incompatible agent provider and model rows disabled and explain the current constraint in contextual footer help. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Done (178)
