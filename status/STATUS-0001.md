@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -2634,11 +2634,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-provider-compatibility-20261022 |
 | Parent | AR-1742 |
 | Children | None |
 | Summary | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. |
@@ -2872,7 +2872,7 @@ flowchart LR
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Planned"]:::status_planned
         AR_1740["AR-1740 - Done"]:::status_done
-        AR_1741["AR-1741 - Open"]:::status_open
+        AR_1741["AR-1741 - In progress"]:::status_in_progress
         AR_1742["AR-1742 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
@@ -3474,11 +3474,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1741](../tasks/AR-1741.md): Expose compatibility choices | Unclaimed | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1741](../tasks/AR-1741.md): Expose compatibility choices | codex-provider-compatibility-20261022 | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (1)
 

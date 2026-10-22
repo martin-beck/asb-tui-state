@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1741 — Expose compatibility choices](tasks/AR-1741.md) | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. | - |
+| P1 | [AR-1741 — Expose compatibility choices](tasks/AR-1741.md) | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. | codex-provider-compatibility-20261022 |
 
 ## Blocked
 
