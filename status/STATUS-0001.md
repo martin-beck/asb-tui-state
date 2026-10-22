@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 4 active status categories.
+**187 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 178 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -26,9 +26,9 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 185 |
-| Parent tasks | 0 |
-| Child tasks | 0 |
+| Tasks | 187 |
+| Parent tasks | 1 |
+| Child tasks | 1 |
 | Open or active | 0 |
 | Blocked | 1 |
 
@@ -36,7 +36,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 185 | 0 | 1 | 178 |
+| unassigned | unassigned | 187 | 0 | 1 | 178 |
 
 ## Task drill-down
 
@@ -2630,6 +2630,34 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Summary | Adopt the exact Agent Workflow Coordinator v0.7.11 release and qualify ASB-TUI state compatibility. |
 | Next action | Verify the exact v0.7.11 release identity and vendor the complete allowlisted snapshot through the official synchronizer in an isolated current-main state worktree. |
 
+### AR-1741 — Expose compatibility choices
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | AR-1742 |
+| Children | None |
+| Summary | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
+### AR-1742 — Render disabled compatibility
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | AR-1741 |
+| Summary | Render incompatible agent provider and model rows disabled and explain the current constraint in contextual footer help. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -2844,6 +2872,8 @@ flowchart LR
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Planned"]:::status_planned
         AR_1740["AR-1740 - Done"]:::status_done
+        AR_1741["AR-1741 - Planned"]:::status_planned
+        AR_1742["AR-1742 - Planned"]:::status_planned
     end
     AR_0002 --> AR_1722
     AR_1192 --> AR_1195
@@ -3239,6 +3269,7 @@ flowchart LR
     AR_1733 --> AR_1735
     AR_1734 --> AR_1735
     AR_1735 --> AR_1736
+    AR_1741 --> AR_1742
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3438,6 +3469,8 @@ flowchart LR
 | [AR-1738](../tasks/AR-1738-wizard-catalog-viewport-and-availability.md) | None | None |
 | [AR-1739](../tasks/AR-1739-guided-tool-agent-workload-installation.md) | None | None |
 | [AR-1740](../tasks/AR-1740-coordinator-v0711-release-vendor.md) | None | None |
+| [AR-1741](../tasks/AR-1741.md) | None | [AR-1742](../tasks/AR-1742.md) |
+| [AR-1742](../tasks/AR-1742.md) | [AR-1741](../tasks/AR-1741.md) | None |
 
 ## Complete AR inventory
 
@@ -3447,12 +3480,14 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
-### Planned (2)
+### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): TUI state spec-acceptance metadata contract | Unclaimed | Provide a supported coordinator mutation for recording validated task-spec acceptance before done admission. | Add the supported acceptance mutation, strict validation, and focused coverage without weakening fail-closed done admission. |
 | P0 | [AR-1739](../tasks/AR-1739-guided-tool-agent-workload-installation.md): Guided tools, agents, and workloads installation | Unclaimed | Add a guided TUI route that lets users select and install supported tools, coding agents, and workloads through ASB-owned lifecycle operations before setup. | Define and consume the versioned ASB installation catalog and lifecycle contract, then promote when the required ASB command surface is available for the selected current-main pair. |
+| P1 | [AR-1741](../tasks/AR-1741.md): Expose compatibility choices | Unclaimed | Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1742](../tasks/AR-1742.md): Render disabled compatibility | Unclaimed | Render incompatible agent provider and model rows disabled and explain the current constraint in contextual footer help. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Done (178)
 
@@ -3517,9 +3552,3 @@ flowchart LR
 | P0 | [AR-1599](../tasks/AR-1599.md): Cross-repository development install qualification repair | Unclaimed | Exact ASB c94586d/TUI 6b5f343 paired qualification passes install/default-dev/status/doctor/upgrade/rollback/remove/offline negatives; launch typed nonterminal failure | Attach exact c94586d/6b5f343 receipt, obtain independent review, then release; interactive launch remains unclaimed because harness lacks a valid controlling terminal |
 | P0 | [AR-1600](../tasks/AR-1600.md): Channel-aware install UX qualification | Unclaimed | Exact paired channel qualification passes default-dev, explicit dev, upgrade rollback preservation, remove, and typed unavailable-channel negatives | Attach exact-head channel receipt and obtain independent review; release after coordinator accepts qualification metadata |
 | P0 | [AR-1601](../tasks/AR-1601.md): Real cassette lifecycle integration | Unclaimed | PR200 protocol-compatible selected cassette route | Retain the released lifecycle receipt; AR-1606 owns the paired record/seal/reopen/catalog/replay/compare qualification. |
-| P0 | [AR-1602](../tasks/AR-1602.md): Development-channel clone/build install | Unclaimed | Implement real clone/build installation for the default development channel. | Release admission after acceptance receipt. |
-| P0 | [AR-1603](../tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main TUI install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after TUI AR-1600/1601 and ASB AR-1603 are released; execute the disposable exact-head journey. |
-| P0 | [AR-1605](../tasks/AR-1605.md): OpenRouter setup wizard flow | Unclaimed | Provide a guided, selection-driven OpenRouter provider/model/API-key setup flow in the TUI. | Release after AR-1610 restores exact trusted-main coverage; implementation is merged at TUI main 54f715f. |
-| P0 | [AR-1606](../tasks/AR-1606.md): Shared defaults and reconfiguration | Unclaimed | Make provider/model/auth selections editable and applicable as shared defaults for selected agents. | Promote after TUI AR-1605 and ASB AR-1608 release; implement save/restart and rollback coverage. |
-| P0 | [AR-1607](../tasks/AR-1607.md): Coding-agent selection and compatibility UX | Unclaimed | Let users select opencode/opendesk and only compatible provider, model, and authentication choices in the wizard. | Promote after ASB AR-1609 and TUI AR-1605 release; implement adapter-aware agent selection, compatibility filtering, and diagnostics. |
-| P0 | [AR-1610](../tasks/AR-1610.md): Trusted-main coverage repair for wizard release | Unclaimed | Restore exact trusted-main coverage after the wizard and adapter integration without weakening the coverage gate. | Finish follow-up PR210 with signed+DCO behavior-relevant coverage margin above 90&#37;, independent review, hosted checks, and exact-main Trusted verification; then release this repair cycle. |

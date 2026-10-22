@@ -1,0 +1,33 @@
+{
+  "finalizer": "AR-1742",
+  "issue": {
+    "number": 66,
+    "url": "https://github.com/martin-beck/asb-tui/issues/66"
+  },
+  "issue_digest": "sha256:792f203a1cf9de1737ec4b9874b00b15bb9a2fa6716e20cb2b6f36c641c44849",
+  "members": [
+    {
+      "acceptance": "Catalog adapters preserve compatible and incompatible choices with typed reasons without credentials.",
+      "depends_on": [],
+      "id": "AR-1741",
+      "ownership": "ASB TUI catalog adapter",
+      "scope": "Project ASB authoritative provider agent compatibility and availability reasons into the standalone wizard catalog.",
+      "short_title": "Expose compatibility choices"
+    },
+    {
+      "acceptance": "Keyboard selection cannot select disabled rows and focused unavailable rows render a useful reason in the footer.",
+      "depends_on": [
+        {
+          "id": "AR-1741",
+          "rationale": "needs typed compatibility choices"
+        }
+      ],
+      "id": "AR-1742",
+      "ownership": "ASB TUI wizard presentation",
+      "scope": "Render incompatible agent provider and model rows disabled and explain the current constraint in contextual footer help.",
+      "short_title": "Render disabled compatibility"
+    }
+  ],
+  "repository": "github.com/martin-beck/asb-tui",
+  "schema_version": 1
+}
